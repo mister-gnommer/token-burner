@@ -1,0 +1,1 @@
+- `b0b266a4-364d-478b-8c6d-45b1a1d77d3f` — 2026-10-18 — Create token-burner project, git init, public GitHub repo
