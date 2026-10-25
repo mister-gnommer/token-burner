@@ -1,0 +1,1048 @@
+{
+  "schema_version": 1,
+  "source": {
+    "site": "standup.pl",
+    "sort": "views",
+    "retrieved_at": "2026-10-25T14:46:54Z",
+    "page_size": 9,
+    "pages": [
+      {
+        "page": 1,
+        "url": "https://standup.pl/komicy?sort=views&page=1",
+        "sha256": "2fb82598d3376640b0443d23537fbcb3e0e3b5d5578b589b10fa562312e67347",
+        "item_count": 9
+      },
+      {
+        "page": 2,
+        "url": "https://standup.pl/komicy?sort=views&page=2",
+        "sha256": "30d4092c3fcc52c364e3adfcb32fc2dfb7189746fbd462fbf81494c201677f64",
+        "item_count": 9
+      },
+      {
+        "page": 3,
+        "url": "https://standup.pl/komicy?sort=views&page=3",
+        "sha256": "10bf6c3413c47d063aeef5e7489c509d95f21a326c7c9744d42b996c981f1e0e",
+        "item_count": 9
+      },
+      {
+        "page": 4,
+        "url": "https://standup.pl/komicy?sort=views&page=4",
+        "sha256": "31079c50e71aab8c9eb320d301458ad0f945c83e578e325473eb77ffec6fdb27",
+        "item_count": 9
+      },
+      {
+        "page": 5,
+        "url": "https://standup.pl/komicy?sort=views&page=5",
+        "sha256": "2c0cb413eea71f1e26524c9af33c1cb7fb97408b28dcd553f7e0b7f73ac647c9",
+        "item_count": 9
+      },
+      {
+        "page": 6,
+        "url": "https://standup.pl/komicy?sort=views&page=6",
+        "sha256": "8be88036e67d79926d76e8b9c8d248f7563225212b7da2fd623d82b6712cc92c",
+        "item_count": 9
+      },
+      {
+        "page": 7,
+        "url": "https://standup.pl/komicy?sort=views&page=7",
+        "sha256": "278bf2086c4be028893e0120e6f475a70368a78e26318506e8903a6ce795a6f0",
+        "item_count": 9
+      },
+      {
+        "page": 8,
+        "url": "https://standup.pl/komicy?sort=views&page=8",
+        "sha256": "ab0f8726e9f14df5b3118f467a0f930a8ae2a438b0607f095edf78a5ad2276de",
+        "item_count": 9
+      },
+      {
+        "page": 9,
+        "url": "https://standup.pl/komicy?sort=views&page=9",
+        "sha256": "7106ade5ec7c1e9afaa793619c987c20c3493add52e8bb2f599a7a6553e98cd9",
+        "item_count": 9
+      },
+      {
+        "page": 10,
+        "url": "https://standup.pl/komicy?sort=views&page=10",
+        "sha256": "b4fa43a91492837eb4c2a53e10aa4e879cd39ddde74b06390f6613bcac9ef522",
+        "item_count": 9
+      },
+      {
+        "page": 11,
+        "url": "https://standup.pl/komicy?sort=views&page=11",
+        "sha256": "59661f5a93a2cad41bd4ff538d9b64dfa04d45e2ca093b0177847335bbfae661",
+        "item_count": 9
+      },
+      {
+        "page": 12,
+        "url": "https://standup.pl/komicy?sort=views&page=12",
+        "sha256": "47a47ac8d85351dd48a47d7568abc11f111f0f867793a8d06c1a89d431dcb050",
+        "item_count": 9
+      },
+      {
+        "page": 13,
+        "url": "https://standup.pl/komicy?sort=views&page=13",
+        "sha256": "951bb9f6563b9db2b710c671827007c904134a2134bbed2372a2489d8b604a36",
+        "item_count": 9
+      },
+      {
+        "page": 14,
+        "url": "https://standup.pl/komicy?sort=views&page=14",
+        "sha256": "d8e41d08d59a1edb7006ab20956d0509e8da5c2e1acf1bb49627812030bbed0b",
+        "item_count": 9
+      },
+      {
+        "page": 15,
+        "url": "https://standup.pl/komicy?sort=views&page=15",
+        "sha256": "c3775c5611e90b3b81e8a90e4e1bb00ed386edca11e103e3f0b2d40d236d9ec7",
+        "item_count": 9
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "source_position": 1,
+      "source_page": 1,
+      "name": "Daniel Midas",
+      "profile_url": "https://standup.pl/komicy/daniel-midas",
+      "image_url": "https://standup.pl/images/avatars/daniel-midas.png"
+    },
+    {
+      "source_position": 2,
+      "source_page": 1,
+      "name": "Mama Na Obrotach (Klaudia Klimczyk)",
+      "profile_url": "https://standup.pl/komicy/mama-na-obrotach",
+      "image_url": "/images/comedians/mama-na-obrotach.webp"
+    },
+    {
+      "source_position": 3,
+      "source_page": 1,
+      "name": "Łukasz Lotek Lodkowski",
+      "profile_url": "https://standup.pl/komicy/lukasz-lotek-lodkowski",
+      "image_url": "https://standup.pl/images/avatars/lukasz-lotek-lodkowski.png"
+    },
+    {
+      "source_position": 4,
+      "source_page": 1,
+      "name": "Rafał Pacześ",
+      "profile_url": "https://standup.pl/komicy/rafal-paczes",
+      "image_url": "https://standup.pl/images/avatars/rafal-paczes.png"
+    },
+    {
+      "source_position": 5,
+      "source_page": 1,
+      "name": "Magda Kubicka",
+      "profile_url": "https://standup.pl/komicy/magda-kubicka",
+      "image_url": "https://standup.pl/images/avatars/magda-kubicka.png"
+    },
+    {
+      "source_position": 6,
+      "source_page": 1,
+      "name": "Mateusz Socha",
+      "profile_url": "https://standup.pl/komicy/mateusz-socha",
+      "image_url": "https://standup.pl/images/avatars/mateusz-socha.png"
+    },
+    {
+      "source_position": 7,
+      "source_page": 1,
+      "name": "Stand-up Polska",
+      "profile_url": "https://standup.pl/komicy/stand-up-polska",
+      "image_url": "https://standup.pl/images/avatars/stand-up-polska.png"
+    },
+    {
+      "source_position": 8,
+      "source_page": 1,
+      "name": "Olka Szczęśniak",
+      "profile_url": "https://standup.pl/komicy/olka-szczesniak",
+      "image_url": "https://standup.pl/images/avatars/olka-szczesniak.png"
+    },
+    {
+      "source_position": 9,
+      "source_page": 1,
+      "name": "Cezary Pazura",
+      "profile_url": "https://standup.pl/komicy/cezary-pazura",
+      "image_url": "https://standup.pl/images/avatars/cezary-pazura.png"
+    },
+    {
+      "source_position": 10,
+      "source_page": 2,
+      "name": "Piotr Jeleń",
+      "profile_url": "https://standup.pl/komicy/piotr-jelen",
+      "image_url": "https://standup.pl/images/avatars/piotr-jelen.png"
+    },
+    {
+      "source_position": 11,
+      "source_page": 2,
+      "name": "Abelard Giza",
+      "profile_url": "https://standup.pl/komicy/abelard-giza",
+      "image_url": "https://standup.pl/images/avatars/abelard-giza.png"
+    },
+    {
+      "source_position": 12,
+      "source_page": 2,
+      "name": "Błażej Krajewski",
+      "profile_url": "https://standup.pl/komicy/blazej-krajewski",
+      "image_url": "https://standup.pl/images/avatars/blazej-krajewski.png"
+    },
+    {
+      "source_position": 13,
+      "source_page": 2,
+      "name": "Piotr Latała",
+      "profile_url": "https://standup.pl/komicy/piotr-latala",
+      "image_url": "https://standup.pl/images/avatars/piotr-latala.png"
+    },
+    {
+      "source_position": 14,
+      "source_page": 2,
+      "name": "Kanał Komediowy",
+      "profile_url": "https://standup.pl/komicy/kanal-komediowy",
+      "image_url": "/images/comedians/kanal-komediowy.webp"
+    },
+    {
+      "source_position": 15,
+      "source_page": 2,
+      "name": "Pan Li",
+      "profile_url": "https://standup.pl/komicy/pan-li",
+      "image_url": "/images/comedians/pan-li.webp"
+    },
+    {
+      "source_position": 16,
+      "source_page": 2,
+      "name": "Michał Leja",
+      "profile_url": "https://standup.pl/komicy/michal-leja",
+      "image_url": "https://standup.pl/images/avatars/michal-leja.png"
+    },
+    {
+      "source_position": 17,
+      "source_page": 2,
+      "name": "Cezary Ponttefski",
+      "profile_url": "https://standup.pl/komicy/cezary-ponttefski",
+      "image_url": "https://standup.pl/images/avatars/cezary-ponttefski.png"
+    },
+    {
+      "source_position": 18,
+      "source_page": 2,
+      "name": "Antoni Syrek-Dąbrowski",
+      "profile_url": "https://standup.pl/komicy/antoni-syrek-dabrowski",
+      "image_url": "https://standup.pl/images/avatars/antoni-syrek-dabrowski.png"
+    },
+    {
+      "source_position": 19,
+      "source_page": 3,
+      "name": "Tomasz Boras Borkowski",
+      "profile_url": "https://standup.pl/komicy/tomasz-boras-borkowski",
+      "image_url": "https://standup.pl/images/avatars/tomasz-boras.png"
+    },
+    {
+      "source_position": 20,
+      "source_page": 3,
+      "name": "Piotr Zola Szulowski",
+      "profile_url": "https://standup.pl/komicy/piotr-zola-szulowski",
+      "image_url": "https://standup.pl/images/avatars/piotr-zola-szulowski.png"
+    },
+    {
+      "source_position": 21,
+      "source_page": 3,
+      "name": "Karol Modzelewski",
+      "profile_url": "https://standup.pl/komicy/karol-modzelewski",
+      "image_url": "https://standup.pl/images/avatars/karol-modzelewski.png"
+    },
+    {
+      "source_position": 22,
+      "source_page": 3,
+      "name": "Michał Paszczyk",
+      "profile_url": "https://standup.pl/komicy/michal-paszczyk",
+      "image_url": "https://standup.pl/images/avatars/michal-paszczyk.png"
+    },
+    {
+      "source_position": 23,
+      "source_page": 3,
+      "name": "Grzegorz Dolniak",
+      "profile_url": "https://standup.pl/komicy/grzegorz-dolniak",
+      "image_url": "https://standup.pl/images/avatars/grzegorz-dolniak.png"
+    },
+    {
+      "source_position": 24,
+      "source_page": 3,
+      "name": "Adam Van Bendler",
+      "profile_url": "https://standup.pl/komicy/adam-van-bendler",
+      "image_url": "https://standup.pl/images/avatars/adam-van-bendler.png"
+    },
+    {
+      "source_position": 25,
+      "source_page": 3,
+      "name": "Sylwia Wiszowata",
+      "profile_url": "https://standup.pl/komicy/sylwia-wiszowata",
+      "image_url": "https://standup.pl/images/avatars/sylwia-wiszowata.png"
+    },
+    {
+      "source_position": 26,
+      "source_page": 3,
+      "name": "Masz Minutę",
+      "profile_url": "https://standup.pl/komicy/masz-minute",
+      "image_url": "https://standup.pl/images/avatars/masz-minute.png"
+    },
+    {
+      "source_position": 27,
+      "source_page": 3,
+      "name": "Kacper Ruciński",
+      "profile_url": "https://standup.pl/komicy/kacper-rucinski",
+      "image_url": "https://standup.pl/images/avatars/kacper-rucinski.png"
+    },
+    {
+      "source_position": 28,
+      "source_page": 4,
+      "name": "Rafał Rutkowski",
+      "profile_url": "https://standup.pl/komicy/rafal-rutkowski",
+      "image_url": "https://standup.pl/images/avatars/rafal-rutkowski.png"
+    },
+    {
+      "source_position": 29,
+      "source_page": 4,
+      "name": "Paweł Chałupka",
+      "profile_url": "https://standup.pl/komicy/pawel-chalupka",
+      "image_url": "https://standup.pl/images/avatars/pawel-chalupka.png"
+    },
+    {
+      "source_position": 30,
+      "source_page": 4,
+      "name": "Maciej Brudzewski",
+      "profile_url": "https://standup.pl/komicy/maciej-brudzewski",
+      "image_url": "https://standup.pl/images/avatars/maciej-brudzewski.png"
+    },
+    {
+      "source_position": 31,
+      "source_page": 4,
+      "name": "Mieszko Minkiewicz",
+      "profile_url": "https://standup.pl/komicy/mieszko-minkiewicz",
+      "image_url": "https://standup.pl/images/avatars/mieszko-minkiewicz.png"
+    },
+    {
+      "source_position": 32,
+      "source_page": 4,
+      "name": "Maciej Kwiatkowski",
+      "profile_url": "https://standup.pl/komicy/maciej-kwiatkowski",
+      "image_url": "/images/comedians/maciej-kwiatkowski.webp"
+    },
+    {
+      "source_position": 33,
+      "source_page": 4,
+      "name": "Adam Sobaniec",
+      "profile_url": "https://standup.pl/komicy/adam-sobaniec",
+      "image_url": "https://standup.pl/images/avatars/adam-sobaniec.png"
+    },
+    {
+      "source_position": 34,
+      "source_page": 4,
+      "name": "Marcin Zbigniew Wojciech",
+      "profile_url": "https://standup.pl/komicy/marcin-zbigniew-wojciech",
+      "image_url": "https://standup.pl/images/avatars/marcin-zbigniew-wojciech.png"
+    },
+    {
+      "source_position": 35,
+      "source_page": 4,
+      "name": "Czarek Sikora",
+      "profile_url": "https://standup.pl/komicy/czarek-sikora",
+      "image_url": "https://standup.pl/images/avatars/czarek-sikora.png"
+    },
+    {
+      "source_position": 36,
+      "source_page": 4,
+      "name": "Łukasz Kowalski",
+      "profile_url": "https://standup.pl/komicy/lukasz-kowalski",
+      "image_url": "https://standup.pl/images/avatars/lukasz-kowalski.png"
+    },
+    {
+      "source_position": 37,
+      "source_page": 5,
+      "name": "Tomasz Machnicki",
+      "profile_url": "https://standup.pl/komicy/tomasz-machnicki",
+      "image_url": "https://standup.pl/images/avatars/tomasz-machnicki.png"
+    },
+    {
+      "source_position": 38,
+      "source_page": 5,
+      "name": "Arkadiusz Jaksa Jakszewicz",
+      "profile_url": "https://standup.pl/komicy/arkadiusz-jaksa-jakszewicz",
+      "image_url": "https://standup.pl/images/avatars/arkadiusz-jaksa-jakszewicz.png"
+    },
+    {
+      "source_position": 39,
+      "source_page": 5,
+      "name": "Katarzyna Piasecka",
+      "profile_url": "https://standup.pl/komicy/katarzyna-piasecka",
+      "image_url": "https://standup.pl/images/avatars/katarzyna-piasecka.png"
+    },
+    {
+      "source_position": 40,
+      "source_page": 5,
+      "name": "Z Kartki",
+      "profile_url": "https://standup.pl/komicy/z-kartki",
+      "image_url": "https://standup.pl/images/avatars/z-kartki.png"
+    },
+    {
+      "source_position": 41,
+      "source_page": 5,
+      "name": "Hamburger Show",
+      "profile_url": "https://standup.pl/komicy/hamburger-show",
+      "image_url": "https://standup.pl/images/avatars/hamburger-show.png"
+    },
+    {
+      "source_position": 42,
+      "source_page": 5,
+      "name": "Bartosz Zalewski",
+      "profile_url": "https://standup.pl/komicy/bartosz-zalewski",
+      "image_url": "https://standup.pl/images/avatars/bartosz-zalewski.png"
+    },
+    {
+      "source_position": 43,
+      "source_page": 5,
+      "name": "Michał Kutek",
+      "profile_url": "https://standup.pl/komicy/michal-kutek",
+      "image_url": "https://standup.pl/images/avatars/michal-kutek.png"
+    },
+    {
+      "source_position": 44,
+      "source_page": 5,
+      "name": "Tomek Kołecki",
+      "profile_url": "https://standup.pl/komicy/tomek-kolecki",
+      "image_url": "https://standup.pl/images/avatars/tomek-kolecki.png"
+    },
+    {
+      "source_position": 45,
+      "source_page": 5,
+      "name": "Bartosz Gajda",
+      "profile_url": "https://standup.pl/komicy/bartosz-gajda",
+      "image_url": "https://standup.pl/images/avatars/bartosz-gajda.png"
+    },
+    {
+      "source_position": 46,
+      "source_page": 6,
+      "name": "Ryszard Mazur",
+      "profile_url": "https://standup.pl/komicy/ryszard-mazur",
+      "image_url": "https://standup.pl/images/avatars/ryszard-mazur.png"
+    },
+    {
+      "source_position": 47,
+      "source_page": 6,
+      "name": "Wojtek Pięta",
+      "profile_url": "https://standup.pl/komicy/wojtek-pieta",
+      "image_url": "https://standup.pl/images/avatars/wojtek-pieta.png"
+    },
+    {
+      "source_position": 48,
+      "source_page": 6,
+      "name": "Dobry Przelot",
+      "profile_url": "https://standup.pl/komicy/dobry-przelot",
+      "image_url": "/images/comedians/dobry-przelot.webp"
+    },
+    {
+      "source_position": 49,
+      "source_page": 6,
+      "name": "Piotrek Szumowski",
+      "profile_url": "https://standup.pl/komicy/piotrek-szumowski",
+      "image_url": "https://standup.pl/images/avatars/piotrek-szumowski.png"
+    },
+    {
+      "source_position": 50,
+      "source_page": 6,
+      "name": "Dżin z komikiem",
+      "profile_url": "https://standup.pl/komicy/dzin-z-komikiem",
+      "image_url": "https://standup.pl/images/avatars/dzin-z-komikiem.png"
+    },
+    {
+      "source_position": 51,
+      "source_page": 6,
+      "name": "Michał Skubida",
+      "profile_url": "https://standup.pl/komicy/michal-skubida",
+      "image_url": "https://standup.pl/images/avatars/michal-skubida.png"
+    },
+    {
+      "source_position": 52,
+      "source_page": 6,
+      "name": "Wiolka Walaszczyk",
+      "profile_url": "https://standup.pl/komicy/wiolka-walaszczyk",
+      "image_url": "https://standup.pl/images/avatars/wiolka-walaszczyk.png"
+    },
+    {
+      "source_position": 53,
+      "source_page": 6,
+      "name": "Patryk Gosiński",
+      "profile_url": "https://standup.pl/komicy/patryk-gosinski",
+      "image_url": "https://standup.pl/images/avatars/patryk-gosinski.png"
+    },
+    {
+      "source_position": 54,
+      "source_page": 6,
+      "name": "Wahanie",
+      "profile_url": "https://standup.pl/komicy/wahanie",
+      "image_url": "https://standup.pl/images/avatars/wahanie.png"
+    },
+    {
+      "source_position": 55,
+      "source_page": 7,
+      "name": "Ewa Stasiewicz",
+      "profile_url": "https://standup.pl/komicy/ewa-stasiewicz",
+      "image_url": "https://standup.pl/images/avatars/ewa-stasiewicz.png"
+    },
+    {
+      "source_position": 56,
+      "source_page": 7,
+      "name": "Marlena Mysza",
+      "profile_url": "https://standup.pl/komicy/marlena-mysza",
+      "image_url": "https://standup.pl/images/avatars/marlena-mysza.png"
+    },
+    {
+      "source_position": 57,
+      "source_page": 7,
+      "name": "Piotr Splin",
+      "profile_url": "https://standup.pl/komicy/piotr-splin",
+      "image_url": "https://standup.pl/images/avatars/piotr-splin.png"
+    },
+    {
+      "source_position": 58,
+      "source_page": 7,
+      "name": "Cezary Jurkiewicz",
+      "profile_url": "https://standup.pl/komicy/cezary-jurkiewicz",
+      "image_url": "https://standup.pl/images/avatars/cezary-jurkiewicz.png"
+    },
+    {
+      "source_position": 59,
+      "source_page": 7,
+      "name": "Ewa Błachnio",
+      "profile_url": "https://standup.pl/komicy/ewa-blachnio",
+      "image_url": "https://standup.pl/images/avatars/ewa-blachnio.png"
+    },
+    {
+      "source_position": 60,
+      "source_page": 7,
+      "name": "Paweł Konkiel",
+      "profile_url": "https://standup.pl/komicy/pawel-konkiel",
+      "image_url": "https://standup.pl/images/avatars/pawel-konkiel.png"
+    },
+    {
+      "source_position": 61,
+      "source_page": 7,
+      "name": "Karolina Pańczyk",
+      "profile_url": "https://standup.pl/komicy/karolina-panczyk",
+      "image_url": "https://standup.pl/images/avatars/karolina-panczyk.png"
+    },
+    {
+      "source_position": 62,
+      "source_page": 7,
+      "name": "Jarek Legońkoff",
+      "profile_url": "https://standup.pl/komicy/jarek-legonkoff",
+      "image_url": "https://standup.pl/images/avatars/jarek-legonkoff.png"
+    },
+    {
+      "source_position": 63,
+      "source_page": 7,
+      "name": "Wojciech Termos Tremiszewski",
+      "profile_url": "https://standup.pl/komicy/wojciech-termos-tremiszewski",
+      "image_url": "https://standup.pl/images/avatars/wojciech-tremiszewski.png"
+    },
+    {
+      "source_position": 64,
+      "source_page": 8,
+      "name": "Zero Presji Show",
+      "profile_url": "https://standup.pl/komicy/zero-presji-show",
+      "image_url": "https://standup.pl/images/avatars/zero-presji-show.png"
+    },
+    {
+      "source_position": 65,
+      "source_page": 8,
+      "name": "Paweł Bakteria",
+      "profile_url": "https://standup.pl/komicy/pawel-bakteria",
+      "image_url": "https://standup.pl/images/avatars/pawel-bakteria.png"
+    },
+    {
+      "source_position": 66,
+      "source_page": 8,
+      "name": "Kuba Dąbrowski",
+      "profile_url": "https://standup.pl/komicy/kuba-dabrowski",
+      "image_url": "https://standup.pl/images/avatars/kuba-dabrowski.png"
+    },
+    {
+      "source_position": 67,
+      "source_page": 8,
+      "name": "Filip Brymora",
+      "profile_url": "https://standup.pl/komicy/filip-brymora",
+      "image_url": "https://standup.pl/images/avatars/filip-brymora.png"
+    },
+    {
+      "source_position": 68,
+      "source_page": 8,
+      "name": "Marcin Chmiel",
+      "profile_url": "https://standup.pl/komicy/marcin-chmiel",
+      "image_url": "https://standup.pl/images/avatars/marcin-chmiel.png"
+    },
+    {
+      "source_position": 69,
+      "source_page": 8,
+      "name": "Bartosz Strusiński",
+      "profile_url": "https://standup.pl/komicy/bartosz-strusinski",
+      "image_url": "https://standup.pl/images/avatars/bartosz-strusinski.png"
+    },
+    {
+      "source_position": 70,
+      "source_page": 8,
+      "name": "Sebastian Rejent",
+      "profile_url": "https://standup.pl/komicy/sebastian-rejent",
+      "image_url": "https://standup.pl/images/avatars/sebastian-rejent.png"
+    },
+    {
+      "source_position": 71,
+      "source_page": 8,
+      "name": "Filip Puzyr",
+      "profile_url": "https://standup.pl/komicy/filip-puzyr",
+      "image_url": "https://standup.pl/images/avatars/filip-puzyr.png"
+    },
+    {
+      "source_position": 72,
+      "source_page": 8,
+      "name": "Damian Skóra",
+      "profile_url": "https://standup.pl/komicy/damian-skora",
+      "image_url": "https://standup.pl/images/avatars/damian-skora.png"
+    },
+    {
+      "source_position": 73,
+      "source_page": 9,
+      "name": "Robert Górski",
+      "profile_url": "https://standup.pl/komicy/robert-gorski",
+      "image_url": "https://standup.pl/images/avatars/robert-gorski.png"
+    },
+    {
+      "source_position": 74,
+      "source_page": 9,
+      "name": "Damian Viking Usewicz",
+      "profile_url": "https://standup.pl/komicy/damian-viking-usewicz",
+      "image_url": "https://standup.pl/images/avatars/damian-viking-usewicz.png"
+    },
+    {
+      "source_position": 75,
+      "source_page": 9,
+      "name": "Igor Kwiatkowski",
+      "profile_url": "https://standup.pl/komicy/igor-kwiatkowski",
+      "image_url": "https://standup.pl/images/avatars/igor-kwiatkowski.png"
+    },
+    {
+      "source_position": 76,
+      "source_page": 9,
+      "name": "Wojtek Fiedorczuk",
+      "profile_url": "https://standup.pl/komicy/wojtek-fiedorczuk",
+      "image_url": "https://standup.pl/images/avatars/wojtek-fiedorczuk.png"
+    },
+    {
+      "source_position": 77,
+      "source_page": 9,
+      "name": "Michał Pałubski",
+      "profile_url": "https://standup.pl/komicy/michal-palubski",
+      "image_url": "https://standup.pl/images/avatars/michal-palubski.png"
+    },
+    {
+      "source_position": 78,
+      "source_page": 9,
+      "name": "Roast Battle: Duety",
+      "profile_url": "https://standup.pl/komicy/roast-battle-duety",
+      "image_url": "https://standup.pl/images/avatars/roast-battle-duety.png"
+    },
+    {
+      "source_position": 79,
+      "source_page": 9,
+      "name": "Jasiek Borkowski",
+      "profile_url": "https://standup.pl/komicy/jasiek-borkowski",
+      "image_url": "https://standup.pl/images/avatars/jasiek-borkowski.png"
+    },
+    {
+      "source_position": 80,
+      "source_page": 9,
+      "name": "Jakub Poczęty",
+      "profile_url": "https://standup.pl/komicy/jakub-poczety",
+      "image_url": "https://standup.pl/images/avatars/jakub-poczety.png"
+    },
+    {
+      "source_position": 81,
+      "source_page": 9,
+      "name": "Grzegorz Halama",
+      "profile_url": "https://standup.pl/komicy/grzegorz-halama",
+      "image_url": "https://standup.pl/images/avatars/grzegorz-halama.png"
+    },
+    {
+      "source_position": 82,
+      "source_page": 10,
+      "name": "Krzysztof Kasparek",
+      "profile_url": "https://standup.pl/komicy/krzysztof-kasparek",
+      "image_url": "https://standup.pl/images/avatars/krzysztof-kasparek.png"
+    },
+    {
+      "source_position": 83,
+      "source_page": 10,
+      "name": "Darek Gadowski",
+      "profile_url": "https://standup.pl/komicy/darek-gadowski",
+      "image_url": "https://standup.pl/images/avatars/darek-gadowski.png"
+    },
+    {
+      "source_position": 84,
+      "source_page": 10,
+      "name": "Kuba Wu",
+      "profile_url": "https://standup.pl/komicy/kuba-wu",
+      "image_url": "https://standup.pl/images/avatars/kuba-wu.png"
+    },
+    {
+      "source_position": 85,
+      "source_page": 10,
+      "name": "BITY",
+      "profile_url": "https://standup.pl/komicy/bity",
+      "image_url": "https://standup.pl/images/avatars/bity.png"
+    },
+    {
+      "source_position": 86,
+      "source_page": 10,
+      "name": "Rafał Banaś",
+      "profile_url": "https://standup.pl/komicy/rafal-banas",
+      "image_url": "https://standup.pl/images/avatars/rafal-banas.png"
+    },
+    {
+      "source_position": 87,
+      "source_page": 10,
+      "name": "Rafał Sumowski",
+      "profile_url": "https://standup.pl/komicy/rafal-sumowski",
+      "image_url": "https://standup.pl/images/avatars/rafal-sumowski.png"
+    },
+    {
+      "source_position": 88,
+      "source_page": 10,
+      "name": "Janusz Pietruszka",
+      "profile_url": "https://standup.pl/komicy/janusz-pietruszka",
+      "image_url": "https://standup.pl/images/avatars/janusz-pietruszka.png"
+    },
+    {
+      "source_position": 89,
+      "source_page": 10,
+      "name": "Michał Kempa",
+      "profile_url": "https://standup.pl/komicy/michal-kempa",
+      "image_url": "https://standup.pl/images/avatars/michal-kempa.png"
+    },
+    {
+      "source_position": 90,
+      "source_page": 10,
+      "name": "Łukasz Wolski",
+      "profile_url": "https://standup.pl/komicy/lukasz-wolski",
+      "image_url": "https://standup.pl/images/avatars/lukasz-wolski.png"
+    },
+    {
+      "source_position": 91,
+      "source_page": 11,
+      "name": "Marek Gajos Gajewski",
+      "profile_url": "https://standup.pl/komicy/marek-gajos-gajewski",
+      "image_url": "https://standup.pl/images/avatars/marek-gajos-gajewski.png"
+    },
+    {
+      "source_position": 92,
+      "source_page": 11,
+      "name": "Wojciech Kamiński",
+      "profile_url": "https://standup.pl/komicy/wojciech-kaminski",
+      "image_url": "https://standup.pl/images/avatars/wojciech-kaminski.png"
+    },
+    {
+      "source_position": 93,
+      "source_page": 11,
+      "name": "Szymon Baraniecki",
+      "profile_url": "https://standup.pl/komicy/szymon-baraniecki",
+      "image_url": "https://standup.pl/images/avatars/szymon-baraniecki.png"
+    },
+    {
+      "source_position": 94,
+      "source_page": 11,
+      "name": "SynMojegoTaty (Bartek Skrobisz)",
+      "profile_url": "https://standup.pl/komicy/synmojegotaty-bartek-skrobisz",
+      "image_url": "/images/comedians/synmojegotaty-bartek-skrobisz.webp"
+    },
+    {
+      "source_position": 95,
+      "source_page": 11,
+      "name": "Comedy Lab",
+      "profile_url": "https://standup.pl/komicy/comedy-lab",
+      "image_url": "/images/comedians/comedy-lab.webp"
+    },
+    {
+      "source_position": 96,
+      "source_page": 11,
+      "name": "Nieporozumienie",
+      "profile_url": "https://standup.pl/komicy/nieporozumienie",
+      "image_url": "https://standup.pl/images/avatars/nieporozumienie.png"
+    },
+    {
+      "source_position": 97,
+      "source_page": 11,
+      "name": "Adam Gajda",
+      "profile_url": "https://standup.pl/komicy/adam-gajda",
+      "image_url": "https://standup.pl/images/avatars/adam-gajda.png"
+    },
+    {
+      "source_position": 98,
+      "source_page": 11,
+      "name": "Mariusz Dąbrowski",
+      "profile_url": "https://standup.pl/komicy/mariusz-dabrowski",
+      "image_url": "https://standup.pl/images/avatars/mariusz-dabrowski.png"
+    },
+    {
+      "source_position": 99,
+      "source_page": 11,
+      "name": "Karol Kopiec",
+      "profile_url": "https://standup.pl/komicy/karol-kopiec",
+      "image_url": "https://standup.pl/images/avatars/karol-kopiec.png"
+    },
+    {
+      "source_position": 100,
+      "source_page": 12,
+      "name": "Marta Lojek",
+      "profile_url": "https://standup.pl/komicy/marta-lojek",
+      "image_url": "https://standup.pl/images/avatars/marta-lojek.png"
+    },
+    {
+      "source_position": 101,
+      "source_page": 12,
+      "name": "Jacek Stramik",
+      "profile_url": "https://standup.pl/komicy/jacek-stramik",
+      "image_url": "https://standup.pl/images/avatars/jacek-stramik.png"
+    },
+    {
+      "source_position": 102,
+      "source_page": 12,
+      "name": "Radek Drożdż",
+      "profile_url": "https://standup.pl/komicy/radek-drozdz",
+      "image_url": "https://standup.pl/images/avatars/radek-drozdz.png"
+    },
+    {
+      "source_position": 103,
+      "source_page": 12,
+      "name": "Czesław Mozil",
+      "profile_url": "https://standup.pl/komicy/czeslaw-mozil",
+      "image_url": "https://standup.pl/images/avatars/czeslaw-mozil.png"
+    },
+    {
+      "source_position": 104,
+      "source_page": 12,
+      "name": "Mateusz Ipkis Dudek",
+      "profile_url": "https://standup.pl/komicy/mateusz-ipkis-dudek",
+      "image_url": "https://standup.pl/images/avatars/mateusz-ipkis-dudek.png"
+    },
+    {
+      "source_position": 105,
+      "source_page": 12,
+      "name": "Maciek Buchwald",
+      "profile_url": "https://standup.pl/komicy/maciek-buchwald",
+      "image_url": "https://standup.pl/images/avatars/maciek-buchwald.png"
+    },
+    {
+      "source_position": 106,
+      "source_page": 12,
+      "name": "Tomek Nowaczyk",
+      "profile_url": "https://standup.pl/komicy/tomek-nowaczyk",
+      "image_url": "https://standup.pl/images/avatars/tomek-nowaczyk.png"
+    },
+    {
+      "source_position": 107,
+      "source_page": 12,
+      "name": "Jacek Noch",
+      "profile_url": "https://standup.pl/komicy/jacek-noch",
+      "image_url": "https://standup.pl/images/avatars/jacek-noch.png"
+    },
+    {
+      "source_position": 108,
+      "source_page": 12,
+      "name": "Krzysztof Sawczuk",
+      "profile_url": "https://standup.pl/komicy/krzysztof-sawczuk",
+      "image_url": "https://standup.pl/images/avatars/krzysztof-sawczuk.png"
+    },
+    {
+      "source_position": 109,
+      "source_page": 13,
+      "name": "Wiedza To Komedia",
+      "profile_url": "https://standup.pl/komicy/wiedza-to-komedia",
+      "image_url": "https://standup.pl/images/avatars/wiedza-to-komedia.png"
+    },
+    {
+      "source_position": 110,
+      "source_page": 13,
+      "name": "Aleksandra Radomska",
+      "profile_url": "https://standup.pl/komicy/aleksandra-radomska",
+      "image_url": "https://standup.pl/images/avatars/aleksandra-radomska.png"
+    },
+    {
+      "source_position": 111,
+      "source_page": 13,
+      "name": "Martyna Podwysocka",
+      "profile_url": "https://standup.pl/komicy/martyna-podwysocka",
+      "image_url": "https://standup.pl/images/avatars/martyna-podwysocka.png"
+    },
+    {
+      "source_position": 112,
+      "source_page": 13,
+      "name": "Tomasz Biskup",
+      "profile_url": "https://standup.pl/komicy/tomasz-biskup",
+      "image_url": "https://standup.pl/images/avatars/tomasz-biskup.png"
+    },
+    {
+      "source_position": 113,
+      "source_page": 13,
+      "name": "Patryk Trela",
+      "profile_url": "https://standup.pl/komicy/patryk-trela",
+      "image_url": "https://standup.pl/images/avatars/patryk-trela.png"
+    },
+    {
+      "source_position": 114,
+      "source_page": 13,
+      "name": "Cezary Piżewski",
+      "profile_url": "https://standup.pl/komicy/cezary-pizewski",
+      "image_url": "https://standup.pl/images/avatars/cezary-pizewski.png"
+    },
+    {
+      "source_position": 115,
+      "source_page": 13,
+      "name": "Pytał Kacper Ruciński",
+      "profile_url": "https://standup.pl/komicy/pytal-kacper-rucinski",
+      "image_url": "https://standup.pl/images/avatars/pytal-kacper-rucinski.png"
+    },
+    {
+      "source_position": 116,
+      "source_page": 13,
+      "name": "Bartek Walos",
+      "profile_url": "https://standup.pl/komicy/bartek-walos",
+      "image_url": "https://standup.pl/images/avatars/bartek-walos.png"
+    },
+    {
+      "source_position": 117,
+      "source_page": 13,
+      "name": "Roast Me",
+      "profile_url": "https://standup.pl/komicy/roast-me",
+      "image_url": "https://standup.pl/images/avatars/roast-me.png"
+    },
+    {
+      "source_position": 118,
+      "source_page": 14,
+      "name": "Kuba Rafalski",
+      "profile_url": "https://standup.pl/komicy/kuba-rafalski",
+      "image_url": "https://standup.pl/images/avatars/kuba-rafalski.png"
+    },
+    {
+      "source_position": 119,
+      "source_page": 14,
+      "name": "Kuba Łaszkiewicz",
+      "profile_url": "https://standup.pl/komicy/kuba-laszkiewicz",
+      "image_url": "https://standup.pl/images/avatars/kuba-laszkiewicz.png"
+    },
+    {
+      "source_position": 120,
+      "source_page": 14,
+      "name": "Paweł Reszela",
+      "profile_url": "https://standup.pl/komicy/pawel-reszela",
+      "image_url": "https://standup.pl/images/avatars/pawel-reszela.png"
+    },
+    {
+      "source_position": 121,
+      "source_page": 14,
+      "name": "Paulina Potocka",
+      "profile_url": "https://standup.pl/komicy/paulina-potocka",
+      "image_url": "https://standup.pl/images/avatars/paulina-potocka.png"
+    },
+    {
+      "source_position": 122,
+      "source_page": 14,
+      "name": "Tomek Skrzypek",
+      "profile_url": "https://standup.pl/komicy/tomek-skrzypek",
+      "image_url": "https://standup.pl/images/avatars/tomek-skrzypek.png"
+    },
+    {
+      "source_position": 123,
+      "source_page": 14,
+      "name": "Maciek Ambicki",
+      "profile_url": "https://standup.pl/komicy/maciek-ambicki",
+      "image_url": "https://standup.pl/images/avatars/maciek-ambicki.png"
+    },
+    {
+      "source_position": 124,
+      "source_page": 14,
+      "name": "Wiktor Sumliński",
+      "profile_url": "https://standup.pl/komicy/wiktor-sumlinski",
+      "image_url": "https://standup.pl/images/avatars/wiktor-sumlinski.png"
+    },
+    {
+      "source_position": 125,
+      "source_page": 14,
+      "name": "Gaweł Feliga",
+      "profile_url": "https://standup.pl/komicy/gawel-feliga",
+      "image_url": "https://standup.pl/images/avatars/gawel-feliga.png"
+    },
+    {
+      "source_position": 126,
+      "source_page": 14,
+      "name": "Strefa Gizy",
+      "profile_url": "https://standup.pl/komicy/strefa-gizy",
+      "image_url": "https://standup.pl/images/avatars/strefa-gizy.png"
+    },
+    {
+      "source_position": 127,
+      "source_page": 15,
+      "name": "Kuba Śliwka",
+      "profile_url": "https://standup.pl/komicy/kuba-sliwka",
+      "image_url": "https://standup.pl/images/avatars/kuba-sliwka.png"
+    },
+    {
+      "source_position": 128,
+      "source_page": 15,
+      "name": "Zbychu Grabowski",
+      "profile_url": "https://standup.pl/komicy/zbychu-grabowski",
+      "image_url": "https://standup.pl/images/avatars/zbychu-grabowski.png"
+    },
+    {
+      "source_position": 129,
+      "source_page": 15,
+      "name": "Tomasz Kwiatkowski",
+      "profile_url": "https://standup.pl/komicy/tomasz-kwiatkowski",
+      "image_url": "https://standup.pl/images/avatars/tomasz-kwiatkowski.png"
+    },
+    {
+      "source_position": 130,
+      "source_page": 15,
+      "name": "Bartek Zajda",
+      "profile_url": "https://standup.pl/komicy/bartek-zajda",
+      "image_url": "https://standup.pl/images/avatars/bartek-zajda.png"
+    },
+    {
+      "source_position": 131,
+      "source_page": 15,
+      "name": "Marta Górniak",
+      "profile_url": "https://standup.pl/komicy/marta-gorniak",
+      "image_url": "/images/comedians/marta-gorniak.webp"
+    },
+    {
+      "source_position": 132,
+      "source_page": 15,
+      "name": "Arek Cyktor",
+      "profile_url": "https://standup.pl/komicy/arek-cyktor",
+      "image_url": "https://standup.pl/images/avatars/arek-cyktor.png"
+    },
+    {
+      "source_position": 133,
+      "source_page": 15,
+      "name": "Mariusz Kałamaga",
+      "profile_url": "https://standup.pl/komicy/mariusz-kalamaga",
+      "image_url": "https://standup.pl/images/avatars/mariusz-kalamaga.png"
+    },
+    {
+      "source_position": 134,
+      "source_page": 15,
+      "name": "Patryk Czebańczuk",
+      "profile_url": "https://standup.pl/komicy/patryk-czebanczuk",
+      "image_url": "https://standup.pl/images/avatars/patryk-czebanczuk.png"
+    },
+    {
+      "source_position": 135,
+      "source_page": 15,
+      "name": "Michał Juszczak",
+      "profile_url": "https://standup.pl/komicy/michal-juszczak",
+      "image_url": "https://standup.pl/images/avatars/michal-juszczak.png"
+    }
+  ]
+}

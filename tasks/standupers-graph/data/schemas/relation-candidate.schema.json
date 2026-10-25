@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "relation-candidate.schema.json",
+  "title": "Standupers graph relation candidate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "pair",
+    "relation_type",
+    "status",
+    "support_evidence_ids",
+    "contradictory_evidence_ids",
+    "independent_source_count",
+    "independent_fan_count",
+    "score",
+    "confidence",
+    "scorer_version",
+    "explanation",
+    "updated_at"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "id": {"type": "string", "pattern": "^rel_[A-Za-z0-9_-]+$"},
+    "pair": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "relation_type": {"enum": ["fan_overlap", "style_similarity"]},
+    "status": {"enum": ["candidate", "accepted", "uncertain", "rejected"]},
+    "support_evidence_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^ev_[A-Za-z0-9_-]+$"}
+    },
+    "contradictory_evidence_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^ev_[A-Za-z0-9_-]+$"}
+    },
+    "independent_source_count": {"type": "integer", "minimum": 0},
+    "independent_fan_count": {"type": ["integer", "null"], "minimum": 0},
+    "score": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "scorer_version": {"type": ["string", "null"]},
+    "explanation": {"type": "string"},
+    "updated_at": {"type": "string", "format": "date-time"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"status": {"const": "accepted"}}},
+      "then": {
+        "properties": {
+          "support_evidence_ids": {"minItems": 1},
+          "independent_source_count": {"minimum": 1},
+          "score": {"type": "number", "minimum": 0, "maximum": 1},
+          "scorer_version": {"type": "string", "minLength": 1},
+          "explanation": {"minLength": 1}
+        }
+      }
+    }
+  ]
+}
