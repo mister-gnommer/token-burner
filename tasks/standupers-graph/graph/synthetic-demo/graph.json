@@ -2,7 +2,7 @@
   "schema_version": 1,
   "synthetic": true,
   "scorer_version": "observed-coendorsement-v1",
-  "updated_at": "2026-10-30T20:36:12Z",
+  "updated_at": "2026-10-30T20:45:29Z",
   "input_manifests": [
     "tasks/standupers-graph/fixtures/synthetic-graph/manifest.json"
   ],
@@ -16,27 +16,57 @@
     {
       "id": "amet",
       "name": "Amet",
-      "observed_fans": 1
+      "observed_fans": 1,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": null,
+        "status": "placeholder",
+        "reason": "no profile image"
+      }
     },
     {
       "id": "dolor",
       "name": "Dolor",
-      "observed_fans": 2
+      "observed_fans": 2,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": null,
+        "status": "placeholder",
+        "reason": "no profile image"
+      }
     },
     {
       "id": "ipsum",
       "name": "Ipsum",
-      "observed_fans": 4
+      "observed_fans": 4,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": null,
+        "status": "placeholder",
+        "reason": "no profile image"
+      }
     },
     {
       "id": "isolated",
       "name": "Isolated",
-      "observed_fans": 0
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": null,
+        "status": "placeholder",
+        "reason": "no profile image"
+      }
     },
     {
       "id": "lorem",
       "name": "Lorem",
-      "observed_fans": 2
+      "observed_fans": 2,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": null,
+        "status": "placeholder",
+        "reason": "no profile image"
+      }
     }
   ],
   "relations": [
@@ -59,7 +89,7 @@
       "confidence": 0,
       "scorer_version": "observed-coendorsement-v1",
       "explanation": "0 source-scoped fans explicitly co-endorse this pair; 3 observed fans endorse either performer. 1 opposing preference records. Insufficient independent support or opposing preferences; no visible edge.",
-      "updated_at": "2026-10-30T20:36:12Z"
+      "updated_at": "2026-10-30T20:45:29Z"
     },
     {
       "schema_version": 1,
@@ -81,7 +111,7 @@
       "confidence": 0.9,
       "scorer_version": "observed-coendorsement-v1",
       "explanation": "2 source-scoped fans explicitly co-endorse this pair; 4 observed fans endorse either performer. 0 opposing preference records. Provisional observed overlap.",
-      "updated_at": "2026-10-30T20:36:12Z"
+      "updated_at": "2026-10-30T20:45:29Z"
     },
     {
       "schema_version": 1,
@@ -104,7 +134,7 @@
       "confidence": 0.9,
       "scorer_version": "observed-coendorsement-v1",
       "explanation": "2 source-scoped fans explicitly co-endorse this pair; 4 observed fans endorse either performer. 0 opposing preference records. Provisional observed overlap.",
-      "updated_at": "2026-10-30T20:36:12Z"
+      "updated_at": "2026-10-30T20:45:29Z"
     }
   ],
   "deferred_evidence": [],

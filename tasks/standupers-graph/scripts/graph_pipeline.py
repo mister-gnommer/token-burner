@@ -4,6 +4,7 @@ import json
 import re
 import subprocess
 import sys
+import textwrap
 from collections import defaultdict
 from datetime import datetime, timezone
 from itertools import combinations
@@ -12,6 +13,7 @@ from pathlib import Path
 import jsonschema
 
 from evidence_pipeline import SCHEMA_DIR, TASK_ROOT, author_key, load_records
+from avatars import prepare_avatar
 
 SCORER_VERSION = "observed-coendorsement-v1"
 FAN_CLASSES = {"same_user_rating_overlap", "same_user_coendorsement", "fan_recommendation", "fan_comparison"}
@@ -146,14 +148,23 @@ def aggregate(performers, evidence, updated_at):
 def d2_source(graph, max_degree=3):
     quote = lambda value: json.dumps(value, ensure_ascii=False)
     nodes = {node["id"]: f"n{index}" for index, node in enumerate(graph["nodes"])}
+    visible = set(graph.get("visible_node_ids", nodes))
     label = "SYNTHETIC FIXTURE — no real fan findings" if graph["synthetic"] else "Provisional fan-preference evidence"
-    legend = label + "\nEdge width = observed overlap; labels show fans / confidence.\nConfidence is a model judgment, not a probability.\nLayout distance has no similarity meaning. Missing edges mean insufficient evidence."
+    legend = label + "\nEdge width = observed overlap; labels show fans / confidence.\nCounts include scoring-eligible statements only.\nConfidence is a model judgment, not a probability.\nLayout distance has no similarity meaning. Missing edges mean insufficient evidence."
     lines = [f"diagram: {quote(legend)} {{", "direction: down"]
+    if visible and not any(r["status"] == "accepted" and set(r["pair"]) <= visible for r in graph["relations"]):
+        lines.append(f"grid-columns: {min(5, len(visible))}")
     for node in graph["nodes"]:
-        lines.extend([f'{nodes[node["id"]]}: {{', f'  label: {quote(node["name"] + chr(10) + str(node["observed_fans"]) + " observed fans")}', '}'])
+        if node["id"] not in visible:
+            continue
+        name = textwrap.fill(node["name"], width=20, break_long_words=False, break_on_hyphens=False)
+        lines.extend([f'{nodes[node["id"]]}: {{', f'  label: {quote(name + chr(10) + str(node["observed_fans"]) + " scored fans")}'])
+        if node.get("avatar"):
+            lines.extend([f'  icon: {quote("./" + node["avatar"]["path"])}', '  shape: image', '  label.near: outside-bottom-center', '  width: 128', '  height: 128'])
+        lines.append('}')
     degrees = defaultdict(int)
     for relation in sorted(graph["relations"], key=lambda r: (-r["score"], r["id"])):
-        if relation["status"] != "accepted" or any(degrees[pid] >= max_degree for pid in relation["pair"]):
+        if relation["status"] != "accepted" or not set(relation["pair"]) <= visible or any(degrees[pid] >= max_degree for pid in relation["pair"]):
             continue
         a, b = relation["pair"]
         for pid in (a, b):
@@ -173,6 +184,7 @@ def main():
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--synthetic", action="store_true")
     parser.add_argument("--render", action="store_true")
+    parser.add_argument("--batch-view", type=int, choices=range(1, 11), help="Show batches up to this number plus supported neighbors; retain all nodes in JSON")
     args = parser.parse_args()
     try:
         ranking = json.loads(args.ranking.read_text(encoding="utf-8"))
@@ -181,10 +193,14 @@ def main():
         evidence, ignored = load_evidence(args.manifest, args.data_root, args.synthetic)
         now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
         relations, deferred, coverage = aggregate(ranking["performers"], evidence, now)
+        visible = {p["id"] for p in ranking["performers"] if args.batch_view is None or p.get("batch", 1) <= args.batch_view}
+        visible.update(pid for relation in relations if relation["status"] == "accepted" for pid in relation["pair"])
         graph = {"schema_version": 1, "synthetic": args.synthetic, "scorer_version": SCORER_VERSION, "updated_at": now,
                  "input_manifests": [str(path) for path in args.manifest],
                  "renderer": {"name": "d2", "layout": "elk", "sketch": True, "max_degree": 3},
-                 "nodes": [{"id": p["id"], "name": p["name"], "observed_fans": coverage[p["id"]]} for p in sorted(ranking["performers"], key=lambda p: p["id"])],
+                 "visible_node_ids": sorted(visible),
+                 "nodes": [{"id": p["id"], "name": p["name"], "observed_fans": coverage[p["id"]],
+                            "avatar": prepare_avatar(p, args.output, fetch=args.render and not args.synthetic and p["id"] in visible)} for p in sorted(ranking["performers"], key=lambda p: p["id"])],
                  "relations": relations, "deferred_evidence": deferred, "ignored_runs": ignored,
                  "evidence_sources": {r["id"]: r["source"]["url"] for r in evidence}}
         args.output.mkdir(parents=True, exist_ok=True)

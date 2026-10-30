@@ -1,0 +1,74 @@
+{
+  "surprises": [
+    "One Gazeta author/post was collected by A and B; retained one canonical candidate. Emoji differs between representations; original worker files remain saved.",
+    "Source publication timestamps had unsupported timezone precision; canonical records keep only the displayed date.",
+    "Canonicalized site labels so cross-worker fans on the same platform share the same source-scoped key.",
+    "A Reddit collector assigned a parent comment to the author of its reply. Parent source audit corrected it before final extraction/verification."
+  ],
+  "run_id": "20261030-batch01-pilot",
+  "input_count": 16,
+  "canonical_count": 15,
+  "changes": [
+    {
+      "id": "src_b01a_001",
+      "action": "Canonicalized site label to source hostname before deriving key",
+      "original_site": "Forum Gazeta.pl",
+      "site": "forum.gazeta.pl"
+    },
+    {
+      "id": "src_b01a_002",
+      "action": "Use src_b01b_003 instead: the web text extractor omits shrug emoji; B exactly matches the opened parent-audit representation. Original A preserved."
+    },
+    {
+      "id": "src_b01a_003",
+      "action": "Canonicalized site label to source hostname before deriving key",
+      "original_site": "Forum Gazeta.pl",
+      "site": "forum.gazeta.pl"
+    },
+    {
+      "id": "src_b01a_004",
+      "action": "Canonicalized site label to source hostname before deriving key",
+      "original_site": "Reddit r/poland",
+      "site": "reddit.com"
+    },
+    {
+      "id": "src_b01c_001",
+      "action": "Canonicalized site label to source hostname before deriving key",
+      "original_site": "Filmweb",
+      "site": "filmweb.pl"
+    },
+    {
+      "id": "src_b01c_002",
+      "action": "Canonicalized site label to source hostname before deriving key",
+      "original_site": "Reddit (r/Polska)",
+      "site": "reddit.com"
+    },
+    {
+      "id": "src_b01c_003",
+      "action": "Canonicalized site label to source hostname before deriving key",
+      "original_site": "Reddit (r/Polska)",
+      "site": "reddit.com"
+    },
+    {
+      "id": "src_b01c_004",
+      "action": "Canonicalized site label to source hostname before deriving key",
+      "original_site": "Reddit (r/PolskaNaLuzie)",
+      "site": "reddit.com"
+    },
+    {
+      "id": "src_b01c_005",
+      "action": "Canonicalized site label to source hostname before deriving key",
+      "original_site": "Reddit (r/PolskaNaLuzie)",
+      "site": "reddit.com"
+    },
+    {
+      "id": "src_b01c_002",
+      "action": "Source-page parent audit corrected author DrMartens to thefafal; DrMartens authored the opposing reply beneath this statement. Canonical author key recomputed; extractor notified."
+    }
+  ],
+  "collection_reports": [
+    "reports/runs/20261030-batch01-pilot.collection-a.json",
+    "reports/runs/20261030-batch01-pilot.collection-b.json",
+    "reports/runs/20261030-batch01-pilot.collection-c.json"
+  ]
+}

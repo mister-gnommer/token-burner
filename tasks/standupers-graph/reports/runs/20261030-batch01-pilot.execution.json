@@ -1,0 +1,75 @@
+{
+  "run_id": "20261030-batch01-pilot",
+  "collectors": {
+    "a": {
+      "task": "/root/pilot_collect_a",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "options": {
+        "reasoningEffort": "medium"
+      },
+      "status": "completed",
+      "focal_ids": [
+        "daniel-midas",
+        "mama-na-obrotach",
+        "magda-kubicka",
+        "piotr-jelen"
+      ]
+    },
+    "b": {
+      "task": "/root/pilot_collect_b",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "options": {
+        "reasoningEffort": "medium"
+      },
+      "status": "completed",
+      "focal_ids": [
+        "lukasz-lotek-lodkowski",
+        "rafal-paczes",
+        "mateusz-socha"
+      ]
+    },
+    "c": {
+      "task": "/root/pilot_collect_c",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "options": {
+        "reasoningEffort": "medium"
+      },
+      "status": "completed",
+      "focal_ids": [
+        "olka-szczesniak",
+        "cezary-pazura",
+        "abelard-giza"
+      ]
+    }
+  },
+  "extractor": {
+    "task": "/root/pilot_extract",
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "options": {
+      "reasoningEffort": "medium"
+    },
+    "status": "completed"
+  },
+  "verifier": {
+    "taskId": "node:delegated-task:command%3Amcp%3Ac406db12-2114-47df-817d-ace603b42541%3Adelegate-task%3A20261030-batch01-verifier-round1",
+    "childThreadId": "thread:delegated-task:command%3Amcp%3Ac406db12-2114-47df-817d-ace603b42541%3Adelegate-task%3A20261030-batch01-verifier-round1",
+    "provider": "claudeAgent",
+    "model": "claude-haiku-5-5",
+    "options": {
+      "effort": "medium"
+    },
+    "status": "completed"
+  },
+  "prompt_sha256": {
+    "collect-fan-evidence-v2.md": "aee3bf3e1c032e3ddf274aa3655ecf9faa8142dbd267d42911a889e9e98d507c",
+    "extract-evidence-v2.md": "399931e7f2e9676419aa4aa686cdcef2bfc22efdd75b68faa2a1d00a9cf9ba86",
+    "verify-evidence-v2.md": "8c0e69ed3f1a39bfd099da5478b708e9220eb759d5a388ddf8432d5fb7559562",
+    "extraction-decisions-v1.md": "17734b3338942bc9a7e129a55a9cf31aa39088b227af159f24a12118d986f62b"
+  },
+  "collection_budget": "At most 12 search queries, 12 opened source pages, and 12 candidates per worker; report honest zero-yield coverage. No new batch.",
+  "completed_at": "2026-10-30T21:41:43Z"
+}

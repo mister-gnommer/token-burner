@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "nodes": [
+    {
+      "id": "daniel-midas",
+      "name": "Daniel Midas",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-1f4eaca4dbc32f3dc590.png",
+        "source_url": "https://standup.pl/images/avatars/daniel-midas.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-30T20:44:30Z"
+      }
+    },
+    {
+      "id": "lukasz-lotek-lodkowski",
+      "name": "Łukasz Lotek Lodkowski",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-18e17b451b8f0010d58f.png",
+        "source_url": "https://standup.pl/images/avatars/lukasz-lotek-lodkowski.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-30T20:44:30Z"
+      }
+    },
+    {
+      "id": "missing-photo",
+      "name": "Missing photo",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": null,
+        "status": "placeholder",
+        "reason": "no profile image"
+      }
+    }
+  ],
+  "relations": [],
+  "evidence_sources": {},
+  "notes": "Appearance-only preview. Real saved profile photos, no fan evidence, no performer batch."
+}

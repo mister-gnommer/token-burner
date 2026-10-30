@@ -17,7 +17,15 @@ All relation candidates, supporting IDs, contradictions, deferred records, sourc
 
 `graph.d2` is editable; `graph.svg` retains evidence tooltips; `graph.png` is the visual-check preview. Stable node IDs/order make generation repeatable, but D2 layout can move nodes between batches. Edge width represents score and labels show support/confidence. Physical distance does not encode similarity.
 
+Nodes show saved profile avatars where available, with names below the image. On `--render`, HTTPS image URLs (including links relative to a performer's profile) are downloaded with a five-second timeout, decoded through Pillow, and normalized to 160×160 PNGs in the output's `assets/` directory. Cached photos work offline; missing, invalid, oversized, or unreachable images use the local laughing-person SVG. Graph JSON records source URL, cache path, status, and failure reason or retrieval time. Copy `assets/` with editable D2 sources; rendered SVG embeds the images.
+
+Without `--render`, existing cached photos are used and uncached photos fall back without network access. Synthetic runs never download photos. `avatar-preview/` separately demonstrates two saved standup.pl profile photos and the fallback, with no preference evidence or batch processing. Pillow is pinned in `requirements.txt`.
+
 The renderer greedily displays highest-scoring accepted edges with at most three edges per node, retaining all candidates in JSON. Isolated nodes remain visible. D2 does not supply an interactive recommendation interface; source excerpts remain in the cited input artifacts.
+
+For incremental previews, `--batch-view 1` shows the first batch plus any supported neighbors, including focal performers without edges. Later values include all batches up to that number. All 100 nodes remain in JSON; photos are fetched only for visible nodes. Omit the flag for the full diagram.
+
+When no accepted edges exist, the visible performers use a five-column grid. Node labels say "scored fans" to distinguish scoring-eligible positive observations from all collected opinions. The first pilot (`batch-01/`) has no accepted edges; its 16 uncertain relation candidates remain in JSON.
 
 ## Synthetic demo
 
@@ -33,4 +41,4 @@ PYTHONDONTWRITEBYTECODE=1 python3 tasks/standupers-graph/scripts/graph_pipeline.
   --output tasks/standupers-graph/graph/synthetic-demo --synthetic --render
 ```
 
-For production, omit `--synthetic`, `--ranking`, and `--data-root`; pass each completed batch manifest with `--manifest` and choose an output directory. `--render` uses installed `d2 --sketch --layout elk`, then `rsvg-convert -z 2`; no browser download or added Python dependency is required. Without `--render`, only JSON and D2 sources are produced.
+For production, omit `--synthetic`, `--ranking`, and `--data-root`; pass each completed batch manifest with `--manifest` and choose an output directory. `--render` uses installed `d2 --sketch --layout elk`, then `rsvg-convert -z 2`; no browser download is required. Without `--render`, JSON, D2 source, and local avatar assets are produced.

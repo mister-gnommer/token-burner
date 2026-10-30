@@ -94,6 +94,14 @@ class GraphTests(unittest.TestCase):
         assert "Layout distance has no similarity meaning" in source
         assert "tooltip:" in source
 
+    def test_batch_view_retains_selected_isolates_without_implicit_hidden_nodes(self):
+        relations, _, coverage = aggregate(PERFORMERS, RECORDS, UPDATED_AT)
+        graph = {"synthetic": True, "nodes": [{**p, "observed_fans": coverage[p["id"]]} for p in PERFORMERS], "relations": relations, "evidence_sources": {r["id"]: r["source"]["url"] for r in RECORDS}, "visible_node_ids": ["isolated", "ipsum", "lorem"]}
+        source = d2_source(graph)
+        assert "Isolated" in source and "Dolor" not in source and "Amet" not in source
+        assert source.count(" -- ") == 1
+        assert len(graph["nodes"]) == 5
+
 
 if __name__ == "__main__":
     unittest.main()

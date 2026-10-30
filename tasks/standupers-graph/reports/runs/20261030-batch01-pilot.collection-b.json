@@ -1,0 +1,201 @@
+{
+  "Surprises": [
+    "The strongest mixed evaluations came from a 2023 Gazeta.pl forum thread and a 2025 Wykop discussion, giving separate contexts for all three focal performers.",
+    "One Reddit comment author was deleted in the rendered public page; author_hint is null and the standalone multi-performer statement remains attributable only to its thread locator.",
+    "The collection did not reuse any Gry-Online calibration posts. Its other visible comments were unnecessary for coverage."
+  ],
+  "run_id": "20261030-batch01-pilot",
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v2"
+  },
+  "budget": {
+    "search_queries_max": 12,
+    "search_queries_used": 8,
+    "opened_pages_max": 12,
+    "opened_pages_successful": 5,
+    "opened_pages_failed": 1,
+    "candidates_max": 12,
+    "candidates_written": 7
+  },
+  "coverage": {
+    "lukasz-lotek-lodkowski": {
+      "independent_contexts": 6,
+      "candidate_ids": [
+        "src_b01b_001",
+        "src_b01b_002",
+        "src_b01b_003",
+        "src_b01b_004",
+        "src_b01b_006",
+        "src_b01b_007"
+      ],
+      "queries_attempted": [
+        "site:wykop.pl Lotek Pacześ stand up najlepszy",
+        "Lotek Pacześ Socha forum opinie stand up",
+        "\"Lotek\" \"Socha\" stand-up opinie",
+        "\"Pacześ\" \"Socha\" stand-up forum",
+        "site:reddit.com/r/Polska stand-up Lotek Pacześ",
+        "forum stand up komicy Lotek Socha Pacześ",
+        "\"Mateusz Socha\" \"Lotek\" forum stand-up lubię",
+        "\"Socha\" \"Pacześ\" \"Lotek\" opinie forum stand-up"
+      ]
+    },
+    "rafal-paczes": {
+      "independent_contexts": 7,
+      "candidate_ids": [
+        "src_b01b_001",
+        "src_b01b_002",
+        "src_b01b_003",
+        "src_b01b_004",
+        "src_b01b_005",
+        "src_b01b_006",
+        "src_b01b_007"
+      ],
+      "queries_attempted": [
+        "site:wykop.pl Lotek Pacześ stand up najlepszy",
+        "Lotek Pacześ Socha forum opinie stand up",
+        "\"Lotek\" \"Socha\" stand-up opinie",
+        "\"Pacześ\" \"Socha\" stand-up forum",
+        "site:reddit.com/r/Polska stand-up Lotek Pacześ",
+        "forum stand up komicy Lotek Socha Pacześ",
+        "\"Mateusz Socha\" \"Lotek\" forum stand-up lubię",
+        "\"Socha\" \"Pacześ\" \"Lotek\" opinie forum stand-up"
+      ]
+    },
+    "mateusz-socha": {
+      "independent_contexts": 6,
+      "candidate_ids": [
+        "src_b01b_002",
+        "src_b01b_003",
+        "src_b01b_004",
+        "src_b01b_005",
+        "src_b01b_006",
+        "src_b01b_007"
+      ],
+      "queries_attempted": [
+        "Lotek Pacześ Socha forum opinie stand up",
+        "\"Lotek\" \"Socha\" stand-up opinie",
+        "\"Pacześ\" \"Socha\" stand-up forum",
+        "forum stand up komicy Lotek Socha Pacześ",
+        "\"Mateusz Socha\" \"Lotek\" forum stand-up lubię",
+        "\"Socha\" \"Pacześ\" \"Lotek\" opinie forum stand-up"
+      ]
+    }
+  },
+  "sources_opened": [
+    {
+      "url": "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169",
+      "site": "gry-online.pl",
+      "opened": true,
+      "relevant_post_locators": [
+        "thread post 16 / Qverty; excluded because calibration material",
+        "thread post 16.1 / Megera_; excluded because calibration material"
+      ],
+      "context_check": "The entire rendered thread was inspected around these posts. Both are excluded; no Gry-Online material was collected."
+    },
+    {
+      "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+      "site": "forum.gazeta.pl",
+      "opened": true,
+      "relevant_post_locators": [
+        "post by segregatorwpaski, 2023-11-02 08:12",
+        "post by princy-mincy, 2023-11-02 10:25",
+        "post by katarrynka, 2023-11-02 07:03"
+      ],
+      "context_check": "Each full author post was read; excerpts preserve all relevant named performers and the author's surrounding evaluation and caveats. Replies are not merged."
+    },
+    {
+      "url": "https://wykop.pl/wpis/40161729/najlepsi-polscy-standuperzy-wg-was-standup",
+      "site": "wykop.pl",
+      "opened": true,
+      "relevant_post_locators": [
+        "comment by wsciekly_klapek_zawadiaka, 2019-04-02 09:45:29"
+      ],
+      "context_check": "Full comment inspected; not selected because it was unnecessary for focal coverage."
+    },
+    {
+      "url": "https://www.reddit.com/r/Polska/comments/105mykf/stand_up_rekomendacje/",
+      "site": "reddit.com",
+      "opened": true,
+      "relevant_post_locators": [
+        "comment by NoUnderstanding8721, rendered around lines 359-365",
+        "comment by deleted author, rendered around lines 367-372"
+      ],
+      "context_check": "Each candidate is a standalone top-level comment listing/evaluating performers; excerpts preserve the full comment. Other users' replies were excluded."
+    },
+    {
+      "url": "https://wykop.pl/link/7849575/prokuratoura-czyli-jak-rafal-paczes-sprzedal-nam-bilety-do-rynsztoku",
+      "site": "wykop.pl",
+      "opened": true,
+      "relevant_post_locators": [
+        "comment by vidic15, 2025-12-09 17:57:09 (page lines 99-111)",
+        "comment by Kismeth, 2025-12-09 17:55:06 (page lines 324-337)"
+      ],
+      "context_check": "Both comments were read in full. vidic15's complete relevant performer comparison is retained. Kismeth's one-sentence comparison is self-contained."
+    },
+    {
+      "url": "https://slizgawka.eu/viewtopic.php?p=163897&sid=a370fc3af76d9c24c7c29301d44a185a",
+      "site": "slizgawka.eu",
+      "opened": false,
+      "reason": "The page fetch returned cache miss; search-result excerpt was not used as evidence."
+    }
+  ],
+  "queries_attempted": [
+    "site:wykop.pl Lotek Pacześ stand up najlepszy",
+    "Lotek Pacześ Socha forum opinie stand up",
+    "\"Lotek\" \"Socha\" stand-up opinie",
+    "\"Pacześ\" \"Socha\" stand-up forum",
+    "site:reddit.com/r/Polska stand-up Lotek Pacześ",
+    "forum stand up komicy Lotek Socha Pacześ",
+    "\"Mateusz Socha\" \"Lotek\" forum stand-up lubię",
+    "\"Socha\" \"Pacześ\" \"Lotek\" opinie forum stand-up"
+  ],
+  "rejected_sources": [
+    {
+      "source": "Influworld ranking; Standupedia audience ranking; Wrot guide; Standupedia interview/article; academic and local-government documents; event sales pages",
+      "reason": "Editorial, promotional, institutional, or aggregated material rather than independently authored fan statements; snippets or ratings did not meet the requested post-level context standard."
+    },
+    {
+      "source": "Search snippets from Reddit, Hejto, and Wykop not opened and verified",
+      "reason": "Unopened snippets cannot establish complete author context or exact wording."
+    },
+    {
+      "source": "Slizgawka forum result for Mateusz Socha after Pacześ",
+      "reason": "Could not open live source (cache miss); snippet rejected."
+    },
+    {
+      "source": "Gry-Online calibration posts 16 and 16.1",
+      "reason": "Explicitly excluded by task instructions; no candidate emitted."
+    }
+  ],
+  "proposed_aliases": [
+    {
+      "alias": "Lutek",
+      "canonical_performer_id": "lukasz-lotek-lodkowski",
+      "source": "src_b01b_001",
+      "basis": "Clear inflected nickname used in a sentence listing comedians; attribution is source-local."
+    },
+    {
+      "alias": "Rafala Paczesia",
+      "canonical_performer_id": "rafal-paczes",
+      "source": "src_b01b_002",
+      "basis": "Unaccented Polish inflection in direct list of stand-uppers."
+    },
+    {
+      "alias": "Lotka",
+      "canonical_performer_id": "lukasz-lotek-lodkowski",
+      "source": "src_b01b_002",
+      "basis": "Nickname inflection in direct list of stand-uppers."
+    },
+    {
+      "alias": "Paczesia",
+      "canonical_performer_id": "rafal-paczes",
+      "source": "src_b01b_003",
+      "basis": "Polish genitive spelling used in the same comment as the canonical Mateusz Socha name."
+    }
+  ],
+  "coverage_gaps": [
+    "The target of at least two distinct fan contexts was met for each focal performer. This is a bounded, query-limited pilot, not an exhaustive source search."
+  ]
+}

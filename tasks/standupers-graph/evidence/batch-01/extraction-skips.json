@@ -1,0 +1,26 @@
+{
+  "surprises": [
+    "The supplied excerpt for src_b01a_001 is only a name fragment; its parent recommendation request belongs to another author and cannot establish endorsement.",
+    "src_b01b_006 is a bare-seeming performer list, but its own “To tak na szybko” and taste-dependent suitability statement in a recommendation thread support fan_recommendation treatment; individual sentiment remains a conservative positive recommendation.",
+    "“Jakub Dąbrowski” in src_b01a_004/src_b01b_006 does not match a frozen performer name or alias; retained as unresolved rather than mapped to Kuba Dąbrowski."
+  ],
+  "skipped": [
+    {
+      "candidate_id": "src_b01a_001",
+      "reason": "Excerpt is a context-dependent name fragment with no explicit evaluation or recommendation in this author’s words; the parent’s request cannot be attributed to this author."
+    },
+    {
+      "candidate_id": "src_b01a_003",
+      "reason": "Evaluates Daniel Midas and his material alone; no second frozen performer is mentioned, so it cannot support a performer-to-performer evidence record."
+    },
+    {
+      "candidate_id": "src_b01c_004",
+      "reason": "Bare list of names with no evaluation or explicit recommendation in the author excerpt; the thread title is not the author’s endorsement."
+    }
+  ],
+  "counts": {
+    "input_candidates": 15,
+    "emitted": 12,
+    "skipped": 3
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "run_id": "20261030-batch01-pilot",
+  "focal_performers": [
+    {
+      "rank": 1,
+      "performer_id": "daniel-midas",
+      "name": "Daniel Midas",
+      "candidate_ids": [
+        "src_b01a_001",
+        "src_b01a_003",
+        "src_b01a_004",
+        "src_b01b_003",
+        "src_b01b_004",
+        "src_b01b_006",
+        "src_b01b_007"
+      ],
+      "candidate_count": 7,
+      "reviewed_evidence_ids": [
+        "ev_b01a_004",
+        "ev_b01b_003",
+        "ev_b01b_004",
+        "ev_b01b_006",
+        "ev_b01b_007"
+      ],
+      "accepted_evidence_records": 4,
+      "scoring_eligible_positive_fans": 2,
+      "visible_accepted_edges": 0,
+      "photo_status": "photo"
+    },
+    {
+      "rank": 2,
+      "performer_id": "mama-na-obrotach",
+      "name": "Mama Na Obrotach (Klaudia Klimczyk)",
+      "candidate_ids": [],
+      "candidate_count": 0,
+      "reviewed_evidence_ids": [],
+      "accepted_evidence_records": 0,
+      "scoring_eligible_positive_fans": 0,
+      "visible_accepted_edges": 0,
+      "photo_status": "photo"
+    },
+    {
+      "rank": 3,
+      "performer_id": "lukasz-lotek-lodkowski",
+      "name": "Łukasz Lotek Lodkowski",
+      "candidate_ids": [
+        "src_b01a_004",
+        "src_b01b_001",
+        "src_b01b_002",
+        "src_b01b_003",
+        "src_b01b_004",
+        "src_b01b_006",
+        "src_b01b_007",
+        "src_b01c_005"
+      ],
+      "candidate_count": 8,
+      "reviewed_evidence_ids": [
+        "ev_b01a_004",
+        "ev_b01b_001",
+        "ev_b01b_002",
+        "ev_b01b_003",
+        "ev_b01b_004",
+        "ev_b01b_006",
+        "ev_b01b_007",
+        "ev_b01c_005"
+      ],
+      "accepted_evidence_records": 6,
+      "scoring_eligible_positive_fans": 2,
+      "visible_accepted_edges": 0,
+      "photo_status": "photo"
+    },
+    {
+      "rank": 4,
+      "performer_id": "rafal-paczes",
+      "name": "Rafał Pacześ",
+      "candidate_ids": [
+        "src_b01b_001",
+        "src_b01b_002",
+        "src_b01b_003",
+        "src_b01b_004",
+        "src_b01b_005",
+        "src_b01b_006",
+        "src_b01b_007"
+      ],
+      "candidate_count": 7,
+      "reviewed_evidence_ids": [
+        "ev_b01b_001",
+        "ev_b01b_002",
+        "ev_b01b_003",
+        "ev_b01b_004",
+        "ev_b01b_005",
+        "ev_b01b_006",
+        "ev_b01b_007"
+      ],
+      "accepted_evidence_records": 4,
+      "scoring_eligible_positive_fans": 1,
+      "visible_accepted_edges": 0,
+      "photo_status": "photo"
+    },
+    {
+      "rank": 5,
+      "performer_id": "magda-kubicka",
+      "name": "Magda Kubicka",
+      "candidate_ids": [
+        "src_b01a_001",
+        "src_b01a_004",
+        "src_b01b_006",
+        "src_b01c_004"
+      ],
+      "candidate_count": 4,
+      "reviewed_evidence_ids": [
+        "ev_b01a_004",
+        "ev_b01b_006"
+      ],
+      "accepted_evidence_records": 1,
+      "scoring_eligible_positive_fans": 1,
+      "visible_accepted_edges": 0,
+      "photo_status": "photo"
+    },
+    {
+      "rank": 6,
+      "performer_id": "mateusz-socha",
+      "name": "Mateusz Socha",
+      "candidate_ids": [
+        "src_b01a_004",
+        "src_b01b_002",
+        "src_b01b_003",
+        "src_b01b_004",
+        "src_b01b_005",
+        "src_b01b_006"
+      ],
+      "candidate_count": 6,
+      "reviewed_evidence_ids": [
+        "ev_b01a_004",
+        "ev_b01b_002",
+        "ev_b01b_003",
+        "ev_b01b_004",
+        "ev_b01b_005",
+        "ev_b01b_006"
+      ],
+      "accepted_evidence_records": 4,
+      "scoring_eligible_positive_fans": 3,
+      "visible_accepted_edges": 0,
+      "photo_status": "photo"
+    },
+    {
+      "rank": 7,
+      "performer_id": "olka-szczesniak",
+      "name": "Olka Szczęśniak",
+      "candidate_ids": [
+        "src_b01a_004",
+        "src_b01c_002",
+        "src_b01c_004"
+      ],
+      "candidate_count": 3,
+      "reviewed_evidence_ids": [
+        "ev_b01a_004",
+        "ev_b01c_002"
+      ],
+      "accepted_evidence_records": 2,
+      "scoring_eligible_positive_fans": 1,
+      "visible_accepted_edges": 0,
+      "photo_status": "photo"
+    },
+    {
+      "rank": 8,
+      "performer_id": "cezary-pazura",
+      "name": "Cezary Pazura",
+      "candidate_ids": [
+        "src_b01c_001"
+      ],
+      "candidate_count": 1,
+      "reviewed_evidence_ids": [
+        "ev_b01c_001"
+      ],
+      "accepted_evidence_records": 1,
+      "scoring_eligible_positive_fans": 1,
+      "visible_accepted_edges": 0,
+      "photo_status": "photo"
+    },
+    {
+      "rank": 9,
+      "performer_id": "piotr-jelen",
+      "name": "Piotr Jeleń",
+      "candidate_ids": [],
+      "candidate_count": 0,
+      "reviewed_evidence_ids": [],
+      "accepted_evidence_records": 0,
+      "scoring_eligible_positive_fans": 0,
+      "visible_accepted_edges": 0,
+      "photo_status": "photo"
+    },
+    {
+      "rank": 10,
+      "performer_id": "abelard-giza",
+      "name": "Abelard Giza",
+      "candidate_ids": [
+        "src_b01b_003",
+        "src_b01c_001",
+        "src_b01c_003",
+        "src_b01c_005"
+      ],
+      "candidate_count": 4,
+      "reviewed_evidence_ids": [
+        "ev_b01b_003",
+        "ev_b01c_001",
+        "ev_b01c_003",
+        "ev_b01c_005"
+      ],
+      "accepted_evidence_records": 4,
+      "scoring_eligible_positive_fans": 3,
+      "visible_accepted_edges": 0,
+      "photo_status": "photo"
+    }
+  ],
+  "counts": {
+    "focal_performers": 10,
+    "raw_candidates": 16,
+    "canonical_candidates": 15,
+    "extracted_records": 12,
+    "extraction_skips": 3,
+    "accepted_evidence": 9,
+    "uncertain_evidence": 3,
+    "rejected_evidence": 0,
+    "relation_candidates": 16,
+    "accepted_relations": 0,
+    "deferred_evidence": 7,
+    "displayed_photos": 10,
+    "nodes_in_json": 100,
+    "nodes_in_diagram": 10
+  },
+  "scorer_deferrals": {
+    "review is not accepted": 3,
+    "unresolved or qualified interpretation needs pair-specific review": 2,
+    "no source-scoped fan key": 1,
+    "below heuristic confidence threshold": 1
+  },
+  "limitations": [
+    "Candidate/accepted-record counts include neutral/negative/qualified readings; they are not fan counts.",
+    "Scored fans use only the unchanged v1 eligibility rules.",
+    "No source-scoped identity is assumed to be a distinct real person across websites."
+  ],
+  "collection_usage": {
+    "queries": 27,
+    "page_open_requests": 22,
+    "maximum_queries_per_worker": 12,
+    "maximum_opens_per_worker": 12
+  },
+  "cost": "Native/T3 results did not expose measured token or monetary usage; no cost estimate invented."
+}

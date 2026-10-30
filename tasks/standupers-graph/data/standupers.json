@@ -116,7 +116,7 @@
       "source_position": 1,
       "aliases": [],
       "batch": 1,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 2,
@@ -127,7 +127,7 @@
       "source_position": 2,
       "aliases": [],
       "batch": 1,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 3,
@@ -138,7 +138,7 @@
       "source_position": 3,
       "aliases": ["Lotek", "Lotka"],
       "batch": 1,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 4,
@@ -149,7 +149,7 @@
       "source_position": 4,
       "aliases": ["Pacześ", "Paczes", "Paczesia", "Rafała Paczesia"],
       "batch": 1,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 5,
@@ -160,7 +160,7 @@
       "source_position": 5,
       "aliases": [],
       "batch": 1,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 6,
@@ -171,7 +171,7 @@
       "source_position": 6,
       "aliases": ["Sochę"],
       "batch": 1,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 7,
@@ -182,7 +182,7 @@
       "source_position": 8,
       "aliases": [],
       "batch": 1,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 8,
@@ -193,7 +193,7 @@
       "source_position": 9,
       "aliases": [],
       "batch": 1,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 9,
@@ -204,7 +204,7 @@
       "source_position": 10,
       "aliases": [],
       "batch": 1,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 10,
@@ -215,7 +215,7 @@
       "source_position": 11,
       "aliases": [],
       "batch": 1,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 11,

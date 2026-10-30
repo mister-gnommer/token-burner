@@ -1,0 +1,72 @@
+{
+  "run_id": "20261030-batch01-pilot",
+  "reviewed_at": "2026-10-30T21:41:43Z",
+  "reviewer": {
+    "provider": "codex",
+    "model": "gpt-6.1-sol"
+  },
+  "counts": {
+    "source_candidates": 15,
+    "extracted": 12,
+    "accepted": 9,
+    "uncertain": 3,
+    "rejected": 0
+  },
+  "surprises": [
+    "Independent review removed a fabricated cross-record mention and nulled an unsupported canonical ID.",
+    "Parent rejects Kołecki mixed sentiment: a subject-matter caveat does not express dislike. Positive sincere recommendation restored, with no confidence inflation.",
+    "Verifier warning about manifest extracting/zero/null was inaccurate: the saved parent checkpoint was verifying/extracted12 with a planned verifier identity. Actual state and task execution, not the verbal warning, are authoritative."
+  ],
+  "decisions": [
+    "Keep b01b_001 uncertain: Lutka nickname resolution is plausible but unverified. Do not add Lutek as a validated alias.",
+    "Keep b01b_005 relative-only comparison uncertain, with no absolute sentiment inferred.",
+    "Keep b01b_006 uncertain and unresolved Jakub Dąbrowski ID null.",
+    "Preserve b01b_002 Pacześ mixed, Lotek unclear, and all non-verbatim surface corrections.",
+    "Three skipped candidates remain stored: two context-dependent name lists and one single-performer evaluation. No statements were silently dropped.",
+    "Filmweb source is historical (2012), not evidence of current programme preference. No recency weighting invented."
+  ],
+  "candidate_target_corrections": [
+    {
+      "id": "src_b01b_001",
+      "old_target_ids": [
+        "lukasz-lotek-lodkowski",
+        "rafal-paczes"
+      ],
+      "new_target_ids": [
+        "piotrek-szumowski",
+        "lukasz-lotek-lodkowski",
+        "michal-kutek",
+        "antoni-syrek-dabrowski",
+        "michal-leja",
+        "rafal-paczes"
+      ]
+    },
+    {
+      "id": "src_b01b_007",
+      "old_target_ids": [
+        "daniel-midas",
+        "rafal-paczes",
+        "lukasz-lotek-lodkowski",
+        "rafal-rutkowski",
+        "mateusz-socha",
+        "adam-van-bendler"
+      ],
+      "new_target_ids": [
+        "daniel-midas",
+        "rafal-paczes",
+        "lukasz-lotek-lodkowski",
+        "adam-van-bendler"
+      ]
+    },
+    {
+      "id": "src_b01c_004",
+      "action": "Added katarzyna-piasecka, explicitly named in the skipped source list; no sentiment or evidence record inferred."
+    }
+  ],
+  "preserved_outputs": [
+    "evidence.unreviewed.jsonl",
+    "evidence.haiku.jsonl"
+  ],
+  "prompt_supplement": "extraction-decisions-v1.md",
+  "next": "Render and audit with unchanged observed-coendorsement-v1; no batch2."
+}

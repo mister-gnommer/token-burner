@@ -1,0 +1,23 @@
+{
+  "run_id": "20261030-batch01-pilot",
+  "reviewer": "codex/gpt-6.1-sol",
+  "status": "completed",
+  "source_checks": {
+    "gazeta": "Reopened and checked named authors, dates, exact source representation, parent recommendation question and caveats.",
+    "reddit-poland": "Reopened Warchadlo16 full recommendation; all performer/style context retained.",
+    "reddit-standup-recs": "Reopened NoUnderstanding8721 and deleted-author comment; deleted author remains null.",
+    "wykop": "Reopened vidic15 and Kismeth comments with publication dates.",
+    "filmweb": "Reopened bozo777; excerpt covers solo-performer part, preceding group list unrelated; evidence is historical (2012).",
+    "reddit-polska-17ukdey": "Reopened thefafal and Macamagucha comments; corrected parent/reply attribution for former.",
+    "reddit-polskanaluzie": "Reopened Koru complete assessment and Regular_Bat8162 recommendation list; latter relies on recommendation request."
+  },
+  "parent_concerns_for_final_audit": [
+    "ev_b01a_004 includes a Jakub Dąbrowski mention not present in its source excerpt; remove unsupported mention if verifier misses it.",
+    "ev_b01b_002 must retain the explicit Pacześ criticism and programme-scope caveats, not merely liking/listening.",
+    "ev_b01b_005 relative superiority alone does not establish absolute sentiment; assess uncertainty.",
+    "Known missing fan-author key, bare lists, and qualified statements may produce little accepted graph support; do not loosen scorer to make graph denser."
+  ],
+  "notes": "No graph generated before completed verification; no ranks11–20 authorized.",
+  "completed_at": "2026-10-30T21:45:14Z",
+  "resolution": "Independent verification corrected every recorded concern; parent final adjudication is saved separately. No scorer thresholds were changed."
+}

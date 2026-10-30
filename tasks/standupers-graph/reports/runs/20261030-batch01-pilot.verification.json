@@ -1,0 +1,196 @@
+{
+  "surprises": [
+    "ev_b01a_004 carried a mention of 'Jakub Dąbrowski' (kuba-dabrowski, unclear) that does not occur in src_b01a_004's excerpt; the name appears only in src_b01b_006. Removed. extraction-skips.json's surprise attributing this name to src_b01a_004 is partly wrong.",
+    "performer_id kuba-dabrowski was assigned in ev_b01b_006 while its own notes call the name unresolved. Nulled; the excerpt gives 'Jakub', and no verified alias links it to 'Kuba Dąbrowski'.",
+    "Extractor sentiment overreach in five mentions: Tomek Kołecki (a_004) positive->mixed; Rafał Pacześ (b01b_002) positive->mixed; Lotka (b01b_002) positive->unclear; Socha and Pacześ (b01b_005) positive/negative->unclear for relative-only comparison.",
+    "Four surface forms were not verbatim from their excerpts (Lutek, Rafała Paczesia, Wiolkę Walaszczyk, Olkę Szczęśniak) and were corrected to the excerpt spelling.",
+    "Candidate target_performer_ids are not a reliable completeness check. src_b01b_001 omits Piotrek Szumowski, Michał Kutek, Antoni Syrek-Dąbrowski and Michał Leja, which its excerpt names; src_b01b_007 lists Mateusz Socha and Rafał Rutkowski, which its excerpt does not name. Source records were not edited; extraction followed the excerpt text.",
+    "'Lutka' (src_b01b_001) is not a listed alias ('Lotka' is) and has no surname. Mapping to Lotek is plausible but unconfirmed, so the record is uncertain. collector-b-report proposes alias 'Lutek' from a source that reads 'Lutka'; do not add it to standupers.json without confirmation.",
+    "Skip src_b01a_001 is defensible on the stored candidate text alone, but its stated reason is imprecise. collector-a's saved report quotes the parent question ('Polecicie kogoś jeszcze do posłuchania?') that makes the answer read as a recommendation. That context is not in the candidate, so no stored evidence record could trace the interpretation. Re-collecting with parent context in the candidate would be the route if wanted; out of scope here.",
+    "Batch state is not yet consistent with this output. reports/runs/20261030-batch01-pilot.json still says status 'extracting', counts.extracted 0, verifier null, and the pipeline's load_evidence check will reject this until the parent updates the manifest. I did not change it.",
+    "Live verification was not performed. Source-page content was judged from the saved candidates and collector reports; the src_b01c_002 author correction relies on the parent audit, and its canonical key recomputes from thefafal."
+  ],
+  "schema_version": 1,
+  "run_id": "20261030-batch01-pilot",
+  "reviewer": {
+    "provider": "claudeAgent",
+    "model": "claude-haiku-5-5",
+    "prompt_version": "verify-evidence-v2"
+  },
+  "counts": {
+    "canonical_source_candidates": 15,
+    "extractor_emitted": 12,
+    "extractor_skipped": 3,
+    "reviewed_records": 12,
+    "accepted": 9,
+    "uncertain": 3,
+    "rejected": 0,
+    "mentions_input": 59,
+    "mentions_output": 58,
+    "sentiment_corrections": 5,
+    "surface_form_corrections": 4,
+    "confidence_corrections": 4,
+    "mentions_removed": 1,
+    "performer_ids_nulled": 1
+  },
+  "post_checks": {
+    "schema_v2_valid_all_records": true,
+    "source_fields_excerpt_language_match_canonical_all_records": true,
+    "surface_forms_verbatim_after_correction": true,
+    "extraction_lineage_unchanged_all_records": true,
+    "same_user_records_have_author_key": true,
+    "author_keys_recomputed_from_hints": true,
+    "validator_run": "jsonschema Draft 2020-12 against evidence-v2.schema.json; pipeline load_evidence not run (manifest not completed)"
+  },
+  "records": [
+    {
+      "id": "ev_b01a_004",
+      "candidate_id": "src_b01a_004",
+      "status": "accepted",
+      "issues": [
+        "Mention 'Jakub Dąbrowski' absent from excerpt"
+      ],
+      "corrections": [
+        "Removed kuba-dabrowski mention",
+        "tomek-kolecki positive->mixed (recommendation with explicit content caveat)"
+      ]
+    },
+    {
+      "id": "ev_b01b_001",
+      "candidate_id": "src_b01b_001",
+      "status": "uncertain",
+      "issues": [
+        "Surface 'Lutek' not in excerpt ('Lutka')",
+        "Lutka not a listed alias; one-letter-off identity",
+        "Kutka identity by genitive-nickname inference",
+        "Piotrek, Kutek, Syrek, Leja not in candidate target list"
+      ],
+      "corrections": [
+        "surface 'Lutek'->'Lutka'",
+        "lotek mention confidence 0.82->0.6"
+      ]
+    },
+    {
+      "id": "ev_b01b_002",
+      "candidate_id": "src_b01b_002",
+      "status": "accepted",
+      "issues": [
+        "Surface 'Rafała Paczesia' not verbatim",
+        "Surface 'Wiolkę Walaszczyk' not verbatim",
+        "Paczes positive despite recent decline caveat",
+        "Lotka sentiment implied by contrast only, consumption wording"
+      ],
+      "corrections": [
+        "surface->'Rafala Paczesia'",
+        "rafal-paczes positive->mixed",
+        "lotek positive->unclear, confidence 0.85->0.6",
+        "surface->'Wiolke Walaszczyk'"
+      ]
+    },
+    {
+      "id": "ev_b01b_003",
+      "candidate_id": "src_b01b_003",
+      "status": "accepted",
+      "issues": [],
+      "corrections": []
+    },
+    {
+      "id": "ev_b01b_004",
+      "candidate_id": "src_b01b_004",
+      "status": "accepted",
+      "issues": [],
+      "corrections": []
+    },
+    {
+      "id": "ev_b01b_005",
+      "candidate_id": "src_b01b_005",
+      "status": "uncertain",
+      "issues": [
+        "Relative comparison only; extractor assigned absolute positive and negative"
+      ],
+      "corrections": [
+        "mateusz-socha positive->unclear, confidence 0.97->0.6",
+        "rafal-paczes negative->unclear, confidence 0.97->0.6"
+      ]
+    },
+    {
+      "id": "ev_b01b_006",
+      "candidate_id": "src_b01b_006",
+      "status": "uncertain",
+      "issues": [
+        "performer_id kuba-dabrowski assigned to unresolved name",
+        "Taste-conditional quick list with no per-performer evaluation"
+      ],
+      "corrections": [
+        "kuba-dabrowski performer_id -> null"
+      ]
+    },
+    {
+      "id": "ev_b01b_007",
+      "candidate_id": "src_b01b_007",
+      "status": "accepted",
+      "issues": [
+        "Candidate target list includes Socha and Rutkowski not named in the excerpt"
+      ],
+      "corrections": []
+    },
+    {
+      "id": "ev_b01c_001",
+      "candidate_id": "src_b01c_001",
+      "status": "accepted",
+      "issues": [],
+      "corrections": []
+    },
+    {
+      "id": "ev_b01c_002",
+      "candidate_id": "src_b01c_002",
+      "status": "accepted",
+      "issues": [
+        "Surface 'Olkę Szczęśniak' not verbatim ('Olke')",
+        "Canonical author correction (thefafal) relied on parent audit"
+      ],
+      "corrections": [
+        "surface->'Olke Szczęśniak'"
+      ]
+    },
+    {
+      "id": "ev_b01c_003",
+      "candidate_id": "src_b01c_003",
+      "status": "accepted",
+      "issues": [],
+      "corrections": []
+    },
+    {
+      "id": "ev_b01c_005",
+      "candidate_id": "src_b01c_005",
+      "status": "accepted",
+      "issues": [],
+      "corrections": []
+    }
+  ],
+  "skip_audit": [
+    {
+      "candidate_id": "src_b01a_001",
+      "verdict": "defensible",
+      "note": "Name fragment; interpretation as recommendation needs the parent question, which is absent from the candidate. Stated reason is imprecise (attribution is fine; interpretation is the gap)."
+    },
+    {
+      "candidate_id": "src_b01a_003",
+      "verdict": "defensible",
+      "note": "Single frozen performer (Midas) evaluated in live setting: negative on rambling, shorts better, overall 'fajny' (fun). No schema evidence_class fits a single-performer opinion; would be a mixed live-show evaluation if a class existed."
+    },
+    {
+      "candidate_id": "src_b01c_004",
+      "verdict": "defensible",
+      "note": "Bare name list answering a thread about 'polite' standuppers: category membership, no evaluation or recommendation language. Unlike src_b01b_006 there is no taste or recommendation framing."
+    }
+  ],
+  "gaps": [
+    "Mama Na Obrotach and Piotr Jeleń have zero candidates after bounded search; this is not negative evidence.",
+    "Cezary Pazura has one candidate (ev_b01c_001) and only a co-endorsement with Abelard Giza.",
+    "Abelard Giza has four records (ev_b01b_003, ev_b01c_001, ev_b01c_003, ev_b01c_005); Daniel Midas and Magda Kubicka rest on mention-only, relative-only or recommendation-list evidence after review.",
+    "src_b01c_004 skipped; Katarzyna Piasecka (frozen, not focal) appears only there, so Olka, Kubicka and Leja get no extra context from that thread.",
+    "Non-frozen figures (Kryszak, Stuhr, Grabowski, Bałtroczyk) omitted by design.",
+    "No live page re-open was performed by the reviewer; completeness of saved excerpts relies on collector context checks and the parent audit."
+  ]
+}

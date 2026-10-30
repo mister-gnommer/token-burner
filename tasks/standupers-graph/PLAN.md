@@ -31,6 +31,8 @@ For each commanded batch, collect evidence for the next 10, compare them with al
 
 Store graph data independently of its renderer. Use D2 for visual checkpoints, saving editable `.d2` sources and rendered SVG snapshots in `graph/`. Keep node IDs and generation order stable between updates, inspect layout changes, and visually encode support/confidence. Limit displayed edges for readability without deleting underlying data.
 
+Show profile photos where available; use a local laughing-person silhouette for missing or unavailable images. Cache photos with source metadata and embed them in SVG snapshots so rendering failures do not depend on remote image availability.
+
 ### 5. Make the result useful for discovery
 The final view should let the user inspect a performer’s closest relations and understand why each edge exists. Coverage and evidence limitations stay visible. If the available fan evidence cannot support the original goal, pause and ask whether to add a separately labeled humor/style-similarity layer.
 

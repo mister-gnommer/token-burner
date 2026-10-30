@@ -1,0 +1,173 @@
+{
+  "surprises": [
+    "Focused follow-up searches found many opinions on Mama Na Obrotach alone, including sharply negative comments, but no verified statement linking her to a second frozen performer. Piotr Jeleń searches mainly returned editorial/profile pages or unrelated material; no qualifying linked fan opinion was verified.",
+    "The Gazeta thread supplies a direct recommendation prompt that makes dariamax’s short answer interpretable as a recommendation; the prompt is recorded in this report without merging it into that author’s excerpt."
+  ],
+  "run_id": "20261030-batch01-pilot",
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v2"
+  },
+  "queries_attempted": [
+    "Daniel Midas Magda Kubicka opinie stand up forum",
+    "\"Mama na obrotach\" \"Magda Kubicka\" opinie",
+    "\"Piotr Jeleń\" stand up \"Daniel Midas\"",
+    "\"Magda Kubicka\" \"Piotr Jeleń\" stand up",
+    "\"Mama na obrotach\" opinie stand-up polecam",
+    "\"Klaudia Klimczyk\" \"stand-up\" śmieszna opinia forum",
+    "\"Piotr Jeleń\" stand-up opinie Jeleniejaja",
+    "\"Piotr Jelen\" stand-up polecam opinie forum",
+    "\"Mama Na Obrotach\" \"standuperzy\" polecam Reddit",
+    "\"Piotr Jeleń\" \"standuperzy\" opinie",
+    "\"Piotr Jeleń\" \"Rafał Pacześ\"",
+    "site:reddit.com \"Piotr Jeleń\" stand up",
+    "site:forum.gazeta.pl \"Mama na obrotach\" opinie stand-up"
+  ],
+  "sources_opened": [
+    {
+      "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+      "result": "accepted candidates src_b01a_001, src_b01a_002, src_b01a_003; other posts rejected as unrelated, non-evaluative, or outside assigned focal scope",
+      "locators": [
+        "author dariamax, 2023-11-01 23:07, displayed lines 333-337",
+        "author katarrynka, 2023-11-02 07:03, displayed lines 341-345",
+        "author memphis90, 2023-11-02 07:26, displayed lines 349-352"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/poland/comments/1egewxi/polish_standup_comedy/",
+      "result": "accepted candidate src_b01a_004; remaining comments rejected as not covering assigned focal performers or lacking explicit evaluation",
+      "locators": [
+        "author Warchadlo16, displayed lines 237-248"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/wroclaw/comments/1dmxvv5",
+      "result": "rejected: open failed (cache miss); search result insufficient to verify full post context"
+    },
+    {
+      "url": "https://www.reddit.com/r/Polska/comments/105mykf/stand_up_rekomendacje/",
+      "result": "rejected for this batch: isolated Magda mention was a list without evaluation, other plausible source posts did not include assigned focal performers"
+    },
+    {
+      "url": "https://www.dkwloszczowa.pl/aktualnosci/dom-kultury/stund-up-mama-na-obrotach-ptniezly-bajzel-10032026-.html",
+      "result": "rejected: municipal event recap/promo; praises Mama Na Obrotach but mentions only Piotr Przytuła, who is not in frozen 100",
+      "locators": [
+        "search-result excerpt for 12 March 2026 recap"
+      ]
+    },
+    {
+      "url": "https://forum.gazeta.pl/forum/w,567,178713713,178713713,sanah_myslalam_ze_mnie_juz_nic_nie_zaskoc.html",
+      "result": "rejected: hostile standalone opinion of Mama Na Obrotach co-mentioned with Sanah and Julia Wieniawa, neither is in frozen 100; not a qualifying link",
+      "locators": [
+        "author figa_z_makiem99, 2025-03-09 12:12-12:14, displayed lines 1829-1840; 15:00 lines 1947-1950"
+      ]
+    },
+    {
+      "url": "https://forum.gazeta.pl/forum/w,567,176920531,176920531,A_latwe_zajecia_ktore_ludzie_kreuja_na_trudne_.html",
+      "result": "rejected: open failed (cache miss); search excerpt is about Mama Na Obrotach alone and does not link another frozen performer"
+    },
+    {
+      "url": "https://standup.pl/komicy/piotr-jelen",
+      "result": "rejected: performer profile/editorial material; no fan post evaluating another frozen performer",
+      "locators": [
+        "profile page lines 14-28"
+      ]
+    },
+    {
+      "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+      "result": "context check for src_b01a_001; parent prompt confirms a request for recommendations, not a co-mention",
+      "locators": [
+        "thread author abasia0, 2023-11-01 21:03, displayed lines 165-172; answer dariamax 23:07 lines 333-337"
+      ]
+    },
+    {
+      "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+      "result": "reopened for parent-question context verification; same source as existing Gazeta candidates",
+      "locators": [
+        "thread author abasia0, 2023-11-01 21:03, displayed lines 165-172"
+      ]
+    }
+  ],
+  "sources_rejected": [
+    {
+      "url": "https://standupedia.pl/najlepsi-stand-uperzy-w-ocenie-publicznosci/",
+      "reason": "editorial summary and aggregate ratings, not individual fan posts linking assigned focal performers"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/komentarze/3704/Magda%2BKubicka%2BStand-up/9/",
+      "reason": "search result gave no verifiable relevant full post linking another frozen performer"
+    },
+    {
+      "url": "https://www.rzeszow-info.pl/artykul/13978%2Ctylko-u-nas-mama-na-obrotach-jakiej-nie-znacie-klaudia-klimczyk-o-ksiazce-serio-w-ciul-hejcie-i-granicach-popularnosci",
+      "reason": "interview, not an independent fan opinion linking performers"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/imprezy/182640/%C5%BBychlin/Stand-up%2BMama%2BNa%2BObrotach/",
+      "reason": "event listing/promotion; no user post linking another frozen performer"
+    },
+    {
+      "url": "https://www.reddit.com/r/poland/comments/1egewxi/polish_standup_comedy/",
+      "reason": "opened and retained src_b01a_004; unrelated comments on the page rejected"
+    }
+  ],
+  "candidate_count": 4,
+  "focal_coverage": {
+    "daniel-midas": {
+      "candidates": [
+        "src_b01a_001",
+        "src_b01a_002",
+        "src_b01a_003",
+        "src_b01a_004"
+      ],
+      "distinct_source_contexts": 2,
+      "note": "Four author comments across the Gazeta thread and one Reddit thread; source context count is distinct thread/page, not comment count."
+    },
+    "mama-na-obrotach": {
+      "candidates": [],
+      "distinct_source_contexts": 0
+    },
+    "magda-kubicka": {
+      "candidates": [
+        "src_b01a_001",
+        "src_b01a_004"
+      ],
+      "distinct_source_contexts": 2
+    },
+    "piotr-jelen": {
+      "candidates": [],
+      "distinct_source_contexts": 0
+    }
+  },
+  "context_completeness_checks": [
+    "Gazeta author posts were captured individually with all available evaluation text; adjacent speakers were not merged.",
+    "The katarrynka post evaluates Abelard Giza, Mateusz Socha, Rafał Pacześ, Daniel Midas, and Lotek; all frozen performers named in it are represented in target_performer_ids.",
+    "The memphis90 critique concerns Midas and is intelligible without its parent post.",
+    "The Reddit recommendation's complete comment was retained; all frozen performers actually mentioned in it are represented.",
+    "src_b01a_001 parent prompt: abasia0 asks “Polecicie kogoś jeszcze do posłuchania?” after describing watching Socha and Kutek and noting some jokes rely too much on body parts; the prompt is context only and remains separate from dariamax’s excerpt.",
+    "src_b01a_004 target_performer_ids now includes every frozen performer named in the full comment: Łukasz Kowalski, Cezary Jurkiewicz, Cezary Ponttefski, Piotrek Szumowski, Bartosz Zalewski, Antoni Syrek-Dąbrowski, Grzegorz Dolniak, Lotek, Mateusz Socha, Daniel Midas, Tomek Kołecki, Olka Szczęśniak, and Magda Kubicka."
+  ],
+  "proposed_aliases": [
+    {
+      "performer_id": "daniel-midas",
+      "alias": "Midas",
+      "source": "src_b01a_002, src_b01a_003, src_b01a_004; discussion context identifies Daniel Midas"
+    },
+    {
+      "performer_id": "magda-kubicka",
+      "alias": "Magdę Kubicką",
+      "source": "src_b01a_001; inflected form of canonical name"
+    },
+    {
+      "performer_id": "lukasz-lotek-lodkowski",
+      "alias": "Lotek",
+      "source": "src_b01a_002 and src_b01a_004; Reddit comment explicitly uses Lotek as the performer recommendation"
+    }
+  ],
+  "coverage_gaps": [
+    "No verified candidate links Mama Na Obrotach or Piotr Jeleń to another frozen performer after the follow-up search; their zero yields are bounded by this search budget and are not negative preference evidence.",
+    "Total searches: 12 of 12. Total page-open requests: 10 of 12; one URL was revisited for context verification. No snippets were accepted without page verification.",
+    "New candidates added in follow-up: 0; candidate limit remains 4 of 12."
+  ],
+  "retrieved_at": "2026-10-30T21:30:35Z"
+}

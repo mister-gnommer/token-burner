@@ -1,0 +1,41 @@
+{
+  "run_id": "20261030-batch01-pilot",
+  "collector": {"provider": "codex", "model": "gpt-6-luna", "prompt_version": "collect-fan-evidence-v2"},
+  "retrieved_at": "2026-10-30T21:28:55Z",
+  "Surprises": [
+    "Search returned live public fan discussions with usable whole-post context. Several comments include clear caveats or negative evaluations, which are retained in full.",
+    "No exact post dates were exposed by Reddit's rendered pages beyond relative ages, so those publication dates are null."
+  ],
+  "coverage": {
+    "olka-szczesniak": {"candidates": 2, "distinct_authors": 2, "links": ["karol-modzelewski", "magda-kubicka", "michal-leja"]},
+    "cezary-pazura": {"candidates": 1, "distinct_authors": 1, "links": ["abelard-giza"]},
+    "abelard-giza": {"candidates": 3, "distinct_authors": 3, "links": ["cezary-pazura", "antoni-syrek-dabrowski", "kacper-rucinski", "lukasz-lotek-lodkowski"]}
+  },
+  "query_log": [
+    "\"Olka Szczęśniak\" \"Abelard Giza\" forum",
+    "\"Olka Szczęśniak\" \"Cezary Pazura\" komentarz",
+    "\"Abelard Giza\" \"Cezary Pazura\" forum",
+    "site:reddit.com/r/Polska stand-up Olka Szczęśniak Abelard Giza",
+    "site:reddit.com/r/Polska \"Olka\" \"Abelard Giza\" stand-up",
+    "site:reddit.com \"Cezary Pazura\" \"Abelard Giza\" śmieszny",
+    "site:forum \"Olka Szczęśniak\" \"Abelard Giza\" opinie"
+  ],
+  "opened_sources": [
+    {"url": "https://www.reddit.com/r/Polska/comments/17ukdey/polski_stand_up_jest_tylko_jedn%C4%85_p%C3%B3%C5%82k%C4%99_wy%C5%BCej_od/", "locators": ["DrMartens comment at page lines 241-242", "Macamagucha comment at page lines 310-313"], "context_check": "Both entire comments read; no parent dependency."},
+    {"url": "https://www.reddit.com/r/Polska/comments/1egewxi/polish_standup_comedy/", "locators": [], "context_check": "Read page; not selected as candidate because focal performer mentions appeared in separate users' comments, not a single author evaluation linking two performers."},
+    {"url": "https://www.reddit.com/r/Polska/comments/105mykf/stand_up_rekomendacje/", "locators": [], "context_check": "Read page; focal performer recommendations lacked a link to a second frozen performer in the same author's post."},
+    {"url": "https://www.filmweb.pl/person/Abelard%2BGiza-286174/discussion/Jakie%2Bs%C4%85%2Bwasze%2Bulubione%2Bkabarety-1936249", "locators": ["bozo777 reply dated 2012-08-04 14:51:48; lines 174-179"], "context_check": "Whole list and trailing praise retained; no parent dependency."},
+    {"url": "https://www.kupbilecik.pl/pl/comments?page_comments=871", "locators": [], "context_check": "Read page; skipped because snippets/review content evaluated Olka or Abelard separately, with no same-author multi-performer comparison in the visible context."},
+    {"url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/", "locators": ["Username_Koru comment at lines 68-69", "Regular_Bat8162 comment at lines 233-239"], "context_check": "Both complete comments read. Koru comment retains positive and critical Abelard evaluation; Regular_Bat8162 entire recommendation list retained. No parent dependency."}
+  ],
+  "rejected_sources": [
+    {"source": "turn10search2 Onet interview page", "reason": "Editorial interview, not fan opinion."},
+    {"source": "turn10search3 TVN article", "reason": "Editorial/promotional roundup, not fan opinion."},
+    {"source": "turn10search6 Road and Roll ranking", "reason": "Editorial text, not fan-authored evaluation."},
+    {"source": "turn10search7 Standupedia article", "reason": "Editorial profile, not fan opinion."}
+  ],
+  "aliases_proposed": [],
+  "source_counts": {"queries": 7, "opened_pages": 6, "candidates": 5},
+  "coverage_gaps": ["Cezary Pazura has only one qualifying candidate in this bounded pass; no second independent fan found."],
+  "notes": ["Search snippets were used only to locate candidate pages; each selected excerpt was verified against its opened page.", "No candidates from calibration posts on gry-online thread zff63169 were reused."]
+}
