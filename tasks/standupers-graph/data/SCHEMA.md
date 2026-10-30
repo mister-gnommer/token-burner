@@ -44,3 +44,5 @@ An absent relation means “not established with current evidence,” not dissim
 ## Aggregation rules
 
 Aggregation code, not individual agents, calculates final counts and scores from accepted evidence. Agents propose structured interpretations and explanations. Scoring must account for performer popularity and uneven evidence coverage, require minimum support, and retain its version in every accepted relation.
+
+The first implementation is `observed-coendorsement-v1`; its eligibility, coverage-normalization formula, identity limits, and deferred mixed evidence are specified in `../graph/README.md`. `graph.json` stores all relation candidates, source URLs, ignored runs, deferred evidence, node coverage, input manifest paths, and renderer/scorer settings. It uses `synthetic: true` for fixture outputs; production rejects synthetic run IDs. D2/SVG/PNG snapshots are derived views, with physical layout distance carrying no similarity meaning.

@@ -1,0 +1,26 @@
+diagram: "SYNTHETIC FIXTURE — no real fan findings\nEdge width = observed overlap; labels show fans / confidence.\nConfidence is a model judgment, not a probability.\nLayout distance has no similarity meaning. Missing edges mean insufficient evidence." {
+direction: down
+n0: {
+  label: "Amet\n1 observed fans"
+}
+n1: {
+  label: "Dolor\n2 observed fans"
+}
+n2: {
+  label: "Ipsum\n4 observed fans"
+}
+n3: {
+  label: "Isolated\n0 observed fans"
+}
+n4: {
+  label: "Lorem\n2 observed fans"
+}
+n1 -- n2: "2 fans / 90% confidence" {
+  style.stroke-width: 3
+  tooltip: "2 source-scoped fans explicitly co-endorse this pair; 4 observed fans endorse either performer. 0 opposing preference records. Provisional observed overlap. Sources: https://example.invalid/synthetic/3 https://example.invalid/synthetic/4"
+}
+n2 -- n4: "2 fans / 90% confidence" {
+  style.stroke-width: 3
+  tooltip: "2 source-scoped fans explicitly co-endorse this pair; 4 observed fans endorse either performer. 0 opposing preference records. Provisional observed overlap. Sources: https://example.invalid/synthetic/1 https://example.invalid/synthetic/2 https://example.invalid/synthetic/6"
+}
+}

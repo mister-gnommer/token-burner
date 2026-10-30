@@ -1,0 +1,24 @@
+{
+  "performers": [
+    {
+      "id": "lorem",
+      "name": "Lorem"
+    },
+    {
+      "id": "ipsum",
+      "name": "Ipsum"
+    },
+    {
+      "id": "dolor",
+      "name": "Dolor"
+    },
+    {
+      "id": "amet",
+      "name": "Amet"
+    },
+    {
+      "id": "isolated",
+      "name": "Isolated"
+    }
+  ]
+}

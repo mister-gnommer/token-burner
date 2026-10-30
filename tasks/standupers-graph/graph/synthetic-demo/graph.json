@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "scorer_version": "observed-coendorsement-v1",
+  "updated_at": "2026-10-30T20:36:12Z",
+  "input_manifests": [
+    "tasks/standupers-graph/fixtures/synthetic-graph/manifest.json"
+  ],
+  "renderer": {
+    "name": "d2",
+    "layout": "elk",
+    "sketch": true,
+    "max_degree": 3
+  },
+  "nodes": [
+    {
+      "id": "amet",
+      "name": "Amet",
+      "observed_fans": 1
+    },
+    {
+      "id": "dolor",
+      "name": "Dolor",
+      "observed_fans": 2
+    },
+    {
+      "id": "ipsum",
+      "name": "Ipsum",
+      "observed_fans": 4
+    },
+    {
+      "id": "isolated",
+      "name": "Isolated",
+      "observed_fans": 0
+    },
+    {
+      "id": "lorem",
+      "name": "Lorem",
+      "observed_fans": 2
+    }
+  ],
+  "relations": [
+    {
+      "schema_version": 1,
+      "id": "rel_amet__lorem",
+      "pair": [
+        "amet",
+        "lorem"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [],
+      "contradictory_evidence_ids": [
+        "ev_synthetic_5"
+      ],
+      "independent_source_count": 0,
+      "independent_fan_count": 0,
+      "score": 0.0,
+      "confidence": 0,
+      "scorer_version": "observed-coendorsement-v1",
+      "explanation": "0 source-scoped fans explicitly co-endorse this pair; 3 observed fans endorse either performer. 1 opposing preference records. Insufficient independent support or opposing preferences; no visible edge.",
+      "updated_at": "2026-10-30T20:36:12Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_dolor__ipsum",
+      "pair": [
+        "dolor",
+        "ipsum"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "accepted",
+      "support_evidence_ids": [
+        "ev_synthetic_3",
+        "ev_synthetic_4"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 2,
+      "independent_fan_count": 2,
+      "score": 0.5,
+      "confidence": 0.9,
+      "scorer_version": "observed-coendorsement-v1",
+      "explanation": "2 source-scoped fans explicitly co-endorse this pair; 4 observed fans endorse either performer. 0 opposing preference records. Provisional observed overlap.",
+      "updated_at": "2026-10-30T20:36:12Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_ipsum__lorem",
+      "pair": [
+        "ipsum",
+        "lorem"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "accepted",
+      "support_evidence_ids": [
+        "ev_synthetic_1",
+        "ev_synthetic_2",
+        "ev_synthetic_6"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 3,
+      "independent_fan_count": 2,
+      "score": 0.5,
+      "confidence": 0.9,
+      "scorer_version": "observed-coendorsement-v1",
+      "explanation": "2 source-scoped fans explicitly co-endorse this pair; 4 observed fans endorse either performer. 0 opposing preference records. Provisional observed overlap.",
+      "updated_at": "2026-10-30T20:36:12Z"
+    }
+  ],
+  "deferred_evidence": [],
+  "ignored_runs": [],
+  "evidence_sources": {
+    "ev_synthetic_1": "https://example.invalid/synthetic/1",
+    "ev_synthetic_2": "https://example.invalid/synthetic/2",
+    "ev_synthetic_3": "https://example.invalid/synthetic/3",
+    "ev_synthetic_4": "https://example.invalid/synthetic/4",
+    "ev_synthetic_5": "https://example.invalid/synthetic/5",
+    "ev_synthetic_6": "https://example.invalid/synthetic/6"
+  }
+}
