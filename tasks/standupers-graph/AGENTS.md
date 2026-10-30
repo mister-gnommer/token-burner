@@ -15,6 +15,7 @@ At the start of a conversation, read `standupers-human-input.md`, `STATE.md`, an
 - Be AI-driven, not AI-vibes-driven: use AI for discovery, Polish-language interpretation, entity resolution, preference/sentiment extraction, and evidence-based relation explanations. Use code for repeatable aggregation and rendering.
 - Every factual relation must trace to stored evidence. Never turn a mere co-mention into a co-preference, and never present missing evidence as dislike or dissimilarity.
 - Keep fan-preference evidence distinct from performer/style similarity. Do not silently substitute one for the other if fan data is insufficient.
+- Use D2 for graph rendering; save editable `.d2` sources alongside SVG snapshots.
 - Save schemas, prompts, model/provider details, source metadata, normalized outputs, and scorer versions so results are inspectable and resumable. Keep raw source excerpts and citations with their extracted claims.
 - Prefer small, inspectable files over a monolithic log or a database until the data volume requires otherwise.
 

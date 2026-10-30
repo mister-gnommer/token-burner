@@ -8,6 +8,7 @@ Next stage: 4 — Aggregation and graph framework (not started)
 - Target: 100 individual stand-uppers, processed in batches of 10.
 - Node source: standup.pl’s current all-time popularity catalog, filtered to exclude groups/channels/formats before selection; 30-day trend is optional metadata.
 - Purpose: discover similar performers and humor through fan preferences.
+- Renderer: D2, with editable `.d2` sources and SVG snapshots (confirmed 2026-10-30).
 - The project should be substantially AI-driven, with low-tier subagents doing the main work.
 - Main-agent work is limited to 10 minutes per turn, excluding subagent execution; planning and discovery must be split into visible stages.
 - Each new batch requires an explicit user command.
@@ -48,4 +49,4 @@ Next stage: 4 — Aggregation and graph framework (not started)
 - Schema checks do not prove source-context completeness or candidate equality; these require a separate audit.
 
 ## Proposed next action
-Run Stage 4 only: choose conservative aggregation and graph rendering, then implement and test them with clearly synthetic fixtures. Test that neutral mentions, uncertain evidence, repeated names, and calibration records cannot create unsupported fan edges. Do not start a performer batch.
+Run Stage 4 only: choose conservative aggregation, then implement and test it with D2 rendering and clearly synthetic fixtures. Test that neutral mentions, uncertain evidence, repeated names, and calibration records cannot create unsupported fan edges. Do not start a performer batch.
