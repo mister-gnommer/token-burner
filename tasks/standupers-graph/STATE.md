@@ -1,8 +1,8 @@
 # Current state
 
 Last updated: 2026-10-30
-Current stage: 3 — Worker framework (framework saved; context calibration still required)
-Next slice: complete-context calibration with low-tier extraction and independent verification
+Current stage: 3 — Worker framework (complete)
+Next stage: 4 — Aggregation and graph framework (not started)
 
 ## Established with the user
 - Target: 100 individual stand-uppers, processed in batches of 10.
@@ -22,6 +22,7 @@ Next slice: complete-context calibration with low-tier extraction and independen
 - Repository governance: added root `AGENTS.md` with repo-local Git permission and commit policy.
 - Initial checkpoint: commit `e0b2c9a` pushed to `origin/main`.
 - Stage 2: froze 100 individual performers and created the data contract; see `reports/20261025-stage-02-ranking-and-schema.md`.
+- Stage 3: saved and calibrated versioned collection/extraction/verification prompts, schemas, validation, and manifests; see `reports/20261030-stage-03b-context-calibration.md`.
 
 ## Decisions from source audits
 - Standupedia’s ranking is YouTube view-minutes data dated 2023-09-07; its aggregate ratings cannot supply pairwise fan overlap.
@@ -31,19 +32,20 @@ Next slice: complete-context calibration with low-tier extraction and independen
 - Standup.pl provides a fresh 448-person catalog, daily YouTube trend rankings, and an all-time popularity sort; its cumulative-view metric differs from Standupedia’s formula.
 
 ## Latest checkpoint
-- Stage 3 framework: source/evidence-v2/run schemas, versioned worker prompts, validator, pinned dependency, and four regression tests are saved.
-- Initial low-tier extraction and both verification passes finished before provider failures. Preserved their original artifacts; final evidence now has candidate IDs and honest extraction lineage.
-- Parent source-page audit found omitted evaluation context in two excerpts: final counts are 1 accepted, 2 uncertain, 0 rejected. Collection v2 now requires complete evaluation context.
-- The initial run manifest is completed with corrected counts. Stage 3 remains unfinished: v2 extraction/verification prompts have not been calibrated on complete context.
-- See `reports/20261030-stage-03-worker-framework.md` and `reports/runs/20261030-stage03-calibration.adjudication.json`. No performer batch has started. Calibration never feeds the graph.
+- Complete-context calibration used separate low-tier Codex gpt-6-luna collector/extractor workers and an independent Claude Haiku 5.5 verifier (all medium effort). Parent audited the source posts.
+- Final counts: 2 accepted, 1 uncertain, 0 rejected. Record 003's programme-scoped negative/mixed ambiguity is retained as uncertainty. Original extraction, verification, and earlier calibration remain preserved.
+- Future briefs must include `prompts/extraction-decisions-v1.md`: one mention per performer, programme-scope notes, no absolute praise inferred from relative improvement, and pair-specific handling of mixed/neutral mentions.
+- Existing tests and schema/lineage checks pass. Execution IDs/options and immutable prompt hashes are saved under `reports/runs/20261030-stage03-context-calibration.*`.
+- No performer batch has started. All calibration is excluded from graph input.
 
 ## Open questions / risks
 - The frozen ranking preserves source order rather than copying a separate 30-day trend metric; popularity is node context, never relation evidence.
 - Entity review is complete, including persona and hosted-format edge cases, but broader entertainers are included only when their profiles document stand-up work.
 - Public fan evidence will be sparse and uneven, especially for lower-ranked performers; a fully connected graph is not guaranteed.
 - Filmweb user-rating history accessibility/coverage and YouTube comment acquisition remain untested.
-- Discover live low-tier model IDs for the next calibration; the prior model IDs are historical. Scoring and rendering remain Stage 4 work.
+- Discover live low-tier model IDs before future collection. Scoring and rendering remain Stage 4 work.
+- Three posts from one thread do not establish source yield or diversity. Unresolved aliases and rejected-record cases remain untested in real-source calibration; model confidence is not measured probability.
 - Schema checks do not prove source-context completeness or candidate equality; these require a separate audit.
 
 ## Proposed next action
-Finish Stage 3 only: recollect the three calibration posts with complete evaluation context into a new run, then use the v2 extraction/verifier prompts with low-tier workers and audit their output. Preserve the initial run. Do not start Stage 4 or a performer batch yet.
+Run Stage 4 only: choose conservative aggregation and graph rendering, then implement and test them with clearly synthetic fixtures. Test that neutral mentions, uncertain evidence, repeated names, and calibration records cannot create unsupported fan edges. Do not start a performer batch.

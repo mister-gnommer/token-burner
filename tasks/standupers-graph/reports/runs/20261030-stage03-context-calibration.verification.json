@@ -1,0 +1,95 @@
+{
+  "surprises": [
+    "ev_context_003 Minkiewicz sentiment was corrected from negative to mixed. The negative judges only his latest programme ('program zrobil slaby'), while the earlier one is praised ('poprzednie mial duzo lepsze'). The schema has no programme-scope field, so programme-scoped evaluations can be read as performer-level sentiment. The v2 prompt should say how to label them.",
+    "Minkiewicz-Pacześ style relation conflicts across fans: ev_context_002 calls Minkiewicz 'trochę przeciwieństwem' (a bit of the opposite) of Pacześ; ev_context_003 says he 'chciał być jak Paczes' (wanted to be like him). Both are kept as individual readings and neither supports a similarity or dissimilarity edge. Not adjudicated.",
+    "src_context_003 excerpt is ASCII-only (no Polish diacritics), while 001 and 002 keep them. The record matches the candidate exactly, but the candidate may be a normalised copy. The live page could not be checked (no new search, no fetch), so this is unverified.",
+    "The premise (complete author-post context) is supported only by the collector report and internal consistency: post locators are distinct, post 6.1 is excluded from 002 and collected as its own candidate 003, and every target performer named in each excerpt is extracted. I did not confirm completeness against the live thread.",
+    "Extractor applied v2 neutral-for-anchor correctly: Lotek and Giza (002) and Paczes (003) are neutral, not unclear. This is the reverse of the prior calibration correction, and I follow the v2 rule.",
+    "The extractor records one mention per performer. Second in-text occurrences (Socha in 001, Pacześ as 'Rafała Paczesia' in 002) are noted, not added, to avoid duplicate per-record entries. The mention-occurrence policy is undefined and should be written into the extraction prompt.",
+    "Out-of-universe reference: Wojewódzki (001) is used as a metaphor for Pacześ's drift, not evaluated. Kept out of mentions; the schema permits performer_id null, but nothing here needs it."
+  ],
+  "run_id": "20261030-stage03-context-calibration",
+  "reviewer": {
+    "model": "claude-haiku-5-5",
+    "role": "independent verifier",
+    "prompt_version": "verify-evidence-v2"
+  },
+  "inputs": {
+    "source_candidates": "evidence/calibration-context/source-candidates.jsonl",
+    "evidence_unreviewed": "evidence/calibration-context/evidence.unreviewed.jsonl",
+    "evidence_reviewed": "evidence/calibration-context/evidence.jsonl"
+  },
+  "counts": {
+    "records": 3,
+    "mentions": 9,
+    "mentions_corrected": 1,
+    "records_corrected": 1
+  },
+  "counts_by_status": {
+    "accepted": 3,
+    "uncertain": 0,
+    "rejected": 0
+  },
+  "validation": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 scripts/evidence_pipeline.py validate --kind evidence evidence/calibration-context/evidence.jsonl",
+    "result": "passed, 3 records, exit 0",
+    "author_keys_rederived": "3 of 3 match source.author_key (scripts/evidence_pipeline.py author-key)"
+  },
+  "records": [
+    {
+      "id": "ev_context_001",
+      "candidate_id": "src_context_001",
+      "status": "accepted",
+      "issues": [],
+      "corrections": [],
+      "notes": "Excerpt, source metadata, language and author_key match the candidate exactly. Sentiments for Socha (positive), Lotek (positive) and Pacześ (mixed) hold. The Socha feud mention is unevaluated, so no second mention."
+    },
+    {
+      "id": "ev_context_002",
+      "candidate_id": "src_context_002",
+      "status": "accepted",
+      "issues": [],
+      "corrections": [],
+      "notes": "Excerpt, source metadata, language and author_key match exactly. Pacześ mixed holds ('numer jeden' is popularity; 'lubię go też' follows the negative traits). Minkiewicz positive holds. Lotek and Giza neutral (lightness/popularity sort, hedged). Co-preference holds only for Minkiewicz-Pacześ, with Pacześ's like qualified. Giza resolved by surname (no stored alias)."
+    },
+    {
+      "id": "ev_context_003",
+      "candidate_id": "src_context_003",
+      "status": "accepted",
+      "issues": [
+        {
+          "field": "mentions[0].sentiment",
+          "problem": "Extractor labelled Minkiewicz negative (0.98). The negative applies to his latest programme only; the text praises his previous programme as much better, so a performer-wide negative is not supported."
+        }
+      ],
+      "corrections": [
+        {
+          "field": "mentions[0].sentiment",
+          "from": "negative",
+          "to": "mixed"
+        },
+        {
+          "field": "mentions[0].confidence",
+          "from": 0.98,
+          "to": 0.85,
+          "reason": "Reviewer confidence lowered for the programme-scoped reading."
+        }
+      ],
+      "notes": "Paczes neutral kept: comparison anchor ('chcial byc jak Paczes'); 'co mu nie wyszlo' refers to Minkiewicz's failure. fan_comparison class kept (imitation claim, not co-endorsement). Conflicts with ev_context_002 on the style relation; not adjudicated. Candidate excerpt is ASCII-only; verbatim status unverified."
+    }
+  ],
+  "assumptions": [
+    "The supplied candidate excerpts are the complete author posts, as the collector reports. This was not checked against the live page.",
+    "Mention entries are one per performer per record. Extra in-text occurrences are noted but not added.",
+    "Under v2, a performer named only as a comparison anchor is neutral, and the comparison does not imply a like or dislike.",
+    "A programme-scoped negative whose text also praises an earlier programme is labelled mixed at performer level. This is a judgment call.",
+    "Surname-only resolution (Giza) is valid because the performer universe has no competing Giza.",
+    "Lowering Minkiewicz's mention confidence from 0.98 to 0.85 is a reviewer judgment, not a measured value."
+  ],
+  "limitations": [
+    "No live fetch or new evidence search, so excerpt completeness and verbatim accuracy against standup.pl/gry-online are unverified.",
+    "The validator checks schema and performer-ID membership only. It does not check sentiment semantics or record review quality.",
+    "Only three records were reviewed. The mention-occurrence policy and programme-scoping rule need a decision before the batch run.",
+    "No graph edges were created; the evidence-class decisions are inputs for later stages only."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "surprises": [
+    "The verifier accepted all three records; parent adjudication retains uncertainty for programme-scoped negative versus mixed sentiment in record 003.",
+    "Full post 6 also names Abelard Giza. Lotek and Giza are neutral descriptors there, not additional endorsements.",
+    "Verifier could not check source context live; parent source-page audit checked all three posts, dates, authors, and original ASCII spelling."
+  ],
+  "run_id": "20261030-stage03-context-calibration",
+  "reviewer": {
+    "provider": "codex",
+    "model": "gpt-6.1-sol"
+  },
+  "reviewed_at": "2026-10-30T20:20:13Z",
+  "source_url": "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169",
+  "source_checks": {
+    "posts": [
+      "16",
+      "6",
+      "6.1"
+    ],
+    "complete_author_post_context": true,
+    "author_and_date_match": true,
+    "ascii_excerpt_is_verbatim": true,
+    "other_authors_excluded": true
+  },
+  "worker_counts": {
+    "accepted": 3,
+    "uncertain": 0,
+    "rejected": 0
+  },
+  "final_counts": {
+    "accepted": 2,
+    "uncertain": 1,
+    "rejected": 0
+  },
+  "decisions": [
+    "Keep the verifier snapshot in evidence.haiku.jsonl and original extraction in evidence.unreviewed.jsonl. Final evidence.jsonl contains parent review status; original extraction provenance is unchanged.",
+    "Record 003 remains uncertain: relative superiority of earlier programmes does not settle negative versus mixed performer-level sentiment. No extra numerical confidence invented by parent.",
+    "One mention per resolved performer per record; interpret all occurrences together. Uncertainty is an expected calibration outcome, not an instruction to force agreement.",
+    "Explicit liking with caveats in records 001 and 002 is accepted. Neutral mentions and mixed labels without explicit appreciation never supply automatic co-preference pairs.",
+    "The two style comments concern different assessments/programmes and attempted imitation; neither establishes a factual pairwise similarity/dissimilarity relation.",
+    "Stage 3 framework calibration complete. Stage 4 aggregation/rendering is next; no performer batch has started. All calibration stays excluded from graph input."
+  ],
+  "supplement": "prompts/extraction-decisions-v1.md (parent decisions after this run; not a prompt used by its workers)",
+  "limitations": [
+    "Three posts from one thread; no collection-yield estimate or source-diversity claim.",
+    "Unresolved aliases and rejected-record behavior were not exercised by this real-source sample.",
+    "Model confidence numbers are judgments, not measured probabilities."
+  ]
+}

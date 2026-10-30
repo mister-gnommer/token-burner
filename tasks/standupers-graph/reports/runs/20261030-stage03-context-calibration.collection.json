@@ -1,0 +1,22 @@
+{
+  "surprises": [
+    "The prior calibration excerpts omitted material evaluations in post 16 and post 6; the complete posts were available on the live page and are included here."
+  ],
+  "run_id": "20261030-stage03-context-calibration",
+  "source_url": "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169",
+  "retrieved_at": "2026-10-30T20:14:21Z",
+  "counts": {"posts_requested": 3, "posts_collected": 3, "source_candidates": 3},
+  "post_locators": [
+    {"candidate_id": "src_context_001", "post": "16", "author": "Qverty", "published_at": "2023-01-15", "live_page_lines": "1126-1150"},
+    {"candidate_id": "src_context_002", "post": "6", "author": "JohnDoe666", "published_at": "2023-01-14", "live_page_lines": "618-641"},
+    {"candidate_id": "src_context_003", "post": "6.1", "author": "Mutant z Krainy OZ", "published_at": "2023-01-14", "live_page_lines": "643-661"}
+  ],
+  "context_checks": [
+    {"candidate_id": "src_context_001", "check": "Full contiguous post text retained, including praise of Pacześ, criticism of his later work, and criticism of his dispute with Socha; reply 16.1 excluded."},
+    {"candidate_id": "src_context_002", "check": "Full contiguous post text retained, including evaluation/comparison of Pacześ, Lotek, Giza, and Minkiewicz; reply 6.1 excluded."},
+    {"candidate_id": "src_context_003", "check": "Full author post retained; surrounding replies excluded."}
+  ],
+  "skipped_sources": [],
+  "alias_doubts": [],
+  "coverage_gaps": ["This slice covers only the three specified posts; no wider thread collection was performed."]
+}

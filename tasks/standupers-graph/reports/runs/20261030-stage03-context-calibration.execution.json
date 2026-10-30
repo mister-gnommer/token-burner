@@ -1,0 +1,38 @@
+{
+  "run_id": "20261030-stage03-context-calibration",
+  "collector": {
+    "task": "/root/context_collector",
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "options": {
+      "reasoningEffort": "medium"
+    },
+    "status": "completed"
+  },
+  "extractor": {
+    "task": "/root/context_extractor",
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "options": {
+      "reasoningEffort": "medium"
+    },
+    "status": "completed"
+  },
+  "verifier": {
+    "taskId": "node:delegated-task:command%3Amcp%3Abdbb7a28-c99e-4406-b798-c4bfd57c1864%3Adelegate-task%3A20261030-stage03-context-verifier-round1",
+    "childThreadId": "thread:delegated-task:command%3Amcp%3Abdbb7a28-c99e-4406-b798-c4bfd57c1864%3Adelegate-task%3A20261030-stage03-context-verifier-round1",
+    "provider": "claudeAgent",
+    "model": "claude-haiku-5-5",
+    "options": {
+      "effort": "medium"
+    },
+    "status": "completed"
+  },
+  "prompt_sha256": {
+    "collect-fan-evidence-v2.md": "aee3bf3e1c032e3ddf274aa3655ecf9faa8142dbd267d42911a889e9e98d507c",
+    "extract-evidence-v2.md": "399931e7f2e9676419aa4aa686cdcef2bfc22efdd75b68faa2a1d00a9cf9ba86",
+    "verify-evidence-v2.md": "8c0e69ed3f1a39bfd099da5478b708e9220eb759d5a388ddf8432d5fb7559562"
+  },
+  "scope": "Calibration only; original run preserved; no graph input or performer batch.",
+  "completed_at": "2026-10-30T20:20:13Z"
+}

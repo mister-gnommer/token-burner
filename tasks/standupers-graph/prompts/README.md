@@ -5,6 +5,8 @@
 - Extractor: `extract-evidence-v2.md` performs Polish-aware entity/sentiment/class extraction with direct candidate lineage.
 - Verifier: `verify-evidence-v2.md` independently audits the complete extraction.
 
+Include `extraction-decisions-v1.md` in future extractor/verifier briefs for mention deduplication, programme scope, and pair-specific caveats. It supplements the immutable prompts; do not relabel earlier extractions as having used it.
+
 The initial calibration used `opencode/big-pickle` for extraction/first verification and `claude-haiku-5-5` for secondary verification. Discover available low-tier models before each new run; these are historical IDs, not guaranteed defaults. Prefer different models for extraction and verification. Run the verifier as a separate task with the source candidates, not merely the extractor’s conclusions. The main agent checks source context and adjudicates disagreements. Same-model verification is weaker independence. Record any escalation and its reason in the run manifest.
 
 Prompt files are immutable once used. Create a new versioned file for material changes; never silently alter a prompt referenced by an earlier run.
@@ -21,7 +23,7 @@ Use `calibration` for framework tests and `batch-01` … `batch-10` only for exp
 
 Lifecycle: `prepared → collecting → extracting → verifying → validated → completed`. Use `blocked` or `failed` with notes when appropriate. Calibration never feeds graph relations.
 
-A completed run can expose failures that leave its stage unfinished. The initial calibration ended with one accepted and two uncertain records after source-context checks; see `reports/runs/20261030-stage03-calibration.adjudication.json`. The v2 extractor/verifier prompts still need a complete-context calibration. Version-1 extractor and worker-review artifacts remain unchanged; final `evidence.jsonl` was migrated to v2 by the parent audit without relabeling its original extraction prompt.
+A completed run can expose failures that leave its stage unfinished. The initial calibration ended with one accepted and two uncertain records after source-context checks. The complete-context rerun exercised v2 collection, extraction, independent verification, and parent adjudication: two accepted, one uncertain. Stage 3 is complete for this limited framework calibration; wider source yield remains untested. See `reports/runs/20261030-stage03-context-calibration.adjudication.json`. Initial artifacts remain unchanged; no calibration feeds the graph.
 
 ## Fan keys
 Collectors may preserve a source-local public `author_hint` in source-candidate records. Final evidence contains only `author_key`, computed by `scripts/evidence_pipeline.py author-key` as `fan_` plus the first 16 hex characters of SHA-256 for `<lowercase-site>:<casefolded-author-hint>`. This is pseudonymization for same-source deduplication, not anonymity or permission to link identities across sites.
