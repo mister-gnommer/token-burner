@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "run_id": "20261030-stage03-calibration",
+  "stage": "calibration",
+  "verifier": {
+    "provider": "opencode",
+    "model": "opencode/big-pickle",
+    "prompt_version": "verify-evidence-v1"
+  },
+  "reviewed_at": "2026-10-30",
+  "counts": {
+    "source_candidates": 3,
+    "records_reviewed": 3,
+    "accepted": 3,
+    "uncertain": 0,
+    "rejected": 0,
+    "records_with_corrections": 0,
+    "field_corrections": 0
+  },
+  "surprises": [
+    "The extractor and the verifier are the same model (opencode/big-pickle) per the run manifest, so this review is process-independent but not model-independent. Three-for-three agreement is weak evidence that the extraction prompt is sound; a real independence check needs a different reviewer model.",
+    "Record 001 carries published_at 2023-01-15 while records 002 and 003 carry 2023-01-14 for the identical URL. The values were copied faithfully from the candidate file, so no record was changed, but the collector's per-post date attribution is unverified because all three excerpts come from one thread page.",
+    "The evidence schema has no candidate_id field and forbids additional properties, so lineage from a record back to a specific source candidate is only reconstructable via run_id plus URL plus excerpt. Any future multi-candidate-per-URL run will be ambiguous to audit.",
+    "The three source candidates are manually seeded, real forum excerpts. None of these records is batch or graph input, so the acceptance result calibrates the prompt/validator only and says nothing about batch yield or alias coverage at scale.",
+    "No record exercised the schema's null-performer_id path or the uncertain/rejected branches, so this calibration does not test how the verifier or schema handles unresolved aliases, absent author keys, or unsupported sentiment."
+  ],
+  "records": [
+    {
+      "id": "ev_calibration_001",
+      "candidate_id": "src_calibration_001",
+      "status": "accepted",
+      "candidate_targets": ["rafal-paczes", "mateusz-socha", "lukasz-lotek-lodkowski"],
+      "checks": {
+        "source_metadata_exact": true,
+        "excerpt_exact": true,
+        "canonical_ids_valid": true,
+        "alias_resolution_correct": true,
+        "evidence_class_supported": true,
+        "sentiment_supported": true,
+        "author_key_requirement_met": true,
+        "schema_valid": true
+      },
+      "issues": [],
+      "corrections": [],
+      "notes": "No change. One speaker endorses all three performers in a single clause, which is the intended same_user_coendorsement shape: three mentions, positive on each, pseudonymous author key present. 'Lotka' resolves to lukasz-lotek-lodkowski even though aliases[] is empty, because 'Lotek' is part of the canonical name. The opening line about being spat on for not preferring American stand-up is a general disclaimer and does not soften the endorsements."
+    },
+    {
+      "id": "ev_calibration_002",
+      "candidate_id": "src_calibration_002",
+      "status": "accepted",
+      "candidate_targets": ["mieszko-minkiewicz", "rafal-paczes"],
+      "checks": {
+        "source_metadata_exact": true,
+        "excerpt_exact": true,
+        "canonical_ids_valid": true,
+        "alias_resolution_correct": true,
+        "evidence_class_supported": true,
+        "sentiment_supported": true,
+        "author_key_requirement_met": true,
+        "schema_valid": true
+      },
+      "issues": [],
+      "corrections": [],
+      "notes": "No change. fan_comparison is explicitly warranted by 'przeciwieństwem Rafała Paczesia'. Minkiewicz's positive sentiment rests on 'lubię' and 'z przyjemnością ... wysiedzieć'. The Paczes mention is a comparative reference with no evaluation of him, so neutral at 0.72 is the conservative reading rather than an under-read. The record is one endorsement plus a comparison, not a coendorsement, and its neutral Paczes mention must not support a Paczes preference edge."
+    },
+    {
+      "id": "ev_calibration_003",
+      "candidate_id": "src_calibration_003",
+      "status": "accepted",
+      "candidate_targets": ["mieszko-minkiewicz", "rafal-paczes"],
+      "checks": {
+        "source_metadata_exact": true,
+        "excerpt_exact": true,
+        "canonical_ids_valid": true,
+        "alias_resolution_correct": true,
+        "evidence_class_supported": true,
+        "sentiment_supported": true,
+        "author_key_requirement_met": true,
+        "schema_valid": true
+      },
+      "issues": [],
+      "corrections": [],
+      "notes": "No change. The excerpt matches byte-for-byte, including the source's unaccented spellings. mixed on mieszko-minkiewicz is the right call: the latest programme is 'slaby' while earlier ones were 'duzo lepsze'. Paczes functions as an aspiration benchmark that the author never evaluates, so neutral at 0.65 stands. 'co mu nie wyszlo' describes Minkiewicz's failed imitation, not a negative judgement of Paczes, so no negative Paczes sentiment should be inferred."
+    }
+  ],
+  "contradictions": [],
+  "fabricated_sources": [],
+  "cross_record_observations": [
+    "All three records point at the same forum thread URL and are internally consistent with each other; no duplicate excerpt, no conflicting performer identity, no conflicting author_key.",
+    "Record 002 and record 003 describe opposite directions of the same Minkiewicz/Paczes comparison (one favourable to Minkiewicz, one unfavourable to his latest programme). They are not contradictions, but any downstream relation builder must keep them as separate evidence items rather than netting them into one sentiment score."
+  ],
+  "limitations": [
+    "No web fetch, no new evidence, no relation generation, no performer batch work was performed.",
+    "Sentiment labels were judged against the Polish text only; no external context about the performers' actual programmes was used or needed.",
+    "Independence from the extractor is procedural only, since both roles ran on opencode/big-pickle."
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "surprises": [
+    "Candidate src_calibration_003 excerpt is ASCII-only (chcial, byc, wyszlo, zrobil, slaby, lepsze, mial), while src_calibration_001 and 002 keep Polish diacritics. The record matches the candidate exactly, but the candidate may be a normalized rather than verbatim copy. Source-page verbatim check was not possible (no web search in this calibration); recheck against the live page before any edge depends on it.",
+    "standupers.json has aliases: [] for all 100 performers. Surface forms (Paczesia, Sochę, Lotka, Mieszka Minkiewicza, Minkiewicz, Paczes) were resolved by inflection and diacritic-folding judgment, not from stored aliases. All resolutions are correct here, but they are not reproducible from data. Populate aliases before the first batch; not changed here (out of scope).",
+    "Cross-record contradiction on the Minkiewicz-Pacześ pair: ev_calibration_002 (author fan_847264c46d924cb8) calls Minkiewicz the 'opposite' of Pacześ; ev_calibration_003 (author fan_ad603516df3d6200) says Minkiewicz wanted to be like Pacześ and failed. Both are accepted as individual readings. Neither should support a similarity or dissimilarity edge for this pair without adjudication.",
+    "Extractor pattern: 'neutral' was assigned to two performers who appear only as comparison references and receive no evaluation. Both were corrected to 'unclear'. Expect this to recur across the batch; the extraction prompt should distinguish 'referenced' from 'evaluated as neutral'."
+  ],
+  "run_id": "20261030-stage03-calibration",
+  "reviewer": {
+    "model": "claude-haiku-5-5",
+    "role": "independent verifier"
+  },
+  "counts_by_status": {
+    "accepted": 3,
+    "uncertain": 0,
+    "rejected": 0
+  },
+  "records": [
+    {
+      "id": "ev_calibration_001",
+      "candidate_id": "src_calibration_001",
+      "status": "accepted",
+      "issues": [],
+      "corrections": [],
+      "no_change_notes": "Excerpt, URL, site, retrieved_at, published_at, language, and author_key match the candidate exactly. Three mentions match candidate targets and canonical IDs. Positive sentiment for all three is supported by 'ale ja lubię'. evidence_class same_user_coendorsement satisfies mentions >= 2 and author_key present."
+    },
+    {
+      "id": "ev_calibration_002",
+      "candidate_id": "src_calibration_002",
+      "status": "accepted",
+      "issues": [
+        {
+          "field": "mentions[1].sentiment",
+          "problem": "Rafał Pacześ is assigned 'neutral', but the text only uses him as a contrast reference ('trochę przeciwieństwem'). No stance toward him is expressed."
+        }
+      ],
+      "corrections": [
+        {
+          "field": "mentions[1].sentiment",
+          "from": "neutral",
+          "to": "unclear",
+          "reason": "No evaluation of Pacześ is stated. Confidence 0.72 left as extractor-assigned (not re-scored)."
+        },
+        {
+          "field": "review",
+          "from": {"status": "unreviewed", "reviewer": null},
+          "to": {"status": "accepted", "reviewer": "claude-haiku-5-5"}
+        }
+      ],
+      "no_change_notes": "Excerpt, URL, dates, and author_key match the candidate exactly. Minkiewicz 'positive' is supported by 'Osobiście lubię też'. evidence_class fan_comparison is appropriate; the 'opposite' claim is a stylistic contrast, not a preference."
+    },
+    {
+      "id": "ev_calibration_003",
+      "candidate_id": "src_calibration_003",
+      "status": "accepted",
+      "issues": [
+        {
+          "field": "mentions[1].sentiment",
+          "problem": "Rafał Pacześ is assigned 'neutral', but the text only says Minkiewicz wanted to be like him and failed. No evaluation of Pacześ is stated."
+        },
+        {
+          "field": "source.excerpt",
+          "problem": "Excerpt is ASCII-only, unlike candidates 001 and 002. Matches the candidate exactly, so no change; flagged as a surprise pending a verbatim source check."
+        },
+        {
+          "field": "relations",
+          "problem": "Contradicts ev_calibration_002 on the Minkiewicz-Pacześ pair ('opposite' vs. 'wanted to be like'). Not an error in this record; blocks similarity or dissimilarity edges for the pair without adjudication."
+        }
+      ],
+      "corrections": [
+        {
+          "field": "mentions[1].sentiment",
+          "from": "neutral",
+          "to": "unclear",
+          "reason": "No stance toward Pacześ is expressed. Confidence 0.65 left as extractor-assigned (not re-scored)."
+        },
+        {
+          "field": "review",
+          "from": {"status": "unreviewed", "reviewer": null},
+          "to": {"status": "accepted", "reviewer": "claude-haiku-5-5"}
+        }
+      ],
+      "no_change_notes": "Excerpt, URL, dates, and author_key match the candidate exactly. Minkiewicz 'mixed' is kept: the latest show is called weak and the previous one 'dużo lepsze', which are explicit opposite evaluations. Evidence class fan_comparison is appropriate."
+    }
+  ]
+}

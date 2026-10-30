@@ -136,7 +136,7 @@
       "profile_url": "https://standup.pl/komicy/lukasz-lotek-lodkowski",
       "image_url": "https://standup.pl/images/avatars/lukasz-lotek-lodkowski.png",
       "source_position": 3,
-      "aliases": [],
+      "aliases": ["Lotek", "Lotka"],
       "batch": 1,
       "status": "pending"
     },
@@ -147,7 +147,7 @@
       "profile_url": "https://standup.pl/komicy/rafal-paczes",
       "image_url": "https://standup.pl/images/avatars/rafal-paczes.png",
       "source_position": 4,
-      "aliases": [],
+      "aliases": ["Pacześ", "Paczes", "Paczesia", "Rafała Paczesia"],
       "batch": 1,
       "status": "pending"
     },
@@ -169,7 +169,7 @@
       "profile_url": "https://standup.pl/komicy/mateusz-socha",
       "image_url": "https://standup.pl/images/avatars/mateusz-socha.png",
       "source_position": 6,
-      "aliases": [],
+      "aliases": ["Sochę"],
       "batch": 1,
       "status": "pending"
     },
@@ -411,7 +411,7 @@
       "profile_url": "https://standup.pl/komicy/mieszko-minkiewicz",
       "image_url": "https://standup.pl/images/avatars/mieszko-minkiewicz.png",
       "source_position": 31,
-      "aliases": [],
+      "aliases": ["Mieszka Minkiewicza", "Minkiewicz"],
       "batch": 3,
       "status": "pending"
     },

@@ -1,8 +1,8 @@
 # Current state
 
-Last updated: 2026-10-25
-Current stage: 2 — Ranking and data contract (complete)
-Next stage: 3 — Worker framework (not started)
+Last updated: 2026-10-30
+Current stage: 3 — Worker framework (framework saved; context calibration still required)
+Next slice: complete-context calibration with low-tier extraction and independent verification
 
 ## Established with the user
 - Target: 100 individual stand-uppers, processed in batches of 10.
@@ -30,15 +30,20 @@ Next stage: 3 — Worker framework (not started)
 - Filmweb, Reddit, and YouTube remain unconfirmed evidence-source adapters.
 - Standup.pl provides a fresh 448-person catalog, daily YouTube trend rankings, and an all-time popularity sort; its cumulative-view metric differs from Standupedia’s formula.
 
-## Latest milestone
-Stage 2 has been committed as one consolidated checkpoint: acquisition/finalization code, 135-candidate snapshot, audited entity decisions, frozen 100-person list, schemas, report, and this state. See Git history for the commit ID. No performer batch has started.
+## Latest checkpoint
+- Stage 3 framework: source/evidence-v2/run schemas, versioned worker prompts, validator, pinned dependency, and four regression tests are saved.
+- Initial low-tier extraction and both verification passes finished before provider failures. Preserved their original artifacts; final evidence now has candidate IDs and honest extraction lineage.
+- Parent source-page audit found omitted evaluation context in two excerpts: final counts are 1 accepted, 2 uncertain, 0 rejected. Collection v2 now requires complete evaluation context.
+- The initial run manifest is completed with corrected counts. Stage 3 remains unfinished: v2 extraction/verification prompts have not been calibrated on complete context.
+- See `reports/20261030-stage-03-worker-framework.md` and `reports/runs/20261030-stage03-calibration.adjudication.json`. No performer batch has started. Calibration never feeds the graph.
 
 ## Open questions / risks
 - The frozen ranking preserves source order rather than copying a separate 30-day trend metric; popularity is node context, never relation evidence.
 - Entity review is complete, including persona and hosted-format edge cases, but broader entertainers are included only when their profiles document stand-up work.
 - Public fan evidence will be sparse and uneven, especially for lower-ranked performers; a fully connected graph is not guaranteed.
 - Filmweb user-rating history accessibility/coverage and YouTube comment acquisition remain untested.
-- Worker prompts/models, scoring formula, and renderer remain decisions for their respective stages.
+- Discover live low-tier model IDs for the next calibration; the prior model IDs are historical. Scoring and rendering remain Stage 4 work.
+- Schema checks do not prove source-context completeness or candidate equality; these require a separate audit.
 
 ## Proposed next action
-Run only Stage 3: prepare and test low-tier worker prompts, a Polish-aware extraction rubric, validation, run manifests, and storage conventions on a tiny sample without launching a performer batch.
+Finish Stage 3 only: recollect the three calibration posts with complete evaluation context into a new run, then use the v2 extraction/verifier prompts with low-tier workers and audit their output. Preserve the initial run. Do not start Stage 4 or a performer batch yet.

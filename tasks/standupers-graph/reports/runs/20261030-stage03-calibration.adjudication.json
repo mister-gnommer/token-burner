@@ -1,0 +1,67 @@
+{
+  "surprises": [
+    "Two verbatim excerpts omit nearby evaluation context: record 001 omits criticism of Pacześ; record 002 omits expressed liking and criticism of Pacześ. Both are now uncertain.",
+    "The two worker reviews checked supplied excerpts, not complete source posts. Their agreement did not validate collection context.",
+    "The original run manifest and STATE.md were stale after provider failures."
+  ],
+  "run_id": "20261030-stage03-calibration",
+  "reviewer": {
+    "provider": "codex",
+    "model": "gpt-6.1-sol",
+    "role": "parent audit"
+  },
+  "reviewed_at": "2026-10-30T20:07:44Z",
+  "source_url": "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169",
+  "source_checks": {
+    "001": {
+      "author": "Qverty",
+      "published_at": "2023-01-15",
+      "post": "16",
+      "excerpt_exact": true,
+      "context_complete": false
+    },
+    "002": {
+      "author": "JohnDoe666",
+      "published_at": "2023-01-14",
+      "post": "6",
+      "excerpt_exact": true,
+      "context_complete": false
+    },
+    "003": {
+      "author": "Mutant z Krainy OZ",
+      "published_at": "2023-01-14",
+      "post": "6.1",
+      "excerpt_exact": true,
+      "context_complete": true
+    }
+  },
+  "counts": {
+    "reviewed": 3,
+    "accepted": 1,
+    "uncertain": 2,
+    "rejected": 0
+  },
+  "decisions": [
+    "Reference-only anchors remain neutral under v2; unclear requires ambiguous evaluation. This does not justify discarding evaluations elsewhere in a source post.",
+    "Migrated final records to schema v2 with candidate_id; extraction.prompt_version remains extract-evidence-v1 because v2 was not run.",
+    "Preserved initial extractor output, same-model verification, and Haiku verification as historical artifacts.",
+    "All calibration remains excluded from graph input. Repeat a low-tier extraction and independent verification using complete evaluation context before Stage 4."
+  ],
+  "records": [
+    {
+      "id": "ev_calibration_001",
+      "status": "uncertain",
+      "notes": "Source-page audit: the excerpt is verbatim, but later paragraphs in the same post criticize Pacześ while retaining some appreciation. The all-positive extraction only describes the clipped sentence. Preserve it for audit; collect complete evaluation context and re-extract before accepting this record."
+    },
+    {
+      "id": "ev_calibration_002",
+      "status": "uncertain",
+      "notes": "Source-page audit: the excerpt is verbatim, but the preceding paragraph explicitly expresses liking for Pacześ alongside criticism. Neutral is defensible only within the clipped excerpt. Collect complete evaluation context and re-extract; the original candidate omitted evidence relevant to the same author and pair."
+    },
+    {
+      "id": "ev_calibration_003",
+      "status": "accepted",
+      "notes": "Source-page audit confirmed the original ASCII spelling, author, and publication date. Keep the fan_comparison interpretation with mixed Minkiewicz and reference-only neutral Pacześ under the v2 rule. Earlier style comparisons concern different assessments/programmes; they do not establish preference similarity or dissimilarity."
+    }
+  ]
+}

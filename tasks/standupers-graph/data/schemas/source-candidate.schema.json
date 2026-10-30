@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "source-candidate.schema.json",
+  "title": "Standupers graph source candidate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "candidate_id",
+    "run_id",
+    "target_performer_ids",
+    "site",
+    "url",
+    "retrieved_at",
+    "published_at",
+    "author_hint",
+    "author_key",
+    "excerpt",
+    "language",
+    "collector"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "candidate_id": {"type": "string", "pattern": "^src_[A-Za-z0-9_-]+$"},
+    "run_id": {"type": "string", "minLength": 1},
+    "target_performer_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "site": {"type": "string", "minLength": 1},
+    "url": {"type": "string", "format": "uri"},
+    "retrieved_at": {"type": "string", "format": "date-time"},
+    "published_at": {
+      "type": ["string", "null"],
+      "description": "ISO 8601 date or date-time when known; otherwise null"
+    },
+    "author_hint": {
+      "type": ["string", "null"],
+      "description": "Source-local public handle used only to derive a pseudonymous key"
+    },
+    "author_key": {"type": ["string", "null"]},
+    "excerpt": {"type": "string", "minLength": 1},
+    "language": {"type": "string", "minLength": 2},
+    "collector": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider", "model", "prompt_version"],
+      "properties": {
+        "provider": {"type": "string", "minLength": 1},
+        "model": {"type": "string", "minLength": 1},
+        "prompt_version": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

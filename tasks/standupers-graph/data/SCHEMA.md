@@ -8,9 +8,13 @@
 
 Do not silently replace the frozen list with a newer trend. A refresh is a new, explicitly approved source decision.
 
+## Acquisition and run lineage
+
+`schemas/source-candidate.schema.json` describes an exact source excerpt before AI interpretation. Source-local `author_hint` is allowed only at this stage; final evidence carries the computed pseudonymous `author_key` instead. `schemas/run-manifest.schema.json` records scope, worker models/prompt versions, lifecycle, artifact paths, counts, and surprises for every calibration or batch. Calibration artifacts never feed graph relations.
+
 ## Evidence records
 
-`schemas/evidence.schema.json` describes one cited source excerpt plus its AI interpretation. Store records as JSON Lines in `evidence/<batch>/`.
+`schemas/evidence-v2.schema.json` is the current contract for one cited source excerpt plus its AI interpretation. Version 2 requires `candidate_id` for direct source lineage. `schemas/evidence.schema.json` is retained only for version-1 calibration artifacts. Store records as JSON Lines in `evidence/<batch>/`.
 
 Evidence classes:
 
