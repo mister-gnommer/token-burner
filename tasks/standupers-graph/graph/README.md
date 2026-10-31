@@ -56,7 +56,7 @@ On every push to `main` that touches `graph/`, `.github/workflows/pages.yml` run
 Preview locally: `bash tasks/standupers-graph/scripts/build_site.sh /tmp/site && python3 -m http.server -d /tmp/site`, then open `http://localhost:8000/standupers/`.
 ## Interactive HTML view
 
-Every `graph_pipeline.py` build also writes `interactive.html` next to `graph.json`: one self-contained page (vendored d3-force 7.9.0, avatars embedded as small JPEGs, cited evidence excerpts inline). It presents saved relations only and never rescores. Link rest length and pull strength scale with score, so corroborated pairs settle closer; provisional links pull weakly; contested pairs (any opposing record) are drawn on demand but exert no pull. Unlinked researched performers orbit the cluster. Photos appear only for avatars cached by `--render`.
+Every `graph_pipeline.py` build also writes `interactive.html` next to `graph.json`: one self-contained page (vendored d3-force 7.9.0, avatars embedded as small JPEGs, cited evidence excerpts inline). It presents saved relations only and never rescores. Link rest length and pull strength scale with score, so corroborated pairs settle closer; provisional links pull weakly; contested pairs (any opposing record) are drawn on demand but exert no pull. Unlinked researched performers orbit the cluster. Photos appear only for avatars cached by `--render`. The legend/settings card collapses; the top-right box live-searches names (case- and diacritic-insensitive substring, `ł` treated as `l`) and highlights matches, counting matches hidden by the current toggles.
 
 To re-render an existing snapshot without rebuilding it (run from the repository root):
 
