@@ -1,0 +1,357 @@
+{
+  "Surprises": [
+    "KupBilecik exact event and comments URLs returned cache misses in web search; each was recovered after preview_status and preview_open, then verified by full live page text through preview_evaluate. One preview_snapshot timed out once; evaluate succeeded.",
+    "A newly surfaced Oskar comment on Kuba’s solo event praised Adrian Szostek too, but Adrian is outside the frozen 100, so it was excluded.",
+    "The saved Izabela review is strongly comparative and negative toward Kuba while positive toward Pan Li; it also preserves her caveat about undisclosed testing of new material."
+  ],
+  "run_id": "20261031-batch06-catchup",
+  "slice": "C",
+  "assigned_performers": [
+    {
+      "rank": 57,
+      "id": "kuba-dabrowski",
+      "name": "Kuba Dąbrowski"
+    }
+  ],
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+research-budget-v1"
+  },
+  "reservation": {
+    "queries": 24,
+    "page_attempts": 24,
+    "verified_candidates": 16,
+    "reservation_time": "2026-10-31T17:46:45Z",
+    "reservation_method": "fresh separately authorized slice-C allowance; zero counters initialized and guarded before research"
+  },
+  "accounting": {
+    "queries_used": 12,
+    "page_attempts_used": 4,
+    "candidates_saved": 1,
+    "non_navigation_reads": [
+      {
+        "type": "preview_status",
+        "result": "available:false; no attached tab; fallback open still required"
+      },
+      {
+        "type": "preview_snapshot",
+        "tab_id": "tab_u_02a52303-1e3a-4993-a897-62daeceecefe",
+        "result": "failed",
+        "error": "Preview snapshot failed: Preview automation snapshot timed out after 15000ms."
+      },
+      {
+        "type": "preview_evaluate",
+        "tab_id": "tab_u_02a52303-1e3a-4993-a897-62daeceecefe",
+        "result": "read full document.body.innerText; verified exact page text and Oskar review; no eligible frozen peer in the review"
+      },
+      {
+        "type": "preview_status",
+        "result": "available:true; tab for previous comments page, need open exact event page"
+      },
+      {
+        "type": "preview_evaluate",
+        "tab_id": "tab_u_02a52303-1e3a-4993-a897-62daeceecefe",
+        "result": "read full document.body.innerText; exact Izabela passage verified in live page under comments; title and event details independently identify pair"
+      }
+    ],
+    "jsonl_records": 1,
+    "candidate_ids_saved": [
+      "src_b06cc_001"
+    ],
+    "unused_queries": 12,
+    "unused_page_attempts": 20,
+    "unused_candidate_slots": 15
+  },
+  "deduplication_audit": {
+    "canonical_files_scanned": 10,
+    "catchup_A_scanned": true,
+    "catchup_B_scanned": true,
+    "records_scanned": 75,
+    "matching_author_post_or_excerpt": [],
+    "result": "scanned all canonical batch-*/source-candidates.jsonl files including original batch6 and catch-up A/B; no duplicate author/post/excerpt found"
+  },
+  "attempts": [
+    {
+      "type": "search_batch",
+      "queries": [
+        {
+          "query": "\"Kuba Dąbrowski\" stand-up ulubieni komicy",
+          "status": "completed",
+          "result_summary": "mostly profile, video and solo event/review material; one KupBilecik result exposes co-enjoyment by named fan about Adrian Szostek, needs page verification and frozen identity check"
+        },
+        {
+          "query": "\"Kuba Dąbrowski\" stand-up polecacie forum",
+          "status": "completed",
+          "result_summary": "profiles and generic results; no multi-performer fan passages verified from search results"
+        },
+        {
+          "query": "\"Kuba Dąbrowskiego\" stand-up \"najlepszy\" komicy",
+          "status": "completed",
+          "result_summary": "mostly unrelated Dąbrowski or editorial/video results"
+        },
+        {
+          "query": "\"Kuba Dąbrowski\" stand-up opinie podobny do",
+          "status": "completed",
+          "result_summary": "solo reviews and event listings; no usable comparison passage"
+        }
+      ],
+      "results": [
+        {
+          "url": "https://www.kupbilecik.pl/pl/comments/4185/stand-up-kuba-dabrowski",
+          "title": "Stand-up: Kuba Dąbrowski — lista komentarzy",
+          "disposition": "open exact comments page; search result surfaces “Kolejny raz byliśmy ze znajomymi na występie Kuby, super występ uśmialiśmy się do łez, Adrian Szostek też dał kawał dobrego stand-upu oby tak dalej, dziękujemy i do zobaczenia następnym razem :-)”"
+        }
+      ]
+    },
+    {
+      "type": "open_reservation",
+      "url": "https://www.kupbilecik.pl/pl/comments/4185/stand-up-kuba-dabrowski",
+      "reserved": 1,
+      "status": "reserved before open"
+    },
+    {
+      "type": "open_url",
+      "url": "https://www.kupbilecik.pl/pl/comments/4185/stand-up-kuba-dabrowski",
+      "status": "cache miss; exact full URL attempted before preview fallback",
+      "locator": "exact page title; verified live through preview_evaluate"
+    },
+    {
+      "type": "preview_open",
+      "url": "https://www.kupbilecik.pl/pl/comments/4185/stand-up-kuba-dabrowski",
+      "status": "opened",
+      "tab_id": "tab_u_02a52303-1e3a-4993-a897-62daeceecefe",
+      "title": "Stand-up: Kuba Dąbrowski | lista komentarzy - KupBilecik"
+    },
+    {
+      "type": "excluded_lead",
+      "url": "https://www.kupbilecik.pl/pl/comments/4185/stand-up-kuba-dabrowski",
+      "locator": "2023-03-10 Oskar, Świdnica event",
+      "excerpt": "Kolejny raz byliśmy ze znajomymi na występie Kuby, super występ uśmialiśmy się do łez, Adrian Szostek też dał kawał dobrego stand-upu oby tak dalej, dziękujemy i do zobaczenia następnym razem :-)",
+      "reason": "Adrian Szostek is not among the frozen 100; not a qualifying frozen-peer comparison"
+    },
+    {
+      "type": "search_batch",
+      "queries": [
+        {
+          "query": "\"Kuba Dąbrowski\" \"Pan Li\" opinie występ",
+          "status": "completed",
+          "result_summary": "search returned KupBilecik mixed event with Izabela’s specific positive Pan Li and negative second-performer comment; exact pair page can resolve second artist as Kuba Dąbrowski"
+        },
+        {
+          "query": "\"Kuba Dąbrowski\" \"Filip Puzyr\" polecam widz",
+          "status": "completed",
+          "result_summary": "no fan review found; mostly event/editorial listings"
+        },
+        {
+          "query": "\"Kuba Dąbrowski\" \"Bartek Strusiński\" fajny występ",
+          "status": "completed",
+          "result_summary": "no fan review passage found; event announcements only"
+        },
+        {
+          "query": "\"Kuba Dąbrowski\" \"Kuba Wu\" opinie komedia",
+          "status": "completed",
+          "result_summary": "no fan review passage; co-billing is not preference evidence"
+        }
+      ],
+      "results": [
+        {
+          "url": "https://www.kupbilecik.pl/pl/db/10075/stand-up-pan-li-oraz-kuba-dabrowski",
+          "title": "Stand-up: Pan Li oraz Kuba Dąbrowski",
+          "disposition": "strong comparison lead; open full live source"
+        }
+      ]
+    },
+    {
+      "type": "open_reservation",
+      "url": "https://www.kupbilecik.pl/pl/db/10075/stand-up-pan-li-oraz-kuba-dabrowski",
+      "reserved": 1,
+      "status": "reserved before open"
+    },
+    {
+      "type": "open_url",
+      "url": "https://www.kupbilecik.pl/pl/db/10075/stand-up-pan-li-oraz-kuba-dabrowski",
+      "status": "cache miss; exact URL attempted, then recovered through T3 preview",
+      "locator": "page title and “Komentarze widzów”, Izabela, Zgierz, 21 kwietnia 2022"
+    },
+    {
+      "type": "preview_open",
+      "url": "https://www.kupbilecik.pl/pl/db/10075/stand-up-pan-li-oraz-kuba-dabrowski",
+      "status": "opened",
+      "tab_id": "tab_u_02a52303-1e3a-4993-a897-62daeceecefe"
+    },
+    {
+      "type": "saved_candidate",
+      "candidate_id": "src_b06cc_001",
+      "locator": "KupBilecik event detail, “Komentarze widzów” → Izabela → Zgierz, 21 kwietnia 2022",
+      "result_summary": "Full verbatim author passage positively evaluates Pan Li, then explicitly criticizes second performer; source event title names only Pan Li and Kuba Dąbrowski."
+    },
+    {
+      "type": "query_reservation",
+      "queries": [
+        "\"Kuba Dąberek\" stand-up ulubiony komik opinie",
+        "\"Kuba Dąbrowski\" stand-up komicy których polecacie forum",
+        "\"Kuba Dąbrowski\" stand-up fanów polecenie komików",
+        "\"Nie dla przyjemności\" opinie Kuba Dąbrowski Pan Li"
+      ],
+      "reserved": 4,
+      "status": "reserved before search"
+    },
+    {
+      "type": "search_batch",
+      "queries": [
+        {
+          "query": "\"Kuba Dąberek\" stand-up ulubiony komik opinie",
+          "status": "completed",
+          "result_summary": "Standup.pl profile/video material verifies Dąberek as an artist label associated with Kuba Dąbrowski on its own profile; KupBilecik Dąberek comments page returned zero comments."
+        },
+        {
+          "query": "\"Kuba Dąbrowski\" stand-up komicy których polecacie forum",
+          "status": "completed",
+          "result_summary": "No relevant personal fan comparison; results included Kuba solo comments and unrelated recommendation pages."
+        },
+        {
+          "query": "\"Kuba Dąbrowski\" stand-up fanów polecenie komików",
+          "status": "completed",
+          "result_summary": "No usable fan comparison; event/promo material and unrelated fan statements."
+        },
+        {
+          "query": "\"Nie dla przyjemności\" opinie Kuba Dąbrowski Pan Li",
+          "status": "completed",
+          "result_summary": "KupBilecik format page has broad collective praise and a Kuba Wu-directed comment; it does not establish the author’s preference for Kuba Dąbrowski and is excluded."
+        }
+      ],
+      "results": [
+        {
+          "url": "https://www.kupbilecik.pl/pl/db/17294/stand-up-nie-dla-przyjemnosci",
+          "title": "Stand-up: Nie dla przyjemności",
+          "disposition": "search result only; broad format praise lacks an explicit text link to focal performer and is excluded"
+        },
+        {
+          "url": "https://www.kupbilecik.pl/pl/comments/25507/stand-up-kuba-daberek",
+          "title": "Stand-Up: Kuba Dąberek | lista komentarzy",
+          "disposition": "search result says zero comments; no candidate"
+        }
+      ]
+    }
+  ],
+  "identity_resolution": [
+    {
+      "entity": "Kuba Dąbrowski",
+      "frozen_id": "kuba-dabrowski",
+      "supporting_text": "Stand-up: Kuba Dąbrowski; exact page https://www.kupbilecik.pl/pl/comments/4185/stand-up-kuba-dabrowski and live page title match the frozen profile https://standup.pl/komicy/kuba-dabrowski",
+      "decision": "resolved; exact name and profile correspondence"
+    },
+    {
+      "entity": "second stand-upper in Izabela passage",
+      "frozen_id": "kuba-dabrowski",
+      "supporting_text": "Event title: “Stand-up: Pan Li oraz Kuba Dąbrowski”; event description: “Pan Li oraz Kuba Dąbrowski - dwóch komików którzy będą testować nowe żarty.” The same event has exactly the two named performers, and the comment says “Ostatnią gwiazdkę urywam za drugiego standuppera. Drugi Pan wyklepał wyuczone teksty.”",
+      "decision": "resolved to Kuba Dąbrowski from the explicitly named two-performer event; no alias inference"
+    }
+  ],
+  "coverage_gaps": [
+    "No broader forum post explicitly comparing or recommending Kuba Dąbrowski with another frozen performer surfaced in 12 queries.",
+    "KupBilecik page 2 for solo Kuba comments was not explored; solo-only reviews are excluded unless they explicitly name a frozen peer.",
+    "Search results for Filip Puzyr, Bartek Strusiński and Kuba Wu were event/promo material without audience preference linking them to the focal.",
+    "The “Nie dla przyjemności” fan comments praise the format collectively; explicit preference for Kuba Dąbrowski is not established."
+  ],
+  "skipped_sources": [
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/4185/stand-up-kuba-dabrowski",
+      "locator": "2023-03-10 Oskar, Świdnica",
+      "reason": "mentions Adrian Szostek, not a frozen100 peer"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/db/17294/stand-up-nie-dla-przyjemnosci",
+      "locator": "comments include 2025–2026 event dates",
+      "reason": "format-wide or Kuba Wu-specific praise does not explicitly link preference to focal Kuba Dąbrowski"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/25507/stand-up-kuba-daberek",
+      "locator": "comments section",
+      "reason": "zero comments; no fan passage"
+    }
+  ],
+  "stop_reason": "Stopped after 12 queries, 4 open/navigation attempts, and one verified comparison. Remaining allowance unused because other leads were solo reviews, event promotion, generic format praise, or snippets without qualifying text; no quota filling.",
+  "budget_reservations": [
+    {
+      "resource": "queries",
+      "reserved": 4,
+      "before_total": 0,
+      "after_total": 4,
+      "exact_items": [
+        "\"Kuba Dąbrowski\" stand-up ulubieni komicy",
+        "\"Kuba Dąbrowski\" stand-up polecacie forum",
+        "\"Kuba Dąbrowskiego\" stand-up \"najlepszy\" komicy",
+        "\"Kuba Dąbrowski\" stand-up opinie podobny do"
+      ],
+      "guard": "passed and persisted before same-block search"
+    },
+    {
+      "resource": "page_attempts",
+      "reserved": 1,
+      "before_total": 0,
+      "after_total": 1,
+      "exact_items": [
+        "open full comments URL https://www.kupbilecik.pl/pl/comments/4185/stand-up-kuba-dabrowski"
+      ],
+      "guard": "passed and persisted before open"
+    },
+    {
+      "resource": "page_attempts",
+      "reserved": 1,
+      "before_total": 1,
+      "after_total": 2,
+      "exact_items": [
+        "preview_open https://www.kupbilecik.pl/pl/comments/4185/stand-up-kuba-dabrowski"
+      ],
+      "guard": "passed and persisted before preview_open"
+    },
+    {
+      "resource": "queries",
+      "reserved": 4,
+      "before_total": 4,
+      "after_total": 8,
+      "exact_items": [
+        "\"Kuba Dąbrowski\" \"Pan Li\" opinie występ",
+        "\"Kuba Dąbrowski\" \"Filip Puzyr\" polecam widz",
+        "\"Kuba Dąbrowski\" \"Bartek Strusiński\" fajny występ",
+        "\"Kuba Dąbrowski\" \"Kuba Wu\" opinie komedia"
+      ],
+      "guard": "passed and persisted before same-block search"
+    },
+    {
+      "resource": "page_attempts",
+      "reserved": 1,
+      "before_total": 2,
+      "after_total": 3,
+      "exact_items": [
+        "open full event URL https://www.kupbilecik.pl/pl/db/10075/stand-up-pan-li-oraz-kuba-dabrowski"
+      ],
+      "guard": "passed and persisted before open"
+    },
+    {
+      "resource": "page_attempts",
+      "reserved": 1,
+      "before_total": 3,
+      "after_total": 4,
+      "exact_items": [
+        "preview_open https://www.kupbilecik.pl/pl/db/10075/stand-up-pan-li-oraz-kuba-dabrowski"
+      ],
+      "guard": "passed and persisted before preview_open"
+    },
+    {
+      "resource": "queries",
+      "reserved": 4,
+      "before_total": 8,
+      "after_total": 12,
+      "exact_items": [
+        "\"Kuba Dąberek\" stand-up ulubiony komik opinie",
+        "\"Kuba Dąbrowski\" stand-up komicy których polecacie forum",
+        "\"Kuba Dąbrowski\" stand-up fanów polecenie komików",
+        "\"Nie dla przyjemności\" opinie Kuba Dąbrowski Pan Li"
+      ],
+      "guard": "passed and persisted before same-block search"
+    }
+  ]
+}

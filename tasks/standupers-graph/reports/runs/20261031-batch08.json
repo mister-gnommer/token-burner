@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "run_id": "20261031-batch08",
+  "stage": "batch",
+  "batch": 8,
+  "status": "completed",
+  "performer_ids": [
+    "grzegorz-halama",
+    "krzysztof-kasparek",
+    "darek-gadowski",
+    "kuba-wu",
+    "rafal-banas",
+    "rafal-sumowski",
+    "janusz-pietruszka",
+    "michal-kempa",
+    "lukasz-wolski",
+    "marek-gajos-gajewski"
+  ],
+  "paths": {
+    "source_candidates": "evidence/batch-08/source-candidates.jsonl",
+    "evidence_unreviewed": "evidence/batch-08/evidence.unreviewed.jsonl",
+    "evidence": "evidence/batch-08/evidence.jsonl",
+    "verification_report": "reports/runs/20261031-batch08.verification.json"
+  },
+  "workers": {
+    "collector": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "collect-fan-evidence-v3+research-budget-v1"
+    },
+    "extractor": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1"
+    },
+    "verifier": {
+      "provider": "codex",
+      "model": "gpt-6-luna + gpt-6.1-terra correction audit",
+      "prompt_version": "verify-evidence-v3"
+    }
+  },
+  "counts": {
+    "source_candidates": 21,
+    "extracted": 20,
+    "accepted": 19,
+    "uncertain": 1,
+    "rejected": 0
+  },
+  "surprises": [
+    "Event-review source concentration; all previous scope and identity thresholds remain.",
+    "A001 URL restored to actually verified regional URL; raw slices retained.",
+    "A005 and C001 may lack usable pair-level evidence; extraction must assess.",
+    "Systematic unsupported Śliwka/Kuba identities corrected to null; guessed Jakub/Poczęty removed.",
+    "Targeted Terra correction resolved9records; recommendation-only B001 not coendorsement, A004 full negative sentence restored."
+  ],
+  "notes": "Bounded collection/extraction/review complete:21canonical candidates,20reviewed records (19accepted,1uncertain),1solo skip. Three sequential Luna collectors, separate Luna extraction and independent Luna verification; targeted Terra high correction after remaining field/report contradictions. Initial extraction/review artifacts retained.66queries/34reported page attempts, no cap breach;B includes status checks. Earlier55–57 pending. Cumulative graph/report saved;22tests and strict reproduction pass.9corroborated/28provisional/18contested candidates.77completed/23pending;pause before9. No Git authorization inferred.",
+  "created_at": "2026-10-31T15:22:56.151940Z",
+  "updated_at": "2026-10-31T15:32:31.909280Z"
+}

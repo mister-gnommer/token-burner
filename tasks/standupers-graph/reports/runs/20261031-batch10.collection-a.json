@@ -1,0 +1,404 @@
+{
+  "surprises": [
+    "One T3 preview_snapshot attempt for the Ipkis page was made without its required reservation guard; it timed out and is counted transparently. The guarded retry also timed out. No snippet was promoted.",
+    "KupBilecik event pages aggregate comments across performances. On the live page, the Jacek Noch/Kałamaga comment snippets found in search were absent or named only an unfrozen peer, so they were excluded."
+  ],
+  "run_id": "20261031-batch10",
+  "slice": "a",
+  "assigned_ranks": [
+    91,
+    92,
+    93,
+    94
+  ],
+  "focal_performers": [
+    "mateusz-ipkis-dudek",
+    "maciek-buchwald",
+    "tomek-nowaczyk",
+    "jacek-noch"
+  ],
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+research-budget-v1"
+  },
+  "budget": {
+    "queries_cap": 24,
+    "page_attempts_cap": 24,
+    "verified_candidate_cap": 16,
+    "queries_reserved": [
+      "\"Mateusz Ipkis Dudek\" stand-up opinie fani polecacie",
+      "\"Maciek Buchwald\" stand-up \"polecam\" OR \"lubię\" forum",
+      "\"Tomek Nowaczyk\" stand-up \"polecam\" OR \"najlepszy\" widzowie",
+      "\"Jacek Noch\" stand-up \"polecam\" OR \"lubię\" opinie",
+      "\"Ipkis\" \"kto jeszcze\" stand-up fani polecają komików",
+      "\"Maciek Buchwald\" stand-up widziałem polecam komentarz widz",
+      "\"Tomek Nowaczyk\" \"stand-up\" \"widziałem\" opinie polecam komik",
+      "\"Jacek Noch\" \"Mariusz Kałamaga\" widzowie opinie stand-up polecam",
+      "Ipkis stand-up opinie forum Reddit Polska komicy",
+      "\"Maciek Buchwald\" \"stand-up\" \"występ\" komentarze widzów",
+      "\"Tomek Nowaczyk\" \"Kuba Dąbrowski\" stand-up widz opinia",
+      "\"Jacek Noch\" \"Kałamaga\" \"super stand up\" komentarz Piotr",
+      "\"Maciek Buchwald\" \"Wojtek Fiedorczuk\" widz polecam opinie",
+      "\"Maciek Buchwald\" \"Michał Leja\" opinie widzowie stand-up",
+      "\"Mateusz Ipkis Dudek\" \"Mateusz Socha\" stand-up komentarz widz",
+      "\"Tomek Nowaczyk\" \"Kuba Dąbrowski\" widzowie KupBilecik opinie",
+      "\"Ipkis\" \"Lotek\" polecam stand-up widzowie OR Reddit",
+      "\"Maciek Buchwald\" \"Piotr Zola Szulowski\" OR \"Sebastian Rejent\" polecam widzowie",
+      "\"Tomek Nowaczyk\" stand-up Reddit Polska opinie polecam",
+      "\"Jacek Noch\" stand-up forum opinie komicy polecam"
+    ],
+    "page_attempts_reserved": [
+      "https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates",
+      "https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates",
+      "preview_open https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates",
+      "UNGUARDED preview_snapshot tab_j_02a52303-1e3a-4993-a897-62daeceecefe (counted; reservation lapse)",
+      "guarded retry: preview_snapshot tab_j_02a52303-1e3a-4993-a897-62daeceecefe",
+      "https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup",
+      "https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup",
+      "preview_open https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup",
+      "preview_snapshot tab_k_02a52303-1e3a-4993-a897-62daeceecefe",
+      "preview_evaluate document.body.innerText tab_k_02a52303-1e3a-4993-a897-62daeceecefe",
+      "https://www.kupbilecik.pl/de/db/2177/mariusz-kalamaga-i-jacek-noch?kb_ref=event&kb_ref_id=state_past",
+      "https://www.kupbilecik.pl/de/db/2177/mariusz-kalamaga-i-jacek-noch?kb_ref=event&kb_ref_id=state_past",
+      "preview_open https://www.kupbilecik.pl/de/db/2177/mariusz-kalamaga-i-jacek-noch?kb_ref=event&kb_ref_id=state_past",
+      "preview_evaluate document.body.innerText tab_l_02a52303-1e3a-4993-a897-62daeceecefe",
+      "https://www.kupbilecik.pl/pl/event/17867/warszawa/stand-up-polska",
+      "https://www.kupbilecik.pl/pl/event/17867/warszawa/stand-up-polska",
+      "preview_open https://www.kupbilecik.pl/pl/event/17867/warszawa/stand-up-polska",
+      "preview_evaluate document.body.innerText tab_m_02a52303-1e3a-4993-a897-62daeceecefe",
+      "https://www.kupbilecik.pl/pl/comments/1642/stand-up-tomek-nowaczyk",
+      "https://www.kupbilecik.pl/pl/comments/1642/stand-up-tomek-nowaczyk",
+      "preview_open https://www.kupbilecik.pl/pl/comments/1642/stand-up-tomek-nowaczyk",
+      "preview_evaluate document.body.innerText tab_n_02a52303-1e3a-4993-a897-62daeceecefe"
+    ],
+    "preview_status_calls": [
+      {
+        "purpose": "KupBilecik cache-miss fallback",
+        "result": "{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"available\\\":false,\\\"visible\\\":false,\\\"tabId\\\":null,\\\"url\\\":null,\\\"title\\\":null,\\\"loading\\\":false,\\\"profiles\\\":[{\\\"id\\\":\\\"default\\\",\\\"name\\\":\\\"Default\\\"},{\\\"id\\\":\\\"incognito\\\",\\\"name\\\":\\\"Incognito\\\",\\\"incognito\\\":true}],\\\"defaultProfileId\\\":\\\"default\\\"}\"}],\"structuredContent\":{\"available\":false,\"visible\":false,\"tabId\":null,\"url\":null,\"title\":null,\"loading\":false,\"profiles\":[{\"id\":\"default\",\"name\":\"Default\"},{\"id\":\"incognito\",\"name\":\"Incognito\",\"incognito\":true}],\"defaultProfileId\":\"default\"},\"isError\":false}"
+      },
+      {
+        "purpose": "KupBilecik comparison comment cache-miss fallback",
+        "result": "{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"available\\\":true,\\\"visible\\\":false,\\\"tabId\\\":\\\"tab_j_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates\\\",\\\"title\\\":\\\"Stand-Up: Mateusz Ipkis Dudek - bilety 2026/2027, terminy, opinie - KupBilecik (bilety online)\\\",\\\"loading\\\":false,\\\"control\\\":{\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"generation\\\":0},\\\"dialog\\\":null,\\\"viewportSetting\\\":{\\\"_tag\\\":\\\"fill\\\"},\\\"fileChooser\\\":null,\\\"downloads\\\":[],\\\"tabs\\\":[{\\\"tabId\\\":\\\"tab_j_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates\\\",\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"visible\\\":false,\\\"profileId\\\":\\\"default\\\"}],\\\"profiles\\\":[{\\\"id\\\":\\\"default\\\",\\\"name\\\":\\\"Default\\\"},{\\\"id\\\":\\\"incognito\\\",\\\"name\\\":\\\"Incognito\\\",\\\"incognito\\\":true}],\\\"defaultProfileId\\\":\\\"default\\\"}\"}],\"structuredContent\":{\"available\":true,\"visible\":false,\"tabId\":\"tab_j_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates\",\"title\":\"Stand-Up: Mateusz Ipkis Dudek - bilety 2026/2027, terminy, opinie - KupBilecik (bilety online)\",\"loading\":false,\"control\":{\"owner\":\"agent\",\"ownedByCaller\":true,\"generation\":0},\"dialog\":null,\"viewportSetting\":{\"_tag\":\"fill\"},\"fileChooser\":null,\"downloads\":[],\"tabs\":[{\"tabId\":\"tab_j_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates\",\"owner\":\"agent\",\"ownedByCaller\":true,\"visible\":false,\"profileId\":\"default\"}],\"profiles\":[{\"id\":\"default\",\"name\":\"Default\"},{\"id\":\"incognito\",\"name\":\"Incognito\",\"incognito\":true}],\"defaultProfileId\":\"default\"},\"isError\":false}"
+      },
+      {
+        "purpose": "KupBilecik Jacek/Kałamaga event page cache-miss fallback",
+        "result": "{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"available\\\":true,\\\"visible\\\":false,\\\"tabId\\\":\\\"tab_k_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup\\\",\\\"title\\\":\\\"Квитки на Mariusz Kałamaga | Warszawa | 04 листопада 2026 о 19:00 - KupBilecik (онлайн квитки)\\\",\\\"loading\\\":false,\\\"control\\\":{\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"generation\\\":0},\\\"dialog\\\":null,\\\"viewportSetting\\\":{\\\"_tag\\\":\\\"fill\\\"},\\\"fileChooser\\\":null,\\\"downloads\\\":[],\\\"tabs\\\":[{\\\"tabId\\\":\\\"tab_j_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates\\\",\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"visible\\\":false,\\\"profileId\\\":\\\"default\\\"},{\\\"tabId\\\":\\\"tab_k_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup\\\",\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"visible\\\":false,\\\"profileId\\\":\\\"default\\\"}],\\\"profiles\\\":[{\\\"id\\\":\\\"default\\\",\\\"name\\\":\\\"Default\\\"},{\\\"id\\\":\\\"incognito\\\",\\\"name\\\":\\\"Incognito\\\",\\\"incognito\\\":true}],\\\"defaultProfileId\\\":\\\"default\\\"}\"}],\"structuredContent\":{\"available\":true,\"visible\":false,\"tabId\":\"tab_k_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup\",\"title\":\"Квитки на Mariusz Kałamaga | Warszawa | 04 листопада 2026 о 19:00 - KupBilecik (онлайн квитки)\",\"loading\":false,\"control\":{\"owner\":\"agent\",\"ownedByCaller\":true,\"generation\":0},\"dialog\":null,\"viewportSetting\":{\"_tag\":\"fill\"},\"fileChooser\":null,\"downloads\":[],\"tabs\":[{\"tabId\":\"tab_j_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates\",\"owner\":\"agent\",\"ownedByCaller\":true,\"visible\":false,\"profileId\":\"default\"},{\"tabId\":\"tab_k_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup\",\"owner\":\"agent\",\"ownedByCaller\":true,\"visible\":false,\"profileId\":\"default\"}],\"profiles\":[{\"id\":\"default\",\"name\":\"Default\"},{\"id\":\"incognito\",\"name\":\"Incognito\",\"incognito\":true}],\"defaultProfileId\":\"default\"},\"isError\":false}"
+      },
+      {
+        "purpose": "KupBilecik Maciek/Wojtek event cache-miss fallback",
+        "result": "{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"available\\\":true,\\\"visible\\\":false,\\\"tabId\\\":\\\"tab_l_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/de/db/2177/mariusz-kalamaga-i-jacek-noch?kb_ref=event&kb_ref_id=state_past\\\",\\\"title\\\":\\\"Mariusz Kałamaga i Jacek Noch | Veranstaltungen, Tickets, Meinungen - KupBilecik (Online-Tickets)\\\",\\\"loading\\\":false,\\\"control\\\":{\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"generation\\\":0},\\\"dialog\\\":null,\\\"viewportSetting\\\":{\\\"_tag\\\":\\\"fill\\\"},\\\"fileChooser\\\":null,\\\"downloads\\\":[],\\\"tabs\\\":[{\\\"tabId\\\":\\\"tab_j_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates\\\",\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"visible\\\":false,\\\"profileId\\\":\\\"default\\\"},{\\\"tabId\\\":\\\"tab_k_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup\\\",\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"visible\\\":false,\\\"profileId\\\":\\\"default\\\"},{\\\"tabId\\\":\\\"tab_l_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/de/db/2177/mariusz-kalamaga-i-jacek-noch?kb_ref=event&kb_ref_id=state_past\\\",\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"visible\\\":false,\\\"profileId\\\":\\\"default\\\"}],\\\"profiles\\\":[{\\\"id\\\":\\\"default\\\",\\\"name\\\":\\\"Default\\\"},{\\\"id\\\":\\\"incognito\\\",\\\"name\\\":\\\"Incognito\\\",\\\"incognito\\\":true}],\\\"defaultProfileId\\\":\\\"default\\\"}\"}],\"structuredContent\":{\"available\":true,\"visible\":false,\"tabId\":\"tab_l_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/de/db/2177/mariusz-kalamaga-i-jacek-noch?kb_ref=event&kb_ref_id=state_past\",\"title\":\"Mariusz Kałamaga i Jacek Noch | Veranstaltungen, Tickets, Meinungen - KupBilecik (Online-Tickets)\",\"loading\":false,\"control\":{\"owner\":\"agent\",\"ownedByCaller\":true,\"generation\":0},\"dialog\":null,\"viewportSetting\":{\"_tag\":\"fill\"},\"fileChooser\":null,\"downloads\":[],\"tabs\":[{\"tabId\":\"tab_j_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates\",\"owner\":\"agent\",\"ownedByCaller\":true,\"visible\":false,\"profileId\":\"default\"},{\"tabId\":\"tab_k_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup\",\"owner\":\"agent\",\"ownedByCaller\":true,\"visible\":false,\"profileId\":\"default\"},{\"tabId\":\"tab_l_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/de/db/2177/mariusz-kalamaga-i-jacek-noch?kb_ref=event&kb_ref_id=state_past\",\"owner\":\"agent\",\"ownedByCaller\":true,\"visible\":false,\"profileId\":\"default\"}],\"profiles\":[{\"id\":\"default\",\"name\":\"Default\"},{\"id\":\"incognito\",\"name\":\"Incognito\",\"incognito\":true}],\"defaultProfileId\":\"default\"},\"isError\":false}"
+      },
+      {
+        "purpose": "Tomek comments page cache-miss fallback",
+        "result": "{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"available\\\":true,\\\"visible\\\":false,\\\"tabId\\\":\\\"tab_m_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/pl/event/17867/warszawa/stand-up-polska\\\",\\\"title\\\":\\\"Bilety na Stand-up Polska | Warszawa | 09 maja 2017 o godz. 20:00 - KupBilecik (bilety online)\\\",\\\"loading\\\":false,\\\"control\\\":{\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"generation\\\":0},\\\"dialog\\\":null,\\\"viewportSetting\\\":{\\\"_tag\\\":\\\"fill\\\"},\\\"fileChooser\\\":null,\\\"downloads\\\":[],\\\"tabs\\\":[{\\\"tabId\\\":\\\"tab_j_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates\\\",\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"visible\\\":false,\\\"profileId\\\":\\\"default\\\"},{\\\"tabId\\\":\\\"tab_k_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup\\\",\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"visible\\\":false,\\\"profileId\\\":\\\"default\\\"},{\\\"tabId\\\":\\\"tab_l_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/de/db/2177/mariusz-kalamaga-i-jacek-noch?kb_ref=event&kb_ref_id=state_past\\\",\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"visible\\\":false,\\\"profileId\\\":\\\"default\\\"},{\\\"tabId\\\":\\\"tab_m_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/pl/event/17867/warszawa/stand-up-polska\\\",\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"visible\\\":false,\\\"profileId\\\":\\\"default\\\"}],\\\"profiles\\\":[{\\\"id\\\":\\\"default\\\",\\\"name\\\":\\\"Default\\\"},{\\\"id\\\":\\\"incognito\\\",\\\"name\\\":\\\"Incognito\\\",\\\"incognito\\\":true}],\\\"defaultProfileId\\\":\\\"default\\\"}\"}],\"structuredContent\":{\"available\":true,\"visible\":false,\"tabId\":\"tab_m_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/pl/event/17867/warszawa/stand-up-polska\",\"title\":\"Bilety na Stand-up Polska | Warszawa | 09 maja 2017 o godz. 20:00 - KupBilecik (bilety online)\",\"loading\":false,\"control\":{\"owner\":\"agent\",\"ownedByCaller\":true,\"generation\":0},\"dialog\":null,\"viewportSetting\":{\"_tag\":\"fill\"},\"fileChooser\":null,\"downloads\":[],\"tabs\":[{\"tabId\":\"tab_j_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates\",\"owner\":\"agent\",\"ownedByCaller\":true,\"visible\":false,\"profileId\":\"default\"},{\"tabId\":\"tab_k_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup\",\"owner\":\"agent\",\"ownedByCaller\":true,\"visible\":false,\"profileId\":\"default\"},{\"tabId\":\"tab_l_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/de/db/2177/mariusz-kalamaga-i-jacek-noch?kb_ref=event&kb_ref_id=state_past\",\"owner\":\"agent\",\"ownedByCaller\":true,\"visible\":false,\"profileId\":\"default\"},{\"tabId\":\"tab_m_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/pl/event/17867/warszawa/stand-up-polska\",\"owner\":\"agent\",\"ownedByCaller\":true,\"visible\":false,\"profileId\":\"default\"}],\"profiles\":[{\"id\":\"default\",\"name\":\"Default\"},{\"id\":\"incognito\",\"name\":\"Incognito\",\"incognito\":true}],\"defaultProfileId\":\"default\"},\"isError\":false}"
+      }
+    ],
+    "prior_executed_queries_not_repeated": 4
+  },
+  "queries": [
+    {
+      "query": "\"Mateusz Ipkis Dudek\" stand-up opinie fani polecacie",
+      "status": "searched",
+      "results": "KupBilecik event page with viewer comments, including a solo critique and several solo reviews; other results profile/promotional."
+    },
+    {
+      "query": "\"Maciek Buchwald\" stand-up \"polecam\" OR \"lubię\" forum",
+      "status": "searched",
+      "results": "Improfest article praising Buchwald in music/improv performance; not stand-up fan evidence."
+    },
+    {
+      "query": "\"Tomek Nowaczyk\" stand-up \"polecam\" OR \"najlepszy\" widzowie",
+      "status": "searched",
+      "results": "Current KupBilecik event advertisement without viewer comments, plus irrelevant noise."
+    },
+    {
+      "query": "\"Jacek Noch\" stand-up \"polecam\" OR \"lubię\" opinie",
+      "status": "searched",
+      "results": "Published attendee narrative about Mariusz Kałamaga & Jacek Noch; book-review result also found."
+    },
+    {
+      "query": "\"Ipkis\" \"kto jeszcze\" stand-up fani polecają komików",
+      "status": "searched",
+      "results": "No qualifying comparative fan discussion returned; mostly profile and unrelated pages."
+    },
+    {
+      "query": "\"Maciek Buchwald\" stand-up widziałem polecam komentarz widz",
+      "status": "searched",
+      "results": "Results included a KupBilecik 2015 event with comments, a Filmweb comment praising his work on unrelated TV series, profile/video pages."
+    },
+    {
+      "query": "\"Tomek Nowaczyk\" \"stand-up\" \"widziałem\" opinie polecam komik",
+      "status": "searched",
+      "results": "Search found a 2017 event listing with self-authored promotional blurb; no qualifying fan evaluation."
+    },
+    {
+      "query": "\"Jacek Noch\" \"Mariusz Kałamaga\" widzowie opinie stand-up polecam",
+      "status": "searched",
+      "results": "KupBilecik viewer comment comparing praise for Jacek Noch with Kałamaga and criticism of Roman; additional local coverage/editorial sources."
+    },
+    {
+      "query": "Ipkis stand-up opinie forum Reddit Polska komicy",
+      "status": "searched",
+      "results": "KupBilecik comment-list page found Iwona’s criticism of the event, but no other frozen performer in the author’s comment."
+    },
+    {
+      "query": "\"Maciek Buchwald\" \"stand-up\" \"występ\" komentarze widzów",
+      "status": "searched",
+      "results": "No qualified evidence; event listing review gives generic first-stand-up event praise without naming performers. Other results are unrelated/profile."
+    },
+    {
+      "query": "\"Tomek Nowaczyk\" \"Kuba Dąbrowski\" stand-up widz opinia",
+      "status": "searched",
+      "results": "Only promotional event listing/other unrelated results; no fan comparison."
+    },
+    {
+      "query": "\"Jacek Noch\" \"Kałamaga\" \"super stand up\" komentarz Piotr",
+      "status": "searched",
+      "results": "Search reproduced a KupBilecik Piotr comment praising Noch, mixed on Kałamaga and criticizing Roman; opened current event did not contain that comment, so likely stale pagination. Other local press sources are editorial."
+    },
+    {
+      "query": "\"Maciek Buchwald\" \"Wojtek Fiedorczak\" widz polecam opinie",
+      "status": "searched",
+      "results": "No comments/fan pair result; broader KupBilecik event for Maciek Buchwald and Wojtek Fiedorczak returned."
+    },
+    {
+      "query": "\"Maciek Buchwald\" \"Michał Leja\" opinie widzowie stand-up",
+      "status": "searched",
+      "results": "Search results were individual performer ratings and profile material, no fan comparison."
+    },
+    {
+      "query": "\"Mateusz Ipkis Dudek\" \"Mateusz Socha\" stand-up komentarz widz",
+      "status": "searched",
+      "results": "No qualifying source found; only individual Ipkis comments and irrelevant Socha results."
+    },
+    {
+      "query": "\"Tomek Nowaczyk\" \"Kuba Dąbrowski\" widzowie KupBilecik opinie",
+      "status": "searched",
+      "results": "Event listing for Tomek Nowaczyk, Janek Wolańczyk and Kuba Dąbrowski returned; promotional copy, no clear fan opinion."
+    },
+    {
+      "query": "\"Ipkis\" \"Lotek\" polecam stand-up widzowie OR Reddit",
+      "status": "searched",
+      "results": "No qualified fan comparison returned; mostly performer pages/noise."
+    },
+    {
+      "query": "\"Maciek Buchwald\" \"Piotr Zola Szulowski\" OR \"Sebastian Rejent\" polecam widzowie",
+      "status": "searched",
+      "results": "No qualifying fan source returned."
+    },
+    {
+      "query": "\"Tomek Nowaczyk\" stand-up Reddit Polska opinie polecam",
+      "status": "searched",
+      "results": "KupBilecik comments list returned; it includes a 2019 review recommending Tomek Nowaczyk and Tomek Biskup with caveat about Biskup."
+    },
+    {
+      "query": "\"Jacek Noch\" stand-up forum opinie komicy polecam",
+      "status": "searched",
+      "results": "Search returned solo book review / performance links and the previously found municipal Jacek/Kałamaga article; no frozen-peer fan comparison."
+    }
+  ],
+  "page_actions": [
+    {
+      "type": "open",
+      "url": "https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates",
+      "result": "opened KupBilecik viewer comments page; comments visible in full page text"
+    },
+    {
+      "type": "open_full_url",
+      "url": "https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates",
+      "result": "cache miss on full URL retry"
+    },
+    {
+      "type": "preview_open",
+      "url": "https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates",
+      "result": "{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"available\\\":true,\\\"visible\\\":false,\\\"tabId\\\":\\\"tab_j_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates\\\",\\\"title\\\":\\\"Stand-Up: Mateusz Ipkis Dudek - bilety 2026/2027, terminy, opinie - KupBilecik (bilety online)\\\",\\\"loading\\\":false,\\\"control\\\":{\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"generation\\\":0},\\\"dialog\\\":null,\\\"viewportSetting\\\":{\\\"_tag\\\":\\\"fill\\\"},\\\"fileChooser\\\":null,\\\"downloads\\\":[],\\\"tabs\\\":[{\\\"tabId\\\":\\\"tab_j_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates\\\",\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"visible\\\":false,\\\"profileId\\\":\\\"default\\\"}],\\\"profiles\\\":[{\\\"id\\\":\\\"default\\\",\\\"name\\\":\\\"Default\\\"},{\\\"id\\\":\\\"incognito\\\",\\\"name\\\":\\\"Incognito\\\",\\\"incognito\\\":true}],\\\"defaultProfileId\\\":\\\"default\\\"}\"}],\"structuredContent\":{\"available\":true,\"visible\":false,\"tabId\":\"tab_j_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates\",\"title\":\"Stand-Up: Mateusz Ipkis Dudek - bilety 2026/2027, terminy, opinie - KupBilecik (bilety online)\",\"loading\":false,\"control\":{\"owner\":\"agent\",\"ownedByCaller\":true,\"generation\":0},\"dialog\":null,\"viewportSetting\":{\"_tag\":\"fill\"},\"fileChooser\":null,\"downloads\":[],\"tabs\":[{\"tabId\":\"tab_j_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates\",\"owner\":\"agent\",\"ownedByCaller\":true,\"visible\":false,\"profileId\":\"default\"}],\"profiles\":[{\"id\":\"default\",\"name\":\"Default\"},{\"id\":\"incognito\",\"name\":\"Incognito\",\"incognito\":true}],\"defaultProfileId\":\"default\"},\"isError\":false}"
+    },
+    {
+      "type": "preview_snapshot",
+      "url": "https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates",
+      "result": "Preview snapshot failed: Preview automation snapshot timed out after 15000ms. This attempt was made without the required reservation guard; counted and disclosed."
+    },
+    {
+      "type": "preview_snapshot",
+      "tab_id": "tab_j_02a52303-1e3a-4993-a897-62daeceecefe",
+      "result": "{\"content\":[{\"type\":\"text\",\"text\":\"Preview snapshot failed: Preview automation snapshot timed out after 15000ms.\"}],\"structuredContent\":{\"error\":{\"_tag\":\"PreviewAutomationTimeoutError\",\"operation\":\"snapshot\",\"failureCount\":1,\"message\":\"Preview automation snapshot timed out after 15000ms.\"}},\"isError\":true}"
+    },
+    {
+      "type": "open",
+      "url": "https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup",
+      "result": "\"Internal Error ()\\nciteturn4view0 [wordlim: 200] Source: open({\\\"ref_id\\\":\\\"turn3search2\\\",\\\"lineno\\\":null}); \\nFailed to fetch https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup: Cache miss\""
+    },
+    {
+      "type": "open_full_url",
+      "url": "https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup",
+      "result": "\"Internal Error ()\\nciteturn5view0 [wordlim: 200] Source: open({\\\"ref_id\\\":\\\"https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup\\\",\\\"lineno\\\":null}); \\nFailed to fetch https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup: Cache miss\""
+    },
+    {
+      "type": "preview_open",
+      "url": "https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup",
+      "result": "{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"available\\\":true,\\\"visible\\\":false,\\\"tabId\\\":\\\"tab_k_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup\\\",\\\"title\\\":\\\"Квитки на Mariusz Kałamaga | Warszawa | 04 листопада 2026 о 19:00 - KupBilecik (онлайн квитки)\\\",\\\"loading\\\":false,\\\"control\\\":{\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"generation\\\":0},\\\"dialog\\\":null,\\\"viewportSetting\\\":{\\\"_tag\\\":\\\"fill\\\"},\\\"fileChooser\\\":null,\\\"downloads\\\":[],\\\"tabs\\\":[{\\\"tabId\\\":\\\"tab_j_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates\\\",\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"visible\\\":false,\\\"profileId\\\":\\\"default\\\"},{\\\"tabId\\\":\\\"tab_k_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup\\\",\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"visible\\\":false,\\\"profileId\\\":\\\"default\\\"}],\\\"profiles\\\":[{\\\"id\\\":\\\"default\\\",\\\"name\\\":\\\"Default\\\"},{\\\"id\\\":\\\"incognito\\\",\\\"name\\\":\\\"Incognito\\\",\\\"incognito\\\":true}],\\\"defaultProfileId\\\":\\\"default\\\"}\"}],\"structuredContent\":{\"available\":true,\"visible\":false,\"tabId\":\"tab_k_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup\",\"title\":\"Квитки на Mariusz Kałamaga | Warszawa | 04 листопада 2026 о 19:00 - KupBilecik (онлайн квитки)\",\"loading\":false,\"control\":{\"owner\":\"agent\",\"ownedByCaller\":true,\"generation\":0},\"dialog\":null,\"viewportSetting\":{\"_tag\":\"fill\"},\"fileChooser\":null,\"downloads\":[],\"tabs\":[{\"tabId\":\"tab_j_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates\",\"owner\":\"agent\",\"ownedByCaller\":true,\"visible\":false,\"profileId\":\"default\"},{\"tabId\":\"tab_k_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup\",\"owner\":\"agent\",\"ownedByCaller\":true,\"visible\":false,\"profileId\":\"default\"}],\"profiles\":[{\"id\":\"default\",\"name\":\"Default\"},{\"id\":\"incognito\",\"name\":\"Incognito\",\"incognito\":true}],\"defaultProfileId\":\"default\"},\"isError\":false}"
+    },
+    {
+      "type": "preview_snapshot",
+      "tab_id": "tab_k_02a52303-1e3a-4993-a897-62daeceecefe",
+      "result": "Preview snapshot failed: Preview automation snapshot timed out after 15000ms."
+    },
+    {
+      "type": "preview_evaluate",
+      "tab_id": "tab_k_02a52303-1e3a-4993-a897-62daeceecefe",
+      "expression": "document.body.innerText",
+      "result": "Current page text showed only solo Mariusz Kałamaga comments; the Piotr comparison snippet was absent."
+    },
+    {
+      "type": "open",
+      "url": "https://www.kupbilecik.pl/de/db/2177/mariusz-kalamaga-i-jacek-noch?kb_ref=event&kb_ref_id=state_past",
+      "result": "\"Internal Error ()\\nciteturn7view0 [wordlim: 200] Source: open({\\\"ref_id\\\":\\\"turn3search1\\\",\\\"lineno\\\":null}); \\nFailed to fetch https://www.kupbilecik.pl/de/db/2177/mariusz-kalamaga-i-jacek-noch?kb_ref=event&kb_ref_id=state_past: Cache miss\""
+    },
+    {
+      "type": "open_full_url",
+      "url": "https://www.kupbilecik.pl/de/db/2177/mariusz-kalamaga-i-jacek-noch?kb_ref=event&kb_ref_id=state_past",
+      "result": "\"Internal Error ()\\nciteturn8view0 [wordlim: 200] Source: open({\\\"ref_id\\\":\\\"https://www.kupbilecik.pl/de/db/2177/mariusz-kalamaga-i-jacek-noch?kb_ref=event&kb_ref_id=state_past\\\",\\\"lineno\\\":null}); \\nFailed to fetch https://www.kupbilecik.pl/de/db/2177/mariusz-kalamaga-i-jacek-noch?kb_ref=event&kb_ref_id=state_past: Cache miss\""
+    },
+    {
+      "type": "preview_open",
+      "url": "https://www.kupbilecik.pl/de/db/2177/mariusz-kalamaga-i-jacek-noch?kb_ref=event&kb_ref_id=state_past",
+      "result": "{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"available\\\":true,\\\"visible\\\":false,\\\"tabId\\\":\\\"tab_l_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/de/db/2177/mariusz-kalamaga-i-jacek-noch?kb_ref=event&kb_ref_id=state_past\\\",\\\"title\\\":\\\"Mariusz Kałamaga i Jacek Noch | Veranstaltungen, Tickets, Meinungen - KupBilecik (Online-Tickets)\\\",\\\"loading\\\":false,\\\"control\\\":{\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"generation\\\":0},\\\"dialog\\\":null,\\\"viewportSetting\\\":{\\\"_tag\\\":\\\"fill\\\"},\\\"fileChooser\\\":null,\\\"downloads\\\":[],\\\"tabs\\\":[{\\\"tabId\\\":\\\"tab_j_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates\\\",\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"visible\\\":false,\\\"profileId\\\":\\\"default\\\"},{\\\"tabId\\\":\\\"tab_k_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup\\\",\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"visible\\\":false,\\\"profileId\\\":\\\"default\\\"},{\\\"tabId\\\":\\\"tab_l_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/de/db/2177/mariusz-kalamaga-i-jacek-noch?kb_ref=event&kb_ref_id=state_past\\\",\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"visible\\\":false,\\\"profileId\\\":\\\"default\\\"}],\\\"profiles\\\":[{\\\"id\\\":\\\"default\\\",\\\"name\\\":\\\"Default\\\"},{\\\"id\\\":\\\"incognito\\\",\\\"name\\\":\\\"Incognito\\\",\\\"incognito\\\":true}],\\\"defaultProfileId\\\":\\\"default\\\"}\"}],\"structuredContent\":{\"available\":true,\"visible\":false,\"tabId\":\"tab_l_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/de/db/2177/mariusz-kalamaga-i-jacek-noch?kb_ref=event&kb_ref_id=state_past\",\"title\":\"Mariusz Kałamaga i Jacek Noch | Veranstaltungen, Tickets, Meinungen - KupBilecik (Online-Tickets)\",\"loading\":false,\"control\":{\"owner\":\"agent\",\"ownedByCaller\":true,\"generation\":0},\"dialog\":null,\"viewportSetting\":{\"_tag\":\"fill\"},\"fileChooser\":null,\"downloads\":[],\"tabs\":[{\"tabId\":\"tab_j_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates\",\"owner\":\"agent\",\"ownedByCaller\":true,\"visible\":false,\"profileId\":\"default\"},{\"tabId\":\"tab_k_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup\",\"owner\":\"agent\",\"ownedByCaller\":true,\"visible\":false,\"profileId\":\"default\"},{\"tabId\":\"tab_l_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/de/db/2177/mariusz-kalamaga-i-jacek-noch?kb_ref=event&kb_ref_id=state_past\",\"owner\":\"agent\",\"ownedByCaller\":true,\"visible\":false,\"profileId\":\"default\"}],\"profiles\":[{\"id\":\"default\",\"name\":\"Default\"},{\"id\":\"incognito\",\"name\":\"Incognito\",\"incognito\":true}],\"defaultProfileId\":\"default\"},\"isError\":false}"
+    },
+    {
+      "type": "preview_evaluate",
+      "tab_id": "tab_l_02a52303-1e3a-4993-a897-62daeceecefe",
+      "expression": "document.body.innerText",
+      "result": "Full current page text showed viewer comments for Jacek Noch and Mariusz Kałamaga only; no frozen peer."
+    },
+    {
+      "type": "open",
+      "url": "https://www.kupbilecik.pl/pl/event/17867/warszawa/stand-up-polska",
+      "result": "\"Internal Error ()\\nciteturn10view0 [wordlim: 200] Source: open({\\\"ref_id\\\":\\\"turn9search6\\\",\\\"lineno\\\":null}); \\nFailed to fetch https://www.kupbilecik.pl/pl/event/17867/warszawa/stand-up-polska: Cache miss\""
+    },
+    {
+      "type": "open_full_url",
+      "url": "https://www.kupbilecik.pl/pl/event/17867/warszawa/stand-up-polska",
+      "result": "\"Internal Error ()\\nciteturn11view0 [wordlim: 200] Source: open({\\\"ref_id\\\":\\\"https://www.kupbilecik.pl/pl/event/17867/warszawa/stand-up-polska\\\",\\\"lineno\\\":null}); \\nFailed to fetch https://www.kupbilecik.pl/pl/event/17867/warszawa/stand-up-polska: Cache miss\""
+    },
+    {
+      "type": "preview_open",
+      "url": "https://www.kupbilecik.pl/pl/event/17867/warszawa/stand-up-polska",
+      "result": "{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"available\\\":true,\\\"visible\\\":false,\\\"tabId\\\":\\\"tab_m_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/pl/event/17867/warszawa/stand-up-polska\\\",\\\"title\\\":\\\"Bilety na Stand-up Polska | Warszawa | 09 maja 2017 o godz. 20:00 - KupBilecik (bilety online)\\\",\\\"loading\\\":false,\\\"control\\\":{\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"generation\\\":0},\\\"dialog\\\":null,\\\"viewportSetting\\\":{\\\"_tag\\\":\\\"fill\\\"},\\\"fileChooser\\\":null,\\\"downloads\\\":[],\\\"tabs\\\":[{\\\"tabId\\\":\\\"tab_j_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates\\\",\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"visible\\\":false,\\\"profileId\\\":\\\"default\\\"},{\\\"tabId\\\":\\\"tab_k_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup\\\",\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"visible\\\":false,\\\"profileId\\\":\\\"default\\\"},{\\\"tabId\\\":\\\"tab_l_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/de/db/2177/mariusz-kalamaga-i-jacek-noch?kb_ref=event&kb_ref_id=state_past\\\",\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"visible\\\":false,\\\"profileId\\\":\\\"default\\\"},{\\\"tabId\\\":\\\"tab_m_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/pl/event/17867/warszawa/stand-up-polska\\\",\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"visible\\\":false,\\\"profileId\\\":\\\"default\\\"}],\\\"profiles\\\":[{\\\"id\\\":\\\"default\\\",\\\"name\\\":\\\"Default\\\"},{\\\"id\\\":\\\"incognito\\\",\\\"name\\\":\\\"Incognito\\\",\\\"incognito\\\":true}],\\\"defaultProfileId\\\":\\\"default\\\"}\"}],\"structuredContent\":{\"available\":true,\"visible\":false,\"tabId\":\"tab_m_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/pl/event/17867/warszawa/stand-up-polska\",\"title\":\"Bilety na Stand-up Polska | Warszawa | 09 maja 2017 o godz. 20:00 - KupBilecik (bilety online)\",\"loading\":false,\"control\":{\"owner\":\"agent\",\"ownedByCaller\":true,\"generation\":0},\"dialog\":null,\"viewportSetting\":{\"_tag\":\"fill\"},\"fileChooser\":null,\"downloads\":[],\"tabs\":[{\"tabId\":\"tab_j_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates\",\"owner\":\"agent\",\"ownedByCaller\":true,\"visible\":false,\"profileId\":\"default\"},{\"tabId\":\"tab_k_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup\",\"owner\":\"agent\",\"ownedByCaller\":true,\"visible\":false,\"profileId\":\"default\"},{\"tabId\":\"tab_l_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/de/db/2177/mariusz-kalamaga-i-jacek-noch?kb_ref=event&kb_ref_id=state_past\",\"owner\":\"agent\",\"ownedByCaller\":true,\"visible\":false,\"profileId\":\"default\"},{\"tabId\":\"tab_m_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/pl/event/17867/warszawa/stand-up-polska\",\"owner\":\"agent\",\"ownedByCaller\":true,\"visible\":false,\"profileId\":\"default\"}],\"profiles\":[{\"id\":\"default\",\"name\":\"Default\"},{\"id\":\"incognito\",\"name\":\"Incognito\",\"incognito\":true}],\"defaultProfileId\":\"default\"},\"isError\":false}"
+    },
+    {
+      "type": "preview_evaluate",
+      "tab_id": "tab_m_02a52303-1e3a-4993-a897-62daeceecefe",
+      "expression": "document.body.innerText",
+      "result": "Full event text; reviews were generic, for other performers, or for different dates. No assigned Maciek-to-frozen-peer review."
+    },
+    {
+      "type": "open",
+      "url": "https://www.kupbilecik.pl/pl/comments/1642/stand-up-tomek-nowaczyk",
+      "result": "\"Internal Error ()\\nciteturn13view0 [wordlim: 200] Source: open({\\\"ref_id\\\":\\\"turn12search0\\\",\\\"lineno\\\":null}); \\nFailed to fetch https://www.kupbilecik.pl/pl/comments/1642/stand-up-tomek-nowaczyk: Cache miss\""
+    },
+    {
+      "type": "open_full_url",
+      "url": "https://www.kupbilecik.pl/pl/comments/1642/stand-up-tomek-nowaczyk",
+      "result": "\"Internal Error ()\\nciteturn14view0 [wordlim: 200] Source: open({\\\"ref_id\\\":\\\"https://www.kupbilecik.pl/pl/comments/1642/stand-up-tomek-nowaczyk\\\",\\\"lineno\\\":null}); \\nFailed to fetch https://www.kupbilecik.pl/pl/comments/1642/stand-up-tomek-nowaczyk: Cache miss\""
+    },
+    {
+      "type": "preview_open",
+      "url": "https://www.kupbilecik.pl/pl/comments/1642/stand-up-tomek-nowaczyk",
+      "result": "{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"available\\\":true,\\\"visible\\\":false,\\\"tabId\\\":\\\"tab_n_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/pl/comments/1642/stand-up-tomek-nowaczyk\\\",\\\"title\\\":\\\"Stand-up: Tomek Nowaczyk | lista komentarzy - KupBilecik (bilety online)\\\",\\\"loading\\\":false,\\\"control\\\":{\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"generation\\\":0},\\\"dialog\\\":null,\\\"viewportSetting\\\":{\\\"_tag\\\":\\\"fill\\\"},\\\"fileChooser\\\":null,\\\"downloads\\\":[],\\\"tabs\\\":[{\\\"tabId\\\":\\\"tab_j_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates\\\",\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"visible\\\":false,\\\"profileId\\\":\\\"default\\\"},{\\\"tabId\\\":\\\"tab_k_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup\\\",\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"visible\\\":false,\\\"profileId\\\":\\\"default\\\"},{\\\"tabId\\\":\\\"tab_l_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/de/db/2177/mariusz-kalamaga-i-jacek-noch?kb_ref=event&kb_ref_id=state_past\\\",\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"visible\\\":false,\\\"profileId\\\":\\\"default\\\"},{\\\"tabId\\\":\\\"tab_m_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/pl/event/17867/warszawa/stand-up-polska\\\",\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"visible\\\":false,\\\"profileId\\\":\\\"default\\\"},{\\\"tabId\\\":\\\"tab_n_02a52303-1e3a-4993-a897-62daeceecefe\\\",\\\"url\\\":\\\"https://www.kupbilecik.pl/pl/comments/1642/stand-up-tomek-nowaczyk\\\",\\\"owner\\\":\\\"agent\\\",\\\"ownedByCaller\\\":true,\\\"visible\\\":false,\\\"profileId\\\":\\\"default\\\"}],\\\"profiles\\\":[{\\\"id\\\":\\\"default\\\",\\\"name\\\":\\\"Default\\\"},{\\\"id\\\":\\\"incognito\\\",\\\"name\\\":\\\"Incognito\\\",\\\"incognito\\\":true}],\\\"defaultProfileId\\\":\\\"default\\\"}\"}],\"structuredContent\":{\"available\":true,\"visible\":false,\"tabId\":\"tab_n_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/pl/comments/1642/stand-up-tomek-nowaczyk\",\"title\":\"Stand-up: Tomek Nowaczyk | lista komentarzy - KupBilecik (bilety online)\",\"loading\":false,\"control\":{\"owner\":\"agent\",\"ownedByCaller\":true,\"generation\":0},\"dialog\":null,\"viewportSetting\":{\"_tag\":\"fill\"},\"fileChooser\":null,\"downloads\":[],\"tabs\":[{\"tabId\":\"tab_j_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates\",\"owner\":\"agent\",\"ownedByCaller\":true,\"visible\":false,\"profileId\":\"default\"},{\"tabId\":\"tab_k_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup\",\"owner\":\"agent\",\"ownedByCaller\":true,\"visible\":false,\"profileId\":\"default\"},{\"tabId\":\"tab_l_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/de/db/2177/mariusz-kalamaga-i-jacek-noch?kb_ref=event&kb_ref_id=state_past\",\"owner\":\"agent\",\"ownedByCaller\":true,\"visible\":false,\"profileId\":\"default\"},{\"tabId\":\"tab_m_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/pl/event/17867/warszawa/stand-up-polska\",\"owner\":\"agent\",\"ownedByCaller\":true,\"visible\":false,\"profileId\":\"default\"},{\"tabId\":\"tab_n_02a52303-1e3a-4993-a897-62daeceecefe\",\"url\":\"https://www.kupbilecik.pl/pl/comments/1642/stand-up-tomek-nowaczyk\",\"owner\":\"agent\",\"ownedByCaller\":true,\"visible\":false,\"profileId\":\"default\"}],\"profiles\":[{\"id\":\"default\",\"name\":\"Default\"},{\"id\":\"incognito\",\"name\":\"Incognito\",\"incognito\":true}],\"defaultProfileId\":\"default\"},\"isError\":false}"
+    },
+    {
+      "type": "preview_evaluate",
+      "tab_id": "tab_n_02a52303-1e3a-4993-a897-62daeceecefe",
+      "expression": "document.body.innerText",
+      "result": "Full comments page text included Mirosław’s complete 2019-10-08 review comparing Tomek Nowaczyk and Tomek Biskup; candidate src_b10a_001."
+    }
+  ],
+  "verification_locators": [
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/1642/stand-up-tomek-nowaczyk",
+      "locator": "preview_evaluate document.body.innerText on tab_n_02a52303-1e3a-4993-a897-62daeceecefe; comment by Mirosław, published 2019-10-08, for Nowy Sącz event 2019-10-06",
+      "result": "Full comments page text contained exact complete review; candidate src_b10a_001."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/event/17867/warszawa/stand-up-polska",
+      "locator": "preview_evaluate document.body.innerText on tab_m_02a52303-1e3a-4993-a897-62daeceecefe",
+      "result": "Full event page verified, but reviews were unrelated/generic or for other performers/dates; no eligible candidate."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/de/db/2177/mariusz-kalamaga-i-jacek-noch?kb_ref=event&kb_ref_id=state_past",
+      "locator": "preview_evaluate document.body.innerText on tab_l_02a52303-1e3a-4993-a897-62daeceecefe",
+      "result": "Full comments page verified. Current comments praise Jacek with Mariusz Kałamaga, outside frozen100; excluded."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup",
+      "locator": "preview_evaluate document.body.innerText on tab_k_02a52303-1e3a-4993-a897-62daeceecefe",
+      "result": "Full current page text did not contain search-snippet Piotr comparison; stale snippet excluded."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates",
+      "locator": "preview_open tab_j_02a52303-1e3a-4993-a897-62daeceecefe; two snapshot attempts timed out",
+      "result": "Unable to inspect full comments; unverified search excerpts excluded."
+    }
+  ],
+  "verified_candidate_count": 1,
+  "skips": [
+    {
+      "source": "KupBilecik Mateusz Ipkis Dudek event/comment pages",
+      "reason": "Search surfaced solo and event-level comments; no verified comparison with a frozen peer. Preview snapshot timed out twice."
+    },
+    {
+      "source": "Improfest article praising Maciek Buchwald",
+      "reason": "Music/improv performance, not verified stand-up fan preference evidence."
+    },
+    {
+      "source": "KupBilecik Maciek Buchwald/Wojtek Fiedorczak event",
+      "reason": "Opened page aggregated reviews for other events/dates; no review linked the assigned focal Maciek to a frozen peer."
+    },
+    {
+      "source": "Tomek Nowaczyk solo reviews",
+      "reason": "Solo praise excluded; one complete comparison with Tomasz Biskup retained."
+    },
+    {
+      "source": "Jacek Noch and Mariusz Kałamaga pages/local coverage",
+      "reason": "Verified viewer comments concern an unfrozen co-performer; search-only Piotr snippet was absent on opened current page. Local calendar/news articles were not used as fan evidence."
+    },
+    {
+      "source": "Search snippets, profile pages, event promotions, ranking pages and generic praise",
+      "reason": "Not source-verified fan comparisons or recommendations."
+    }
+  ],
+  "focal_coverage": {
+    "mateusz-ipkis-dudek": {
+      "searched": true,
+      "verified_candidates": 0,
+      "gap": "No verified statement linking Ipkis with a frozen peer."
+    },
+    "maciek-buchwald": {
+      "searched": true,
+      "verified_candidates": 0,
+      "gap": "No verified fan comparison linking Buchwald with a frozen peer."
+    },
+    "tomek-nowaczyk": {
+      "searched": true,
+      "verified_candidates": 1,
+      "candidate_ids": [
+        "src_b10a_001"
+      ]
+    },
+    "jacek-noch": {
+      "searched": true,
+      "verified_candidates": 0,
+      "gap": "Verified reviews found only unfrozen co-performer Mariusz Kałamaga."
+    }
+  },
+  "coverage_gaps": [
+    "Mateusz Ipkis Dudek, Maciek Buchwald, and Jacek Noch lack verified comparisons with a frozen peer in this slice."
+  ],
+  "counts": {
+    "queries": 20,
+    "page_attempts": 22,
+    "verified_candidates": 1
+  },
+  "stop_reason": "Stopped after broad coverage of all four focal performers: 20/24 queries, 22/24 page attempts, and 1/16 verified-candidate capacity used. The remaining 4 queries and 2 page attempts were left unused because the remaining leads were solo praise, stale search snippets, editorial/event promotion, or involved only unfrozen performers; the two-open margin could not safely support cache-miss fallback chains. No further allowance is authorized."
+}

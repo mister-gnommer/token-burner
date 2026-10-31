@@ -1,0 +1,77 @@
+{
+  "surprises": [
+    "The full Mirosław 2019 passage supports positive preference for both performers: Biskup’s “było nieźle” is an absolute favorable appraisal despite the tentative testing caveat. The extractor left Biskup preference unknown and classified the record as recommendation-only."
+  ],
+  "run_id": "20261031-batch10",
+  "reviewer": "codex/gpt-6-luna",
+  "prompt_version": "verify-evidence-v3",
+  "counts": {
+    "candidates": 1,
+    "records": 1,
+    "accepted": 1,
+    "uncertain": 0,
+    "rejected": 0,
+    "skipped": 0,
+    "by_class": {
+      "same_user_coendorsement": 1
+    }
+  },
+  "candidate_accounting": {
+    "candidate_ids": [
+      "src_b10a_001"
+    ],
+    "output_candidate_ids": [
+      "src_b10a_001"
+    ],
+    "all_candidates_accounted_once": true
+  },
+  "skips_audit": {
+    "extraction_skipped": 0,
+    "verification_skipped": 0,
+    "unreviewed_input_records": 1,
+    "all_preserved": true
+  },
+  "per_record": [
+    {
+      "candidate_id": "src_b10a_001",
+      "evidence_id": "ev_b10_a_001",
+      "status": "accepted",
+      "evidence_class": "same_user_coendorsement",
+      "mentions": [
+        {
+          "performer_id": "tomek-nowaczyk",
+          "surface_form": "Tomka Nowaczyka",
+          "sentiment": "positive",
+          "confidence": 0.96,
+          "preference": "positive",
+          "preference_quote": "mnie się bardzo podobało"
+        },
+        {
+          "performer_id": "tomasz-biskup",
+          "surface_form": "Tomka Biskupa",
+          "sentiment": "positive",
+          "confidence": 0.88,
+          "preference": "positive",
+          "preference_quote": "było nieźle"
+        }
+      ],
+      "corrections": [
+        "Changed evidence_class from fan_recommendation to same_user_coendorsement: both are explicitly recommended and both receive favorable appraisal.",
+        "Changed Biskup preference from unknown to positive and added the exact supporting appraisal quote “było nieźle”; retained positive sentiment. “Chyba troszkę testował” is a caveat, not a negative evaluation.",
+        "Kept Nowaczyk’s positive preference and exact quote “mnie się bardzo podobało”. Preserved extracted mention confidences 0.96 and 0.88 despite the extraction report’s .99/.99 identity summary; did not inflate confidence."
+      ]
+    }
+  ],
+  "alias_risks": [],
+  "coverage_gaps": [],
+  "source_reopen_attempts": [],
+  "validation": {
+    "source_excerpt_language_metadata_context_lineage_checked": true,
+    "verbatim_surface_forms_checked": true,
+    "known_preference_quotes_are_verbatim_substrings": true,
+    "canonical_nonnull_ids_only": true,
+    "schema_check": "PASS (evidence_pipeline.py validate --kind evidence; evidence-v3 schema selected by schema_version 3)",
+    "candidate_coverage_check": "PASS (1 canonical candidate; 1 unique reviewed record; no skips)",
+    "lineage_check": "PASS (candidate/evidence IDs, exact source/excerpt/language/context, source-local author hash, extraction provenance/run ID, frozen performer IDs, unique mentions, verbatim surfaces and preference quotes, and original mention confidences checked)"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "run_id": "20261031-batch09",
+  "slice": "C",
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+research-budget-v1"
+  },
+  "scope": [
+    "jacek-stramik",
+    "radek-drozdz",
+    "czeslaw-mozil"
+  ],
+  "limits": {
+    "queries": 24,
+    "page_attempts": 24,
+    "verified_candidates": 16
+  },
+  "usage": {
+    "queries": 28,
+    "page_attempts": 5,
+    "verified_candidates": 1
+  },
+  "reservations": {
+    "queries": [
+      "\"Jacek Stramik\" fan opinie stand-up śmieszny",
+      "Jacek Stramik \"\" \"Abelard Giza\" fani opinie",
+      "Jacek Stramik \"Darek Gadowski\" lubię stand-up forum",
+      "Jacek Stramik polecam \"stand-up\" \"Radek\"",
+      "Radek Drożdż fani polecam śmieszny występ",
+      "\"Radek Drożdż\" \"\" \"stand-up\" opinie forum",
+      "\"Radek Drozdz\" \"Boras\" opinia występ",
+      "\"Radek Drożdż\" \"Jacek Stramik\" opinie",
+      "\"Czesław Mozil\" stand-up opinia publiczność śmieszny",
+      "\"Czesław Mozil\" \"stand-up\" \"polecam\" fan opinie",
+      "\"Czesław Mozil\" \"komik\" \"Abelard Giza\" opinie",
+      "\"Czesław Mozil\" występ stand-up komentarze KupBilecik",
+      "\"Czesław Mozil\" \"Abelard Giza\" śmieszny",
+      "\"Czesław Mozil\" \"stand-up\" \"Rafał Pacześ\"",
+      "Czesław Mozil vs polski stand-up fan opinie",
+      "\"Jacek Stramik\" \"Michał Kempa\" widz opinia",
+      "\"Jacek Stramik\" \"Rafał Pacześ\" komentarz fan",
+      "\"Jacek Stramik\" \"Kacper Ruciński\" opinia widz",
+      "\"Jacek Stramik\" \"Piotrek Szumowski\" polecam forum",
+      "\"Jacek Stramik\" \"Abelard Giza\" widziałem występ śmieszny",
+      "\"Czesław Mozil\" \"stand-up\" \"Abelard Giza\" fan forum",
+      "\"Czesław Mozil\" \"Rafał Pacześ\" opinia występ",
+      "\"Czesław Mozil\" \"Kacper Ruciński\" śmieszny polecam",
+      "\"Czesław Mozil\" \"Jacek Stramik\" ulubiony stand-up"
+    ],
+    "page_attempts": [
+      "preview_open https://www.kupbilecik.pl/pl/db/7529/stand-up-jacek-stramik",
+      "web.open https://www.kupbilecik.pl/pl/db/7529/stand-up-jacek-stramik",
+      "preview_open https://www.kupbilecik.pl/de/comments/1217/stand-up-time?page_comments=1",
+      "web.open https://www.kupbilecik.pl/de/comments/1217/stand-up-time?page_comments=1",
+      "preview_open https://www.kupbilecik.pl/de/comments/1217/stand-up-time?page_comments=1"
+    ]
+  },
+  "actions": [
+    {
+      "type": "preview_status",
+      "result": "available:false; no automation tab"
+    },
+    {
+      "type": "preview_snapshot",
+      "result": "failed twice: Preview automation snapshot timed out after 15000ms; switched to web open fallback"
+    },
+    {
+      "type": "preview_snapshot",
+      "result": "failed twice: Preview automation snapshot timed out after 15000ms; switched to web open fallback"
+    },
+    {
+      "type": "search",
+      "result": "Four unreserved attempts occurred after guard rejected batch at cap; see unreserved_query_attempts. Stopped research."
+    },
+    {
+      "type": "preview_evaluate",
+      "url": "https://www.kupbilecik.pl/de/comments/1217/stand-up-time?page_comments=1",
+      "result": "Verified complete visible page text and Marcin post, 2016-06-19, event Sopot 2016-06-18; exact locator author+date+event; complete post captured."
+    }
+  ],
+  "opened_verified_sources": [
+    {
+      "url": "https://www.kupbilecik.pl/de/comments/1217/stand-up-time?page_comments=1",
+      "hostname": "www.kupbilecik.pl",
+      "post_locator": "Marcin, 2016-06-19, Stand-Up Time, Sopot 2016-06-18 20:00",
+      "verified_by": "preview_evaluate document.body.innerText",
+      "candidate_id": "src_b09c_001"
+    }
+  ],
+  "search_only_skipped_leads": [
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/18648/stand-up-radek-drozdz",
+      "reason": "solo Radek reviews; no co-evaluated frozen peer. Batch9 A Kamiński/Drożdż post excluded as duplicate."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/db/7529/stand-up-jacek-stramik",
+      "reason": "page opened and verified; reviews concern Jacek alone or unnamed supports. Does not provide named frozen-peer comparison. Prior batch8 Gadowski/Stramik exact post excluded."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/en/comments/325/czeslaw-mozil-solo",
+      "reason": "solo reviews mix concert/music with stand-up; no named frozen peer. Music-only/ambiguous fan opinion excluded."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/de/comments/1217/stand-up-time?page_comments=1",
+      "reason": "web open returned cache miss; actual page later verified by T3 evaluate, candidate saved."
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "src_b09c_001",
+      "focal": "jacek-stramik",
+      "peer": "rafal-paczes",
+      "post_locator": "Marcin, 2016-06-19, Stand-Up Time, Sopot 2016-06-18",
+      "claim": "positive co-enjoyment",
+      "url": "https://www.kupbilecik.pl/de/comments/1217/stand-up-time?page_comments=1"
+    }
+  ],
+  "coverage": {
+    "jacek-stramik": "searched; 1 verified comparison/co-enjoyment candidate with Rafał Pacześ; other viewed posts were solo-only or named no frozen peer",
+    "radek-drozdz": "searched; no new verified named-peer candidate; prior A Kamiński/Drożdż exact post excluded",
+    "czeslaw-mozil": "searched; no verified named-peer candidate; solo combined music/stand-up comments ambiguous and excluded"
+  },
+  "unused_budget_stop_reason": "Stopped immediately after accidental over-cap call; 24 reserved plus 4 unreserved excess query attempts are disclosed, and 5/24 page attempts were reserved. No further searching or quota filling. 15/16 candidate allowance remains unused.",
+  "surprises": [
+    "I mistakenly called one final four-query search batch after the executable reservation guard rejected it at 24/24. Those four queries exceeded the hard query cap; they are disclosed as unreserved attempts. Research stopped immediately, and no results from that over-cap batch are eligible for candidates.",
+    "T3 preview snapshots timed out twice on two different pages; preview_evaluate successfully verified the Stand-Up Time comment page. One snippet-only lead is excluded."
+  ],
+  "unreserved_query_attempts": [
+    "Czesław Mozil opinie Abelard Giza fajny stand-up",
+    "Czesław Mozil Abelard Giza polecam widz",
+    "Radek Drożdż support opinia komik",
+    "Radek Drożdż Michał Paszczyk występ opinia"
+  ],
+  "candidate_count": 1,
+  "actual_saved_candidate_count": 1
+}

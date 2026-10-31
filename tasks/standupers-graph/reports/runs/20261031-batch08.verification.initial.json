@@ -1,0 +1,441 @@
+{
+  "run_id": "20261031-batch08",
+  "prompt_version": "verify-evidence-v3",
+  "reviewer": "codex/gpt-6-luna",
+  "surprises": [
+    "Source-local candidate text shows repeated “Kuba Śliwka”; extraction repeatedly assigned this to frozen Kuba Dąbrowski despite notes acknowledging unresolved identity. Those IDs were nulled throughout; this is a material recurrent alias risk.",
+    "Several records explicitly praise event performances (“świetny”, “bardzo dobre”, “wymiatali”, “duży plus”, “robią MEGA ROBOTĘ”). Under the v3 rubric, these absolute appraisals support event-scoped positive preference; event scope is retained in notes rather than used to suppress preference.",
+    "The same first-name author hashes recur across distinct posts; source-local hashes are preserved and never joined. “Gabi i Marcin” remains one joint account.",
+    "C002 “Michał Kępa” is only a tentative spelling variant of frozen Michał Kempa; confidence .62 remains below verified threshold.",
+    "B012 has no explicit evaluation of named performers: “gwiazda wieczoru” is unnamed and future-program anticipation alone is not liking. Its evidence class is weakly supported, so the record is marked uncertain and all unsupported identity/preference claims removed."
+  ],
+  "accounting": {
+    "source_candidate_count": 21,
+    "reviewed_record_count": 20,
+    "skip_count": 1,
+    "total_accounted": 21,
+    "candidate_ids_unique": true,
+    "record_candidate_ids_match_run": true,
+    "skip_candidate_ids": [
+      "src_b08c_001"
+    ]
+  },
+  "status_counts": {
+    "accepted": 19,
+    "uncertain": 1
+  },
+  "class_counts": {
+    "same_user_coendorsement": 15,
+    "fan_comparison": 4,
+    "fan_recommendation": 1
+  },
+  "class_changes": [
+    {
+      "candidate_id": "src_b08a_001",
+      "id": "ev_b08_a_001",
+      "status": "accepted",
+      "class": "same_user_coendorsement",
+      "class_change": {
+        "from": "fan_recommendation",
+        "to": "same_user_coendorsement"
+      },
+      "issues_and_corrections": "All three receive explicit absolute event praise: “pokazali klasę” and “dowiózł”; Kuba Wu and Bartosz Zalewski are frozen identities. Maks Rosa is not frozen, so his positive mention remains null-ID. Preference is positive for each because this is explicit appreciation, scoped to this event."
+    },
+    {
+      "candidate_id": "src_b08b_001",
+      "id": "ev_b08_a_006",
+      "status": "accepted",
+      "class": "same_user_coendorsement",
+      "class_change": {
+        "from": "fan_recommendation",
+        "to": "same_user_coendorsement"
+      },
+      "issues_and_corrections": "The author explicitly says he was not disappointed by Banaś, describes Modzelewski’s program as causing laughter to tears, and “Mocno polecam obu panów.” Both have clear absolute positive endorsement; quote the direct recommendation as their shared preference evidence. Specific event/program scope retained."
+    },
+    {
+      "candidate_id": "src_b08b_003",
+      "id": "ev_b08_a_008",
+      "status": "accepted",
+      "class": "same_user_coendorsement",
+      "class_change": {
+        "from": "fan_comparison",
+        "to": "same_user_coendorsement"
+      },
+      "issues_and_corrections": "Modzelewski’s evening is enthusiastically described; Banaś is called more ordinary/standard but also credited with many smile moments. That is positive appreciation with a qualification, not mere neutral comparison. Both qualify as event-scoped positive preference."
+    },
+    {
+      "candidate_id": "src_b08b_005",
+      "id": "ev_b08_a_010",
+      "status": "accepted",
+      "class": "same_user_coendorsement",
+      "class_change": {
+        "from": "fan_recommendation",
+        "to": "same_user_coendorsement"
+      },
+      "issues_and_corrections": "Both Janusz Pietruszka (“świetny support”) and Abelard (“sam Abelard oczywiście również”) receive explicit event praise, reinforced by laughter to tears. Positive preference is justified by absolute praise despite event scope; attendance and repeat attendance are not used. Kuba Śliwka is not a frozen performer: correct the mistaken Kuba Dąbrowski mapping to null. “Gabi i Marcin” remains one joint source account."
+    },
+    {
+      "candidate_id": "src_b08b_006",
+      "id": "ev_b08_a_011",
+      "status": "accepted",
+      "class": "same_user_coendorsement",
+      "class_change": {
+        "from": "fan_recommendation",
+        "to": "same_user_coendorsement"
+      },
+      "issues_and_corrections": "Abelard is explicitly “super” and both supports are “też bardzo dobre”; the general two hours of laughter reinforces the event’s positive evaluation. These are absolute event-scoped appraisals and support positive preferences under v3. Kuba Śliwka is unresolved, not Kuba Dąbrowski."
+    },
+    {
+      "candidate_id": "src_b08b_007",
+      "id": "ev_b08_a_012",
+      "status": "accepted",
+      "class": "same_user_coendorsement",
+      "class_change": {
+        "from": "fan_comparison",
+        "to": "same_user_coendorsement"
+      },
+      "issues_and_corrections": "Abelard has explicit superlative event praise; Śliwka is a “mega pozytywne zaskoczenie,” an absolute positive appraisal; Pietruszka is only “ok” with a reservation about a solo show, so keep mixed/unknown. Correct Śliwka’s false Kuba Dąbrowski mapping to null. Positive preferences for Abelard and Śliwka are event-scoped and supported by the absolute praise, not by attendance."
+    },
+    {
+      "candidate_id": "src_b08b_008",
+      "id": "ev_b08_a_013",
+      "status": "accepted",
+      "class": "same_user_coendorsement",
+      "class_change": {
+        "from": "fan_recommendation",
+        "to": "same_user_coendorsement"
+      },
+      "issues_and_corrections": "Support duo explicitly “robią MEGA ROBOTĘ”; the “nie jestem fanem” parenthetical refers to the no-break interval, not Abelard. The motorcycle insult is explicitly retracted as a joke, followed by “było fantastycznie” and yearly anticipation. Abelard preference is supported by explicit praise; both supports receive explicit event-scoped endorsement. Correct Śliwka’s false Kuba Dąbrowski mapping to null."
+    },
+    {
+      "candidate_id": "src_b08b_009",
+      "id": "ev_b08_a_014",
+      "status": "accepted",
+      "class": "same_user_coendorsement",
+      "class_change": {
+        "from": "fan_recommendation",
+        "to": "same_user_coendorsement"
+      },
+      "issues_and_corrections": "Both Janusz and Abelard are singled out as “wymiatali”; praise is an absolute evaluation of this event, so positive preference is supported under v3 even though the scope is event-specific. “Warto” and repeat attendance are not used as preference evidence. No third performer is invented from “wszyscy trzej.”"
+    },
+    {
+      "candidate_id": "src_b08b_010",
+      "id": "ev_b08_a_015",
+      "status": "accepted",
+      "class": "same_user_coendorsement",
+      "class_change": {
+        "from": "fan_recommendation",
+        "to": "same_user_coendorsement"
+      },
+      "issues_and_corrections": "Abelard’s third program is called the best, laughter caused physical reaction, and both supports are “też świetni.” Each receives explicit positive event praise; recommendations and prior attendance are not the basis. Correct Śliwka’s false Kuba Dąbrowski mapping to null."
+    },
+    {
+      "candidate_id": "src_b08b_011",
+      "id": "ev_b08_a_016",
+      "status": "accepted",
+      "class": "same_user_coendorsement",
+      "class_change": {
+        "from": "fan_comparison",
+        "to": "same_user_coendorsement"
+      },
+      "issues_and_corrections": "Janusz is linked to tears of laughter; Śliwka is said to have had “super moments,” both clear positive event appraisals. Abelard’s 3.5–4/5 is mixed/qualified, not generalized liking. Correct Śliwka’s false Kuba Dąbrowski mapping to null."
+    },
+    {
+      "candidate_id": "src_b08b_013",
+      "id": "ev_b08_a_018",
+      "status": "accepted",
+      "class": "same_user_coendorsement",
+      "class_change": {
+        "from": "fan_recommendation",
+        "to": "same_user_coendorsement"
+      },
+      "issues_and_corrections": "Giza receives a qualified but positive “ogólnie ok” evaluation despite uneven jokes. Both supports get “duży plus,” an absolute event endorsement. Preferences are positive but strictly event scoped. Correct Śliwka’s false Kuba Dąbrowski mapping to null."
+    },
+    {
+      "candidate_id": "src_b08b_014",
+      "id": "ev_b08_a_019",
+      "status": "accepted",
+      "class": "same_user_coendorsement",
+      "class_change": {
+        "from": "fan_comparison",
+        "to": "same_user_coendorsement"
+      },
+      "issues_and_corrections": "Abelard’s praise is absolute. Janusz and Jakub are also explicitly “bardzo fajnie”; this is absolute event praise, not merely their relative advantage over louder names. Their event-scoped preferences should be positive. “Jakub” is insufficient to identify Jakub Poczęty, so null the guessed frozen ID; “Giza” in context can map to Abelard."
+    }
+  ],
+  "per_record": [
+    {
+      "candidate_id": "src_b08a_001",
+      "id": "ev_b08_a_001",
+      "status": "accepted",
+      "class": "same_user_coendorsement",
+      "class_change": {
+        "from": "fan_recommendation",
+        "to": "same_user_coendorsement"
+      },
+      "issues_and_corrections": "All three receive explicit absolute event praise: “pokazali klasę” and “dowiózł”; Kuba Wu and Bartosz Zalewski are frozen identities. Maks Rosa is not frozen, so his positive mention remains null-ID. Preference is positive for each because this is explicit appreciation, scoped to this event."
+    },
+    {
+      "candidate_id": "src_b08a_002",
+      "id": "ev_b08_a_002",
+      "status": "accepted",
+      "class": "same_user_coendorsement",
+      "class_change": null,
+      "issues_and_corrections": "Darek receives absolute praise (“wybitnym”, “prześmieszny”) and Jasiek is explicitly praised as support (“tak jak support Jasiek Borkowski”). Both preferences are positive from explicit event-scoped endorsement; “tak jak” is affirmative, not mere co-occurrence."
+    },
+    {
+      "candidate_id": "src_b08a_003",
+      "id": "ev_b08_a_003",
+      "status": "accepted",
+      "class": "same_user_coendorsement",
+      "class_change": null,
+      "issues_and_corrections": "“Świetny występ” applies to both named performers; this is explicit joint event praise. “Zapraszamy częściej” alone would be attendance intent, but the absolute praise independently supports positive preference for each, scoped to the joint show."
+    },
+    {
+      "candidate_id": "src_b08a_004",
+      "id": "ev_b08_a_004",
+      "status": "accepted",
+      "class": "fan_comparison",
+      "class_change": null,
+      "issues_and_corrections": "Zola is criticized as undeservedly popular and the passage says less popular comics are better; keep his evaluation negative. “Dzięki takim osobom jak Zola czy Socha będzie postępować” refers to comedy audiences maturing, not praise of either performer; Socha is a neutral reference anchor. Darek’s program is explicitly positive."
+    },
+    {
+      "candidate_id": "src_b08a_005",
+      "id": "ev_b08_a_005",
+      "status": "accepted",
+      "class": "fan_comparison",
+      "class_change": null,
+      "issues_and_corrections": "Halama is said to make the author laugh more than Kuba Wojewódzki, but this is relative superiority and is immediately qualified by “nie jestem jakąś zagorzałą fanką”; sentiment is positive comparative, preference unknown. Kuba remains unresolved/null (not Kuba Dąbrowski); Robert Górski is only a neutral naming aside. Jeff Dunham is out of frozen scope but his absolute praise (“wspaniały”, programs make author laugh) supports positive sentiment and preference; do not invent an ID."
+    },
+    {
+      "candidate_id": "src_b08b_001",
+      "id": "ev_b08_a_006",
+      "status": "accepted",
+      "class": "same_user_coendorsement",
+      "class_change": {
+        "from": "fan_recommendation",
+        "to": "same_user_coendorsement"
+      },
+      "issues_and_corrections": "The author explicitly says he was not disappointed by Banaś, describes Modzelewski’s program as causing laughter to tears, and “Mocno polecam obu panów.” Both have clear absolute positive endorsement; quote the direct recommendation as their shared preference evidence. Specific event/program scope retained."
+    },
+    {
+      "candidate_id": "src_b08b_002",
+      "id": "ev_b08_a_007",
+      "status": "accepted",
+      "class": "fan_comparison",
+      "class_change": null,
+      "issues_and_corrections": "Banaś is explicitly “not my thing”; Modzelewski’s program is called great and strongly recommended. Both preferences are explicit and event/program scoped."
+    },
+    {
+      "candidate_id": "src_b08b_003",
+      "id": "ev_b08_a_008",
+      "status": "accepted",
+      "class": "same_user_coendorsement",
+      "class_change": {
+        "from": "fan_comparison",
+        "to": "same_user_coendorsement"
+      },
+      "issues_and_corrections": "Modzelewski’s evening is enthusiastically described; Banaś is called more ordinary/standard but also credited with many smile moments. That is positive appreciation with a qualification, not mere neutral comparison. Both qualify as event-scoped positive preference."
+    },
+    {
+      "candidate_id": "src_b08b_004",
+      "id": "ev_b08_a_009",
+      "status": "accepted",
+      "class": "fan_comparison",
+      "class_change": null,
+      "issues_and_corrections": "Banaś receives absolute praise (“rewelacja”). Modzelewski is interesting, with a question about whether the show fully counts as stand-up; this is qualification, not reliable negative sentiment or preference."
+    },
+    {
+      "candidate_id": "src_b08b_005",
+      "id": "ev_b08_a_010",
+      "status": "accepted",
+      "class": "same_user_coendorsement",
+      "class_change": {
+        "from": "fan_recommendation",
+        "to": "same_user_coendorsement"
+      },
+      "issues_and_corrections": "Both Janusz Pietruszka (“świetny support”) and Abelard (“sam Abelard oczywiście również”) receive explicit event praise, reinforced by laughter to tears. Positive preference is justified by absolute praise despite event scope; attendance and repeat attendance are not used. Kuba Śliwka is not a frozen performer: correct the mistaken Kuba Dąbrowski mapping to null. “Gabi i Marcin” remains one joint source account."
+    },
+    {
+      "candidate_id": "src_b08b_006",
+      "id": "ev_b08_a_011",
+      "status": "accepted",
+      "class": "same_user_coendorsement",
+      "class_change": {
+        "from": "fan_recommendation",
+        "to": "same_user_coendorsement"
+      },
+      "issues_and_corrections": "Abelard is explicitly “super” and both supports are “też bardzo dobre”; the general two hours of laughter reinforces the event’s positive evaluation. These are absolute event-scoped appraisals and support positive preferences under v3. Kuba Śliwka is unresolved, not Kuba Dąbrowski."
+    },
+    {
+      "candidate_id": "src_b08b_007",
+      "id": "ev_b08_a_012",
+      "status": "accepted",
+      "class": "same_user_coendorsement",
+      "class_change": {
+        "from": "fan_comparison",
+        "to": "same_user_coendorsement"
+      },
+      "issues_and_corrections": "Abelard has explicit superlative event praise; Śliwka is a “mega pozytywne zaskoczenie,” an absolute positive appraisal; Pietruszka is only “ok” with a reservation about a solo show, so keep mixed/unknown. Correct Śliwka’s false Kuba Dąbrowski mapping to null. Positive preferences for Abelard and Śliwka are event-scoped and supported by the absolute praise, not by attendance."
+    },
+    {
+      "candidate_id": "src_b08b_008",
+      "id": "ev_b08_a_013",
+      "status": "accepted",
+      "class": "same_user_coendorsement",
+      "class_change": {
+        "from": "fan_recommendation",
+        "to": "same_user_coendorsement"
+      },
+      "issues_and_corrections": "Support duo explicitly “robią MEGA ROBOTĘ”; the “nie jestem fanem” parenthetical refers to the no-break interval, not Abelard. The motorcycle insult is explicitly retracted as a joke, followed by “było fantastycznie” and yearly anticipation. Abelard preference is supported by explicit praise; both supports receive explicit event-scoped endorsement. Correct Śliwka’s false Kuba Dąbrowski mapping to null."
+    },
+    {
+      "candidate_id": "src_b08b_009",
+      "id": "ev_b08_a_014",
+      "status": "accepted",
+      "class": "same_user_coendorsement",
+      "class_change": {
+        "from": "fan_recommendation",
+        "to": "same_user_coendorsement"
+      },
+      "issues_and_corrections": "Both Janusz and Abelard are singled out as “wymiatali”; praise is an absolute evaluation of this event, so positive preference is supported under v3 even though the scope is event-specific. “Warto” and repeat attendance are not used as preference evidence. No third performer is invented from “wszyscy trzej.”"
+    },
+    {
+      "candidate_id": "src_b08b_010",
+      "id": "ev_b08_a_015",
+      "status": "accepted",
+      "class": "same_user_coendorsement",
+      "class_change": {
+        "from": "fan_recommendation",
+        "to": "same_user_coendorsement"
+      },
+      "issues_and_corrections": "Abelard’s third program is called the best, laughter caused physical reaction, and both supports are “też świetni.” Each receives explicit positive event praise; recommendations and prior attendance are not the basis. Correct Śliwka’s false Kuba Dąbrowski mapping to null."
+    },
+    {
+      "candidate_id": "src_b08b_011",
+      "id": "ev_b08_a_016",
+      "status": "accepted",
+      "class": "same_user_coendorsement",
+      "class_change": {
+        "from": "fan_comparison",
+        "to": "same_user_coendorsement"
+      },
+      "issues_and_corrections": "Janusz is linked to tears of laughter; Śliwka is said to have had “super moments,” both clear positive event appraisals. Abelard’s 3.5–4/5 is mixed/qualified, not generalized liking. Correct Śliwka’s false Kuba Dąbrowski mapping to null."
+    },
+    {
+      "candidate_id": "src_b08b_012",
+      "id": "ev_b08_a_017",
+      "status": "uncertain",
+      "class": "fan_recommendation",
+      "class_change": null,
+      "issues_and_corrections": "Event was “super,” but the unnamed “gwiazda wieczoru” cannot be assigned to Giza from thread context alone; correct the unsupported frozen ID to null. Waiting for longer programs by Śliwka and Pietruszka is anticipation, not positive preference, and no explicit performer appraisal is stated. Record remains usable as scoped event/future-program feedback but offers no established personal liking. Both Śliwka and Pietruszka identities are not safely resolved from first names/surnames? Pietruszka is source-specific and frozen Janusz is likely but surface is inflected name; retained with cautious confidence."
+    },
+    {
+      "candidate_id": "src_b08b_013",
+      "id": "ev_b08_a_018",
+      "status": "accepted",
+      "class": "same_user_coendorsement",
+      "class_change": {
+        "from": "fan_recommendation",
+        "to": "same_user_coendorsement"
+      },
+      "issues_and_corrections": "Giza receives a qualified but positive “ogólnie ok” evaluation despite uneven jokes. Both supports get “duży plus,” an absolute event endorsement. Preferences are positive but strictly event scoped. Correct Śliwka’s false Kuba Dąbrowski mapping to null."
+    },
+    {
+      "candidate_id": "src_b08b_014",
+      "id": "ev_b08_a_019",
+      "status": "accepted",
+      "class": "same_user_coendorsement",
+      "class_change": {
+        "from": "fan_comparison",
+        "to": "same_user_coendorsement"
+      },
+      "issues_and_corrections": "Abelard’s praise is absolute. Janusz and Jakub are also explicitly “bardzo fajnie”; this is absolute event praise, not merely their relative advantage over louder names. Their event-scoped preferences should be positive. “Jakub” is insufficient to identify Jakub Poczęty, so null the guessed frozen ID; “Giza” in context can map to Abelard."
+    },
+    {
+      "candidate_id": "src_b08c_002",
+      "id": "ev_b08_a_020",
+      "status": "accepted",
+      "class": "same_user_coendorsement",
+      "class_change": null,
+      "issues_and_corrections": "Cezary is explicitly “uwielbiam”; Michał is explicitly “świetny.” Both are clear positive personal/event endorsements. Keep the likely Kępa/Kempa spelling match tentative at confidence .62, not verified. The COVID-opening complaint is about event framing, not either performer."
+    }
+  ],
+  "alias_risks": [
+    {
+      "surface": "Kuba Śliwka / Śliwka",
+      "records": [
+        "src_b08b_005",
+        "src_b08b_006",
+        "src_b08b_007",
+        "src_b08b_008",
+        "src_b08b_010",
+        "src_b08b_011",
+        "src_b08b_012",
+        "src_b08b_013"
+      ],
+      "decision": "performer_id null; no supported match to Kuba Dąbrowski"
+    },
+    {
+      "surface": "Kuba (Filmweb)",
+      "records": [
+        "src_b08a_005"
+      ],
+      "decision": "unresolved Kuba Wojewódzki reference; null"
+    },
+    {
+      "surface": "gwiazdę wieczoru",
+      "records": [
+        "src_b08b_012"
+      ],
+      "decision": "unnamed in excerpt; null despite event context"
+    },
+    {
+      "surface": "Jakub",
+      "records": [
+        "src_b08b_014"
+      ],
+      "decision": "insufficient evidence for Jakub Poczęty; null"
+    },
+    {
+      "surface": "Michał Kępa",
+      "records": [
+        "src_b08c_002"
+      ],
+      "decision": "tentative michal-kempa at confidence .62; not verified"
+    }
+  ],
+  "coverage_gaps": [
+    "All evidence is heavily concentrated on a small number of event pages and is event/program scoped; it cannot represent broad current fandom.",
+    "No source passage was reopened; the stored canonical excerpts and collection attempt ledgers resolved the flagged issues. Reviewer page attempts: 0/8 allowed.",
+    "B012 class remains uncertain because no named performer receives clear endorsement and “gwiazda wieczoru” cannot safely be resolved."
+  ],
+  "skip_audit": {
+    "candidate_id": "src_b08c_001",
+    "decision": "skip retained",
+    "reason": "Only Łukasz Wolski is identified; live-versus-YouTube comparison is about one performer, and “Litości”/“Dwójkę” are program titles, not people. No permitted pair-level class fits.",
+    "verified_against_candidate": true,
+    "audit": "The excerpt names only Łukasz Wolski; “Litości” and “Dwójkę” are program titles. It cannot support a permitted pair-level evidence class. No record invented."
+  },
+  "class_change_counts": {
+    "from fan_recommendation to same_user_coendorsement": 8,
+    "from fan_comparison to same_user_coendorsement": 4
+  },
+  "lineage_checks": {
+    "ids_preserved": true,
+    "extraction_provenance_preserved": true,
+    "source_excerpt_language_context_exact": true,
+    "unreviewed_input_unmodified": true
+  },
+  "canonical_source_audit": {
+    "integration_canonical_count": 21,
+    "duplicates": 0,
+    "a001_url": "https://www.kupbilecik.de/imprezy/217717/Warszawa/Backstreet%2BStand-up/",
+    "a001_url_basis": "integration ledger verifies this exact URL; intentionally corrected .pl replacement excluded",
+    "collection_ledgers_read": [
+      "20261031-batch08.collection-a.json",
+      "20261031-batch08.collection-b.json",
+      "20261031-batch08.collection-c.json"
+    ]
+  }
+}

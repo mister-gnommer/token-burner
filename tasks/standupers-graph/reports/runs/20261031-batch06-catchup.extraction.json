@@ -1,0 +1,87 @@
+{
+  "run_id": "20261031-batch06-catchup",
+  "stage": "extraction",
+  "provider": "codex",
+  "model": "gpt-6-luna",
+  "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1",
+  "input": "evidence/batch-06-catchup/source-candidates.jsonl",
+  "output": "evidence/batch-06-catchup/evidence.unreviewed.jsonl",
+  "counts": {
+    "source_candidates": 4,
+    "records": 4,
+    "skipped": 0,
+    "mentions": 9,
+    "by_class": {
+      "same_user_coendorsement": 3,
+      "fan_comparison": 1
+    },
+    "positive_preferences": 7,
+    "unknown_preferences": 2
+  },
+  "records": [
+    {
+      "id": "ev_b06catch_a_001",
+      "candidate_id": "src_b06ca_001",
+      "evidence_class": "same_user_coendorsement",
+      "performers": [
+        "czarek-sikora",
+        "kacper-rucinski",
+        null
+      ],
+      "notes": "Czarek resolves to Czarek Sikora from the exact surface and series roster. “Kaceper” is preserved verbatim and mapped to Kacper Ruciński at .78 based on the corrected series roster; the roster is not a dated guest cast. “Termos” is retained as an unresolved collaborator mention: the supplied context does not establish that alias as a specific performer or prove the dated guest cast. The explicit “wymiatają” supports event-scoped positive preference for Czarek and Kaceper; no roster preference is transferred to the author."
+    },
+    {
+      "id": "ev_b06catch_b_001",
+      "candidate_id": "src_b06cb_001",
+      "evidence_class": "same_user_coendorsement",
+      "performers": [
+        "pawel-bakteria",
+        "maciej-brudzewski"
+      ],
+      "notes": "Paweł resolves to Paweł Bakteria from the exact linked Wrocław 2024-03-12 20:30 event roster (“Support: Paweł Bakteria”); Maciej resolves from the source page/event title to Maciej Brudzewski. Both receive explicit absolute praise. Preference is scoped to this performance and encounter; no broader fandom is inferred."
+    },
+    {
+      "id": "ev_b06catch_b_002",
+      "candidate_id": "src_b06cb_002",
+      "evidence_class": "same_user_coendorsement",
+      "performers": [
+        "pawel-bakteria",
+        "maciej-brudzewski"
+      ],
+      "notes": "Paweł resolves to Paweł Bakteria from the exact linked Wrocław 2024-03-12 18:00 event roster (“Support: Paweł Bakteria”); Maćka resolves from the event title to Maciej Brudzewski. The author key remains one source-scoped account: “z mężem” does not create another fan. “Mega zadowoleni” is explicit event-scoped personal appreciation."
+    },
+    {
+      "id": "ev_b06catch_c_001",
+      "candidate_id": "src_b06cc_001",
+      "evidence_class": "fan_comparison",
+      "performers": [
+        "pan-li",
+        null
+      ],
+      "notes": "Pan Li receives explicit absolute praise and a positive preference quote. The negative judgment targets “drugiego standuppera”/“Drugi Pan” but remains unresolved: the page-level two-person bill does not safely identify the criticized person as Kuba Dąbrowski. The criticism is event-scoped; the caveat about undisclosed new-material testing is preserved in the excerpt. No general dislike is inferred."
+    }
+  ],
+  "skips": [],
+  "surprises": [
+    "A’s corrected context is a series roster, not a verified dated guest cast; the author’s “Kaceper” surface is preserved, while “Termos” remains unmapped and no roster opinion is transferred to the fan.",
+    "B has two distinct, event-specific 2024-03-12 Wrocław rosters (20:30 and 18:00), each independently listing Paweł Bakteria as support; both comments praise the same source-scoped pair.",
+    "C preserves clear Pan Li praise and criticism of an unnamed second performer; despite the two-person bill, the negative judgment is not assigned to Kuba Dąbrowski. The new-material testing caveat remains in the author excerpt."
+  ],
+  "accounting": {
+    "candidate_ids": [
+      "src_b06ca_001",
+      "src_b06cb_001",
+      "src_b06cb_002",
+      "src_b06cc_001"
+    ],
+    "all_candidates_accounted_once": true,
+    "source_lineage_and_exact_copied_fields": "copied from canonical candidate records",
+    "surface_and_preference_quote_checks": "checked verbatim against each author excerpt",
+    "programme_scope": {
+      "A": "Zero Presji Show, Warsaw 2026-03-13",
+      "B001": "Wrocław event 2024-03-12 20:30",
+      "B002": "Wrocław event 2024-03-12 18:00",
+      "C": "Zgierz test programme 2022-04-21"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "run_id": "20261031-batch09",
+  "raw_candidates": 6,
+  "canonical_candidates": 6,
+  "duplicates": [],
+  "metadata_changes": [
+    {
+      "candidate_id": "src_b09c_001",
+      "field": "site",
+      "from": "www.kupbilecik.pl",
+      "to": "kupbilecik.pl"
+    }
+  ],
+  "collection_exceptions": [
+    "A initially excluded permitted negative comparison and overstated snippet verification; follow-up within original allowance recovered it and clarified claims. Initial files retained. Two fallback reservations reconciled after calls.",
+    "B nested budget candidatecount0/unused16 stale; actual JSONL1/unused15 authoritative. Original ledger retained.",
+    "C ran4queries after guard rejected reservation; total28 exceeds24by4. No further C allowance; overcap results excluded by worker."
+  ],
+  "review_flags": [
+    "A001 author does not explicitly name Wojciech Kamiński; distinguish source-page attribution from verbatim author naming. Pasierby/group reference requires caution.",
+    "A002 distinguishes Adam from Bartosz Gajda; Borkowski hosting praise versus disappointing set, unresolved Pająk.",
+    "A003 complete negative comparison and parent event header; never discard negative evidence for lacking co-enjoyment.",
+    "A004 Szymon vel Marcin Baraniecki spelling; organizer caveat not performer dislike; retain literal &quot; encoding.",
+    "B001 Kopiec absolute praise but relative Pacześ superiority alone must not imply absolute dislike.",
+    "C001 historical2016event scope; repeated Marcin authorhash across posts does not establish distinct real people."
+  ]
+}

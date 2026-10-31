@@ -1,0 +1,390 @@
+{
+  "surprises": [
+    "Name ambiguity was material: Adam Gajda’s event source explicitly says “nie ten z Łowcy.B”; this identifies the assigned Adam Gajda and prevents conflation with Bartosz Gajda. The unrelated Wojciech Kamiński concern was avoided by opening the matching “Wojtek Kamiński” review page and verifying its named Radek Drożdż support comment.",
+    "KupBilecik review pages had web cache misses. Following the required fallback, preview_status reported available:false and preview_open succeeded; the first page redirected to the final canonical URL recorded in the candidate."
+  ],
+  "run_id": "20261031-batch09",
+  "slice": "a",
+  "assigned_ranks": [
+    81,
+    82,
+    83,
+    84
+  ],
+  "focal_performers": [
+    "wojciech-kaminski",
+    "szymon-baraniecki",
+    "synmojegotaty-bartek-skrobisz",
+    "adam-gajda"
+  ],
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+research-budget-v1"
+  },
+  "budget": {
+    "queries_cap": 24,
+    "page_attempts_cap": 24,
+    "verified_candidate_cap": 16,
+    "queries_reserved": [
+      "Wojciech Kamiński stand up opinie forum",
+      "Szymon Baraniecki stand up polecam fan",
+      "SynMojegoTaty Bartek Skrobisz stand up opinie forum",
+      "Adam Gajda stand up komik polecam opinie",
+      "\"Adam Gajda\" stand-up śmieszny komik",
+      "\"Wojtek Kamiński\" stand-up polecam forum",
+      "\"Szymon Baraniecki\" \"Kuba Wu\" opinie występ",
+      "\"SynMojegoTaty\" \"polecam\" stand-up komentarze",
+      "\"Adam Gajda\" \"Paweł Chałupka\" komentarz stand-up śmiesznie",
+      "\"Adam Gajda\" stand-up \"Mieszko Minkiewicz\" fan polecam",
+      "\"Szymon Baraniecki\" \"polecam\" stand-up komicy forum",
+      "\"Szymon Baraniecki\" \"świetny\" \"występ\" \"support\" opinie",
+      "\"Piotr\" \"Adam Gajda\" \"Jasiek\" Chałupka KupBilecik",
+      "\"Adam Gajda\" \"Chałupka\" recenzje stand-up widzowie",
+      "\"Szymon Baraniecki\" stand-up forum fani opinie",
+      "\"SynMojegoTaty\" \"Bartek Skrobisz\" \"stand-up\" polecam komicy",
+      "\"Bartek Skrobisz\" \"Adam Gajda\" stand-up widzowie",
+      "\"SynMojegoTaty\" \"Szymon Baraniecki\"",
+      "\"Wojtek Kamiński\" \"stand-up\" polecam \"komicy\"",
+      "\"Wojciech Kamiński\" \"Radek Drożdż\" opinie występ",
+      "\"Szymon Baraniecki\" \"Rafał Rutkowski\" występ opinie"
+    ],
+    "page_attempts_reserved": [
+      "https://www.kupbilecik.com/komentarze/12319/Stand-Up%3A%2BWojtek%2BKami%C5%84ski/",
+      "https://www.kupbilecik.pl/en/db/12167/stand-up-pawel-chalupka-jasiek-borkowski-adam-gajda?kb_ref=event&kb_ref_id=state_past",
+      "https://www.kupbilecik.com/komentarze/12319/Stand-Up%3A%2BWojtek%2BKami%C5%84ski/",
+      "https://www.kupbilecik.pl/en/db/12167/stand-up-pawel-chalupka-jasiek-borkowski-adam-gajda?kb_ref=event&kb_ref_id=state_past",
+      "https://www.kupbilecik.pl/en/db/12167/stand-up-pawel-chalupka-jasiek-borkowski-adam-gajda?kb_ref=event&kb_ref_id=state_past",
+      "https://www.kupbilecik.pl/pl/db/9258/stand-up-szymon-baraniecki?kb_ref=event&kb_ref_id=state_past",
+      "https://www.kupbilecik.pl/pl/db/9258/stand-up-szymon-baraniecki?kb_ref=event&kb_ref_id=state_past",
+      "https://www.kupbilecik.pl/en/db/12167/stand-up-pawel-chalupka-jasiek-borkowski-adam-gajda?kb_ref=event&kb_ref_id=state_past",
+      "https://www.kupbilecik.pl/en/db/12167/stand-up-pawel-chalupka-jasiek-borkowski-adam-gajda?kb_ref=event&kb_ref_id=state_past",
+      "https://www.kupbilecik.pl/pl/comments/108/rafal-rutkowski?page_comments=39",
+      "https://www.kupbilecik.pl/pl/comments/108/rafal-rutkowski?page_comments=39"
+    ],
+    "preview_status_calls": [
+      {
+        "reason": "web cache misses; KupBilecik pages",
+        "result": "available:false; tabId:null"
+      },
+      {
+        "reason": "Follow-up cache misses for KupBilecik event/comment pages",
+        "result": "available:false before initial follow-up opens; available:true on later status check with event page tab attached; preview_open succeeded for event pages and Rutkowski comments page"
+      }
+    ]
+  },
+  "queries": [
+    {
+      "query": "Wojciech Kamiński stand up opinie forum",
+      "status": "searched",
+      "results": [
+        "KupBilecik comments for Wojtek Kamiński (comment by Kamil names Radek Drożdż and praises both)"
+      ]
+    },
+    {
+      "query": "Szymon Baraniecki stand up polecam fan",
+      "status": "searched",
+      "results": [
+        "KupBilecik event comments are solo praise; LinkedIn reply recommends Szymon only"
+      ]
+    },
+    {
+      "query": "SynMojegoTaty Bartek Skrobisz stand up opinie forum",
+      "status": "searched",
+      "results": [
+        "KupBilecik comments mostly solo praise; one mentions support Wojtek Rydzu, not identified as frozen peer"
+      ]
+    },
+    {
+      "query": "Adam Gajda stand up komik polecam opinie",
+      "status": "searched",
+      "results": [
+        "Standup.pl identity page only; Adam Gajda distinct from Bartosz Gajda"
+      ]
+    },
+    {
+      "query": "\"Adam Gajda\" stand-up śmieszny komik",
+      "status": "searched",
+      "results": [
+        "Standup.pl profile and content; no qualifying fan relation"
+      ]
+    },
+    {
+      "query": "\"Wojtek Kamiński\" stand-up polecam forum",
+      "status": "searched",
+      "results": [
+        "KupBilecik comment page surfaced; candidate comment about Kamiński and Radek Drożdż"
+      ]
+    },
+    {
+      "query": "\"Szymon Baraniecki\" \"Kuba Wu\" opinie występ",
+      "status": "searched",
+      "results": [
+        "No fan comparative result; PeFKa video is promotional/program listing"
+      ]
+    },
+    {
+      "query": "\"SynMojegoTaty\" \"polecam\" stand-up komentarze",
+      "status": "searched",
+      "results": [
+        "KupBilecik reviews surfaced; praise focused on focal only, support reference not frozen peer"
+      ]
+    },
+    {
+      "query": "\"Adam Gajda\" \"Paweł Chałupka\" komentarz stand-up śmiesznie",
+      "status": "searched",
+      "results": [
+        "KupBilecik group event comments; Radosław comment positively evaluates both and gives caveat about Jasiek Borkowski"
+      ]
+    },
+    {
+      "query": "\"Adam Gajda\" stand-up \"Mieszko Minkiewicz\" fan polecam",
+      "status": "searched",
+      "results": [
+        "KupBilecik Mieszko event review: a fan says Adam Gajda also excels and recommends Mieszko performances"
+      ]
+    },
+    {
+      "query": "\"Szymon Baraniecki\" \"polecam\" stand-up komicy forum",
+      "status": "searched",
+      "results": [
+        "LinkedIn commenter recommends Szymon/YouTube, no peer named"
+      ]
+    },
+    {
+      "query": "\"Szymon Baraniecki\" \"świetny\" \"występ\" \"support\" opinie",
+      "status": "searched",
+      "results": [
+        "KupBilecik praise for focal only; no named frozen peer in same author statement"
+      ]
+    },
+    {
+      "query": "\"Piotr\" \"Adam Gajda\" \"Jasiek\" Chałupka KupBilecik",
+      "status": "searched",
+      "results": [
+        "Searched; no exact Piotr post surfaced in search results; reopened previously identified group event page directly and verified the comment there."
+      ]
+    },
+    {
+      "query": "\"Adam Gajda\" \"Chałupka\" recenzje stand-up widzowie",
+      "status": "searched",
+      "results": [
+        "Searched; surfaced KupBilecik group event comments including event page already used; no distinct fan post verified from search results."
+      ]
+    },
+    {
+      "query": "\"Szymon Baraniecki\" stand-up forum fani opinie",
+      "status": "searched",
+      "results": [
+        "Searched; surfaced Baraniecki event page and self-promotional LinkedIn post; only the event page was opened, and it contained solo/generic praise without named frozen peer."
+      ]
+    },
+    {
+      "query": "\"SynMojegoTaty\" \"Bartek Skrobisz\" \"stand-up\" polecam komicy",
+      "status": "searched",
+      "results": [
+        "Searched; results were identity/editorial pages, no qualifying fan preference post."
+      ]
+    },
+    {
+      "query": "\"Bartek Skrobisz\" \"Adam Gajda\" stand-up widzowie",
+      "status": "searched",
+      "results": [
+        "Searched; no qualifying fan comparison surfaced; results included generic identity/editorial material."
+      ]
+    },
+    {
+      "query": "\"SynMojegoTaty\" \"Szymon Baraniecki\"",
+      "status": "searched",
+      "results": [
+        "Searched; no qualifying fan post surfaced."
+      ]
+    },
+    {
+      "query": "\"Wojtek Kamiński\" \"stand-up\" polecam \"komicy\"",
+      "status": "searched",
+      "results": [
+        "Searched; surfaced the already verified Wojtek Kamiński comments page; no distinct source established."
+      ]
+    },
+    {
+      "query": "\"Wojciech Kamiński\" \"Radek Drożdż\" opinie występ",
+      "status": "searched",
+      "results": [
+        "Searched; surfaced the already verified Kamil comment and event page, no distinct source."
+      ]
+    },
+    {
+      "query": "\"Szymon Baraniecki\" \"Rafał Rutkowski\" występ opinie",
+      "status": "searched",
+      "results": [
+        "Searched; surfaced Rafał Rutkowski comments page with Marcin’s Szymon/Rutek comment; page opened and full comment verified as src_b09a_004."
+      ]
+    }
+  ],
+  "page_attempts": [
+    {
+      "url": "https://www.kupbilecik.com/komentarze/12319/Stand-Up%3A%2BWojtek%2BKami%C5%84ski/",
+      "type": "web.open",
+      "result": "Cache miss"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/en/db/12167/stand-up-pawel-chalupka-jasiek-borkowski-adam-gajda?kb_ref=event&kb_ref_id=state_past",
+      "type": "web.open",
+      "result": "Cache miss"
+    },
+    {
+      "url": "https://www.kupbilecik.com/komentarze/12319/Stand-Up%3A%2BWojtek%2BKami%C5%84ski/",
+      "type": "preview_open",
+      "result": "Succeeded; redirected to https://www.kupbilecik.pl/en/comments/12319/stand-up-wojtek-kaminski; full body text inspected"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/en/db/12167/stand-up-pawel-chalupka-jasiek-borkowski-adam-gajda?kb_ref=event&kb_ref_id=state_past",
+      "type": "preview_open",
+      "result": "Succeeded; full body text inspected"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/en/db/12167/stand-up-pawel-chalupka-jasiek-borkowski-adam-gajda?kb_ref=event&kb_ref_id=state_past",
+      "type": "web.open",
+      "result": "Cache miss"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/db/9258/stand-up-szymon-baraniecki?kb_ref=event&kb_ref_id=state_past",
+      "type": "web.open",
+      "result": "Cache miss"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/en/db/12167/stand-up-pawel-chalupka-jasiek-borkowski-adam-gajda?kb_ref=event&kb_ref_id=state_past",
+      "type": "preview_open",
+      "result": "Succeeded; inspected full body text; verified Piotr, Artur, Monika, Mariusz, and RADOSŁAW comments and event scope/date"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/db/9258/stand-up-szymon-baraniecki?kb_ref=event&kb_ref_id=state_past",
+      "type": "preview_open",
+      "result": "Succeeded; inspected full body text; six comments, none naming a frozen peer in positive author text"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/en/db/12167/stand-up-pawel-chalupka-jasiek-borkowski-adam-gajda?kb_ref=event&kb_ref_id=state_past",
+      "type": "preview_open",
+      "result": "Succeeded; repeat open after initial verification to recover full exact Piotr comment; verified opposing comparison"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/108/rafal-rutkowski?page_comments=39",
+      "type": "web.open",
+      "result": "Cache miss"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/108/rafal-rutkowski?page_comments=39",
+      "type": "preview_open",
+      "result": "Succeeded; inspected full body text; verified Marcin comment and Białystok event scope/date"
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "src_b09a_001",
+      "locator": "KupBilecik comment list, Kamil, comment dated 2024-10-15 for Łódź event 2024-10-13",
+      "url": "https://www.kupbilecik.pl/en/comments/12319/stand-up-wojtek-kaminski",
+      "target_performer_ids": [
+        "wojciech-kaminski",
+        "radek-drozdz"
+      ],
+      "excerpt": "Na występ szedłem z rezerwą, bo widziałem już kabareciarzy robiących stand-up. Ale to było suuuuuper! Świeżo, naturalnie, swobodnie. Świetny kontakt z widownią. Bez zbędnych wulgaryzmów i co najważniejsze, bardzo śmiesznie. Pasierby rządzą! :) Na supporcie Radek Drożdż też bardzo dobrze. Bardzo polecam!",
+      "author_hint": "Kamil",
+      "published_at": "2024-10-15"
+    },
+    {
+      "candidate_id": "src_b09a_002",
+      "locator": "KupBilecik event comments, RADOSŁAW, Legionowo event dated 2023-02-11",
+      "url": "https://www.kupbilecik.pl/en/db/12167/stand-up-pawel-chalupka-jasiek-borkowski-adam-gajda?kb_ref=event&kb_ref_id=state_past",
+      "target_performer_ids": [
+        "adam-gajda",
+        "jasiek-borkowski",
+        "pawel-chalupka"
+      ],
+      "excerpt": "Mimo że to testy było super , Paweł Chałupka rewelacja uśmiałem się jak zawsze w punkt pięknie i abstrakcyjnie,Adam Gajda ( nie ten z Łowcy.B ) jak zawsze ciekawe historie z życia i pożycia w swoim nieporadnym stylu, Jaśiek Borkowski jako prowadzący super, ale sam występ coś zabrakło...jakby nie on.... pan Pająk jak na początkującego całkiem ciekawie i hardcorowo naprawdę super dobrze się bawiłem ,się zrelaksowałem. dzięki wielkie za ten show, występ :) dobrze że jesteście :)",
+      "author_hint": "RADOSŁAW",
+      "published_at": null
+    }
+  ],
+  "skipped_sources": [
+    {
+      "source": "KupBilecik SynMojegoTaty comments",
+      "reason": "Search-result snippets only in the earlier collection ledger; no corresponding page open is recorded, so source text was not independently verified. No candidate promoted.",
+      "access": "snippet-only; not opened"
+    },
+    {
+      "source": "KupBilecik Szymon Baraniecki event reviews; LinkedIn replies",
+      "reason": "Earlier KupBilecik/LinkedIn results were snippet-only; no opens are recorded for those sources. In this follow-up, a separate Szymon event page was opened and all six visible comments were inspected; they contained no named frozen peer in positive author text.",
+      "access": "earlier sources snippet-only; separate follow-up event page opened and inspected"
+    },
+    {
+      "source": "KupBilecik Mieszko Minkiewicz event comments, page 21",
+      "reason": "Search-result snippet only; page was not opened, author/date context absent, and no candidate promoted.",
+      "access": "snippet-only; not opened"
+    }
+  ],
+  "coverage": {
+    "wojciech-kaminski": {
+      "searched": true,
+      "qualifying_candidates": 1,
+      "gap": "One verified peer-link (Radek Drożdż); follow-up results repeated the same source."
+    },
+    "szymon-baraniecki": {
+      "searched": true,
+      "qualifying_candidates": 1,
+      "gap": "One verified same-author co-enjoyment comment with Rafał Rutkowski; no broader fan discussion found."
+    },
+    "synmojegotaty-bartek-skrobisz": {
+      "searched": true,
+      "qualifying_candidates": 0,
+      "gap": "Only identity/editorial/promotional results or snippet-only reviews surfaced; no qualifying fan comparison verified."
+    },
+    "adam-gajda": {
+      "searched": true,
+      "qualifying_candidates": 2,
+      "gap": "Two verified sources: one mixed group-event comment and one negative comparison crediting Chałupka; no further fan discussion verified."
+    }
+  },
+  "counts": {
+    "queries_used": 21,
+    "page_attempts_used": 11,
+    "verified_candidates": 4,
+    "queries_unused": 3,
+    "page_attempts_unused": 13,
+    "candidate_slots_unused": 12
+  },
+  "followup": {
+    "queries_reserved": [
+      "\"Piotr\" \"Adam Gajda\" \"Jasiek\" Chałupka KupBilecik",
+      "\"Adam Gajda\" \"Chałupka\" recenzje stand-up widzowie",
+      "\"Szymon Baraniecki\" stand-up forum fani opinie",
+      "\"SynMojegoTaty\" \"Bartek Skrobisz\" \"stand-up\" polecam komicy",
+      "\"Bartek Skrobisz\" \"Adam Gajda\" stand-up widzowie",
+      "\"SynMojegoTaty\" \"Szymon Baraniecki\"",
+      "\"Wojtek Kamiński\" \"stand-up\" polecam \"komicy\"",
+      "\"Wojciech Kamiński\" \"Radek Drożdż\" opinie występ",
+      "\"Szymon Baraniecki\" \"Rafał Rutkowski\" występ opinie"
+    ],
+    "page_attempts_reserved": [
+      "https://www.kupbilecik.pl/en/db/12167/stand-up-pawel-chalupka-jasiek-borkowski-adam-gajda?kb_ref=event&kb_ref_id=state_past",
+      "https://www.kupbilecik.pl/pl/db/9258/stand-up-szymon-baraniecki?kb_ref=event&kb_ref_id=state_past",
+      "https://www.kupbilecik.pl/pl/db/9258/stand-up-szymon-baraniecki?kb_ref=event&kb_ref_id=state_past",
+      "https://www.kupbilecik.pl/en/db/12167/stand-up-pawel-chalupka-jasiek-borkowski-adam-gajda?kb_ref=event&kb_ref_id=state_past",
+      "https://www.kupbilecik.pl/en/db/12167/stand-up-pawel-chalupka-jasiek-borkowski-adam-gajda?kb_ref=event&kb_ref_id=state_past",
+      "https://www.kupbilecik.pl/pl/comments/108/rafal-rutkowski?page_comments=39",
+      "https://www.kupbilecik.pl/pl/comments/108/rafal-rutkowski?page_comments=39"
+    ],
+    "purpose": "Correct prior positive-only eligibility error and perform limited broader fan discovery for assigned focal performers.",
+    "correction": "Prior ledger excluded Piotr solely for criticizing Adam Gajda and Jasiek Borkowski while praising Paweł Chałupka. This contradicted the rubric requiring complete relevant passage including negative comparisons. The group event page was reopened and the complete Piotr comment was verified and saved as src_b09a_003; prior exclusion is superseded.",
+    "verified_candidates_added": [
+      "src_b09a_003",
+      "src_b09a_004"
+    ],
+    "query_attempts": 9,
+    "page_attempts": 7,
+    "source_access_clarification": "Earlier SynMojegoTaty and Mieszko pages were not opened according to the actual prior page-attempt ledger; those were snippet-only and are no longer described as verified. The earlier LinkedIn/Szymon items were also snippet-only. Current follow-up page opens and results are recorded above.",
+    "stop_reason": "Stopped after verifying the rubric correction and one additional distinct Szymon co-enjoyment source; the remaining searches found no qualifying sources for SynMojegoTaty or Wojciech Kamiński, while remaining leads were solo praise, editorial/promotional text, or snippets. No quota filling.",
+    "remaining_allowance": "3 queries and 13 page attempts; 12 candidate slots.",
+    "reservation_ledger_reconciliation": "The first two fallback preview_open calls (Piotr event page, Szymon event page) were each a separate page attempt but had initially been represented only by the URL reservations made before their preceding web.open calls. Added both individual actions when reconciling the ledger; totals below count actual calls, not unique URLs."
+  }
+}

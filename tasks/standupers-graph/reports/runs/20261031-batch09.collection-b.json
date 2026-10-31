@@ -1,0 +1,237 @@
+{
+  "surprises": [],
+  "run_id": "20261031-batch09",
+  "slice": "b",
+  "assigned_ranks": [
+    85,
+    86,
+    87
+  ],
+  "focal_performers": [
+    "mariusz-dabrowski",
+    "karol-kopiec",
+    "marta-lojek"
+  ],
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+research-budget-v1"
+  },
+  "budget": {
+    "queries_cap": 24,
+    "page_attempts_cap": 24,
+    "verified_candidate_cap": 16,
+    "queries_used": 24,
+    "page_attempts_used": 5,
+    "verified_candidates": 0,
+    "queries_unused": 0,
+    "page_attempts_unused": 19,
+    "candidate_slots_unused": 16,
+    "queries_reserved": [
+      "Mariusz Dąbrowski stand-up opinie polecam",
+      "\"Mariusz Dąbrowski\" komik śmieszny forum",
+      "\"Mariusz\" stand-up \"polecam\" komicy",
+      "Karol Kopiec stand-up opinie polecam fani",
+      "\"Karol Kopiec\" \"śmieszny\" \"stand-up\" opinie",
+      "\"Kopiec\" stand-up komik \"uwielbiam\"",
+      "Marta Lojek stand-up opinie polecam komedia",
+      "\"Marta Lojek\" stand-up \"śmieszna\"",
+      "\"Marta\" stand-up \"polecam\" komicy opinie",
+      "\"Mariusz Dąbrowski\" \"stand-up\" \"komentarz\" opinia",
+      "\"Mariusz Dąbrowski\" \"Paweł Chałupka\" OR \"Kacper Ruciński\"",
+      "\"Mariusz Dąbrowski\" \"polecam\" komik",
+      "\"Marta Lojek\" \"stand-up\" \"komentarz\"",
+      "\"Marta Łojek\" stand-up polecam komicy",
+      "\"Marta Lojek\" \"Michał Leja\" OR \"Olka Szczęśniak\"",
+      "\"Marta\" \"Lojek\" stand-up opinie widzów",
+      "\"Karol Kopiec\" \"Michał Leja\" OR \"Abelard Giza\" opinie",
+      "\"Karol Kopiec\" \"nie polecam\" OR \"słaby\" stand-up review",
+      "\"Mariusz Dąbrowski\" site:kupbilecik.pl/pl/comments",
+      "\"Mariusz Dąbrowski\" \"komentarze\" stand-up opinie widzów",
+      "\"Marta Lojek\" site:kupbilecik.pl/pl/comments",
+      "\"Marta Łojek\" \"komentarz\" stand-up publiczność",
+      "\"Marta Lojek\" \"Olka Szczęśniak\" \"support\" opinie",
+      "\"Karol Kopiec\" \"Pacześ może się schować\""
+    ],
+    "page_attempts_reserved": [
+      "https://www.kupbilecik.pl/pl/comments/117/karol-kopiec",
+      "https://www.kupbilecik.pl/pl/comments/117/karol-kopiec",
+      "https://www.kupbilecik.pl/en/db/12784/stand-up-tomasz-boras?page=1",
+      "https://www.kupbilecik.pl/en/db/12784/stand-up-tomasz-boras?page=1",
+      "https://www.kupbilecik.pl/komentarze/12784/Stand-up%3A%2BTomasz%2BBoras/5/"
+    ],
+    "attempts": [
+      {
+        "type": "search_batch",
+        "queries": [
+          "Mariusz Dąbrowski stand-up opinie polecam",
+          "\"Mariusz Dąbrowski\" komik śmieszny forum",
+          "\"Mariusz\" stand-up \"polecam\" komicy",
+          "Karol Kopiec stand-up opinie polecam fani",
+          "\"Karol Kopiec\" \"śmieszny\" \"stand-up\" opinie",
+          "\"Kopiec\" stand-up komik \"uwielbiam\"",
+          "Marta Lojek stand-up opinie polecam komedia",
+          "\"Marta Lojek\" stand-up \"śmieszna\"",
+          "\"Marta\" stand-up \"polecam\" komicy opinie"
+        ],
+        "status": "completed; details recorded in attempt outcome list"
+      },
+      {
+        "type": "open",
+        "url": "https://www.kupbilecik.pl/pl/comments/117/karol-kopiec",
+        "method": "web.open",
+        "status": "cache miss; preview_status available:false"
+      },
+      {
+        "type": "open",
+        "url": "https://www.kupbilecik.pl/pl/comments/117/karol-kopiec",
+        "method": "preview_open",
+        "status": "completed; details recorded in attempt outcome list"
+      },
+      {
+        "type": "search_batch",
+        "queries": [
+          "\"Mariusz Dąbrowski\" \"stand-up\" \"komentarz\" opinia",
+          "\"Mariusz Dąbrowski\" \"Paweł Chałupka\" OR \"Kacper Ruciński\"",
+          "\"Mariusz Dąbrowski\" \"polecam\" komik",
+          "\"Marta Lojek\" \"stand-up\" \"komentarz\"",
+          "\"Marta Łojek\" stand-up polecam komicy",
+          "\"Marta Lojek\" \"Michał Leja\" OR \"Olka Szczęśniak\"",
+          "\"Marta\" \"Lojek\" stand-up opinie widzów",
+          "\"Karol Kopiec\" \"Michał Leja\" OR \"Abelard Giza\" opinie",
+          "\"Karol Kopiec\" \"nie polecam\" OR \"słaby\" stand-up review"
+        ],
+        "status": "completed; details recorded in attempt outcome list"
+      },
+      {
+        "type": "search_batch",
+        "queries": [
+          "\"Mariusz Dąbrowski\" site:kupbilecik.pl/pl/comments",
+          "\"Mariusz Dąbrowski\" \"komentarze\" stand-up opinie widzów",
+          "\"Marta Lojek\" site:kupbilecik.pl/pl/comments",
+          "\"Marta Łojek\" \"komentarz\" stand-up publiczność",
+          "\"Marta Lojek\" \"Olka Szczęśniak\" \"support\" opinie",
+          "\"Karol Kopiec\" \"Pacześ może się schować\""
+        ],
+        "status": "completed; details recorded in attempt outcome list"
+      },
+      {
+        "type": "open",
+        "url": "https://www.kupbilecik.pl/en/db/12784/stand-up-tomasz-boras?page=1",
+        "method": "web.open",
+        "status": "completed; details recorded in attempt outcome list"
+      },
+      {
+        "type": "open",
+        "url": "https://www.kupbilecik.pl/en/db/12784/stand-up-tomasz-boras?page=1",
+        "method": "preview_open",
+        "status": "completed; details recorded in attempt outcome list"
+      },
+      {
+        "type": "open",
+        "url": "https://www.kupbilecik.pl/komentarze/12784/Stand-up%3A%2BTomasz%2BBoras/5/",
+        "method": "preview_navigate",
+        "status": "completed; details recorded in attempt outcome list"
+      }
+    ],
+    "attempt_outcomes": [
+      {
+        "type": "search_batch",
+        "queries": 9,
+        "result": "Karol KupBilecik comments surfaced an explicit Pacześ comparison; Mariusz searches had name collisions; Marta searches surfaced editorial, promotional, or solo content."
+      },
+      {
+        "type": "open",
+        "url": "https://www.kupbilecik.pl/pl/comments/117/karol-kopiec",
+        "method": "web.open",
+        "result": "Cache miss."
+      },
+      {
+        "type": "open",
+        "url": "https://www.kupbilecik.pl/pl/comments/117/karol-kopiec",
+        "method": "preview_open",
+        "result": "Opened; complete page text verified via preview_evaluate. Locator: Jaro, 2023-04-01, Karol Kopiec, Kraków, 2023-03-29 19:00."
+      },
+      {
+        "type": "search_batch",
+        "queries": 9,
+        "result": "No additional qualifying fan posts found; editorial, ranking, and solo snippets excluded."
+      },
+      {
+        "type": "search_batch",
+        "queries": 6,
+        "result": "Mariusz group-event negative comment did not evaluate the focal individually; Boras review snippet required verification."
+      },
+      {
+        "type": "open",
+        "url": "https://www.kupbilecik.pl/en/db/12784/stand-up-tomasz-boras?page=1",
+        "method": "web.open",
+        "result": "Cache miss."
+      },
+      {
+        "type": "open",
+        "url": "https://www.kupbilecik.pl/en/db/12784/stand-up-tomasz-boras?page=1",
+        "method": "preview_open",
+        "result": "Opened; current page did not show Mariusz Dąbrowski. Snippet remained unverified and skipped."
+      },
+      {
+        "type": "open",
+        "url": "https://www.kupbilecik.pl/komentarze/12784/Stand-up%3A%2BTomasz%2BBoras/5/",
+        "method": "preview_navigate",
+        "result": "Redirected to https://www.kupbilecik.pl/pl/comments/12784/stand-up-tomasz-boras?page_comments=5; no Mariusz comment appeared."
+      }
+    ]
+  },
+  "coverage": {
+    "mariusz-dabrowski": {
+      "searched": true,
+      "qualifying_candidates": 0,
+      "gap": "Name searches were polluted by unrelated people named Mariusz Dąbrowski. A Tomasz Boras support snippet was not visible on the opened page and remains unverified; no Mariusz comparison or co-enjoyment source verified."
+    },
+    "karol-kopiec": {
+      "searched": true,
+      "qualifying_candidates": 1,
+      "gap": "One verified positive Karol Kopiec evaluation explicitly compared favorably against Rafał Pacześ. Broader results were mostly solo reviews/editorial pages."
+    },
+    "marta-lojek": {
+      "searched": true,
+      "qualifying_candidates": 0,
+      "gap": "Searches surfaced solo material, event notices, editorial profile content, and co-mentions without fan evaluation; no qualifying comparison verified."
+    }
+  },
+  "skipped_leads": [
+    {
+      "lead": "KupBilecik Tomasz Boras review snippet saying Mariusz Dąbrowski was also great",
+      "status": "snippet-only / not verified",
+      "reason": "Opened canonical Boras page and page 5; no such Mariusz text appeared."
+    },
+    {
+      "lead": "Standupedia/standup.pl Marta Lojek profile, ranking, and video results",
+      "status": "search-only or editorial",
+      "reason": "Not fan-authored preference evidence."
+    },
+    {
+      "lead": "Mariusz Dąbrowski and Łukasz Kaczmarczyk event comment",
+      "status": "search-only",
+      "reason": "Comment called the whole stand-up bad; did not evaluate Mariusz individually or compare performers."
+    }
+  ],
+  "stop_reason": "All 24 search queries were used after mandated searches for each focal and broader fan-discovery attempts. Only one source qualified after complete-page verification; remaining leads were snippet-only, editorial/solo, ambiguous-name, or group-level commentary. Stopped without filling candidate capacity.",
+  "post_locators": [
+    {
+      "candidate_id": "src_b09b_001",
+      "author": "Jaro",
+      "published_at": "2023-04-01",
+      "event": "Karol Kopiec, Kraków, 2023-03-29 19:00",
+      "source_url": "https://www.kupbilecik.pl/pl/comments/117/karol-kopiec"
+    }
+  ],
+  "counts": {
+    "queries_used": 24,
+    "page_attempts_used": 5,
+    "verified_candidates": 1,
+    "queries_unused": 0,
+    "page_attempts_unused": 19,
+    "candidate_slots_unused": 15
+  }
+}

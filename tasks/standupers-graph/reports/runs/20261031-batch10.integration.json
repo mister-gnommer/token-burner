@@ -1,0 +1,15 @@
+{
+  "run_id": "20261031-batch10",
+  "raw_candidates": 1,
+  "canonical_candidates": 1,
+  "duplicates": [],
+  "metadata_changes": [],
+  "review_flags": [
+    "Nowaczyk/Biskup2019review: recommendation alone insufficient preference, but assess absolute author enjoyment/evaluations independently. Biskup probably testing is a caveat, not automatic dislike. Retain historical/programme scope."
+  ],
+  "collection_exceptions": [
+    "A conservatively charged snapshots/evaluate reads among22reported attempts and disclosed one unreserved snapshot; actual opens/navigation count differs. No cap overrun.",
+    "B24query attempts includes a failed4querybatch not retried;4pageattempts.",
+    "C24queries/1pageattempt; duplicate A Nowaczyk/Biskup and editorial/solo material excluded."
+  ]
+}

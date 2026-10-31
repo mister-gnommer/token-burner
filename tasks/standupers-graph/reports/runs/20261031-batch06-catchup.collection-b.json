@@ -1,0 +1,405 @@
+{
+  "Surprises": [
+    "Search snippets surfaced specific Grzegorz and Marcin reviews, but the matching live comments were absent from opened pages and the T3 page-20/page-21 evaluation; both remain excluded as stale/unverified snippets.",
+    "The comment authors used only “Paweł”. Each mapping to Paweł Bakteria is supported by the exact event page linked to that comment, which states “Support: Paweł Bakteria”."
+  ],
+  "run_id": "20261031-batch06-catchup",
+  "slice": "B",
+  "assigned_performers": [
+    {
+      "rank": 56,
+      "id": "pawel-bakteria",
+      "name": "Paweł Bakteria",
+      "frozen_aliases": []
+    }
+  ],
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+research-budget-v1"
+  },
+  "reservation": {
+    "queries": 24,
+    "page_attempts": 24,
+    "verified_candidates": 16,
+    "reservation_time": "2026-10-31T17:39:43Z",
+    "reservation_method": "fresh independently authorized slice-B allowance; counters initialized to zero and guarded before first research query"
+  },
+  "accounting": {
+    "queries_used": 15,
+    "page_attempts_used": 9,
+    "candidates_saved": 2,
+    "non_navigation_reads": [
+      {
+        "type": "preview_status",
+        "result": "available:false; no attached preview tab before fallback"
+      },
+      {
+        "type": "preview_evaluate",
+        "url": "https://www.kupbilecik.pl/pl/comments/7353/stand-up-maciej-brudzewski?page_comments=20",
+        "result": "read full document.body.innerText; page 20 shows comments through 2024-03-14; Marcin quote absent"
+      },
+      {
+        "type": "preview_evaluate",
+        "url": "https://www.kupbilecik.pl/pl/comments/7353/stand-up-maciej-brudzewski?page_comments=21",
+        "result": "read document.body.innerText; verified full Natalia comment dated 2024-03-13 and separate Justyna comment with event links and times; no Marcin older quote on this live page"
+      }
+    ],
+    "jsonl_records": 2,
+    "candidate_ids_saved": [
+      "src_b06cb_001",
+      "src_b06cb_002"
+    ],
+    "unused_queries": 9,
+    "unused_page_attempts": 15,
+    "unused_candidate_slots": 14
+  },
+  "deduplication_audit": {
+    "canonical_files_scanned": 10,
+    "catchup_A_scanned": true,
+    "records_scanned": 73,
+    "matching_author_post_or_excerpt": [],
+    "result": "no duplicates found; scanned all 10 canonical batch-*/source-candidates.jsonl files (including original batch6) plus catch-up A; both saved author/post excerpts distinct"
+  },
+  "attempts": [
+    {
+      "type": "search_batch",
+      "queries": [
+        {
+          "query": "\"Paweł Bakteria\" stand-up opinie komik polecam",
+          "status": "completed",
+          "result_summary": "Returned standup.pl profile/video/editorial results, plus standupedia and KupBilecik mixed bills; no review passage verified."
+        },
+        {
+          "query": "\"Bakteria\" \"stand-up\" Paweł komicy ulubieni",
+          "status": "completed",
+          "result_summary": "Search return set included performer profiles/video and mixed event pages; no usable fan comparison identified from the visible results."
+        },
+        {
+          "query": "\"Paweł Bakteria\" \"stand-up\" \"polecam\"",
+          "status": "completed",
+          "result_summary": "Found KupBilecik event pages for Maciej Brudzewski featuring Paweł as support; result snippet on 2024 Poznań page says “Polecam szczerym” but doesn’t establish a fan passage linking both."
+        }
+      ],
+      "results": [
+        {
+          "url": "https://www.kupbilecik.pl/pl/event/121716/poznan/stand-up-maciej-brudzewski",
+          "title": "Maciej Brudzewski, Poznań, 2024-04-18",
+          "disposition": "search-only lead; snippet mentions support Paweł Bakteria and recommendation, must open to verify author linkage"
+        },
+        {
+          "url": "https://www.kupbilecik.pl/pl/event/204368/gdansk/stand-up-maciej-brudzewski",
+          "title": "Maciej Brudzewski, Gdańsk, 2026-11-24",
+          "disposition": "future event page; search-only, snippet likely promotional/current future event"
+        },
+        {
+          "url": "https://www.kupbilecik.pl/pl/db/12363/stand-up-filip-puzyr-amp-pawel-bakteria",
+          "title": "Filip Puzyr & Paweł Bakteria aggregate",
+          "disposition": "potential frozen-peer pairing; search-only; inspect fan comments"
+        }
+      ]
+    },
+    {
+      "type": "search_batch",
+      "queries": [
+        {
+          "query": "\"Paweł Bakteria\" \"Filip Puzyr\" opinie widzowie",
+          "status": "completed",
+          "result_summary": "KupBilecik aggregate result shows one view comment about a first-time stand-up visit; snippet doesn’t evaluate both, so excluded pending no further specific lead."
+        },
+        {
+          "query": "\"Paweł Bakteria\" \"Maciej Brudzewski\" polecam widzowie opinie",
+          "status": "completed",
+          "result_summary": "Found several KupBilecik comments pages with fan comparisons and recommendations; strongest lead is a full comment list on page 21 containing positive comment naming Brudzewski and Paweł Bakteria. Search-only until opened."
+        }
+      ],
+      "results": [
+        {
+          "url": "https://www.kupbilecik.pl/pl/comments/7353/stand-up-maciej-brudzewski?page_comments=21",
+          "title": "Maciej Brudzewski comments page 21",
+          "disposition": "strong search-only lead: Grzegorz, dated 2023-12-15, says Brudzewski is always great and Paweł Bakteria was a pleasant surprise; open to verify full passage"
+        },
+        {
+          "url": "https://www.kupbilecik.pl/pl/db/12363/stand-up-filip-puzyr-amp-pawel-bakteria",
+          "title": "Filip Puzyr & Paweł Bakteria aggregate",
+          "disposition": "comment found but only generic first-time experience; not enough to link evaluations"
+        },
+        {
+          "url": "https://www.kupbilecik.pl/pl/event/77214/gdynia/stand-up-gdynska-scena-testowa",
+          "title": "Gdyńska Scena Testowa, 2022-07-05",
+          "disposition": "multi-performer event; comments snippets do not establish any comparison"
+        }
+      ]
+    },
+    {
+      "type": "open_url",
+      "url": "https://www.kupbilecik.pl/pl/comments/7353/stand-up-maciej-brudzewski?page_comments=21",
+      "status": "opened; lead excerpt absent",
+      "locator": "page lines 73-100 header; current comments lines 102-332; later page lines show entries from Mar 2024, no 2023-12-15 Grzegorz block in live opened representation",
+      "result_summary": "Opened page is accessible and contains complete current comment list, but the search-indexed 2023 Grzegorz comment is absent; do not promote the stale snippet. Other complete live comments on this page positively evaluate Maciej and “support Paweł” (Natalia, published 2024-03-13; event Wrocław 2024-03-12 20:30), pending identity verification."
+    },
+    {
+      "type": "search_batch",
+      "queries": [
+        {
+          "query": "KupBilecik Maciej Brudzewski Wrocław 12 marca 2024 20:30 support Paweł Bakteria",
+          "status": "completed",
+          "result_summary": "Found official KupBilecik event 121311, which names Maciej Brudzewski and “Support: Paweł Bakteria” for Wrocław 2024-03-12 20:30; comment page has the matching author/date/event text."
+        },
+        {
+          "query": "site:kupbilecik.pl/pl/event \"12 marca 2024\" \"Paweł Bakteria\" Wrocław Brudzewski",
+          "status": "completed",
+          "result_summary": "Repeated the official event result with exact support identity and event scope. Search lead only until page opened."
+        }
+      ],
+      "results": [
+        {
+          "url": "https://www.kupbilecik.pl/pl/event/121311/wroclaw/stand-up-maciej-brudzewski",
+          "title": "Maciej Brudzewski, Wrocław, 2024-03-12 20:30",
+          "disposition": "strong identity-verification lead; open event page"
+        }
+      ]
+    },
+    {
+      "type": "open_url",
+      "url": "https://www.kupbilecik.pl/pl/event/121311/wroclaw/stand-up-maciej-brudzewski",
+      "status": "opened; identity verified",
+      "locator": "event header lines 73-97, event date/time lines 93-95; program/support lines 162-173; performer identity line 165",
+      "result_summary": "Live official event page identifies Maciej Brudzewski and explicitly states “Support: Paweł Bakteria” for Wrocław 2024-03-12 20:30. The exact author passage is separately present on the opened comments page; candidate saved."
+    },
+    {
+      "type": "candidate_saved",
+      "candidate_id": "src_b06cb_001",
+      "url": "https://www.kupbilecik.pl/pl/comments/7353/stand-up-maciej-brudzewski?page_comments=21",
+      "locator": "comments page lines 152-158; author Natalia, publication date 2024-03-13; event Wrocław, 12 March 2024 20:30",
+      "decision": "include: one fan author explicitly praises both Maciej and support Paweł, then describes positive audience contact and personal enjoyment; context-specific, not generic event copy"
+    },
+    {
+      "type": "search_batch",
+      "queries": [
+        {
+          "query": "\"Paweł Bakteria\" \"Brudzewski\" \"polecam\" opinia widzów",
+          "status": "completed",
+          "result_summary": "Found exact full positive fan review naming Paweł Bakteria and Brudzewski, in search snippet attached to a KupBilecik event. Open for complete author post and date."
+        },
+        {
+          "query": "\"Paweł Bakterię\" \"Maciej Brudzewski\" opinie",
+          "status": "completed",
+          "result_summary": "Found comment list page with positive-and-negative fan statements; snippets alone not accepted. Search results include a strongly positive specific comparison on a 2022 event page."
+        },
+        {
+          "query": "\"Paweł Bakterii\" \"Maciej Brudzewski\" komentarz fan",
+          "status": "completed",
+          "result_summary": "Repeated same KupBilecik evidence set, including strong verified-source candidate lead for an individual comment by Marcin; no other source family found."
+        }
+      ],
+      "results": [
+        {
+          "url": "https://www.kupbilecik.pl/pl/event/71095/gorzow-wielkopolski/stand-up-maciej-brudzewski",
+          "title": "Maciej Brudzewski, Gorzów Wielkopolski, 2022-04-06",
+          "disposition": "search-only lead; snippet shows event-attached review praising both Paweł Bakteria and Brudzewski, full source open required"
+        },
+        {
+          "url": "https://www.kupbilecik.pl/pl/event/70076/zielona-gora/stand-up-maciej-brudzewski",
+          "title": "Maciej Brudzewski, Zielona Góra, 2022-04-19",
+          "disposition": "search-only lead; snippet contains full fan review by Marcin explicitly praising both; open to verify exact text and author/date"
+        },
+        {
+          "url": "https://www.kupbilecik.pl/pl/comments/7353/stand-up-maciej-brudzewski?page_comments=10",
+          "title": "Maciej Brudzewski comments page 10",
+          "disposition": "search-only mixed praise/criticism snippets; not used absent full review/context"
+        }
+      ]
+    },
+    {
+      "type": "open_url",
+      "url": "https://www.kupbilecik.pl/pl/event/70076/zielona-gora/stand-up-maciej-brudzewski",
+      "status": "opened; search lead absent",
+      "locator": "event header/date lines 73-95; support identity lines 160-170; page comments lines 173-253",
+      "result_summary": "Live event page verifies Maciej Brudzewski and Paweł Bakteria as support, but its rendered comment block does not contain Marcin’s search-snippet review. Treat the snippet as unverified; no candidate saved from it."
+    },
+    {
+      "type": "search_query",
+      "query": "\"Potężna dawka humoru zarówno ze strony Pawła Bakterii\"",
+      "status": "completed",
+      "result_summary": "Exact phrase search returned the verbatim Marcin passage on the Gdynia 2022-04-28 KupBilecik event page, where it is attributed to his separate Zielona Góra event on 2022-04-19. Opened result URL needed to verify full page and locator."
+    },
+    {
+      "type": "open_url",
+      "url": "https://www.kupbilecik.pl/pl/komentarze/7353/Stand-up%3A%2BMaciej%2BBrudzewski/20/",
+      "status": "issued; outcome recorded in following failed-open entry",
+      "result_summary": "Alternative exact comments-list route for verifying the Marcin review; awaiting full source content."
+    },
+    {
+      "type": "open_url",
+      "url": "https://www.kupbilecik.pl/pl/komentarze/7353/Stand-up%3A%2BMaciej%2BBrudzewski/20/",
+      "status": "failed; preview fallback opened page 20 instead",
+      "error": "Internal Error () — URL https://www.kupbilecik.pl/pl/komentarze/7353/Stand-up%3A%2BMaciej%2BBrudzewski/20/ is not accessible via this tool.",
+      "result_summary": "Required T3 preview_open fallback returned a canonical comments page at page_comments=20. Full page evaluation confirmed target Marcin quote absent from page 20."
+    },
+    {
+      "type": "preview_open",
+      "requested_url": "https://www.kupbilecik.pl/pl/komentarze/7353/Stand-up%3A%2BMaciej%2BBrudzewski/20/",
+      "status": "opened",
+      "tab_id": "tab_s_02a52303-1e3a-4993-a897-62daeceecefe",
+      "actual_url": "https://www.kupbilecik.pl/pl/comments/7353/stand-up-maciej-brudzewski?page_comments=20",
+      "result_summary": "available:true; opened page 20 via canonical comments-list route"
+    },
+    {
+      "type": "search_query",
+      "query": "\"Jesteśmy z mężem mega zadowoleni z występu Pawła jak i Maćka\" KupBilecik",
+      "status": "completed",
+      "result_summary": "Found global KupBilecik comments page 2059, with Justyna’s full quote, published 2024-03-13, exact linked title Maciej Brudzewski and event Wrocław 2024-03-12 at 18:00; source page must open."
+    },
+    {
+      "type": "open_url",
+      "url": "https://www.kupbilecik.pl/pl/comments?page_comments=2059",
+      "status": "opened; candidate post verified",
+      "locator": "lines 189-196; author Justyna, 2024-03-13; Wrocław, 12 March 2024, 18:00",
+      "result_summary": "Full opened comments page verifies complete Justyna review and links it to the specific Maciej Brudzewski event/date/time. Need open that event link to verify Paweł identity."
+    },
+    {
+      "type": "preview_click",
+      "url": "https://www.kupbilecik.pl/pl/comments/7353/stand-up-maciej-brudzewski?page_comments=21",
+      "status": "failed; malformed locator arguments",
+      "error": "tool call error: tool call failed for `t3-code/preview_click` — Caused by: Mcp error: -32602: Invalid parameters for tool 'preview_click': Provide exactly one target.",
+      "result_summary": "This attempt targeted the wrong already-open T3 tab (page 21). Retry using the event link from the opened global comments page."
+    },
+    {
+      "type": "candidate_saved",
+      "candidate_id": "src_b06cb_002",
+      "url": "https://www.kupbilecik.pl/pl/comments?page_comments=2059",
+      "locator": "global comments page lines 189-196; author Justyna, publication date 2024-03-13; event Wrocław, 12 March 2024 18:00",
+      "decision": "include: explicit joint enjoyment and direct recommendation for Paweł and Maciej, with full author text retained"
+    },
+    {
+      "type": "search_batch",
+      "queries": [
+        {
+          "query": "site:reddit.com/r/polska \"Paweł Bakteria\" stand-up",
+          "status": "completed",
+          "result_summary": "No public fan-discussion result matching the performer; results were unrelated, solo/editorial, or search noise."
+        },
+        {
+          "query": "\"Bakteria\" stand-up komik opinie polecacie Paweł",
+          "status": "completed",
+          "result_summary": "Returned a public ratings table and performer/editorial pages, plus previously seen KupBilecik event comments; no new non-duplicate opened fan evidence."
+        },
+        {
+          "query": "Paweł Bakteria ulubiony standuper polecacie forum",
+          "status": "completed",
+          "result_summary": "Returned a generic stand-up forum and unrelated fan discussions; no fan post evaluating Paweł with a frozen peer."
+        }
+      ],
+      "results": [
+        {
+          "url": "https://standupedia.pl/najlepsi-standuperzy/",
+          "title": "Standupedia 2023 ranking",
+          "disposition": "structured ratings/editorial ranking; not personal fan comparison"
+        },
+        {
+          "url": "https://www.kupbilecik.pl/pl/db/12363/stand-up-filip-puzyr-amp-pawel-bakteria",
+          "title": "Filip Puzyr & Paweł Bakteria aggregate",
+          "disposition": "same earlier source-family lead; snippet only generic first-time show enjoyment, no evaluation of both"
+        },
+        {
+          "url": "https://nastroik.pl/forum/stand-up-i-kabarety/44/",
+          "title": "Stand-up and cabaret forum",
+          "disposition": "generic forum; search results do not identify Paweł Bakteria in a peer comparison"
+        },
+        {
+          "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+          "title": "Polscy “grzeczni” standuperzy?",
+          "disposition": "names other comedians; no assigned focal performer"
+        },
+        {
+          "url": "https://www.reddit.com/r/poland/comments/19c2yo2/what_are_specific_polish_jokes/",
+          "title": "What are specific Polish jokes?",
+          "disposition": "name-collision result about biological bacteria, ignored"
+        }
+      ]
+    },
+    {
+      "type": "preview_navigate",
+      "url": "https://www.kupbilecik.pl/pl/comments/7353/stand-up-maciej-brudzewski?page_comments=21",
+      "status": "loaded",
+      "tab_id": "tab_s_02a52303-1e3a-4993-a897-62daeceecefe",
+      "result_summary": "T3 page 21 loaded successfully after page 20 proved insufficient; the page includes Natalia’s full comment and current matching event details."
+    },
+    {
+      "type": "click",
+      "source_url": "https://www.kupbilecik.pl/pl/comments?page_comments=2059",
+      "source_locator": "link id 37 for Wrocław, 12 marca 2024 o godz. 18:00, adjacent to Justyna comment",
+      "status": "opened destination",
+      "url": "https://www.kupbilecik.pl/pl/event/116074/wroclaw/stand-up-maciej-brudzewski",
+      "result_summary": "Clicked the exact event link associated with Justyna’s comment; destination identifies Maciej Brudzewski, Wrocław 2024-03-12 18:00 and explicitly “Support: Paweł Bakteria” at lines 162-169."
+    }
+  ],
+  "search_only_leads": [
+    {
+      "lead": "Grzegorz comment dated 2023-12-15: “Brudzewski jak zawsze super. Miłym zaskoczeniem był też Paweł Bakteria. Oby tak dalej.”",
+      "status": "excluded after live opened page omitted it; stale search-only result"
+    },
+    {
+      "lead": "Natalia’s live comment praises Maciej and “Support Paweł”; matching Wrocław event result identifies support as Paweł Bakteria.",
+      "status": "verified and saved as src_b06cb_001 after opening matching event page"
+    },
+    {
+      "lead": "Marcin: “Potężna dawka humoru zarówno ze strony Pawła Bakterii jak i samego Brudza !!! Dwie godziny ciągłego śmiechu dla osób w każdym wieku. Szczerze polecam!”",
+      "status": "excluded from this opened URL: exact author passage absent in live page comments"
+    },
+    {
+      "lead": "Marcin full review appears in exact-phrase search output for event 70231, with post event marker Zielona Góra, 19 kwietnia 2022.",
+      "status": "excluded: full live page 20 and page 21 omit the search-only quote; do not promote"
+    },
+    {
+      "lead": "Justyna: “Jesteśmy z mężem mega zadowoleni z występu Pawła jak i Maćka. Polecamy! Kupujcie bilety! :)”",
+      "status": "verified and saved as src_b06cb_002"
+    }
+  ],
+  "source_verifications": [
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/7353/stand-up-maciej-brudzewski?page_comments=21",
+      "locator": "page lines 152-158, Natalia; 2024-03-13; event Wrocław 12 March 2024 20:30",
+      "verified_text": "Pełna profeska. Support Paweł jak i Maciej to wspaniali ludzie z dobrym poczuciem humoru. Bardzo dobry kontakt z publicznością. Widać tu duże zaangażowanie i multum energi. Dzieki za piosenke urodzinową. Od teraz będę urodziny obchodziła dwa razy w roku",
+      "identity": "Paweł not yet resolved to Paweł Bakteria; event page verification pending"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/event/121311/wroclaw/stand-up-maciej-brudzewski",
+      "locator": "event identity/date lines 73-97; line 165 names Support: Paweł Bakteria; candidate comment event context matches Wrocław, 12 March 2024, 20:30",
+      "verified_text": "Support: Paweł Bakteria",
+      "purpose": "source-backed identity explanation for the short form Paweł in Natalia’s comment",
+      "identity": "resolved to pawel-bakteria from exact same-event support listing"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments?page_comments=2059",
+      "locator": "comments page lines 189-196, Justyna; publication date 2024-03-13; source event link title at line 194 and event city/time at line 196",
+      "verified_text": "Jesteśmy z mężem mega zadowoleni z występu Pawła jak i Maćka. Polecamy! Kupujcie bilety! :)",
+      "identity": "resolved to pawel-bakteria by following the exact Wrocław 2024-03-12 18:00 event link"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/event/116074/wroclaw/stand-up-maciej-brudzewski",
+      "locator": "event/date lines 73-97; program and support lines 162-173",
+      "verified_text": "Support: Paweł Bakteria",
+      "purpose": "source-backed identity resolution of Paweł in Justyna’s 18:00 Wrocław comment"
+    }
+  ],
+  "identity_resolution": [
+    {
+      "surface_form": "Paweł",
+      "canonical_id": "pawel-bakteria",
+      "basis": "same-event official event page at https://www.kupbilecik.pl/pl/event/121311/wroclaw/stand-up-maciej-brudzewski explicitly states “Support: Paweł Bakteria”; comment is attached to the same event by matching Wrocław date/time. This is source-backed event-context resolution, not a nickname inference."
+    },
+    {
+      "surface_form": "Paweł",
+      "canonical_id": "pawel-bakteria",
+      "basis": "the specific Wrocław 2024-03-12 18:00 event page linked from Justyna’s global comments entry states “Support: Paweł Bakteria”."
+    }
+  ],
+  "coverage_gaps": [
+    "Only KupBilecik comments yielded source-verified eligible posts; broad forum/Reddit searches did not surface a verified comparison for Paweł Bakteria.",
+    "No evidence collected linking Paweł Bakteria with any frozen performer other than Maciej Brudzewski in this slice."
+  ],
+  "stop_reason": "Stopped after 15 queries, 9 page attempts and 2 verified candidates. Remaining search results were ratings/editorial pages, unverified snippets, generic event comments, or public discussions that did not identify Paweł with a frozen peer; the saved comments already meet the evidence rule.",
+  "unused_budget_reason": "Stopped on source quality and source-family saturation: 9 queries, 15 page attempts and 14 candidate slots remain. Did not continue into weak or snippet-only leads."
+}

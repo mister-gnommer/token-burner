@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "run_id": "20261031-batch06-catchup",
+  "stage": "batch",
+  "batch": 6,
+  "status": "completed",
+  "performer_ids": [
+    "wojciech-termos-tremiszewski",
+    "pawel-bakteria",
+    "kuba-dabrowski"
+  ],
+  "paths": {
+    "source_candidates": "evidence/batch-06-catchup/source-candidates.jsonl",
+    "evidence_unreviewed": "evidence/batch-06-catchup/evidence.unreviewed.jsonl",
+    "evidence": "evidence/batch-06-catchup/evidence.jsonl",
+    "verification_report": "reports/runs/20261031-batch06-catchup.verification.json"
+  },
+  "workers": {
+    "collector": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "collect-fan-evidence-v3+research-budget-v1"
+    },
+    "extractor": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1"
+    },
+    "verifier": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "verify-evidence-v3"
+    }
+  },
+  "counts": {
+    "source_candidates": 4,
+    "extracted": 4,
+    "accepted": 4,
+    "uncertain": 0,
+    "rejected": 0
+  },
+  "surprises": [
+    "Catch-up explicitly authorized for three pending performers; original batch6 preserved.",
+    "A nonverbatim context corrected with source audit before extraction.",
+    "C unnamed second performer remains unresolved despite page bill."
+  ],
+  "notes": "Authorized catch-up for ranks55–57 complete:4canonical candidates/4accepted records/no skips. Three sequential Luna collectors, source-context correction, separate extraction and independent verification.31queries/22pageattempts(A4/8,B15/9,C12/5),within originalcaps;3auditopens included,no verifierreopens. Original batch6/rawslices retained. Corrected verbatim contexts; verifier resolved Termos from frozenname+roster and preserved anonymous C criticism with nullID. No parent semantic rewrites. Graph/report saved;22tests and strict reproduction pass.100completed/0pending;69records/63relations(10corroborated,33provisional,20contested); finalaudit/Git not requested.",
+  "created_at": "2026-10-31T17:53:26.780482Z",
+  "updated_at": "2026-10-31T17:58:58.699797Z"
+}

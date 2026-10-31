@@ -1,0 +1,350 @@
+{
+  "run_id": "20261031-batch08",
+  "slice": "B",
+  "status": "completed",
+  "scope": [
+    {
+      "rank": 75,
+      "id": "rafal-banas",
+      "name": "Rafał Banaś"
+    },
+    {
+      "rank": 76,
+      "id": "rafal-sumowski",
+      "name": "Rafał Sumowski"
+    },
+    {
+      "rank": 77,
+      "id": "janusz-pietruszka",
+      "name": "Janusz Pietruszka"
+    }
+  ],
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+research-budget-v1"
+  },
+  "caps": {
+    "individual_search_queries": 24,
+    "page_attempts": 24,
+    "verified_candidates": 16
+  },
+  "usage": {
+    "search_queries": 18,
+    "page_attempts": 20,
+    "verified_candidates": 14
+  },
+  "queries": [
+    {
+      "q": "\"Rafał Banaś\" stand up opinie polecam forum",
+      "performer": "rafal-banas",
+      "result": "Relevant results: KupBilecik Rafał Sumowski comments; KupBilecik Janusz Pietruszka comments; standup.pl Rafał Banaś profile (promotional/solo; skipped)."
+    },
+    {
+      "q": "\"Rafał Sumowski\" stand up opinie polecam forum",
+      "performer": "rafal-sumowski",
+      "result": "Relevant result: KupBilecik Rafał Banaś and Karol Modzelewski comment list; opened and verified below."
+    },
+    {
+      "q": "\"Janusz Pietruszka\" stand up opinie polecam forum",
+      "performer": "janusz-pietruszka",
+      "result": "Relevant result: KupBilecik Stand-Up ON comments with Janusz-related reviews; event scope/identity later cross-checked against official event listings."
+    },
+    {
+      "q": "\"Janusz Pietruszka\" \"Wojtek Kamiński\" \"Stand-Up ON\"",
+      "performer": "janusz-pietruszka",
+      "result": "Relevant result: Stand-Up ON and Janusz Pietruszka catalog pages; no multi-performer fan evidence."
+    },
+    {
+      "q": "\"Rafał Banaś\" \"polecam\" stand-up widzowie opinie",
+      "performer": "rafal-banas",
+      "result": "Relevant result: official Stand-Up ON cast listings name Wojtek Kamiński and Janusz Pietruszka; not fan evidence itself."
+    },
+    {
+      "q": "\"Rafał Sumowski\" komicy lubię polecam porównanie stand-up",
+      "performer": "rafal-sumowski",
+      "result": "Relevant results: only Sumowski own pages and KupBilecik solo comments."
+    },
+    {
+      "q": "\"Rafał Sumowski\" \"Katarzyna Piasecka\" widzowie opinie stand-up",
+      "performer": "rafal-sumowski",
+      "result": "Relevant result: Sumowski artist page lists past support work; promotional bio, skipped."
+    },
+    {
+      "q": "\"Rafał Sumowski\" \"Sebastian Rejent\" polecam komicy forum",
+      "performer": "rafal-sumowski",
+      "result": "Search result suggested Jacek comparison on Rejent page 18; opened page did not contain it, so not promoted."
+    },
+    {
+      "q": "\"Janusz Pietruszka\" \"ulubieni\" komicy stand-up forum",
+      "performer": "janusz-pietruszka",
+      "result": "No qualifying fan discussion surfaced; search results were catalog/editorial material."
+    },
+    {
+      "q": "\"Janusz Pietruszka\" \"Wojtek Kamiński\" faworyci",
+      "performer": "janusz-pietruszka",
+      "result": "Official lineup page matched this series to Janusz Pietruszka and Wojtek Kamiński, but did not verify the Nov 2024 roster; not used for that review."
+    },
+    {
+      "q": "\"Janusz Pietruszka\" \"moi absolutni faworyci\" stand-up",
+      "performer": "janusz-pietruszka",
+      "result": "Banaś/Karol Modzelewski fan comments found; verified into candidates."
+    },
+    {
+      "q": "\"Janusz Pietruszka\" komik \"polecam\" opinie widzów",
+      "performer": "janusz-pietruszka",
+      "result": "No independent fan post found; results were source directories or non-fan pages."
+    },
+    {
+      "q": "\"Rafał Sumowski\" śmieszny stand-up opinie fanów",
+      "performer": "rafal-sumowski",
+      "result": "No independent general discussion found; only performer-specific customer comments."
+    },
+    {
+      "q": "\"Rafał Banaś\" \"stand-up\" \"uwielbiam\" komik forum",
+      "performer": "rafal-banas",
+      "result": "No additional fan preference evidence; results were stale/irrelevant profile and promotional material."
+    },
+    {
+      "q": "site:reddit.com \"Rafał Banaś\" stand-up komik",
+      "performer": "rafal-banas",
+      "result": "KupBilecik page for Abelard Giza showed comments naming Janusz Pietruszka; exact pages opened and verified."
+    },
+    {
+      "q": "site:forum.gazeta.pl \"Rafał Banaś\" standup",
+      "performer": "rafal-banas",
+      "result": "Broad Reddit query did not return an eligible public fan post."
+    },
+    {
+      "q": "\"Janusz Pietruszka\" \"Abelard\" fan polecam",
+      "performer": "janusz-pietruszka",
+      "result": "Broad Gazeta query did not return an eligible public fan post."
+    },
+    {
+      "q": "\"Rafał Sumowski\" \"Janusz Pietruszka\" polecam komik",
+      "performer": "rafal-sumowski",
+      "result": "Results were KupBilecik Abelard Giza comment pages and event listings; fan comments verified on the opened pages."
+    }
+  ],
+  "page_attempts": [
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/11664/stand-up-rafal-sumowski-strange-chars",
+      "purpose": "verify complete fan comments for Rafał Sumowski",
+      "result": "cache miss; full exact URL recorded; retry via T3 preview as required"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/db/18267/stand-up-janusz-pietruszka",
+      "purpose": "verify Janusz Pietruszka fan comments",
+      "result": "opened; 2 comments present, solo performer praise only; skipped as non-relational event praise"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/8717/stand-up-on",
+      "purpose": "verify comments mentioning Pietruszka and any named peers",
+      "result": "cache miss; retry via T3 preview as required"
+    },
+    {
+      "action": "preview_status",
+      "url": "https://www.kupbilecik.pl/pl/comments/11664/stand-up-rafal-sumowski-strange-chars",
+      "result": "status/open succeeded; first status available=false; preview initialized; second URL opened in same tab"
+    },
+    {
+      "action": "preview_open",
+      "url": "https://www.kupbilecik.pl/pl/comments/11664/stand-up-rafal-sumowski-strange-chars",
+      "result": "status/open succeeded; first status available=false; preview initialized; second URL opened in same tab"
+    },
+    {
+      "action": "preview_status",
+      "url": "https://www.kupbilecik.pl/pl/comments/8717/stand-up-on",
+      "result": "status/open succeeded; first status available=false; preview initialized; second URL opened in same tab"
+    },
+    {
+      "action": "preview_open",
+      "url": "https://www.kupbilecik.pl/pl/comments/8717/stand-up-on",
+      "result": "status/open succeeded; first status available=false; preview initialized; second URL opened in same tab"
+    },
+    {
+      "action": "web_open",
+      "url": "https://www.kupbilecik.pl/de/comments/4829/stand-up-karol-modzelewski-rafal-banas",
+      "purpose": "verify exact complete fan comments and dates",
+      "result": "web open failed for Banas event URL (reported not accessible via tool); Sumowski page loaded via preview_evaluate, 25 visible comments all solo Sumowski; no qualifying multi-performer evidence"
+    },
+    {
+      "action": "preview_navigate",
+      "url": "https://www.kupbilecik.pl/pl/comments/11664/stand-up-rafal-sumowski-strange-chars",
+      "purpose": "inspect full comment page after cache miss",
+      "result": "web open failed for Banas event URL (reported not accessible via tool); Sumowski page loaded via preview_evaluate, 25 visible comments all solo Sumowski; no qualifying multi-performer evidence"
+    },
+    {
+      "action": "preview_status",
+      "url": "https://www.kupbilecik.pl/de/comments/4829/stand-up-karol-modzelewski-rafal-banas",
+      "purpose": "required fallback after web open inaccessible",
+      "result": "completed; target exact URL resolved via T3 preview; full author comment text extracted and reviewed"
+    },
+    {
+      "action": "preview_open",
+      "url": "https://www.kupbilecik.pl/de/comments/4829/stand-up-karol-modzelewski-rafal-banas",
+      "purpose": "verify comments on exact result URL",
+      "result": "completed; target exact URL resolved via T3 preview; full author comment text extracted and reviewed"
+    },
+    {
+      "action": "web_open",
+      "url": "https://www.kupbilecik.pl/pl/comments/5668/stand-up-sebastian-rejent?page_comments=18",
+      "purpose": "verify full comparative fan comment on Rejent and Sumowski",
+      "result": "cache miss; exact full URL recorded; applying T3 preview fallback"
+    },
+    {
+      "action": "preview_status",
+      "url": "https://www.kupbilecik.pl/pl/comments/5668/stand-up-sebastian-rejent?page_comments=18",
+      "result": "status/open succeeded; exact Rejent page loaded via preview, but search-result Jacek quote absent; no snippet promoted"
+    },
+    {
+      "action": "preview_open",
+      "url": "https://www.kupbilecik.pl/pl/comments/5668/stand-up-sebastian-rejent?page_comments=18",
+      "result": "status/open succeeded; exact Rejent page loaded via preview, but search-result Jacek quote absent; no snippet promoted"
+    },
+    {
+      "action": "web_open",
+      "url": "https://www.kupbilecik.pl/pl/comments/1129/abelard-giza?page_comments=8",
+      "purpose": "verify complete Janusz Pietruszka/Abelard fan comments",
+      "result": "cache miss; exact full URL recorded; applying T3 preview fallback"
+    },
+    {
+      "action": "web_open",
+      "url": "https://www.kupbilecik.pl/pl/comments/1129/abelard-giza?page_comments=50",
+      "purpose": "verify complete Janusz Pietruszka/Jakub fan comments",
+      "result": "cache miss; exact full URL recorded; applying T3 preview fallback"
+    },
+    {
+      "action": "preview_status",
+      "url": "https://www.kupbilecik.pl/pl/comments/1129/abelard-giza?page_comments=8",
+      "result": "completed; exact comments page loaded by T3 preview; complete author text/date and event header captured"
+    },
+    {
+      "action": "preview_open",
+      "url": "https://www.kupbilecik.pl/pl/comments/1129/abelard-giza?page_comments=8",
+      "result": "completed; exact comments page loaded by T3 preview; complete author text/date and event header captured"
+    },
+    {
+      "action": "preview_status",
+      "url": "https://www.kupbilecik.pl/pl/comments/1129/abelard-giza?page_comments=50",
+      "result": "completed; exact comments page loaded by T3 preview; complete author text/date and event header captured"
+    },
+    {
+      "action": "preview_open",
+      "url": "https://www.kupbilecik.pl/pl/comments/1129/abelard-giza?page_comments=50",
+      "result": "completed; exact comments page loaded by T3 preview; complete author text/date and event header captured"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "source": "KupBilecik Rafał Banaś solo event page https://www.kupbilecik.pl/pl/db/10507/stand-up-rafal-banas",
+      "reason": "verified solo reviews with generic event praise; no qualifying comparison/co-preference"
+    },
+    {
+      "source": "KupBilecik Rafał Sumowski comments https://www.kupbilecik.pl/pl/comments/11664/stand-up-rafal-sumowski-strange-chars",
+      "reason": "verified comments all addressed only Rafał Sumowski; excluded as solo reviews"
+    },
+    {
+      "source": "KupBilecik Janusz Pietruszka page https://www.kupbilecik.pl/pl/db/18267/stand-up-janusz-pietruszka",
+      "reason": "two verified positive solo event comments; excluded as generic event praise"
+    },
+    {
+      "source": "KupBilecik Rejent comments https://www.kupbilecik.pl/pl/comments/5668/stand-up-sebastian-rejent?page_comments=18",
+      "reason": "search snippet showed comparative Jacek quote but opened page did not contain it; no snippet promotion. Other visible comments on this page were solo or generic."
+    },
+    {
+      "source": "Standup.pl Rafał Banaś profile and Standupedia performer pages",
+      "reason": "performer-owned/catalog or promotional content, not fan preference evidence"
+    },
+    {
+      "source": "Zaodrze Abelard Giza website",
+      "reason": "first-person performer promotion and recommendations; not fan-authored evidence"
+    },
+    {
+      "source": "Stand-Up ON comment, Katarzyna, 2024-11-30",
+      "reason": "first-name-only favorites in event review; no exact event lineup verified for that date, so identity resolution would be an inference"
+    },
+    {
+      "source": "Searches for general Janusz Pietruszka and Rafał Sumowski fan discussion",
+      "reason": "returned catalog, profiles, event pages, or solo reviews rather than qualifying multi-performer fan statements"
+    }
+  ],
+  "coverage": {
+    "rafal-banas": {
+      "searched": true,
+      "verified_candidates": 4,
+      "gaps": [
+        "All four verified comments come from one 2021 event page with Karol Modzelewski; no independent fan discussion appeared in remaining searches."
+      ]
+    },
+    "rafal-sumowski": {
+      "searched": true,
+      "verified_candidates": 0,
+      "gaps": [
+        "No qualifying multi-performer fan recommendation/comparison found; verified personal comments on the Sumowski page were solo, and snippets for other pages were not promoted."
+      ]
+    },
+    "janusz-pietruszka": {
+      "searched": true,
+      "verified_candidates": 10,
+      "gaps": [
+        "All ten verified comments are scoped to Abelard Giza events on two pages; broader personal-favorite discussion was not found. A 2024 Stand-Up ON review with first names only was excluded because the exact event roster was not verified."
+      ]
+    }
+  },
+  "dedup_read": {
+    "files": [
+      "tasks/standupers-graph/evidence/batch-01/source-candidates.a.jsonl",
+      "tasks/standupers-graph/evidence/batch-01/source-candidates.b.jsonl",
+      "tasks/standupers-graph/evidence/batch-01/source-candidates.c.jsonl",
+      "tasks/standupers-graph/evidence/batch-01/source-candidates.jsonl",
+      "tasks/standupers-graph/evidence/batch-02/source-candidates.c.jsonl",
+      "tasks/standupers-graph/evidence/batch-02/source-candidates.b.jsonl",
+      "tasks/standupers-graph/evidence/batch-02/source-candidates.a.jsonl",
+      "tasks/standupers-graph/evidence/batch-02/source-candidates.jsonl",
+      "tasks/standupers-graph/evidence/batch-03/source-candidates.b.jsonl",
+      "tasks/standupers-graph/evidence/batch-03/source-candidates.a.jsonl",
+      "tasks/standupers-graph/evidence/batch-03/source-candidates.c.jsonl",
+      "tasks/standupers-graph/evidence/batch-03/source-candidates.jsonl",
+      "tasks/standupers-graph/evidence/batch-04/source-candidates.a.jsonl",
+      "tasks/standupers-graph/evidence/batch-04/source-candidates.c.jsonl",
+      "tasks/standupers-graph/evidence/batch-04/source-candidates.b.jsonl",
+      "tasks/standupers-graph/evidence/batch-04/source-candidates.c.unverified.jsonl",
+      "tasks/standupers-graph/evidence/batch-04/source-candidates.jsonl",
+      "tasks/standupers-graph/evidence/batch-05/source-candidates.c.jsonl",
+      "tasks/standupers-graph/evidence/batch-05/source-candidates.a.jsonl",
+      "tasks/standupers-graph/evidence/batch-05/source-candidates.b.jsonl",
+      "tasks/standupers-graph/evidence/batch-05/source-candidates.jsonl",
+      "tasks/standupers-graph/evidence/batch-05/source-candidates.pre-audit.jsonl",
+      "tasks/standupers-graph/evidence/batch-06/source-candidates.c.jsonl",
+      "tasks/standupers-graph/evidence/batch-06/source-candidates.a.jsonl",
+      "tasks/standupers-graph/evidence/batch-06/source-candidates.b.jsonl",
+      "tasks/standupers-graph/evidence/batch-06/source-candidates.jsonl",
+      "tasks/standupers-graph/evidence/batch-07/source-candidates.a.jsonl",
+      "tasks/standupers-graph/evidence/batch-07/source-candidates.b.jsonl",
+      "tasks/standupers-graph/evidence/batch-07/source-candidates.c.jsonl",
+      "tasks/standupers-graph/evidence/batch-07/source-candidates.jsonl",
+      "tasks/standupers-graph/evidence/batch-08/source-candidates.a.jsonl"
+    ],
+    "existing_candidate_rows": 105,
+    "matching_focal_rows": 0
+  },
+  "stop_reason": null,
+  "surprises": [
+    "Janusz Pietruszka evidence is concentrated in reviews of Abelard Giza shows. The reviewed comments name Janusz explicitly or use Pietruszka within a thread whose neighboring comments give the full name; exact excerpts and show/date scope are preserved.",
+    "A KupBilecik search snippet for a comparative Sumowski/Rejent comment was not present on the opened page. It was excluded rather than promoted.",
+    "The first search call used an unavailable wrapper name and did not execute; the failure is recorded, the exact three queries were persisted, and the valid web tool then executed the batch."
+  ],
+  "search_dispatch_failures": [
+    {
+      "queries": 3,
+      "reason": "Initial tool wrapper name unavailable; search did not execute; retrying same persisted batch."
+    }
+  ],
+  "unused_budget": {
+    "search_queries": 6,
+    "page_attempts": 4,
+    "verified_candidates": 2,
+    "stop_reason": "Stopped after broad follow-up searches produced only duplicate event pages, solo reviews, promotional/catalog results, or unverified snippets. Remaining allowance was preserved rather than weakening evidence criteria."
+  }
+}

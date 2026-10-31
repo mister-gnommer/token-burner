@@ -1,0 +1,279 @@
+{
+  "run_id": "20261031-batch08",
+  "slice": "A",
+  "focal_performers": [
+    {
+      "id": "grzegorz-halama",
+      "name": "Grzegorz Halama",
+      "rank": 71
+    },
+    {
+      "id": "krzysztof-kasparek",
+      "name": "Krzysztof Kasparek",
+      "rank": 72
+    },
+    {
+      "id": "darek-gadowski",
+      "name": "Darek Gadowski",
+      "rank": 73
+    },
+    {
+      "id": "kuba-wu",
+      "name": "Kuba Wu",
+      "rank": 74
+    }
+  ],
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+research-budget-v1"
+  },
+  "caps": {
+    "queries": 24,
+    "page_attempts": 24,
+    "verified_candidates": 16
+  },
+  "usage": {
+    "queries": 24,
+    "page_attempts": 8,
+    "verified_candidates": 5
+  },
+  "query_log": [
+    {
+      "queries": [
+        "\"Grzegorz Halama\" \"ulubiony\" stand-up opinie forum",
+        "\"Krzysztof Kasparek\" stand-up \"polecam\"",
+        "\"Darek Gadowski\" stand-up \"lubię\" OR \"ulubiony\"",
+        "\"Kuba Wu\" stand-up opinie komik"
+      ],
+      "result": "Search returned profile/editorial/event material, one KupBilecik standalone fan review for Kuba Wu, Reddit recommendation thread naming Bartosz Zalewski and Kuba Wu, plus unrelated results. Coverage: all four focals queried."
+    },
+    {
+      "queries": [
+        "\"Grzegorz Halama\" \"kto lubi\" komik polecam forum",
+        "\"Grzegorz Halama\" \"ulubiony komik\" opinie",
+        "\"Darek Gadowski\" \"komik\" \"polecam\" forum",
+        "\"Darek Gadowski\" stand-up \"ulubiony komik\"",
+        "\"Krzysztof Kasparek\" stand-up \"ulubiony komik\"",
+        "\"Krzysztof Kasparek\" \"lubię\" stand-up komik",
+        "\"Kuba Wu\" \"Bartosz Zalewski\" polecam komicy forum",
+        "\"Kuba Wu\" \"Krzysztof Kasparek\" stand-up polecam",
+        "\"Darek Gadowski\" \"Kuba Wu\" stand-up",
+        "\"Grzegorz Halama\" \"Rafał Pacześ\" lubię komik"
+      ],
+      "result": "Searches found a KupBilecik event-review page with a fan statement evaluating Kuba Wu and Bartosz Zalewski positively; other results were promotions, profiles, unrelated, or Reddit challenge. No confirmed hits for Halama/Gadowski/Kasparek fan preference."
+    },
+    {
+      "queries": [
+        "\"Grzegorz Halama\" \"najlepszy\" komik komentarze ulubiony",
+        "\"Halama\" \"Pacześ\" \"stand-up\" forum lubię",
+        "\"Grzegorz Halama\" \"Michał Leja\" komik fan",
+        "\"Darek Gadowski\" \"Bartosz Zalewski\" stand-up opinie",
+        "\"Darek Gadowski\" \"Mieszko Minkiewicz\" fan stand-up",
+        "\"Darek Gadowski\" komik forum polecam stand up",
+        "\"Krzysztof Kasparek\" \"Mieszko Minkiewicz\" polecam opinie",
+        "\"Krzysztof Kasparek\" \"Łukasz Wolski\" \"uwielbiam\" stand-up",
+        "\"Krzysiek Kasparek\" stand-up polecacie komików",
+        "\"Kuba Wu\" \"Grzegorz Halama\" komicy lubię"
+      ],
+      "result": "Searches surfaced a KupBilecik Darek Gadowski comment evaluating Jasiek Borkowski; Filmweb Halama discussion with author-specific contrasting opinions. Other results were promotions, interviews/profile, or irrelevant. All search allowance used."
+    }
+  ],
+  "page_attempt_log": [
+    {
+      "url": "https://www.reddit.com/r/Polska/comments/1suqi5d/szukam_nowych_komik%C3%B3w/",
+      "action": "open",
+      "result": "web cache miss; tried preview_status and preview_open for Reddit; browser challenge blocked content (snapshot timeout; evaluate only “Skip to main content”)"
+    },
+    {
+      "url": "https://www.reddit.com/r/Polska/comments/1suqi5d/szukam-nowych-komik%C3%B3w/",
+      "action": "preview_open",
+      "result": "browser challenge; snapshot timed out after 15000ms, focused evaluate returned only “Skip to main content”"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/15660/stand-up-kuba-wu-i-marta-iwaszkiewicz?page_comments=2",
+      "action": "open",
+      "result": "web cache miss; not pursued further"
+    },
+    {
+      "url": "https://www.kupbilecik.de/imprezy/217717/Warszawa/Backstreet%2BStand-up/",
+      "action": "open",
+      "result": "web cache miss; trying T3 preview"
+    },
+    {
+      "url": "https://www.kupbilecik.de/imprezy/217717/Warszawa/Backstreet%2BStand-up/",
+      "action": "preview_open",
+      "result": "cache miss; full URL tried; preview opened and page text verified"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/en/comments/8034/stand-up-darek-gadowski?page_comments=1",
+      "action": "open",
+      "result": "cache miss"
+    },
+    {
+      "url": "https://www.filmweb.pl/person/Grzegorz%2BHalama-132242/discussion/Debil-751992",
+      "action": "open",
+      "result": "verified full forum page; includes author-separated comments and dates"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/en/comments/8034/stand-up-darek-gadowski?page_comments=1",
+      "action": "preview_open",
+      "result": "full page accessible through preview; verbatim comments and publication/event dates verified"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "source": "Reddit /r/Polska: Szukam nowych komików",
+      "reason": "Search preview showed recommendation/comparison involving Kuba Wu and Bartosz Zalewski, but page open hit challenge; preview text extraction returned only ‘Skip to main content’, so snippet not promoted."
+    },
+    {
+      "source": "KupBilecik Kuba Wu comments page",
+      "reason": "Individual comment praises Kuba alone or generic event; no qualifying multi-performer fan statement."
+    },
+    {
+      "source": "Apple Podcasts Ogólnie Polecam episode with Krzysztof Kasparek",
+      "reason": "Podcast host/guest promotional episode description, not fan preference; no full episode transcribed."
+    },
+    {
+      "source": "Krzysztof Kasparek profiles, event listings, interviews",
+      "reason": "Editorial/promotional or interview material, not qualifying fan evidence."
+    },
+    {
+      "source": "Standup.pl, event listings, press, festival/promotional pages",
+      "reason": "Promotional/editorial mentions or event copy; not fan preference."
+    },
+    {
+      "source": "Filmweb thread replies recommending other acts",
+      "reason": "Out-of-scope names or opinions unrelated to focal fan evidence; only the complete jago18 post was retained."
+    }
+  ],
+  "focal_coverage": {
+    "grzegorz-halama": {
+      "queries": [
+        "\"Grzegorz Halama\" \"ulubiony\" stand-up opinie forum",
+        "\"Grzegorz Halama\" \"kto lubi\" komik polecam forum",
+        "\"Grzegorz Halama\" \"ulubiony komik\" opinie",
+        "\"Grzegorz Halama\" \"Rafał Pacześ\" lubię komik",
+        "\"Grzegorz Halama\" \"najlepszy\" komik komentarze ulubiony",
+        "\"Halama\" \"Pacześ\" \"stand-up\" forum lubię",
+        "\"Grzegorz Halama\" \"Michał Leja\" komik fan",
+        "\"Kuba Wu\" \"Grzegorz Halama\" komicy lubię"
+      ],
+      "verified_candidate_ids": [
+        "src_b08a_005"
+      ],
+      "gaps": [
+        "One old Filmweb thread found; contemporary fan discussion not found in 5 targeted queries."
+      ]
+    },
+    "krzysztof-kasparek": {
+      "queries": [
+        "\"Krzysztof Kasparek\" stand-up \"polecam\"",
+        "\"Krzysztof Kasparek\" stand-up \"ulubiony komik\"",
+        "\"Krzysztof Kasparek\" \"lubię\" stand-up komik",
+        "\"Kuba Wu\" \"Krzysztof Kasparek\" stand-up polecam",
+        "\"Krzysztof Kasparek\" \"Mieszko Minkiewicz\" polecam opinie",
+        "\"Krzysztof Kasparek\" \"Łukasz Wolski\" \"uwielbiam\" stand-up",
+        "\"Krzysiek Kasparek\" stand-up polecacie komików"
+      ],
+      "verified_candidate_ids": [],
+      "gaps": [
+        "No qualifying independent fan statement verified; search results were profile/interview or promotional material."
+      ]
+    },
+    "darek-gadowski": {
+      "queries": [
+        "\"Darek Gadowski\" stand-up \"lubię\" OR \"ulubiony\"",
+        "\"Darek Gadowski\" \"komik\" \"polecam\" forum",
+        "\"Darek Gadowski\" stand-up \"ulubiony komik\"",
+        "\"Darek Gadowski\" \"Kuba Wu\" stand-up",
+        "\"Darek Gadowski\" \"Bartosz Zalewski\" stand-up opinie",
+        "\"Darek Gadowski\" \"Mieszko Minkiewicz\" fan stand-up",
+        "\"Darek Gadowski\" komik forum polecam stand up"
+      ],
+      "verified_candidate_ids": [
+        "src_b08a_002",
+        "src_b08a_003",
+        "src_b08a_004"
+      ],
+      "gaps": [
+        "Three event reviews verified; evidence is event-scoped, and broader personal favorites discussion not found."
+      ]
+    },
+    "kuba-wu": {
+      "queries": [
+        "\"Kuba Wu\" stand-up opinie komik",
+        "\"Kuba Wu\" \"Bartosz Zalewski\" polecam komicy forum",
+        "\"Kuba Wu\" \"Krzysztof Kasparek\" stand-up polecam",
+        "\"Darek Gadowski\" \"Kuba Wu\" stand-up",
+        "\"Kuba Wu\" \"Grzegorz Halama\" komicy lubię"
+      ],
+      "verified_candidate_ids": [
+        "src_b08a_001"
+      ],
+      "gaps": [
+        "One event review verified. Reddit recommendation thread surfaced, but preview was blocked by challenge; snippets excluded."
+      ]
+    }
+  },
+  "duplicate_scan": {
+    "files": [
+      "tasks/standupers-graph/evidence/batch-01/source-candidates.a.jsonl",
+      "tasks/standupers-graph/evidence/batch-01/source-candidates.b.jsonl",
+      "tasks/standupers-graph/evidence/batch-01/source-candidates.c.jsonl",
+      "tasks/standupers-graph/evidence/batch-01/source-candidates.jsonl",
+      "tasks/standupers-graph/evidence/batch-02/source-candidates.a.jsonl",
+      "tasks/standupers-graph/evidence/batch-02/source-candidates.b.jsonl",
+      "tasks/standupers-graph/evidence/batch-02/source-candidates.c.jsonl",
+      "tasks/standupers-graph/evidence/batch-02/source-candidates.jsonl",
+      "tasks/standupers-graph/evidence/batch-03/source-candidates.a.jsonl",
+      "tasks/standupers-graph/evidence/batch-03/source-candidates.b.jsonl",
+      "tasks/standupers-graph/evidence/batch-03/source-candidates.c.jsonl",
+      "tasks/standupers-graph/evidence/batch-03/source-candidates.jsonl",
+      "tasks/standupers-graph/evidence/batch-04/source-candidates.a.jsonl",
+      "tasks/standupers-graph/evidence/batch-04/source-candidates.b.jsonl",
+      "tasks/standupers-graph/evidence/batch-04/source-candidates.c.jsonl",
+      "tasks/standupers-graph/evidence/batch-04/source-candidates.c.unverified.jsonl",
+      "tasks/standupers-graph/evidence/batch-04/source-candidates.jsonl",
+      "tasks/standupers-graph/evidence/batch-05/source-candidates.a.jsonl",
+      "tasks/standupers-graph/evidence/batch-05/source-candidates.b.jsonl",
+      "tasks/standupers-graph/evidence/batch-05/source-candidates.c.jsonl",
+      "tasks/standupers-graph/evidence/batch-05/source-candidates.jsonl",
+      "tasks/standupers-graph/evidence/batch-05/source-candidates.pre-audit.jsonl",
+      "tasks/standupers-graph/evidence/batch-06/source-candidates.a.jsonl",
+      "tasks/standupers-graph/evidence/batch-06/source-candidates.b.jsonl",
+      "tasks/standupers-graph/evidence/batch-06/source-candidates.c.jsonl",
+      "tasks/standupers-graph/evidence/batch-06/source-candidates.jsonl",
+      "tasks/standupers-graph/evidence/batch-07/source-candidates.a.jsonl",
+      "tasks/standupers-graph/evidence/batch-07/source-candidates.b.jsonl",
+      "tasks/standupers-graph/evidence/batch-07/source-candidates.c.jsonl",
+      "tasks/standupers-graph/evidence/batch-07/source-candidates.jsonl",
+      "tasks/standupers-graph/evidence/batch-08/source-candidates.a.jsonl"
+    ],
+    "checked": true,
+    "signature_rule": "same author/post/excerpt; canonicalized URL variants also compared"
+  },
+  "stop_reason": "Search allowance exhausted at 24/24; page attempts 8/24; verified candidate allowance 5/16. Stop without filling quotas with snippets or weak evidence.",
+  "candidate_scope_and_locators": {
+    "src_b08a_001": {
+      "locator": "KupBilecik comment by Rafał dated 2026-04-16, event Backstreet Stand-up, Warszawa; review: “Było bardzo śmiesznie. Kuba Wu i Bartosz Zalewski pokazali klasę. Maks Rosa też dowiózł.”",
+      "scope": "Specific event review; praise is limited to that show."
+    },
+    "src_b08a_002": {
+      "locator": "KupBilecik comment by Wiktor, published 2026-05-26; linked event Stand-up: Darek Gadowski, Gliwice, 2026-03-01 19:00.",
+      "scope": "Specific event review; direct positive evaluation of Darek and Jasiek Borkowski."
+    },
+    "src_b08a_003": {
+      "locator": "KupBilecik comment by Agnieszka, published 2026-05-25; linked event Stand-up: Darek Gadowski, Słupsk, 2026-05-22 19:00.",
+      "scope": "Specific event review; evaluation of the Darek Gadowski and Jacek Stramik performance."
+    },
+    "src_b08a_004": {
+      "locator": "KupBilecik comment by Ferdynand, published 2022-06-02; linked event Stand-up: Darek Gadowski, Poznań, 2022-05-31 19:00.",
+      "scope": "Specific event review; retains criticism of Piotr Zola Szulowski, then positive but program-scoped evaluation of Darek. Socha is mentioned in a comparison."
+    },
+    "src_b08a_005": {
+      "locator": "Filmweb discussion “Debil”, post by jago18 dated 2009-08-12 22:26:51, reply to marobot_2.",
+      "scope": "Forum post gives an explicitly qualified personal comparison: Halama makes the author laugh more than Kuba Wojewódzki; remaining full author text retained."
+    }
+  }
+}

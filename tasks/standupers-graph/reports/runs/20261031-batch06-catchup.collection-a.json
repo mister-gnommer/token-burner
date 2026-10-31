@@ -1,0 +1,217 @@
+{
+  "surprises": [
+    "A KupBilecik result snippet for Paweł’s exact comment was absent from the first opened event/aggregate-page slices, but the exact comments-page URL verified it live through T3 preview evaluation. The search-open mismatch was treated as unverified until the full page text confirmed the quote."
+  ],
+  "run_id": "20261031-batch06-catchup",
+  "slice": "A",
+  "assigned_performers": [
+    {
+      "rank": 55,
+      "id": "wojciech-termos-tremiszewski",
+      "name": "Wojciech Termos Tremiszewski"
+    }
+  ],
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+research-budget-v1"
+  },
+  "reservation": {
+    "queries": 24,
+    "page_attempts": 24,
+    "verified_candidates": 16,
+    "reservation_time": null,
+    "reservation_method": "fresh slice-A allowance; zero prior usage assumed only after persisted counters were initialized",
+    "reservation_note": "Exact caps persisted before first research query; the exact clock time was not captured."
+  },
+  "accounting": {
+    "queries_used": 4,
+    "page_attempts_used": 6,
+    "candidates_saved": 1,
+    "non_navigation_reads": [
+      {
+        "type": "preview_status",
+        "result": "available:false; no attached preview tab"
+      },
+      {
+        "type": "preview_snapshot",
+        "tab_id": "tab_r_02a52303-1e3a-4993-a897-62daeceecefe",
+        "result": "failed",
+        "error": "Preview snapshot failed: Preview automation snapshot timed out after 15000ms."
+      },
+      {
+        "type": "preview_evaluate",
+        "tab_id": "tab_r_02a52303-1e3a-4993-a897-62daeceecefe",
+        "result": "verified full live page text including candidate passage"
+      }
+    ]
+  },
+  "attempts": [
+    {
+      "type": "search_query",
+      "query": "\"Wojciech Termos Tremiszewski\" opinie stand-up fan",
+      "status": "completed",
+      "result_summary": "Search returned profile/editorial/event material and one fan-written listicle result; no verified peer comparison from snippets. Leads listed separately.",
+      "results": [
+        {
+          "url": "https://standup.pl/komicy/wojciech-termos-tremiszewski",
+          "title": "Wojciech Termos Tremiszewski — Stand-up",
+          "disposition": "profile/editorial; not fan evidence"
+        },
+        {
+          "url": "https://www.jegoeminencja.pl/2023/09/13/ciekawi-polscy-komicy/",
+          "title": "23 ciekawi polscy komicy (nie tylko stand-uperzy)",
+          "disposition": "opened; editorial listicle/style comparison excluded"
+        },
+        {
+          "url": "https://www.kupbilecik.pl/pl/event/35464/jaworzno/sliwka-i-termos-impro-show",
+          "title": "Śliwka i Termos Impro Show, Jaworzno, 2019-03-17",
+          "disposition": "opened; event praise, but Śliwka not frozen peer"
+        },
+        {
+          "url": "https://www.kupbilecik.pl/pl/event/36337/torun/wojciech-tremiszewski",
+          "title": "Wojciech Tremiszewski solo event",
+          "disposition": "solo reviews; excluded"
+        },
+        {
+          "url": "https://standup.pl/komicy/zero-presji-show",
+          "title": "Zero Presji Show profile",
+          "disposition": "format/editorial and video catalog; no verified audience author passage"
+        }
+      ]
+    },
+    {
+      "type": "open_url",
+      "url": "https://www.jegoeminencja.pl/2023/09/13/ciekawi-polscy-komicy/",
+      "status": "opened",
+      "locator": "article lines 219-228; comment block lines 325-337",
+      "result_summary": "Complete blog article opened. Author positively calls Termos very funny, but listicle editorially contrasts his forms with Giza/Ewa stand-up; excluded as editorial/style comparison rather than fan-comparison evidence."
+    },
+    {
+      "type": "search_query",
+      "query": "Termos Tremiszewski \"polecam\" komik fan opinia",
+      "status": "completed",
+      "result_summary": "Found KupBilecik event page for Śliwka i Termos Impro Show (17 March 2019, Jaworzno) with multiple viewer comments, including explicit recommendation and praise; search-only until opened.",
+      "results": [
+        {
+          "url": "https://www.kupbilecik.pl/pl/event/35464/jaworzno/sliwka-i-termos-impro-show",
+          "title": "Śliwka i Termos Impro Show — Jaworzno",
+          "disposition": "opened; excluded: named non-frozen partner only"
+        },
+        {
+          "url": "https://www.kupbilecik.pl/en/db/5601/sliwka-i-termos-impro-show?kb_ref=event&kb_ref_id=state_past",
+          "title": "Śliwka i Termos Impro Show aggregate",
+          "disposition": "same source family; not separately opened; non-frozen partner"
+        },
+        {
+          "url": "https://www.kupbilecik.pl/pl/event/36337/torun/wojciech-tremiszewski",
+          "title": "Tremiszewski solo show reviews",
+          "disposition": "solo; excluded"
+        }
+      ]
+    },
+    {
+      "type": "open_url",
+      "url": "https://www.kupbilecik.pl/pl/event/35464/jaworzno/sliwka-i-termos-impro-show",
+      "status": "opened",
+      "locator": "viewer comments lines 142-166; event header/date lines 73-95",
+      "result_summary": "Opened Polish page. Three distinct display-name comments praise/recommend the named Śliwka and Termos improv show at Jaworzno on 2019-03-17. Event scope is valid, but Śliwka is not a frozen performer; no frozen peer linked in these statements, so no candidate saved."
+    },
+    {
+      "type": "search_query",
+      "query": "\"Termos\" \"Kacper Ruciński\" widzowie opinie show",
+      "status": "completed",
+      "result_summary": "Found a KupBilecik Zero Presji Show ticket page with viewer comment explicitly praising Czarek, Kacper and Termos; search-only pending full-source verification.",
+      "results": [
+        {
+          "url": "https://www.kupbilecik.pl/en/event/197692/warszawa/zero-presji-show",
+          "title": "Zero Presji Show — Warszawa 2026-04-07",
+          "disposition": "opened; exact Paweł snippet absent from this live slice; no peer-specific quote saved"
+        },
+        {
+          "url": "https://www.kupbilecik.pl/en/event/195384/warszawa/zero-presji-show",
+          "title": "Zero Presji Show — Warszawa 2026-03-13",
+          "disposition": "search result comment mentions other guests; not opened"
+        },
+        {
+          "url": "https://www.kupbilecik.pl/de/db/17404/zero-presji-show?kb_ref=event&kb_ref_id=state_past",
+          "title": "Zero Presji Show aggregate",
+          "disposition": "opened; result comment absent in aggregate slice; identity context only"
+        },
+        {
+          "url": "https://www.kupbilecik.pl/uk/comments/17404/zero-presji-show?page_comments=2",
+          "title": "Zero Presji Show comments, page 2",
+          "disposition": "opened via T3; live exact passage verified and saved"
+        }
+      ]
+    },
+    {
+      "type": "open_url",
+      "url": "https://www.kupbilecik.pl/en/event/197692/warszawa/zero-presji-show",
+      "status": "opened",
+      "locator": "viewer comments lines 150-226; show/date header lines 65-89",
+      "result_summary": "Opened exact surfaced EN regional URL; comment passage is Polish. Live comments include a mixed review praising unspecified plural hosts but explicitly calling Termos terrible (one star deducted), but no frozen peer is named/evaluated in that author passage. Search-only praise naming Czarek/Kacper with Termos was absent from live page, so excluded as stale/unverified pagination snippet."
+    },
+    {
+      "type": "search_query",
+      "query": "\"Czarek i Kaceper wymiatają z Termosem\"",
+      "status": "completed",
+      "result_summary": "Exact phrase located on KupBilecik Zero Presji Show aggregate/event results; full search output identifies author Paweł, event date/location Warszawa 2026-03-13, and named frozen performers Kacper Ruciński, Czarek Sikora, Wojciech Tremiszewski. Still verify by opening canonical source page.",
+      "results": [
+        {
+          "url": "https://www.kupbilecik.pl/de/event/192544/warszawa/zero-presji-show",
+          "title": "Zero Presji Show — Warszawa 2026-02-03",
+          "disposition": "search result reproduced exact Paweł quote; same-series page not opened"
+        },
+        {
+          "url": "https://www.kupbilecik.pl/de/db/17404/zero-presji-show?kb_ref=event&kb_ref_id=state_past",
+          "title": "Zero Presji Show aggregate",
+          "disposition": "opened; exact quote missing from rendered aggregate slice"
+        },
+        {
+          "url": "https://www.kupbilecik.pl/uk/comments/17404/zero-presji-show?page_comments=2",
+          "title": "Zero Presji Show comments, page 2",
+          "disposition": "T3 preview opened; page text verified Paweł, 2026-03-14, event Warszawa 2026-03-13"
+        }
+      ]
+    },
+    {
+      "type": "open_url",
+      "url": "https://www.kupbilecik.pl/de/db/17404/zero-presji-show?kb_ref=event&kb_ref_id=state_past",
+      "status": "opened",
+      "locator": "aggregate comments lines 153-267; performer identities lines 290-294; Zero Presji overview lines 73-101",
+      "result_summary": "Aggregate source opened, but this rendered slice omits Paweł’s result-snippet comment; do not promote snippet. Search exposed a comments-page URL that may contain the exact passage; verify directly."
+    },
+    {
+      "type": "open_url",
+      "url": "https://www.kupbilecik.pl/uk/comments/17404/zero-presji-show?page_comments=2",
+      "status": "failed",
+      "error": "Internal Error () — URL https://www.kupbilecik.pl/uk/comments/17404/zero-presji-show?page_comments=2 is not accessible via this tool.",
+      "result_summary": "Counts as page attempt. Required fallback: T3 preview_open after preview_status."
+    },
+    {
+      "type": "preview_open",
+      "url": "https://www.kupbilecik.pl/uk/comments/17404/zero-presji-show?page_comments=2",
+      "status": "opened",
+      "tab_id": "tab_r_02a52303-1e3a-4993-a897-62daeceecefe",
+      "result_summary": "T3 preview reports available:true, exact URL and agent-owned tab; full text verification pending."
+    },
+    {
+      "type": "preview_evaluate",
+      "url": "https://www.kupbilecik.pl/uk/comments/17404/zero-presji-show?page_comments=2",
+      "status": "verified",
+      "locator": "live page text: Paweł block after label/date 2026-03-14 and before event line Warszawa, 13 березня 2026 о 18:30; retrieved through preview_evaluate full document.body.innerText",
+      "result_summary": "Full live comments page confirms exact quote, author Paweł, publication date 2026-03-14, event Zero Presji Show in Warszawa on 2026-03-13 at 18:30. Same comment positively links Termos with Czarek and Kaceper; event page identifies canonical performers Kacper Ruciński and Czarek Sikora. Candidate src_b06ca_001 saved."
+    }
+  ],
+  "search_only_leads": [],
+  "focal_coverage_gaps": [],
+  "stop_reason": "Stopped with 20 queries, 18 page attempts and 15 candidate slots unused after finding one fully verified, scoped fan comparison. Further visible hits were solo reviews, editorial or promotional prose, out-of-scope partners, generic event praise, or stale snippets; no reason to spend the remaining allowance on weak records.",
+  "deduplication_audit": {
+    "canonical_files_scanned": 10,
+    "matching_author_post_or_excerpt": [],
+    "result": "no duplicate",
+    "prior_candidate_files_scanned_including_worker_slices": 43,
+    "duplicate_matches_including_worker_slices": []
+  }
+}

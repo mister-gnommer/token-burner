@@ -1,0 +1,267 @@
+{
+  "run_id": "20261031-batch10",
+  "status": "completed",
+  "scheduling": "sequential; only 1 active worker",
+  "research_budget": {
+    "collectors": 3,
+    "queries_per_collector": 24,
+    "page_attempts_per_collector": 24,
+    "verified_candidate_cap_per_collector": 16
+  },
+  "workers": [
+    {
+      "slice": "a",
+      "role": "collector",
+      "ranks": [
+        91,
+        92,
+        93,
+        94
+      ],
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "medium"
+        },
+        {
+          "id": "serviceTier",
+          "value": "default"
+        }
+      ],
+      "status": "completed",
+      "task_id": "node:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch10-collection-a-20261031-r1",
+      "child_thread_id": "thread:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch10-collection-a-20261031-r1",
+      "brief": "Collect Batch10 slice A only in /home/kris/Prog/projects/token-burner. Run20261031-batch10. Assigned frozen ranks91–94: mateusz-ipkis-dudek (Mateusz Ipkis Dudek), maciek-buchwald (Maciek Buchwald), tomek-nowaczyk (Tomek Nowaczyk), jacek-noch (Jacek Noch). Peers may be any frozen100. No earliercatch-up/finalaudit.\nRead tasks/standupers-graph/AGENTS.md; prompts/collect-fan-evidence-v2.md,collect-fan-evidence-v3.md,research-budget-v1.md,favorite-reply-context-v1.md,extraction-decisions-v1.md; data/schemas/source-candidate-v2.schema.json and frozen data/standupers.json. Metadata codex/gpt-6-luna,prompt_version collect-fan-evidence-v3+research-budget-v1. Check prior canonical evidence/batch-*/source-candidates.jsonl and batch10 slices for sameauthor/post/excerpt duplicates; ignorevendor/SVGs.\nExclusive writable outputs: tasks/standupers-graph/evidence/batch-10/source-candidates.a.jsonl and tasks/standupers-graph/reports/runs/20261031-batch10.collection-a.json. NoGit/code/state/otherfiles/subagents. IDs src_b10a_001 onward. Save emptyJSONL+durableledger BEFOREresearch; appendverifiedcandidates incrementally.\nHardcaps24individualqueries,24page-open/click/navigationattempts,16verifiedcandidates. For EVERYsearchbatch, execute durable reservationguard then search SEQUENTIALLY IN SAME functions.exec block; if reservation command exit_code!==0, throw/exit immediately BEFORE search. Never run reservation/search in Promise.all, never issue search in a later independent block after failedguard. Querycount+batch.length must<=24; ledger exactqueries persisted beforecall. Sameguard/reservation for EACHpageaction including separatepreview_openfallback; preview_status recordedseparately, notnavigation. PriorCexecuted4queriesafterguardfailed: DO NOT repeat. Stop atcap; no renewedallowance.\nSearch everyfocal once minimum; broaden shortnames/inflections/publicfan discussions, notonlyspecificpairs/knownthreads. Collect verified fan comparisons/recommendations/co-enjoyment linkingfocaltofrozenpeer. NEGATIVE/one-sidedcomparisons are permitted and essential; no positive-onlyfilter. Exclude solo/generic-eventpraise/editorialpromotions/mereco-mentions/unverifiedsnippets. Recommendationsmayqualify withunknownpersonalliking. Preservefullrelevantauthorpassage inclcriticism,caveats,programme/datescope and separateparent/headerauthors. No preferenceextraction/scoring now.\nExactactuallyopenedfinalURL,canonicalhostname site,sourcepostlocator,nullunknownpublicationdate,author_key null; allnamedfrozenIDsin targets, exactspellings. No guessedfirstnames/aliases, no replacingURLs withunverifiedregionalforms. Frozenrankingidentityorposition isnotrelationevidence. Distinguish standup/comedy fromunrelatedmusic/actingwork whereapplicable.\nCachemiss: tryfullresultURL thenT3preview_status+preview_open withincaps; available:false stillneedsopenattempt. Snapshot/preview_evaluate fullpagetext canverify. After2failures sameopen-tabstep quote rawerrorandswitchfallback; nochallengebypass/snippetpromotion. Distinguishsearch-onlyskips fromactuallyverifiedsources. Existingpaginationcanbestale; absentcommentstays excluded.\nFinalledger exactqueries/pageactions/results,verificationlocators,skips,focalcoverage/gaps,allcountsmatchJSONL,andexplicitunusedbudgetstopreason. Don't fillquota withweakrecords. LeadingSurprises formaterialedgecases/assumptions; returnearly withsavedpartialwork forinvalidpremise,majorscopeexpansionorirreversiblerisk;ignoretrivia. Reportusage/verifiedcount. Parent schedulesBaftercompletion.",
+      "verified_candidates": 1,
+      "queries": 20,
+      "reported_page_attempts": 22
+    },
+    {
+      "slice": "b",
+      "role": "collector",
+      "ranks": [
+        95,
+        96,
+        97
+      ],
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "medium"
+        },
+        {
+          "id": "serviceTier",
+          "value": "default"
+        }
+      ],
+      "status": "completed",
+      "task_id": "node:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch10-collection-b-20261031-r1",
+      "child_thread_id": "thread:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch10-collection-b-20261031-r1",
+      "brief": "Collect Batch10 slice B only in /home/kris/Prog/projects/token-burner. Run:20261031-batch10. Assigned frozen ranks95–97: krzysztof-sawczuk (Krzysztof Sawczuk), aleksandra-radomska (Aleksandra Radomska), martyna-podwysocka (Martyna Podwysocka). Peers may be any frozen100; no earlier catch-up or final audit.\nRead tasks/standupers-graph/AGENTS.md; prompts/collect-fan-evidence-v2.md, collect-fan-evidence-v3.md, research-budget-v1.md, favorite-reply-context-v1.md, extraction-decisions-v1.md; data/schemas/source-candidate-v2.schema.json and frozen data/standupers.json. Metadata codex/gpt-6-luna, prompt_version collect-fan-evidence-v3+research-budget-v1. Check prior canonical evidence/batch-*/source-candidates.jsonl and current A for duplicate author/post/excerpt. Ignore vendor/SVG files.\nExclusive writable outputs: tasks/standupers-graph/evidence/batch-10/source-candidates.b.jsonl and tasks/standupers-graph/reports/runs/20261031-batch10.collection-b.json. No Git, code/state changes, other files or subagents. IDs src_b10b_001 onward. Save empty JSONL and durable ledger before research; append verified candidates incrementally.\nHard caps24 individual queries,24 page-open/click/navigation attempts,16 verified candidates. For every search batch, execute durable reservation guard THEN search sequentially in SAME functions.exec block: if reservation exit_code!==0, throw/exit BEFORE search. Never run reservation/search in Promise.all or run a rejected batch afterward. Persist exact queries before calling and enforce used+batch.length<=24. Same guard for EACH open/navigation, including separate preview_open fallback, not just unique URLs. preview_status/snapshot/evaluate without navigation are reads: record separately from chargeable opens. No renewed allowance.\nSearch every focal at least once; broaden public fan discussions, short names/inflections and accessible sources, not only full-name pairs/known threads. Collect verified fan comparisons/recommendations/co-enjoyment linking focal with frozen peer. NEGATIVE/one-sided comparisons qualify; preserve criticism. Exclude solo reviews, generic event praise, editorials/promotions, mere co-mentions, unverified snippets. Recommendations may qualify with personal preferences unknown; no preference extraction/scoring now.\nPreserve complete relevant author passage incl negation/caveats/programme/date scope; separately attributed parent/header. Exact actual final opened URL, canonical hostname site, source/post locator, null unknown publication date and author_key. All named frozen IDs in targets; no guessed first names or unsupported aliases. Don't conflate Radomska with other Aleksandra/Olka, or Podwysocka with other Martyna. Only fan comedy/stand-up material, not unrelated lifestyle praise treated as humor overlap.\nCache miss: full result URL then T3 preview_status+preview_open within caps; available:false still needs open attempt. Use snapshot/preview_evaluate page text. After two failures at same open-tab step quote raw error and switch fallback; no challenge bypass/snippet promotion. If snippet absent live, exclude it. Distinguish snippets from fully opened/verified skips. Record all attempts, results, exact post locators, focal gaps, counts matching saved JSONL, and explicit reason for stopping with unused budget. Don't fill quota with weak evidence.\nA finished1 candidate at20queries/22conservative page/read attempts. Your allowance is independent24/24. Leading Surprises: material edge cases and assumptions; return early with durable partial work if premise fails, scope expands substantially or irreversible risk. Ignore trivia. Report verified count and actual usage. Parent schedules C after B completes.",
+      "verified_candidates": 0,
+      "query_attempts": 24,
+      "page_attempts": 4,
+      "failed_query_attempts": 4
+    },
+    {
+      "slice": "c",
+      "role": "collector",
+      "ranks": [
+        98,
+        99,
+        100
+      ],
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "medium"
+        },
+        {
+          "id": "serviceTier",
+          "value": "default"
+        }
+      ],
+      "status": "completed",
+      "task_id": "node:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch10-collection-c-20261031-r1",
+      "child_thread_id": "thread:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch10-collection-c-20261031-r1",
+      "brief": "Collect Batch10 slice C only in /home/kris/Prog/projects/token-burner. Run:20261031-batch10. Assigned frozen ranks98–100: tomasz-biskup (Tomasz Biskup), patryk-trela (Patryk Trela), cezary-pizewski (Cezary Piżewski). Peers may be any frozen100; no earlier catch-up or final audit.\nRead tasks/standupers-graph/AGENTS.md; prompts/collect-fan-evidence-v2.md, collect-fan-evidence-v3.md, research-budget-v1.md, favorite-reply-context-v1.md, extraction-decisions-v1.md; data/schemas/source-candidate-v2.schema.json and frozen data/standupers.json. Metadata codex/gpt-6-luna, prompt_version collect-fan-evidence-v3+research-budget-v1. Check prior canonical evidence/batch-*/source-candidates.jsonl and current batch10 A/B for duplicate author/post/excerpt. A already saved Mirosław’s2019 Nowaczyk/Biskup review; do not duplicate it. Ignore vendor/SVGs.\nExclusive writable outputs: tasks/standupers-graph/evidence/batch-10/source-candidates.c.jsonl and tasks/standupers-graph/reports/runs/20261031-batch10.collection-c.json. No Git, code/state changes, other files or subagents. IDs src_b10c_001 onward. Save empty JSONL and durable ledger before research; append verified candidates incrementally.\nHard caps24 individual queries,24 page-open/click/navigation attempts,16 verified candidates. Execute durable reservation guard THEN search sequentially in SAME functions.exec block: if reservation exit_code!==0, throw/exit BEFORE search. Never run reservation/search in Promise.all or call rejected batch afterward. Persist exact queries before call and enforce used+batch.length<=24. Same guard for EACH open/navigation incl separate preview_open fallback, not just unique URLs. preview_status/snapshot/evaluate without navigation are reads: record separately. Failed attempted queries consume budget; log actual tool failures versus completed queries. No renewed allowance.\nSearch every focal at least once; broaden short names/inflections/public fan discussions, not only full-name pairs/known threads. Collect verified fan comparisons/recommendations/co-enjoyment linking focal and frozen peer. NEGATIVE/one-sided comparisons qualify; preserve criticism. Exclude solo reviews, generic event praise, editorials/promotions, mere co-mentions and unverified snippets. Recommendation may qualify with unknown personal liking; no extraction/scoring now.\nPreserve complete relevant author passage incl caveats, negation, programme/date scope; separately attributed parent/header. Exact actual final opened URL, canonical hostname site, exact post locator, null unknown publication date and author_key. All named frozen IDs in targets; no guessed aliases/first names. Cezary Piżewski must not be conflated with Cezary Jurkiewicz/Pazura/Ponttefski. Retain source spellings, validate identity where ambiguous.\nCache miss: full URL then T3 preview_status+preview_open within caps; available:false still needs open attempt. Use snapshot/preview_evaluate full page text; the latter succeeds where snapshots time out. After two failures on same step, quote raw error and switch fallback; no challenge bypass/snippet promotion. Distinguish search-only skips from opened/verified sources. Live pagination can differ from snippets; exclude absent passage.\nA finished1verified candidate/20queries/22conservative page-and-read attempts; B0candidates/24query attempts (including failed batch)/4opens. Your allowance independent24/24. Record final counts matching JSONL, every attempt/result, candidate locators, focal gaps and explicit unused-budget stop reason. Don't fill quotas with weak evidence.\nLeading Surprises: material edge cases/assumptions; return early with durable partial work for wrong premise, major scope expansion or irreversible risk; ignore trivia. Report verified count and actual usage. Parent will merge, then use separate extraction and verification.",
+      "verified_candidates": 0,
+      "queries": 24,
+      "page_attempts": 1
+    },
+    {
+      "role": "extractor",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "medium"
+        },
+        {
+          "id": "serviceTier",
+          "value": "default"
+        }
+      ],
+      "status": "completed",
+      "task_id": "node:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch10-extraction-20261031-r1",
+      "child_thread_id": "thread:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch10-extraction-20261031-r1",
+      "brief": "Extract Batch10 evidence in /home/kris/Prog/projects/token-burner, actual run20261031-batch10. Read tasks/standupers-graph/AGENTS.md; frozen data/standupers.json; data/schemas/evidence-v3.schema.json; prompts/extract-evidence-v2.md, extract-evidence-v3.md (v3 overrides), favorite-reply-context-v1.md, extraction-decisions-v1.md, batch-run-v1.md. Read manifest reports/runs/20261031-batch10.json, integration.json and collection-a/b/c.json. Input evidence/batch-10/source-candidates.jsonl has ONE canonical source.\nExclusive outputs: tasks/standupers-graph/evidence/batch-10/evidence.unreviewed.jsonl and tasks/standupers-graph/reports/runs/20261031-batch10.extraction.json. No Git/code/state/other files/new research/subagents. Actual metadata codex/gpt-6-luna,prompt_version extract-evidence-v3+favorite-reply-context-v1+batch-run-v1,run_id20261031-batch10 (override hardcoded batch01 example). ID ev_b10_a_001. Initial review unreviewed/reviewer null.\nCopy canonical source/excerpt/language/context EXACTLY; preserve source author hash. Account candidate exactly once as record or explicit skip reason. Record-specific identity/extraction confidence; one mention per performer; exact surface/known preference_quote substring of this author's excerpt, unknown→null. No aliases invented. Notes and fields must agree.\nSource Mirosław2019 Nowaczyk/Biskup: “Polecam bardzo Tomka Nowaczyka jak i Tomka Biskupa , Biskup chyba troszkę testował ale było nieźle. Natomiast Nowaczyk pojechał ostro mnie się bardzo podobało .” Assess each performer independently: recommendation alone doesn't establish liking, but explicit absolute enjoyment/evaluation may. “Chyba troszkę testował” is caveat not automatically dislike; qualified praise honestly mixed/positive/unknown per rubric, don't force outcome. Event-scoped absolute appraisal may support positive preference; preserve historical/programme scope rather than asserting current/general fandom. Two clear endorsements→coendorsement, otherwise permitted recommendation/comparison. No graph scoring or edge optimization.\nReport leading Surprises, counts, record/class/decisions, explicit skips (empty if none). Run existing evidence_pipeline.py validate --kind evidence; executable exact1candidate coverage, copied lineage, verbatim surfaces/quotes checks. Return early with saved partial work for wrong premise, major scope expansion or irreversible risk; ignore trivia. Parent uses separate independent verifier next.",
+      "records": 1,
+      "skips": 0
+    },
+    {
+      "role": "verifier",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "medium"
+        },
+        {
+          "id": "serviceTier",
+          "value": "default"
+        }
+      ],
+      "status": "completed",
+      "task_id": "node:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch10-verification-20261031-r1",
+      "child_thread_id": "thread:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch10-verification-20261031-r1",
+      "brief": "Independently verify Batch10 in /home/kris/Prog/projects/token-burner, actual run20261031-batch10. Read tasks/standupers-graph/AGENTS.md; prompts/verify-evidence-v3.md, extract-evidence-v3.md, extract-evidence-v2.md, favorite-reply-context-v1.md, extraction-decisions-v1.md,batch-run-v1.md; data/schemas/evidence-v3.schema.json and frozen data/standupers.json.\nInput canonical evidence/batch-10/source-candidates.jsonl(1), evidence.unreviewed.jsonl(1), reports/runs/20261031-batch10.extraction.json, integration.json and relevant collection-a/b/c ledgers. Exclusive outputs tasks/standupers-graph/evidence/batch-10/evidence.jsonl and tasks/standupers-graph/reports/runs/20261031-batch10.verification.json. No Git/code/state/other files/subagents/new collection. Actual reviewer codex/gpt-6-luna,prompt_version verify-evidence-v3. Preserve unreviewed and extraction lineage/ID/provenance. Account1candidate exactly once; no skips currently, no silently dropped records.\nCheck exact source/excerpt/language/context equality, source-local author hash, run/provenance, canonical identities, verbatim surfaces and preference quotes. Correct fixable class/sentiment/preference/confidence fields with honest notes. Accept when localized uncertainty accurately represented, uncertain if record reliability unresolved, reject unusable/fabricated. Do not optimize graph results or change scoring.\nReview full Mirosław2019 Nowaczyk/Biskup passage independently. Both are recommended; Nowaczyk explicitly says “mnie się bardzo podobało”. For Biskup, assess “chyba troszkę testował ale było nieźle” in full. v3 known preference may follow explicit personal liking OR an absolute positive appraisal; it does NOT require the literal word “lubię”, nor does event scope automatically make praise unknown. Conversely recommendation alone, relative superiority or consumption doesn't prove liking. Determine whether modest/qualified “było nieźle” is a supported absolute appraisal with a testing caveat, or uncertainty genuinely warrants unknown. Do not automatically erase modest praise or force either outcome. If both clearly endorsed choose coendorsement, otherwise recommendation/comparison as appropriate. Keep historical/programme scope, no general/current fandom claim. A caveat is not automatic dislike.\nReport/field consistency: extraction report says identity confidence .99/.99 while actual mention confidence .96/.88. Preserve realistic source-backed final mention confidence, do not inflate to match report. Final verification report must accurately describe actual fields/class/preference/quotes and changes, not merely repeat extractor summary. One mention per identity; positive preference requires an exact supporting author quote, unknown requires null.\nReopen only existing passage if truly necessary for attribution/context, up to3page attempts, no new searches; log any attempts, full URL/T3fallback after cachemiss, no snippet promotion/challenge bypass. Stored source likely sufficient. No renewed collector allowance.\nRun existing evidence_pipeline.py validate --kind evidence plus executable exact1candidate coverage, source-lineage, verbatim surface/preference quotes, frozen IDs and extraction-provenance checks. Report leading Surprises, status/class counts, per-record final decisions/corrections, alias risks, coverage gaps, skip audit(none). Return early with saved partial work if wrong premise, much larger scope or irreversible risk; ignore trivia. Parent validates/renders after completion.",
+      "accepted": 1,
+      "uncertain": 0,
+      "rejected": 0
+    }
+  ],
+  "prompt_sha256": {
+    "collect-fan-evidence-v1.md": "e8de70cbd85b44e613a0e1633f00178fa6c1a21fec8dafbc8b304c0d48831c78",
+    "extract-evidence-v1.md": "77ab35595438422c4bba65e4498c6db63e2d9faf8705c711a92cda8b783f7dd4",
+    "verify-evidence-v1.md": "aba534e8847cbff469e5fec80aa17eecd5c4884418c88ff5b16d13285730ec45",
+    "README.md": "9467d6ce76e32fd099181a8f247fb9eab1fc9b56b4f8564340b271624e767545",
+    "extract-evidence-v2.md": "399931e7f2e9676419aa4aa686cdcef2bfc22efdd75b68faa2a1d00a9cf9ba86",
+    "verify-evidence-v2.md": "8c0e69ed3f1a39bfd099da5478b708e9220eb759d5a388ddf8432d5fb7559562",
+    "collect-fan-evidence-v2.md": "aee3bf3e1c032e3ddf274aa3655ecf9faa8142dbd267d42911a889e9e98d507c",
+    "extraction-decisions-v1.md": "17734b3338942bc9a7e129a55a9cf31aa39088b227af159f24a12118d986f62b",
+    "stage06-corroboration-v1.md": "dd3b1f8551472e3caa325c931e404ba3e6c3c5b64552d3657922eeeabb00cac4",
+    "extract-evidence-v3.md": "7644dc9ec508859c7ef80974edb2db59aec55486c7e557f6ce4d24551a07ed47",
+    "favorite-reply-context-v1.md": "37b976ea680b497d35c9cbbe25c432950243c54d4d2e231cd45292b9038a839b",
+    "collect-fan-evidence-v3.md": "4a6d846352fc41051a2e1439a146aa5225ef5b0e1541b4af3be7afff4776f04d",
+    "batch-run-v1.md": "0bced02d4c312e5b754dc6f6e9b6bff81ce13eeb1bbd79d085b84d89ee6c57fa",
+    "verify-evidence-v3.md": "d5c9c0cf9601e2009f8f7d48b79e2f29c031e5146fe738128468d3f992afdb31",
+    "research-budget-v1.md": "706e19c0d4559e872ff278cc1a2640372b0b2ec86a3a4b889f187e71fd221cd7"
+  },
+  "main_agent_role": "orchestration, deterministic integration, spot-checks and reported exceptions",
+  "parent_interventions": [
+    "User authorized batch10 ranks91–100 only. Earlier55–57 remain pending; final audit/catch-up not implied.",
+    "Three sequential Luna collectors, separate extraction/verifier; no new Git authorization.",
+    "Require guard and search in same sequential orchestration block; a failed guard aborts before search. No Promise.all for dependent reservations/actions.",
+    "A finished1 Nowaczyk/Biskup candidate,20queries/22reported attempts within caps; ledger conservatively includes snapshot/evaluate reads. Worker disclosed unreserved snapshot/read and repeated timeout; source snippets excluded. B instructed to separate non-navigation reads and honor reservation failures.",
+    "B complete0candidates,24query attempts (4query batch failed, not retried)/4opens; solo reviews and unresolved Ada/Asia excluded; snapshot timeouts and Radomska cachemiss retained as gaps. C instructed to separate reads from navigation, failed attempts from successful queries, and avoid A Nowaczyk/Biskup duplicate.",
+    "C0candidates/24queries/1open; A duplicate and solo/editorial leads excluded. Canonical1raw→1canonical, no earlier duplicate; derived source-local authorhash. Separate extraction despite sparseyield; no catch-up/finalaudit implied.",
+    "Extractor1recommendation/no skips; separate verifier must independently assess modest absolute appraisal versus unknown preference for Biskup and report/actual confidence mismatch, preserving event scope. No parent semantic rewrites.",
+    "Independent verifier accepted1coendorsement, correcting qualified Biskup preference/class and retaining actual0.96/0.88mentionconfidence. No parent semantic rewrites.",
+    "Completed ranks91–100only;reused90photos/fetched10after sandboxDNSretry. Saved automaticHTML plusD2/SVG/PNG. PNGoverview and HTMLpreview inspected;no HTMLconsolemessages.",
+    "22tests,strict cumulative schemas/lineage,exactaccounting,frozenidentity/status checks and graph reproduction pass. Large99MpixelPNG triggered Pillowwarning when generating inspectionthumbnail; no framework change."
+  ],
+  "active_task_id": null,
+  "next_steps": [
+    "Pause; user may authorize separately budgeted55–57catch-up, then final audit."
+  ],
+  "research_usage": {
+    "query_attempts": 68,
+    "planned_max_queries": 72,
+    "queries_by_collector": {
+      "A": 20,
+      "B": 24,
+      "C": 24
+    },
+    "failed_query_attempts": {
+      "B": 4
+    },
+    "reported_page_and_read_attempts": 27,
+    "reported_attempts_by_collector": {
+      "A": 22,
+      "B": 4,
+      "C": 1
+    },
+    "note": "A conservatively includes non-navigation reads; B includes failed4-query batch. No individual cap exceeded."
+  },
+  "validation": {
+    "tests_passed": 22,
+    "strict_loader_records": 65,
+    "canonical_candidates": 1,
+    "reviewed_records": 1,
+    "accepted_records": 1,
+    "uncertain_records": 0,
+    "skips": 0,
+    "graph_recomputed": true,
+    "frozen_identity_preserved": true,
+    "completion_statuses_changed_this_batch": [
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100
+    ],
+    "uncommitted_status_changes_since_HEAD": [
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100
+    ],
+    "relations": 59,
+    "corroborated": 9,
+    "eligible_provisional": 30,
+    "contested_or_opposing_only": 20,
+    "drawn_links": 24,
+    "solid": 9,
+    "dashed": 15,
+    "provisional_hidden_by_degree_cap": 15,
+    "visible_nodes": 100,
+    "visible_photo_count": 100,
+    "completed_performers": 97,
+    "pending_performers": 3,
+    "pending_ranks": [
+      55,
+      56,
+      57
+    ]
+  }
+}

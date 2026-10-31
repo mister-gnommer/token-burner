@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "run_id": "20261031-batch10",
+  "stage": "batch",
+  "batch": 10,
+  "status": "completed",
+  "performer_ids": [
+    "mateusz-ipkis-dudek",
+    "maciek-buchwald",
+    "tomek-nowaczyk",
+    "jacek-noch",
+    "krzysztof-sawczuk",
+    "aleksandra-radomska",
+    "martyna-podwysocka",
+    "tomasz-biskup",
+    "patryk-trela",
+    "cezary-pizewski"
+  ],
+  "paths": {
+    "source_candidates": "evidence/batch-10/source-candidates.jsonl",
+    "evidence_unreviewed": "evidence/batch-10/evidence.unreviewed.jsonl",
+    "evidence": "evidence/batch-10/evidence.jsonl",
+    "verification_report": "reports/runs/20261031-batch10.verification.json"
+  },
+  "workers": {
+    "collector": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "collect-fan-evidence-v3+research-budget-v1"
+    },
+    "extractor": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1"
+    },
+    "verifier": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "verify-evidence-v3"
+    }
+  },
+  "counts": {
+    "source_candidates": 1,
+    "extracted": 1,
+    "accepted": 1,
+    "uncertain": 0,
+    "rejected": 0
+  },
+  "surprises": [
+    "A conservatively charged snapshots/evaluate reads among22reported attempts and disclosed one unreserved snapshot; actual opens/navigation count differs. No cap overrun.",
+    "B24query attempts includes a failed4querybatch not retried;4pageattempts.",
+    "C24queries/1pageattempt; duplicate A Nowaczyk/Biskup and editorial/solo material excluded."
+  ],
+  "notes": "Batch10 bounded collection/extraction/review complete:1canonical candidate/1accepted coendorsement/no skips. Three sequential Luna collectors, separate Luna extraction and independent Luna verification.68query attempts(includes4failed)/27reported page-and-read attempts, no individual cap overrun. A disclosed snapshot reservation lapse and charged reads conservatively. Verifier changed recommendation to event-scoped coendorsement based on absolute Biskup appraisal; original extraction retained. No parent semantic rewrites. Earlier55–57 pending; graph/report saved;22tests and strict reproduction pass.9corroborated/30provisional/20contested.97completed/3pending(55–57);pause. No catch-up/finalaudit/Git requested.",
+  "created_at": "2026-10-31T16:11:29.526198Z",
+  "updated_at": "2026-10-31T16:15:59.539522Z"
+}

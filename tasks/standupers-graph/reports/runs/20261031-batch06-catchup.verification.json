@@ -1,0 +1,176 @@
+{
+  "run_id": "20261031-batch06-catchup",
+  "stage": "verification",
+  "provider": "codex",
+  "model": "gpt-6-luna",
+  "prompt_version": "verify-evidence-v3",
+  "reviewer": "codex/gpt-6-luna",
+  "inputs": {
+    "source_candidates": "evidence/batch-06-catchup/source-candidates.jsonl",
+    "unreviewed_evidence": "evidence/batch-06-catchup/evidence.unreviewed.jsonl",
+    "extraction_report": "reports/runs/20261031-batch06-catchup.extraction.json",
+    "integration_report": "reports/runs/20261031-batch06-catchup.integration.json",
+    "source_context_audit": "reports/runs/20261031-batch06-catchup.source-context.json",
+    "collection_reports": [
+      "reports/runs/20261031-batch06-catchup.collection-a.json",
+      "reports/runs/20261031-batch06-catchup.collection-b.json",
+      "reports/runs/20261031-batch06-catchup.collection-c.json"
+    ]
+  },
+  "leadingSurprises": [
+    "A’s “Termos” is resolvable from the frozen canonical name “Wojciech Termos Tremiszewski” together with the series roster’s “Wojciech Tremiszewski”; this supports identity, while the series roster remains insufficient to prove dated guest participation.",
+    "A’s own wording praises the unnamed-in-roster context group collectively and specifically says Czarek and Kaceper “wymiatają z Termosem”; identity uncertainty must not erase the event-scoped praise.",
+    "C’s anonymous second performer receives explicit negative appraisal and preference even though identity is unresolved. Sentiment/preference can be retained without creating an unsupported Kuba Dąbrowski edge.",
+    "B001 and B002 are distinct source-local authors and distinct Wrocław events (20:30 and 18:00); each event-specific roster supports Paweł Bakteria attribution, while the spouse mention in B002 adds no author account."
+  ],
+  "counts": {
+    "candidates": 4,
+    "records": 4,
+    "skipped": 0,
+    "status": {
+      "accepted": 4,
+      "uncertain": 0,
+      "rejected": 0
+    },
+    "evidence_class": {
+      "same_user_coendorsement": 3,
+      "fan_comparison": 1
+    },
+    "mentions": 9,
+    "positive_preferences": 8,
+    "negative_preferences": 1,
+    "unknown_preferences": 0
+  },
+  "coverage": {
+    "candidate_ids": [
+      "src_b06ca_001",
+      "src_b06cb_001",
+      "src_b06cb_002",
+      "src_b06cc_001"
+    ],
+    "candidate_accounting": "All four canonical candidates appear exactly once in reviewed output; no candidate skipped or dropped. Extraction skips are empty.",
+    "skip_audit": {
+      "skipped_candidate_ids": [],
+      "reason": "none; all four records can be represented faithfully under the evidence schema"
+    },
+    "coverage_gaps": [
+      "A’s roster is series-level rather than a verified dated show lineup; attribution is adequate from frozen identity plus roster, but show presence is not asserted as separate fact.",
+      "C’s criticism cannot safely be assigned to Kuba Dąbrowski; anonymous negative preference is retained with null identity."
+    ]
+  },
+  "records": [
+    {
+      "id": "ev_b06catch_a_001",
+      "candidate_id": "src_b06ca_001",
+      "decision": "accepted",
+      "final_class": "same_user_coendorsement",
+      "performers": [
+        "czarek-sikora",
+        "kacper-rucinski",
+        "wojciech-termos-tremiszewski"
+      ],
+      "corrections": [
+        "Resolved Termos to frozen Wojciech Termos Tremiszewski using the canonical name plus the series roster’s Wojciech Tremiszewski; confidence 0.80, below certainty.",
+        "Changed Termos mention from neutral/unknown to positive/positive preference because author says the performers “wymiatają z Termosem”; exact author clause stored as preference_quote.",
+        "Kept all praise event-scoped; notes explicitly distinguish roster identity evidence from dated lineup and fan preference evidence.",
+        "Preserved “Kaceper” verbatim and retained extraction ID/provenance."
+      ]
+    },
+    {
+      "id": "ev_b06catch_b_001",
+      "candidate_id": "src_b06cb_001",
+      "decision": "accepted",
+      "final_class": "same_user_coendorsement",
+      "performers": [
+        "pawel-bakteria",
+        "maciej-brudzewski"
+      ],
+      "corrections": [
+        "Confirmed exact 2024-03-12 20:30 Wrocław event roster “Support: Paweł Bakteria”; explicit absolute praise supports both positive preferences.",
+        "Kept single source-local author account and event scope; no spouse inference."
+      ]
+    },
+    {
+      "id": "ev_b06catch_b_002",
+      "candidate_id": "src_b06cb_002",
+      "decision": "accepted",
+      "final_class": "same_user_coendorsement",
+      "performers": [
+        "pawel-bakteria",
+        "maciej-brudzewski"
+      ],
+      "corrections": [
+        "Confirmed exact 2024-03-12 18:00 Wrocław event roster “Support: Paweł Bakteria”; explicit absolute praise supports both positive preferences.",
+        "Kept source-local author as one account despite “z mężem”; distinct from B001 author and event."
+      ]
+    },
+    {
+      "id": "ev_b06catch_c_001",
+      "candidate_id": "src_b06cc_001",
+      "decision": "accepted",
+      "final_class": "fan_comparison",
+      "performers": [
+        "pan-li",
+        null
+      ],
+      "corrections": [
+        "Retained Pan Li positive praise/preference.",
+        "Changed anonymous second performer from negative sentiment with unknown preference to negative preference, supported by exact quote “Drugi Pan wyklepał wyuczone teksty. Nie podjął prób dostosowania się do reakcji publiczności, więc wypadł dużo gorzej.”",
+        "Kept anonymous identity null because page-level two-name bill does not establish the specific referent per source-context audit; preserved Zgierz 2022 programme-testing scope."
+      ]
+    }
+  ],
+  "aliasRisks": [
+    {
+      "surface": "Kaceper",
+      "record": "src_b06ca_001",
+      "resolution": "kacper-rucinski",
+      "risk": "Typo preserved verbatim; roster supports mapping but surface is not normalized."
+    },
+    {
+      "surface": "Termosem",
+      "record": "src_b06ca_001",
+      "resolution": "wojciech-termos-tremiszewski",
+      "risk": "Identity linked by distinctive frozen canonical middle name and roster surname/name, not by event-specific lineup evidence; identity confidence 0.80."
+    },
+    {
+      "surface": "drugiego standuppera / Drugi Pan",
+      "record": "src_b06cc_001",
+      "resolution": null,
+      "risk": "Anonymous second-performer reference remains unresolved; no assignment to Kuba."
+    }
+  ],
+  "sourceReopens": {
+    "new_page_attempts": 0,
+    "prior_source_context_audit_attempts": 3,
+    "urls_and_results": [
+      {
+        "url": "https://www.kupbilecik.pl/uk/comments/17404/zero-presji-show?page_comments=2",
+        "attempts": 1,
+        "result": "Source-context audit reopened exact comments page and verified Paweł’s verbatim passage, 2026-03-14 comment date, and Warsaw 2026-03-13 18:30 event locator."
+      },
+      {
+        "url": "https://www.kupbilecik.pl/de/db/17404/zero-presji-show?kb_ref=event&kb_ref_id=state_past",
+        "attempts": 1,
+        "result": "Source-context audit reopened the cited series page and verified the roster names Kacper Ruciński, Wojciech Tremiszewski, and Czarek Sikora; this is series roster evidence, not a dated event lineup."
+      },
+      {
+        "url": "https://www.kupbilecik.pl/pl/db/10075/stand-up-pan-li-oraz-kuba-dabrowski",
+        "attempts": 1,
+        "result": "Source-context audit reopened exact event page; verified two-name bill, testing description, Izabela comment locator in Zgierz 2022, but not a specific link between the anonymous second-performer criticism and Kuba."
+      }
+    ],
+    "B": "No fresh reopen; reused already-verified event-roster ledger: https://www.kupbilecik.pl/pl/event/121311/wroclaw/stand-up-maciej-brudzewski (2024-03-12 20:30, Support: Paweł Bakteria) and https://www.kupbilecik.pl/pl/event/116074/wroclaw/stand-up-maciej-brudzewski (2024-03-12 18:00, Support: Paweł Bakteria).",
+    "budget": "Three prior audit page attempts plus zero verification attempts; within the six-attempt limit. No searches or new collection."
+  },
+  "audit": {
+    "candidate_coverage": "passed",
+    "source_lineage": "passed",
+    "verbatim_surface_and_preference_quotes": "passed",
+    "unique_mentions_and_frozen_ids": "passed",
+    "author_hashes": "passed",
+    "extraction_provenance": "passed",
+    "schema_validation": "passed",
+    "executable_check": "Passed exact 4-candidate coverage and all listed lineage, quote, ID, hash, and provenance assertions; pipeline validate --kind evidence passed 4 records."
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "surprises": [
+    "A001 praises the group/act phrase “Pasierby” without naming Wojciech Kamiński; praise and preference are retained with null identity.",
+    "A002 distinguishes Adam Gajda from Bartosz Gajda; Gajda and Chałupka are endorsements, while Borkowski has praise for hosting and criticism of his set. Pająk remains unresolved.",
+    "A003 contains both negative evaluations (Gajda and Borkowski) and positive event-scoped praise for Chałupka; negative mentions do not establish overlap.",
+    "A004 “Szymon vel Marcin Baraniecki” cannot be validated as a frozen identity. Clear absolute praise still supports event-scoped positive preference and co-endorsement with Rutek.",
+    "B001 praises Kopiec; “Pacześ może się schować” is relative superiority and does not establish Pacześ dislike.",
+    "C001 is historical 2016 performance praise. A004 and C001 share a source-local hash; this neither proves the same person nor distinct people."
+  ],
+  "run_id": "20261031-batch09",
+  "reviewer": "codex/gpt-6-luna",
+  "prompt_version": "verify-evidence-v3",
+  "counts": {
+    "candidates": 6,
+    "records": 6,
+    "accepted": 6,
+    "uncertain": 0,
+    "rejected": 0,
+    "skipped": 0,
+    "by_class": {
+      "fan_recommendation": 1,
+      "same_user_coendorsement": 3,
+      "fan_comparison": 2
+    }
+  },
+  "candidate_accounting": {
+    "candidate_ids": [
+      "src_b09a_001",
+      "src_b09a_002",
+      "src_b09a_003",
+      "src_b09a_004",
+      "src_b09b_001",
+      "src_b09c_001"
+    ],
+    "output_candidate_ids": [
+      "src_b09a_001",
+      "src_b09a_002",
+      "src_b09a_003",
+      "src_b09a_004",
+      "src_b09b_001",
+      "src_b09c_001"
+    ],
+    "all_candidates_accounted_once": true
+  },
+  "skips_audit": {
+    "extraction_skipped": 0,
+    "verification_skipped": 0,
+    "unreviewed_input_records": 6,
+    "all_preserved": true
+  },
+  "per_record": [
+    {
+      "candidate_id": "src_b09a_001",
+      "evidence_id": "ev_b09_a_001",
+      "status": "accepted",
+      "evidence_class": "fan_recommendation",
+      "corrections": [
+        "Set Pasierby mention preference to positive with verbatim quote; kept performer_id null because author never names Kamiński. Retained separate Radek praise and explicit show recommendation."
+      ]
+    },
+    {
+      "candidate_id": "src_b09a_002",
+      "evidence_id": "ev_b09_a_002",
+      "status": "accepted",
+      "evidence_class": "same_user_coendorsement",
+      "corrections": [
+        "Retained positive event-scoped Gajda preference, distinguished from Bartosz; documented Borkowski hosting praise versus weak set as mixed/unknown preference; Pająk unresolved."
+      ]
+    },
+    {
+      "candidate_id": "src_b09a_003",
+      "evidence_id": "ev_b09_a_003",
+      "status": "accepted",
+      "evidence_class": "fan_comparison",
+      "corrections": [
+        "Confirmed both negative Gajda/Borkowski mentions and Chałupka positive preference; limited interpretation to parent event."
+      ]
+    },
+    {
+      "candidate_id": "src_b09a_004",
+      "evidence_id": "ev_b09_a_004",
+      "status": "accepted",
+      "evidence_class": "same_user_coendorsement",
+      "corrections": [
+        "Changed class from fan_recommendation to same_user_coendorsement because both references receive clear absolute praise; set unresolved Szymon preference positive with exact quote while identity remains null/low confidence. Rutek praise remains separate."
+      ]
+    },
+    {
+      "candidate_id": "src_b09b_001",
+      "evidence_id": "ev_b09_b_001",
+      "status": "accepted",
+      "evidence_class": "fan_comparison",
+      "corrections": [
+        "Confirmed Pacześ as neutral comparison anchor with unknown preference; only Kopiec has positive preference."
+      ]
+    },
+    {
+      "candidate_id": "src_b09c_001",
+      "evidence_id": "ev_b09_c_001",
+      "status": "accepted",
+      "evidence_class": "same_user_coendorsement",
+      "corrections": [
+        "Confirmed two positive preferences scoped to 2016 show; clarified same author hash does not resolve real-world identity or current fandom."
+      ]
+    }
+  ],
+  "alias_risks": [
+    "src_b09a_001: “Pasierby” is group/act wording and cannot resolve Wojciech Kamiński.",
+    "src_b09a_002: Adam Gajda is explicitly not the Łowcy.B member; pan Pająk has no supported frozen identity.",
+    "src_b09a_004: “Szymon vel Marcin Baraniecki” unresolved; do not map to frozen performer by guess.",
+    "src_b09b_001: Pacześ resolves as Rafał Pacześ but is comparison-only, with no absolute preference signal.",
+    "src_b09a_004 and src_b09c_001: matching source-local author key does not prove same/different human."
+  ],
+  "coverage_gaps": [
+    "No identity-backed mention of Wojciech Kamiński in A001.",
+    "No frozen identity resolved for pan Pająk (A002) or Szymon vel Marcin Baraniecki (A004).",
+    "No evidence here for general/current fandom from event-scoped or 2016 performance praise."
+  ],
+  "collection_exception": "Collection C reports 4 search queries over the 24-query cap; results from those calls are excluded. No further collection was run.",
+  "validation": {
+    "source_excerpt_language_metadata_context_lineage_checked": true,
+    "verbatim_surface_forms_checked": true,
+    "known_preference_quotes_are_verbatim_substrings": true,
+    "canonical_nonnull_ids_only": true,
+    "schema_check": "PASS (JSON Schema draft 2020-12 validator)",
+    "candidate_coverage_check": "PASS (6 unique canonical candidates; 6 unique output records; no skips)",
+    "lineage_check": "PASS (candidate IDs, evidence IDs, extraction provenance, run ID, source/context fields preserved)"
+  }
+}

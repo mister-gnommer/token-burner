@@ -1,0 +1,126 @@
+{
+  "run_id": "20261031-batch08",
+  "raw_candidates": 21,
+  "canonical_candidates": 21,
+  "duplicates": [],
+  "metadata_changes": [
+    {
+      "candidate_id": "src_b08a_001",
+      "field": "url",
+      "from": "https://www.kupbilecik.pl/de/event/217717/warszawa/backstreet-stand-up",
+      "to": "https://www.kupbilecik.de/imprezy/217717/Warszawa/Backstreet%2BStand-up/",
+      "reason": "Use exact URL verified in A attempt ledger instead of unverified regional/path replacement."
+    },
+    {
+      "candidate_id": "src_b08a_001",
+      "field": "site",
+      "from": "kupbilecik.pl",
+      "to": "kupbilecik.de",
+      "reason": "Canonical hostname of verified URL."
+    },
+    {
+      "candidate_id": "src_b08b_001",
+      "field": "site",
+      "from": "www.kupbilecik.pl",
+      "to": "kupbilecik.pl",
+      "reason": "Canonical hostname of verified URL."
+    },
+    {
+      "candidate_id": "src_b08b_002",
+      "field": "site",
+      "from": "www.kupbilecik.pl",
+      "to": "kupbilecik.pl",
+      "reason": "Canonical hostname of verified URL."
+    },
+    {
+      "candidate_id": "src_b08b_003",
+      "field": "site",
+      "from": "www.kupbilecik.pl",
+      "to": "kupbilecik.pl",
+      "reason": "Canonical hostname of verified URL."
+    },
+    {
+      "candidate_id": "src_b08b_004",
+      "field": "site",
+      "from": "www.kupbilecik.pl",
+      "to": "kupbilecik.pl",
+      "reason": "Canonical hostname of verified URL."
+    },
+    {
+      "candidate_id": "src_b08b_005",
+      "field": "site",
+      "from": "www.kupbilecik.pl",
+      "to": "kupbilecik.pl",
+      "reason": "Canonical hostname of verified URL."
+    },
+    {
+      "candidate_id": "src_b08b_006",
+      "field": "site",
+      "from": "www.kupbilecik.pl",
+      "to": "kupbilecik.pl",
+      "reason": "Canonical hostname of verified URL."
+    },
+    {
+      "candidate_id": "src_b08b_007",
+      "field": "site",
+      "from": "www.kupbilecik.pl",
+      "to": "kupbilecik.pl",
+      "reason": "Canonical hostname of verified URL."
+    },
+    {
+      "candidate_id": "src_b08b_008",
+      "field": "site",
+      "from": "www.kupbilecik.pl",
+      "to": "kupbilecik.pl",
+      "reason": "Canonical hostname of verified URL."
+    },
+    {
+      "candidate_id": "src_b08b_009",
+      "field": "site",
+      "from": "www.kupbilecik.pl",
+      "to": "kupbilecik.pl",
+      "reason": "Canonical hostname of verified URL."
+    },
+    {
+      "candidate_id": "src_b08b_010",
+      "field": "site",
+      "from": "www.kupbilecik.pl",
+      "to": "kupbilecik.pl",
+      "reason": "Canonical hostname of verified URL."
+    },
+    {
+      "candidate_id": "src_b08b_011",
+      "field": "site",
+      "from": "www.kupbilecik.pl",
+      "to": "kupbilecik.pl",
+      "reason": "Canonical hostname of verified URL."
+    },
+    {
+      "candidate_id": "src_b08b_012",
+      "field": "site",
+      "from": "www.kupbilecik.pl",
+      "to": "kupbilecik.pl",
+      "reason": "Canonical hostname of verified URL."
+    },
+    {
+      "candidate_id": "src_b08b_013",
+      "field": "site",
+      "from": "www.kupbilecik.pl",
+      "to": "kupbilecik.pl",
+      "reason": "Canonical hostname of verified URL."
+    },
+    {
+      "candidate_id": "src_b08b_014",
+      "field": "site",
+      "from": "www.kupbilecik.pl",
+      "to": "kupbilecik.pl",
+      "reason": "Canonical hostname of verified URL."
+    }
+  ],
+  "identity_review_flags": [
+    "A005 includes Robert Górski as a potentially neutral frozen peer, absent from raw target IDs; extractor must inspect entire post and determine permissible pair class or skip.",
+    "C001 compares Wolski live vs YouTube and mentions Litości/Dwójkę; extractor must not invent performers from programme references.",
+    "C002 Michał Kępa typo requires conservative identity review.",
+    "B event support first names, qualification, coauthored handle, source concentration and canonical site-local author collisions require review."
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "run_id": "20261031-batch09",
+  "stage": "extraction",
+  "provider": "codex",
+  "model": "gpt-6-luna",
+  "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1",
+  "input": "evidence/batch-09/source-candidates.jsonl",
+  "output": "evidence/batch-09/evidence.unreviewed.jsonl",
+  "counts": {
+    "candidates": 6,
+    "records": 6,
+    "skipped": 0
+  },
+  "records": [
+    {
+      "candidate_id": "src_b09a_001",
+      "evidence_id": "ev_b09_a_001",
+      "evidence_class": "fan_recommendation",
+      "notes": "“Pasierby rządzą” praises a group or act but the author does not explicitly identify Wojciech Kamiński; no individual ID is assigned. Radek Drożdż is explicitly named and praised (“też bardzo dobrze”), and the closing recommendation is retained as show/support recommendation. Preference is scoped to this performance; no general fandom inferred."
+    },
+    {
+      "candidate_id": "src_b09a_002",
+      "evidence_id": "ev_b09_a_002",
+      "evidence_class": "same_user_coendorsement",
+      "notes": "Two clear event-scoped endorsements: Chałupka is “rewelacja” and Gajda’s stories are “ciekawe”; “nie ten z Łowcy.B” distinguishes the assigned Adam from Bartosz Gajda. Borkowski receives hosting praise (“jako prowadzący super”) but the set was disappointing (“sam występ coś zabrakło”), so sentiment is mixed and preference unknown. Pająk is positive but unresolved; no unsupported identity inferred. “Jak zawsze” remains the author’s wording, not a general performer claim."
+    },
+    {
+      "candidate_id": "src_b09a_003",
+      "evidence_id": "ev_b09_a_003",
+      "evidence_class": "fan_comparison",
+      "notes": "Retains the complete negative comparison: Gajda and Borkowski are called weak and at times embarrassing, while Chałupka “saved” the evening. This is scoped to the 2023 event identified in the supplied parent header; no general dislike is inferred."
+    },
+    {
+      "candidate_id": "src_b09a_004",
+      "evidence_id": "ev_b09_a_004",
+      "evidence_class": "fan_recommendation",
+      "notes": "Szymon vel Marcin Baraniecki is praised as a support act, but the spelling/identity mapping is unverified and remains null (confidence below .75). Rutek resolves to Rafał Rutkowski and receives absolute praise (“Klasa sama w sobie”), scoped to this event. The opening criticism concerns organizer delay, not either performer. Literal &quot; encoding is retained in the source excerpt."
+    },
+    {
+      "candidate_id": "src_b09b_001",
+      "evidence_id": "ev_b09_b_001",
+      "evidence_class": "fan_comparison",
+      "notes": "Kopiec receives explicit absolute praise and a “super program”; the upcoming autumn program is anticipation, not a separate preference claim. “Pacześ może się schować” is relative superiority only and does not establish dislike of Rafał Pacześ."
+    },
+    {
+      "candidate_id": "src_b09c_001",
+      "evidence_id": "ev_b09_c_001",
+      "evidence_class": "same_user_coendorsement",
+      "notes": "Explicit co-praise of both performers for the historical 2016 Sopot show. Preference is scoped to that performance and is not generalized to current or ongoing fandom; the repeated source-local author key is not used to join identities across posts."
+    }
+  ],
+  "skips": [],
+  "surprises": [
+    "A001 does not explicitly name Wojciech Kamiński: “Pasierby” remains an unresolved group/act mention, while Radek Drożdż is individually named and praised.",
+    "A002 clearly distinguishes Adam Gajda from Bartosz Gajda. Chałupka and Adam are endorsed; Borkowski has mixed hosting/set feedback, and pan Pająk remains unresolved.",
+    "A003 preserves the complete event-scoped negative comparison of Gajda and Borkowski alongside positive evidence for Chałupka.",
+    "A004 “Szymon vel Marcin Baraniecki” remains unresolved because the identity mapping is not verified; the organizer delay is not performer criticism, and the excerpt retains literal &quot;.",
+    "B001 supports Kopiec praise; Pacześ’s relative inferiority does not establish absolute dislike.",
+    "C001 is praise for a historical 2016 performance; repeated source-local Marcin keys do not establish distinct real people or current fandom."
+  ],
+  "counts_by_class": {
+    "fan_recommendation": 2,
+    "same_user_coendorsement": 2,
+    "fan_comparison": 2
+  },
+  "notes": "All six candidates have one evidence record and no skips. Source metadata, excerpts, language, and contexts are copied from canonical candidates. Review status remains unreviewed with reviewer null."
+}

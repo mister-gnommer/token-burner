@@ -1,0 +1,177 @@
+{
+  "Surprises": [
+    "A’s two context strings are not quoted source text; one is an assembled English lineup and the other translates the Ukrainian event date.",
+    "B’s saved candidates point to distinct Wrocław show times (18:00 and 20:30), so each requires its own event roster.",
+    "C’s exact two-person event title can identify the unnamed second performer only if that page’s specific event context is verified; the author passage itself does not name him."
+  ],
+  "run_id": "20261031-batch06-catchup",
+  "page_attempt_caps": {
+    "A": 4,
+    "B": 4,
+    "C": 2,
+    "total": 10
+  },
+  "page_attempts": {
+    "A": {
+      "used_before": 6,
+      "added": 2,
+      "used_after": 8,
+      "cap": 4,
+      "urls": [
+        "https://www.kupbilecik.pl/uk/comments/17404/zero-presji-show?page_comments=2",
+        "https://www.kupbilecik.pl/de/db/17404/zero-presji-show?kb_ref=event&kb_ref_id=state_past"
+      ]
+    },
+    "B": {
+      "used_before": 9,
+      "added": 0,
+      "used_after": 9,
+      "cap": 4,
+      "urls": [],
+      "basis": "Reused exact already-opened passages and event pages documented in collection-b.json; no new navigation."
+    },
+    "C": {
+      "used_before": 4,
+      "added": 1,
+      "used_after": 5,
+      "cap": 2,
+      "urls": [
+        "https://www.kupbilecik.pl/pl/db/10075/stand-up-pan-li-oraz-kuba-dabrowski"
+      ]
+    }
+  },
+  "status": "complete",
+  "actions_and_results": [
+    {
+      "slice": "A",
+      "action": "preview_status returned available:false; followed required fallback by preview_open of exact existing comment URL. Reopened already-cited performer page by preview_navigate. Read both pages with preview_evaluate; no new search queries.",
+      "result": "Comment page shows Paweł, 2026-03-14, exact comment, and linked event “Zero Presji Show / Warszawa, 13 березня 2026 о 18:30”. Performer page lists “Kacper Ruciński, Czarek Sikora” at the top and roster carousel “Kacper Ruciński / Wojciech Tremiszewski / Czarek Sikora”."
+    },
+    {
+      "slice": "B",
+      "action": "Checked exact page evidence and event URLs in collection-b report; did not navigate.",
+      "result": "B001 comment is attached to Wrocław 2024-03-12 20:30 and event 121311 says “Support: Paweł Bakteria”. B002 comment is attached to Wrocław 2024-03-12 18:00 and its exact linked event 116074 says “Support: Paweł Bakteria”. Two distinct times/pages; both attribution links verified."
+    },
+    {
+      "slice": "C",
+      "action": "Reopened the already-cited exact event page by preview_navigate and read full body via preview_evaluate; no search queries.",
+      "result": "Page title and body say “Stand-up: Pan Li oraz Kuba Dąbrowski”; description says “Pan Li oraz Kuba Dąbrowski - dwóch komików którzy będą testować nowe żarty.” Under “Komentarze widzów”, Izabela’s passage is followed by “Zgierz, 21 kwietnia 2022”."
+    }
+  ],
+  "verbatim_proof": {
+    "A": {
+      "comment": "No przecież oni są boscy. Tutaj nie ważne czy sami stan uperzy są gośćmi czy osoby show biznesu. Czarek i Kaceper wymiatają z Termosem.",
+      "show_locator": "Zero Presji Show\nWarszawa, 13 березня 2026 о 18:30",
+      "series_roster": "Kacper Ruciński\nWojciech Tremiszewski\nCzarek Sikora"
+    },
+    "B001": {
+      "event_locator": "Wrocław 2024-03-12 20:30 (as recorded in opened collection evidence)",
+      "support": "Support: Paweł Bakteria",
+      "url": "https://www.kupbilecik.pl/pl/event/121311/wroclaw/stand-up-maciej-brudzewski"
+    },
+    "B002": {
+      "event_locator": "Wrocław 2024-03-12 18:00 (exact event link from Justyna comment)",
+      "support": "Support: Paweł Bakteria",
+      "url": "https://www.kupbilecik.pl/pl/event/116074/wroclaw/stand-up-maciej-brudzewski"
+    },
+    "C": {
+      "event_title": "Stand-up: Pan Li oraz Kuba Dąbrowski",
+      "lineup_and_program": "Pan Li oraz Kuba Dąbrowski - dwóch komików którzy będą testować nowe żarty.",
+      "comment_locator": "Izabela, Zgierz, 21 kwietnia 2022",
+      "preserved_author_excerpt": "Pan Li bardzo fajny. Nawiązał kontakt z publiką i widać, że gość jest myślący i inteligentny. Zrobił show własnym mózgiem. Daję mu wielkiego pozytywa. Ostatnią gwiazdkę urywam za drugiego standuppera. Drugi Pan wyklepał wyuczone teksty. Nie podjął prób dostosowania się do reakcji publiczności, więc wypadł dużo gorzej. Słabo, że przy zakupie biletów nie było info, że będą testować w Zgr program.Agrafka jak zwykle kameralnie i spoczko."
+    }
+  },
+  "identity_and_attribution": {
+    "A": {
+      "verified": "Roster page explicitly names Kacper Ruciński, Czarek Sikora, Wojciech Tremiszewski; author’s “Termos” is not authored or mapped by source.",
+      "unresolved": "Roster is the series page roster, not an event-specific dated lineup for the 2026-03-13 Warsaw show. The author’s “Kaceper” spelling remains untouched; no graph identity/edge decision made."
+    },
+    "B001": "Verified event-specific attribution: comment-linked Wrocław 2024-03-12 20:30 event ID 121311 lists Paweł Bakteria as support.",
+    "B002": "Verified event-specific attribution: comment-linked Wrocław 2024-03-12 18:00 event ID 116074 lists Paweł Bakteria as support.",
+    "C": {
+      "verified": "The exact source event page names a two-person bill, Pan Li and Kuba Dąbrowski, and the Izabela review is located on this page at Zgierz 2022-04-21.",
+      "unresolved": "The author says only “drugiego standuppera” / “Drugi Pan”; do not assign the negative evaluation to Kuba without event-specific evidence. Page-level bill is documented as context, while second-performer identity remains ambiguous."
+    }
+  },
+  "field_changes": [
+    {
+      "candidate_id": "src_b06ca_001",
+      "path": "context[0].excerpt",
+      "before": "Zero Presji Show; Warszawa, 13 marca 2026 o 18:30",
+      "after": "Zero Presji Show\nWarszawa, 13 березня 2026 о 18:30",
+      "reason": "Replaced translated/normalized date with contiguous visible text from Ukrainian comments page."
+    },
+    {
+      "candidate_id": "src_b06ca_001",
+      "path": "context[1].excerpt",
+      "before": "Zero Presji Show associated performers: Kacper Ruciński, Czarek Sikora, Wojciech Tremiszewski.",
+      "after": "Kacper Ruciński\nWojciech Tremiszewski\nCzarek Sikora",
+      "reason": "Removed invented English summary; used contiguous roster names from the separately attributed series page."
+    },
+    {
+      "candidate_id": "src_b06cc_001",
+      "path": "context",
+      "before": [],
+      "after": [
+        {
+          "role": "parent",
+          "url": "https://www.kupbilecik.pl/pl/db/10075/stand-up-pan-li-oraz-kuba-dabrowski",
+          "author_hint": null,
+          "author_key": null,
+          "excerpt": "Stand-up: Pan Li oraz Kuba Dąbrowski"
+        },
+        {
+          "role": "parent",
+          "url": "https://www.kupbilecik.pl/pl/db/10075/stand-up-pan-li-oraz-kuba-dabrowski",
+          "author_hint": null,
+          "author_key": null,
+          "excerpt": "Pan Li oraz Kuba Dąbrowski - dwóch komików którzy będą testować nowe żarty."
+        },
+        {
+          "role": "parent",
+          "url": "https://www.kupbilecik.pl/pl/db/10075/stand-up-pan-li-oraz-kuba-dabrowski",
+          "author_hint": null,
+          "author_key": null,
+          "excerpt": "Zgierz, 21 kwietnia 2022"
+        }
+      ],
+      "reason": "Added verbatim event title, programme scope caveat, and specific comment locator; anonymous second performer remains unresolved."
+    },
+    {
+      "candidate_id": "src_b06cb_001",
+      "path": "context",
+      "before": "Existing title “Stand-up: Maciej Brudzewski” and “Support: Paweł Bakteria” contexts, URLs comments page and event 121311.",
+      "after": "Unchanged; exact event 121311/date/time 20:30 checked against stored source evidence.",
+      "reason": "Specific roster attribution verified; no field correction needed."
+    },
+    {
+      "candidate_id": "src_b06cb_002",
+      "path": "context",
+      "before": "Existing title “Stand-up: Maciej Brudzewski” and “Support: Paweł Bakteria” contexts, URLs comments page and event 116074.",
+      "after": "Unchanged; exact event 116074/date/time 18:00 checked against stored source evidence.",
+      "reason": "Specific roster attribution verified; no field correction needed."
+    }
+  ],
+  "invariants": {
+    "raw_slices_unchanged": true,
+    "candidate_count": 4,
+    "candidate_ids": [
+      "src_b06ca_001",
+      "src_b06cb_001",
+      "src_b06cb_002",
+      "src_b06cc_001"
+    ],
+    "candidate_ids_unique": true,
+    "author_excerpts_unchanged": true,
+    "candidate_and_run_ids_preserved": true,
+    "collector_metadata_preserved": true,
+    "no_extraction_or_graph_edge_decisions": true,
+    "new_search_queries": 0
+  },
+  "validation": "Passed jsonschema Draft 2020-12 with URI/date-time format checks on all 4 corrected records; asserted exactly 4 unique original candidate IDs and unchanged author excerpts, candidate/run IDs, and collector metadata.",
+  "raw_slice_sha256": {
+    "tasks/standupers-graph/evidence/batch-06-catchup/source-candidates.a.jsonl": "b3d9f0d4bb634e615af30c173f8d746be7956b601cd964e8ba5489a8cc68fe6d",
+    "tasks/standupers-graph/evidence/batch-06-catchup/source-candidates.b.jsonl": "fde81106ac74e651fe2439333071ac644db4ea0819189c301aab97057087fca4",
+    "tasks/standupers-graph/evidence/batch-06-catchup/source-candidates.c.jsonl": "201177371a4a8195ecf1ac9a3fe2405758fb65c75d89d7c39fcd89dc3179e5b7"
+  }
+}

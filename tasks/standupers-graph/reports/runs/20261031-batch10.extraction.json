@@ -1,0 +1,37 @@
+{
+  "run_id": "20261031-batch10",
+  "stage": "extraction",
+  "surprises": [
+    "The single canonical candidate independently recommends two performers, but only Nowaczyk has explicit personal enjoyment; Biskup's caveat and qualified praise do not establish personal preference."
+  ],
+  "counts": {
+    "source_candidates": 1,
+    "extracted": 1,
+    "skipped": 0,
+    "mentions": 2,
+    "clear_positive_preferences": 1,
+    "unknown_preferences": 1
+  },
+  "records": [
+    {
+      "id": "ev_b10_a_001",
+      "candidate_id": "src_b10a_001",
+      "evidence_class": "fan_recommendation",
+      "performers": ["tomek-nowaczyk", "tomasz-biskup"],
+      "decisions": {
+        "tomek-nowaczyk": "Positive sentiment and preference, scoped to this event/performance by ‘mnie się bardzo podobało’; no claim of current/general fandom.",
+        "tomasz-biskup": "Positive sentiment from recommendation and qualified ‘było nieźle’; preference unknown because this is not explicit personal liking. ‘Chyba troszkę testował’ remains a tentative caveat, not dislike."
+      },
+      "confidence": {
+        "identity": {"tomek-nowaczyk": 0.99, "tomasz-biskup": 0.99},
+        "extraction": 0.91
+      },
+      "review": {"status": "unreviewed", "reviewer": null}
+    }
+  ],
+  "skips": [],
+  "validation": {
+    "schema_command": "python3 tasks/standupers-graph/scripts/evidence_pipeline.py validate --kind evidence tasks/standupers-graph/evidence/batch-10/evidence.unreviewed.jsonl",
+    "lineage_and_verbatim_checks": "passed"
+  }
+}

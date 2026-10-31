@@ -1,0 +1,345 @@
+{
+  "run_id": "20261031-batch08",
+  "slice": "C",
+  "scope": [
+    {
+      "rank": 78,
+      "id": "michal-kempa",
+      "name": "Michał Kempa"
+    },
+    {
+      "rank": 79,
+      "id": "lukasz-wolski",
+      "name": "Łukasz Wolski"
+    },
+    {
+      "rank": 80,
+      "id": "marek-gajos-gajewski",
+      "name": "Marek Gajos Gajewski"
+    }
+  ],
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+research-budget-v1"
+  },
+  "surprises": [
+    "An earlier batch-05 candidate already contains a negative evaluation of Michał Kempa in a KupBilecik event review; avoid saving a duplicate post/excerpt, but it does not preclude distinct new evidence."
+  ],
+  "budget": {
+    "max_search_queries": 24,
+    "search_queries_used": 24,
+    "max_page_attempts": 24,
+    "page_attempts_used": 6,
+    "max_verified_candidates": 16,
+    "verified_candidates": 2,
+    "search_guard": "assert search_queries_used + len(reserved_queries) <= 24 before each call; persist the exact reserved queries before invoking search",
+    "page_guard": "assert page_attempts_used + len(reserved_pages) <= 24 before each navigation/open/click call; persist exact reserved attempt before invoking"
+  },
+  "search_batches": [
+    {
+      "reserved_queries": [
+        "Michał Kempa opinie stand-up polecam",
+        "Kępa stand-up ulubiony komik forum",
+        "\"Michał Kempa\" \"Michał Leja\" stand-up opinie",
+        "Łukasz Wolski stand-up opinie polecam",
+        "Łukasz Wolski stand-up ulubieni komicy forum",
+        "\"Łukasz Wolski\" stand-up \"Michał Kempa\"",
+        "Marek Gajos Gajewski stand-up opinie",
+        "Gajos Gajewski stand-up ulubiony komik polecam",
+        "\"Marek Gajos\" stand-up forum opinie"
+      ],
+      "results": null,
+      "status": "completed",
+      "results_summary": [
+        {
+          "url": "https://www.kupbilecik.pl/pl/comments/16941/stand-up-lukasz-wolski",
+          "note": "Search result contains named comments including enthusiasm for Wolski; exact user post must be checked on page."
+        },
+        {
+          "url": "https://standupedia.pl/lukasz-wolski/",
+          "note": "Editorial biography/rating; excluded."
+        },
+        {
+          "url": "https://standup.pl/komicy/marek-gajos-gajewski",
+          "note": "Performer promotional profile; excluded."
+        },
+        {
+          "url": "https://pik.krakow.pl/michal-kempa-one-man-show/",
+          "note": "Event promotion and attributed editorial blurbs; excluded."
+        },
+        {
+          "url": "https://www.reddit.com/r/Polska/comments/1o8bd7k",
+          "note": "Search snippet lacks focal name in visible excerpt; not used."
+        },
+        {
+          "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+          "note": "Snippet names several frozen peers but not focal performers; not used."
+        }
+      ],
+      "results_by_query": [
+        {
+          "query": "Michał Kempa opinie stand-up polecam",
+          "result": "No suitable fan evidence in returned results; results included editorial, promotional and unrelated discussion pages."
+        },
+        {
+          "query": "Kępa stand-up ulubiony komik forum",
+          "result": "No suitable fan evidence in returned results; results included editorial, promotional and unrelated discussion pages."
+        },
+        {
+          "query": "\"Michał Kempa\" \"Michał Leja\" stand-up opinie",
+          "result": "No suitable fan evidence in returned results; results included editorial, promotional and unrelated discussion pages."
+        },
+        {
+          "query": "Łukasz Wolski stand-up opinie polecam",
+          "result": "KupBilecik individual Wolski comments page; see exact opened page attempt 1."
+        },
+        {
+          "query": "Łukasz Wolski stand-up ulubieni komicy forum",
+          "result": "KupBilecik individual Wolski comments page; see exact opened page attempt 1."
+        },
+        {
+          "query": "\"Łukasz Wolski\" stand-up \"Michał Kempa\"",
+          "result": "No suitable fan evidence in returned results; results included editorial, promotional and unrelated discussion pages."
+        },
+        {
+          "query": "Marek Gajos Gajewski stand-up opinie",
+          "result": "No suitable fan evidence in returned results; results included editorial, promotional and unrelated discussion pages."
+        },
+        {
+          "query": "Gajos Gajewski stand-up ulubiony komik polecam",
+          "result": "No suitable fan evidence in returned results; results included editorial, promotional and unrelated discussion pages."
+        },
+        {
+          "query": "\"Marek Gajos\" stand-up forum opinie",
+          "result": "No suitable fan evidence in returned results; results included editorial, promotional and unrelated discussion pages."
+        }
+      ]
+    },
+    {
+      "reserved_queries": [
+        "\"Michał Kempa\" \"ulubiony\" stand-up forum",
+        "\"Michał Kempa\" \"polecam\" komik opinie fan",
+        "Kempa stand-up opinie LubimyCzytac YouTube komentarze",
+        "\"Michał Kępa\" komik opinie stand-up",
+        "\"Łukasz Wolski\" \"ulubiony komik\"",
+        "\"Wolski\" stand-up \"polecam\" \"komik\" opinie",
+        "\"Łukasz Wolski\" lepszy niż stand-up komentarz",
+        "site:reddit.com/r/Polska \"Łukasz Wolski\" stand-up",
+        "\"Marek Gajos Gajewski\" \"polecam\" stand-up opinie",
+        "\"Marek Gajos\" \"ulubiony\" komik stand-up",
+        "\"Gajos Gajewski\" stand-up śmieszny opinie widzów",
+        "site:reddit.com \"Marek Gajos\" stand-up"
+      ],
+      "results": null,
+      "status": "completed",
+      "results_summary": [
+        {
+          "url": "https://www.kupbilecik.pl/pl/db/16941/stand-up-lukasz-wolski?kb_ref=event&kb_ref_id=state_past",
+          "note": "Duplicate comments page, including candidate already saved and generic praise; not separate evidence."
+        },
+        {
+          "url": "https://www.kupbilecik.pl/pl/comments?page_comments=6708",
+          "note": "Search excerpt has Anika evaluating Magda Kubicka and Marek “Gajos” Gajewski in the same comment; verify complete page."
+        },
+        {
+          "url": "https://www.kupbilecik.pl/de/comments/105/stand-up-polska?page_comments=17",
+          "note": "Search excerpt mentions Michał Kępa among event commenters; inspect exact authors/comment context before considering."
+        },
+        {
+          "url": "https://hiro.pl/najlepsi-stand-uperzy-w-polsce-nie-lada-gratka/",
+          "note": "Editorial list; exclude."
+        },
+        {
+          "url": "https://standupedia.pl/lukasz-wolski/",
+          "note": "Profile/rating and editorial copy; exclude."
+        },
+        {
+          "url": "https://standup.pl/komicy/lukasz-wolski?g_type=short",
+          "note": "Promotional profile; exclude."
+        },
+        {
+          "url": "https://standupedia.pl/michal-kempa-kabareciarz-brzmi-jak-smieciarz/",
+          "note": "Interview/editorial text, not fan evidence; exclude."
+        }
+      ],
+      "results_by_query": [
+        {
+          "query": "\"Michał Kempa\" \"ulubiony\" stand-up forum",
+          "result": "Relevant result only where noted: KupBilecik Wolski review page (duplicate comments); live comments page 6708; Stand-up Polska comments page 17. Other hits were profiles/editorials, generic discussions, or unrelated."
+        },
+        {
+          "query": "\"Michał Kempa\" \"polecam\" komik opinie fan",
+          "result": "Relevant result only where noted: KupBilecik Wolski review page (duplicate comments); live comments page 6708; Stand-up Polska comments page 17. Other hits were profiles/editorials, generic discussions, or unrelated."
+        },
+        {
+          "query": "Kempa stand-up opinie LubimyCzytac YouTube komentarze",
+          "result": "Relevant result only where noted: KupBilecik Wolski review page (duplicate comments); live comments page 6708; Stand-up Polska comments page 17. Other hits were profiles/editorials, generic discussions, or unrelated."
+        },
+        {
+          "query": "\"Michał Kępa\" komik opinie stand-up",
+          "result": "Relevant result only where noted: KupBilecik Wolski review page (duplicate comments); live comments page 6708; Stand-up Polska comments page 17. Other hits were profiles/editorials, generic discussions, or unrelated."
+        },
+        {
+          "query": "\"Łukasz Wolski\" \"ulubiony komik\"",
+          "result": "Relevant result only where noted: KupBilecik Wolski review page (duplicate comments); live comments page 6708; Stand-up Polska comments page 17. Other hits were profiles/editorials, generic discussions, or unrelated."
+        },
+        {
+          "query": "\"Wolski\" stand-up \"polecam\" \"komik\" opinie",
+          "result": "Relevant result only where noted: KupBilecik Wolski review page (duplicate comments); live comments page 6708; Stand-up Polska comments page 17. Other hits were profiles/editorials, generic discussions, or unrelated."
+        },
+        {
+          "query": "\"Łukasz Wolski\" lepszy niż stand-up komentarz",
+          "result": "Relevant result only where noted: KupBilecik Wolski review page (duplicate comments); live comments page 6708; Stand-up Polska comments page 17. Other hits were profiles/editorials, generic discussions, or unrelated."
+        },
+        {
+          "query": "site:reddit.com/r/Polska \"Łukasz Wolski\" stand-up",
+          "result": "Relevant result only where noted: KupBilecik Wolski review page (duplicate comments); live comments page 6708; Stand-up Polska comments page 17. Other hits were profiles/editorials, generic discussions, or unrelated."
+        },
+        {
+          "query": "\"Marek Gajos Gajewski\" \"polecam\" stand-up opinie",
+          "result": "Relevant result only where noted: KupBilecik Wolski review page (duplicate comments); live comments page 6708; Stand-up Polska comments page 17. Other hits were profiles/editorials, generic discussions, or unrelated."
+        },
+        {
+          "query": "\"Marek Gajos\" \"ulubiony\" komik stand-up",
+          "result": "Relevant result only where noted: KupBilecik Wolski review page (duplicate comments); live comments page 6708; Stand-up Polska comments page 17. Other hits were profiles/editorials, generic discussions, or unrelated."
+        },
+        {
+          "query": "\"Gajos Gajewski\" stand-up śmieszny opinie widzów",
+          "result": "Relevant result only where noted: KupBilecik Wolski review page (duplicate comments); live comments page 6708; Stand-up Polska comments page 17. Other hits were profiles/editorials, generic discussions, or unrelated."
+        },
+        {
+          "query": "site:reddit.com \"Marek Gajos\" stand-up",
+          "result": "Relevant result only where noted: KupBilecik Wolski review page (duplicate comments); live comments page 6708; Stand-up Polska comments page 17. Other hits were profiles/editorials, generic discussions, or unrelated."
+        }
+      ]
+    },
+    {
+      "reserved_queries": [
+        "\"Marek Gajos Gajewski\" widzowie komentarze stand-up",
+        "site:kupbilecik.pl \"Marek \"Gajos\" Gajewski\" stand-up",
+        "\"Michał Kępa\" \"Michał Kempa\" fan stand-up opinie"
+      ],
+      "results": null,
+      "status": "completed",
+      "results_by_query": [
+        {
+          "query": "\"Marek Gajos Gajewski\" widzowie komentarze stand-up",
+          "result": "Promotional standup.pl profile only; no fan comment found."
+        },
+        {
+          "query": "site:kupbilecik.pl \"Marek \"Gajos\" Gajewski\" stand-up",
+          "result": "No live fan review source found; results were performer directories, profiles and unrelated documents."
+        },
+        {
+          "query": "\"Michał Kępa\" \"Michał Kempa\" fan stand-up opinie",
+          "result": "No relevant additional fan source found; results were biography/editorial or unrelated content."
+        }
+      ]
+    }
+  ],
+  "page_attempts": [
+    {
+      "reserved_pages": [
+        "https://www.kupbilecik.pl/pl/comments/16941/stand-up-lukasz-wolski"
+      ],
+      "result": "web.open failed with Cache miss; full exact search-result URL was tried",
+      "status": "failed-cache-miss"
+    },
+    {
+      "reserved_pages": [
+        "preview_open https://www.kupbilecik.pl/pl/comments/16941/stand-up-lukasz-wolski"
+      ],
+      "result": "preview_open succeeded; tab tab_9_02a52303-1e3a-4993-a897-62daeceecefe at exact KupBilecik result URL; preview_evaluate verified document body text after two snapshot timeouts",
+      "status": "verified-by-preview-evaluate"
+    },
+    {
+      "reserved_pages": [
+        "https://www.kupbilecik.pl/pl/comments?page_comments=6708"
+      ],
+      "result": "web.open failed with Cache miss; preview_status confirmed preview available with existing tab, but page URL differs",
+      "status": "failed-cache-miss"
+    },
+    {
+      "reserved_pages": [
+        "preview_open https://www.kupbilecik.pl/pl/comments?page_comments=6708"
+      ],
+      "result": "live page body lacks searched Anika/Marek Gajos comment; do not use search snippet",
+      "status": "verified-page-no-hit"
+    },
+    {
+      "reserved_pages": [
+        "https://www.kupbilecik.pl/de/comments/105/stand-up-polska?page_comments=17"
+      ],
+      "result": "web.open returned: URL https://www.kupbilecik.pl/de/comments/105/stand-up-polska?page_comments=17 is not accessible via this tool; preview_status available true existing tab",
+      "status": "failed-tool-inaccessible"
+    },
+    {
+      "reserved_pages": [
+        "preview_open https://www.kupbilecik.pl/de/comments/105/stand-up-polska?page_comments=17"
+      ],
+      "result": "preview_open succeeded and preview_evaluate verified the complete page body. Marta’s 2020-03-06 review names Cezary Jurkiewicz and Michał Kępa; preserved all praise and caveat.",
+      "status": "verified-by-preview-evaluate"
+    }
+  ],
+  "preview_status_checks": [
+    {
+      "result": "available:false, no tab; status check is not charged as navigation"
+    },
+    {
+      "result": "available:true existing KupBilecik tab; not an open/navigation attempt"
+    },
+    {
+      "result": "available:true; existing pages loaded, target URL not already open"
+    }
+  ],
+  "coverage": {
+    "michal-kempa": {
+      "searched": true,
+      "notes": [
+        "KupBilecik full comment verified: explicit appreciation alongside Cezary Jurkiewicz, with caveat about event opening; preserved complete text."
+      ]
+    },
+    "lukasz-wolski": {
+      "searched": true,
+      "notes": [
+        "KupBilecik exact comment verified in page body; captured recommendation/comparison by Katarzyna (2025-04-03).",
+        "No distinct second item saved; other readable comments were generic event praise, unsupported by preference criteria, or duplicate excerpts."
+      ]
+    },
+    "marek-gajos-gajewski": {
+      "searched": true,
+      "notes": [
+        "No verified fan statement found within 7 targeted queries; returned hits were promotional profiles, directories, unrelated results, or a search-result comment absent from live page."
+      ]
+    }
+  },
+  "skipped_sources": [
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments?page_comments=6708",
+      "reason": "Live page contains other unrelated 2021 reviews; search-result excerpt about Anika and Marek Gajos is absent on live page and is excluded."
+    },
+    {
+      "url": "https://standup.pl/komicy/marek-gajos-gajewski",
+      "reason": "Promotional performer profile and stats, not fan evidence."
+    },
+    {
+      "url": "https://standupedia.pl/marek-gajos-gajewski/",
+      "reason": "Promotional profile and rating interface; no attributable public fan statement."
+    },
+    {
+      "url": "https://hiro.pl/najlepsi-stand-uperzy-w-polsce-nie-lada-gratka/",
+      "reason": "Editorial list, excluded."
+    },
+    {
+      "url": "https://www.reddit.com/r/Polska/comments/1o8bd7k",
+      "reason": "Search excerpt did not establish a relevant named performer evaluation; not opened."
+    }
+  ],
+  "unused_budget_stop_reason": "All 24 individual search queries were consumed. Stop with 18 page attempts and 14 candidate slots unused; additional search is prohibited, and no further result needed page verification. Do not pad with generic event praise, promotional material, or snippets.",
+  "candidate_ids": [
+    "src_b08c_001",
+    "src_b08c_002"
+  ],
+  "completed_at": "2026-10-31T15:21:31Z"
+}

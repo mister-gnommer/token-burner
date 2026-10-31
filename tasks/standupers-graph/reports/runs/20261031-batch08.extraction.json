@@ -1,0 +1,133 @@
+{
+  "run_id": "20261031-batch08",
+  "provider": "codex",
+  "model": "gpt-6-luna",
+  "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1",
+  "candidate_count": 21,
+  "extracted_count": 20,
+  "skipped_count": 1,
+  "records": [
+    {
+      "candidate_id": "src_b08a_001",
+      "id": "ev_b08_a_001",
+      "evidence_class": "fan_recommendation"
+    },
+    {
+      "candidate_id": "src_b08a_002",
+      "id": "ev_b08_a_002",
+      "evidence_class": "same_user_coendorsement"
+    },
+    {
+      "candidate_id": "src_b08a_003",
+      "id": "ev_b08_a_003",
+      "evidence_class": "same_user_coendorsement"
+    },
+    {
+      "candidate_id": "src_b08a_004",
+      "id": "ev_b08_a_004",
+      "evidence_class": "fan_comparison"
+    },
+    {
+      "candidate_id": "src_b08a_005",
+      "id": "ev_b08_a_005",
+      "evidence_class": "fan_comparison"
+    },
+    {
+      "candidate_id": "src_b08b_001",
+      "id": "ev_b08_a_006",
+      "evidence_class": "fan_recommendation"
+    },
+    {
+      "candidate_id": "src_b08b_002",
+      "id": "ev_b08_a_007",
+      "evidence_class": "fan_comparison"
+    },
+    {
+      "candidate_id": "src_b08b_003",
+      "id": "ev_b08_a_008",
+      "evidence_class": "fan_comparison"
+    },
+    {
+      "candidate_id": "src_b08b_004",
+      "id": "ev_b08_a_009",
+      "evidence_class": "fan_comparison"
+    },
+    {
+      "candidate_id": "src_b08b_005",
+      "id": "ev_b08_a_010",
+      "evidence_class": "fan_recommendation"
+    },
+    {
+      "candidate_id": "src_b08b_006",
+      "id": "ev_b08_a_011",
+      "evidence_class": "fan_recommendation"
+    },
+    {
+      "candidate_id": "src_b08b_007",
+      "id": "ev_b08_a_012",
+      "evidence_class": "fan_comparison"
+    },
+    {
+      "candidate_id": "src_b08b_008",
+      "id": "ev_b08_a_013",
+      "evidence_class": "fan_recommendation"
+    },
+    {
+      "candidate_id": "src_b08b_009",
+      "id": "ev_b08_a_014",
+      "evidence_class": "fan_recommendation"
+    },
+    {
+      "candidate_id": "src_b08b_010",
+      "id": "ev_b08_a_015",
+      "evidence_class": "fan_recommendation"
+    },
+    {
+      "candidate_id": "src_b08b_011",
+      "id": "ev_b08_a_016",
+      "evidence_class": "fan_comparison"
+    },
+    {
+      "candidate_id": "src_b08b_012",
+      "id": "ev_b08_a_017",
+      "evidence_class": "fan_recommendation"
+    },
+    {
+      "candidate_id": "src_b08b_013",
+      "id": "ev_b08_a_018",
+      "evidence_class": "fan_recommendation"
+    },
+    {
+      "candidate_id": "src_b08b_014",
+      "id": "ev_b08_a_019",
+      "evidence_class": "fan_comparison"
+    },
+    {
+      "candidate_id": "src_b08c_002",
+      "id": "ev_b08_a_020",
+      "evidence_class": "same_user_coendorsement"
+    }
+  ],
+  "skips": [
+    {
+      "candidate_id": "src_b08c_001",
+      "reason": "Only Łukasz Wolski is identified; live-versus-YouTube comparison is about one performer, and “Litości”/“Dwójkę” are program titles, not people. No permitted pair-level class fits."
+    }
+  ],
+  "surprises": [
+    "Most candidates are event reviews; their sentiment/preferences are scoped to the named show and are not generalized.",
+    "A005 includes Robert Górski as a neutral frozen-peer anchor; the comparison targets Kuba Wojewódzki, kept unresolved/out of frozen list.",
+    "B005 calls Kuba Śliwka, absent from the frozen list; this identity remains unresolved and does not transfer the name Kuba to any frozen performer.",
+    "Several source-local first names and repeated keys occur across different posts; candidate-supplied author hashes are preserved and not joined across posts.",
+    "B005 author “Gabi i Marcin” is retained as one source-scoped joint author.",
+    "C002 spelling “Michał Kępa” is mapped conservatively to Michał Kempa with confidence .62.",
+    "C001 skipped because only one performer is identified; Litości and Dwójkę are program names."
+  ],
+  "counts": {
+    "same_user_coendorsement": 3,
+    "fan_recommendation": 9,
+    "fan_comparison": 8,
+    "same_user_rating_overlap": 0,
+    "style_similarity": 0
+  }
+}
