@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>__TITLE__</title>
+<style>
+:root{--bg:#f6f5f1;--card:#fffffff0;--fg:#1d2330;--muted:#667085;--border:#d9d6cc;--accepted:#0f766e;--provisional:#b7791f;--contested:#c2410c;--none:#98a2b3;--halo:#f6f5f1}
+@media (prefers-color-scheme:dark){:root{--bg:#14161b;--card:#1d2027f0;--fg:#e6e8ee;--muted:#98a2b3;--border:#343843;--accepted:#2dd4bf;--provisional:#f2b54a;--contested:#fb7d4b;--none:#5d6676;--halo:#14161b}}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif;overflow:hidden}
+svg#graph{width:100vw;height:100vh;display:block;cursor:grab}
+svg#graph:active{cursor:grabbing}
+.card{position:fixed;background:var(--card);border:1px solid var(--border);border-radius:12px;box-shadow:0 4px 18px #0000001a;backdrop-filter:blur(6px)}
+#info{top:16px;left:16px;width:300px;padding:14px 16px}
+#info h1{font-size:16px;margin:0 0 4px}
+.muted{color:var(--muted);font-size:12.5px}
+.legend{display:grid;grid-template-columns:34px 1fr;gap:6px 10px;align-items:center;margin:12px 0}
+.legend svg{width:34px;height:10px}
+label.toggle{display:flex;gap:8px;align-items:center;margin:4px 0;cursor:pointer}
+button{font:inherit;color:inherit;background:transparent;border:1px solid var(--border);border-radius:8px;padding:4px 10px;cursor:pointer;margin-top:8px}
+button:hover{border-color:var(--muted)}
+#panel{top:16px;right:16px;bottom:16px;width:380px;padding:16px;overflow:auto;display:none}
+#panel.open{display:block}
+#panel .head{display:flex;gap:12px;align-items:center;margin-bottom:10px}
+#panel .head img{width:56px;height:56px;border-radius:50%;object-fit:cover}
+#panel h2{font-size:17px;margin:0}
+#panel .close{position:absolute;top:8px;right:10px;border:0;font-size:20px;margin:0}
+.rel{border-top:1px solid var(--border);padding:10px 0}
+.rel-head{display:flex;gap:10px;align-items:center;cursor:pointer}
+.rel-head img{width:32px;height:32px;border-radius:50%;object-fit:cover}
+.badge{font-size:11px;font-weight:600;padding:1px 7px;border-radius:99px;color:#fff}
+.badge.accepted{background:var(--accepted)}.badge.provisional{background:var(--provisional)}.badge.contested{background:var(--contested)}
+@media (prefers-color-scheme:dark){.badge{color:#111}}
+blockquote{margin:8px 0 0;padding:6px 10px;border-left:3px solid var(--border);font-size:13px}
+blockquote.opposing{border-left-color:var(--contested)}
+blockquote .src{display:block;margin-top:4px;font-size:11.5px;color:var(--muted)}
+a{color:var(--accepted)}
+#tip{position:fixed;pointer-events:none;padding:6px 10px;font-size:12.5px;display:none;border-radius:8px}
+.node text{font-size:12px;font-weight:600;fill:var(--fg);paint-order:stroke;stroke:var(--halo);stroke-width:4px;stroke-linejoin:round;pointer-events:none}
+.node{cursor:pointer}
+.node .ring{stroke-width:3.5}
+.node.unlinked text{font-weight:500;fill:var(--muted)}
+.link{fill:none;stroke-linecap:round}
+.link.accepted{stroke:var(--accepted)}
+.link.provisional{stroke:var(--provisional);stroke-dasharray:7 6}
+.link.contested{stroke:var(--contested);stroke-dasharray:2 5;stroke-width:1.6}
+.hit{stroke:transparent;stroke-width:14;cursor:pointer}
+.dim{opacity:.12}
+.node,.link{transition:opacity .15s}
+</style>
+</head>
+<body>
+<svg id="graph"></svg>
+
+<div id="info" class="card">
+  <h1>Who shares fans with whom?</h1>
+  <div class="muted" id="stats"></div>
+  <div class="legend">
+    <svg><line x1="2" y1="5" x2="32" y2="5" class="link accepted" stroke-width="4"/></svg><span>Corroborated: 2+ fans like both</span>
+    <svg><line x1="2" y1="5" x2="32" y2="5" class="link provisional" stroke-width="2.5"/></svg><span>Provisional: one fan so far</span>
+    <svg><line x1="2" y1="5" x2="32" y2="5" class="link contested"/></svg><span>Contested: fans disagree (no pull)</span>
+  </div>
+  <label class="toggle"><input type="checkbox" id="t-provisional" checked> Provisional links</label>
+  <label class="toggle"><input type="checkbox" id="t-contested"> Contested pairs</label>
+  <label class="toggle"><input type="checkbox" id="t-unlinked"> Researched, no links yet</label>
+  <button id="reset">Re-layout</button>
+  <p class="muted">Closer and thicker = more shared fan endorsements in collected public posts. Drag bubbles; scroll to zoom; click for evidence. Distance is approximate and evidence is sparse: no link does not mean dissimilar.</p>
+</div>
+
+<aside id="panel" class="card"><button class="close" aria-label="Close">×</button><div id="panel-body"></div></aside>
+<div id="tip" class="card"></div>
+
+<script>/*__D3__*/</script>
+<script>
+const DATA = /*__DATA__*/null;
+const byId = new Map(DATA.nodes.map(n => [n.id, n]));
+const radius = n => 22 + 6 * Math.sqrt(n.fans);
+const kindRank = {accepted: 0, provisional: 1, contested: 2};
+const attracting = r => r.kind !== "contested";
+
+const svg = d3.select("#graph");
+const defs = svg.append("defs");
+defs.append("clipPath").attr("id", "circle").attr("clipPathUnits", "objectBoundingBox")
+  .append("circle").attr("cx", .5).attr("cy", .5).attr("r", .5);
+const viewport = svg.append("g");
+const linkLayer = viewport.append("g");
+const nodeLayer = viewport.append("g");
+const zoom = d3.zoom().scaleExtent([.25, 4]).on("zoom", e => viewport.attr("transform", e.transform));
+svg.call(zoom).on("dblclick.zoom", null).on("click", () => closePanel());
+
+const toggles = {provisional: d3.select("#t-provisional"), contested: d3.select("#t-contested"), unlinked: d3.select("#t-unlinked")};
+const sim = d3.forceSimulation()
+  .force("charge", d3.forceManyBody().strength(-420).distanceMax(600))
+  .force("collide", d3.forceCollide(n => radius(n) + 10))
+  .force("x", d3.forceX().strength(.04))
+  .force("y", d3.forceY().strength(.04))
+  .on("tick", ticked);
+
+let nodes = [], links = [], linkSel, hitSel, nodeSel;
+
+function ringColor(n) {
+  const kinds = links.filter(l => attracting(l) && (l.source === n || l.target === n)).map(l => l.kind);
+  return kinds.includes("accepted") ? "var(--accepted)" : kinds.length ? "var(--provisional)" : "var(--none)";
+}
+
+function rebuild() {
+  const shown = DATA.relations.filter(r => r.kind === "accepted"
+    || (r.kind === "provisional" && toggles.provisional.property("checked"))
+    || (r.kind === "contested" && toggles.contested.property("checked")));
+  const ids = new Set(shown.flatMap(r => [r.source.id ?? r.source, r.target.id ?? r.target]));
+  if (toggles.unlinked.property("checked")) DATA.nodes.filter(n => n.researched).forEach(n => ids.add(n.id));
+  nodes = DATA.nodes.filter(n => ids.has(n.id));
+  links = shown.map(r => Object.assign(r, {source: byId.get(r.source.id ?? r.source), target: byId.get(r.target.id ?? r.target)}));
+  const linked = new Set(links.filter(attracting).flatMap(l => [l.source.id, l.target.id]));
+  nodes.forEach(n => n.linked = linked.has(n.id));
+
+  linkSel = linkLayer.selectAll("line.link").data(links, keyOf).join("line")
+    .attr("class", l => "link " + l.kind)
+    .attr("stroke-width", l => l.kind === "accepted" ? 2.5 + l.score * 12 : l.kind === "provisional" ? 2.5 : null);
+  hitSel = linkLayer.selectAll("line.hit").data(links, keyOf).join("line").attr("class", "hit")
+    .on("mouseenter", (e, l) => { focus(new Set([l.source.id, l.target.id]), x => x === l); tip(e, `${esc(l.source.name)} ↔ ${esc(l.target.name)}<br>${describe(l)}`); })
+    .on("mousemove", e => moveTip(e))
+    .on("mouseleave", () => { unfocus(); hideTip(); })
+    .on("click", (e, l) => { e.stopPropagation(); showPair(l); });
+  linkLayer.selectAll("line.hit").raise();
+
+  nodeSel = nodeLayer.selectAll("g.node").data(nodes, n => n.id).join(enter => {
+    const g = enter.append("g").attr("class", "node");
+    g.append("circle").attr("class", "ring").attr("fill", "var(--bg)");
+    g.append("image").attr("clip-path", "url(#circle)").attr("preserveAspectRatio", "xMidYMid slice").attr("href", n => n.avatar);
+    g.append("text").attr("text-anchor", "middle").text(n => n.name);
+    return g.call(drag)
+      .on("mouseenter", (e, n) => { focus(neighbours(n), l => l.source === n || l.target === n); tip(e, `<b>${esc(n.name)}</b><br>#${n.rank} on standup.pl · ${n.fans} scored fan${n.fans === 1 ? "" : "s"}`); })
+      .on("mousemove", e => moveTip(e))
+      .on("mouseleave", () => { unfocus(); hideTip(); })
+      .on("click", (e, n) => { e.stopPropagation(); showNode(n); });
+  });
+  nodeSel.classed("unlinked", n => !n.linked);
+  nodeSel.select(".ring").attr("r", n => radius(n) + 2).attr("stroke", ringColor);
+  nodeSel.select("image").attr("x", n => -radius(n)).attr("y", n => -radius(n)).attr("width", n => 2 * radius(n)).attr("height", n => 2 * radius(n));
+  nodeSel.select("text").attr("y", n => radius(n) + 16);
+
+  const strongest = d3.max(links, l => l.score) || 1;
+  sim.nodes(nodes)
+    // Pull strength and rest length both scale with the pair's score, so stronger pairs sit closer.
+    .force("link", d3.forceLink(links.filter(attracting)).id(n => n.id)
+      .distance(l => radius(l.source) + radius(l.target) + (l.kind === "accepted" ? 40 + 160 * (1 - l.score / strongest) : 190))
+      .strength(l => l.kind === "accepted" ? .5 + .5 * l.score / strongest : .25))
+    // Nodes without attracting links orbit the cluster instead of crowding it.
+    .force("orbit", d3.forceRadial(Math.max(380, nodes.length * 9)).strength(n => n.linked ? 0 : .3));
+  sim.alpha(1).restart();
+}
+
+const keyOf = l => (l.source.id ?? l.source) + "|" + (l.target.id ?? l.target);
+
+function ticked() {
+  for (const sel of [linkSel, hitSel]) sel.attr("x1", l => l.source.x).attr("y1", l => l.source.y).attr("x2", l => l.target.x).attr("y2", l => l.target.y);
+  nodeSel.attr("transform", n => `translate(${n.x},${n.y})`);
+}
+
+const drag = d3.drag().clickDistance(4)
+  .on("start", (e, n) => { if (!e.active) sim.alphaTarget(.25).restart(); n.fx = n.x; n.fy = n.y; hideTip(); })
+  .on("drag", (e, n) => { n.fx = e.x; n.fy = e.y; })
+  .on("end", (e, n) => { if (!e.active) sim.alphaTarget(0); n.fx = n.fy = null; });
+
+function fit(duration = 600) {
+  if (!nodes.length) return;
+  const pad = 70, w = innerWidth, h = innerHeight;
+  const [x0, x1] = d3.extent(nodes, n => n.x), [y0, y1] = d3.extent(nodes, n => n.y);
+  const k = Math.min(1.6, (w - 2 * pad) / (x1 - x0 + 120), (h - 2 * pad) / (y1 - y0 + 120));
+  const t = d3.zoomIdentity.translate(w / 2, h / 2).scale(k).translate(-(x0 + x1) / 2, -(y0 + y1) / 2);
+  svg.transition().duration(duration).call(zoom.transform, t);
+}
+
+function neighbours(n) {
+  const set = new Set([n.id]);
+  links.forEach(l => { if (l.source === n) set.add(l.target.id); if (l.target === n) set.add(l.source.id); });
+  return set;
+}
+function focus(ids, keepLink) {
+  nodeSel.classed("dim", n => !ids.has(n.id));
+  linkSel.classed("dim", l => !keepLink(l));
+}
+function unfocus() { nodeSel.classed("dim", false); linkSel.classed("dim", false); }
+
+const tipEl = document.getElementById("tip");
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+function tip(e, html) { tipEl.innerHTML = html; tipEl.style.display = "block"; moveTip(e); }
+function moveTip(e) { tipEl.style.left = e.clientX + 14 + "px"; tipEl.style.top = e.clientY + 14 + "px"; }
+function hideTip() { tipEl.style.display = "none"; }
+
+function describe(l) {
+  if (l.kind === "contested") return `contested · ${l.support.length} supporting, ${l.opposing.length} opposing`;
+  return `${l.kind} · ${l.fans} shared fan${l.fans === 1 ? "" : "s"} · score ${l.score.toFixed(2)}`;
+}
+
+const panel = d3.select("#panel"), body = d3.select("#panel-body");
+panel.select(".close").on("click", closePanel);
+panel.on("click", e => e.stopPropagation());
+function closePanel() { panel.classed("open", false); }
+
+function header(n, subtitle) {
+  const head = body.append("div").attr("class", "head");
+  head.append("img").attr("src", n.avatar).attr("alt", "");
+  const t = head.append("div");
+  t.append("h2").text(n.name);
+  t.append("div").attr("class", "muted").text(subtitle);
+  if (n.profile) t.append("a").attr("href", n.profile).attr("target", "_blank").attr("rel", "noopener").attr("class", "muted").text("standup.pl profile");
+}
+
+function evidenceList(parent, l) {
+  for (const [items, cls] of [[l.support, ""], [l.opposing, "opposing"]]) for (const ev of items) {
+    const q = parent.append("blockquote").attr("class", cls);
+    q.append("span").text(ev.excerpt);
+    const src = q.append("span").attr("class", "src");
+    src.append("span").text(`${cls ? "opposing · " : ""}${ev.class} · `);
+    if (/^https?:\/\//.test(ev.url)) src.append("a").attr("href", ev.url).attr("target", "_blank").attr("rel", "noopener").text(ev.site);
+    else src.append("span").text(ev.site);
+  }
+}
+
+function showNode(n) {
+  body.html("");
+  const rels = DATA.relations.filter(r => r.source.id === n.id || r.target.id === n.id || r.source === n.id || r.target === n.id)
+    .sort((a, b) => kindRank[a.kind] - kindRank[b.kind] || b.score - a.score);
+  header(n, `#${n.rank} on standup.pl · ${n.fans} scored fan${n.fans === 1 ? "" : "s"}${n.researched ? "" : " · not researched yet"}`);
+  if (!rels.length) body.append("p").attr("class", "muted").text("No fan relations found yet. This reflects sparse evidence, not dissimilarity.");
+  for (const r of rels) {
+    const other = byId.get((r.source.id ?? r.source) === n.id ? (r.target.id ?? r.target) : (r.source.id ?? r.source));
+    const box = body.append("div").attr("class", "rel");
+    const head = box.append("div").attr("class", "rel-head").on("click", () => { const d = box.select(".ev"); d.style("display", d.style("display") === "none" ? null : "none"); });
+    head.append("img").attr("src", other.avatar).attr("alt", "");
+    const t = head.append("div");
+    t.append("div").text(other.name);
+    t.append("span").attr("class", "badge " + r.kind).text(r.kind);
+    t.append("span").attr("class", "muted").text(" " + describe(r).split(" · ").slice(1).join(" · "));
+    evidenceList(box.append("div").attr("class", "ev").style("display", "none"), r);
+  }
+  panel.classed("open", true);
+}
+
+function showPair(l) {
+  body.html("");
+  header(l.source, "");
+  header(l.target, "");
+  body.append("p").html(`<span class="badge ${l.kind}">${l.kind}</span> `).append("span").attr("class", "muted").text(describe(l).split(" · ").slice(1).join(" · "));
+  body.append("p").attr("class", "muted").text(l.explanation);
+  evidenceList(body, l);
+  panel.classed("open", true);
+}
+
+const linkedCount = new Set(DATA.relations.filter(attracting).flatMap(r => [r.source, r.target])).size;
+const count = k => DATA.relations.filter(r => r.kind === k).length;
+d3.select("#stats").text(`${linkedCount} linked performers · ${count("accepted")} corroborated, ${count("provisional")} provisional, ${count("contested")} contested pairs · ${DATA.nodes.filter(n => n.researched).length}/${DATA.nodes.length} researched · data ${DATA.updated_at.slice(0, 10)}`);
+
+Object.values(toggles).forEach(t => t.on("change", () => { rebuild(); setTimeout(fit, 900); }));
+d3.select("#reset").on("click", () => { nodes.forEach(n => { n.x = n.y = undefined; }); rebuild(); setTimeout(fit, 900); });
+addEventListener("resize", () => fit(0));
+
+rebuild();
+sim.stop();
+for (let i = 0; i < 300; i++) sim.tick();
+ticked();
+fit(0);
+sim.alpha(.05).restart();
+</script>
+</body>
+</html>

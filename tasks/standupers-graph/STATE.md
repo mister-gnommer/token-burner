@@ -21,6 +21,7 @@ Next stage: pause for user command; batch8 ranks71–80 or explicitly budgeted e
 - `standupers-human-input.md` is read-only except for an explicitly requested writing correction.
 
 ## Completed
+- Interactive view (2026-10-31, user-requested): each graph build now also writes self-contained `interactive.html` (d3-force bubbles, draggable, evidence panel); `graph/batch-07/interactive.html` rendered from the saved snapshot. See `graph/README.md`.
 - Stage 0: created `AGENTS.md`, `PLAN.md`, and this checkpoint.
 - Stage 1: saved `reports/20261025-stage-01-source-audit.md`.
 - Fresh-ranking follow-up: saved `reports/20261025-stage-01b-fresh-ranking-search.md`; the user confirmed option A.

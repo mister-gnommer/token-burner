@@ -14,6 +14,7 @@ import jsonschema
 
 from evidence_pipeline import SCHEMA_DIR, TASK_ROOT, author_key, load_records
 from avatars import prepare_avatar
+from render_interactive import write_page
 
 SCORER_VERSION = "observed-coendorsement-v2"
 FAN_CLASSES = {"same_user_rating_overlap", "same_user_coendorsement", "fan_recommendation", "fan_comparison"}
@@ -239,6 +240,7 @@ def main():
         args.output.mkdir(parents=True, exist_ok=True)
         (args.output / "graph.json").write_text(json.dumps(graph, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         (args.output / "graph.d2").write_text(d2_source(graph), encoding="utf-8")
+        write_page(graph, ranking, evidence, args.output, args.output / "interactive.html")
         if args.render:
             subprocess.run(["d2", "--sketch", "--layout", "elk", str(args.output / "graph.d2"), str(args.output / "graph.svg")], check=True)
             subprocess.run(["rsvg-convert", "-z", "2", str(args.output / "graph.svg"), "-o", str(args.output / "graph.png")], check=True)
