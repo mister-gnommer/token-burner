@@ -1,0 +1,90 @@
+{
+  "run_id": "20261031-batch03",
+  "workers": [
+    {
+      "task_name": "/root/batch03_collect_a",
+      "role": "collector",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "medium",
+      "status": "completed",
+      "ranks": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "task_name": "/root/batch03_collect_b",
+      "role": "collector",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "medium",
+      "status": "completed",
+      "ranks": [
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "task_name": "/root/batch03_collect_c",
+      "role": "collector",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "medium",
+      "status": "completed",
+      "ranks": [
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "task_name": "/root/batch03_extract",
+      "role": "extractor",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "medium",
+      "status": "completed"
+    },
+    {
+      "task_name": "/root/batch03_verify",
+      "role": "verifier",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "medium",
+      "status": "completed"
+    },
+    {
+      "task_name": "/root/batch03_integrate",
+      "role": "artifact integration/rendering/report",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "medium",
+      "status": "completed"
+    }
+  ],
+  "prompt_sha256": {
+    "collect-fan-evidence-v2.md": "aee3bf3e1c032e3ddf274aa3655ecf9faa8142dbd267d42911a889e9e98d507c",
+    "collect-fan-evidence-v3.md": "4a6d846352fc41051a2e1439a146aa5225ef5b0e1541b4af3be7afff4776f04d",
+    "extract-evidence-v3.md": "7644dc9ec508859c7ef80974edb2db59aec55486c7e557f6ce4d24551a07ed47",
+    "favorite-reply-context-v1.md": "37b976ea680b497d35c9cbbe25c432950243c54d4d2e231cd45292b9038a839b",
+    "extraction-decisions-v1.md": "17734b3338942bc9a7e129a55a9cf31aa39088b227af159f24a12118d986f62b",
+    "batch-run-v1.md": "0bced02d4c312e5b754dc6f6e9b6bff81ce13eeb1bbd79d085b84d89ee6c57fa",
+    "verify-evidence-v3.md": "d5c9c0cf9601e2009f8f7d48b79e2f29c031e5146fe738128468d3f992afdb31"
+  },
+  "main_agent_role": "orchestration, deterministic integration, spot-checks and reported exceptions",
+  "parent_interventions": [
+    "Requested collector B retry actionable short-URL cache misses using remaining budget; no new queries.",
+    "Normalized source hostnames/author keys and stable URLs; deduplicated one raw repeated post.",
+    "Routed A002 forum locator inconsistency back to collector; corrected report confirmed canonical1192638.",
+    "Asked verifier to distinguish historical joint-performance appreciation from unsupported career/current preference; verifier clarified scope and accepted.",
+    "Delegated deterministic cumulative graph/report/status integration to a sixth low-tier worker.",
+    "Retried profile-photo downloads with network access; all33 visible photos cached.",
+    "Corrected integration metadata:24 cumulative evidence records vs33 relation candidates; distinguished15 provisional from27 total uncertain, and replaced a future updated_at timestamp with actual UTC.",
+    "Delegated short edge-label correction after PNG overlap; scorer/selection unchanged.",
+    "Final deterministic checks:24 input records,33 relation candidates,6 solid/9 displayed dashed,33 photos; validated status-only changes for ranks21-30 while preserving batch2."
+  ]
+}

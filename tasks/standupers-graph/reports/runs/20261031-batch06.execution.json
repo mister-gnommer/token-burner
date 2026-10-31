@@ -1,0 +1,132 @@
+{
+  "run_id": "20261031-batch06",
+  "research_budget": {
+    "collectors": 3,
+    "queries_per_collector": 24,
+    "page_attempts_per_collector": 24,
+    "verified_candidate_cap_per_collector": 16
+  },
+  "workers": [
+    {
+      "task_name": "/root/batch06_collect_a",
+      "role": "collector",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "medium",
+      "status": "completed",
+      "ranks": [
+        51,
+        52,
+        53,
+        54
+      ]
+    },
+    {
+      "task_name": "/root/batch06_collect_b",
+      "role": "collector",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "medium",
+      "status": "interrupted",
+      "ranks": [
+        55,
+        56,
+        57
+      ]
+    },
+    {
+      "task_name": "/root/batch06_collect_c",
+      "role": "collector",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "medium",
+      "status": "interrupted",
+      "ranks": [
+        58,
+        59,
+        60
+      ]
+    },
+    {
+      "role": "recovery_collector",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "medium"
+        },
+        {
+          "id": "serviceTier",
+          "value": "default"
+        }
+      ],
+      "task_id": "node:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch06-recovery-collection-20261031-r1",
+      "child_thread_id": "thread:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch06-recovery-collection-20261031-r1",
+      "status": "completed"
+    },
+    {
+      "role": "extractor",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "medium"
+        },
+        {
+          "id": "serviceTier",
+          "value": "default"
+        }
+      ],
+      "task_id": "node:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch06-recovery-extraction-20261031-r1",
+      "child_thread_id": "thread:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch06-recovery-extraction-20261031-r1",
+      "status": "completed"
+    },
+    {
+      "role": "verifier",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "medium"
+        },
+        {
+          "id": "serviceTier",
+          "value": "default"
+        }
+      ],
+      "task_id": "node:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch06-recovery-verification-20261031-r1",
+      "child_thread_id": "thread:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch06-recovery-verification-20261031-r1",
+      "status": "completed"
+    }
+  ],
+  "prompt_sha256": {
+    "collect-fan-evidence-v2.md": "aee3bf3e1c032e3ddf274aa3655ecf9faa8142dbd267d42911a889e9e98d507c",
+    "collect-fan-evidence-v3.md": "4a6d846352fc41051a2e1439a146aa5225ef5b0e1541b4af3be7afff4776f04d",
+    "research-budget-v1.md": "706e19c0d4559e872ff278cc1a2640372b0b2ec86a3a4b889f187e71fd221cd7",
+    "extract-evidence-v3.md": "7644dc9ec508859c7ef80974edb2db59aec55486c7e557f6ce4d24551a07ed47",
+    "favorite-reply-context-v1.md": "37b976ea680b497d35c9cbbe25c432950243c54d4d2e231cd45292b9038a839b",
+    "extraction-decisions-v1.md": "17734b3338942bc9a7e129a55a9cf31aa39088b227af159f24a12118d986f62b",
+    "batch-run-v1.md": "0bced02d4c312e5b754dc6f6e9b6bff81ce13eeb1bbd79d085b84d89ee6c57fa",
+    "verify-evidence-v3.md": "d5c9c0cf9601e2009f8f7d48b79e2f29c031e5146fe738128468d3f992afdb31"
+  },
+  "main_agent_role": "orchestration, deterministic integration, spot-checks and reported exceptions",
+  "parent_interventions": [
+    "Dispatched three low-tier collectors, reset default verifier to Luna, required code-enforced individual-query cap.",
+    "Recovered interruption: validated126JSON files,20passing tests and exact batch5 graph reproduction.",
+    "Preserved original A/B/C files; normalized canonical author keys;5canonical candidates,no duplicates.",
+    "B ledger missing: no extra B search allowance; B coverage remains incomplete.",
+    "One recovery worker at a time to reduce peak memory; separate extraction/verification.",
+    "Independent verifier accepted2records and upheld3solo skips.",
+    "Built cumulative graph with existing pipeline,cache reuse and authorized HTTPS photo retrieval; no code/schema/scorer edits.",
+    "Ranks55–57 remain pending;57completed/43pending. Saved recovered snapshot and stopped before next batch."
+  ],
+  "research_usage": {
+    "known_queries": 27,
+    "known_page_attempts": 23,
+    "unknown_collector_b_usage": true
+  },
+  "status": "snapshot_completed_with_coverage_gaps"
+}

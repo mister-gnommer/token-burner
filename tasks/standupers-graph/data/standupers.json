@@ -136,7 +136,10 @@
       "profile_url": "https://standup.pl/komicy/lukasz-lotek-lodkowski",
       "image_url": "https://standup.pl/images/avatars/lukasz-lotek-lodkowski.png",
       "source_position": 3,
-      "aliases": ["Lotek", "Lotka"],
+      "aliases": [
+        "Lotek",
+        "Lotka"
+      ],
       "batch": 1,
       "status": "completed"
     },
@@ -147,7 +150,12 @@
       "profile_url": "https://standup.pl/komicy/rafal-paczes",
       "image_url": "https://standup.pl/images/avatars/rafal-paczes.png",
       "source_position": 4,
-      "aliases": ["Pacześ", "Paczes", "Paczesia", "Rafała Paczesia"],
+      "aliases": [
+        "Pacześ",
+        "Paczes",
+        "Paczesia",
+        "Rafała Paczesia"
+      ],
       "batch": 1,
       "status": "completed"
     },
@@ -169,7 +177,9 @@
       "profile_url": "https://standup.pl/komicy/mateusz-socha",
       "image_url": "https://standup.pl/images/avatars/mateusz-socha.png",
       "source_position": 6,
-      "aliases": ["Sochę"],
+      "aliases": [
+        "Sochę"
+      ],
       "batch": 1,
       "status": "completed"
     },
@@ -226,7 +236,7 @@
       "source_position": 12,
       "aliases": [],
       "batch": 2,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 12,
@@ -237,7 +247,7 @@
       "source_position": 13,
       "aliases": [],
       "batch": 2,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 13,
@@ -248,7 +258,7 @@
       "source_position": 15,
       "aliases": [],
       "batch": 2,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 14,
@@ -259,7 +269,7 @@
       "source_position": 16,
       "aliases": [],
       "batch": 2,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 15,
@@ -270,7 +280,7 @@
       "source_position": 17,
       "aliases": [],
       "batch": 2,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 16,
@@ -281,7 +291,7 @@
       "source_position": 18,
       "aliases": [],
       "batch": 2,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 17,
@@ -292,7 +302,7 @@
       "source_position": 19,
       "aliases": [],
       "batch": 2,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 18,
@@ -303,7 +313,7 @@
       "source_position": 20,
       "aliases": [],
       "batch": 2,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 19,
@@ -314,7 +324,7 @@
       "source_position": 21,
       "aliases": [],
       "batch": 2,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 20,
@@ -325,7 +335,7 @@
       "source_position": 22,
       "aliases": [],
       "batch": 2,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 21,
@@ -336,7 +346,7 @@
       "source_position": 23,
       "aliases": [],
       "batch": 3,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 22,
@@ -347,7 +357,7 @@
       "source_position": 24,
       "aliases": [],
       "batch": 3,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 23,
@@ -358,7 +368,7 @@
       "source_position": 25,
       "aliases": [],
       "batch": 3,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 24,
@@ -369,7 +379,7 @@
       "source_position": 27,
       "aliases": [],
       "batch": 3,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 25,
@@ -380,7 +390,7 @@
       "source_position": 28,
       "aliases": [],
       "batch": 3,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 26,
@@ -391,7 +401,7 @@
       "source_position": 29,
       "aliases": [],
       "batch": 3,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 27,
@@ -402,7 +412,7 @@
       "source_position": 30,
       "aliases": [],
       "batch": 3,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 28,
@@ -411,9 +421,12 @@
       "profile_url": "https://standup.pl/komicy/mieszko-minkiewicz",
       "image_url": "https://standup.pl/images/avatars/mieszko-minkiewicz.png",
       "source_position": 31,
-      "aliases": ["Mieszka Minkiewicza", "Minkiewicz"],
+      "aliases": [
+        "Mieszka Minkiewicza",
+        "Minkiewicz"
+      ],
       "batch": 3,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 29,
@@ -424,7 +437,7 @@
       "source_position": 32,
       "aliases": [],
       "batch": 3,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 30,
@@ -435,7 +448,7 @@
       "source_position": 33,
       "aliases": [],
       "batch": 3,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 31,
@@ -446,7 +459,7 @@
       "source_position": 34,
       "aliases": [],
       "batch": 4,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 32,
@@ -457,7 +470,7 @@
       "source_position": 35,
       "aliases": [],
       "batch": 4,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 33,
@@ -468,7 +481,7 @@
       "source_position": 36,
       "aliases": [],
       "batch": 4,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 34,
@@ -479,7 +492,7 @@
       "source_position": 37,
       "aliases": [],
       "batch": 4,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 35,
@@ -490,7 +503,7 @@
       "source_position": 38,
       "aliases": [],
       "batch": 4,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 36,
@@ -501,7 +514,7 @@
       "source_position": 39,
       "aliases": [],
       "batch": 4,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 37,
@@ -512,7 +525,7 @@
       "source_position": 42,
       "aliases": [],
       "batch": 4,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 38,
@@ -523,7 +536,7 @@
       "source_position": 43,
       "aliases": [],
       "batch": 4,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 39,
@@ -534,7 +547,7 @@
       "source_position": 44,
       "aliases": [],
       "batch": 4,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 40,
@@ -545,7 +558,7 @@
       "source_position": 45,
       "aliases": [],
       "batch": 4,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 41,
@@ -556,7 +569,7 @@
       "source_position": 46,
       "aliases": [],
       "batch": 5,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 42,
@@ -567,7 +580,7 @@
       "source_position": 47,
       "aliases": [],
       "batch": 5,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 43,
@@ -578,7 +591,7 @@
       "source_position": 49,
       "aliases": [],
       "batch": 5,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 44,
@@ -589,7 +602,7 @@
       "source_position": 51,
       "aliases": [],
       "batch": 5,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 45,
@@ -600,7 +613,7 @@
       "source_position": 52,
       "aliases": [],
       "batch": 5,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 46,
@@ -611,7 +624,7 @@
       "source_position": 53,
       "aliases": [],
       "batch": 5,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 47,
@@ -622,7 +635,7 @@
       "source_position": 55,
       "aliases": [],
       "batch": 5,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 48,
@@ -633,7 +646,7 @@
       "source_position": 56,
       "aliases": [],
       "batch": 5,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 49,
@@ -644,7 +657,7 @@
       "source_position": 57,
       "aliases": [],
       "batch": 5,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 50,
@@ -655,7 +668,7 @@
       "source_position": 58,
       "aliases": [],
       "batch": 5,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 51,
@@ -666,7 +679,7 @@
       "source_position": 59,
       "aliases": [],
       "batch": 6,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 52,
@@ -677,7 +690,7 @@
       "source_position": 60,
       "aliases": [],
       "batch": 6,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 53,
@@ -688,7 +701,7 @@
       "source_position": 61,
       "aliases": [],
       "batch": 6,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 54,
@@ -699,7 +712,7 @@
       "source_position": 62,
       "aliases": [],
       "batch": 6,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 55,
@@ -743,7 +756,7 @@
       "source_position": 67,
       "aliases": [],
       "batch": 6,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 59,
@@ -754,7 +767,7 @@
       "source_position": 68,
       "aliases": [],
       "batch": 6,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 60,
@@ -765,7 +778,7 @@
       "source_position": 69,
       "aliases": [],
       "batch": 6,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 61,
@@ -776,7 +789,7 @@
       "source_position": 70,
       "aliases": [],
       "batch": 7,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 62,
@@ -787,7 +800,7 @@
       "source_position": 71,
       "aliases": [],
       "batch": 7,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 63,
@@ -798,7 +811,7 @@
       "source_position": 72,
       "aliases": [],
       "batch": 7,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 64,
@@ -809,7 +822,7 @@
       "source_position": 73,
       "aliases": [],
       "batch": 7,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 65,
@@ -820,7 +833,7 @@
       "source_position": 74,
       "aliases": [],
       "batch": 7,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 66,
@@ -831,7 +844,7 @@
       "source_position": 75,
       "aliases": [],
       "batch": 7,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 67,
@@ -842,7 +855,7 @@
       "source_position": 76,
       "aliases": [],
       "batch": 7,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 68,
@@ -853,7 +866,7 @@
       "source_position": 77,
       "aliases": [],
       "batch": 7,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 69,
@@ -864,7 +877,7 @@
       "source_position": 79,
       "aliases": [],
       "batch": 7,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 70,
@@ -875,7 +888,7 @@
       "source_position": 80,
       "aliases": [],
       "batch": 7,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "rank": 71,

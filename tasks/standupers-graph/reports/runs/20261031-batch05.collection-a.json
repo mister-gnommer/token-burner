@@ -1,0 +1,169 @@
+{
+  "surprises": [
+    "KupBilecik reviews were unusually useful because some full author comments name and evaluate support acts. The lone qualifying statement in this slice was a mixed review: it praises the focal performer and Kuba Wu, but rates another support act as average; the full caveat is retained.",
+    "No qualifying source was found for Ryszard Mazur, Wojtek Pięta, or Michał Skubida within this collector's search allowance. Event headers, editorial descriptions, generic support praise without a source-validated performer name, isolated ratings, and co-mentions were excluded."
+  ],
+  "run_id": "20261031-batch05",
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+research-budget-v1"
+  },
+  "scope": [
+    {
+      "rank": 41,
+      "id": "ryszard-mazur",
+      "name": "Ryszard Mazur"
+    },
+    {
+      "rank": 42,
+      "id": "wojtek-pieta",
+      "name": "Wojtek Pięta"
+    },
+    {
+      "rank": 43,
+      "id": "piotrek-szumowski",
+      "name": "Piotrek Szumowski"
+    },
+    {
+      "rank": 44,
+      "id": "michal-skubida",
+      "name": "Michał Skubida"
+    }
+  ],
+  "budget": {
+    "search_queries_allowed": 24,
+    "search_queries_used": 28,
+    "page_open_or_navigation_attempts_allowed": 24,
+    "web_open_attempts": 6,
+    "browser_navigations": 3,
+    "page_open_or_navigation_attempts_used": 9,
+    "verified_candidates_allowed": 16,
+    "verified_candidates": 1,
+    "unused_search_queries": 0,
+    "unused_page_open_or_navigation_attempts": 15,
+    "unused_candidate_capacity": 15,
+    "unused_budget_explanation": "Actual search-query count was 28, four above the 24-query allowance; this was an accounting mistake while batching seven four-query searches. Page-open/navigation usage remained within allowance. No further searches were made after recognizing the count. The 15 unused candidate slots reflect evidence quality, not an attempt to hit a quota.",
+    "budget_overrun_search_queries": 4,
+    "query_overrun_disposition": "Retained as an otherwise valid source; the recorded four-query overrun does not change the evidence content or performer identity resolution."
+  },
+  "queries": [
+    "\"Ryszard Mazur\" stand-up lubię forum",
+    "\"Ryszarda Mazura\" standup komik ulubiony",
+    "\"Wojtek Pięta\" stand-up lubię forum",
+    "\"Wojtka Piętę\" standup najlepszy",
+    "\"Piotrek Szumowski\" \"Michał Skubida\"",
+    "\"Piotrek Szumowski\" \"Wojtek Pięta\" lubię",
+    "\"Piotrek Szumowski\" \"Ryszard Mazur\" standup forum",
+    "\"Michał Skubida\" \"Wojtek Pięta\" stand-up",
+    "\"Wojtek Pięta\" \"ulubiony\" standup",
+    "\"Wojtek Pieta\" \"najlepszy\" stand up forum",
+    "\"Piotrek Szumowski\" \"polecam\" \"Rafał\" forum stand-up",
+    "\"Michał Skubida\" \"stand up\" \"lubię\"",
+    "site:reddit.com/r/Polska \"Piotrek Szumowski\" \"Wojtek Pięta\"",
+    "site:reddit.com \"Michał Skubida\" \"stand-up\" komicy",
+    "\"Ryszard Mazur\" \"Piotrek Szumowski\" \"polecam\"",
+    "\"Wojtek Pięta\" \"Piotrek Szumowski\" \"śmiesz\" fan",
+    "site:kupbilecik.pl/pl/event \"Michał Skubida\" \"support\" komentarze",
+    "site:kupbilecik.pl/pl/event \"Wojtek Pięta\" \"support\" komentarze",
+    "site:kupbilecik.pl/pl/event \"Ryszard Mazur\" \"Piotrek Szumowski\" komentarze",
+    "site:kupbilecik.pl/pl/comments \"Michał Skubida\" \"Polecam\"",
+    "\"Dostałem więcej, niż się spodziewałem\" \"Kuba Wu\" \"Piotrek\"",
+    "site:kupbilecik.pl \"supporty - Kuba Wu świetny\"",
+    "site:kupbilecik.pl \"Kuba Wu świetny\" \"Kalbarczyk przeciętnie\"",
+    "site:kupbilecik.pl \"fajnie było zobaczyć Szumersa\"",
+    "\"Ryszard Mazur\" \"Mateusz Socha\" \"polecam\" komentarz",
+    "\"Ryszard Mazur\" \"Piotrek Szumowski\" \"Polecam\" widzowie",
+    "\"Wojtek Pięta\" \"Michał Skubida\" opinie komicy",
+    "\"Michał Skubida\" \"Kuba Wu\" komicy komentarz"
+  ],
+  "page_events": [
+    {
+      "method": "web open",
+      "url": "https://www.kupbilecik.pl/pl/event/52771/jelenia-gora/stand-up-piotrek-szumowski",
+      "result": "cache miss; attempted T3 status and preview open; page then loaded through browser navigation and body text inspection; excluded as no qualifying author statement linking focal to another frozen performer"
+    },
+    {
+      "method": "web open",
+      "url": "https://www.kupbilecik.pl/pl/comments/11917/stand-up-ryszard-mazur?page_comments=1",
+      "result": "cache miss; search result leads included named non-frozen support Pan Cyktor"
+    },
+    {
+      "method": "web open",
+      "url": "https://www.kupbilecik.pl/pl/comments/12044/magiczny-stand-up-michal-skubida",
+      "result": "cache miss; search result contained generic single-performer ratings only; no qualifying author statement"
+    },
+    {
+      "method": "web open",
+      "url": "https://www.kupbilecik.pl/pl/event/197686/krakow/stand-up-wojtek-pieta",
+      "result": "cache miss; search result included praise for unnamed support, which cannot identify a frozen performer"
+    },
+    {
+      "method": "web open",
+      "url": "https://www.kupbilecik.pl/pl/event/155172/poznan/stand-up-piotrek-szumowski",
+      "result": "cache miss; T3 status then browser open and page body inspection verified event context; relevant comment not shown in this page's displayed comment excerpt"
+    },
+    {
+      "method": "web open",
+      "url": "https://www.kupbilecik.pl/pl/comments/5667/stand-up-piotrek-szumowski?page_comments=7",
+      "result": "cache miss; T3 status then browser open and full page body inspection verified the Kacper statement, author attribution, post date, and page locator"
+    },
+    {
+      "method": "existing browser page inspection (no navigation)",
+      "url": "https://www.kupbilecik.pl/pl/event/155172/poznan/stand-up-piotrek-szumowski",
+      "result": "Reused already-open verified page and captured exact visible event heading as separate thread_prompt context; no additional search or navigation."
+    }
+  ],
+  "verified": [
+    {
+      "candidate_id": "src_b05a_001",
+      "url": "https://www.kupbilecik.pl/pl/comments/5667/stand-up-piotrek-szumowski?page_comments=7",
+      "post_locator": "KupBilecik comment page 7; Kacper; review publication date label 2025-05-16; event: Poznań, 14 May 2025, 19:00; page body shows this comment under Stand-up: Piotrek Szumowski.",
+      "named_frozen_performers": [
+        "Piotrek Szumowski",
+        "Kuba Wu"
+      ],
+      "note": "Full contiguous author text includes positive views of both performers plus the comparison that kolega Kalbarczyk was przeciętnie. No event-parent text merged.",
+      "source_context": {
+        "role": "thread_prompt",
+        "url": "https://www.kupbilecik.pl/pl/event/155172/poznan/stand-up-piotrek-szumowski",
+        "author_hint": null,
+        "excerpt": "II TERMIN! Poznań: Piotrek Szumowski - \"Wagabunda\"",
+        "attribution_note": "Separate event heading inspected in the existing owned browser tab; it was not merged into Kacper’s author statement."
+      },
+      "publication_date_evidence": {
+        "visible_label": "2025-05-16",
+        "source_location": "Date immediately above Kacper’s review on KupBilecik comment page 7. The event date displayed below the review is 14 May 2025 and is not the publication date."
+      }
+    }
+  ],
+  "excluded_leads": [
+    {
+      "performer": "Ryszard Mazur",
+      "reason": "KupBilecik reviews were available in search results, but the favorable comment mentioning named support Pan Cyktor does not identify a frozen performer; author says the focal performer was in good form."
+    },
+    {
+      "performer": "Wojtek Pięta",
+      "reason": "KupBilecik reviews praised Pięta and unnamed support or only named support Filip in other leads without enough verified context to connect a frozen performer from the author's statement. Generic reviews excluded."
+    },
+    {
+      "performer": "Michał Skubida",
+      "reason": "KupBilecik comments found were single-performer show reviews; no qualifying author statement linked Skubida to another frozen performer."
+    },
+    {
+      "performer": "Piotrek Szumowski",
+      "reason": "Other surfaced reviews praised only Szumowski or referred to event context; retained only Kacper comment which explicitly praises frozen performer Kuba Wu too."
+    }
+  ],
+  "coverage_gaps": [
+    "Ryszard Mazur: no verified same-author preference/recommendation linking him to another frozen performer.",
+    "Wojtek Pięta: no verified same-author preference/recommendation linking him to another frozen performer.",
+    "Michał Skubida: no verified same-author preference/recommendation linking him to another frozen performer."
+  ],
+  "duplicate_check": "Compared earlier evidence/batch-02, batch-03, batch-04 source-candidates.jsonl and evidence/stage-06/source-candidates.jsonl plus corroboration.sources.jsonl; no same post/excerpt found.",
+  "outputs": [
+    "tasks/standupers-graph/evidence/batch-05/source-candidates.a.jsonl",
+    "tasks/standupers-graph/reports/runs/20261031-batch05.collection-a.json"
+  ],
+  "date_correction": "Corrected published_at from the event date (2025-05-15 was erroneous) to the review publication date shown directly above Kacper’s review, 2025-05-16. Event heading/context and author excerpt unchanged."
+}

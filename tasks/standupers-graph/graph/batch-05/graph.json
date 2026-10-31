@@ -1,0 +1,2237 @@
+{
+  "schema_version": 1,
+  "synthetic": false,
+  "scorer_version": "observed-coendorsement-v2",
+  "updated_at": "2026-10-31T10:38:40Z",
+  "input_manifests": [
+    "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch01-corroboration.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch02.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch03.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch04.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch05.json"
+  ],
+  "renderer": {
+    "name": "d2",
+    "layout": "elk",
+    "sketch": true,
+    "max_degree": 3,
+    "provisional_edges": "one fan, no opposing records"
+  },
+  "visible_node_ids": [
+    "abelard-giza",
+    "adam-sobaniec",
+    "adam-van-bendler",
+    "antoni-syrek-dabrowski",
+    "arkadiusz-jaksa-jakszewicz",
+    "bartosz-gajda",
+    "bartosz-zalewski",
+    "blazej-krajewski",
+    "cezary-jurkiewicz",
+    "cezary-pazura",
+    "cezary-ponttefski",
+    "czarek-sikora",
+    "daniel-midas",
+    "ewa-stasiewicz",
+    "grzegorz-dolniak",
+    "kacper-rucinski",
+    "karol-modzelewski",
+    "katarzyna-piasecka",
+    "kuba-wu",
+    "lukasz-kowalski",
+    "lukasz-lotek-lodkowski",
+    "maciej-brudzewski",
+    "maciej-kwiatkowski",
+    "magda-kubicka",
+    "mama-na-obrotach",
+    "marcin-zbigniew-wojciech",
+    "marlena-mysza",
+    "mateusz-socha",
+    "michal-kutek",
+    "michal-leja",
+    "michal-paszczyk",
+    "michal-skubida",
+    "mieszko-minkiewicz",
+    "olka-szczesniak",
+    "pan-li",
+    "patryk-gosinski",
+    "pawel-chalupka",
+    "piotr-jelen",
+    "piotr-latala",
+    "piotr-splin",
+    "piotr-zola-szulowski",
+    "piotrek-szumowski",
+    "rafal-paczes",
+    "rafal-rutkowski",
+    "ryszard-mazur",
+    "sylwia-wiszowata",
+    "tomasz-boras-borkowski",
+    "tomasz-machnicki",
+    "tomek-kolecki",
+    "wiolka-walaszczyk",
+    "wojtek-pieta"
+  ],
+  "nodes": [
+    {
+      "id": "abelard-giza",
+      "name": "Abelard Giza",
+      "observed_fans": 6,
+      "avatar": {
+        "path": "assets/avatar-7043db8d79313a26b27c.png",
+        "source_url": "https://standup.pl/images/avatars/abelard-giza.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-30T21:42:16Z"
+      }
+    },
+    {
+      "id": "adam-gajda",
+      "name": "Adam Gajda",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/adam-gajda.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "adam-sobaniec",
+      "name": "Adam Sobaniec",
+      "observed_fans": 1,
+      "avatar": {
+        "path": "assets/avatar-16a21d3cc622014bf93e.png",
+        "source_url": "https://standup.pl/images/avatars/adam-sobaniec.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T09:08:31Z"
+      }
+    },
+    {
+      "id": "adam-van-bendler",
+      "name": "Adam Van Bendler",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-9b945e1e7e38949cc763.png",
+        "source_url": "https://standup.pl/images/avatars/adam-van-bendler.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T09:08:32Z"
+      }
+    },
+    {
+      "id": "aleksandra-radomska",
+      "name": "Aleksandra Radomska",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/aleksandra-radomska.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "antoni-syrek-dabrowski",
+      "name": "Antoni Syrek-Dąbrowski",
+      "observed_fans": 5,
+      "avatar": {
+        "path": "assets/avatar-434ef6a8901c4e66a986.png",
+        "source_url": "https://standup.pl/images/avatars/antoni-syrek-dabrowski.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T00:47:15Z"
+      }
+    },
+    {
+      "id": "arkadiusz-jaksa-jakszewicz",
+      "name": "Arkadiusz Jaksa Jakszewicz",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-ab762973564678f3ee21.png",
+        "source_url": "https://standup.pl/images/avatars/arkadiusz-jaksa-jakszewicz.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T10:05:09Z"
+      }
+    },
+    {
+      "id": "bartosz-gajda",
+      "name": "Bartosz Gajda",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-479ccce6aac2899b021e.png",
+        "source_url": "https://standup.pl/images/avatars/bartosz-gajda.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T10:05:09Z"
+      }
+    },
+    {
+      "id": "bartosz-strusinski",
+      "name": "Bartosz Strusiński",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/bartosz-strusinski.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "bartosz-zalewski",
+      "name": "Bartosz Zalewski",
+      "observed_fans": 1,
+      "avatar": {
+        "path": "assets/avatar-27e7154e4be5c83096e3.png",
+        "source_url": "https://standup.pl/images/avatars/bartosz-zalewski.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T10:05:10Z"
+      }
+    },
+    {
+      "id": "blazej-krajewski",
+      "name": "Błażej Krajewski",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-1fcffc1ffa355db4784a.png",
+        "source_url": "https://standup.pl/images/avatars/blazej-krajewski.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T01:00:48Z"
+      }
+    },
+    {
+      "id": "cezary-jurkiewicz",
+      "name": "Cezary Jurkiewicz",
+      "observed_fans": 4,
+      "avatar": {
+        "path": "assets/avatar-4afd71bb705b51c651d1.png",
+        "source_url": "https://standup.pl/images/avatars/cezary-jurkiewicz.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T00:47:15Z"
+      }
+    },
+    {
+      "id": "cezary-pazura",
+      "name": "Cezary Pazura",
+      "observed_fans": 1,
+      "avatar": {
+        "path": "assets/avatar-b589a4687a512ccb6e3b.png",
+        "source_url": "https://standup.pl/images/avatars/cezary-pazura.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-30T21:42:16Z"
+      }
+    },
+    {
+      "id": "cezary-pizewski",
+      "name": "Cezary Piżewski",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/cezary-pizewski.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "cezary-ponttefski",
+      "name": "Cezary Ponttefski",
+      "observed_fans": 2,
+      "avatar": {
+        "path": "assets/avatar-197f900ed1c288420e73.png",
+        "source_url": "https://standup.pl/images/avatars/cezary-ponttefski.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T01:00:49Z"
+      }
+    },
+    {
+      "id": "czarek-sikora",
+      "name": "Czarek Sikora",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-fe8af72022732e7a45a0.png",
+        "source_url": "https://standup.pl/images/avatars/czarek-sikora.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T10:05:10Z"
+      }
+    },
+    {
+      "id": "czeslaw-mozil",
+      "name": "Czesław Mozil",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/czeslaw-mozil.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "damian-skora",
+      "name": "Damian Skóra",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/damian-skora.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "damian-viking-usewicz",
+      "name": "Damian Viking Usewicz",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/damian-viking-usewicz.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "daniel-midas",
+      "name": "Daniel Midas",
+      "observed_fans": 1,
+      "avatar": {
+        "path": "assets/avatar-1f4eaca4dbc32f3dc590.png",
+        "source_url": "https://standup.pl/images/avatars/daniel-midas.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-30T21:42:16Z"
+      }
+    },
+    {
+      "id": "darek-gadowski",
+      "name": "Darek Gadowski",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/darek-gadowski.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "ewa-blachnio",
+      "name": "Ewa Błachnio",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/ewa-blachnio.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "ewa-stasiewicz",
+      "name": "Ewa Stasiewicz",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-447d7c863ff921c49a30.png",
+        "source_url": "https://standup.pl/images/avatars/ewa-stasiewicz.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T10:38:40Z"
+      }
+    },
+    {
+      "id": "filip-brymora",
+      "name": "Filip Brymora",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/filip-brymora.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "filip-puzyr",
+      "name": "Filip Puzyr",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/filip-puzyr.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "grzegorz-dolniak",
+      "name": "Grzegorz Dolniak",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-4532ac67b944c65dcc8e.png",
+        "source_url": "https://standup.pl/images/avatars/grzegorz-dolniak.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T09:08:32Z"
+      }
+    },
+    {
+      "id": "grzegorz-halama",
+      "name": "Grzegorz Halama",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/grzegorz-halama.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "igor-kwiatkowski",
+      "name": "Igor Kwiatkowski",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/igor-kwiatkowski.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "jacek-noch",
+      "name": "Jacek Noch",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/jacek-noch.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "jacek-stramik",
+      "name": "Jacek Stramik",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/jacek-stramik.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "jakub-poczety",
+      "name": "Jakub Poczęty",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/jakub-poczety.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "janusz-pietruszka",
+      "name": "Janusz Pietruszka",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/janusz-pietruszka.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "jarek-legonkoff",
+      "name": "Jarek Legońkoff",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/jarek-legonkoff.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "jasiek-borkowski",
+      "name": "Jasiek Borkowski",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/jasiek-borkowski.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "kacper-rucinski",
+      "name": "Kacper Ruciński",
+      "observed_fans": 2,
+      "avatar": {
+        "path": "assets/avatar-37666d6590cf08eacbdd.png",
+        "source_url": "https://standup.pl/images/avatars/kacper-rucinski.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T00:47:15Z"
+      }
+    },
+    {
+      "id": "karol-kopiec",
+      "name": "Karol Kopiec",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/karol-kopiec.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "karol-modzelewski",
+      "name": "Karol Modzelewski",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-2fd2cfcc5c074b9d5e98.png",
+        "source_url": "https://standup.pl/images/avatars/karol-modzelewski.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T01:00:49Z"
+      }
+    },
+    {
+      "id": "karolina-panczyk",
+      "name": "Karolina Pańczyk",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/karolina-panczyk.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "katarzyna-piasecka",
+      "name": "Katarzyna Piasecka",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-b0309f9cbb5b12d63549.png",
+        "source_url": "https://standup.pl/images/avatars/katarzyna-piasecka.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T10:05:10Z"
+      }
+    },
+    {
+      "id": "krzysztof-kasparek",
+      "name": "Krzysztof Kasparek",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/krzysztof-kasparek.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "krzysztof-sawczuk",
+      "name": "Krzysztof Sawczuk",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/krzysztof-sawczuk.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "kuba-dabrowski",
+      "name": "Kuba Dąbrowski",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/kuba-dabrowski.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "kuba-wu",
+      "name": "Kuba Wu",
+      "observed_fans": 1,
+      "avatar": {
+        "path": "assets/avatar-002f0f7cfe31e2b56270.png",
+        "source_url": "https://standup.pl/images/avatars/kuba-wu.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T10:38:41Z"
+      }
+    },
+    {
+      "id": "lukasz-kowalski",
+      "name": "Łukasz Kowalski",
+      "observed_fans": 1,
+      "avatar": {
+        "path": "assets/avatar-30c2731a806153c79138.png",
+        "source_url": "https://standup.pl/images/avatars/lukasz-kowalski.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T01:00:49Z"
+      }
+    },
+    {
+      "id": "lukasz-lotek-lodkowski",
+      "name": "Łukasz Lotek Lodkowski",
+      "observed_fans": 3,
+      "avatar": {
+        "path": "assets/avatar-18e17b451b8f0010d58f.png",
+        "source_url": "https://standup.pl/images/avatars/lukasz-lotek-lodkowski.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-30T21:42:16Z"
+      }
+    },
+    {
+      "id": "lukasz-wolski",
+      "name": "Łukasz Wolski",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/lukasz-wolski.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "maciej-brudzewski",
+      "name": "Maciej Brudzewski",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-09420ffe00eaf7f73bfb.png",
+        "source_url": "https://standup.pl/images/avatars/maciej-brudzewski.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T09:08:32Z"
+      }
+    },
+    {
+      "id": "maciej-kwiatkowski",
+      "name": "Maciej Kwiatkowski",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-1498044286c19e0bac70.png",
+        "source_url": "https://standup.pl/images/comedians/maciej-kwiatkowski.webp",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T09:08:32Z"
+      }
+    },
+    {
+      "id": "maciek-buchwald",
+      "name": "Maciek Buchwald",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/maciek-buchwald.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "magda-kubicka",
+      "name": "Magda Kubicka",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-90d0c98858e882acf9cb.png",
+        "source_url": "https://standup.pl/images/avatars/magda-kubicka.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-30T21:42:16Z"
+      }
+    },
+    {
+      "id": "mama-na-obrotach",
+      "name": "Mama Na Obrotach (Klaudia Klimczyk)",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-032e2364f4b46812ff0a.png",
+        "source_url": "https://standup.pl/images/comedians/mama-na-obrotach.webp",
+        "status": "photo",
+        "retrieved_at": "2026-10-30T21:42:16Z"
+      }
+    },
+    {
+      "id": "marcin-chmiel",
+      "name": "Marcin Chmiel",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/marcin-chmiel.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "marcin-zbigniew-wojciech",
+      "name": "Marcin Zbigniew Wojciech",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-8474a2153b31268bebe9.png",
+        "source_url": "https://standup.pl/images/avatars/marcin-zbigniew-wojciech.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T10:05:10Z"
+      }
+    },
+    {
+      "id": "marek-gajos-gajewski",
+      "name": "Marek Gajos Gajewski",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/marek-gajos-gajewski.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "mariusz-dabrowski",
+      "name": "Mariusz Dąbrowski",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/mariusz-dabrowski.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "marlena-mysza",
+      "name": "Marlena Mysza",
+      "observed_fans": 1,
+      "avatar": {
+        "path": "assets/avatar-12bb899a8f7a61ffde61.png",
+        "source_url": "https://standup.pl/images/avatars/marlena-mysza.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T10:38:41Z"
+      }
+    },
+    {
+      "id": "marta-lojek",
+      "name": "Marta Lojek",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/marta-lojek.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "martyna-podwysocka",
+      "name": "Martyna Podwysocka",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/martyna-podwysocka.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "mateusz-ipkis-dudek",
+      "name": "Mateusz Ipkis Dudek",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/mateusz-ipkis-dudek.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "mateusz-socha",
+      "name": "Mateusz Socha",
+      "observed_fans": 3,
+      "avatar": {
+        "path": "assets/avatar-e48817a3d0ad002978e4.png",
+        "source_url": "https://standup.pl/images/avatars/mateusz-socha.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-30T21:42:17Z"
+      }
+    },
+    {
+      "id": "michal-kempa",
+      "name": "Michał Kempa",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/michal-kempa.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "michal-kutek",
+      "name": "Michał Kutek",
+      "observed_fans": 1,
+      "avatar": {
+        "path": "assets/avatar-a0a6958ba0af3e4fd3cf.png",
+        "source_url": "https://standup.pl/images/avatars/michal-kutek.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T10:05:10Z"
+      }
+    },
+    {
+      "id": "michal-leja",
+      "name": "Michał Leja",
+      "observed_fans": 2,
+      "avatar": {
+        "path": "assets/avatar-d5817e41ec264e4af405.png",
+        "source_url": "https://standup.pl/images/avatars/michal-leja.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T00:47:15Z"
+      }
+    },
+    {
+      "id": "michal-palubski",
+      "name": "Michał Pałubski",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/michal-palubski.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "michal-paszczyk",
+      "name": "Michał Paszczyk",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-57106b132d509bc18756.png",
+        "source_url": "https://standup.pl/images/avatars/michal-paszczyk.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T01:00:49Z"
+      }
+    },
+    {
+      "id": "michal-skubida",
+      "name": "Michał Skubida",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-f37daa17c056fd1b7ede.png",
+        "source_url": "https://standup.pl/images/avatars/michal-skubida.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T10:38:41Z"
+      }
+    },
+    {
+      "id": "mieszko-minkiewicz",
+      "name": "Mieszko Minkiewicz",
+      "observed_fans": 2,
+      "avatar": {
+        "path": "assets/avatar-5eba6695466796374c87.png",
+        "source_url": "https://standup.pl/images/avatars/mieszko-minkiewicz.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T09:08:32Z"
+      }
+    },
+    {
+      "id": "olka-szczesniak",
+      "name": "Olka Szczęśniak",
+      "observed_fans": 1,
+      "avatar": {
+        "path": "assets/avatar-365c122008fe33303e4e.png",
+        "source_url": "https://standup.pl/images/avatars/olka-szczesniak.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-30T21:42:17Z"
+      }
+    },
+    {
+      "id": "pan-li",
+      "name": "Pan Li",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-eb7b7bc379a776ef8fe2.png",
+        "source_url": "https://standup.pl/images/comedians/pan-li.webp",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T01:00:49Z"
+      }
+    },
+    {
+      "id": "patryk-gosinski",
+      "name": "Patryk Gosiński",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-48fe67b551167d8d4ada.png",
+        "source_url": "https://standup.pl/images/avatars/patryk-gosinski.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T10:38:41Z"
+      }
+    },
+    {
+      "id": "patryk-trela",
+      "name": "Patryk Trela",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/patryk-trela.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "pawel-bakteria",
+      "name": "Paweł Bakteria",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/pawel-bakteria.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "pawel-chalupka",
+      "name": "Paweł Chałupka",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-ea5e60057f15ac3ff97b.png",
+        "source_url": "https://standup.pl/images/avatars/pawel-chalupka.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T09:08:33Z"
+      }
+    },
+    {
+      "id": "pawel-konkiel",
+      "name": "Paweł Konkiel",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/pawel-konkiel.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "piotr-jelen",
+      "name": "Piotr Jeleń",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-6351daabb8a3d7a3fd96.png",
+        "source_url": "https://standup.pl/images/avatars/piotr-jelen.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-30T21:42:17Z"
+      }
+    },
+    {
+      "id": "piotr-latala",
+      "name": "Piotr Latała",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-3a5e6957acdeb74fd0ad.png",
+        "source_url": "https://standup.pl/images/avatars/piotr-latala.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T01:00:49Z"
+      }
+    },
+    {
+      "id": "piotr-splin",
+      "name": "Piotr Splin",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-6571229965f1c4247e09.png",
+        "source_url": "https://standup.pl/images/avatars/piotr-splin.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T10:38:41Z"
+      }
+    },
+    {
+      "id": "piotr-zola-szulowski",
+      "name": "Piotr Zola Szulowski",
+      "observed_fans": 1,
+      "avatar": {
+        "path": "assets/avatar-345acbf3a28f70dd6978.png",
+        "source_url": "https://standup.pl/images/avatars/piotr-zola-szulowski.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T00:47:15Z"
+      }
+    },
+    {
+      "id": "piotrek-szumowski",
+      "name": "Piotrek Szumowski",
+      "observed_fans": 7,
+      "avatar": {
+        "path": "assets/avatar-fdf1be5a0f42d007ace6.png",
+        "source_url": "https://standup.pl/images/avatars/piotrek-szumowski.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T00:47:15Z"
+      }
+    },
+    {
+      "id": "radek-drozdz",
+      "name": "Radek Drożdż",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/radek-drozdz.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "rafal-banas",
+      "name": "Rafał Banaś",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/rafal-banas.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "rafal-paczes",
+      "name": "Rafał Pacześ",
+      "observed_fans": 4,
+      "avatar": {
+        "path": "assets/avatar-cc0c83d7f86b27739e87.png",
+        "source_url": "https://standup.pl/images/avatars/rafal-paczes.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-30T21:42:17Z"
+      }
+    },
+    {
+      "id": "rafal-rutkowski",
+      "name": "Rafał Rutkowski",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-2cf55dc3e38af4fdc2aa.png",
+        "source_url": "https://standup.pl/images/avatars/rafal-rutkowski.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T09:08:33Z"
+      }
+    },
+    {
+      "id": "rafal-sumowski",
+      "name": "Rafał Sumowski",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/rafal-sumowski.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "robert-gorski",
+      "name": "Robert Górski",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/robert-gorski.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "ryszard-mazur",
+      "name": "Ryszard Mazur",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-24bff1d631c830485cb4.png",
+        "source_url": "https://standup.pl/images/avatars/ryszard-mazur.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T10:38:41Z"
+      }
+    },
+    {
+      "id": "sebastian-rejent",
+      "name": "Sebastian Rejent",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/sebastian-rejent.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "sylwia-wiszowata",
+      "name": "Sylwia Wiszowata",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-a25ff64cabc3381eb1f1.png",
+        "source_url": "https://standup.pl/images/avatars/sylwia-wiszowata.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T09:08:33Z"
+      }
+    },
+    {
+      "id": "synmojegotaty-bartek-skrobisz",
+      "name": "SynMojegoTaty (Bartek Skrobisz)",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/comedians/synmojegotaty-bartek-skrobisz.webp",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "szymon-baraniecki",
+      "name": "Szymon Baraniecki",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/szymon-baraniecki.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "tomasz-biskup",
+      "name": "Tomasz Biskup",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/tomasz-biskup.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "tomasz-boras-borkowski",
+      "name": "Tomasz Boras Borkowski",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-aa9cfa6df09873c741c3.png",
+        "source_url": "https://standup.pl/images/avatars/tomasz-boras.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T01:00:50Z"
+      }
+    },
+    {
+      "id": "tomasz-machnicki",
+      "name": "Tomasz Machnicki",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-44efa737169ccaeda900.png",
+        "source_url": "https://standup.pl/images/avatars/tomasz-machnicki.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T10:05:10Z"
+      }
+    },
+    {
+      "id": "tomek-kolecki",
+      "name": "Tomek Kołecki",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-43bfbd7fef1c07566fb1.png",
+        "source_url": "https://standup.pl/images/avatars/tomek-kolecki.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T10:05:11Z"
+      }
+    },
+    {
+      "id": "tomek-nowaczyk",
+      "name": "Tomek Nowaczyk",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/tomek-nowaczyk.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "wiolka-walaszczyk",
+      "name": "Wiolka Walaszczyk",
+      "observed_fans": 2,
+      "avatar": {
+        "path": "assets/avatar-745dc99a2af89b2cb76f.png",
+        "source_url": "https://standup.pl/images/avatars/wiolka-walaszczyk.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T10:38:42Z"
+      }
+    },
+    {
+      "id": "wojciech-kaminski",
+      "name": "Wojciech Kamiński",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/wojciech-kaminski.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "wojciech-termos-tremiszewski",
+      "name": "Wojciech Termos Tremiszewski",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/wojciech-tremiszewski.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "wojtek-fiedorczuk",
+      "name": "Wojtek Fiedorczuk",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/laughing-person.svg",
+        "source_url": "https://standup.pl/images/avatars/wojtek-fiedorczuk.png",
+        "status": "placeholder",
+        "reason": "image not cached; render to download"
+      }
+    },
+    {
+      "id": "wojtek-pieta",
+      "name": "Wojtek Pięta",
+      "observed_fans": 0,
+      "avatar": {
+        "path": "assets/avatar-c6f8e9e468f017b7e97a.png",
+        "source_url": "https://standup.pl/images/avatars/wojtek-pieta.png",
+        "status": "photo",
+        "retrieved_at": "2026-10-31T10:38:42Z"
+      }
+    }
+  ],
+  "relations": [
+    {
+      "schema_version": 1,
+      "id": "rel_abelard-giza__antoni-syrek-dabrowski",
+      "pair": [
+        "abelard-giza",
+        "antoni-syrek-dabrowski"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b01c_003"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 1,
+      "independent_fan_count": 1,
+      "score": 0.1,
+      "confidence": 0.84,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "1 source-scoped fans explicitly co-endorse this pair; 10 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_abelard-giza__cezary-jurkiewicz",
+      "pair": [
+        "abelard-giza",
+        "cezary-jurkiewicz"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_s06_001"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 1,
+      "independent_fan_count": 1,
+      "score": 0.111111,
+      "confidence": 0.84,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "1 source-scoped fans explicitly co-endorse this pair; 9 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_abelard-giza__cezary-pazura",
+      "pair": [
+        "abelard-giza",
+        "cezary-pazura"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b01c_001"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 1,
+      "independent_fan_count": 1,
+      "score": 0.166667,
+      "confidence": 0.84,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "1 source-scoped fans explicitly co-endorse this pair; 6 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_abelard-giza__kacper-rucinski",
+      "pair": [
+        "abelard-giza",
+        "kacper-rucinski"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "accepted",
+      "support_evidence_ids": [
+        "ev_b01c_003",
+        "ev_b03_a_002"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 2,
+      "independent_fan_count": 2,
+      "score": 0.333333,
+      "confidence": 0.91,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "2 source-scoped fans explicitly co-endorse this pair; 6 observed fans endorse either performer. 0 opposing preference records. Provisional observed overlap.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_abelard-giza__lukasz-lotek-lodkowski",
+      "pair": [
+        "abelard-giza",
+        "lukasz-lotek-lodkowski"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [],
+      "contradictory_evidence_ids": [
+        "ev_b03_a_001"
+      ],
+      "independent_source_count": 0,
+      "independent_fan_count": 0,
+      "score": 0.0,
+      "confidence": 0,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "0 source-scoped fans explicitly co-endorse this pair; 9 observed fans endorse either performer. 1 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_abelard-giza__mateusz-socha",
+      "pair": [
+        "abelard-giza",
+        "mateusz-socha"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "accepted",
+      "support_evidence_ids": [
+        "ev_b01b_003",
+        "ev_s06_001"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 2,
+      "independent_fan_count": 2,
+      "score": 0.285714,
+      "confidence": 0.81,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "2 source-scoped fans explicitly co-endorse this pair; 7 observed fans endorse either performer. 0 opposing preference records. Provisional observed overlap.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_abelard-giza__piotr-zola-szulowski",
+      "pair": [
+        "abelard-giza",
+        "piotr-zola-szulowski"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_s06_001"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 1,
+      "independent_fan_count": 1,
+      "score": 0.166667,
+      "confidence": 0.84,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "1 source-scoped fans explicitly co-endorse this pair; 6 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_abelard-giza__rafal-paczes",
+      "pair": [
+        "abelard-giza",
+        "rafal-paczes"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b01b_003",
+        "ev_s06_001"
+      ],
+      "contradictory_evidence_ids": [
+        "ev_b03_a_001"
+      ],
+      "independent_source_count": 2,
+      "independent_fan_count": 2,
+      "score": 0.25,
+      "confidence": 0.81,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "2 source-scoped fans explicitly co-endorse this pair; 8 observed fans endorse either performer. 1 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_adam-sobaniec__michal-kutek",
+      "pair": [
+        "adam-sobaniec",
+        "michal-kutek"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b04_c_001"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 1,
+      "independent_fan_count": 1,
+      "score": 1.0,
+      "confidence": 0.91,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "1 source-scoped fans explicitly co-endorse this pair; 1 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_antoni-syrek-dabrowski__cezary-jurkiewicz",
+      "pair": [
+        "antoni-syrek-dabrowski",
+        "cezary-jurkiewicz"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "accepted",
+      "support_evidence_ids": [
+        "ev_b05_c_002",
+        "ev_b05_c_003"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 1,
+      "independent_fan_count": 2,
+      "score": 0.285714,
+      "confidence": 0.94,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "2 source-scoped fans explicitly co-endorse this pair; 7 observed fans endorse either performer. 0 opposing preference records. Provisional observed overlap.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_antoni-syrek-dabrowski__kacper-rucinski",
+      "pair": [
+        "antoni-syrek-dabrowski",
+        "kacper-rucinski"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b01c_003"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 1,
+      "independent_fan_count": 1,
+      "score": 0.166667,
+      "confidence": 0.84,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "1 source-scoped fans explicitly co-endorse this pair; 6 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_antoni-syrek-dabrowski__michal-kempa",
+      "pair": [
+        "antoni-syrek-dabrowski",
+        "michal-kempa"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [],
+      "contradictory_evidence_ids": [
+        "ev_b05_c_003"
+      ],
+      "independent_source_count": 0,
+      "independent_fan_count": 0,
+      "score": 0.0,
+      "confidence": 0,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "0 source-scoped fans explicitly co-endorse this pair; 5 observed fans endorse either performer. 1 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_antoni-syrek-dabrowski__michal-leja",
+      "pair": [
+        "antoni-syrek-dabrowski",
+        "michal-leja"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "accepted",
+      "support_evidence_ids": [
+        "ev_b01b_001",
+        "ev_b02a_003"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 2,
+      "independent_fan_count": 2,
+      "score": 0.4,
+      "confidence": 0.9,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "2 source-scoped fans explicitly co-endorse this pair; 5 observed fans endorse either performer. 0 opposing preference records. Provisional observed overlap.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_antoni-syrek-dabrowski__piotrek-szumowski",
+      "pair": [
+        "antoni-syrek-dabrowski",
+        "piotrek-szumowski"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "accepted",
+      "support_evidence_ids": [
+        "ev_b01b_001",
+        "ev_b02a_003",
+        "ev_b05_c_002",
+        "ev_b05_c_003"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 3,
+      "independent_fan_count": 4,
+      "score": 0.5,
+      "confidence": 0.9175,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "4 source-scoped fans explicitly co-endorse this pair; 8 observed fans endorse either performer. 0 opposing preference records. Provisional observed overlap.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_antoni-syrek-dabrowski__rafal-paczes",
+      "pair": [
+        "antoni-syrek-dabrowski",
+        "rafal-paczes"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [],
+      "contradictory_evidence_ids": [
+        "ev_b01b_001"
+      ],
+      "independent_source_count": 0,
+      "independent_fan_count": 0,
+      "score": 0.0,
+      "confidence": 0,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "0 source-scoped fans explicitly co-endorse this pair; 9 observed fans endorse either performer. 1 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_bartosz-zalewski__cezary-ponttefski",
+      "pair": [
+        "bartosz-zalewski",
+        "cezary-ponttefski"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b04_b_001"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 1,
+      "independent_fan_count": 1,
+      "score": 0.5,
+      "confidence": 0.98,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "1 source-scoped fans explicitly co-endorse this pair; 2 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_bartosz-zalewski__piotrek-szumowski",
+      "pair": [
+        "bartosz-zalewski",
+        "piotrek-szumowski"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b04_b_001"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 1,
+      "independent_fan_count": 1,
+      "score": 0.142857,
+      "confidence": 0.98,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "1 source-scoped fans explicitly co-endorse this pair; 7 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_cezary-jurkiewicz__daniel-midas",
+      "pair": [
+        "cezary-jurkiewicz",
+        "daniel-midas"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b01b_004"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 1,
+      "independent_fan_count": 1,
+      "score": 0.25,
+      "confidence": 0.84,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "1 source-scoped fans explicitly co-endorse this pair; 4 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_cezary-jurkiewicz__lukasz-lotek-lodkowski",
+      "pair": [
+        "cezary-jurkiewicz",
+        "lukasz-lotek-lodkowski"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b01b_004"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 1,
+      "independent_fan_count": 1,
+      "score": 0.166667,
+      "confidence": 0.84,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "1 source-scoped fans explicitly co-endorse this pair; 6 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_cezary-jurkiewicz__mateusz-socha",
+      "pair": [
+        "cezary-jurkiewicz",
+        "mateusz-socha"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "accepted",
+      "support_evidence_ids": [
+        "ev_b01b_004",
+        "ev_s06_001"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 2,
+      "independent_fan_count": 2,
+      "score": 0.4,
+      "confidence": 0.84,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "2 source-scoped fans explicitly co-endorse this pair; 5 observed fans endorse either performer. 0 opposing preference records. Provisional observed overlap.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_cezary-jurkiewicz__michal-kempa",
+      "pair": [
+        "cezary-jurkiewicz",
+        "michal-kempa"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [],
+      "contradictory_evidence_ids": [
+        "ev_b05_c_003"
+      ],
+      "independent_source_count": 0,
+      "independent_fan_count": 0,
+      "score": 0.0,
+      "confidence": 0,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "0 source-scoped fans explicitly co-endorse this pair; 4 observed fans endorse either performer. 1 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_cezary-jurkiewicz__piotr-zola-szulowski",
+      "pair": [
+        "cezary-jurkiewicz",
+        "piotr-zola-szulowski"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_s06_001"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 1,
+      "independent_fan_count": 1,
+      "score": 0.25,
+      "confidence": 0.84,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "1 source-scoped fans explicitly co-endorse this pair; 4 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_cezary-jurkiewicz__piotrek-szumowski",
+      "pair": [
+        "cezary-jurkiewicz",
+        "piotrek-szumowski"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "accepted",
+      "support_evidence_ids": [
+        "ev_b05_c_002",
+        "ev_b05_c_003"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 1,
+      "independent_fan_count": 2,
+      "score": 0.222222,
+      "confidence": 0.935,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "2 source-scoped fans explicitly co-endorse this pair; 9 observed fans endorse either performer. 0 opposing preference records. Provisional observed overlap.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_cezary-jurkiewicz__rafal-paczes",
+      "pair": [
+        "cezary-jurkiewicz",
+        "rafal-paczes"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_s06_001"
+      ],
+      "contradictory_evidence_ids": [
+        "ev_b01b_004"
+      ],
+      "independent_source_count": 1,
+      "independent_fan_count": 1,
+      "score": 0.142857,
+      "confidence": 0.84,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "1 source-scoped fans explicitly co-endorse this pair; 7 observed fans endorse either performer. 1 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_cezary-ponttefski__lukasz-kowalski",
+      "pair": [
+        "cezary-ponttefski",
+        "lukasz-kowalski"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b02a_002"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 1,
+      "independent_fan_count": 1,
+      "score": 0.5,
+      "confidence": 0.78,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "1 source-scoped fans explicitly co-endorse this pair; 2 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_cezary-ponttefski__piotrek-szumowski",
+      "pair": [
+        "cezary-ponttefski",
+        "piotrek-szumowski"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b04_b_001"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 1,
+      "independent_fan_count": 1,
+      "score": 0.125,
+      "confidence": 0.98,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "1 source-scoped fans explicitly co-endorse this pair; 8 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_daniel-midas__lukasz-lotek-lodkowski",
+      "pair": [
+        "daniel-midas",
+        "lukasz-lotek-lodkowski"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b01b_004"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 1,
+      "independent_fan_count": 1,
+      "score": 0.333333,
+      "confidence": 0.84,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "1 source-scoped fans explicitly co-endorse this pair; 3 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_daniel-midas__mateusz-socha",
+      "pair": [
+        "daniel-midas",
+        "mateusz-socha"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b01b_004"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 1,
+      "independent_fan_count": 1,
+      "score": 0.333333,
+      "confidence": 0.84,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "1 source-scoped fans explicitly co-endorse this pair; 3 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_daniel-midas__rafal-paczes",
+      "pair": [
+        "daniel-midas",
+        "rafal-paczes"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [],
+      "contradictory_evidence_ids": [
+        "ev_b01b_004"
+      ],
+      "independent_source_count": 0,
+      "independent_fan_count": 0,
+      "score": 0.0,
+      "confidence": 0,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "0 source-scoped fans explicitly co-endorse this pair; 5 observed fans endorse either performer. 1 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_kacper-rucinski__lukasz-lotek-lodkowski",
+      "pair": [
+        "kacper-rucinski",
+        "lukasz-lotek-lodkowski"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [],
+      "contradictory_evidence_ids": [
+        "ev_b03_a_001"
+      ],
+      "independent_source_count": 0,
+      "independent_fan_count": 0,
+      "score": 0.0,
+      "confidence": 0,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "0 source-scoped fans explicitly co-endorse this pair; 5 observed fans endorse either performer. 1 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_kacper-rucinski__rafal-paczes",
+      "pair": [
+        "kacper-rucinski",
+        "rafal-paczes"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [],
+      "contradictory_evidence_ids": [
+        "ev_b03_a_001"
+      ],
+      "independent_source_count": 0,
+      "independent_fan_count": 0,
+      "score": 0.0,
+      "confidence": 0,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "0 source-scoped fans explicitly co-endorse this pair; 6 observed fans endorse either performer. 1 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_kuba-wu__piotrek-szumowski",
+      "pair": [
+        "kuba-wu",
+        "piotrek-szumowski"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b05_a_001"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 1,
+      "independent_fan_count": 1,
+      "score": 0.142857,
+      "confidence": 0.94,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "1 source-scoped fans explicitly co-endorse this pair; 7 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_lukasz-lotek-lodkowski__mateusz-socha",
+      "pair": [
+        "lukasz-lotek-lodkowski",
+        "mateusz-socha"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b01b_004"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 1,
+      "independent_fan_count": 1,
+      "score": 0.2,
+      "confidence": 0.84,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "1 source-scoped fans explicitly co-endorse this pair; 5 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_lukasz-lotek-lodkowski__rafal-paczes",
+      "pair": [
+        "lukasz-lotek-lodkowski",
+        "rafal-paczes"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b03_a_001"
+      ],
+      "contradictory_evidence_ids": [
+        "ev_b01b_004"
+      ],
+      "independent_source_count": 1,
+      "independent_fan_count": 1,
+      "score": 0.166667,
+      "confidence": 0.98,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "1 source-scoped fans explicitly co-endorse this pair; 6 observed fans endorse either performer. 1 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_marlena-mysza__piotrek-szumowski",
+      "pair": [
+        "marlena-mysza",
+        "piotrek-szumowski"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b05_c_001"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 1,
+      "independent_fan_count": 1,
+      "score": 0.142857,
+      "confidence": 0.94,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "1 source-scoped fans explicitly co-endorse this pair; 7 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_mateusz-socha__piotr-zola-szulowski",
+      "pair": [
+        "mateusz-socha",
+        "piotr-zola-szulowski"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_s06_001"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 1,
+      "independent_fan_count": 1,
+      "score": 0.333333,
+      "confidence": 0.84,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "1 source-scoped fans explicitly co-endorse this pair; 3 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_mateusz-socha__rafal-paczes",
+      "pair": [
+        "mateusz-socha",
+        "rafal-paczes"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b01b_003",
+        "ev_s06_001"
+      ],
+      "contradictory_evidence_ids": [
+        "ev_b01b_004"
+      ],
+      "independent_source_count": 2,
+      "independent_fan_count": 2,
+      "score": 0.4,
+      "confidence": 0.84,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "2 source-scoped fans explicitly co-endorse this pair; 5 observed fans endorse either performer. 1 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_mateusz-socha__wiolka-walaszczyk",
+      "pair": [
+        "mateusz-socha",
+        "wiolka-walaszczyk"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [],
+      "contradictory_evidence_ids": [
+        "ev_b01b_002"
+      ],
+      "independent_source_count": 0,
+      "independent_fan_count": 0,
+      "score": 0.0,
+      "confidence": 0,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "0 source-scoped fans explicitly co-endorse this pair; 5 observed fans endorse either performer. 1 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_michal-kempa__piotrek-szumowski",
+      "pair": [
+        "michal-kempa",
+        "piotrek-szumowski"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [],
+      "contradictory_evidence_ids": [
+        "ev_b05_c_003"
+      ],
+      "independent_source_count": 0,
+      "independent_fan_count": 0,
+      "score": 0.0,
+      "confidence": 0,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "0 source-scoped fans explicitly co-endorse this pair; 7 observed fans endorse either performer. 1 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_michal-leja__piotrek-szumowski",
+      "pair": [
+        "michal-leja",
+        "piotrek-szumowski"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "accepted",
+      "support_evidence_ids": [
+        "ev_b01b_001",
+        "ev_b02a_003"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 2,
+      "independent_fan_count": 2,
+      "score": 0.285714,
+      "confidence": 0.9,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "2 source-scoped fans explicitly co-endorse this pair; 7 observed fans endorse either performer. 0 opposing preference records. Provisional observed overlap.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_michal-leja__rafal-paczes",
+      "pair": [
+        "michal-leja",
+        "rafal-paczes"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [],
+      "contradictory_evidence_ids": [
+        "ev_b01b_001"
+      ],
+      "independent_source_count": 0,
+      "independent_fan_count": 0,
+      "score": 0.0,
+      "confidence": 0,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "0 source-scoped fans explicitly co-endorse this pair; 6 observed fans endorse either performer. 1 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_mieszko-minkiewicz__rafal-paczes",
+      "pair": [
+        "mieszko-minkiewicz",
+        "rafal-paczes"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b03_c_001"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 1,
+      "independent_fan_count": 1,
+      "score": 0.2,
+      "confidence": 0.98,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "1 source-scoped fans explicitly co-endorse this pair; 5 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_mieszko-minkiewicz__wiolka-walaszczyk",
+      "pair": [
+        "mieszko-minkiewicz",
+        "wiolka-walaszczyk"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b05_b_002"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 1,
+      "independent_fan_count": 1,
+      "score": 0.333333,
+      "confidence": 0.94,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "1 source-scoped fans explicitly co-endorse this pair; 3 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_piotr-zola-szulowski__rafal-paczes",
+      "pair": [
+        "piotr-zola-szulowski",
+        "rafal-paczes"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_s06_001"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 1,
+      "independent_fan_count": 1,
+      "score": 0.25,
+      "confidence": 0.84,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "1 source-scoped fans explicitly co-endorse this pair; 4 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    },
+    {
+      "schema_version": 1,
+      "id": "rel_piotrek-szumowski__rafal-paczes",
+      "pair": [
+        "piotrek-szumowski",
+        "rafal-paczes"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [],
+      "contradictory_evidence_ids": [
+        "ev_b01b_001"
+      ],
+      "independent_source_count": 0,
+      "independent_fan_count": 0,
+      "score": 0.0,
+      "confidence": 0,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "0 source-scoped fans explicitly co-endorse this pair; 11 observed fans endorse either performer. 1 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T10:38:40Z"
+    }
+  ],
+  "deferred_evidence": [
+    {
+      "id": "ev_b01a_003",
+      "reason": "review is not accepted"
+    },
+    {
+      "id": "ev_b01b_001",
+      "performer_id": null,
+      "reason": "mention identity, preference or confidence unresolved"
+    },
+    {
+      "id": "ev_b01b_001",
+      "performer_id": "michal-kutek",
+      "reason": "mention identity, preference or confidence unresolved"
+    },
+    {
+      "id": "ev_b01b_002",
+      "performer_id": "lukasz-lotek-lodkowski",
+      "reason": "mention identity, preference or confidence unresolved"
+    },
+    {
+      "id": "ev_b01b_005",
+      "performer_id": "mateusz-socha",
+      "reason": "mention identity, preference or confidence unresolved"
+    },
+    {
+      "id": "ev_b01b_005",
+      "performer_id": "rafal-paczes",
+      "reason": "mention identity, preference or confidence unresolved"
+    },
+    {
+      "id": "ev_b01b_006",
+      "performer_id": null,
+      "reason": "mention identity, preference or confidence unresolved"
+    },
+    {
+      "id": "ev_b01b_007",
+      "reason": "no source-scoped fan key"
+    },
+    {
+      "id": "ev_b01c_002",
+      "performer_id": "karol-modzelewski",
+      "reason": "mention identity, preference or confidence unresolved"
+    },
+    {
+      "id": "ev_b02a_004",
+      "performer_id": null,
+      "reason": "mention identity, preference or confidence unresolved"
+    },
+    {
+      "id": "ev_b03_b_001",
+      "reason": "no source-scoped fan key"
+    },
+    {
+      "id": "ev_b05_b_003",
+      "reason": "review is not accepted"
+    }
+  ],
+  "ignored_runs": [],
+  "evidence_sources": {
+    "ev_b01a_001": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+    "ev_b01a_003": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+    "ev_b01a_004": "https://www.reddit.com/r/poland/comments/1egewxi/polish_standup_comedy/",
+    "ev_b01b_001": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+    "ev_b01b_002": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+    "ev_b01b_003": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+    "ev_b01b_004": "https://wykop.pl/link/7849575/prokuratoura-czyli-jak-rafal-paczes-sprzedal-nam-bilety-do-rynsztoku",
+    "ev_b01b_005": "https://wykop.pl/link/7849575/prokuratoura-czyli-jak-rafal-paczes-sprzedal-nam-bilety-do-rynsztoku",
+    "ev_b01b_006": "https://www.reddit.com/r/Polska/comments/105mykf/stand_up_rekomendacje/",
+    "ev_b01b_007": "https://www.reddit.com/r/Polska/comments/105mykf/stand_up_rekomendacje/",
+    "ev_b01c_001": "https://www.filmweb.pl/person/Abelard%2BGiza-286174/discussion/Jakie%2Bs%C4%85%2Bwasze%2Bulubione%2Bkabarety-1936249",
+    "ev_b01c_002": "https://www.reddit.com/r/Polska/comments/17ukdey/polski_stand_up_jest_tylko_jedn%C4%85_p%C3%B3%C5%82k%C4%99_wy%C5%BCej_od/",
+    "ev_b01c_003": "https://www.reddit.com/r/Polska/comments/17ukdey/polski_stand_up_jest_tylko_jedn%C4%85_p%C3%B3%C5%82k%C4%99_wy%C5%BCej_od/",
+    "ev_b01c_004": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+    "ev_b01c_005": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+    "ev_s06_001": "https://www.reddit.com/r/poland/comments/15hf8l2/comment/jupxhf1/",
+    "ev_b02a_001": "https://www.reddit.com/r/poland/comments/1egewxi/polish_standup_comedy/",
+    "ev_b02a_002": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/comment/onktt8p/",
+    "ev_b02a_003": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/comment/onkskt3/",
+    "ev_b02a_004": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/comment/onlip1v/",
+    "ev_b03_a_001": "https://swiatpilki.com/viewtopic.php?p=1192622",
+    "ev_b03_a_002": "https://swiatpilki.com/viewtopic.php?p=1192638",
+    "ev_b03_b_001": "https://www.reddit.com/r/Polska/comments/105mykf/comment/j3cgbzg/",
+    "ev_b03_c_001": "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169",
+    "ev_b04_b_001": "https://www.reddit.com/r/Polska/comments/105mykf/stand_up_rekomendacje/",
+    "ev_b04_c_001": "https://www.kupbilecik.pl/pl/comments/9245/stand-up-adam-sobaniec-i-michal-kutek",
+    "ev_b05_a_001": "https://www.kupbilecik.pl/pl/comments/5667/stand-up-piotrek-szumowski?page_comments=7",
+    "ev_b05_b_001": "https://nastroik.pl/temat/wiolka-walaszczyk/8055/",
+    "ev_b05_b_002": "https://www.kupbilecik.pl/pl/event/26442/plock/stand-up-plock",
+    "ev_b05_b_003": "https://www.kupbilecik.pl/pl/event/203718/swiecie/stand-up-blazej-krajewski",
+    "ev_b05_c_001": "https://www.kupbilecik.pl/en/comments/9731/stand-up-marlena-mysza",
+    "ev_b05_c_002": "https://www.kupbilecik.pl/en/comments/2671/wielka-trasa-stand-up-polska?page_comments=23",
+    "ev_b05_c_003": "https://www.kupbilecik.pl/en/comments/2671/wielka-trasa-stand-up-polska?page_comments=23"
+  }
+}

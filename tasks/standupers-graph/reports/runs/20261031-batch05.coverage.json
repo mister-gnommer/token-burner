@@ -1,0 +1,166 @@
+{
+  "run_id": "20261031-batch05",
+  "updated_at": "2026-10-31T10:40:03Z",
+  "scope": "focal ranks 41–50 only; incidental neighbors do not process another batch",
+  "coverage": [
+    {
+      "rank": 41,
+      "performer_id": "ryszard-mazur",
+      "name": "Ryszard Mazur",
+      "searched": true,
+      "new_candidates": 0,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 42,
+      "performer_id": "wojtek-pieta",
+      "name": "Wojtek Pięta",
+      "searched": true,
+      "new_candidates": 0,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 43,
+      "performer_id": "piotrek-szumowski",
+      "name": "Piotrek Szumowski",
+      "searched": true,
+      "new_candidates": 4,
+      "accepted_mention_records": 4,
+      "cumulative_scored_fans": 7
+    },
+    {
+      "rank": 44,
+      "performer_id": "michal-skubida",
+      "name": "Michał Skubida",
+      "searched": true,
+      "new_candidates": 0,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 45,
+      "performer_id": "wiolka-walaszczyk",
+      "name": "Wiolka Walaszczyk",
+      "searched": true,
+      "new_candidates": 2,
+      "accepted_mention_records": 1,
+      "cumulative_scored_fans": 2
+    },
+    {
+      "rank": 46,
+      "performer_id": "patryk-gosinski",
+      "name": "Patryk Gosiński",
+      "searched": true,
+      "new_candidates": 1,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 47,
+      "performer_id": "ewa-stasiewicz",
+      "name": "Ewa Stasiewicz",
+      "searched": true,
+      "new_candidates": 0,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 48,
+      "performer_id": "marlena-mysza",
+      "name": "Marlena Mysza",
+      "searched": true,
+      "new_candidates": 1,
+      "accepted_mention_records": 1,
+      "cumulative_scored_fans": 1
+    },
+    {
+      "rank": 49,
+      "performer_id": "piotr-splin",
+      "name": "Piotr Splin",
+      "searched": true,
+      "new_candidates": 0,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 50,
+      "performer_id": "cezary-jurkiewicz",
+      "name": "Cezary Jurkiewicz",
+      "searched": true,
+      "new_candidates": 2,
+      "accepted_mention_records": 2,
+      "cumulative_scored_fans": 4
+    }
+  ],
+  "raw_candidates": 7,
+  "new_candidates": 7,
+  "new_reviewed_records": 7,
+  "accepted_representations": 6,
+  "uncertain_representations": 1,
+  "rejected_representations": 0,
+  "cumulative_records": 33,
+  "cumulative_relations": 45,
+  "accepted_pairs": 8,
+  "accepted_pairs_added": 2,
+  "accepted_pairs_downgraded": 0,
+  "added_pair_ids": [
+    "antoni-syrek-dabrowski__cezary-jurkiewicz",
+    "cezary-jurkiewicz__piotrek-szumowski"
+  ],
+  "downgraded_pair_ids": [],
+  "upgraded_pair_ids": [],
+  "new_relation_candidate_count": 8,
+  "provisional_candidates": 22,
+  "provisional_candidates_delta": 3,
+  "contested_or_opposing_only_candidates": 15,
+  "contested_or_opposing_only_delta": 3,
+  "visible_nodes": 51,
+  "drawn_solid": 8,
+  "drawn_provisional": 9,
+  "drawn_dashed": 9,
+  "eligible_provisional_not_drawn_due_degree_cap": 13,
+  "visible_photos": 51,
+  "visible_placeholders": 0,
+  "worker_reported_collection_usage": {
+    "queries": 80,
+    "planned_max_queries": 72,
+    "query_overruns": {
+      "A": 4,
+      "B": 4
+    },
+    "source_open_navigation_attempts": 36,
+    "additional_same_page_reads": 3,
+    "by_collector": {
+      "A": {
+        "queries": 28,
+        "source_attempts": 9
+      },
+      "B": {
+        "queries": 28,
+        "source_attempts": 22
+      },
+      "C": {
+        "queries": 24,
+        "source_attempts": 5,
+        "same_page_reads": 3
+      }
+    },
+    "access_gaps": [
+      "No qualifying verified same-author fan statement for Ryszard Mazur, Wojtek Pięta, Michał Skubida, Ewa Stasiewicz, or Piotr Splin within the bounded searches.",
+      "B003 Elwira excerpt remained unlocated on the supplied event page and two Legnica follow-up sources; it remains uncertain and does not score.",
+      "Several pages missed the web cache and required browser verification. No further research was done by the integrator."
+    ]
+  },
+  "limitations": [
+    "A001 review publication date is 2025-05-16; the associated Poznań event was 2025-05-14. The earlier date error and first review are preserved in audit snapshots.",
+    "B001 criticism targets the omitted Wiolka video subject by context; only the literal Giza mention and praise remain as a scored mention.",
+    "C001 retains the complete mixed review: humorous 200%/150% evaluations and a body-focused insult; do not flatten it into uncomplicated praise.",
+    "C002 and C003 evaluations of Cezary Jurkiewicz and Piotrek Szumowski are scoped to their hosting or specific historical events. C003 also criticizes the short mixed-format set; Kutek is mentioned as interesting, not preferred.",
+    "Author first names (including Kacper, Amani, Krzysztof, Elwira, Robert, Dominika, Maciej) are source-local labels, not verified unique-person identities.",
+    "13 of 22 eligible one-fan provisional candidates are not drawn because the D2 renderer caps node degree at 3; absent links do not imply dislike.",
+    "Measured token or monetary cost is unavailable; no estimate invented."
+  ],
+  "drawn_connection_count": 17
+}

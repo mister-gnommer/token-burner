@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-31",
+  "run_id": "20261031-batch06",
+  "status": "snapshot_completed_with_coverage_gaps",
+  "diagnosis": {
+    "last_completed_batch": 5,
+    "last_progress_at": "2026-10-31T11:42:44Z",
+    "first_user_stall_report_at": "2026-10-31T12:27:46Z",
+    "collector_a": "completed",
+    "collector_b": "interrupted;3 partial solo candidates,no collection ledger",
+    "collector_c": "interrupted;1 candidate and partial ledger saved",
+    "host_oom": "user-reported;cannot verify killed host processes from sandbox",
+    "subsequent_parent_runs": "33 and34 failed before provider startup",
+    "current_memory": "8.4GiB available,0 swap used at initial check;process listing is sandbox-limited"
+  },
+  "checks": {
+    "json_files_parsed": 126,
+    "json_parse_errors": 0,
+    "tests_passed": 20,
+    "batch5_recomputed": true,
+    "batch5_records": 33,
+    "batch5_relations": 45,
+    "batch5_accepted": 8,
+    "batch6_raw_candidates": 5,
+    "batch6_schema_validation": "passed"
+  },
+  "recovery_policy": "One low-tier worker at a time;preserve all source files;6-minute collection task cap;no B search budget reset;then separate extraction,independent verification,integration and graph",
+  "next_steps": [
+    "Pause for user command.",
+    "Recommend explicitly renewed bounded catch-up allowance for ranks55–57 before batch7."
+  ],
+  "git": "No staging,commit or push authorized",
+  "completed_tasks": [
+    {
+      "taskId": "node:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch06-recovery-collection-20261031-r1",
+      "childThreadId": "thread:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch06-recovery-collection-20261031-r1",
+      "childRunId": "run:thread:thread%3Adelegated-task%3Acommand%253Amcp%253Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%253Adelegate-task%253Abatch06-recovery-collection-20261031-r1:ordinal:1",
+      "childNodeId": "node:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch06-recovery-collection-20261031-r1",
+      "status": "completed",
+      "workState": "working",
+      "hasPendingChildRuns": false,
+      "latestTerminalRunId": null,
+      "latestTerminalStatus": null,
+      "latestTerminalSummary": null,
+      "latestTerminalResultContextTransferId": null,
+      "providerInstanceId": "codex",
+      "model": "gpt-6-luna",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "medium"
+        },
+        {
+          "id": "serviceTier",
+          "value": "default"
+        }
+      ],
+      "summary": null,
+      "resultContextTransferId": null,
+      "hasPendingQuestion": false,
+      "pendingApproval": null,
+      "waitTimedOut": false
+    },
+    {
+      "taskId": "node:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch06-recovery-extraction-20261031-r1",
+      "childThreadId": "thread:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch06-recovery-extraction-20261031-r1",
+      "childRunId": "run:thread:thread%3Adelegated-task%3Acommand%253Amcp%253Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%253Adelegate-task%253Abatch06-recovery-extraction-20261031-r1:ordinal:1",
+      "childNodeId": "node:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch06-recovery-extraction-20261031-r1",
+      "status": "completed",
+      "workState": "working",
+      "hasPendingChildRuns": false,
+      "latestTerminalRunId": null,
+      "latestTerminalStatus": null,
+      "latestTerminalSummary": null,
+      "latestTerminalResultContextTransferId": null,
+      "providerInstanceId": "codex",
+      "model": "gpt-6-luna",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "medium"
+        },
+        {
+          "id": "serviceTier",
+          "value": "default"
+        }
+      ],
+      "summary": null,
+      "resultContextTransferId": null,
+      "hasPendingQuestion": false,
+      "pendingApproval": null,
+      "waitTimedOut": false
+    },
+    {
+      "taskId": "node:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch06-recovery-verification-20261031-r1",
+      "childThreadId": "thread:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch06-recovery-verification-20261031-r1",
+      "childRunId": "run:thread:thread%3Adelegated-task%3Acommand%253Amcp%253Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%253Adelegate-task%253Abatch06-recovery-verification-20261031-r1:ordinal:1",
+      "childNodeId": "node:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch06-recovery-verification-20261031-r1",
+      "status": "completed",
+      "workState": "working",
+      "hasPendingChildRuns": false,
+      "latestTerminalRunId": null,
+      "latestTerminalStatus": null,
+      "latestTerminalSummary": null,
+      "latestTerminalResultContextTransferId": null,
+      "providerInstanceId": "codex",
+      "model": "gpt-6-luna",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "medium"
+        },
+        {
+          "id": "serviceTier",
+          "value": "default"
+        }
+      ],
+      "summary": null,
+      "resultContextTransferId": null,
+      "hasPendingQuestion": false,
+      "pendingApproval": null,
+      "waitTimedOut": false
+    }
+  ],
+  "collection_result": "No new verified sources;5canonical candidates,3expected solo skips; B incomplete/unknown usage.",
+  "active_task": null,
+  "updated_at": "2026-10-31T14:11:21Z"
+}

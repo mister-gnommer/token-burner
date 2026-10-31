@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "run_id": "20261031-batch04",
+  "stage": "batch",
+  "batch": 4,
+  "status": "completed",
+  "performer_ids": [
+    "marcin-zbigniew-wojciech",
+    "czarek-sikora",
+    "lukasz-kowalski",
+    "tomasz-machnicki",
+    "arkadiusz-jaksa-jakszewicz",
+    "katarzyna-piasecka",
+    "bartosz-zalewski",
+    "michal-kutek",
+    "tomek-kolecki",
+    "bartosz-gajda"
+  ],
+  "paths": {
+    "source_candidates": "evidence/batch-04/source-candidates.jsonl",
+    "evidence_unreviewed": "evidence/batch-04/evidence.unreviewed.jsonl",
+    "evidence": "evidence/batch-04/evidence.jsonl",
+    "verification_report": "reports/runs/20261031-batch04.verification.json"
+  },
+  "workers": {
+    "collector": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "collect-fan-evidence-v3"
+    },
+    "extractor": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1"
+    },
+    "verifier": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "verify-evidence-v3"
+    }
+  },
+  "counts": {
+    "source_candidates": 2,
+    "extracted": 2,
+    "accepted": 2,
+    "uncertain": 0,
+    "rejected": 0
+  },
+  "surprises": [
+    "Three snippet-only leads initially quarantined; direct T3 preview later verified their text. One recovered as eligible, two excluded for unresolved identities.",
+    "Most focal performers have no qualifying new statement in this bounded search."
+  ],
+  "notes": "Explicitly authorized batch4 only; three low-tier collectors plus separate extraction and verification. Reuse prior production evidence without re-extraction.",
+  "created_at": "2026-10-31T09:50:39Z",
+  "updated_at": "2026-10-31T10:03:25Z"
+}

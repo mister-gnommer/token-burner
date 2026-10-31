@@ -1,0 +1,170 @@
+{
+  "run_id": "20261031-batch06",
+  "updated_at": "2026-10-31T14:10:26Z",
+  "snapshot_status": "reviewed and rendered; research gaps remain",
+  "coverage": [
+    {
+      "rank": 51,
+      "performer_id": "ewa-blachnio",
+      "name": "Ewa Błachnio",
+      "searched": true,
+      "research_complete": true,
+      "coverage_note": "Bounded searches completed; no evidence is not dislike.",
+      "new_candidates": 0,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 52,
+      "performer_id": "pawel-konkiel",
+      "name": "Paweł Konkiel",
+      "searched": true,
+      "research_complete": true,
+      "coverage_note": "Bounded searches completed; no evidence is not dislike.",
+      "new_candidates": 0,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 53,
+      "performer_id": "karolina-panczyk",
+      "name": "Karolina Pańczyk",
+      "searched": true,
+      "research_complete": true,
+      "coverage_note": "Bounded searches completed; no evidence is not dislike.",
+      "new_candidates": 1,
+      "accepted_mention_records": 1,
+      "cumulative_scored_fans": 1
+    },
+    {
+      "rank": 54,
+      "performer_id": "jarek-legonkoff",
+      "name": "Jarek Legońkoff",
+      "searched": true,
+      "research_complete": true,
+      "coverage_note": "Bounded searches completed; no evidence is not dislike.",
+      "new_candidates": 0,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 55,
+      "performer_id": "wojciech-termos-tremiszewski",
+      "name": "Wojciech Termos Tremiszewski",
+      "searched": null,
+      "research_complete": false,
+      "coverage_note": "Interrupted; original search usage unknown; preserved solo sources audited.",
+      "new_candidates": 0,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 56,
+      "performer_id": "pawel-bakteria",
+      "name": "Paweł Bakteria",
+      "searched": null,
+      "research_complete": false,
+      "coverage_note": "Interrupted; original search usage unknown; preserved solo sources audited.",
+      "new_candidates": 0,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 57,
+      "performer_id": "kuba-dabrowski",
+      "name": "Kuba Dąbrowski",
+      "searched": null,
+      "research_complete": false,
+      "coverage_note": "Interrupted; original search usage unknown; preserved solo sources audited.",
+      "new_candidates": 3,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 58,
+      "performer_id": "filip-brymora",
+      "name": "Filip Brymora",
+      "searched": true,
+      "research_complete": true,
+      "coverage_note": "Bounded searches completed; no evidence is not dislike.",
+      "new_candidates": 0,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 59,
+      "performer_id": "marcin-chmiel",
+      "name": "Marcin Chmiel",
+      "searched": true,
+      "research_complete": true,
+      "coverage_note": "Bounded searches completed; no evidence is not dislike.",
+      "new_candidates": 1,
+      "accepted_mention_records": 1,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 60,
+      "performer_id": "bartosz-strusinski",
+      "name": "Bartosz Strusiński",
+      "searched": true,
+      "research_complete": true,
+      "coverage_note": "Bounded searches completed; no evidence is not dislike.",
+      "new_candidates": 0,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    }
+  ],
+  "raw_candidates": 5,
+  "canonical_candidates": 5,
+  "new_reviewed_records": 2,
+  "accepted_representations": 2,
+  "uncertain_representations": 0,
+  "rejected_representations": 0,
+  "skipped": 3,
+  "cumulative_records": 35,
+  "cumulative_relations": 46,
+  "accepted_pairs": 8,
+  "accepted_pairs_added": 0,
+  "accepted_pairs_downgraded": 0,
+  "provisional_candidates": 23,
+  "contested_or_opposing_only_candidates": 15,
+  "visible_nodes": 61,
+  "drawn_solid": 8,
+  "drawn_dashed": 9,
+  "eligible_provisional_not_drawn_due_degree_cap": 14,
+  "visible_photos": 61,
+  "visible_placeholders": 0,
+  "new_pair": "cezary-jurkiewicz__karolina-panczyk",
+  "new_pair_displayed": false,
+  "performers_completed": 57,
+  "performers_pending": 43,
+  "worker_reported_collection_usage": {
+    "known_queries": 27,
+    "known_page_attempts": 23,
+    "unknown_original_collector_b_usage": true,
+    "by_collector": {
+      "A": {
+        "queries": 16,
+        "page_attempts": 9
+      },
+      "B": {
+        "queries": null,
+        "page_attempts": null,
+        "recovery_queries": 0,
+        "recovery_page_attempts": 0
+      },
+      "C": {
+        "queries": 11,
+        "page_attempts": 14
+      }
+    }
+  },
+  "limitations": [
+    "Ranks55–57 research incomplete; original B usage unknown, no fresh allowance inferred.",
+    "C recommendation list does not establish personal liking or score fan links.",
+    "Two C names use typo-based identity resolutions; raw spellings retained, no verified aliases asserted.",
+    "First-name author labels are source-scoped and not proven unique people.",
+    "Layout distance has no similarity meaning; displayed degree cap hides14eligible provisional links.",
+    "Host memory-kill cause not verified; recovery roles ran sequentially."
+  ]
+}

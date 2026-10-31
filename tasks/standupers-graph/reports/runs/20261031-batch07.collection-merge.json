@@ -1,0 +1,42 @@
+{
+  "run_id": "20261031-batch07",
+  "raw_candidates": 7,
+  "canonical_candidates": 7,
+  "duplicates": [],
+  "normalizations": [
+    "Canonical site hostnames (removed www prefix),source-local author keys. Original slices preserved."
+  ],
+  "research_usage": {
+    "actual_queries": 61,
+    "planned_max_queries": 72,
+    "queries_by_collector": {
+      "A": 15,
+      "B": 28,
+      "C": 18
+    },
+    "query_overruns": {
+      "B": 4
+    },
+    "page_attempts": 21,
+    "page_attempts_by_collector": {
+      "A": 5,
+      "B": 10,
+      "C": 6
+    }
+  },
+  "expected_solo_skips": [
+    "src_b07b_001",
+    "src_b07b_002",
+    "src_b07b_003",
+    "src_b07b_006"
+  ],
+  "coverage_gaps": [
+    "A complete-source checks failed;do not interpret0candidates as no fan relation.",
+    "B Damian sources unverified;Igor solo sources do not establish pair evidence.",
+    "C comments pagination stale;event-specific source used."
+  ],
+  "parent_interventions": [
+    "Moved misplaced B ledger to assigned taskdir without editing contents.",
+    "Original C status partial describes bounded collection,not interrupted process;all3focals searched and reported."
+  ]
+}

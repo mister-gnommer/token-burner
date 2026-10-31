@@ -1,0 +1,92 @@
+{
+  "Surprises": [
+    "B005 identity confidence 0.82 exceeded the extraction prompt’s <0.75 threshold for unresolved identities. Reduced the Cezary typo mapping to 0.72 and explicitly kept it tentative; no alias is asserted.",
+    "C002 duo chemistry and conversational-style praise is an explicit positive joint evaluation in a source naming the duo. It supports event-level co-endorsement, while general preference remains unknown.",
+    "Collection B exceeded its stated query cap by four searches. This is recorded as a collection-process risk; it does not invalidate the three stored excerpts or justify further collection."
+  ],
+  "run_id": "20261031-batch07",
+  "stage": "verification",
+  "provider": "codex",
+  "model": "gpt-6-luna",
+  "prompt_version": "verify-evidence-v3",
+  "input": "evidence/batch-07/evidence.unreviewed.jsonl",
+  "source_candidates": "evidence/batch-07/source-candidates.jsonl",
+  "output": "evidence/batch-07/evidence.jsonl",
+  "schema": "data/schemas/evidence-v3.schema.json",
+  "counts": {
+    "candidates": 7,
+    "records": 3,
+    "accepted": 3,
+    "uncertain": 0,
+    "rejected": 0,
+    "skipped": 4,
+    "coverage": 7
+  },
+  "source_checks": {
+    "candidate_source_metadata_excerpt_language_context_equal": true,
+    "author_keys_match_candidates": true,
+    "frozen_ids_checked": true,
+    "surface_forms_verbatim": true,
+    "known_preference_quotes_verbatim_and_author_attributed": true,
+    "extraction_provenance_preserved": true
+  },
+  "records": [
+    {
+      "candidate_id": "src_b07c_001",
+      "evidence_id": "ev_b07_c_001",
+      "status": "accepted",
+      "corrections": [],
+      "decision": "Two clear author-authored absolute praise clauses support same_user_coendorsement. Keep praise event-scoped; preference quotes are exact excerpt substrings."
+    },
+    {
+      "candidate_id": "src_b07c_002",
+      "evidence_id": "ev_b07_c_002",
+      "status": "accepted",
+      "corrections": [],
+      "decision": "Duo chemistry/conversational-style clause explicitly praises Bartosz and Jasiek together. This is an event-level co-endorsement; do not infer general preference. Marek/Adam remain unresolved mentions and are not treated as endorsed frozen performers."
+    },
+    {
+      "candidate_id": "src_b07b_005",
+      "evidence_id": "ev_b07_b_005",
+      "status": "accepted",
+      "corrections": [
+        {
+          "field": "mentions[0].confidence",
+          "from": 0.82,
+          "to": 0.72,
+          "reason": "Unverified typo resolution must remain below .75 per extraction prompt."
+        }
+      ],
+      "decision": "Genre-suitability recommendation, not personal favorites. Keep all preferences unknown. Preserve surface “Cezary Ponteffski”; tentative typo resolution to frozen Cezary Ponttefski, not verified alias."
+    }
+  ],
+  "skips_audit": [
+    {
+      "candidate_id": "src_b07b_001",
+      "decision": "skip confirmed",
+      "reason": "Solo Igor Kwiatkowski event praise/recommendation; no second evaluated frozen performer."
+    },
+    {
+      "candidate_id": "src_b07b_002",
+      "decision": "skip confirmed",
+      "reason": "Solo Igor Kwiatkowski praise; no second evaluated frozen performer."
+    },
+    {
+      "candidate_id": "src_b07b_003",
+      "decision": "skip confirmed",
+      "reason": "Only wife’s preference for Igor is stated; not author preference and no second performer."
+    },
+    {
+      "candidate_id": "src_b07b_006",
+      "decision": "skip confirmed",
+      "reason": "Solo Igor review. Michael Jackson is an imitation reference outside the frozen performer population, not an evaluated co-performer."
+    }
+  ],
+  "risks_and_coverage_gaps": [
+    "Four solo reviews provide no pair-level evidence; their omission is correct and must not be read as negative preference.",
+    "C002 first-name references Marek and Adam cannot be resolved from stored evidence; their positive event remarks are preserved only as null-ID mentions.",
+    "B005 typo mapping remains a judgment call with confidence 0.72; downstream identity-sensitive use should honor that uncertainty.",
+    "Collector B exceeded its 24-query allowance (28 used); no new collection or source lookup was performed during verification."
+  ],
+  "notes": "All three stored records match their canonical source candidates for site, URL, retrieved/published timestamps, source-local author key, excerpt, language and context. Extraction provenance remains codex/gpt-6-luna, extract-evidence-v3+favorite-reply-context-v1+batch-run-v1, run 20261031-batch07. Only the authorized evidence.jsonl and verification report are written."
+}

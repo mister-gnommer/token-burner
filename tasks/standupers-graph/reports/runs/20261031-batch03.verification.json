@@ -1,0 +1,104 @@
+{
+  "batch": "batch-03",
+  "run_id": "20261031-batch03",
+  "reviewer": "codex/gpt-6-luna",
+  "status": "verified",
+  "Surprises": [
+    "Tomusmc’s enthusiastic absolute evaluation applies to Giza and Ruciński together in the improv pair. It supports a positive preference for each within that joint performance only; it does not establish solo, current, or general career preference.",
+    "JohnDoe666’s complete GRYOnline post includes later clauses: popularity is explicitly attached to the number-one claim for Pacześ; Lotek and Giza are described as lighter and popular; only Pacześ and Mieszko receive explicit personal liking.",
+    "The Reddit list reply and its parent are both marked deleted. The respondent offers recommendations; neither the deleted parent’s taste nor personal preferences are attributed to the respondent."
+  ],
+  "counts": {
+    "input_records": 4,
+    "output_records": 4,
+    "accepted": 4,
+    "uncertain": 0,
+    "rejected": 0,
+    "skips": 0,
+    "evidence_classes": {
+      "same_user_coendorsement": 3,
+      "fan_recommendation": 1,
+      "fan_comparison": 0,
+      "same_user_rating_overlap": 0,
+      "style_similarity": 0
+    },
+    "mentions": 14,
+    "positive_preferences": 6,
+    "negative_preferences": 2,
+    "unknown_preferences": 6,
+    "unresolved_mentions": 0
+  },
+  "per_record": [
+    {
+      "id": "ev_b03_a_001",
+      "candidate_id": "src_b03a_001",
+      "status": "accepted",
+      "issues_or_corrections": [
+        "Verified full post and author masacra, 2018-02-07, via thread rendering. Explicit personal dislike of Abelard and Kacper; explicit positive preference for Pacześ and Lotek. No field correction required."
+      ]
+    },
+    {
+      "id": "ev_b03_a_002",
+      "candidate_id": "src_b03a_002",
+      "status": "accepted",
+      "issues_or_corrections": [
+        "Corrected preference from unknown to positive for both Giza and Ruciński, using the shared verbatim absolute praise of their joint performance as preference_quote. The praise is explicitly scoped to their pairing at improv, not solo/current/general work. The event-level “Bardzo fajna sprawa” is not used as an individual preference quote.",
+        "Initial review marked this record uncertain because its URL disagreed with collection report post ID 1192678. Collector A’s updated report confirms the full-thread displayed permalink target is post 1192638 and corrects the earlier report typo. Candidate URL is now verified; the source metadata remains unchanged."
+      ]
+    },
+    {
+      "id": "ev_b03_b_001",
+      "candidate_id": "src_b03b_001",
+      "status": "accepted",
+      "issues_or_corrections": [
+        "Full Reddit thread confirms the respondent author is deleted and the prompt is a recommendation request. Retained fan_recommendation; personal preference unknown. No field correction required."
+      ]
+    },
+    {
+      "id": "ev_b03_c_001",
+      "candidate_id": "src_b03c_001",
+      "status": "accepted",
+      "issues_or_corrections": [
+        "Full post confirms JohnDoe666, complete text, date 2023-01-14. Retained positive personal preferences only for Pacześ and Mieszko; Lotek and Giza remain neutral/unknown because popularity and lightness are descriptive. Replies by other users do not alter attribution."
+      ]
+    }
+  ],
+  "source_audit": [
+    {
+      "url": "https://www.swiatpilki.com/viewtopic.php?t=20492",
+      "result": "Search-rendered full thread shows masacra’s and Tomusmc’s complete posts, author labels, and 2018-02-07 dates. Collector A’s updated acquisition report says the displayed Tomusmc permalink target is post 1192638; its earlier 1192678 locator was a report typo. Candidate URL https://swiatpilki.com/viewtopic.php?p=1192638 is correct; direct post pages still returned cache misses."
+    },
+    {
+      "url": "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169",
+      "result": "Opened and inspected post 6 at rendered lines 618-641. Author JohnDoe666, date 2023-01-14 22:08; complete three-paragraph excerpt and later clauses match candidate text. Nearby replies are separately attributed."
+    },
+    {
+      "url": "https://www.reddit.com/r/Polska/comments/105mykf/stand_up_rekomendacje/",
+      "result": "Opened and inspected thread. Parent post is [usunięto]; prompt text matches saved context. At rendered lines 270-276, recommendation list is shown under [usunięto]."
+    }
+  ],
+  "lineage_and_quote_audit": {
+    "result": "All four output records retain candidate IDs, source objects/URLs, excerpts, language, contexts, and extraction objects exactly from evidence.unreviewed.jsonl. All mention surface forms and non-null preference quotes are verbatim excerpt substrings; preference quotes support only the scoped author evaluation described in review notes. Reviewer fields alone were replaced as required; no confidence values were reset.",
+    "identity": "Used frozen IDs only where wording supports the match: Abelard, Pacześ, Lotek, Giza, Ruciński, and full names in Reddit/GRYOnline. No identity was inferred from target_performer_ids alone. No unresolved alias remains."
+  },
+  "skip_audit": {
+    "extraction_skips": [],
+    "collector_skip_counts": {
+      "collection_a": 4,
+      "collection_b": 4,
+      "collection_c": 5
+    },
+    "review": "Reviewed all 13 skip entries in collection-a/b/c reports. Each was a duplicate/already-represented source, an inaccessible or incomplete author statement, a standalone review lacking a second frozen performer, or otherwise outside link evidence. Reddit r/Polska recommendation thread was reopened and verified; its qualifying deleted-author comment became src_b03b_001, and the existing NoUnderstanding8721 comment was correctly not duplicated. No skipped candidate was promoted based on snippets."
+  },
+  "coverage_gaps": [
+    "A001/A002 direct forum permalink fetches returned cache misses, but complete posts and attribution were verified on the full thread; collector confirmed Tomusmc permalink target post 1192638.",
+    "Collection reports note sparse qualifying material and no new qualifying source for some assigned performers; no new collection was performed."
+  ],
+  "correction_history": [
+    {
+      "record": "ev_b03_a_002",
+      "initial_review": "Marked uncertain because candidate URL post ID 1192638 conflicted with the original collection report’s 1192678 locator; preference remained unknown because the praise was treated as performance-scoped only.",
+      "resolution": "Collector A updated the report: displayed permalink target and full-thread attribution confirm post 1192638; 1192678 was a report typo. Reclassified accepted. Applied v3 absolute-positive-evaluation rule: the explicit exceptional praise of Giza and Ruciński together supports positive preference for each within the joint improv performance. Kept solo/current/general preference out of scope."
+    }
+  ]
+}

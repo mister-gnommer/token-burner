@@ -1,0 +1,85 @@
+{
+  "Surprises": [
+    "The shared Reddit thread confirms candidate authors and full text. “Czarek Potefski” is resolved locally to Cezary Ponttefski at conservative .78 confidence based on the distinctive near-full name and surrounding content context alone; this spelling-based match is not a validated global alias.",
+    "The extractor recorded Syrek-Dąbrowski positive sentiment but its preference quote omitted the governing “lubię”; a verbatim phrase including that predicate is required.",
+    "Batch collection reports disclose collector B exceeded the stated page-open limit (16/12); the independent verification reopen was explicitly requested and limited to the shared thread."
+  ],
+  "run_id": "20261031-batch02",
+  "reviewer": "codex/gpt-6-luna",
+  "counts": {
+    "input_records": 4,
+    "accepted": 4,
+    "uncertain": 0,
+    "rejected": 0,
+    "corrected_records": 2,
+    "skips": 0
+  },
+  "source_checks": {
+    "candidates_matched": 4,
+    "excerpt_language_context_and_source_metadata": "Exact match against canonical source candidates; context copy also matches.",
+    "opened_shared_thread": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+    "attribution": "Confirmed bryndz-a for src_b02b_001 at rendered lines 55–61, Nevsr1 for src_b02b_002 at lines 172–179, and Lucidder for src_b02b_003 at lines 102–108. The thread prompt author is Swimming_Speed_7780 at lines 16–25.",
+    "source_failures": [],
+    "collection_source_failures": [
+      "Collection A reports one inaccessible KupBilecik page (cache miss); search snippet alone did not qualify. Collection C reports inaccessible nastroik, KupBilecik and Wykop pages; unverified snippets were skipped. Collection B recorded comment permalinks as cache misses, while the full parent thread rendered candidate comments."
+    ]
+  },
+  "records": [
+    {
+      "id": "ev_b02a_001",
+      "status": "accepted",
+      "issues": [
+        "Recommendation is correctly classed; no personal preference established."
+      ],
+      "corrections": []
+    },
+    {
+      "id": "ev_b02a_002",
+      "status": "accepted",
+      "issues": [
+        "Qualified appreciation for Czarek Potefski is about the special and should not be generalized. The local identity mapping to Cezary Ponttefski relies on the distinctive near-full name and source context alone, not collector metadata.",
+        "Kowalski is explicitly appreciated despite comparative/communication caveats."
+      ],
+      "corrections": [
+        "Kowalski preference quote set to exact substring “koniec końców też jest fajny”."
+      ]
+    },
+    {
+      "id": "ev_b02a_003",
+      "status": "accepted",
+      "issues": [
+        "All three focal preferences are explicit. The Syrek mention shares “lubię” through coordination."
+      ],
+      "corrections": [
+        "Syrek preference quote set to exact substring “Leję lubię i Syrka-Dąbrowskiego”."
+      ]
+    },
+    {
+      "id": "ev_b02a_004",
+      "status": "accepted",
+      "issues": [
+        "Recommendation context is not personal preference.",
+        "Antek unresolved, preserved with null performer ID."
+      ],
+      "corrections": []
+    }
+  ],
+  "alias_risks": [
+    "“Czarek Potefski” is locally resolved to Cezary Ponttefski by the distinctive near-full name and surrounding content context alone, at .78 confidence. The misspelling is not present in canonical aliases and must not be promoted to a global alias without further evidence.",
+    "“Antek” could refer to a number of people; adjacent comment context belongs to another author, so leave unresolved.",
+    "“Szumi” is safely tied to Piotrek Szumowski within the same author excerpt and canonical roster."
+  ],
+  "coverage_gaps": [
+    "Collection reports found no qualifying candidate for several focal performers; no missing evidence inferred as dislike.",
+    "Collection A notes inaccessible standalone Leja reviews; C notes multiple inaccessible pages."
+  ],
+  "skips_audit": {
+    "extractor_skips": 0,
+    "basis": "Batch report states 4 extracted; there are 4 unreviewed records and no extractor skip list."
+  },
+  "validation": {
+    "schema": "data/schemas/evidence-v3.schema.json",
+    "json_schema_valid": true,
+    "preference_quotes_are_verbatim_substrings": true
+  }
+}

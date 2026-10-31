@@ -1,0 +1,51 @@
+{
+  "Surprises": [
+    "Useful hits were sparse for this four-performer slice. The two saved statements come from separate authors in one 2018 public football forum thread; one is positive toward Abelard Giza and Kacper Ruciński together, while the other criticizes both and praises Rafał Pacześ and Lotek.",
+    "Direct post pages returned cache misses. The full thread page verified both complete posts, handles, and dates; clicking Tomusmc's displayed permalink confirmed its target is post 1192638."
+  ],
+  "run_id": "20261031-batch03",
+  "collector": {"provider":"codex","model":"gpt-6-luna","prompt_version":"collect-fan-evidence-v3"},
+  "focals": ["grzegorz-dolniak","adam-van-bendler","sylwia-wiszowata","kacper-rucinski"],
+  "candidate_file": "evidence/batch-03/source-candidates.a.jsonl",
+  "counts": {"queries":12,"page_open_or_click_events":10,"saved_candidates":2,"skipped_sources":4},
+  "queries": [
+    "\"Grzegorz Dolniak\" \"ulubiony\" stand-up forum",
+    "\"Adam Van Bendler\" \"lubię\" stand-up forum",
+    "\"Sylwia Wiszowata\" stand-up \"lubię\"",
+    "\"Kacper Ruciński\" \"mój top\" stand-up",
+    "site:reddit.com/r/Polska \"Grzegorz Dolniak\" \"Van Bendler\" stand up",
+    "site:reddit.com \"Sylwia Wiszowata\" \"Kacper Ruciński\" stand-up",
+    "\"Sylwia Wiszowata\" \"Kacper Ruciński\" forum lubię stand-up",
+    "\"Grzegorz Dolniak\" \"Kacper Ruciński\" \"lubię\"",
+    "\"Grzegorz Dolniak\" \"Rafał Pacześ\" \"uwielbiam\" stand-up",
+    "Van Bendler Socha \"mój ulubiony\" reddit",
+    "\"Sylwia Wiszowata\" \"Olka Szczęśniak\" opinie komentarz stand-up",
+    "\"Kacper Ruciński\" \"Abelard Giza\" \"lubię\" forum"
+  ],
+  "page_open_or_click_events": [
+    {"action":"open","url":"https://www.reddit.com/r/poland/comments/1egewxi/polish_standup_comedy/","result":"Opened full thread; confirmed pre-existing Warchadlo16 recommendation and other comments."},
+    {"action":"open","url":"https://www.reddit.com/r/Polska/comments/17ukdey/polski_stand_up_jest_tylko_jedn%C4%85_p%C3%B3%C5%82k%C4%99_wy%C5%BCej_od/","result":"Opened full thread; confirmed pre-existing Macamagucha top list with Kacper Ruciński."},
+    {"action":"open","url":"https://www.kupbilecik.pl/en/comments?page_comments=121","result":"Cache miss."},
+    {"action":"open","url":"https://www.kupbilecik.pl/en/comments?page_comments=2","result":"Cache miss."},
+    {"action":"open","url":"https://swiatpilki.com/viewtopic.php?t=20492","result":"Opened full thread; verified the complete posts, handles, and dates for masacra and Tomusmc."},
+    {"action":"open","url":"https://www.fcbarca.com/la-rambla/dyskusja-17302448","result":"Cache miss."},
+    {"action":"click","url":"https://swiatpilki.com/viewtopic.php?p=1192622&sid=10ed357b02372024930867250ca88ced","result":"Cache miss; source post had already been fully verified in the thread."},
+    {"action":"click","url":"https://swiatpilki.com/viewtopic.php?p=1192638&sid=10ed357b02372024930867250ca88ced","result":"Cache miss; locator confirmed by the displayed permalink target and complete post on thread."},
+    {"action":"open","url":"https://swiatpilki.com/viewtopic.php?t=20492","result":"Reopened full thread to resolve post locator; Tomusmc's complete post, handle, and date confirmed."},
+    {"action":"click","url":"https://swiatpilki.com/viewtopic.php?p=1192638&sid=10ed357b02372024930867250ca88ced","result":"Cache miss; click target confirms post ID 1192638 corresponds to Tomusmc's verified thread post."}
+  ],
+  "candidate_locators": [
+    {"candidate_id":"src_b03a_001","thread":"https://swiatpilki.com/viewtopic.php?t=20492","post_id":"1192622","author":"masacra","date":"2018-02-07","note":"Complete post captured, including surrounding evaluation and criticism."},
+    {"candidate_id":"src_b03a_002","thread":"https://swiatpilki.com/viewtopic.php?t=20492","post_id":"1192638","author":"Tomusmc","date":"2018-02-07","note":"Complete post captured."}
+  ],
+  "skipped_sources": [
+    {"url":"https://www.reddit.com/r/poland/comments/1egewxi/polish_standup_comedy/","reason":"Warchadlo16's recommendation naming Grzegorz Dolniak and Adam van Bendler already exists in batch-02; other author statements there did not connect an assigned focal to another frozen performer."},
+    {"url":"https://www.reddit.com/r/Polska/comments/17ukdey/polski_stand_up_jest_tylko_jedn%C4%85_p%C3%B3%C5%82k%C4%99_wy%C5%BCej_od/","reason":"Macamagucha's top list including Kacper Ruciński already exists in batch-01; no other complete new post on the thread qualified."},
+    {"url":"https://www.kupbilecik.pl/en/comments?page_comments=121","reason":"Unrelated individual reviews; no full-author cross-performer post was verifiable; page open also failed."},
+    {"url":"https://www.kupbilecik.pl/en/comments?page_comments=2","reason":"Search result was a standalone Kacper Ruciński review, without another frozen performer in that author's text; page open failed."}
+  ],
+  "coverage_gaps": [
+    "No qualifying new post was located for Grzegorz Dolniak, Adam Van Bendler, or Sylwia Wiszowata within the search and page-event budgets.",
+    "Direct permalinks could not be fetched; the complete excerpts and attribution were verified on the full thread page."
+  ]
+}

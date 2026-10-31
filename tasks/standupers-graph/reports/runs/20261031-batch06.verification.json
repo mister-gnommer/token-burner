@@ -1,0 +1,73 @@
+{
+  "run_id": "20261031-batch06",
+  "stage": "verification",
+  "reviewer": "codex/gpt-6-luna",
+  "inputs": [
+    "evidence/batch-06/evidence.unreviewed.jsonl",
+    "evidence/batch-06/source-candidates.jsonl",
+    "reports/runs/20261031-batch06.extraction.json",
+    "reports/runs/20261031-batch06.collection-a.json",
+    "reports/runs/20261031-batch06.collection-b.json",
+    "reports/runs/20261031-batch06.collection-c.json",
+    "reports/runs/20261031-batch06.collection-c.recovery.json",
+    "data/standupers.json"
+  ],
+  "counts": {
+    "candidates": 5,
+    "records_reviewed": 2,
+    "accepted": 2,
+    "uncertain": 0,
+    "rejected": 0,
+    "skipped": 3
+  },
+  "Surprises": [
+    "The C001 list is a response to genre/content suitability, not a favorites question; all seven preferences must remain unknown and the names do not establish co-preference.",
+    "Two C001 identities depend on conservative typo correction: Piotek→Piotrek Szumowski and Pontefski→Cezary Ponttefski. Preserve raw spellings and do not treat these mappings as verified aliases.",
+    "The three B solo reviews remain ineligible for pair-level evidence; B002 support is unnamed and B003’s plural “Chłopaki” has no reliable second identity. Original B search/open usage is unknown, limiting coverage claims."
+  ],
+  "decisions": [
+    {
+      "candidate_id": "src_b06a_001",
+      "evidence_id": "ev_b06_a_001",
+      "decision": "accepted",
+      "corrections": [],
+      "basis": "Event header context resolves Czarek to Cezary Jurkiewicz; both performers receive separate explicit author preference surfaces/quotes. Exact candidate excerpt, source metadata, context, and author hash preserved."
+    },
+    {
+      "candidate_id": "src_b06c_001",
+      "evidence_id": "ev_b06_c_001",
+      "decision": "accepted",
+      "corrections": [],
+      "basis": "Faithful recommendation representation in response to genre suitability prompt. Personal preference unknown for all mentions; no pair/co-preference asserted. Exact excerpt, author hash, context and raw name surfaces preserved."
+    }
+  ],
+  "skip_audit": [
+    {
+      "candidate_id": "src_b06b_001",
+      "decision": "skip upheld",
+      "reason": "Solo positive review for Kuba Dąbrowski; no second performer."
+    },
+    {
+      "candidate_id": "src_b06b_002",
+      "decision": "skip upheld",
+      "reason": "Recommends a Kuba Dąbrowski event; “support” is unnamed."
+    },
+    {
+      "candidate_id": "src_b06b_003",
+      "decision": "skip upheld",
+      "reason": "Plural group evaluation does not identify a second performer; event header names only Kuba Dąbrowski."
+    }
+  ],
+  "alias_risks": [
+    "C001 “Piotek” is likely a typo for frozen Piotrek Szumowski, not an established alias.",
+    "C001 “Cezary Pontefski” is likely a typo for frozen Cezary Ponttefski; do not assert a verified alias."
+  ],
+  "coverage_gaps": [
+    "B collection usage is unreconstructable because no original query/open ledger exists; saved three candidates were audited, but overall B coverage cannot be quantified.",
+    "A/C reports document bounded searches and source/page failures; this review did not reopen sources because stored passages and context resolved the extraction questions."
+  ],
+  "validation": {
+    "command": "python3 scripts/evidence_pipeline.py validate --kind evidence evidence/batch-06/evidence.jsonl",
+    "result": "passed: validated 2 evidence record(s)"
+  }
+}

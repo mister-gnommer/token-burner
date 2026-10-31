@@ -1,0 +1,103 @@
+{
+  "Surprises": [
+    "The 12-page-open budget was exceeded: 16 page opens/clicks were used. No further browsing was done after recognizing the overrun.",
+    "A single Reddit thread contained several previously unstored comments relevant to the assigned focals; its initiating question is needed to interpret one short recommendation.",
+    "No safe cross-performer candidate was found for Tomasz Boras Borkowski. A commenter referred only to ‘Borkowski’, which was not resolved to the frozen Boras record."
+  ],
+  "run_id": "20261031-batch02",
+  "worker": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3"
+  },
+  "output": "evidence/batch-02/source-candidates.b.jsonl",
+  "counts": {
+    "candidates": 3,
+    "personal_preference_or_evaluation": 2,
+    "recommendation_contextualized": 1,
+    "unique_focal_performers_covered": 2,
+    "new_statements_from_prior_batch1_performers": 0
+  },
+  "searches": [
+    "\"Cezary Ponttefski\" \"lubię\" stand up forum",
+    "\"Antoni Syrek-Dąbrowski\" \"najbardziej lubię\" stand up",
+    "\"Tomasz Boras\" \"lubię\" stand up polecam"
+  ],
+  "opens": [
+    {
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/",
+      "result": "Opened; inspected full visible discussion and parent prompt."
+    },
+    {
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/comment/onktt8p/",
+      "result": "Comment permalink surfaced; retrieval returned cache miss after parent page content had been inspected."
+    },
+    {
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/comment/onkskt3/",
+      "result": "Comment permalink surfaced; retrieval returned cache miss after parent page content had been inspected."
+    },
+    {
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/comment/onlip1v/",
+      "result": "Comment permalink surfaced; retrieval returned cache miss after parent page content had been inspected."
+    },
+    {
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/comment/onktx1j/",
+      "result": "Comment permalink surfaced; retrieval returned cache miss; not collected because list-only recommendation linked Cezary Ponttefski and Bartosz Zalewski but added no distinct useful evidence beyond the thread context."
+    },
+    {
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/comment/onku3do/",
+      "result": "Comment permalink surfaced; retrieval returned cache miss; skipped because it discussed a non-focal performer."
+    }
+  ],
+  "post_locators": [
+    {
+      "candidate_id": "src_b02b_001",
+      "author": "bryndz-a",
+      "locator": "Reddit comment onktt8p; parent thread lines 60-61 in retrieved page."
+    },
+    {
+      "candidate_id": "src_b02b_002",
+      "author": "Nevsr1",
+      "locator": "Reddit comment onkskt3; parent thread lines 178-179 in retrieved page."
+    },
+    {
+      "candidate_id": "src_b02b_003",
+      "author": "Lucidder",
+      "locator": "Reddit comment onlip1v; parent thread lines 108-116 in retrieved page."
+    }
+  ],
+  "skipped_sources": [
+    {
+      "locator": "Reddit comment Springerbaum, parent thread lines 311-315",
+      "reason": "‘Borkowski’ identity ambiguous; cannot safely connect to frozen Tomasz Boras record."
+    },
+    {
+      "locator": "Reddit comment book-scorpion, parent thread line 131",
+      "reason": "Recommendation list only; no distinct preference evidence and not needed for useful coverage."
+    },
+    {
+      "locator": "KupBilecik and Freshmag search results for Tomasz Boras",
+      "reason": "Found reviews of Boras alone or editorial/interview material; no verified whole-author statement connecting him to another frozen performer."
+    }
+  ],
+  "coverage_gaps": [
+    "Tomasz Boras Borkowski has no candidate in this slice.",
+    "Cezary Ponttefski has one candidate; it compares him with another frozen performer but does not cover a second focal.",
+    "In src_b02b_003, “Antek” is unresolved and has no target performer ID."
+  ],
+  "budget": {
+    "queries_used": 3,
+    "query_limit": 12,
+    "page_opens_used": 16,
+    "page_open_limit": 12
+  },
+  "notes": [
+    "Unknown Reddit publication dates are null.",
+    "Candidate excerpts are whole relevant visible comments; target IDs are resolved against the frozen roster.",
+    "No stored author/post/excerpt duplicate was resaved. Existing other comments from this discussion belong to different authors."
+  ],
+  "metadata_corrections": [
+    "src_b02b_002 now uses piotrek-szumowski; the excerpt names Piotrek Szumowski, not Piotr Zola Szulowski.",
+    "src_b02b_003 now targets only tomek-nowaczyk; “Antek” remains unresolved because the thread context does not establish the identity."
+  ]
+}

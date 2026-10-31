@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "run_id": "20261031-batch03",
+  "stage": "batch",
+  "batch": 3,
+  "status": "completed",
+  "performer_ids": [
+    "grzegorz-dolniak",
+    "adam-van-bendler",
+    "sylwia-wiszowata",
+    "kacper-rucinski",
+    "rafal-rutkowski",
+    "pawel-chalupka",
+    "maciej-brudzewski",
+    "mieszko-minkiewicz",
+    "maciej-kwiatkowski",
+    "adam-sobaniec"
+  ],
+  "paths": {
+    "source_candidates": "evidence/batch-03/source-candidates.jsonl",
+    "evidence_unreviewed": "evidence/batch-03/evidence.unreviewed.jsonl",
+    "evidence": "evidence/batch-03/evidence.jsonl",
+    "verification_report": "reports/runs/20261031-batch03.verification.json"
+  },
+  "workers": {
+    "collector": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "collect-fan-evidence-v3"
+    },
+    "extractor": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1"
+    },
+    "verifier": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "verify-evidence-v3"
+    }
+  },
+  "counts": {
+    "source_candidates": 4,
+    "extracted": 4,
+    "accepted": 4,
+    "uncertain": 0,
+    "rejected": 0
+  },
+  "surprises": [
+    "Five raw candidates; one deleted-author Reddit post was independently collected by B and C and deduplicated, leaving four canonical candidates.",
+    "Tomusmc’s post locator was confirmed as 1192638. Its positive evaluation applies to Giza and Ruciński jointly in a specific improv pair only.",
+    "A separate source criticizes both Giza and Ruciński, creating contradictory evidence that can downgrade their prior solid relation under the unchanged scorer.",
+    "Deleted-author Reddit recommendation evidence is accepted as a recommendation, but has no source-scoped fan identity and contributes no scored pair."
+  ],
+  "notes": "Completed ranks 21–30. Three Codex gpt-6-luna medium collectors, separate Luna extractor, and separate Luna verifier performed collection, extraction, and semantic verification. Main agent dispatched and normalized/deduplicated the outputs, routed locator and scope exceptions, and performed final spot-checks; no parent semantic re-extraction. Existing scorer and production code unchanged.",
+  "created_at": "2026-10-31T08:57:41Z",
+  "updated_at": "2026-10-31T09:10:32Z"
+}

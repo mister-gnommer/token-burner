@@ -1,0 +1,146 @@
+{
+  "run_id": "20261031-batch03",
+  "updated_at": "2026-10-31T09:10:32Z",
+  "scope": "focal ranks 21–30 only; incidental neighbors do not process another batch",
+  "coverage": [
+    {
+      "rank": 21,
+      "performer_id": "grzegorz-dolniak",
+      "name": "Grzegorz Dolniak",
+      "searched": true,
+      "new_candidates": 0,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 22,
+      "performer_id": "adam-van-bendler",
+      "name": "Adam Van Bendler",
+      "searched": true,
+      "new_candidates": 0,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 23,
+      "performer_id": "sylwia-wiszowata",
+      "name": "Sylwia Wiszowata",
+      "searched": true,
+      "new_candidates": 0,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 24,
+      "performer_id": "kacper-rucinski",
+      "name": "Kacper Ruciński",
+      "searched": true,
+      "new_candidates": 2,
+      "accepted_mention_records": 2,
+      "cumulative_scored_fans": 2
+    },
+    {
+      "rank": 25,
+      "performer_id": "rafal-rutkowski",
+      "name": "Rafał Rutkowski",
+      "searched": true,
+      "new_candidates": 0,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 26,
+      "performer_id": "pawel-chalupka",
+      "name": "Paweł Chałupka",
+      "searched": true,
+      "new_candidates": 1,
+      "accepted_mention_records": 1,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 27,
+      "performer_id": "maciej-brudzewski",
+      "name": "Maciej Brudzewski",
+      "searched": true,
+      "new_candidates": 0,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 28,
+      "performer_id": "mieszko-minkiewicz",
+      "name": "Mieszko Minkiewicz",
+      "searched": true,
+      "new_candidates": 2,
+      "accepted_mention_records": 2,
+      "cumulative_scored_fans": 1
+    },
+    {
+      "rank": 29,
+      "performer_id": "maciej-kwiatkowski",
+      "name": "Maciej Kwiatkowski",
+      "searched": true,
+      "new_candidates": 0,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 30,
+      "performer_id": "adam-sobaniec",
+      "name": "Adam Sobaniec",
+      "searched": true,
+      "new_candidates": 0,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    }
+  ],
+  "raw_candidates": 5,
+  "new_candidates": 4,
+  "new_reviewed_records": 4,
+  "accepted_representations": 4,
+  "uncertain_representations": 0,
+  "rejected_representations": 0,
+  "cumulative_records": 24,
+  "cumulative_relations": 33,
+  "accepted_pairs": 6,
+  "accepted_pairs_added": 1,
+  "accepted_pairs_downgraded": 1,
+  "added_pair_ids": [
+    "abelard-giza__kacper-rucinski"
+  ],
+  "downgraded_pair_ids": [
+    "abelard-giza__rafal-paczes"
+  ],
+  "provisional_candidates": 15,
+  "visible_nodes": 33,
+  "drawn_solid": 6,
+  "drawn_provisional": 9,
+  "visible_photos": 33,
+  "visible_placeholders": 0,
+  "worker_reported_collection_usage": {
+    "queries": 36,
+    "page_opens_or_clicks": 22,
+    "by_collector": {
+      "A": {
+        "queries": 12,
+        "page_opens_or_clicks": 10
+      },
+      "B": {
+        "queries": 12,
+        "page_opens_or_clicks": 7
+      },
+      "C": {
+        "queries": 12,
+        "page_opens_or_clicks": 5
+      }
+    },
+    "access_gaps": [
+      "Direct Swiatpilki post pages and the fcbarca/la-rambla page returned cache misses; the full Swiatpilki thread verified the posts, handles, dates, and Tomusmc permalink locator.",
+      "KupBilecik review pages and the r/wroclaw Reddit page were inaccessible."
+    ]
+  },
+  "cost": "Measured token/money usage unavailable; no estimate invented.",
+  "drawn_dashed": 9,
+  "uncertain_relation_candidates": 27,
+  "contested_or_opposing_only_candidates": 12
+}

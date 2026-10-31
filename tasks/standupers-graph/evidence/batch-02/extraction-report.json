@@ -1,0 +1,27 @@
+{
+  "batch": "batch-02",
+  "run_id": "20261031-batch02",
+  "status": "extracted_unreviewed",
+  "input_count": 4,
+  "output_count": 4,
+  "skips": [],
+  "counts": {
+    "same_user_coendorsement": 2,
+    "fan_recommendation": 2,
+    "fan_comparison": 0,
+    "same_user_rating_overlap": 0,
+    "style_similarity": 0,
+    "mentions": 9,
+    "unresolved_mentions": 1
+  },
+  "Surprises": [
+    "“Antek” in src_b02b_003 cannot be uniquely resolved to Antoni Syrek-Dąbrowski from the generic thread prompt; retained as unresolved.",
+    "“Czarek Potefski” in src_b02b_001 likely refers to Cezary Ponttefski, but the surface spelling is not exact; identity confidence is conservative (0.78).",
+    "src_b02b_002 explicitly likes Piotrek Szumowski, Michał Leja and Antoni Syrek-Dąbrowski; preference evidence is distinct from the uncertain content warning."
+  ],
+  "assumptions": [
+    "Used fan_recommendation for “I’d add” and criterion-based suggestions, without inferring personal preference.",
+    "No input candidate required skipping; each had a supported evidence class."
+  ],
+  "validation": "Passed JSON Schema Draft 2020-12 validation and lineage checks: four outputs match candidate source metadata/excerpt/language; preference quotes are verbatim."
+}

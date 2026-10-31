@@ -1,0 +1,121 @@
+{
+  "Surprises": [
+    "Searches surfaced explicit standalone audience praise and reviews for all three focal performers, but no retrieved whole-author post linked a focal to another frozen comedian. No candidate was written: recommendations, co-appearance listings, and separate reviews do not establish a same-author cross-performer statement."
+  ],
+  "run_id": "20261031-batch02",
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3"
+  },
+  "focal_performers": [
+    {
+      "rank": 18,
+      "id": "piotr-zola-szulowski",
+      "name": "Piotr Zola Szulowski",
+      "searched": true
+    },
+    {
+      "rank": 19,
+      "id": "karol-modzelewski",
+      "name": "Karol Modzelewski",
+      "searched": true
+    },
+    {
+      "rank": 20,
+      "id": "michal-paszczyk",
+      "name": "Michał Paszczyk",
+      "searched": true
+    }
+  ],
+  "counts": {
+    "queries": 12,
+    "page_opens": 4,
+    "useful_new_candidates": 0,
+    "written_candidates": 0
+  },
+  "searches": [
+    "\"Piotr Zola Szulowski\" lubię stand up forum",
+    "\"Karol Modzelewski\" lubię stand up forum",
+    "\"Michał Paszczyk\" lubię stand up stand-up",
+    "\"Piotr Zola\" \"Karol Modzelewski\" lubię",
+    "\"Piotr Zola Szulowski\" \"polecam\" forum stand-up",
+    "\"Michał Paszczyk\" \"Karol Modzelewski\" stand-up opinie",
+    "\"Piotr Zola Szulowski\" \"Karol Modzelewski\" polecam komentarz",
+    "\"Michał Paszczyk\" \"stand-up\" \"polecam\" opinie widzów",
+    "\"Michał Paszczyk\" standup \"Michał Leja\" lubię",
+    "Szulowski Zola Leja ulubiony stand up forum",
+    "Modzelewski Modrzelewski Leja ulubiony standuper polecacie",
+    "\"Zola\" \"Modrzelewski\" stand up \"lubię\""
+  ],
+  "opens": [
+    {
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+      "result": "Opened; inspected comments including Karol Modzelewski recommendation (kv665, comment 33) and a separate Olka Szczęśniak endorsement by the same author (ImSilas, comment 90). These are separate comments and do not cross-link a focal to another frozen comedian in one author post."
+    },
+    {
+      "url": "https://nastroik.pl/temat/piotr-zola-szulowski/8543/",
+      "result": "Open failed: cache miss; search result indicated discussion but no qualifying statement could be verified."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski",
+      "result": "Open failed: cache miss; search result showed standalone ratings for Karol only."
+    },
+    {
+      "url": "https://wykop.pl/wpis/67957867/bylem-wczoraj-na-please-stand-up-gdzie-jest-to-m-i",
+      "result": "Open failed: cache miss. Search snippet appeared to include a statement about several performers at an event, but the whole post could not be verified, so it was skipped."
+    }
+  ],
+  "skipped_sources": [
+    {
+      "source": "https://standup.pl/komicy/michal-paszczyk",
+      "reason": "Performer profile/promotional listings, not fan-authored evidence."
+    },
+    {
+      "source": "https://www.kupbilecik.pl/pl/comments/5863/piotr-zola-szulowski?page_comments=73",
+      "reason": "Standalone audience reviews; none links Piotr to another frozen performer."
+    },
+    {
+      "source": "https://www.kupbilecik.pl/pl/comments/17687/stand-up-michal-paszczyk",
+      "reason": "Standalone audience reviews; mention of a support act is not a cross-performer preference link."
+    },
+    {
+      "source": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+      "reason": "No repeat of stored posts. The already-stored Karol/Olka post is on a different thread; newly inspected comments here were considered, but none from an author linked a focal to another frozen comedian in one post."
+    },
+    {
+      "source": "https://www.reddit.com/r/poland/comments/105mykf/stand_up_rekomendacje/",
+      "reason": "Existing stored evidence already includes this post; no repeat."
+    }
+  ],
+  "coverage_gaps": [
+    "Piotr Zola Szulowski: searches found individual audience praise and a discussion result, but no verified same-author cross-performer preference statement within the query/open budget.",
+    "Karol Modzelewski: one new thread contained an explicit recommendation; the author's post named Karol alone. Other praise in that thread belonged to separate posts.",
+    "Michał Paszczyk: searches found standalone audience reviews, some criticizing the stand-up format or comparing it to cabaret, but no link to another frozen performer in a qualifying statement.",
+    "Targeted shorter-name queries produced one Wykop result snippet mentioning Piotr Szulowski, Michał Leja, and Błażej Krajewski in a single account, but the page open failed and the full author post could not be checked; it was not used."
+  ],
+  "post_locators": [
+    {
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+      "author_hint": "kv665",
+      "locator": "comment 33; recommends Karol Modzelewski",
+      "candidate": false
+    },
+    {
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+      "author_hint": "ImSilas",
+      "locator": "comment 35; agrees with Karol recommendation",
+      "candidate": false
+    },
+    {
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+      "author_hint": "ImSilas",
+      "locator": "comment 90; separately praises Olka Szczęśniak",
+      "candidate": false
+    }
+  ],
+  "assumptions": [
+    "“Linking at least one focal performer to another frozen comedian” requires both performers to be evaluated in the same author-authored post; a parent question that only supplies topic context does not count as the second evaluation.",
+    "Search results were used only to discover sources. No unverified snippets were written as evidence."
+  ]
+}

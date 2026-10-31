@@ -34,3 +34,5 @@ Run `scripts/evidence_pipeline.py validate --kind <source-candidate|evidence|evi
 Schema validation does not establish that an excerpt includes all relevant context or matches its candidate. Audit both separately. Run the validator regression checks with `PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tasks/standupers-graph/scripts -p 'test_*.py' -v` from the repository root.
 
 Stage 6 uses `extract-evidence-v3.md` with mandatory `favorite-reply-context-v1.md`, source-candidate v2 and evidence v3. `stage06-corroboration-v1.md` supplements targeted collection of the same ten pilot performers. Historical prompts and raw outputs remain unchanged.
+
+From batch5, collectors also apply `research-budget-v1.md`: three low-tier collectors with24 queries/24 page attempts/up to16 verified candidates each; provenance `collect-fan-evidence-v3+research-budget-v1`. Separate extraction/verification and existing evidence gates remain in force.

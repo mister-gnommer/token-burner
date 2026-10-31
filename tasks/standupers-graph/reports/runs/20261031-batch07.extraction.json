@@ -1,0 +1,59 @@
+{
+  "run_id": "20261031-batch07",
+  "stage": "extraction",
+  "provider": "codex",
+  "model": "gpt-6-luna",
+  "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1",
+  "input": "evidence/batch-07/source-candidates.jsonl",
+  "output": "evidence/batch-07/evidence.unreviewed.jsonl",
+  "counts": {
+    "candidates": 7,
+    "records": 3,
+    "skipped": 4
+  },
+  "records": [
+    {
+      "candidate_id": "src_b07c_001",
+      "evidence_id": "ev_b07_c_001",
+      "evidence_class": "same_user_coendorsement",
+      "notes": "Both performers receive explicit absolute praise in this review of the joint event. Pałubski’s “jak zawsze” is retained as the author’s recurrence wording; this is not promoted to an unscoped favorite claim."
+    },
+    {
+      "candidate_id": "src_b07c_002",
+      "evidence_id": "ev_b07_c_002",
+      "evidence_class": "same_user_coendorsement",
+      "notes": "Event-specific co-endorsement. Bartosz and Jasiek are explicitly praised together for duo chemistry and conversational style; this supports praise of their performance in this format, not a general style preference. Marek and Adam are retained as relevant unresolved performers; no canonical identities are inferred. Preference quotes for the unresolved names are null because identity-level preference cannot be assigned."
+    },
+    {
+      "candidate_id": "src_b07b_005",
+      "evidence_id": "ev_b07_b_005",
+      "evidence_class": "fan_recommendation",
+      "notes": "Recommendation for genre/tone suitability; all personal preferences unknown. Cezary Ponteffski conservatively resolved to frozen Cezary Ponttefski as a typo, not a verified alias."
+    }
+  ],
+  "skips": [
+    {
+      "candidate_id": "src_b07b_001",
+      "reason": "Single-performer Igor Kwiatkowski review; event praise/recommendation has no second evaluated frozen performer, so no pair-level evidence class fits."
+    },
+    {
+      "candidate_id": "src_b07b_002",
+      "reason": "Single-performer Igor Kwiatkowski review; positive praise concerns only Igor, so no pair-level evidence class fits."
+    },
+    {
+      "candidate_id": "src_b07b_003",
+      "reason": "Single-performer Igor Kwiatkowski review. The excerpt says the author’s wife loves Igor; it does not establish the author’s own preference and no second evaluated performer is present."
+    },
+    {
+      "candidate_id": "src_b07b_006",
+      "reason": "Solo Igor Kwiatkowski review. Michael Jackson is named only as the object of Igor’s imitation, an out-of-population performance reference rather than an evaluated co-performer; no pair-level evidence class fits."
+    }
+  ],
+  "surprises": [
+    "Correction 1: B005 qualifies as fan_recommendation because it answers a genre/tone suitability request; that class permits unknown personal preferences, so no liking is asserted.",
+    "Correction 2: B006 is explicitly accounted for as a solo Igor review; Michael Jackson is an out-of-population imitation reference, not an evaluated co-performer.",
+    "Cezary Ponteffski in B005 is conservatively mapped to frozen Cezary Ponttefski as a likely typo only; no verified alias is added.",
+    "C001 and C002 were retained unchanged. All three saved records remain unreviewed with reviewer null; this extraction report is not independent verification."
+  ],
+  "notes": "Scoped correction to the initial extraction. Original outputs are preserved separately by the parent. Exact source and context surfaces are retained; extraction provenance remains codex/gpt-6-luna with extract-evidence-v3+favorite-reply-context-v1+batch-run-v1 and run 20261031-batch07. Final candidate accounting is three records and four explicit skips."
+}

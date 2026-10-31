@@ -1,0 +1,112 @@
+{
+  "Surprises": [
+    "The original C candidate is a distinct comment on a Reddit thread already known from earlier batch files; it remains unchanged.",
+    "Search results surfaced positive solo reviews and multi-performer event pages, but no verified full author post establishing a qualifying focal-plus-frozen-performer fan preference.",
+    "An opened Marcin Chmiel/Amadeus Cichulski review page contains no qualifying pair: Amadeus is not in the frozen population, and page context is a joint performer listing."
+  ],
+  "run_id": "20261031-batch06",
+  "recovery": true,
+  "scope": [
+    {
+      "rank": 58,
+      "id": "filip-brymora",
+      "name": "Filip Brymora"
+    },
+    {
+      "rank": 59,
+      "id": "marcin-chmiel",
+      "name": "Marcin Chmiel"
+    },
+    {
+      "rank": 60,
+      "id": "bartosz-strusinski",
+      "name": "Bartosz Strusiński"
+    }
+  ],
+  "original_usage": {
+    "queries": 3,
+    "page_open_or_navigation_attempts": 10,
+    "verified_candidates": 1
+  },
+  "recovery_usage": {
+    "queries": 8,
+    "page_open_or_navigation_attempts": 4,
+    "verified_candidates_added": 0
+  },
+  "combined_usage": {
+    "queries": 11,
+    "page_open_or_navigation_attempts": 14,
+    "verified_candidates_retained_or_added": 1
+  },
+  "candidate_decisions": [
+    {
+      "candidate_id": "src_b06c_001",
+      "decision": "retain existing candidate unchanged",
+      "reason": "Existing candidate and context metadata preserved."
+    },
+    {
+      "candidate_id": null,
+      "decision": "no new candidates appended",
+      "reason": "Search results were solo reviews, event listings, snippets, or did not establish a qualifying focal-plus-frozen-performer preference in the full author source."
+    }
+  ],
+  "queries": [
+    "\"Filip Brymora\" ulubiony komik stand-up forum",
+    "\"Filip Brymora\" \"lubię\" stand-up komik",
+    "\"Marcin Chmiel\" ulubiony stand-up komik opinie",
+    "\"Marcin Chmiel\" \"uwielbiam\" stand-up",
+    "\"Bartosz Strusiński\" ulubiony stand-up opinie",
+    "\"Bartek Strusiński\" \"lubię\" stand-up forum",
+    "\"Filip Brymora\" \"Marcin Chmiel\" stand-up widzowie",
+    "\"Bartosz Strusiński\" komik \"polecam\" opinie"
+  ],
+  "open_history": [
+    {
+      "attempt": 1,
+      "url": "https://www.kupbilecik.com/imprezy/175135/Gda%C5%84sk/Stand-up%3A%2BKarol%2BModzelewski",
+      "result": "web open returned: URL is not accessible via this tool."
+    },
+    {
+      "attempt": 2,
+      "url": "https://www.kupbilecik.pl/pl/db/11542/stand-up-bartosz-strusinski-grzesiek-wojtowicz",
+      "result": "web open returned: Failed to fetch; Cache miss."
+    },
+    {
+      "attempt": 3,
+      "url": "https://www.kupbilecik.pl/pl/db/22856/stand-up-marcin-chmiel-amadeus-cichulski",
+      "result": "Full page opened and read; joint performer listing and 9 comments, but Amadeus Cichulski is not in the frozen population."
+    },
+    {
+      "attempt": 4,
+      "url": "https://_mta-sts.kupbilecik.com/imprezy/175135/Gda%C5%84sk/Stand-up%3A%2BKarol%2BModzelewski/yourimagehere.jpg",
+      "result": "web open returned: Failed to fetch; Cache miss."
+    }
+  ],
+  "skipped_sources": [
+    {
+      "source": "KupBilecik Filip Brymora comments",
+      "reason": "Search results exposed positive solo reviews only; no second performer with preference evidence."
+    },
+    {
+      "source": "KupBilecik Marcin Chmiel & Amadeus Cichulski page",
+      "reason": "Full page read; no qualifying frozen second performer preference; do not infer from joint listing."
+    },
+    {
+      "source": "KupBilecik Bartosz Strusiński & Grzesiek Wójtowicz page",
+      "reason": "Cache miss on open; Grzesiek Wójtowicz is not in frozen population; snippets not promoted."
+    },
+    {
+      "source": "Karol Modzelewski event page surfaced in search",
+      "reason": "URL resolved to an image path and was inaccessible; no candidate derived from search snippet."
+    }
+  ],
+  "coverage_gaps": [
+    "No new verified candidate for Filip Brymora, Marcin Chmiel, or Bartosz Strusiński in this recovery.",
+    "Search coverage is bounded to eight additional queries and four opens; more candidates may exist outside this sample."
+  ],
+  "unused_recovery_allowance": {
+    "queries": 0,
+    "page_open_or_navigation_attempts": 4
+  },
+  "browser_note": "No T3 browser retries were made during recovery; original C ledger records snapshot timeouts on KupBilecik pages. Web fallback was used."
+}

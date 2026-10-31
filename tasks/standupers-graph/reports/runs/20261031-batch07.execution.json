@@ -1,0 +1,215 @@
+{
+  "run_id": "20261031-batch07",
+  "status": "completed",
+  "scheduling": "sequential;only1active worker",
+  "research_budget": {
+    "collectors": 3,
+    "queries_per_collector": 24,
+    "page_attempts_per_collector": 24,
+    "verified_candidate_cap_per_collector": 16
+  },
+  "workers": [
+    {
+      "slice": "a",
+      "role": "collector",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "medium"
+        },
+        {
+          "id": "serviceTier",
+          "value": "default"
+        }
+      ],
+      "ranks": [
+        61,
+        62,
+        63,
+        64
+      ],
+      "status": "completed",
+      "task_id": "node:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch07-collection-a-20261031-r1",
+      "child_thread_id": "thread:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch07-collection-a-20261031-r1",
+      "verified_candidates": 0,
+      "queries": 15,
+      "page_attempts": 5
+    },
+    {
+      "slice": "b",
+      "role": "collector",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "medium"
+        },
+        {
+          "id": "serviceTier",
+          "value": "default"
+        }
+      ],
+      "ranks": [
+        65,
+        66,
+        67
+      ],
+      "status": "completed",
+      "task_id": "node:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch07-collection-b-20261031-r1",
+      "child_thread_id": "thread:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch07-collection-b-20261031-r1",
+      "saved_candidates": 5,
+      "queries": 28,
+      "page_attempts": 10,
+      "query_overrun": 4
+    },
+    {
+      "slice": "c",
+      "role": "collector",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "medium"
+        },
+        {
+          "id": "serviceTier",
+          "value": "default"
+        }
+      ],
+      "ranks": [
+        68,
+        69,
+        70
+      ],
+      "status": "completed",
+      "task_id": "node:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch07-collection-c-20261031-r1",
+      "child_thread_id": "thread:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch07-collection-c-20261031-r1",
+      "saved_candidates": 2,
+      "queries": 18,
+      "page_attempts": 6
+    },
+    {
+      "role": "extractor",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "medium"
+        },
+        {
+          "id": "serviceTier",
+          "value": "default"
+        }
+      ],
+      "status": "completed",
+      "task_id": "node:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch07-extraction-20261031-r1",
+      "child_thread_id": "thread:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch07-extraction-20261031-r1"
+    },
+    {
+      "role": "extraction_correction",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "medium"
+        },
+        {
+          "id": "serviceTier",
+          "value": "default"
+        }
+      ],
+      "status": "completed",
+      "task_id": "node:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch07-extraction-correction-20261031-r1",
+      "child_thread_id": "thread:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch07-extraction-correction-20261031-r1"
+    },
+    {
+      "role": "verifier",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "medium"
+        },
+        {
+          "id": "serviceTier",
+          "value": "default"
+        }
+      ],
+      "status": "completed",
+      "task_id": "node:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch07-verification-20261031-r1",
+      "child_thread_id": "thread:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch07-verification-20261031-r1"
+    }
+  ],
+  "prompt_sha256": {
+    "collect-fan-evidence-v1.md": "e8de70cbd85b44e613a0e1633f00178fa6c1a21fec8dafbc8b304c0d48831c78",
+    "extract-evidence-v1.md": "77ab35595438422c4bba65e4498c6db63e2d9faf8705c711a92cda8b783f7dd4",
+    "verify-evidence-v1.md": "aba534e8847cbff469e5fec80aa17eecd5c4884418c88ff5b16d13285730ec45",
+    "README.md": "9467d6ce76e32fd099181a8f247fb9eab1fc9b56b4f8564340b271624e767545",
+    "extract-evidence-v2.md": "399931e7f2e9676419aa4aa686cdcef2bfc22efdd75b68faa2a1d00a9cf9ba86",
+    "verify-evidence-v2.md": "8c0e69ed3f1a39bfd099da5478b708e9220eb759d5a388ddf8432d5fb7559562",
+    "collect-fan-evidence-v2.md": "aee3bf3e1c032e3ddf274aa3655ecf9faa8142dbd267d42911a889e9e98d507c",
+    "extraction-decisions-v1.md": "17734b3338942bc9a7e129a55a9cf31aa39088b227af159f24a12118d986f62b",
+    "stage06-corroboration-v1.md": "dd3b1f8551472e3caa325c931e404ba3e6c3c5b64552d3657922eeeabb00cac4",
+    "extract-evidence-v3.md": "7644dc9ec508859c7ef80974edb2db59aec55486c7e557f6ce4d24551a07ed47",
+    "favorite-reply-context-v1.md": "37b976ea680b497d35c9cbbe25c432950243c54d4d2e231cd45292b9038a839b",
+    "collect-fan-evidence-v3.md": "4a6d846352fc41051a2e1439a146aa5225ef5b0e1541b4af3be7afff4776f04d",
+    "batch-run-v1.md": "0bced02d4c312e5b754dc6f6e9b6bff81ce13eeb1bbd79d085b84d89ee6c57fa",
+    "verify-evidence-v3.md": "d5c9c0cf9601e2009f8f7d48b79e2f29c031e5146fe738128468d3f992afdb31",
+    "research-budget-v1.md": "706e19c0d4559e872ff278cc1a2640372b0b2ec86a3a4b889f187e71fd221cd7"
+  },
+  "main_agent_role": "orchestration,deterministic integration,spot-checks and reported exceptions",
+  "parent_interventions": [
+    "Three separate low-tier collectors scheduled sequentially to reduce peak memory.",
+    "Require durable code-counted query/open ledgers,save before slow browser actions.",
+    "Earlier ranks55–57 stay pending; no new B6 budget implied.",
+    "A reported15queries/5opens/0verified candidates;two browser snapshot timeouts and incomplete source access retained as coverage gaps. B instructed to broaden accessible sources and avoid repeated doomed browser retries.",
+    "B exceeded24query cap by4;stopped.No retry or new B allowance.",
+    "Moved misplaced B ledger into assigned task reports directory,preserving content.",
+    "B saved4solo Igor reviews and1Reddit recommendation;extractor must audit pair eligibility/duplicates.",
+    "C brief explicitly requires throwing pre-call counter guard and forbids saving solo reviews.",
+    "Extractor wrongly skipped genre-suitability recommendation despite permitted fan_recommendation class,and omittedB006 skip reason while claiming5skips. Preserved initial artifacts and routed scoped low-tier correction before independent review.",
+    "Verifier accepted3records and confirmed4skips;lowered tentativeCezaryidentity0.82to0.72.",
+    "Preserved evidence.reviewed.initial.jsonl;clarified contradictory C002 review-note sentence which said preferences unknown while unchanged fields and accepted decision said positive event-level coendorsement. No extraction/decision/scorer fields changed;parent clarification labeled in notes.",
+    "Built cumulative D2/SVG/PNG with existing pipeline;cached61photos reused,10HTTPSphotos fetched after sandboxDNSretry.",
+    "20tests and strict loading,source equality,lineage,skip accounting and graph reproduction passed;no code/schema/scorer edits."
+  ],
+  "next_steps": [
+    "Complete collectorA,thenB,thenC;do not overlap workers.",
+    "Merge canonical candidates and deduplicate against earlier batches.",
+    "Separate Luna extraction with batch-run-v1 actual run/provenance.",
+    "Separate Luna verification.",
+    "Strict validation,cumulative D2/SVG/PNG graph and report;pause before batch8."
+  ],
+  "active_task_id": null,
+  "research_usage": {
+    "actual_queries": 61,
+    "planned_max_queries": 72,
+    "queries_by_collector": {
+      "A": 15,
+      "B": 28,
+      "C": 18
+    },
+    "query_overruns": {
+      "B": 4
+    },
+    "page_attempts": 21,
+    "page_attempts_by_collector": {
+      "A": 5,
+      "B": 10,
+      "C": 6
+    }
+  },
+  "validation": {
+    "tests_passed": 20,
+    "strict_loader_records": 38,
+    "candidate_accounting": "7=3records+4skips",
+    "graph_recomputed": true
+  }
+}

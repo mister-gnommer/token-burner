@@ -1,0 +1,151 @@
+{
+  "surprises": [
+    "Escalated to codex/gpt-6.1-terra because the low-tier review missed a strict-loader failure: B001 used Wiolka as a surface although her name appears only in separately attributed context. B001 and C003 also incorrectly described qualitative comments as structured rating overlap.",
+    "A001 initially had an incorrect canonical publication date and was uncertain in the first review snapshot. Collector follow-up confirmed the page date; canonical source and extracted source metadata are now corrected to 2025-05-16, so A001 is accepted. Initial review was 5 accepted / 2 uncertain; final is 6 / 1.",
+    "B003 remains uncertain: follow-up checked two Legnica sources without locating Elwira’s excerpt; do not score it until a direct locator resolves the attribution.",
+    "Source-local first-name labels (Kacper, Amani, Krzysztof, Elwira, Robert, Dominika, Maciej) are not verified unique-person identities; author keys remain source-scoped.",
+    "Collector-confirmed context for C001/C002 supports their retained positive evaluations despite jokes, mixed event criticism, and hosting/show-format qualifications."
+  ],
+  "schema_version": 1,
+  "run_id": "20261031-batch05",
+  "reviewer": {
+    "provider": "codex",
+    "model": "gpt-6.1-terra",
+    "prompt_version": "verify-evidence-v3"
+  },
+  "counts": {
+    "canonical_source_candidates": 7,
+    "extractor_emitted": 7,
+    "extractor_skipped": 0,
+    "reviewed_records": 7,
+    "accepted": 6,
+    "uncertain": 1,
+    "rejected": 0,
+    "mentions_input": 19,
+    "mentions_output": 18,
+    "field_corrections": 7,
+    "field_corrections_definition": "Two evidence classes, one removed mention, and two preference plus two preference_quote fields; excludes reviewer and notes changes."
+  },
+  "post_checks": {
+    "schema_v3_valid_all_records": true,
+    "canonical_source_fields_excerpt_language_context_lineage_match": true,
+    "frozen_ids_and_mentions_checked": true,
+    "author_keys_source_scoped_not_identity_proof": true,
+    "source_pages": [
+      "KupBilecik Szumowski comments page 7",
+      "Nastroik Wiolka thread",
+      "KupBilecik Płock event 26442",
+      "KupBilecik Wielka Trasa comments page 23",
+      "KupBilecik Błażej Krajewski event 203718"
+    ],
+    "source_audit_skips": [
+      "Marlena Mysza comments page 9731 not independently opened; collector verification reliance.",
+      "Elwira review for B003 not located on candidate page or in two follow-up Legnica source checks; record remains uncertain."
+    ],
+    "validator_run": "Strict graph_pipeline.load_evidence on six completed manifests, plus aggregate with frozen ranking; JSON Schema, source fields, context, quote, surface, provenance, status/count checks included.",
+    "preference_quotes_verbatim_in_author_excerpts": true,
+    "audit_history": {
+      "initial_review": {
+        "accepted": 5,
+        "uncertain": 2,
+        "rejected": 0,
+        "artifact": "reports/runs/20261031-batch05.verification-round1.json"
+      },
+      "source_adjudication": "reports/runs/20261031-batch05.source-adjudication.json; A001 published_at corrected from 2025-05-15 to 2025-05-16, event date 2025-05-14 kept separate.",
+      "follow_up": "Collector A verified the review date; collector B checked two further Legnica sources but did not locate Elwira. B003 remains uncertain.",
+      "snapshots": [
+        "evidence/batch-05/source-candidates.pre-audit.jsonl",
+        "evidence/batch-05/evidence.unreviewed.initial.jsonl",
+        "evidence/batch-05/evidence.review-round1.jsonl",
+        "evidence/batch-05/evidence.review-round2.jsonl",
+        "reports/runs/20261031-batch05.verification-round1.json",
+        "reports/runs/20261031-batch05.verification-round2.json"
+      ]
+    },
+    "surface_forms_verbatim_in_author_excerpt": true,
+    "strict_loader_records": 33,
+    "strict_loader_ignored_runs": [],
+    "additional_checks": "Batch 5 IDs checked against frozen ranking, context author keys checked, and source/excerpt/language/context/extraction provenance compared to canonical unreviewed records.",
+    "source_pages_independently_inspected_by_final_reviewer": 0,
+    "source_pages_independently_inspected_by_prior_reviewer": 5
+  },
+  "records": [
+    {
+      "id": "ev_b05_a_001",
+      "candidate_id": "src_b05a_001",
+      "status": "accepted",
+      "issues": [],
+      "corrections": [
+        "Canonical source and extracted source published_at corrected from 2025-05-15 to 2025-05-16 through source adjudication; event date 2025-05-14 remains distinct."
+      ],
+      "source_audit": "Direct full-page inspection found the review date 2025-05-16 and associated event date 2025-05-14. Collector follow-up confirmed the review date; corrected canonical source and extraction metadata now match. Initial uncertainty is preserved in the round1 verification snapshot."
+    },
+    {
+      "id": "ev_b05_b_001",
+      "candidate_id": "src_b05b_001",
+      "status": "accepted",
+      "issues": [
+        "Opening subject omitted from the author excerpt; Wiolka appears only in context, making her previous surface invalid under strict loading."
+      ],
+      "corrections": [
+        "Removed imputed Wiolka mention; retained item-scoped criticism in notes and Giza’s actual mention and praise. Reclassified qualitative comparison as fan_comparison."
+      ],
+      "source_audit": "Direct full-thread inspection confirms Amani’s comment follows the named Wiolka video; the thread context is literal source text. Scope criticism to this item; Giza gets separate explicit praise."
+    },
+    {
+      "id": "ev_b05_b_002",
+      "candidate_id": "src_b05b_002",
+      "status": "accepted",
+      "issues": [
+        "Mixed relative evaluation."
+      ],
+      "corrections": [],
+      "source_audit": "Direct event-page inspection confirms event heading, performer line, author label, exact excerpt, and separate 17 May 2018 review date. Pacześ is a comparison anchor only."
+    },
+    {
+      "id": "ev_b05_b_003",
+      "candidate_id": "src_b05b_003",
+      "status": "uncertain",
+      "issues": [
+        "Supplied excerpt was not visible in inspected event page; event page has another review mentioning Patryk Gosiński.",
+        "Collector locator specifies Legnica 2025-03-20, but canonical URL is the Świecie event page."
+      ],
+      "corrections": [
+        "Request exact review locator/permalink and confirm which event page contains Elwira’s excerpt before accepting or changing source attribution. Preserve excerpt/spelling verbatim in the meantime."
+      ],
+      "source_audit": "Direct event-page inspection verified Błażej event and a separate visible Patryk Gosiński review but not Elwira’s excerpt. Collector follow-up checked two further Legnica sources without locating the excerpt; attribution remains unresolved."
+    },
+    {
+      "id": "ev_b05_c_001",
+      "candidate_id": "src_b05c_001",
+      "status": "accepted",
+      "issues": [
+        "Preference is programme/event scoped."
+      ],
+      "corrections": [],
+      "source_audit": "Not independently reopened; collector-verification reliance. Interpretation retained under full excerpt wording."
+    },
+    {
+      "id": "ev_b05_c_002",
+      "candidate_id": "src_b05c_002",
+      "status": "accepted",
+      "issues": [
+        "Jurkiewicz praise applies in hosting role; all positive assessments event-scoped."
+      ],
+      "corrections": [],
+      "source_audit": "Direct full comments page inspection confirms exact review, author label, publication date, and Łódź 12 Oct 2018 event."
+    },
+    {
+      "id": "ev_b05_c_003",
+      "candidate_id": "src_b05c_003",
+      "status": "accepted",
+      "issues": [
+        "Mixed event evaluation; hosting and historical event scope retained. Kutek’s interestingness does not establish preference."
+      ],
+      "corrections": [
+        "Reclassified qualitative review as same_user_coendorsement. Marked Jurkiewicz’s decent hosting and Szumowski being in form again as positive event-scoped evaluations, with verbatim author quotes."
+      ],
+      "source_audit": "Direct full comments page inspection confirms exact review, author label, publication date, and Łódź 12 Oct 2018 event."
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "Surprises": [
+    "A KupBilecik audience comment on Marlena Mysza's review page also evaluates Piotrek Szumowski; it includes a body-focused insult about Mysza alongside praise for the night and interest in both performers' future programs. The complete comment is retained so the mixed evaluation is visible.",
+    "A KupBilecik event review page yielded two separate full comments evaluating Cezary Jurkiewicz alongside other frozen performers. The page labels the event generically as Wielka Trasa Stand-up Polska; individual event city and date are kept distinct from each review's publication date."
+  ],
+  "run_id": "20261031-batch05",
+  "collector": {"provider":"codex","model":"gpt-6-luna","prompt_version":"collect-fan-evidence-v3+research-budget-v1"},
+  "scope": [
+    {"rank":48,"performer_id":"marlena-mysza","name":"Marlena Mysza"},
+    {"rank":49,"performer_id":"piotr-splin","name":"Piotr Splin"},
+    {"rank":50,"performer_id":"cezary-jurkiewicz","name":"Cezary Jurkiewicz"}
+  ],
+  "counts": {
+    "search_queries":24,
+    "search_budget":24,
+    "web_open_attempts":2,
+    "t3_preview_open_navigations":3,
+    "t3_page_reads":3,
+    "page_action_budget":24,
+    "page_actions_used_including_reads":8,
+    "page_actions_unused":16,
+    "verified_candidates":3,
+    "candidate_limit":16
+  },
+  "search_history": [
+    "Marlena Mysza stand up \"lubię\"",
+    "\"Marlena Mysza\" stand up opinie forum",
+    "\"Piotr Splin\" stand up \"lubię\"",
+    "\"Cezary Jurkiewicz\" ulubiony stand up forum",
+    "\"Marlena Mysza\" \"ulubiona\" standup",
+    "\"Marlena Mysza\" \"polecam\" stand-up opinie",
+    "\"Marlena Mysza\" stand-up forum lubię",
+    "\"Marlena Mysza\" \"komiczka\" \"śmieszy\"",
+    "\"Marlena Mysza\" \"stand-up\" \"Piotr\"",
+    "\"Piotr Splin\" \"ulubiony\" stand-up",
+    "\"Piotr Splin\" \"polecam\" stand-up",
+    "\"Piotr Splin\" \"lubię\" stand-up forum",
+    "\"Piotr Splin\" \"Marlena Mysza\"",
+    "\"Piotr Splin\" \"Mieszko Minkiewicz\" opinie",
+    "\"Piotr Splin\" standup komentarze widzów",
+    "\"Marlena Mysza\" \"Daniel Midas\" \"polecam\"",
+    "\"Jurkiewicz\" \"mój ulubiony\" standup forum OR reddit",
+    "\"Czarek Jurkiewicz\" \"lubię\" komik forum",
+    "\"Jurkiewicz\" \"Szumowski\" \"lubię\" stand-up opinie",
+    "\"Splin\" \"stand up\" \"polecam\" widz",
+    "\"Piotr Splin\" opinie stand-up \"fajny\"",
+    "\"Splin\" \"zabawny\" stand-up widzowie komentarz",
+    "\"Marlena Mysza\" \"Mieszko Minkiewicz\" widzowie",
+    "\"Marlena\" Mysza \"Szumowski\" \"lubię\""
+  ],
+  "page_history": [
+    {"action":"web open","url":"https://www.kupbilecik.pl/en/comments/9731/stand-up-marlena-mysza","result":"cache miss; followed with T3 preview_status and preview_open"},
+    {"action":"T3 preview_open + page read","url":"https://www.kupbilecik.pl/en/comments/9731/stand-up-marlena-mysza","result":"full page read in owned tab tab_2_2014502e-a36c-4249-bda2-ebf3fd12cc5f; verified Robert's full comment"},
+    {"action":"web open","url":"https://www.kupbilecik.pl/en/comments/2671/wielka-trasa-stand-up-polska?page_comments=23","result":"cache miss; followed with T3 preview_status and preview_open"},
+    {"action":"T3 preview_open + page read","url":"https://www.kupbilecik.pl/en/comments/2671/wielka-trasa-stand-up-polska?page_comments=23","result":"full page read in owned tab tab_6_2014502e-a36c-4249-bda2-ebf3fd12cc5f; verified full comments by Dominika and Maciej"},
+    {"action":"T3 preview_open + page read","url":"https://www.kupbilecik.pl/en/event/29806/warszawa/stand-up-polska","result":"full page read in owned tab tab_8_2014502e-a36c-4249-bda2-ebf3fd12cc5f; no suitable viewer comment for Piotr Splin on this page"}
+  ],
+  "verified_candidates": [
+    {
+      "candidate_id":"src_b05c_001",
+      "locator":"KupBilecik comments page; entry dated 2025-06-08 by Robert; event Stand-up: Marlena Mysza, Gdańsk, 2025-06-07 18:00; visible list entry 7.",
+      "context":"Full author comment links Mysza and Szumowski, says the night was great and the author awaits new programs by both, while also making a disparaging body comment about Mysza. Treat as mixed evaluation; do not flatten to uncomplicated preference."
+    },
+    {
+      "candidate_id":"src_b05c_002",
+      "locator":"KupBilecik comments page 23; entry dated 2018-10-13 by Dominika; event Wielka Trasa Stand-up Polska, Łódź, 2018-10-12 18:00; visible list entry 14.",
+      "context":"Complete review praises the two-hour show, Syrek-Dąbrowski, Jurkiewicz as host, and Szumowski's closing set; includes a joking aside about not riding a tram with Szumowski."
+    },
+    {
+      "candidate_id":"src_b05c_003",
+      "locator":"KupBilecik comments page 23; entry dated 2018-10-14 by Maciej; event Wielka Trasa Stand-up Polska, Łódź, 2018-10-12 18:00; visible list entry 4.",
+      "context":"Complete mixed event review calls Jurkiewicz a decent host and evaluates Syrek-Dąbrowski, Szumowski, Kutek, and Kempa; author criticizes the short format and says they have attended better events."
+    }
+  ],
+  "rejected_or_skipped_leads": [
+    {"lead":"KupBilecik reviews of Piotr Splin events / Adam Van Bendler support appearances","reason":"Search results surfaced snippets or event listings, but no verified complete author comment linking Splin to another frozen performer in a qualifying review. One listing was for an event dated after retrieval/current date and was excluded."},
+    {"lead":"Standupedia bios, rankings, promotional event descriptions, performer-authored interview statements, and standup.pl video metadata","reason":"Editorial, promotional, or performer-authored material; not fan evidence."},
+    {"lead":"Reddit and Gazeta.pl results mentioning Cezary Jurkiewicz","reason":"Search results exposed known discussion threads but they are already represented in excluded prior source data, or the relevant single-author text did not link Jurkiewicz to another frozen performer with an evaluative statement."}
+  ],
+  "coverage_gaps": [
+    "No verified qualifying fan statement for Piotr Splin was found within this allowance.",
+    "Marlena Mysza has one verified multi-performer review in this slice; most review comments on the discovered listing were single-performer praise.",
+    "Search allowance was fully used (24/24 queries). Page-open/navigation allowance was not exhausted (5 opens/navigations plus 3 page reads of 24 actions). Remaining page capacity was left unused because additional searches had stopped yielding distinct, source-verifiable multi-performer fan statements."
+  ]
+}

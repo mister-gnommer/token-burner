@@ -1,0 +1,27 @@
+{
+  "batch": "batch-03",
+  "run_id": "20261031-batch03",
+  "status": "extracted_unreviewed",
+  "input_count": 4,
+  "output_count": 4,
+  "skips": [],
+  "counts": {
+    "same_user_coendorsement": 3,
+    "fan_recommendation": 1,
+    "fan_comparison": 0,
+    "same_user_rating_overlap": 0,
+    "style_similarity": 0
+  },
+  "mentions": 14,
+  "unresolved_mentions": 0,
+  "Surprises": [
+    "src_b03a_002 praises Giza and Ruciński only as a pair in an improv performance from the previous year; this is performance-scoped and does not establish general preference.",
+    "src_b03c_001 explicitly likes Pacześ despite negative character descriptors and explicitly likes Mieszko; Lotek and Giza are mentioned descriptively as popular, not endorsed.",
+    "src_b03b_001 is a reply to a recommendation request, not a favorites question; personal preference remains unknown and the author key is null."
+  ],
+  "assumptions": [
+    "The four candidate excerpts support a defined evidence class, so none were skipped.",
+    "Single mentions in a multi-person recommendation or endorsement record are retained only when they are target performers from the frozen list; unrelated improv names are omitted."
+  ],
+  "validation": "Passed JSON Schema Draft 2020-12 validation and lineage checks: four outputs match candidate source metadata/excerpt/language/context; mentions and preference quotes are verbatim and use frozen target IDs."
+}

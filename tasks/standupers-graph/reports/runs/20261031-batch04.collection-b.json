@@ -1,0 +1,45 @@
+{
+  "Surprises": [
+    "Only one new qualifying multi-performer preference statement was verified. Arkadiusz Jaksa Jakszewicz appeared as a standalone recommendation in a Reddit thread, without another frozen performer in the same author's statement; it was excluded. The verified Piasecka forum reply expresses a preference for her alone; its quoted parent is a different author and was kept separate, so it was excluded as a multi-performer statement.",
+    "The Reddit comment author and full text were visible in the opened thread, but the browser view did not expose a direct comment permalink or publication date. The thread URL and author handle are recorded; publication date is null."
+  ],
+  "run_id": "20261031-batch04",
+  "collector": {"provider":"codex","model":"gpt-6-luna","prompt_version":"collect-fan-evidence-v3"},
+  "scope": ["arkadiusz-jaksa-jakszewicz","katarzyna-piasecka","bartosz-zalewski"],
+  "budgets": {"query_limit":12,"queries_used":12,"open_click_reopen_limit":12,"open_click_reopen_events_used":5},
+  "queries": [
+    "site:reddit.com/r/Polska \"Jaksa\" stand up",
+    "Arkadiusz Jaksa Jakszewicz ulubiony stand up forum",
+    "\"Piasecka\" \"stand up\" polecam lubię forum",
+    "\"Zalewski\" \"stand up\" ulubiony polecam Reddit",
+    "\"Jakszewicza\" \"lubię\" stand-up",
+    "\"Jaksa\" \"Mój ulubiony\" komik stand up",
+    "site:reddit.com/r/Polska \"Kasię Piasecką\" lubię stand-up",
+    "site:reddit.com \"Zalewskiego\" \"trafiaj\" humor stand-up",
+    "\"Mój ulubiony to\" \"Zalewskiego\" \"Piotrka Szumowskiego\"",
+    "\"Polecam mojego ziomeczka Arkadiusza Jakszewicza\"",
+    "\"Nie no ja tam Piasecką lubię\" forum",
+    "\"Jaksa\" \"Zalewski\" \"lubię\" stand-up komicy"
+  ],
+  "open_click_reopen_events": [
+    {"event":1,"action":"open","reference":"turn84reddit12","result":"Reddit thread opened; verified comment by MurderousSofa at displayed line 220: ‘Mój ulubiony to Ponttefski. Lubię jeszcze Zalewskiego i Piotrka Szumowskiego. Tych trzech trafia w mój humor.’ Also located standalone Jaksa recommendation at displayed line 317."},
+    {"event":2,"action":"open","reference":"turn84search0","result":"Swiatpilki.com thread opened; verified Delpiero14 reply at displayed lines 387–390 and its quoted parent by fieldy. Reply expresses liking for Piasecka; parent is separately attributed."},
+    {"event":3,"action":"open","reference":"turn84reddit17","result":"Failed: Reddit cache miss."},
+    {"event":4,"action":"open","reference":"turn84search1","result":"Failed: KupBilecik cache miss."},
+    {"event":5,"action":"open","reference":"turn84search9","result":"Failed: KupBilecik cache miss."}
+  ],
+  "saved_candidates": [
+    {"candidate_id":"src_b04b_001","locator":"https://www.reddit.com/r/Polska/comments/105mykf/stand_up_rekomendacje/ — comment by MurderousSofa; browser-rendered line 220","links":["bartosz-zalewski","cezary-ponttefski","piotr-zola-szulowski"],"reason":"First-person favorite and explicit personal liking across all three; author says all three fit their humor."}
+  ],
+  "skipped_sources": [
+    {"source":"https://www.reddit.com/r/Polska/comments/105mykf/stand_up_rekomendacje/ — comment by [hajpero1], rendered line 317","reason":"‘Polecam mojego ziomeczka Arkadiusza Jakszewicza’ is a standalone recommendation and names no other frozen performer in the same author statement."},
+    {"source":"https://swiatpilki.com/viewtopic.php?t=20492 — post by Delpiero14, 2018-02-07 20:31","reason":"Explicit personal liking and positive appraisal of Piasecka, but no other frozen performer is evaluated in the same author post. Quoted parent by fieldy is a separate speaker and cannot be merged."},
+    {"source":"https://www.kupbilecik.pl/pl/comments/4905/stand-up-arkadiusz-jaksa-jakszewicz?page_comments=1","reason":"Search result reviews concern Jaksa alone; page open failed with cache miss, so no review was extracted."},
+    {"source":"https://www.kupbilecik.pl/pl/comments/2441/bartosz-zalewski?page_comments=3","reason":"Search result excerpt appeared to be a single-performer review; page open failed with cache miss, so not included."}
+  ],
+  "coverage_gaps": [
+    "No qualifying multi-performer preference statement found for Arkadiusz Jaksa Jakszewicz or Katarzyna Piasecka within this capped search pass.",
+    "Standalone Arkadiusz recommendation and standalone Piasecka preference were observed but do not satisfy the multi-performer linking criterion.",
+    "Reddit publication date and direct comment permalink were unavailable in the browser view; source locator is the verified thread URL plus author and rendered post line."
+  ]
+}

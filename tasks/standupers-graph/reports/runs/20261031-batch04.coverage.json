@@ -1,0 +1,155 @@
+{
+  "run_id": "20261031-batch04",
+  "updated_at": "2026-10-31T10:06:15Z",
+  "scope": "focal ranks 31–40 only; incidental neighbors do not process another batch",
+  "coverage": [
+    {
+      "rank": 31,
+      "performer_id": "marcin-zbigniew-wojciech",
+      "name": "Marcin Zbigniew Wojciech",
+      "searched": true,
+      "new_candidates": 0,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 32,
+      "performer_id": "czarek-sikora",
+      "name": "Czarek Sikora",
+      "searched": true,
+      "new_candidates": 0,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 33,
+      "performer_id": "lukasz-kowalski",
+      "name": "Łukasz Kowalski",
+      "searched": true,
+      "new_candidates": 0,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 1
+    },
+    {
+      "rank": 34,
+      "performer_id": "tomasz-machnicki",
+      "name": "Tomasz Machnicki",
+      "searched": true,
+      "new_candidates": 0,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 35,
+      "performer_id": "arkadiusz-jaksa-jakszewicz",
+      "name": "Arkadiusz Jaksa Jakszewicz",
+      "searched": true,
+      "new_candidates": 0,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 36,
+      "performer_id": "katarzyna-piasecka",
+      "name": "Katarzyna Piasecka",
+      "searched": true,
+      "new_candidates": 0,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 37,
+      "performer_id": "bartosz-zalewski",
+      "name": "Bartosz Zalewski",
+      "searched": true,
+      "new_candidates": 1,
+      "accepted_mention_records": 1,
+      "cumulative_scored_fans": 1
+    },
+    {
+      "rank": 38,
+      "performer_id": "michal-kutek",
+      "name": "Michał Kutek",
+      "searched": true,
+      "new_candidates": 1,
+      "accepted_mention_records": 1,
+      "cumulative_scored_fans": 1
+    },
+    {
+      "rank": 39,
+      "performer_id": "tomek-kolecki",
+      "name": "Tomek Kołecki",
+      "searched": true,
+      "new_candidates": 0,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 40,
+      "performer_id": "bartosz-gajda",
+      "name": "Bartosz Gajda",
+      "searched": true,
+      "new_candidates": 0,
+      "accepted_mention_records": 0,
+      "cumulative_scored_fans": 0
+    }
+  ],
+  "raw_candidates": 2,
+  "new_candidates": 2,
+  "new_reviewed_records": 2,
+  "accepted_representations": 2,
+  "uncertain_representations": 0,
+  "rejected_representations": 0,
+  "cumulative_records": 26,
+  "cumulative_relations": 37,
+  "accepted_pairs": 6,
+  "accepted_pairs_added": 0,
+  "accepted_pairs_downgraded": 0,
+  "added_pair_ids": [
+    "adam-sobaniec__michal-kutek",
+    "bartosz-zalewski__cezary-ponttefski",
+    "bartosz-zalewski__piotrek-szumowski",
+    "cezary-ponttefski__piotrek-szumowski"
+  ],
+  "downgraded_pair_ids": [],
+  "upgraded_pair_ids": [],
+  "provisional_candidates": 19,
+  "contested_or_opposing_only_candidates": 12,
+  "visible_nodes": 42,
+  "drawn_solid": 6,
+  "drawn_provisional": 12,
+  "visible_photos": 42,
+  "visible_placeholders": 0,
+  "worker_reported_collection_usage": {
+    "queries": 36,
+    "page_opens_or_clicks": 20,
+    "by_collector": {
+      "A": {
+        "queries": 12,
+        "page_opens_or_clicks": 5
+      },
+      "B": {
+        "queries": 12,
+        "page_opens_or_clicks": 5
+      },
+      "C": {
+        "queries": 12,
+        "page_opens_or_clicks": 10,
+        "failed_web_opens": 8,
+        "successful_preview_navigations": 2
+      }
+    },
+    "access_gaps": [
+      "A: failed review-page cache opens; repeat Reddit thread contained only an already-stored comment and non-frozen comparisons.",
+      "B: Reddit comment permalink/date unavailable in browser; other KupBilecik pages failed to open.",
+      "C: eight web opens failed; two T3 preview navigations succeeded. Review text was verified for all three leads; two remained excluded because “Zalew”/“Kołek” identities could not be resolved.",
+      "No qualifying new multi-performer evidence for ranks 31–36, 39–40 in the bounded searches."
+    ]
+  },
+  "limitations": [
+    "Kamil’s source-local display name does not identify a real person.",
+    "“Duet” binds only to the event header naming Sobaniec and Kutek; preference is limited to that joint event."
+  ],
+  "cost": "Measured token/money usage unavailable; no estimate invented.",
+  "drawn_dashed": 12
+}

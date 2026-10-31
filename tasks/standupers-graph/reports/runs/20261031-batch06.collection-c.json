@@ -1,0 +1,31 @@
+{
+  "run_id": "20261031-batch06",
+  "collector": {"provider": "codex", "model": "gpt-6-luna", "prompt_version": "collect-fan-evidence-v3+research-budget-v1"},
+  "scope": {"focal_ranks": [58, 59, 60], "focal_performer_ids": ["filip-brymora", "marcin-chmiel", "bartosz-strusinski"], "relations_may_include": "any frozen performer"},
+  "Surprises": ["The Reddit result is a thread already present in prior batch candidate files, but this exact comment by SeparateRace7699 was not present; it is distinct evidence, so it was retained."],
+  "counts": {"individual_search_queries": 3, "page_open_or_navigation_attempts": 10, "verified_candidates": 1, "remaining_queries": 21, "remaining_page_open_or_navigation_attempts": 14},
+  "actual_queries": [
+    "\"Filip Brymora\" stand-up lubię OR ulubiony OR polecam forum",
+    "\"Marcin Chmiel\" stand-up lubię OR ulubiony OR polecam forum",
+    "\"Bartosz Strusiński\" stand-up lubię OR ulubiony OR polecam forum"
+  ],
+  "open_history": [
+    {"attempt": 1, "target": "Reddit search result turn129reddit12", "result": "opened full thread; author text visible"},
+    {"attempt": 2, "target": "https://www.kupbilecik.pl/pl/comments/8515/stand-up-filip-brymora", "result": "web open cache miss"},
+    {"attempt": 3, "target": "https://www.kupbilecik.pl/pl/event/192018/krakow/stand-up-bartek-strusinski", "result": "web open cache miss"},
+    {"attempt": 4, "target": "https://www.kupbilecik.pl/pl/comments/8515/stand-up-filip-brymora", "result": "full URL web open cache miss"},
+    {"attempt": 5, "target": "https://www.kupbilecik.pl/pl/event/192018/krakow/stand-up-bartek-strusinski", "result": "full URL web open cache miss"},
+    {"attempt": 6, "target": "T3 preview_status", "result": "available:true; prior tab listing only; did not read or operate human tabs"},
+    {"attempt": 7, "target": "https://www.kupbilecik.pl/pl/comments/8515/stand-up-filip-brymora", "result": "T3 preview_open available:true, own hidden tab"},
+    {"attempt": 8, "target": "T3 preview_status", "result": "available:true; collector-owned tabs"},
+    {"attempt": 9, "target": "https://www.kupbilecik.pl/pl/event/192018/krakow/stand-up-bartek-strusinski", "result": "T3 preview_open available:true, own hidden tab"},
+    {"attempt": 10, "target": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/comment/onqmf22/", "result": "exact-comment click locator resolved to URL, web cache miss"}
+  ],
+  "candidate_locators": [{"candidate_id": "src_b06c_001", "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/comment/onqmf22/", "author": "SeparateRace7699", "excerpt": "Piotek Szumowski, Cezary Pontefski, Marcin Chmiel, Mieszko Minkiewicz, Abelard Giza, Antoni Syrek-Dąbrowski, Michał Leja"}],
+  "skipped_sources": [
+    {"url": "https://www.kupbilecik.pl/pl/comments/8515/stand-up-filip-brymora", "reason": "Web cache miss after result and full URL attempts; T3 preview opened but both page snapshots timed out. Snippets excluded."},
+    {"url": "https://www.kupbilecik.pl/pl/event/192018/krakow/stand-up-bartek-strusinski", "reason": "Web cache miss after result and full URL attempts; T3 preview opened but both page snapshots timed out. Snippets excluded."}
+  ],
+  "coverage_gaps": ["Only one candidate verified. No verified evidence for Filip Brymora or Bartosz Strusiński in this pass. Remaining allowance is available for further collection."],
+  "early_stop": "Stopped this pass after T3 snapshot timeouts and saving the verified Reddit evidence; 21 queries and 14 page-open/navigation attempts remain."
+}

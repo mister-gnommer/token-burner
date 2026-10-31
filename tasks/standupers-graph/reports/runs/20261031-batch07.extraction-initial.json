@@ -1,0 +1,52 @@
+{
+  "run_id": "20261031-batch07",
+  "stage": "extraction",
+  "provider": "codex",
+  "model": "gpt-6-luna",
+  "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1",
+  "input": "evidence/batch-07/source-candidates.jsonl",
+  "output": "evidence/batch-07/evidence.unreviewed.jsonl",
+  "counts": {
+    "candidates": 7,
+    "records": 2,
+    "skipped": 5
+  },
+  "records": [
+    {
+      "candidate_id": "src_b07c_001",
+      "evidence_id": "ev_b07_c_001",
+      "evidence_class": "same_user_coendorsement",
+      "notes": "Both performers receive explicit absolute praise in this review of the joint event. Pałubski’s “jak zawsze” is retained as the author’s recurrence wording; this is not promoted to an unscoped favorite claim."
+    },
+    {
+      "candidate_id": "src_b07c_002",
+      "evidence_id": "ev_b07_c_002",
+      "evidence_class": "same_user_coendorsement",
+      "notes": "Event-specific co-endorsement. Bartosz and Jasiek are explicitly praised together for duo chemistry and conversational style; this supports praise of their performance in this format, not a general style preference. Marek and Adam are retained as relevant unresolved performers; no canonical identities are inferred. Preference quotes for the unresolved names are null because identity-level preference cannot be assigned."
+    }
+  ],
+  "skips": [
+    {
+      "candidate_id": "src_b07b_001",
+      "reason": "Single-performer Igor Kwiatkowski review; event praise/recommendation has no second evaluated frozen performer, so no pair-level evidence class fits."
+    },
+    {
+      "candidate_id": "src_b07b_002",
+      "reason": "Single-performer Igor Kwiatkowski review; positive praise concerns only Igor, so no pair-level evidence class fits."
+    },
+    {
+      "candidate_id": "src_b07b_003",
+      "reason": "Single-performer Igor Kwiatkowski review. The excerpt says the author’s wife loves Igor; it does not establish the author’s own preference and no second evaluated performer is present."
+    },
+    {
+      "candidate_id": "src_b07b_005",
+      "reason": "Bare Reddit list is a recommendation for genre suitability, not a response to a personal-favorites question. No personal preferences are established; a list alone fits no pair-level class. Cezary Ponteffski, Bartosz Zalewski and Wojtek Fiedorczuk were recognized as frozen names if referenced, but no evidence record is emitted."
+    }
+  ],
+  "surprises": [
+    "The solo Igor review naming Michael Jackson describes an imitation/metaphor within the performance; Michael Jackson is outside the frozen population and is not an evaluated co-performer.",
+    "C002 praises the duo’s chemistry and conversational style, which is event/format-specific. Its additional praise of Marek and Adam is retained as unresolved mentions because first names alone do not support canonical identity resolution.",
+    "B005’s list matches a genre-suitability request, so the favorite-reply exception does not apply; despite the list containing recognizable frozen names, it cannot be upgraded to personal preference or pair evidence."
+  ],
+  "notes": "All source fields, excerpts, language, and supplied context copied exactly. Initial review remains unreviewed with reviewer null. One mention per performer; canonical frozen IDs used when resolved. No other files modified."
+}

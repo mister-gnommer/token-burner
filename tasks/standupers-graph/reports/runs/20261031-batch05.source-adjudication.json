@@ -1,0 +1,22 @@
+{
+  "updated_at": "2026-10-31T10:29:59Z",
+  "preserved_inputs": [
+    "evidence/batch-05/source-candidates.pre-audit.jsonl",
+    "evidence/batch-05/evidence.unreviewed.initial.jsonl",
+    "evidence/batch-05/evidence.review-round1.jsonl",
+    "reports/runs/20261031-batch05.verification-round1.json"
+  ],
+  "corrections": [
+    {
+      "candidate_id": "src_b05a_001",
+      "field": "published_at",
+      "before": "2025-05-15",
+      "after": "2025-05-16",
+      "basis": "Collector and independent verifier both read reviewdate2025-05-16; eventdate2025-05-14 kept separate in report."
+    }
+  ],
+  "remaining_uncertainty": {
+    "candidate_id": "src_b05b_003",
+    "reason": "Elwira quote not independently located at supplied event page or bounded Legnica followup; retain uncertain, do not score."
+  }
+}

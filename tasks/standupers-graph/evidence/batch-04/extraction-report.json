@@ -1,0 +1,25 @@
+{
+  "batch": "batch-04",
+  "run_id": "20261031-batch04",
+  "status": "extracted_unreviewed",
+  "input_count": 2,
+  "output_count": 2,
+  "skips": [],
+  "counts": {
+    "same_user_coendorsement": 2,
+    "fan_recommendation": 0,
+    "fan_comparison": 0,
+    "same_user_rating_overlap": 0,
+    "style_similarity": 0
+  },
+  "mentions": 5,
+  "unresolved_mentions": 0,
+  "Surprises": [
+    "src_b04c_001 contains praise for an anaphoric “duet”, not individual performer names. The verified event header independently names Adam Sobaniec and Michał Kutek, supporting a joint event-scoped binding; the excerpt’s surface form remains “duet”."
+  ],
+  "assumptions": [
+    "src_b04b_001 is the verified personal-favorites entry indicated by the task brief; its excerpt independently contains explicit personal liking, so no parent context is needed.",
+    "The two jointly attributed performer mentions in src_b04c_001 describe preference for the event-specific duo only."
+  ],
+  "validation": "Passed JSON Schema Draft 2020-12 validation and lineage checks: two outputs match canonical candidate source metadata/excerpt/language/context; mentions use frozen target IDs, verbatim surfaces and preference quotes."
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "run_id": "20261031-batch06",
+  "stage": "batch",
+  "batch": 6,
+  "status": "completed",
+  "performer_ids": [
+    "ewa-blachnio",
+    "pawel-konkiel",
+    "karolina-panczyk",
+    "jarek-legonkoff",
+    "wojciech-termos-tremiszewski",
+    "pawel-bakteria",
+    "kuba-dabrowski",
+    "filip-brymora",
+    "marcin-chmiel",
+    "bartosz-strusinski"
+  ],
+  "paths": {
+    "source_candidates": "evidence/batch-06/source-candidates.jsonl",
+    "evidence_unreviewed": "evidence/batch-06/evidence.unreviewed.jsonl",
+    "evidence": "evidence/batch-06/evidence.jsonl",
+    "verification_report": "reports/runs/20261031-batch06.verification.json"
+  },
+  "workers": {
+    "collector": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "collect-fan-evidence-v3+research-budget-v1"
+    },
+    "extractor": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1"
+    },
+    "verifier": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "verify-evidence-v3"
+    }
+  },
+  "counts": {
+    "source_candidates": 5,
+    "extracted": 2,
+    "accepted": 2,
+    "uncertain": 0,
+    "rejected": 0
+  },
+  "surprises": [
+    "B collection interrupted with no usage ledger; ranks55–57 coverage incomplete and performer statuses remain pending.",
+    "Three solo B reviews skipped; Reddit recommendation list preserves unknown personal preferences.",
+    "Host memory incident reported by user; exact cause unverified; recovery roles run sequentially."
+  ],
+  "notes": "Recovered snapshot with explicit research gaps:5canonical candidates,2independently accepted representations,3verified skips. Ranks55–57 incomplete; no fresh B allowance inferred. Graph may load this reviewed snapshot; completed status describes artifact processing, not complete research coverage. Known A/C usage27queries/23pageattempts plus unknown original B. No Git requested.",
+  "created_at": "2026-10-31T11:40:07Z",
+  "updated_at": "2026-10-31T14:09:06Z"
+}

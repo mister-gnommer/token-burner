@@ -1,0 +1,110 @@
+{
+  "Surprises": [
+    "The name Maciej Kwiatkowski resolves in the frozen catalog as Kucharz Maciej. Searches found public audience reviews of him, but none that linked his evaluation to another frozen performer.",
+    "Search results and opened pages exposed positive and negative solo audience reviews for Adam Sobaniec, but none contained a qualifying fan statement linking him with another frozen performer."
+  ],
+  "run_id": "20261031-batch03",
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3"
+  },
+  "scope": [
+    "mieszko-minkiewicz",
+    "maciej-kwiatkowski",
+    "adam-sobaniec"
+  ],
+  "budgets": {
+    "queries_max": 12,
+    "queries_used": 12,
+    "page_open_click_events_max": 12,
+    "page_open_click_events_used": 5
+  },
+  "queries": [
+    "Mieszko Minkiewicz lubię polecam forum stand up ulubiony polski stand-up",
+    "Maciej Kwiatkowski stand-up lubię polecam forum standuperzy",
+    "Adam Sobaniec stand-up lubię polecam forum polski stand-up",
+    "\"Maciej Kwiatkowski\" stand-up komik opinie forum",
+    "\"Maciej Kwiatkowski\" standup lubię komik",
+    "\"Adam Sobaniec\" stand up polecam forum opinie",
+    "\"Mieszko Minkiewicz\" \"lubię\" forum stand up polecam ulubiony",
+    "\"Maciej Kwiatkowski\" \"Adam Sobaniec\" stand up opinie",
+    "\"Adam Sobaniec\" \"Lotek\" lubię stand-up fan",
+    "\"Kucharz Maciej\" stand-up polecam opinie forum lubię",
+    "\"Adam Sobaniec\" \"Mieszko Minkiewicz\" polecam lubię opinia fan",
+    "\"Maciej Kwiatkowski\" \"Kucharz Maciej\" opinie publiczności stand-up"
+  ],
+  "page_open_click_history": [
+    {
+      "event": 1,
+      "url": "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169",
+      "purpose": "Read full forum thread and verify comment 6, author JohnDoe666, dated 2023-01-14."
+    },
+    {
+      "event": 2,
+      "url": "https://www.reddit.com/r/Polska/comments/105mykf/stand_up_rekomendacje/",
+      "purpose": "Read full Reddit thread and verify comment text listing Piotrek Szumowski, Mieszko Minkiewicz, Magda Kubicka, and Paweł Chałupka."
+    },
+    {
+      "event": 3,
+      "url": "https://www.reddit.com/r/Polska/comments/105mykf/stand_up_rekomendacje/",
+      "purpose": "Re-open same thread around the list comment to check surrounding attribution and adjacent replies."
+    },
+    {
+      "event": 4,
+      "url": "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169",
+      "purpose": "Re-open same thread around comment 27 and verify the full post, caveats, and replies; not included because it does not evaluate another frozen performer."
+    },
+    {
+      "event": 5,
+      "url": "https://www.reddit.com/r/Polska/comments/105mykf/stand_up_rekomendacje/",
+      "purpose": "Re-open same thread top to verify the original request and its separate author; that author is deleted."
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "src_b03c_001",
+      "locator": "GRYOnline.pl thread post 6, JohnDoe666, 2023-01-14 22:08; full post verified at thread URL. Whole post retains praise for Mieszko and mixed characterization of Rafał Pacześ, plus evaluations of Lotek and Giza."
+    },
+    {
+      "candidate_id": "src_b03c_002",
+      "locator": "Reddit r/Polska thread comment at rendered lines 270-276 (the comment is marked deleted; timestamp rendered as 4 years ago); exact author unavailable. Parent post at rendered lines 16-21 is also marked deleted; separate parent text stored in context with null author."
+    }
+  ],
+  "skipped_sources": [
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/4959/stand-up-adam-sobaniec?page_comments=2",
+      "reason": "Search result showed named reviews of Adam Sobaniec, but no eligible link to a second frozen performer; solo reviews are outside the requested link evidence."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/14207/kucharz-maciej",
+      "reason": "Search result showed named reviews of Kucharz Maciej, but no eligible link to a second frozen performer."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/en/comments/3913/mieszko-minkiewicz-stand-up?page_comments=1",
+      "reason": "Search result reviews were mostly solo evaluations; GOL forum and Reddit yielded more useful whole-author statements with performer links."
+    },
+    {
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+      "reason": "Appeared in search results and is already represented in existing production evidence; no new comment was reopened or recaptured."
+    },
+    {
+      "url": "https://www.reddit.com/r/poland/comments/1egewxi/polish_standup_comedy/",
+      "reason": "Appeared in search results and is already represented in existing production evidence; no new comment was reopened or recaptured."
+    }
+  ],
+  "coverage_gaps": [
+    "No qualifying linked fan evidence found for Maciej Kwiatkowski or Adam Sobaniec within the 12-query / 5-open budget.",
+    "Mieszko Minkiewicz has two candidate statements, one explicit personal liking/comparison and one context-dependent recommendation list with deleted author identity.",
+    "No post permalinks were followed; verified thread locations are given above, consistent with the instruction not to chase permalinks after full-thread verification."
+  ],
+  "counts": {
+    "candidates_written": 2,
+    "by_focal": {
+      "mieszko-minkiewicz": 2,
+      "maciej-kwiatkowski": 0,
+      "adam-sobaniec": 0
+    },
+    "skipped_source_groups": 5
+  }
+}

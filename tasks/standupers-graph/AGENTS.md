@@ -13,8 +13,11 @@ At the start of a conversation, read `standupers-human-input.md`, `STATE.md`, an
 - A batch contains 10 stand-uppers. Never start a batch without an explicit user command. Pause after its graph and report are saved.
 - Use low-tier subagents for the main collection and extraction work. Main agents orchestrate and audit; escalate only work that demonstrably needs it, and record why.
 - Real batches use multiple low-tier collectors, separate low-tier extraction, and separate low-tier verification. The main agent integrates outputs, spot-checks evidence, and resolves reported exceptions; do not routinely redo the workers' full semantic review. Report worker roles and main-agent interventions with each batch.
+- From batch5, keep three low-tier collectors and double each collector's research allowance to24 queries/24 page-open or navigation attempts, with up to16 verified candidates. Apply `prompts/research-budget-v1.md`; extraction and independent verification remain separate.
+- Before each batched search, enforce the remaining allowance with a code counter: count individual queries in the batch, not tool calls, and stop before exceeding the cap.
 - Be AI-driven, not AI-vibes-driven: use AI for discovery, Polish-language interpretation, entity resolution, preference/sentiment extraction, and evidence-based relation explanations. Use code for repeatable aggregation and rendering.
 - Every factual relation must trace to stored evidence. Never turn a mere co-mention into a co-preference, and never present missing evidence as dislike or dissimilarity.
+- A web-cache miss does not prove a source is inaccessible. Within the worker budget, try the full result URL and T3 `preview_status` then `preview_open`; a closed preview reporting `available:false` still needs an open attempt. Never promote unverified search snippets.
 - Keep fan-preference evidence distinct from performer/style similarity. Do not silently substitute one for the other if fan data is insufficient.
 - Use D2 for graph rendering; save editable `.d2` sources alongside SVG snapshots.
 - Save schemas, prompts, model/provider details, source metadata, normalized outputs, and scorer versions so results are inspectable and resumable. Keep raw source excerpts and citations with their extracted claims.

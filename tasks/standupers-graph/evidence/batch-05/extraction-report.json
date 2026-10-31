@@ -1,0 +1,39 @@
+{
+  "run_id": "20261031-batch05",
+  "schema_version": 3,
+  "provider": "codex",
+  "model": "gpt-6-luna",
+  "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1",
+  "input": "source-candidates.jsonl",
+  "output": "evidence.unreviewed.jsonl",
+  "counts": {
+    "candidates": 7,
+    "records_written": 7,
+    "skipped": 0,
+    "mentions": 19
+  },
+  "skips": [],
+  "surprises": [
+    "The source-local author labels (Kacper, Amani, Krzysztof, Elwira, Robert, Dominika, Maciej) are display labels only and do not establish real-person identities.",
+    "B001 depends on contextual binding of its omitted opening subject to Wiolka; the negative evaluation is limited to that context.",
+    "B003 spells the support’s name “Patryk Gośiński”; the supplied event identity supports binding to frozen Patryk Gosiński."
+  ],
+  "assumptions": [
+    "The supplied candidate target IDs are frozen canonical identities; no outside research or alias resolution was performed.",
+    "Event headers and parent/thread text are used only to resolve subject and scope, never transferred as author opinion."
+  ],
+  "validation": [
+    "Copied candidate source metadata, excerpt, language, and context exactly.",
+    "Every preference quote is an exact substring of its author excerpt; unknown preferences have null quotes.",
+    "One mention per resolved performer; no unsupported mention was added.",
+    "A001 source metadata matches the current canonical candidate record after the source audit correction; other six evidence records were preserved unchanged."
+  ],
+  "source_metadata_correction": {
+    "candidate_id": "src_b05a_001",
+    "field": "published_at",
+    "previous_value": "2025-05-15",
+    "canonical_value": "2025-05-16",
+    "reason": "Source audit confirmed review date 2025-05-16; event date is 2025-05-14.",
+    "scope": "Updated A001 source metadata only; excerpt, context, author, and mentions retained."
+  }
+}

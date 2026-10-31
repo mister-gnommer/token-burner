@@ -1,0 +1,21 @@
+{
+  "run_id": "20261031-batch03",
+  "raw_candidates": 5,
+  "canonical_candidates": 4,
+  "duplicates": [
+    {
+      "candidate_id": "src_b03c_002",
+      "duplicate_of": "src_b03b_001"
+    }
+  ],
+  "normalizations": [
+    "Canonical hostname and source-local author keys; source URL session sid removed while stable post ID retained."
+  ],
+  "surprises": [
+    "Collectors B and C independently collected the same deleted-author recommendation."
+  ],
+  "parent_interventions": [
+    "Requested collector B retry full result URLs using remaining open budget; one valid recommendation recovered.",
+    "Deterministic normalization/deduplication/schema checks; no parent research or extraction."
+  ]
+}

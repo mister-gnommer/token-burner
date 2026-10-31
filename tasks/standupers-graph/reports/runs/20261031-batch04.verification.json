@@ -1,0 +1,76 @@
+{
+  "batch": "batch-04",
+  "run_id": "20261031-batch04",
+  "reviewer": "codex/gpt-6-luna",
+  "status": "verified",
+  "Surprises": [
+    "Both full source pages were available for verification: Reddit directly rendered the author-labeled comment under MurderousSofa; KupBilecik’s T3 preview_status was available and preview_open succeeded despite prior web cache failure.",
+    "The Reddit parent asks for recommendations rather than personal favorites. The respondent’s own explicit favorite/liking statements still establish co-endorsement independently; no preference is transferred from the parent.",
+    "The KupBilecik review’s “duet” is an anaphoric, joint event evaluation. The event header provides the binding to Sobaniec and Kutek, but the preference remains event-specific."
+  ],
+  "counts": {
+    "input_records": 2,
+    "output_records": 2,
+    "accepted": 2,
+    "uncertain": 0,
+    "rejected": 0,
+    "skips": 0,
+    "evidence_classes": {
+      "same_user_coendorsement": 2,
+      "fan_recommendation": 0,
+      "fan_comparison": 0,
+      "same_user_rating_overlap": 0,
+      "style_similarity": 0
+    },
+    "mentions": 5,
+    "positive_preferences": 5,
+    "negative_preferences": 0,
+    "unknown_preferences": 0,
+    "unresolved_mentions": 0
+  },
+  "per_record": [
+    {
+      "id": "ev_b04_b_001",
+      "candidate_id": "src_b04b_001",
+      "status": "accepted",
+      "issues_or_corrections": [
+        "Full thread confirms the author label and exact excerpt. All three mentions have explicit personal preference; parent recommendation prompt did not provide preference evidence and was not relied upon. No field correction required."
+      ]
+    },
+    {
+      "id": "ev_b04_c_001",
+      "candidate_id": "src_b04c_001",
+      "status": "accepted",
+      "issues_or_corrections": [
+        "Full page confirms author display name Kamil, published date 2022-10-03, exact excerpt, and event header naming Adam Sobaniec and Michał Kutek. Anaphoric “duet” supports joint event-scoped positive preference for both. No solo/current/career-wide preference inferred; no field correction required."
+      ]
+    }
+  ],
+  "source_audit": [
+    {
+      "url": "https://www.reddit.com/r/Polska/comments/105mykf/stand_up_rekomendacje/",
+      "result": "Full Reddit page inspected. Parent title/body is “Stand up rekomendacje” and asks what people can recommend. At the MurderousSofa author label, comment dated approximately four years ago: exact excerpt matches. The respondent independently identifies a favorite and explicitly likes the two others. Parent is not a favorites question."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/9245/stand-up-adam-sobaniec-i-michal-kutek",
+      "result": "Opened with T3 preview_status then preview_open and inspected the full rendered page. Comment by Kamil is dated 2022-10-03, its full text exactly matches the candidate, and the associated event header says “Stand-up: Adam Sobaniec i Michał Kutek”; event listing identifies Poznań, 02 October 2022."
+    }
+  ],
+  "lineage_and_quote_audit": {
+    "result": "Both final records preserve candidate/source IDs, source metadata, excerpt, language, context and extraction provenance exactly as in evidence.unreviewed.jsonl. Mention surfaces are verbatim excerpt substrings. Every preference quote is an exact substring supporting the author’s stated liking or scoped absolute positive assessment. Reviewer fields and notes were updated only. Frozen performer IDs match the frozen ranking identities.",
+    "identity": "No aliases were expanded. MurderousSofa and Kamil are source-local public handles/display names; neither establishes a unique real-world person. Kamil’s author_key remains source-scoped; no confidence was inflated."
+  },
+  "skip_audit": {
+    "extraction_skips": [],
+    "collector_initial_quarantined_leads": 3,
+    "canonical_candidates": 2,
+    "recovered_after_actual_browser_verification": 1,
+    "excluded_identity_ambiguous_leads": 2,
+    "review": "The two other initial leads are src_b04c_002 and src_b04c_003, reviews with unresolved “Zalew”/“Kołek” identity. They were read but are ineligible and were not promoted. No skipped lead was added. No new collection or queries were performed."
+  },
+  "coverage_gaps": [
+    "This audit covers only the two canonical candidates in the assigned batch; excluded ambiguous Kołecki reviews are not represented as evidence.",
+    "Public source-local author labels do not permit verified cross-source or real-person identity resolution."
+  ],
+  "correction_history": []
+}

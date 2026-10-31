@@ -1,0 +1,123 @@
+{
+  "run_id": "20261031-batch07",
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+research-budget-v1"
+  },
+  "scope": [
+    "michal-palubski",
+    "jasiek-borkowski",
+    "jakub-poczety"
+  ],
+  "limits": {
+    "queries": 24,
+    "page_attempts": 24,
+    "verified_candidates": 16
+  },
+  "queries_used": 18,
+  "page_attempts_used": 6,
+  "queries": [
+    "\"Michał Pałubski\" ulubiony OR polecam OR lubię",
+    "\"Jasiek Borkowski\" ulubiony OR polecam OR lubię",
+    "\"Jakub Poczęty\" ulubiony OR polecam OR lubię",
+    "site:reddit.com/r/Polska \"Michał Pałubski\" stand up polecam",
+    "site:reddit.com/r/Polska \"Jasiek Borkowski\" stand up",
+    "site:reddit.com/r/Polska \"Jakub Poczęty\" komik polecam",
+    "\"Michał Pałubski\" \"Jasiek Borkowski\" OR \"Jakub Poczęty\" opinie",
+    "site:wykop.pl \"Michał Pałubski\" \"Jakub Poczęty\" OR \"Jasiek Borkowski\"",
+    "site:filmweb.pl/forum \"Michał Pałubski\" OR \"Jasiek Borkowski\" OR \"Jakub Poczęty\"",
+    "\"Pałubski\" \"Poczęty\" polecam stand-up",
+    "\"Jasiek\" \"Poczęty\" stand-up ulubiony",
+    "\"Świetna zabawa, Pałubski wymiatał jak zawsze\" \"Poczętego\"",
+    "\"Poczętego pierwszy raz widziałem na żywo\" Pałubski",
+    "site:kupbilecik.pl/pl/db/7489 \"Kazimierz\" \"Pałubski\"",
+    "\"Jasiek Borkowski\" \"ulubiony\" komik forum",
+    "\"Jasiek Borkowski\" \"polecam\" stand-up forum",
+    "\"Jakub Poczęty\" \"Jasiek Borkowski\" fan OR lubię OR ulubiony",
+    "\"Pałubski\" \"Borkowski\" \"Polecam\" stand-up"
+  ],
+  "opens": [
+    {
+      "url": "https://www.kupbilecik.pl/en/db/7489/stand-up-michal-palubski-i-jakub-poczety?kb_ref=event&kb_ref_id=state_past",
+      "action": "web.open",
+      "result": "Cache miss."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/en/db/7489/stand-up-michal-palubski-i-jakub-poczety?kb_ref=event&kb_ref_id=state_past",
+      "action": "preview_open",
+      "result": "Succeeded; browser available."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/3483/zalewski-borkowski-przedstawiaja",
+      "action": "web.open",
+      "result": "Cache miss."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/3483/zalewski-borkowski-przedstawiaja",
+      "action": "preview_open + preview_evaluate",
+      "result": "Succeeded; full page text retrieved and matching author post verified."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments?page_comments=6708",
+      "action": "preview_navigate + preview_evaluate",
+      "result": "Succeeded; live pagination content was unrelated to target comment, indicating stale search index/pagination locator."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/db/7489/stand-up-michal-palubski-i-jakub-poczety?kb_ref=event&kb_ref_id=state_past",
+      "action": "preview_navigate + preview_evaluate",
+      "result": "Succeeded; event-specific page contains Kazimierz’s full review and Toruń event entry."
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "src_b07c_001",
+      "locator": "https://www.kupbilecik.pl/pl/db/7489/stand-up-michal-palubski-i-jakub-poczety?kb_ref=event&kb_ref_id=state_past; Kazimierz; Toruń, 2021-06-30; published 2021-07-01",
+      "performer_ids": [
+        "michal-palubski",
+        "jakub-poczety"
+      ],
+      "evidence": "Explicit positive evaluation of both; event-level co-endorsement; no personal favorite claim."
+    },
+    {
+      "candidate_id": "src_b07c_002",
+      "locator": "https://www.kupbilecik.pl/pl/comments/3483/zalewski-borkowski-przedstawiaja; Michał; Zalewski & Borkowski Przedstawiają; Wrocław, 2021-09-10 20:30; published 2021-09-12",
+      "performer_ids": [
+        "jasiek-borkowski",
+        "bartosz-zalewski"
+      ],
+      "evidence": "Explicit positive comparison of Jasiek and Bartosz, praising their chemistry and conversational style."
+    }
+  ],
+  "skipped_sources": [
+    {
+      "source": "KupBilecik event page for Michał Pałubski and Jakub Poczęty",
+      "reason": "Other displayed comments were nonspecific event praise or generic recommendations; no explicit two-performer author passage in available search extraction."
+    },
+    {
+      "source": "Standupedia ranking/profile pages",
+      "reason": "Editorial/rating aggregates, not source-verifiable individual co-endorsements."
+    },
+    {
+      "source": "standup.pl performer pages, artist listings, schedules, promotional pages",
+      "reason": "Performer listings or editorial promotion; excluded."
+    },
+    {
+      "source": "KupBilecik Jasiek Borkowski solo event page",
+      "reason": "Comments evaluate only Jasiek or an unidentified support; no second identifiable frozen performer."
+    },
+    {
+      "source": "KupBilecik Zalewski & Borkowski Przedstawiają",
+      "reason": "Retained the explicit duo review. Other comments were vague event praise or mentioned unidentified first names without source-supported identity."
+    }
+  ],
+  "coverage_gaps": [
+    "No broader preference list or favorite comparison located for any focal; retained sources are event reviews/co-endorsements.",
+    "The global comments pagination URL returned different content in the live browser than the indexed search result; the Pałubski/Poczęty review was confirmed on the event-specific page, which shows the Toruń entry dated 2021-07-01."
+  ],
+  "surprises": [
+    "Batch 7 collector B already exceeded its query guard at 28 queries. This run keeps its own strict 24-query ceiling and will not repeat B's searches.",
+    "KupBilecik global comments page indexing appeared stale: search showed the Pałubski/Poczęty review on page_comments=6708, but live pagination had unrelated August 2021 reviews. Used the event-specific page, which directly contains Kazimierz’s Toruń review."
+  ],
+  "status": "partial"
+}

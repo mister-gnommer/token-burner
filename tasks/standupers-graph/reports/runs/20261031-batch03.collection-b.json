@@ -1,0 +1,76 @@
+{
+  "Surprises": [
+    "The r/Polska recommendations thread became accessible on retry and yielded one new attributable comment linking Paweł Chałupka with three other frozen performers. The comment author is deleted, so author_hint is null. The r/wroclaw page remained inaccessible."
+  ],
+  "run_id": "20261031-batch03",
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3"
+  },
+  "scope": [
+    {"rank": 25, "id": "rafal-rutkowski", "name": "Rafał Rutkowski"},
+    {"rank": 26, "id": "pawel-chalupka", "name": "Paweł Chałupka"},
+    {"rank": 27, "id": "maciej-brudzewski", "name": "Maciej Brudzewski"}
+  ],
+  "counts": {
+    "queries": 12,
+    "page_open_click_events": 7,
+    "candidates_written": 1,
+    "candidate_source_file_records": 1
+  },
+  "query_history": [
+    "\"Rafał Rutkowski\" stand-up ulubiony śmieszny forum",
+    "\"Paweł Chałupka\" stand-up lubię polecam forum",
+    "\"Maciej Brudzewski\" stand-up lubię ulubiony forum",
+    "\"Paweł Chałupka\" \"Antoni Syrek\" opinie stand up forum",
+    "\"Maciej Brudzewski\" \"Paweł Chałupka\" lubię stand-up",
+    "\"Rafał Rutkowski\" \"Antoni Syrek-Dąbrowski\" stand-up ulubiony",
+    "\"Rafał Rutkowski\" \"Kacper Ruciński\" stand up forum opinia",
+    "site:reddit.com/r/Polska \"Paweł Chałupka\" \"uwielbiam\" stand up",
+    "site:reddit.com \"Maciej Brudzewski\" \"ulubiony\" komik",
+    "site:wykop.pl \"Rafał Rutkowski\" \"Paweł Chałupka\" stand up opinia",
+    "\"Maciej Brudzewski\" \"Paweł Chałupka\" \"polecam\" stand-up widziałem",
+    "site:reddit.com/r/Polska stand-up \"Rutkowski\" \"Brudzewski\" OR \"Chałupka\" -promocja"
+  ],
+  "page_open_click_history": [
+    {"event": 1, "locator": "https://www.reddit.com/r/wroclaw/comments/1dmxvv5", "result": "failed: cache miss"},
+    {"event": 2, "locator": "https://www.kupbilecik.pl/pl/db/3623/pawel-chalupka?kb_ref=event&kb_ref_id=state_past&page=1", "result": "failed: cache miss"},
+    {"event": 3, "locator": "https://www.kupbilecik.pl/pl/comments/7353/stand-up-maciej-brudzewski?page_comments=2", "result": "failed: cache miss"},
+    {"event": 4, "locator": "turn62reddit13 (Reddit r/wroclaw result)", "result": "failed: cache miss"},
+    {"event": 5, "locator": "https://www.reddit.com/r/wroclaw/comments/1dmxvv5/dobry_standup/", "result": "failed: fetch error"},
+    {"event": 6, "locator": "https://www.reddit.com/r/Polska/comments/105mykf/stand_up_rekomendacje/", "result": "opened; verified full thread and comment excerpt at lines 274-276"},
+    {"event": 7, "locator": "https://www.reddit.com/r/Polska/comments/105mykf/comment/j3cgbzg/", "result": "failed: cache miss; comment permalink obtained from thread link"}
+  ],
+  "candidate_locators": [
+    {"candidate_id": "src_b03b_001", "locator": "https://www.reddit.com/r/Polska/comments/105mykf/comment/j3cgbzg/", "author_hint": null, "thread_lines": "274-276", "note": "Comment author is shown as deleted in full thread. Recommendation is responsive to the original request; author is not treated as expressing personal preference."}
+  ],
+  "skipped_sources": [
+    {
+      "locator": "https://www.reddit.com/r/wroclaw/comments/1dmxvv5",
+      "reason": "Search excerpt showed an author calling Antoni Syrek-Dąbrowski their favorite and naming Paweł Chałupka among more intelligent comics, but direct page fetch failed; author attribution, full author post, exact comment locator, and context could not be checked."
+    },
+    {
+      "locator": "https://www.kupbilecik.pl/pl/db/3623/pawel-chalupka?kb_ref=event&kb_ref_id=state_past&page=1",
+      "reason": "Search excerpt contained a first-person favorite statement for Paweł Chałupka but lacked a verified individual review URL/author locator and complete review context; direct fetch failed."
+    },
+    {
+      "locator": "https://www.kupbilecik.pl/pl/comments/7353/stand-up-maciej-brudzewski?page_comments=2",
+      "reason": "Search excerpt contained standalone positive reviews of Maciej Brudzewski, with no other frozen performer evaluated in the same author statement; direct fetch failed."
+    },
+    {
+      "locator": "https://www.reddit.com/r/Polska/comments/105mykf/stand_up_rekomendacje/",
+      "reason": "The initial search result was not sufficient by itself. On retry, the full thread verified a separate new Chałupka recommendation comment; it is recorded as src_b03b_001. The already stored NoUnderstanding8721 comment in this same thread was not resaved."
+    }
+  ],
+  "coverage_gaps": [
+    "Rafał Rutkowski was searched, but results were mostly interviews/editorial content or unrelated commentary. No new independently attributable audience statement linking him to another frozen performer was verified. A batch-01 candidate already covers Rutkowski in a Reddit recommendation list; it was not duplicated.",
+    "Paweł Chałupka: potentially relevant search discoveries were not verifiable to the required full-text and author-locator standard.",
+    "Maciej Brudzewski: relevant reviews found were standalone reactions and did not connect him to another frozen performer."
+  ],
+  "assumptions": [
+    "The web search result displays were treated as discovery leads only; snippets were not stored as evidence.",
+    "Retrieval timestamp reflects the successful full-thread verification at 2026-10-31T08:59:55Z.",
+    "A previous draft's Surprise text misidentified Antoni Syrek-Dąbrowski as rank 24; his frozen rank is 16. The new candidate links Paweł Chałupka to Piotrek Szumowski (43), Mieszko Minkiewicz (28), and Magda Kubicka (5)."
+  ]
+}

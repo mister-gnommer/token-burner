@@ -1,0 +1,112 @@
+{
+  "run_id": "20261031-batch07",
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+research-budget-v1"
+  },
+  "scope": [
+    "sebastian-rejent",
+    "filip-puzyr",
+    "damian-skora",
+    "robert-gorski"
+  ],
+  "limits": {
+    "queries": 24,
+    "opens": 24,
+    "candidates": 16
+  },
+  "queries_used": 15,
+  "opens_used": 5,
+  "candidates_saved": 0,
+  "query_batches": [
+    [
+      "\"Sebastian Rejent\" lubię OR polecam",
+      "\"Filip Puzyr\" lubię OR polecam",
+      "\"Damian Skóra\" stand-up polecam",
+      "\"Robert Górski\" kabaret polecam stand-up"
+    ],
+    [
+      "\"Sebastian Rejent\" opinie występ komentarze",
+      "\"Sebastian Rejent\" \"ulubiony\" komik forum",
+      "\"Filip Puzyr\" opinie występ komentarze",
+      "\"Filip Puzyr\" polecam reddit OR forum",
+      "\"Damian Skóra\" \"ulubiony\" komik reddit OR forum",
+      "\"Damian Skóra\" opinie występ komentarze",
+      "\"Robert Górski\" \"polecam\" \"lubię\" komik forum"
+    ],
+    [
+      "\"Damian Skóra\" \"KupBilecik\" komentarze",
+      "\"Damian Skóra\" stand-up widzowie opinie",
+      "\"Robert Górski\" \"ulubiony\" kabaret forum",
+      "\"Robert Górski\" \"uwielbiam\" kabaret opinie"
+    ]
+  ],
+  "open_attempts": [
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/5668/stand-up-sebastian-rejent",
+      "method": "web open"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/en/comments/8631/stand-up-filip-puzyr",
+      "method": "web open"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/6761/damian-skora-stand-up",
+      "method": "web open"
+    },
+    {
+      "url": "https://lubimyczytac.pl/ksiazka/opinie/151542/jak-zostalem-premierem-rozmowy-pelne-moralnego-niepokoju",
+      "method": "web open"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/5668/stand-up-sebastian-rejent",
+      "method": "T3 preview_open after web cache miss"
+    }
+  ],
+  "focal_coverage": {
+    "sebastian-rejent": {
+      "searched": true,
+      "verified_candidates": 0
+    },
+    "filip-puzyr": {
+      "searched": true,
+      "verified_candidates": 0
+    },
+    "damian-skora": {
+      "searched": true,
+      "verified_candidates": 0
+    },
+    "robert-gorski": {
+      "searched": true,
+      "verified_candidates": 0
+    }
+  },
+  "skipped_sources": [
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/5668/stand-up-sebastian-rejent",
+      "reason": "Search-result comments identify possible candidates, but live-page snapshot timed out twice; snippets not promoted."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/en/comments/8631/stand-up-filip-puzyr",
+      "reason": "Search results show reviews, but live page not opened/verified."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/6761/damian-skora-stand-up",
+      "reason": "Search results show full-looking reviews, but live page not opened/verified."
+    },
+    {
+      "url": "https://lubimyczytac.pl/ksiazka/opinie/151542/jak-zostalem-premierem-rozmowy-pelne-moralnego-niepokoju",
+      "reason": "Search results expose user book reviews, but live page not opened/verified."
+    }
+  ],
+  "gaps": [
+    "No source candidate could be verified from the complete author post within the successful browser path. Robert Górski source is a reader opinion about a book/KMN and does not isolate personal preference for Górski’s performance; exclude unless full context supports it.",
+    "Damian Skóra and Filip Puzyr leads are mostly event reviews; each individual full comment and date still need verification."
+  ],
+  "surprises": [
+    "T3 preview opened the live Sebastian Rejent KupBilecik page, but both preview_snapshot attempts timed out (raw: “Preview snapshot failed: Preview automation snapshot timed out after 15000ms.”).",
+    "Search surfaced strong event-review leads for Sebastian Rejent, Filip Puzyr, and Damian Skóra, but snippets are insufficient under the source-verification rule."
+  ],
+  "early_stop_reason": "Stopped early after two identical browser snapshot timeouts; no reliable full-source verification path remained within this collector turn. Unused allowance: 9 queries, 19 open attempts, 16 candidate slots."
+}

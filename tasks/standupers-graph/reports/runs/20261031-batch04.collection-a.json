@@ -1,0 +1,388 @@
+{
+  "Surprises": [
+    "Coverage is sparse for these four focal performers: the searches returned endorsements and ticket reviews, but no eligible new fan-authored statement linking a focal performer to another frozen performer.",
+    "A strong-looking Reddit result for Łukasz Kowalski repeats the already-stored bryndz-a comment and pair from batch 02; other commenters in that same thread are distinct posts but do not mention an assigned focal performer alongside another frozen performer."
+  ],
+  "run_id": "20261031-batch04",
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3"
+  },
+  "scope": [
+    {
+      "rank": 31,
+      "id": "marcin-zbigniew-wojciech",
+      "name": "Marcin Zbigniew Wojciech"
+    },
+    {
+      "rank": 32,
+      "id": "czarek-sikora",
+      "name": "Czarek Sikora"
+    },
+    {
+      "rank": 33,
+      "id": "lukasz-kowalski",
+      "name": "Łukasz Kowalski"
+    },
+    {
+      "rank": 34,
+      "id": "tomasz-machnicki",
+      "name": "Tomasz Machnicki"
+    }
+  ],
+  "counts": {
+    "search_queries": 12,
+    "page_events": 17,
+    "search_result_pages": 12,
+    "open_click_reopen_events": 5,
+    "saved_candidates": 0,
+    "skipped_sources": 5
+  },
+  "queries": [
+    "Marcin Zbigniew Wojciech ulubiony stand up opinie forum",
+    "Czarek Sikora ulubiony stand up opinie forum",
+    "Łukasz Kowalski stand up ulubiony polecam forum opinie",
+    "Tomasz Machnicki ulubiony stand up opinie forum",
+    "\"Marcin Zbigniew Wojciech\" \"stand up\" \"polecam\" opinie forum komicy",
+    "\"Czarek Sikora\" stand-up \"ulubiony\" polecam opinie forum",
+    "\"Łukasz Kowalski\" \"Czarek\" stand-up \"lubię\" forum",
+    "\"Tomasz Machnicki\" stand-up \"lubię\" \"polecam\" forum",
+    "\"Marcin Zbigniew Wojciech\" \"Daniel Midas\" opinie",
+    "\"Marcin Zbigniew Wojciech\" \"Kacper Ruciński\" stand-up opinie",
+    "\"Czarek Sikora\" \"Łukasz Kowalski\" opinie stand-up",
+    "\"Tomasz Machnicki\" \"Błażej Krajewski\" opinie stand-up"
+  ],
+  "page_events": [
+    {
+      "type": "search_query",
+      "query": "Marcin Zbigniew Wojciech ulubiony stand up opinie forum",
+      "result_refs": [
+        "turn82search0",
+        "turn82search1",
+        "turn82search2",
+        "turn82search3",
+        "turn82search4",
+        "turn82search5",
+        "turn82search6",
+        "turn82search7",
+        "turn82search8",
+        "turn82search9",
+        "turn82search10",
+        "turn82search11",
+        "turn82reddit16",
+        "turn82reddit17",
+        "turn82reddit19",
+        "turn82reddit20",
+        "turn82reddit21",
+        "turn82reddit22",
+        "turn82reddit23",
+        "turn82reddit24",
+        "turn82reddit25",
+        "turn82reddit26",
+        "turn82reddit27",
+        "turn82reddit28",
+        "turn82reddit29"
+      ]
+    },
+    {
+      "type": "search_query",
+      "query": "Czarek Sikora ulubiony stand up opinie forum",
+      "result_refs": [
+        "turn82search0",
+        "turn82search1",
+        "turn82search2",
+        "turn82search3",
+        "turn82search4",
+        "turn82search5",
+        "turn82search6",
+        "turn82search7",
+        "turn82search8",
+        "turn82search9",
+        "turn82search10",
+        "turn82search11",
+        "turn82reddit16",
+        "turn82reddit17",
+        "turn82reddit19",
+        "turn82reddit20",
+        "turn82reddit21",
+        "turn82reddit22",
+        "turn82reddit23",
+        "turn82reddit24",
+        "turn82reddit25",
+        "turn82reddit26",
+        "turn82reddit27",
+        "turn82reddit28",
+        "turn82reddit29"
+      ]
+    },
+    {
+      "type": "search_query",
+      "query": "Łukasz Kowalski stand up ulubiony polecam forum opinie",
+      "result_refs": [
+        "turn82search0",
+        "turn82search1",
+        "turn82search2",
+        "turn82search3",
+        "turn82search4",
+        "turn82search5",
+        "turn82search6",
+        "turn82search7",
+        "turn82search8",
+        "turn82search9",
+        "turn82search10",
+        "turn82search11",
+        "turn82reddit16",
+        "turn82reddit17",
+        "turn82reddit19",
+        "turn82reddit20",
+        "turn82reddit21",
+        "turn82reddit22",
+        "turn82reddit23",
+        "turn82reddit24",
+        "turn82reddit25",
+        "turn82reddit26",
+        "turn82reddit27",
+        "turn82reddit28",
+        "turn82reddit29"
+      ]
+    },
+    {
+      "type": "search_query",
+      "query": "Tomasz Machnicki ulubiony stand up opinie forum",
+      "result_refs": [
+        "turn82search0",
+        "turn82search1",
+        "turn82search2",
+        "turn82search3",
+        "turn82search4",
+        "turn82search5",
+        "turn82search6",
+        "turn82search7",
+        "turn82search8",
+        "turn82search9",
+        "turn82search10",
+        "turn82search11",
+        "turn82reddit16",
+        "turn82reddit17",
+        "turn82reddit19",
+        "turn82reddit20",
+        "turn82reddit21",
+        "turn82reddit22",
+        "turn82reddit23",
+        "turn82reddit24",
+        "turn82reddit25",
+        "turn82reddit26",
+        "turn82reddit27",
+        "turn82reddit28",
+        "turn82reddit29"
+      ]
+    },
+    {
+      "type": "search_query",
+      "query": "\"Marcin Zbigniew Wojciech\" \"stand up\" \"polecam\" opinie forum komicy",
+      "result_refs": [
+        "turn83search0",
+        "turn83search1",
+        "turn83search2",
+        "turn83search3",
+        "turn83search4",
+        "turn83search5",
+        "turn83search6",
+        "turn83search7",
+        "turn83search8",
+        "turn83search9",
+        "turn83search10",
+        "turn83search11",
+        "turn83search13"
+      ]
+    },
+    {
+      "type": "search_query",
+      "query": "\"Czarek Sikora\" stand-up \"ulubiony\" polecam opinie forum",
+      "result_refs": [
+        "turn83search0",
+        "turn83search1",
+        "turn83search2",
+        "turn83search3",
+        "turn83search4",
+        "turn83search5",
+        "turn83search6",
+        "turn83search7",
+        "turn83search8",
+        "turn83search9",
+        "turn83search10",
+        "turn83search11",
+        "turn83search13"
+      ]
+    },
+    {
+      "type": "search_query",
+      "query": "\"Łukasz Kowalski\" \"Czarek\" stand-up \"lubię\" forum",
+      "result_refs": [
+        "turn83search0",
+        "turn83search1",
+        "turn83search2",
+        "turn83search3",
+        "turn83search4",
+        "turn83search5",
+        "turn83search6",
+        "turn83search7",
+        "turn83search8",
+        "turn83search9",
+        "turn83search10",
+        "turn83search11",
+        "turn83search13"
+      ]
+    },
+    {
+      "type": "search_query",
+      "query": "\"Tomasz Machnicki\" stand-up \"lubię\" \"polecam\" forum",
+      "result_refs": [
+        "turn83search0",
+        "turn83search1",
+        "turn83search2",
+        "turn83search3",
+        "turn83search4",
+        "turn83search5",
+        "turn83search6",
+        "turn83search7",
+        "turn83search8",
+        "turn83search9",
+        "turn83search10",
+        "turn83search11",
+        "turn83search13"
+      ]
+    },
+    {
+      "type": "search_query",
+      "query": "\"Marcin Zbigniew Wojciech\" \"Daniel Midas\" opinie",
+      "result_refs": [
+        "turn87search0",
+        "turn87reddit12",
+        "turn87search1",
+        "turn87search2",
+        "turn87search3",
+        "turn87search4",
+        "turn87search5",
+        "turn87search6",
+        "turn87search7",
+        "turn87search8",
+        "turn87search9",
+        "turn87search10",
+        "turn87search11",
+        "turn87search13",
+        "turn87search14",
+        "turn87search15",
+        "turn87search16"
+      ]
+    },
+    {
+      "type": "search_query",
+      "query": "\"Marcin Zbigniew Wojciech\" \"Kacper Ruciński\" stand-up opinie",
+      "result_refs": [
+        "turn87search0",
+        "turn87reddit12",
+        "turn87search1",
+        "turn87search2",
+        "turn87search3",
+        "turn87search4",
+        "turn87search5",
+        "turn87search6",
+        "turn87search7",
+        "turn87search8",
+        "turn87search9",
+        "turn87search10",
+        "turn87search11",
+        "turn87search13",
+        "turn87search14",
+        "turn87search15",
+        "turn87search16"
+      ]
+    },
+    {
+      "type": "search_query",
+      "query": "\"Czarek Sikora\" \"Łukasz Kowalski\" opinie stand-up",
+      "result_refs": [
+        "turn87search0",
+        "turn87reddit12",
+        "turn87search1",
+        "turn87search2",
+        "turn87search3",
+        "turn87search4",
+        "turn87search5",
+        "turn87search6",
+        "turn87search7",
+        "turn87search8",
+        "turn87search9",
+        "turn87search10",
+        "turn87search11",
+        "turn87search13",
+        "turn87search14",
+        "turn87search15",
+        "turn87search16"
+      ]
+    },
+    {
+      "type": "search_query",
+      "query": "\"Tomasz Machnicki\" \"Błażej Krajewski\" opinie stand-up",
+      "result_refs": [
+        "turn87search0",
+        "turn87reddit12",
+        "turn87search1",
+        "turn87search2",
+        "turn87search3",
+        "turn87search4",
+        "turn87search5",
+        "turn87search6",
+        "turn87search7",
+        "turn87search8",
+        "turn87search9",
+        "turn87search10",
+        "turn87search11",
+        "turn87search13",
+        "turn87search14",
+        "turn87search15",
+        "turn87search16"
+      ]
+    },
+    {
+      "type": "open",
+      "ref_id": "turn85view0",
+      "locator": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+      "lines": "53-69, 100-108, 124-162, 172-179, 203-218",
+      "note": "Verified bryndz-a's full comment at lines 60-61; it duplicates batch-02 candidate src_b02b_001. Other comments at cited lines did not provide a new qualifying focal-to-frozen link. The thread date is relative (five months); not used because no candidate was saved."
+    },
+    {
+      "type": "open",
+      "ref_id": "turn85view1",
+      "locator": "https://www.kupbilecik.pl/en/db/7359/stand-up-tomek-machnicki-lukasz-wolski-krzysztof-kasparek",
+      "lines": "188-297",
+      "note": "Verified review context and event scope; eligible focal is Tomasz Machnicki, but accompanying named performers are not in frozen list."
+    },
+    {
+      "type": "open_failed",
+      "locator": "https://www.kupbilecik.pl/en/comments/16922/stand-up-tomek-machnicki",
+      "note": "Cache miss; excluded because no verifiable full author context was available."
+    },
+    {
+      "type": "open_failed",
+      "locator": "https://www.kupbilecik.pl/pl/comments/11748/stand-up-lukasz-kowalski?page_comments=11",
+      "note": "Cache miss; excluded because no verifiable full author context was available."
+    },
+    {
+      "type": "open_failed",
+      "locator": "https://www.kupbilecik.pl/en/comments/1853/stand-up-testy-nowego-programu-marcin-zbigniew-wojciech",
+      "note": "Cache miss; excluded because no verifiable full author context was available."
+    }
+  ],
+  "coverage_gaps": [
+    "Marcin Zbigniew Wojciech: found personal audience comments, but those located either assessed him alone or paired him with a non-frozen performer.",
+    "Czarek Sikora: found a personal positive comment, but no same-author statement evaluating another frozen performer alongside him.",
+    "Łukasz Kowalski: found a qualifying comparative comment, but it is already stored as src_b02b_001; no new qualifying post was found.",
+    "Tomasz Machnicki: found audience reviews of a shared event, but the other named performers were outside the frozen 100."
+  ],
+  "output": "evidence/batch-04/source-candidates.a.jsonl",
+  "output_candidates": 0,
+  "retrieved_at": "2026-10-31T09:51:35Z"
+}

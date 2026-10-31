@@ -1,0 +1,40 @@
+{
+  "run_id": "20261031-batch05",
+  "raw_candidates": 7,
+  "canonical_candidates": 7,
+  "duplicates": [],
+  "normalizations": [
+    "Canonical hostnames and source-local author keys."
+  ],
+  "research_usage": {
+    "actual_queries": 80,
+    "planned_max_queries": 72,
+    "query_overruns": {
+      "A": 4,
+      "B": 4
+    },
+    "source_open_navigation_attempts": 36,
+    "additional_same_page_reads": 3,
+    "by_collector": {
+      "A": {
+        "queries": 28,
+        "source_attempts": 9
+      },
+      "B": {
+        "queries": 28,
+        "source_attempts": 22
+      },
+      "C": {
+        "queries": 24,
+        "source_attempts": 5,
+        "same_page_reads": 3
+      }
+    }
+  },
+  "parent_interventions": [
+    "Requested verified event-header context for A to resolve partial performer name.",
+    "Requested B replace collector prose in context with verbatim headers/artist lines.",
+    "Normalized source hosts/keys and deduplicated; no parent research or full extraction.",
+    "Routed audit corrections: A reviewdate fixed2025-05-16, B Elwira locator remains unverified after2further page attempts. Initial artifacts preserved."
+  ]
+}

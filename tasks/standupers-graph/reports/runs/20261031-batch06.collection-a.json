@@ -1,0 +1,56 @@
+{
+  "Surprises": [
+    "The Cezary Jurkiewicz comment page exposed the target review only on comments page 2. Search cache results surfaced the full text first; the actual browser page was opened to verify the complete author post and locator.",
+    "No eligible cross-performer review was verified for Ewa Błachnio, Paweł Konkiel, or Jarek Legońkoff within this collection. Several solo event reviews and Ewa support reviews were found, but they did not name another frozen performer with usable preference evidence."
+  ],
+  "run_id": "20261031-batch06",
+  "collector": {"provider":"codex","model":"gpt-6-luna","prompt_version":"collect-fan-evidence-v3+research-budget-v1"},
+  "scope": [
+    {"rank":51,"id":"ewa-blachnio","name":"Ewa Błachnio"},
+    {"rank":52,"id":"pawel-konkiel","name":"Paweł Konkiel"},
+    {"rank":53,"id":"karolina-panczyk","name":"Karolina Pańczyk"},
+    {"rank":54,"id":"jarek-legonkoff","name":"Jarek Legońkoff"}
+  ],
+  "frozen_population_relations_allowed": true,
+  "counts": {"queries":16,"page_open_or_navigation_attempts":9,"verified_candidates":1,"candidate_limit":16},
+  "verified_candidates": [
+    {"candidate_id":"src_b06a_001","target_performer_ids":["cezary-jurkiewicz","karolina-panczyk"],"site":"kupbilecik.pl","url":"https://www.kupbilecik.pl/en/comments/1846/cezary-jurkiewicz?page_comments=2","post_locator":"review published 2026-04-17 by Maciej; event Cezary Jurkiewicz, Poznań, 16 April 2026 at 19:00","verification":"Complete author body and event header read in owned T3 browser tab. The author explicitly appreciates both Cezary Jurkiewicz and support Karolina Pańczyk."}
+  ],
+  "queries": [
+    "\"Ewa Błachnio\" ulubiony stand-up opinie forum",
+    "\"Ewa Błachnio\" \"uwielbiam\" komik",
+    "\"Paweł Konkiel\" stand-up \"lubię\" forum",
+    "\"Paweł Konkiel\" \"ulubiony\" stand-up",
+    "\"Paweł Konkiel\" \"Konkiel\" \"polecam\" stand-up opinie",
+    "\"Paweł Konkiel\" kupbilecik opinie",
+    "\"Karolina Pańczyk\" \"uwielbiam\" stand-up forum",
+    "\"Karolina Pańczyk\" kupbilecik opinie",
+    "\"Jarek Legońkoff\" opinie stand-up",
+    "\"Jarek Legonkoff\" \"lubię\" stand-up forum",
+    "\"Jarek Legońkoff\" kupbilecik opinie",
+    "\"Ewa Błachnio\" \"Rafał Pacześ\" opinia występ widziałam",
+    "\"Karolina Pańczyk\" \"występ\" \"support\" opinie komik",
+    "\"Karolina Pańczyk\" \"Świetny występ\" komentarze",
+    "\"Ewa Błachnio\" \"support\" stand-up opinie \"świetny\"",
+    "\"Ewa Błachnio\" \"widziałam\" \"stand-up\" \"komik\" forum"
+  ],
+  "page_open_or_navigation_history": [
+    {"action":"web open result","url":"https://www.kupbilecik.pl/pl/comments/9890/stand-up-ewa-blachnio?page_comments=6","result":"cache miss"},
+    {"action":"web open result","url":"https://www.trojmiasto.pl/imprezy/Ewa-Blachnio-testy-nowego-programu-imp551423.html","result":"cache miss"},
+    {"action":"web open full URL","url":"https://www.kupbilecik.pl/pl/comments/9890/stand-up-ewa-blachnio?page_comments=6","result":"cache miss"},
+    {"action":"web open full URL","url":"https://www.trojmiasto.pl/imprezy/Ewa-Blachnio-testy-nowego-programu-imp551423.html","result":"cache miss"},
+    {"action":"T3 preview_status","result":"available:true; existing tab belonged to another agent session, so it was not operated"},
+    {"action":"T3 preview_open own tab","url":"https://www.kupbilecik.pl/pl/comments/9890/stand-up-ewa-blachnio?page_comments=6","result":"available:true; subsequent snapshot timed out"},
+    {"action":"T3 preview_open own tab","url":"https://www.trojmiasto.pl/imprezy/Ewa-Blachnio-testy-nowego-programu-imp551423.html","result":"available:true; subsequent snapshot timed out"},
+    {"action":"T3 preview_open own tab","url":"https://www.kupbilecik.pl/en/comments/1846/cezary-jurkiewicz","result":"available:true; page 1 opened; complete post not on this page"},
+    {"action":"T3 preview_navigate own tab","url":"https://www.kupbilecik.pl/en/comments/1846/cezary-jurkiewicz?page_comments=2","result":"available:true; read full page body and verified complete target author post"}
+  ],
+  "skipped_sources": [
+    {"source":"KupBilecik Ewa Błachnio comment pages and event cards","reason":"Single-performer reviews or unnamed support; no verified second frozen performer with preference evidence."},
+    {"source":"Trojmiasto Ewa Błachnio event review","reason":"Search result showed only a solo opinion; full-page browser snapshot timed out after cache miss and T3 attempt."},
+    {"source":"KupBilecik Paweł Konkiel and Jarek Legońkoff review pages","reason":"Search results yielded solo performer reviews; no eligible multi-performer preference post found."}
+  ],
+  "coverage_gaps": ["No verified multi-performer fan preference found for focal Ewa Błachnio, Paweł Konkiel, or Jarek Legońkoff in this collector slice.","Potential further Karolina Pańczyk/Cezary Jurkiewicz reviews exist beyond the one page-2 post verified."],
+  "unused_budget": {"queries":8,"page_open_or_navigation_attempts":15,"verified_candidate_slots":15},
+  "early_stop_reason":"Stopped with unused allowance after 16 targeted searches and one fully verified cross-performer preference post; remaining surfaced material was solo reviews or snippets without usable second-performer identity/context."
+}

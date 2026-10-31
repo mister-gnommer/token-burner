@@ -1,0 +1,18 @@
+{
+  "run_id": "20261031-batch04",
+  "final_raw_candidates": 2,
+  "canonical_candidates": 2,
+  "duplicates": [],
+  "initial_quarantined_leads": 3,
+  "quarantined_snapshot": "evidence/batch-04/source-candidates.c.unverified.jsonl",
+  "eligible_leads_recovered_after_actual_browser_verification": 1,
+  "excluded_identity_ambiguous_leads": 2,
+  "normalizations": [
+    "Canonical hostnames, source-scoped author keys and stable URLs."
+  ],
+  "parent_interventions": [
+    "Quarantined snippet-only submissions rather than promoting them.",
+    "Routed actual-source verification through T3 preview_open despite preview_status available:false; one contextual duet review recovered.",
+    "No parent research or semantic extraction."
+  ]
+}

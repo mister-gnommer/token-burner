@@ -179,7 +179,7 @@ def d2_source(graph, max_degree=3):
     nodes = {node["id"]: f"n{index}" for index, node in enumerate(graph["nodes"])}
     visible = set(graph.get("visible_node_ids", nodes))
     label = "SYNTHETIC FIXTURE — no real fan findings" if graph["synthetic"] else "Provisional fan-preference evidence"
-    legend = label + "\nSolid = 2+ fans; dashed = 1 fan, provisional.\nEdge width = observed overlap; labels show fans / confidence.\nCounts include scoring-eligible statements only.\nConfidence is a model judgment, not a probability.\nLayout distance has no similarity meaning. Missing edges mean insufficient evidence."
+    legend = label + "\nSolid = 2+ fans; dashed = PROVISIONAL (1 fan).\nEdge width = observed overlap; labels show fan count / confidence.\nCounts include scoring-eligible statements only.\nConfidence is a model judgment, not a probability.\nLayout distance has no similarity meaning. Missing edges mean insufficient evidence."
     lines = [f"diagram: {quote(legend)} {{", "direction: down"]
     if visible and not any(displayable(r) and set(r["pair"]) <= visible for r in graph["relations"]):
         lines.append(f"grid-columns: {min(5, len(visible))}")
@@ -198,11 +198,10 @@ def d2_source(graph, max_degree=3):
         a, b = relation["pair"]
         for pid in (a, b):
             degrees[pid] += 1
-        label = f'{relation["independent_fan_count"]} fans / {relation["confidence"]:.0%} confidence'
-        if relation["status"] != "accepted":
-            label = "PROVISIONAL / " + label
+        fan_count = relation["independent_fan_count"]
+        label = f'{fan_count} {"fan" if fan_count == 1 else "fans"} / {relation["confidence"]:.0%}'
         citation_text = relation["explanation"] + " Sources: " + " ".join(graph["evidence_sources"][rid] for rid in relation["support_evidence_ids"])
-        lines.extend([f'{nodes[a]} -- {nodes[b]}: {quote(label)} {{', f'  style.stroke-width: {1 + round(5 * relation["score"])}', f'  tooltip: {quote(citation_text)}'])
+        lines.extend([f'{nodes[a]} -- {nodes[b]}: {quote(label)} {{', f'  style.stroke-width: {1 + round(5 * relation["score"])}', '  style.font-size: 12', f'  tooltip: {quote(citation_text)}'])
         if relation["status"] != "accepted":
             lines.extend(["  style.stroke-dash: 5", '  style.stroke: "#946200"'])
         lines.append("}")

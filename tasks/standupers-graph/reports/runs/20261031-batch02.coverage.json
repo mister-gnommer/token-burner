@@ -1,0 +1,124 @@
+{
+  "run_id": "20261031-batch02",
+  "updated_at": "2026-10-31T01:01:55Z",
+  "scope": "focal ranks11-20 only; incidental neighbors do not process another batch",
+  "coverage": [
+    {
+      "rank": 11,
+      "performer_id": "blazej-krajewski",
+      "name": "Błażej Krajewski",
+      "searched": true,
+      "new_candidates": 1,
+      "reviewed_mentions": 1,
+      "accepted_representation_records": 1,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 12,
+      "performer_id": "piotr-latala",
+      "name": "Piotr Latała",
+      "searched": true,
+      "new_candidates": 0,
+      "reviewed_mentions": 0,
+      "accepted_representation_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 13,
+      "performer_id": "pan-li",
+      "name": "Pan Li",
+      "searched": true,
+      "new_candidates": 0,
+      "reviewed_mentions": 0,
+      "accepted_representation_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 14,
+      "performer_id": "michal-leja",
+      "name": "Michał Leja",
+      "searched": true,
+      "new_candidates": 1,
+      "reviewed_mentions": 1,
+      "accepted_representation_records": 1,
+      "cumulative_scored_fans": 2
+    },
+    {
+      "rank": 15,
+      "performer_id": "cezary-ponttefski",
+      "name": "Cezary Ponttefski",
+      "searched": true,
+      "new_candidates": 1,
+      "reviewed_mentions": 1,
+      "accepted_representation_records": 1,
+      "cumulative_scored_fans": 1
+    },
+    {
+      "rank": 16,
+      "performer_id": "antoni-syrek-dabrowski",
+      "name": "Antoni Syrek-Dąbrowski",
+      "searched": true,
+      "new_candidates": 1,
+      "reviewed_mentions": 1,
+      "accepted_representation_records": 1,
+      "cumulative_scored_fans": 3
+    },
+    {
+      "rank": 17,
+      "performer_id": "tomasz-boras-borkowski",
+      "name": "Tomasz Boras Borkowski",
+      "searched": true,
+      "new_candidates": 0,
+      "reviewed_mentions": 0,
+      "accepted_representation_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 18,
+      "performer_id": "piotr-zola-szulowski",
+      "name": "Piotr Zola Szulowski",
+      "searched": true,
+      "new_candidates": 0,
+      "reviewed_mentions": 0,
+      "accepted_representation_records": 0,
+      "cumulative_scored_fans": 1
+    },
+    {
+      "rank": 19,
+      "performer_id": "karol-modzelewski",
+      "name": "Karol Modzelewski",
+      "searched": true,
+      "new_candidates": 0,
+      "reviewed_mentions": 0,
+      "accepted_representation_records": 0,
+      "cumulative_scored_fans": 0
+    },
+    {
+      "rank": 20,
+      "performer_id": "michal-paszczyk",
+      "name": "Michał Paszczyk",
+      "searched": true,
+      "new_candidates": 0,
+      "reviewed_mentions": 0,
+      "accepted_representation_records": 0,
+      "cumulative_scored_fans": 0
+    }
+  ],
+  "new_candidates": 4,
+  "new_reviewed_records": 4,
+  "accepted_representations": 4,
+  "cumulative_records": 20,
+  "cumulative_relations": 29,
+  "accepted_pairs": 6,
+  "provisional_candidates": 15,
+  "visible_nodes": 24,
+  "drawn_solid": 6,
+  "drawn_provisional": 8,
+  "visible_photos": 24,
+  "worker_reported_collection_usage": {
+    "queries": 26,
+    "page_opens_or_clicks": 28,
+    "collector_b_limit_overrun": "16/12 page opens; no additional browsing after report"
+  },
+  "cost": "Measured token/money usage unavailable; no estimate invented."
+}

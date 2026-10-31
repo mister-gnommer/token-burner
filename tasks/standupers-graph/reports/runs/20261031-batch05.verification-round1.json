@@ -1,0 +1,124 @@
+{
+  "surprises": [
+    "Two material source-audit issues need localized uncertainty: src_b05a_001’s displayed publication date differs by one day from the canonical candidate; src_b05b_003’s supplied Elwira excerpt was not visible on the event page inspected, whose collector locator says Legnica while the candidate URL is the Świecie event page.",
+    "Source-local first-name labels (Kacper, Amani, Krzysztof, Elwira, Robert, Dominika, Maciej) are not verified unique-person identities; author keys remain platform/source scoped.",
+    "Collector-confirmed positive candidates for records c001/c002 were borne out by context: these include explicit praise despite jokes, mixed event criticism, or hosting/show-format qualifications."
+  ],
+  "schema_version": 1,
+  "run_id": "20261031-batch05",
+  "reviewer": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "verify-evidence-v3"
+  },
+  "counts": {
+    "canonical_source_candidates": 7,
+    "extractor_emitted": 7,
+    "extractor_skipped": 0,
+    "reviewed_records": 7,
+    "accepted": 5,
+    "uncertain": 2,
+    "rejected": 0,
+    "mentions_input": 19,
+    "mentions_output": 19,
+    "field_corrections": 0
+  },
+  "post_checks": {
+    "schema_v3_valid_all_records": true,
+    "canonical_source_fields_excerpt_language_context_lineage_match": true,
+    "frozen_ids_and_mentions_checked": true,
+    "author_keys_source_scoped_not_identity_proof": true,
+    "source_pages_independently_inspected": 5,
+    "source_pages": [
+      "KupBilecik Szumowski comments page 7",
+      "Nastroik Wiolka thread",
+      "KupBilecik Płock event 26442",
+      "KupBilecik Wielka Trasa comments page 23",
+      "KupBilecik Błażej Krajewski event 203718"
+    ],
+    "source_audit_skips": [
+      "Marlena Mysza comments page 9731 not independently opened due five-page limit; collector verification reliance.",
+      "No direct Elwira review locator/permalink found in the inspected event-page rendering; record retained uncertain."
+    ],
+    "validator_run": "JSON Schema Draft 2020-12 and evidence pipeline lineage validation",
+    "surface_forms_verbatim_in_excerpt_or_explicit_source_context": true,
+    "preference_quotes_verbatim_in_author_excerpts": true
+  },
+  "records": [
+    {
+      "id": "ev_b05_a_001",
+      "candidate_id": "src_b05a_001",
+      "status": "uncertain",
+      "issues": [
+        "Canonical published_at differs from inspected source display date."
+      ],
+      "corrections": [
+        "Correction request: source-candidates.jsonl published_at should be 2025-05-16, matching the source page; excerpt, event context, and extraction remain unchanged."
+      ],
+      "source_audit": "Direct full-page inspection; excerpt is present under Kacper and the associated event shown is Poznań, 14 May 2025. Displayed review date is 2025-05-16."
+    },
+    {
+      "id": "ev_b05_b_001",
+      "candidate_id": "src_b05b_001",
+      "status": "accepted",
+      "issues": [
+        "Opening subject is omitted from reply text and inferred from the adjacent video/topic."
+      ],
+      "corrections": [],
+      "source_audit": "Direct full-thread inspection confirms Amani’s comment follows the named Wiolka video; the thread context is literal source text. Scope criticism to this item; Giza gets separate explicit praise."
+    },
+    {
+      "id": "ev_b05_b_002",
+      "candidate_id": "src_b05b_002",
+      "status": "accepted",
+      "issues": [
+        "Mixed relative evaluation."
+      ],
+      "corrections": [],
+      "source_audit": "Direct event-page inspection confirms event heading, performer line, author label, exact excerpt, and separate 17 May 2018 review date. Pacześ is a comparison anchor only."
+    },
+    {
+      "id": "ev_b05_b_003",
+      "candidate_id": "src_b05b_003",
+      "status": "uncertain",
+      "issues": [
+        "Supplied excerpt was not visible in inspected event page; event page has another review mentioning Patryk Gosiński.",
+        "Collector locator specifies Legnica 2025-03-20, but canonical URL is the Świecie event page."
+      ],
+      "corrections": [
+        "Request exact review locator/permalink and confirm which event page contains Elwira’s excerpt before accepting or changing source attribution. Preserve excerpt/spelling verbatim in the meantime."
+      ],
+      "source_audit": "Direct event-page inspection verified Błażej event and a separate visible Patryk Gosiński review; did not verify Elwira excerpt."
+    },
+    {
+      "id": "ev_b05_c_001",
+      "candidate_id": "src_b05c_001",
+      "status": "accepted",
+      "issues": [
+        "Preference is programme/event scoped."
+      ],
+      "corrections": [],
+      "source_audit": "Not independently reopened; collector-verification reliance. Interpretation retained under full excerpt wording."
+    },
+    {
+      "id": "ev_b05_c_002",
+      "candidate_id": "src_b05c_002",
+      "status": "accepted",
+      "issues": [
+        "Jurkiewicz praise applies in hosting role; all positive assessments event-scoped."
+      ],
+      "corrections": [],
+      "source_audit": "Direct full comments page inspection confirms exact review, author label, publication date, and Łódź 12 Oct 2018 event."
+    },
+    {
+      "id": "ev_b05_c_003",
+      "candidate_id": "src_b05c_003",
+      "status": "accepted",
+      "issues": [
+        "Mixed event evaluation; hosting and show-format scopes retained."
+      ],
+      "corrections": [],
+      "source_audit": "Direct full comments page inspection confirms exact review, author label, publication date, and Łódź 12 Oct 2018 event."
+    }
+  ]
+}

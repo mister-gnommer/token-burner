@@ -1,0 +1,110 @@
+{
+  "Surprises": [
+    "Only one eligible new fan statement surfaced within the query/open budget; three focal performers had no qualifying result in this search slice.",
+    "The one qualifying comment is a recommendation reply in a known Reddit thread; its parent comment is stored separately as context. Its relative Reddit timestamp did not establish an exact date, so published_at is null."
+  ],
+  "run_id": "20261031-batch02",
+  "focal_scope": [
+    {
+      "rank": 11,
+      "id": "blazej-krajewski",
+      "name": "Błażej Krajewski"
+    },
+    {
+      "rank": 12,
+      "id": "piotr-latala",
+      "name": "Piotr Latała"
+    },
+    {
+      "rank": 13,
+      "id": "pan-li",
+      "name": "Pan Li"
+    },
+    {
+      "rank": 14,
+      "id": "michal-leja",
+      "name": "Michał Leja"
+    }
+  ],
+  "counts": {
+    "queries": 11,
+    "page_opens": 8,
+    "eligible_new_candidates": 1,
+    "skipped_sources": 4
+  },
+  "search_history": [
+    "\"Błażej Krajewski\" lubię stand up forum",
+    "\"Piotr Latała\" stand up lubię polecam",
+    "\"Pan Li\" \"stand up\" polecam lubię",
+    "\"Michał Leja\" \"lubię\" stand up reddit",
+    "site:reddit.com \"Błażej Krajewski\" \"Michał Leja\" lubię",
+    "site:reddit.com \"Piotr Latała\" \"Michał Leja\" standup",
+    "site:reddit.com \"Pan Li\" \"Michał Leja\" standup",
+    "\"Pan Li\" \"Błażej Krajewski\" stand-up lubię",
+    "\"Pan Li\" \"Michał Leja\" stand-up polecam -youtube",
+    "\"Piotr Latała\" \"Błażej Krajewski\" lubię stand-up",
+    "\"Michał Leja\" \"Błażej Krajewski\" polecam stand-up forum"
+  ],
+  "open_history": [
+    {
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+      "result": "Inspected comments; Leja mentions were in a stored candidate or unsupported bare-name list; no focal-linked eligible new statement."
+    },
+    {
+      "url": "https://www.reddit.com/r/poland/comments/1egewxi/polish_standup_comedy/",
+      "result": "Inspected thread and comment context; found a new reply by Successful-Speed8582 at rendered lines 258–264 recommending Błażej Krajewski and Mateusz Socha."
+    },
+    {
+      "url": "https://www.reddit.com/r/Polska/comments/105mykf/stand_up_rekomendacje/",
+      "result": "Inspected thread; Błażej result was a link-only recommendation, no second frozen comedian in that author post."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/5329/michal-leja-stand-up?page_comments=5",
+      "result": "Fetch failed (cache miss); search snippet exposed Leja-only fan reviews, not multi-performer statements."
+    },
+    {
+      "url": "https://www.reddit.com/r/poland/comments/1egewxi/polish_standup_comedy/",
+      "result": "Reopened around comments and thread prompt to verify attribution and parent context."
+    }
+  ],
+  "candidate_locators": [
+    {
+      "candidate_id": "src_b02a_001",
+      "author": "Successful-Speed8582",
+      "post": "Reddit reply in r/poland thread 1egewxi, rendered lines 258–264; exact text stored in evidence file.",
+      "targets": [
+        "blazej-krajewski",
+        "mateusz-socha"
+      ],
+      "type": "recommendation"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "url": "https://piotrlatala.com/",
+      "reason": "Performer-owned promotional bio; excluded."
+    },
+    {
+      "url": "https://pik.warszawa.pl/inne/pan-li-stand-up-warszawa/",
+      "reason": "Event copy about Pan Li; promotional text, no fan statement."
+    },
+    {
+      "url": "https://www.torun.pl/pl/blazej-krajewski-stand-human",
+      "reason": "Municipal event description; promotional text."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/5329/michal-leja-stand-up?page_comments=5",
+      "reason": "Could not open page (cache miss); visible snippet described Michał Leja alone and could not qualify."
+    }
+  ],
+  "coverage_gaps": [
+    "Błażej Krajewski: one eligible recommendation reply; no additional distinct fan endorsement found.",
+    "Piotr Latała: searched by name and in co-name queries; no eligible fan statement found.",
+    "Pan Li: searched by name and in co-name queries; results were event/promotional material or unrelated; no eligible fan statement found.",
+    "Michał Leja: searched by name and in co-name queries; one review source was inaccessible and visible snippet concerned only Leja; no eligible focal-linked multi-performer fan statement found."
+  ],
+  "assumptions": [
+    "Canonical site recorded as reddit.com; URL uses the public thread URL because the accessible page rendered the comment locator by author and position, not a comment permalink.",
+    "Relative ages shown as “2y ago” were not converted to publication dates."
+  ]
+}
