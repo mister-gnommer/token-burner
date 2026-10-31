@@ -32,3 +32,5 @@ Collectors may preserve a source-local public `author_hint` in source-candidate 
 Run `scripts/evidence_pipeline.py validate --kind <source-candidate|evidence|evidence-v1|relation|run-manifest> <path>` after each worker step. Use `evidence-v1` only for the initial calibration artifacts. JSONL is validated record by record with line-specific errors. The validator also checks canonical performer IDs, duplicate IDs, relation-pair ordering, and accepted-evidence reviewer presence.
 
 Schema validation does not establish that an excerpt includes all relevant context or matches its candidate. Audit both separately. Run the validator regression checks with `PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tasks/standupers-graph/scripts -p 'test_*.py' -v` from the repository root.
+
+Stage 6 uses `extract-evidence-v3.md` with mandatory `favorite-reply-context-v1.md`, source-candidate v2 and evidence v3. `stage06-corroboration-v1.md` supplements targeted collection of the same ten pilot performers. Historical prompts and raw outputs remain unchanged.

@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "run_id": "20261031-stage06-semantic-check",
+  "surprises": [
+    "The newly recovered Reddit list is a category-specific answer to ‘Who us your favorite polish artist? Any medium, any era’; the ‘Stand up:’ heading makes the reply a set of the author's favorites, not a general recommendation list under the v1 supplement.",
+    "The three accepted graph pairs are backed by two distinct source-scoped authors each, including one independent favorite-list reply and one explicit ‘can make me laugh’ assessment."
+  ],
+  "checked_evidence_ids": [
+    "ev_b01b_003",
+    "ev_b01b_004",
+    "ev_s06_001",
+    "ev_b01b_001",
+    "ev_b01b_002",
+    "ev_b01b_005",
+    "ev_b01b_006",
+    "ev_b01b_007",
+    "ev_b01c_002"
+  ],
+  "checked_pairs": [
+    {
+      "pair": ["abelard-giza", "mateusz-socha"],
+      "graph_status": "accepted",
+      "support_evidence_ids": ["ev_b01b_003", "ev_s06_001"],
+      "finding": "Supported. In ev_b01b_003, one commenter says ‘Najbardziej lubię’ about Abelard Giza and Mateusz Socha. In ev_s06_001, a different Reddit author answers a favorite-artist question with a stand-up list containing both. Both are personal positive preferences under the favorite-reply-context-v1 rule. No identity depends on an unverified alias."
+    },
+    {
+      "pair": ["abelard-giza", "rafal-paczes"],
+      "graph_status": "accepted",
+      "support_evidence_ids": ["ev_b01b_003", "ev_s06_001"],
+      "finding": "Supported. The same two distinct source-scoped authors explicitly include both performers in their personal favorites: ev_b01b_003 says ‘Najbardziej lubię’; ev_s06_001 is a category-specific answer to the favorite-artist question. Neither pair member is inferred from parent preference."
+    },
+    {
+      "pair": ["cezary-jurkiewicz", "mateusz-socha"],
+      "graph_status": "accepted",
+      "support_evidence_ids": ["ev_b01b_004", "ev_s06_001"],
+      "finding": "Supported. In ev_b01b_004, the author's own excerpt says Jurkiewicz and Socha ‘potrafią rozśmieszyć’ (can make me laugh), an absolute positive response despite the author's expertise caveat. A distinct author includes both in the answer to the favorite-artist question in ev_s06_001. The ‘cesary’ spelling is an ordinary typo alongside the full surname and supports Cezary Jurkiewicz; it does not require an alias mapping."
+    }
+  ],
+  "recovered_or_rechecked_uncertain_records": [
+    {
+      "evidence_id": "ev_s06_001",
+      "candidate_id": "src_s06_001",
+      "finding": "The reply author is distinct from thread author Maveragical. The parent asks for the respondent's favorite Polish artist; the reply labels a list ‘Stand up:’ and names five performers. Treating this as that author's personal favorites is supported by the question/reply linkage and the rubric supplement. This yields a valid same-author co-endorsement record for five named performers; all five identities are represented by full, identifiable names or ordinary spelling variation (Cezary/Cesary)."
+    },
+    {
+      "evidence_id": "ev_b01b_001",
+      "candidate_id": "src_b01b_001",
+      "finding": "Clear same-author positive preferences exist for Piotrek Szumowski, Antoni Syrek-Dąbrowski, Michał Leja, and an unresolved ‘Lutka’. ‘Lubię też’ explicitly expresses liking for the named performers. The unresolved Lutka remains null; it cannot create a Lotek link. Graph provisional links involving the three resolved names are semantically supported, subject to confidence/review thresholds."
+    },
+    {
+      "evidence_id": "ev_b01b_002",
+      "candidate_id": "src_b01b_002",
+      "finding": "No co-endorsement recovered: Socha is explicitly disliked; Pacześ and Lotek are not clearly liked; Wiolka Walaszczyk has explicit appreciation of her jokes but no second liked performer. Parent abasia0's preferences are not transferred to reply author princy-mincy."
+    },
+    {
+      "evidence_id": "ev_b01b_005",
+      "candidate_id": "src_b01b_005",
+      "finding": "No co-endorsement: ‘Socha zjada Paczesia na śniadanie’ is relative superiority only and establishes neither absolute personal liking."
+    },
+    {
+      "evidence_id": "ev_b01b_006",
+      "candidate_id": "src_b01b_006",
+      "finding": "No personal-preference co-endorsement established. This is a taste-conditional recommendation list in response to a deleted author's recommendation request. The thread starter's separate favorable comments about Bendler and Dolniak are not attributed to NoUnderstanding8721. Unresolved Jakub Dąbrowski stays null."
+    },
+    {
+      "evidence_id": "ev_b01b_007",
+      "candidate_id": "src_b01b_007",
+      "finding": "No pair link: sentiment is relative/qualified and the source has no author key."
+    },
+    {
+      "evidence_id": "ev_b01c_002",
+      "candidate_id": "src_b01c_002",
+      "finding": "The author explicitly defends Olka Szczęśniak and Karol Modzelewski, but the latter identity is below the established confidence threshold and excluded from links. The same author preference is present for both in text; exclusion is an identity-resolution constraint, not a sentiment problem."
+    }
+  ],
+  "accepted_three_supported": true,
+  "overall_finding": "All three accepted graph pairs are supported by independent authors' personal positive preferences. The newly recovered favorite-list record is correctly linked to its own author and not to the thread starter. No unsupported Lutka/Jakub identity or parent-preference transfer was found."
+}

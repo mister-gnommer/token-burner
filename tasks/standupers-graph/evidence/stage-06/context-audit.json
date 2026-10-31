@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "surprises": [
+    "The Gazeta thread starter abasia0 asks for recommendations, but later replies are by different speakers. Parent context establishes the request only; it cannot be merged with any reply author's preferences.",
+    "The Reddit recommendation lists are also written by speakers distinct from their thread starters. The parent prompts explain why recommendation language appears, but do not establish the reply author's personal liking.",
+    "No reliable source found in the bounded checks establishes that ‘Lutka’ is an alias for Lotek/Łukasz Łotkowski. Keep this mention unresolved; do not adopt the existing candidate mapping from context alone.",
+    "The phrase ‘czasem poslucham’ in princy-mincy's reply means occasional listening and is not itself an explicit liking claim. The reply separately contains mixed, negative, and positive evaluations.",
+    "The latest crawled Reddit display says ‘5 months ago’ for the PolskaNaLuzie thread although the frozen candidate retrieval predates that crawl; the date is not needed for parent attribution and should not be inferred from this audit."
+  ],
+  "retrieved_at": "2026-10-31T00:42:44Z",
+  "entries": [
+    {
+      "candidate_id": "src_b01a_001",
+      "verified": true,
+      "context": [
+        {
+          "role": "parent",
+          "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+          "author_hint": "abasia0",
+          "author_key": null,
+          "excerpt": "Lubicie? Bywacie na występach? Ja zainteresowałam się stand upem / ?/ po serialu z panią Maisel i przez kilka spokojnych wieczorów oglądałam na yt Sochę i Kutka. No i podoba mi się to może odrobinę za dużo o niektórych częścich ciała bo to żart najprostszy...\nPolecicie kogoś jeszcze do posłuchania?"
+        }
+      ],
+      "linkage_locator": "Gazeta thread starter abasia0, 01.11.23 21:03; rendered page lines 165-172. Reply dariamax is a separate top-level reply shown at lines 333-337, not a reply to another recommendation author's opinion."
+    },
+    {
+      "candidate_id": "src_b01b_001",
+      "verified": true,
+      "context": [],
+      "reason": "The source page confirms the reply by segregatorwpaski at 02.11.23 08:12 (rendered lines 371-376), but does not establish which performer ‘Lutka’ denotes. Nearby co-mentioned names and the thread prompt are insufficient to verify the identity."
+    },
+    {
+      "candidate_id": "src_b01b_002",
+      "verified": true,
+      "context": [
+        {
+          "role": "parent",
+          "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+          "author_hint": "abasia0",
+          "author_key": null,
+          "excerpt": "Lubicie? Bywacie na występach? Ja zainteresowałam się stand upem / ?/ po serialu z panią Maisel i przez kilka spokojnych wieczorów oglądałam na yt Sochę i Kutka. No i podoba mi się to może odrobinę za dużo o niektórych częścich ciała bo to żart najprostszy...\nPolecicie kogoś jeszcze do posłuchania?"
+        }
+      ],
+      "linkage_locator": "Thread starter abasia0 at 01.11.23 21:03; princy-mincy reply at 02.11.23 10:25, rendered lines 388-392. It is a separate reply to the thread, not to a specific sibling comment. The author's ‘czasem poslucham’ is occasional listening, not by itself liking; ‘Walaszczyk ... za dużo klnie ale żarty ma fajne’ is explicit mixed evaluation, ‘Pacześ ... trochę zjechał ... ale kiedyś wymiatał’ is mixed and time-scoped, and ‘Socha akurat słaby’ is negative. These are the reply author's views, not the parent's."
+    },
+    {
+      "candidate_id": "src_b01a_004",
+      "verified": true,
+      "context": [
+        {
+          "role": "thread_prompt",
+          "url": "https://www.reddit.com/r/poland/comments/1egewxi/polish_standup_comedy/",
+          "author_hint": "2luwonl",
+          "author_key": null,
+          "excerpt": "Is stand-up comedy a thing in Poland? Are there any notable Polish-language stand-up comedians?"
+        }
+      ],
+      "linkage_locator": "Reddit thread starter 2luwonl (post ID 1egewxi); Warchadlo16's distinct comment starts at rendered lines 231-239 and continues to line 248. This is a top-level comment replying to the post, not an authored-by-parent recommendation. The comment explicitly frames its list as conditional recommendations by humor type."
+    },
+    {
+      "candidate_id": "src_b01b_006",
+      "verified": true,
+      "context": [
+        {
+          "role": "thread_prompt",
+          "url": "https://www.reddit.com/r/Polska/comments/105mykf/stand_up_rekomendacje/",
+          "author_hint": null,
+          "author_key": null,
+          "excerpt": "Hej. Lubię sobie czasami wrzucić jakiś stand up kiedy sprzątam. Zwykle po prostu szukam jakichś randomowych na youtube, ale nie mam pojęcia które są dobre a które chujowe. Bendler na przykład nawet mi się spdobał. Dolniak też był w porządku. Co dobrego możecie polecić? Może być po polsku albo po angielsku. Mam paraliż decyzyjny."
+        }
+      ],
+      "linkage_locator": "Deleted thread starter (rendered lines 14-21; post ID 105mykf); NoUnderstanding8721's distinct top-level comment at rendered lines 359-366. The prompt asks for recommendations and includes its own author's positive assessments of Bendler and Dolniak. Those parent views must not be attributed to NoUnderstanding8721. The reply says ‘To tak na szybko’ and suitability depends on taste, supporting recommendation-list context rather than proven personal liking of every name."
+    },
+    {
+      "candidate_id": "src_b01c_004",
+      "verified": true,
+      "context": [
+        {
+          "role": "thread_prompt",
+          "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+          "author_hint": "Swimming_Speed_7780",
+          "author_key": null,
+          "excerpt": "Kojarzycie może jakichś polskich stand up-erów, którzy nie lecą tylko w jakieś mega sprośne żarty, których puentą nie jest samo przeklinanie bez faktycznej puenty i którzy nie są mega chamsko nastawieni do widowni (zakładając, że robią pracę z widownią)?\nOczywiście nie mówię, żeby wcale nie było nawiązań do seksu czy przekleństw, ale cokolwiel odpalam to można streścić w \"jajca wagina huehueheue jebać\" i mam już dosyć xD"
+        }
+      ],
+      "linkage_locator": "Reddit thread starter Swimming_Speed_7780 (post ID 1tm7shp), rendered lines 14-25. Regular_Bat8162's separate top-level comment appears at lines 227-239 and is just a bare list. The prompt supplies recommendation criteria, not evaluation of these four names by the list author."
+    }
+  ],
+  "alias_verification": [
+    {
+      "surface_form": "Lutka",
+      "candidate_mapping": "lukasz-lotek-lodkowski",
+      "finding": "unverified; no reliable supporting source found in the bounded search",
+      "action": "retain as unresolved; do not map"
+    },
+    {
+      "surface_form": "Jakub Dąbrowski",
+      "candidate_mapping": null,
+      "finding": "unverified; the thread excerpt supplies no unique full identity and the candidate record already treats the mention as unresolved",
+      "action": "retain null/unresolved; do not infer Kuba Dąbrowski"
+    }
+  ],
+  "alias_queries_used": 2,
+  "page_opens_used": 4
+}

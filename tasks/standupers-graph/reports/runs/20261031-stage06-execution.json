@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-31",
+  "workers": [
+    {
+      "task_name": "/root/stage6_context",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "medium",
+      "status": "completed"
+    },
+    {
+      "task_name": "/root/stage6_corroboration",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "medium",
+      "status": "completed"
+    },
+    {
+      "task_name": "/root/stage6_extract",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "medium",
+      "status": "completed"
+    }
+  ],
+  "reviewer": {
+    "provider": "codex",
+    "model": "gpt-6.1-sol",
+    "mode": "parent audit"
+  },
+  "prompt_sha256": {
+    "collect-fan-evidence-v2.md": "aee3bf3e1c032e3ddf274aa3655ecf9faa8142dbd267d42911a889e9e98d507c",
+    "stage06-corroboration-v1.md": "dd3b1f8551472e3caa325c931e404ba3e6c3c5b64552d3657922eeeabb00cac4",
+    "extract-evidence-v3.md": "7644dc9ec508859c7ef80974edb2db59aec55486c7e557f6ce4d24551a07ed47",
+    "favorite-reply-context-v1.md": "37b976ea680b497d35c9cbbe25c432950243c54d4d2e231cd45292b9038a839b",
+    "extraction-decisions-v1.md": "17734b3338942bc9a7e129a55a9cf31aa39088b227af159f24a12118d986f62b"
+  },
+  "semantic_check": {
+    "task_name": "/root/stage6_context",
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "reasoning_effort": "medium",
+    "status": "completed",
+    "report": "reports/runs/20261031-stage06-semantic-check.json"
+  }
+}

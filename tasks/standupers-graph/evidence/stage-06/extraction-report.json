@@ -1,0 +1,34 @@
+{
+  "surprises": [
+    "Context audit explicitly rejects prior mapping of Lutka to Lotek and finds Jakub Dąbrowski unresolved; both remain null.",
+    "Verified favorite-reply context makes the corroboration bare list positive preference evidence."
+  ],
+  "assumptions": [
+    "Copied source metadata, excerpt, language, context and each candidate run_id exactly. Existing final evidence was comparison input only; judgments were reassessed against excerpts and context audit.",
+    "Supplemental favorite-list exception applied only to src_s06_001."
+  ],
+  "candidate_count": 16,
+  "evidence_count": 15,
+  "corroboration_count": 1,
+  "skips": [],
+  "unresolved_mentions": [
+    {
+      "candidate_id": "src_b01b_001",
+      "surface_form": "Lutka"
+    },
+    {
+      "candidate_id": "src_b01b_006",
+      "surface_form": "Jakub Dąbrowski"
+    }
+  ],
+  "provenance": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "extract-evidence-v3+favorite-reply-context-v1",
+    "run_ids": [
+      "20261031-batch01-calibrated",
+      "20261031-batch01-corroboration"
+    ],
+    "initial_review_status": "unreviewed"
+  }
+}

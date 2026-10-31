@@ -1,0 +1,26 @@
+{
+  "Surprises": [
+    "The thread title directly asks for favorite artists; this is not merely a recommendation request or a genre discussion. The commenter's categorized list therefore expresses a personal selection in response to a favorite question, although it gives no individual rationale for each comedian."
+  ],
+  "source_url": "https://www.reddit.com/r/poland/comments/15hf8l2/comment/jupxhf1/",
+  "thread_url": "https://www.reddit.com/r/poland/comments/15hf8l2/who_us_your_favorite_polish_artist_any_medium_any/",
+  "retrieved_at": "2026-10-31T00:42:55Z",
+  "reopened_at": "2026-10-31T00:43:56Z",
+  "source_site": "reddit.com",
+  "parent_post": {
+    "author_hint": "Maveragical",
+    "exact_title": "Who us your favorite polish artist? Any medium, any era",
+    "locator": "Opened thread lines 16-17",
+    "interpretation": "The parent asks for personal favorites across artistic fields. It is not a request for genre recommendations."
+  },
+  "comment": {
+    "author_hint": "MacCyp_1985",
+    "author_key": "fan_9e483d895f04f770",
+    "author_key_method": "tasks/standupers-graph/scripts/evidence_pipeline.py author-key --site reddit.com --author MacCyp_1985",
+    "published_at": null,
+    "locator": "Opened thread lines 216-222; comment permalink /comment/jupxhf1/",
+    "exact_excerpt": "Stand up: -abelard giza -cesary jurkiewicz -mateusz socha -piotr zola szulowski -rafał pacześ",
+    "interpretation": "A direct answer to the parent favorite question, grouped under stand-up. The text supports personal selection of each listed performer, including Abelard Giza, Mateusz Socha, and Rafał Pacześ."
+  },
+  "attribution": "Parent and comment authors are separate. The parent wording is included only as context; the comment author's list remains the evaluated evidence."
+}

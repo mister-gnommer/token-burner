@@ -1,0 +1,25 @@
+{
+  "reviewed_at": "2026-10-31T00:45:44Z",
+  "reviewer": {
+    "provider": "codex",
+    "model": "gpt-6.1-sol"
+  },
+  "surprises": [
+    "Extractor reset old mention confidence to .9; parent capped to existing conservative values wherever the same identity/surface was retained.",
+    "Single-performer a003 rejected rather than inventing a pair class.",
+    "Wiolka explicit appreciation of jokes retained despite swearing caveat."
+  ],
+  "counts": {
+    "accepted": 15,
+    "uncertain": 0,
+    "rejected": 1
+  },
+  "source_check": {
+    "url": "https://www.reddit.com/r/poland/comments/15hf8l2/who_us_your_favorite_polish_artist_any_medium_any/",
+    "favorite_question": "Who us your favorite polish artist? Any medium, any era",
+    "comment_author": "MacCyp_1985",
+    "locator": "lines216-222",
+    "checked_by_parent": true
+  },
+  "corrections": "No thresholds lowered; unresolved Lutka/Jakub remain null; ambiguous old spellings retain old confidence."
+}

@@ -1,0 +1,107 @@
+{
+  "Surprises": [
+    "Only one strong new author post was validated within the capped search/open budget. It answers a thread asking for favorite Polish artists; the commenter labels this part of their answer 'Stand up' and lists Abelard Giza, Mateusz Socha, and Rafał Pacześ. Context makes this a favorite list, rather than an unsupported bare recommendation.",
+    "A second potential source had a deleted Reddit author. Since fan independence cannot be checked, it was excluded from saved evidence. No second corroboration is claimed."
+  ],
+  "run_id": "20261031-batch01-calibrated",
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "stage06-corroboration-v1"
+  },
+  "scope": "New explicit same-author co-endorsements for existing one-fan pairs with at least one endpoint among ranks 1-10; no batch 2.",
+  "result": {
+    "strong_candidates_saved": 1,
+    "strong_candidates_limit": 5,
+    "queries_used": 6,
+    "page_open_requests_used": 6,
+    "distinct_threads_opened": 3,
+    "successful_thread_opens": 5,
+    "failed_locator_fetches": 1
+  },
+  "candidate_locators": [
+    {
+      "candidate_id": "src_s06_001",
+      "url": "https://www.reddit.com/r/poland/comments/15hf8l2/comment/jupxhf1/",
+      "thread_url": "https://www.reddit.com/r/poland/comments/15hf8l2/who_us_your_favorite_polish_artist_any_medium_any/",
+      "author_hint": "MacCyp_1985",
+      "post_locator": "Thread lines 280-286 in opened Reddit page; comment permalink was visible as /comment/jupxhf1/ (direct fetch returned cache miss).",
+      "published_at": null,
+      "excerpt": "Stand up: -abelard giza -cesary jurkiewicz -mateusz socha -piotr zola szulowski -rafał pacześ",
+      "pair_rationale": [
+        {
+          "pair": [
+            "abelard-giza",
+            "mateusz-socha"
+          ],
+          "rationale": "The post appears under a prompt asking for the author's favorite Polish artist; the author explicitly supplies a stand-up list containing both performers. This targets an existing one-fan pair and both endpoints are in the pilot ten."
+        },
+        {
+          "pair": [
+            "abelard-giza",
+            "rafal-paczes"
+          ],
+          "rationale": "Same author and same favorite-list context explicitly include both; this also targets an existing one-fan pair with a pilot endpoint."
+        }
+      ],
+      "date_note": "Reddit showed relative age only ('3y ago'); exact date was not established, so the source candidate uses null.",
+      "author_post_check": "The full thread context was opened. The comment is a standalone list under the favorite-artist question; adjacent replies are separate authors and were not merged."
+    }
+  ],
+  "actual_searches": [
+    "site:reddit.com/r/Polska \"Abelard Giza\" \"Mateusz Socha\" lubię",
+    "\"Abelard Giza\" \"Mateusz Socha\" \"świetny\" polecam",
+    "\"Daniel Midas\" \"Łukasz Lotek\" lubię stand-up",
+    "\"Daniel Midas\" \"Mateusz Socha\" polecam stand-up",
+    "site:reddit.com/r/poland/comments/ \"My top 4 stand up comedians\" \"Mateusz\" \"Lotek\"",
+    "site:reddit.com \"Abelard Giza\" \"Mateusz Socha\" \"Mój top\""
+  ],
+  "actual_opens": [
+    {
+      "url": "https://www.reddit.com/r/poland/comments/15hf8l2/",
+      "purpose": "Read complete favorite-artist thread and inspect the comment author/context."
+    },
+    {
+      "url": "https://www.reddit.com/r/poland/comments/15hf8l2/",
+      "purpose": "Reopen at the stand-up comment to verify the surrounding author/post context."
+    },
+    {
+      "url": "https://www.reddit.com/r/poland/comments/wtoeqv/",
+      "purpose": "Inspect apparent top-four list; author's account was deleted, so not retained as corroboration."
+    },
+    {
+      "url": "https://www.reddit.com/r/poland/comments/wtoeqv/",
+      "purpose": "Reopen at the top-four comment to inspect author attribution; author is deleted."
+    },
+    {
+      "url": "https://www.reddit.com/r/Polska/comments/1egewxi/",
+      "purpose": "Check surfaced recommendation thread against previously collected evidence; excluded as repeat."
+    },
+    {
+      "url": "https://www.reddit.com/r/poland/comments/15hf8l2/comment/jupxhf1/",
+      "purpose": "Attempt direct comment locator fetch; returned cache miss after the permalink was discovered in the opened thread."
+    }
+  ],
+  "skipped_sources": [
+    {
+      "thread": "https://www.reddit.com/r/poland/comments/wtoeqv/",
+      "reason": "A comment says 'My top 4 stand up comedians...' and lists Mateusz Socha, Łukasz Lotek Lodkowski, and Olka Szczęśniak, but Reddit marks its author deleted. Cannot establish source-local fan independence; omitted."
+    },
+    {
+      "thread": "https://www.reddit.com/r/Polska/comments/1egewxi/",
+      "reason": "Same thread already present in evidence/batch-01; no repeat added."
+    },
+    {
+      "thread": "https://www.reddit.com/r/poland/comments/17ukdey/",
+      "reason": "Already represented in evidence/batch-01; no repeat added."
+    },
+    {
+      "reason": "Other search results were rankings, catalog/promotional material, or mentions without a verified same-author explicit co-endorsement, and were excluded."
+    }
+  ],
+  "coverage_gaps": [
+    "No new qualified candidate was found for other existing one-fan pilot pairs within six search queries.",
+    "Exact publication date is unavailable from the opened Reddit page.",
+    "The Reddit permalink fetch cache miss prevented separate direct-page inspection, but the corresponding comment and author were visible in the full thread page."
+  ]
+}

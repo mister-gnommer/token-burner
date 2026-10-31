@@ -1,8 +1,8 @@
 # Current state
 
-Last updated: 2026-10-30
-Current stage: 5 — Pilot batch, ranks 1–10 (complete)
-Next stage: 6 — Calibrate pilot yield before another batch
+Last updated: 2026-10-31
+Current stage: 6 — Pilot calibration (complete)
+Next stage: 7 — Batch 2, ranks 11–20, only on explicit command
 
 ## Established with the user
 - Target: 100 individual stand-uppers, processed in batches of 10.
@@ -10,7 +10,9 @@ Next stage: 6 — Calibrate pilot yield before another batch
 - Purpose: discover similar performers and humor through fan preferences.
 - Renderer: D2, with editable `.d2` sources and SVG snapshots (confirmed 2026-10-30).
 - Nodes use available profile photos, with a laughing-person silhouette for missing/unavailable images; cache assets locally and embed them in SVG.
+- A future interactive HTML view can reuse saved graph JSON and cited evidence as a separate presentation stage, without repeating research/extraction.
 - The project should be substantially AI-driven, with low-tier subagents doing the main work.
+- User reaffirmed on 2026-10-31: real batches must distribute research across multiple low-tier collectors, with separate low-tier extraction and verification; main-agent work is orchestration, integration, spot-checks and exceptions. Stage 6 involved substantial main-agent framework implementation and a full final audit; that is not the intended routine batch workflow.
 - Main-agent work is limited to 10 minutes per turn, excluding subagent execution; planning and discovery must be split into visible stages.
 - Each new batch requires an explicit user command.
 - State must survive changes of conversation and provider.
@@ -29,6 +31,7 @@ Next stage: 6 — Calibrate pilot yield before another batch
 - Stage 4: conservative aggregation, D2 rendering, synthetic fixture and 12 passing tests; see `reports/20261030-stage-04-graph-framework.md`.
 
 - Stage 5: pilot ranks 1–10 processed; graph/report saved. See `reports/20261030-stage-05-pilot-batch.md`.
+- Stage 6: calibrated pilot extraction/scoring and provisional rendering; see `reports/20261031-stage-06-calibration.md`. User authorized committing and pushing this milestone on 2026-10-31.
 
 ## Decisions from source audits
 - Standupedia’s ranking is YouTube view-minutes data dated 2023-09-07; its aggregate ratings cannot supply pairwise fan overlap.
@@ -38,6 +41,7 @@ Next stage: 6 — Calibrate pilot yield before another batch
 - Standup.pl provides a fresh 448-person catalog, daily YouTube trend rankings, and an all-time popularity sort; its cumulative-view metric differs from Standupedia’s formula.
 
 ## Latest checkpoint
+- Stage 6 complete (2026-10-31): graph/batch-01-calibrated has three solid and ten displayed provisional links, all 16 visible photos cached, 20 passing tests and an independent low-tier semantic check. The pilot-v1 details below are historical.
 - Run `20261030-batch01-pilot` complete: 15 canonical candidates, 12 reviewed records (9 accepted, 3 uncertain), 3 documented skips. Original collector/extractor/verifier outputs remain preserved; parent source/semantic corrections are recorded.
 - Three low-tier Codex gpt-6-luna collectors, separate extraction, and independent Claude Haiku verification used medium effort. Actual task IDs/options and prompt hashes are saved in the execution JSON.
 - Unchanged observed-coendorsement-v1 produced 16 uncertain relation candidates and zero accepted edges: no direct pair had two qualifying fans. Seven reviewed records are deferred. See the pilot report for the representation/collection bottleneck.
@@ -57,4 +61,6 @@ Next stage: 6 — Calibrate pilot yield before another batch
 - Schema checks do not prove source-context completeness or candidate equality; these require a separate audit.
 
 ## Proposed next action
-Stage 6 calibration only: decide how to represent explicit pair appreciation, recommendation parent context, and alias validation; target repeat evidence for the same pairs and re-audit this pilot under versioned changes. Do not start batch 2 or silently substitute a style-similarity layer. The completed pilot graph currently has zero accepted edges, so expanding collection unchanged is not recommended.
+Stage 6 completed with user authorization: v3 extraction separates personal preference and parent context, v2 scorer localizes ambiguous mentions, and dashed one-fan links are enabled. See reports/20261031-stage-06-calibration.md and graph/batch-01-calibrated/. Three accepted pairs, 17 provisional candidates, eight contested/opposing-only; diagram cap shows three solid plus ten dashed. Original pilot stays unchanged. Fifteen reliable representations and one rejected single-performer critique; 20 tests and strict lineage checks pass. Parent restored prior conservative identity confidence after extractor inflation. A separate low-tier semantic check confirmed accepted pairs; parent corrections are explicit.
+
+Next: batch 2 (ranks 11–20) only on explicit user command, with multiple low-tier collectors and separate extraction/verification workers. The user authorized committing and pushing the completed calibration; no new collection has started. Source corpus remains small and targeted; supported edges are exploratory, not representative audience statistics.

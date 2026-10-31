@@ -15,7 +15,7 @@ import jsonschema
 from evidence_pipeline import SCHEMA_DIR, TASK_ROOT, author_key, load_records
 from avatars import prepare_avatar
 
-SCORER_VERSION = "observed-coendorsement-v1"
+SCORER_VERSION = "observed-coendorsement-v2"
 FAN_CLASSES = {"same_user_rating_overlap", "same_user_coendorsement", "fan_recommendation", "fan_comparison"}
 SUPPORT_CLASSES = {"same_user_rating_overlap", "same_user_coendorsement"}
 MIN_CONFIDENCE = 0.75
@@ -28,6 +28,7 @@ def check_schema(name, record):
 
 def load_evidence(manifest_paths, data_root, synthetic):
     evidence, ignored, seen_runs, seen_records = [], [], set(), set()
+    seen_posts = set()
     for path in manifest_paths:
         manifest = json.loads(path.read_text(encoding="utf-8"))
         check_schema("run-manifest.schema.json", manifest)
@@ -42,18 +43,22 @@ def load_evidence(manifest_paths, data_root, synthetic):
             raise ValueError("synthetic and production inputs must be rendered separately")
         candidates = {}
         for _, candidate in load_records(data_root / manifest["paths"]["source_candidates"]):
-            check_schema("source-candidate.schema.json", candidate)
+            check_schema("source-candidate-v2.schema.json" if candidate["schema_version"] == 2 else "source-candidate.schema.json", candidate)
             if candidate["candidate_id"] in candidates or candidate["run_id"] != run_id:
                 raise ValueError("duplicate candidate or mismatched candidate run")
             if candidate["author_hint"] is not None and candidate["author_key"] != author_key(candidate["site"], candidate["author_hint"]):
                 raise ValueError("candidate author key does not match its source-local hint")
             if candidate["collector"] != manifest["workers"]["collector"]:
                 raise ValueError("collector provenance differs from its manifest")
+            post = (candidate["site"], candidate["author_key"], candidate["excerpt"])
+            if post in seen_posts:
+                raise ValueError("duplicate source post; use a replacement run without its original")
+            seen_posts.add(post)
             candidates[candidate["candidate_id"]] = candidate
         records = [record for _, record in load_records(data_root / manifest["paths"]["evidence"])]
         seen_candidates = set()
         for record in records:
-            check_schema("evidence-v2.schema.json", record)
+            check_schema("evidence-v3.schema.json" if record["schema_version"] == 3 else "evidence-v2.schema.json", record)
             candidate = candidates.get(record["candidate_id"])
             if candidate is None or record["extraction"]["run_id"] != run_id:
                 raise ValueError("evidence has no matching source candidate/run")
@@ -65,6 +70,15 @@ def load_evidence(manifest_paths, data_root, synthetic):
             seen_candidates.add(record["candidate_id"])
             if record["excerpt"] != candidate["excerpt"] or record["language"] != candidate["language"] or record["source"] != {key: candidate[key] for key in record["source"]}:
                 raise ValueError("evidence differs from its source candidate")
+            if record.get("context", []) != candidate.get("context", []):
+                raise ValueError("evidence context differs from its source candidate")
+            for mention in record["mentions"]:
+                if record["schema_version"] == 3 and mention["surface_form"] not in record["excerpt"]:
+                    raise ValueError("mention surface is not verbatim")
+                if record["schema_version"] == 3:
+                    quote = mention["preference_quote"]
+                    if (mention["preference"] != "unknown" and (not quote or quote not in record["excerpt"])) or (mention["preference"] == "unknown" and quote is not None):
+                        raise ValueError("preference quote is missing, non-verbatim or attached to unknown preference")
             if record["review"]["status"] == "accepted" and not record["review"]["reviewer"]:
                 raise ValueError("accepted evidence has no reviewer")
         counts = manifest["counts"]
@@ -99,19 +113,30 @@ def aggregate(performers, evidence, updated_at):
             reason = "separate style layer"
         elif not record["source"]["author_key"]:
             reason = "no source-scoped fan key"
-        elif None in mentions or any(len({m["sentiment"] for m in group}) != 1 or group[0]["sentiment"] in {"mixed", "unclear"} for group in mentions.values()):
+        elif record["schema_version"] < 3 and (None in mentions or any(len({m["sentiment"] for m in group}) != 1 or group[0]["sentiment"] in {"mixed", "unclear"} for group in mentions.values())):
             reason = "unresolved or qualified interpretation needs pair-specific review"
-        elif record["extraction"]["confidence"] < MIN_CONFIDENCE or any(m["confidence"] < MIN_CONFIDENCE for group in mentions.values() for m in group):
+        elif record["extraction"]["confidence"] < MIN_CONFIDENCE or (record["schema_version"] < 3 and any(m["confidence"] < MIN_CONFIDENCE for group in mentions.values() for m in group)):
             reason = "below heuristic confidence threshold"
         if reason:
             deferred.append({"id": record["id"], "reason": reason})
             continue
         fan = (record["source"]["site"].strip().casefold(), record["source"]["author_key"])
-        positive = sorted(pid for pid, group in mentions.items() if group[0]["sentiment"] == "positive")
-        negative = sorted(pid for pid, group in mentions.items() if group[0]["sentiment"] == "negative")
+        if record["schema_version"] == 3:
+            eligible = {}
+            for pid, group in mentions.items():
+                preferences = {m["preference"] for m in group}
+                if pid is not None and len(preferences) == 1 and all(m["confidence"] >= MIN_CONFIDENCE for m in group):
+                    eligible[pid] = group[0]["preference"]
+                else:
+                    deferred.append({"id": record["id"], "performer_id": pid, "reason": "mention identity, preference or confidence unresolved"})
+            positive = sorted(pid for pid, value in eligible.items() if value == "positive")
+            negative = sorted(pid for pid, value in eligible.items() if value == "negative")
+        else:
+            positive = sorted(pid for pid, group in mentions.items() if group[0]["sentiment"] == "positive")
+            negative = sorted(pid for pid, group in mentions.items() if group[0]["sentiment"] == "negative")
         for pid in positive:
             likes[pid].add(fan)
-        if record["evidence_class"] in SUPPORT_CLASSES:
+        if record["schema_version"] == 3 or record["evidence_class"] in SUPPORT_CLASSES:
             for pair in combinations(positive, 2):
                 confidence = min(record["extraction"]["confidence"], *(m["confidence"] for pid in pair for m in mentions[pid]))
                 support[pair].append((record, fan, confidence))
@@ -137,7 +162,7 @@ def aggregate(performers, evidence, updated_at):
             "independent_fan_count": len(fans), "score": round(score, 6),
             "confidence": round(sum(fans.values()) / len(fans), 6) if fans else 0,
             "scorer_version": SCORER_VERSION,
-            "explanation": f"{len(fans)} source-scoped fans explicitly co-endorse this pair; {len(union)} observed fans endorse either performer. {len(opposed)} opposing preference records. " + ("Provisional observed overlap." if accepted else "Insufficient independent support or opposing preferences; no visible edge."),
+            "explanation": f"{len(fans)} source-scoped fans explicitly co-endorse this pair; {len(union)} observed fans endorse either performer. {len(opposed)} opposing preference records. " + ("Provisional observed overlap." if accepted else "Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional."),
             "updated_at": updated_at,
         }
         check_schema("relation-candidate.schema.json", relation)
@@ -145,14 +170,18 @@ def aggregate(performers, evidence, updated_at):
     return relations, deferred, {pid: len(likes[pid]) for pid in sorted(ids)}
 
 
+def displayable(relation):
+    return relation["status"] == "accepted" or (relation["status"] == "uncertain" and relation["independent_fan_count"] == 1 and not relation["contradictory_evidence_ids"])
+
+
 def d2_source(graph, max_degree=3):
     quote = lambda value: json.dumps(value, ensure_ascii=False)
     nodes = {node["id"]: f"n{index}" for index, node in enumerate(graph["nodes"])}
     visible = set(graph.get("visible_node_ids", nodes))
     label = "SYNTHETIC FIXTURE — no real fan findings" if graph["synthetic"] else "Provisional fan-preference evidence"
-    legend = label + "\nEdge width = observed overlap; labels show fans / confidence.\nCounts include scoring-eligible statements only.\nConfidence is a model judgment, not a probability.\nLayout distance has no similarity meaning. Missing edges mean insufficient evidence."
+    legend = label + "\nSolid = 2+ fans; dashed = 1 fan, provisional.\nEdge width = observed overlap; labels show fans / confidence.\nCounts include scoring-eligible statements only.\nConfidence is a model judgment, not a probability.\nLayout distance has no similarity meaning. Missing edges mean insufficient evidence."
     lines = [f"diagram: {quote(legend)} {{", "direction: down"]
-    if visible and not any(r["status"] == "accepted" and set(r["pair"]) <= visible for r in graph["relations"]):
+    if visible and not any(displayable(r) and set(r["pair"]) <= visible for r in graph["relations"]):
         lines.append(f"grid-columns: {min(5, len(visible))}")
     for node in graph["nodes"]:
         if node["id"] not in visible:
@@ -163,15 +192,20 @@ def d2_source(graph, max_degree=3):
             lines.extend([f'  icon: {quote("./" + node["avatar"]["path"])}', '  shape: image', '  label.near: outside-bottom-center', '  width: 128', '  height: 128'])
         lines.append('}')
     degrees = defaultdict(int)
-    for relation in sorted(graph["relations"], key=lambda r: (-r["score"], r["id"])):
-        if relation["status"] != "accepted" or not set(relation["pair"]) <= visible or any(degrees[pid] >= max_degree for pid in relation["pair"]):
+    for relation in sorted(graph["relations"], key=lambda r: (r["status"] != "accepted", -r["score"], r["id"])):
+        if not displayable(relation) or not set(relation["pair"]) <= visible or any(degrees[pid] >= max_degree for pid in relation["pair"]):
             continue
         a, b = relation["pair"]
         for pid in (a, b):
             degrees[pid] += 1
         label = f'{relation["independent_fan_count"]} fans / {relation["confidence"]:.0%} confidence'
+        if relation["status"] != "accepted":
+            label = "PROVISIONAL / " + label
         citation_text = relation["explanation"] + " Sources: " + " ".join(graph["evidence_sources"][rid] for rid in relation["support_evidence_ids"])
-        lines.extend([f'{nodes[a]} -- {nodes[b]}: {quote(label)} {{', f'  style.stroke-width: {1 + round(5 * relation["score"])}', f'  tooltip: {quote(citation_text)}', '}'])
+        lines.extend([f'{nodes[a]} -- {nodes[b]}: {quote(label)} {{', f'  style.stroke-width: {1 + round(5 * relation["score"])}', f'  tooltip: {quote(citation_text)}'])
+        if relation["status"] != "accepted":
+            lines.extend(["  style.stroke-dash: 5", '  style.stroke: "#946200"'])
+        lines.append("}")
     lines.append("}")
     return "\n".join(lines) + "\n"
 
@@ -194,10 +228,10 @@ def main():
         now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
         relations, deferred, coverage = aggregate(ranking["performers"], evidence, now)
         visible = {p["id"] for p in ranking["performers"] if args.batch_view is None or p.get("batch", 1) <= args.batch_view}
-        visible.update(pid for relation in relations if relation["status"] == "accepted" for pid in relation["pair"])
+        visible.update(pid for relation in relations if displayable(relation) for pid in relation["pair"])
         graph = {"schema_version": 1, "synthetic": args.synthetic, "scorer_version": SCORER_VERSION, "updated_at": now,
                  "input_manifests": [str(path) for path in args.manifest],
-                 "renderer": {"name": "d2", "layout": "elk", "sketch": True, "max_degree": 3},
+                 "renderer": {"name": "d2", "layout": "elk", "sketch": True, "max_degree": 3, "provisional_edges": "one fan, no opposing records"},
                  "visible_node_ids": sorted(visible),
                  "nodes": [{"id": p["id"], "name": p["name"], "observed_fans": coverage[p["id"]],
                             "avatar": prepare_avatar(p, args.output, fetch=args.render and not args.synthetic and p["id"] in visible)} for p in sorted(ranking["performers"], key=lambda p: p["id"])],
@@ -209,7 +243,7 @@ def main():
         if args.render:
             subprocess.run(["d2", "--sketch", "--layout", "elk", str(args.output / "graph.d2"), str(args.output / "graph.svg")], check=True)
             subprocess.run(["rsvg-convert", "-z", "2", str(args.output / "graph.svg"), "-o", str(args.output / "graph.png")], check=True)
-        print(f"Saved {len(relations)} relations ({sum(r['status'] == 'accepted' for r in relations)} visible candidates) to {args.output}")
+        print(f"Saved {len(relations)} relations ({sum(r['status'] == 'accepted' for r in relations)} accepted, {sum(displayable(r) and r['status'] != 'accepted' for r in relations)} provisional candidates) to {args.output}")
         return 0
     except (OSError, ValueError, jsonschema.ValidationError, subprocess.CalledProcessError) as error:
         print(str(error), file=sys.stderr)

@@ -93,8 +93,10 @@ def validate(kind, path):
     seen_ids = set()
     id_field = ID_FIELDS[kind]
     for location, record in records:
+        versioned_schema = {("source-candidate", 2): "source-candidate-v2.schema.json", ("evidence", 3): "evidence-v3.schema.json"}.get((kind, record.get("schema_version"))) if isinstance(record, dict) else None
+        current_validator = jsonschema.Draft202012Validator(json.loads((SCHEMA_DIR / versioned_schema).read_text()), format_checker=jsonschema.FormatChecker()) if versioned_schema else validator
         schema_errors = sorted(
-            validator.iter_errors(record), key=lambda item: list(item.path)
+            current_validator.iter_errors(record), key=lambda item: list(item.path)
         )
         for error in schema_errors:
             pointer = "/".join(str(part) for part in error.path)

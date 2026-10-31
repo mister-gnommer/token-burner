@@ -2,7 +2,7 @@
 
 `scripts/graph_pipeline.py` validates completed batch manifests, source candidates, evidence lineage, counts, and worker provenance before aggregation. Production uses the frozen ranking. Calibration and incomplete runs are excluded. Synthetic runs require an explicit flag and a `yyyyMMdd-synthetic-` run ID; production rejects them.
 
-## Scorer: observed-coendorsement-v1
+## Historical scorer: observed-coendorsement-v1
 
 - Only accepted records with source-scoped author keys and extraction/mention confidence at least 0.75 qualify. This threshold is a heuristic.
 - Automated support uses positive mentions in `same_user_coendorsement` and `same_user_rating_overlap` records. Neutral mentions never support an edge; repeated names and repeated endorsements by the same source-scoped fan count once.
@@ -21,11 +21,11 @@ Nodes show saved profile avatars where available, with names below the image. On
 
 Without `--render`, existing cached photos are used and uncached photos fall back without network access. Synthetic runs never download photos. `avatar-preview/` separately demonstrates two saved standup.pl profile photos and the fallback, with no preference evidence or batch processing. Pillow is pinned in `requirements.txt`.
 
-The renderer greedily displays highest-scoring accepted edges with at most three edges per node, retaining all candidates in JSON. Isolated nodes remain visible. D2 does not supply an interactive recommendation interface; source excerpts remain in the cited input artifacts.
+The renderer prioritizes accepted edges, then highest-scoring uncontested one-fan candidates, with at most three edges per node. Solid edges require two supporting source-scoped fans and no opposing record; dashed amber edges are explicitly provisional. Opposing-only and contested candidates remain in JSON. Isolated nodes remain visible. D2 does not supply an interactive recommendation interface; source excerpts remain in the cited input artifacts.
 
 For incremental previews, `--batch-view 1` shows the first batch plus any supported neighbors, including focal performers without edges. Later values include all batches up to that number. All 100 nodes remain in JSON; photos are fetched only for visible nodes. Omit the flag for the full diagram.
 
-When no accepted edges exist, the visible performers use a five-column grid. Node labels say "scored fans" to distinguish scoring-eligible positive observations from all collected opinions. The first pilot (`batch-01/`) has no accepted edges; its 16 uncertain relation candidates remain in JSON.
+When no displayable edges exist, the visible performers use a five-column grid. Node labels say "scored fans" to distinguish scoring-eligible positive observations from all collected opinions. The first pilot (`batch-01/`) has no accepted edges; its 16 uncertain relation candidates remain in JSON.
 
 ## Synthetic demo
 
@@ -42,3 +42,9 @@ PYTHONDONTWRITEBYTECODE=1 python3 tasks/standupers-graph/scripts/graph_pipeline.
 ```
 
 For production, omit `--synthetic`, `--ranking`, and `--data-root`; pass each completed batch manifest with `--manifest` and choose an output directory. `--render` uses installed `d2 --sketch --layout elk`, then `rsvg-convert -z 2`; no browser download is required. Without `--render`, JSON, D2 source, and local avatar assets are produced.
+
+## Stage 6 scorer: observed-coendorsement-v2
+
+The current scorer preserves v1 behavior for historical evidence v2. For reviewed evidence v3 it uses each mention's explicit personal `preference`, confidence and verbatim support independently. Unknown, unresolved and low-confidence mentions cannot create edges, but do not discard unrelated clear endorsements. Positive recommendations without personal appreciation do not enter the fan denominator. Personal-favorites replies qualify only with verified, separately attributed question context. Style evidence stays excluded, and acceptance still requires two source-scoped fans with no opposing record. Contradictions and all candidates remain inspectable. Layout distance still does not imply similarity.
+
+Stage 6 uses replacement pilot and separate corroboration manifests. Do not also load the original pilot manifest: that would duplicate interpretations of the same posts. `batch-01/` remains the original v1 snapshot; the calibrated output is `batch-01-calibrated/`.

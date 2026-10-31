@@ -12,6 +12,7 @@ At the start of a conversation, read `standupers-human-input.md`, `STATE.md`, an
 - After each turn, update `STATE.md` before reporting. Briefly tell the user what was done, decisions made, surprises, and the proposed next step. Ask when a finding changes the goal or approach.
 - A batch contains 10 stand-uppers. Never start a batch without an explicit user command. Pause after its graph and report are saved.
 - Use low-tier subagents for the main collection and extraction work. Main agents orchestrate and audit; escalate only work that demonstrably needs it, and record why.
+- Real batches use multiple low-tier collectors, separate low-tier extraction, and separate low-tier verification. The main agent integrates outputs, spot-checks evidence, and resolves reported exceptions; do not routinely redo the workers' full semantic review. Report worker roles and main-agent interventions with each batch.
 - Be AI-driven, not AI-vibes-driven: use AI for discovery, Polish-language interpretation, entity resolution, preference/sentiment extraction, and evidence-based relation explanations. Use code for repeatable aggregation and rendering.
 - Every factual relation must trace to stored evidence. Never turn a mere co-mention into a co-preference, and never present missing evidence as dislike or dissimilarity.
 - Keep fan-preference evidence distinct from performer/style similarity. Do not silently substitute one for the other if fan data is insufficient.
