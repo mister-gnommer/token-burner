@@ -5,22 +5,29 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Stand-up fan graph · 2026-10-31</title>
 <style>
-:root{--bg:#f6f5f1;--card:#fffffff0;--fg:#1d2330;--muted:#667085;--border:#d9d6cc;--accepted:#0f766e;--provisional:#b7791f;--contested:#c2410c;--none:#98a2b3;--halo:#f6f5f1}
-@media (prefers-color-scheme:dark){:root{--bg:#14161b;--card:#1d2027f0;--fg:#e6e8ee;--muted:#98a2b3;--border:#343843;--accepted:#2dd4bf;--provisional:#f2b54a;--contested:#fb7d4b;--none:#5d6676;--halo:#14161b}}
+:root{--match:#2563eb;--bg:#f6f5f1;--card:#fffffff0;--fg:#1d2330;--muted:#667085;--border:#d9d6cc;--accepted:#0f766e;--provisional:#b7791f;--contested:#c2410c;--none:#98a2b3;--halo:#f6f5f1}
+@media (prefers-color-scheme:dark){:root{--match:#60a5fa;--bg:#14161b;--card:#1d2027f0;--fg:#e6e8ee;--muted:#98a2b3;--border:#343843;--accepted:#2dd4bf;--provisional:#f2b54a;--contested:#fb7d4b;--none:#5d6676;--halo:#14161b}}
 *{box-sizing:border-box}
 html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif;overflow:hidden}
 svg#graph{width:100vw;height:100vh;display:block;cursor:grab}
 svg#graph:active{cursor:grabbing}
 .card{position:fixed;background:var(--card);border:1px solid var(--border);border-radius:12px;box-shadow:0 4px 18px #0000001a;backdrop-filter:blur(6px)}
 #info{top:16px;left:16px;width:300px;padding:14px 16px}
-#info h1{font-size:16px;margin:0 0 4px}
+#info .title{display:flex;gap:8px;align-items:center;justify-content:space-between}
+#info h1{font-size:16px;margin:0}
+#info .title button{margin:0;padding:0 8px}
+#info.collapsed{width:auto}
+#info.collapsed #info-body{display:none}
+#search{top:16px;right:16px;width:260px;padding:6px 10px;display:flex;gap:8px;align-items:center}
+#search input{flex:1;min-width:0;font:inherit;color:inherit;background:transparent;border:0;outline:0}
+#search-count{white-space:nowrap}
 .muted{color:var(--muted);font-size:12.5px}
 .legend{display:grid;grid-template-columns:34px 1fr;gap:6px 10px;align-items:center;margin:12px 0}
 .legend svg{width:34px;height:10px}
 label.toggle{display:flex;gap:8px;align-items:center;margin:4px 0;cursor:pointer}
 button{font:inherit;color:inherit;background:transparent;border:1px solid var(--border);border-radius:8px;padding:4px 10px;cursor:pointer;margin-top:8px}
 button:hover{border-color:var(--muted)}
-#panel{top:16px;right:16px;bottom:16px;width:380px;padding:16px;overflow:auto;display:none}
+#panel{top:68px;right:16px;bottom:16px;width:380px;padding:16px;overflow:auto;display:none}
 #panel.open{display:block}
 #panel .head{display:flex;gap:12px;align-items:center;margin-bottom:10px}
 #panel .head img{width:56px;height:56px;border-radius:50%;object-fit:cover}
@@ -47,6 +54,8 @@ a{color:var(--accepted)}
 .link.contested{stroke:var(--contested);stroke-dasharray:2 5;stroke-width:1.6}
 .hit{stroke:transparent;stroke-width:14;cursor:pointer}
 .dim{opacity:.12}
+.node.match .ring{stroke:var(--match);stroke-width:7}
+.node.match text{fill:var(--match)}
 .node,.link{transition:opacity .15s}
 </style>
 </head>
@@ -54,7 +63,8 @@ a{color:var(--accepted)}
 <svg id="graph"></svg>
 
 <div id="info" class="card">
-  <h1>Who shares fans with whom?</h1>
+  <div class="title"><h1>Who shares fans with whom?</h1><button id="collapse" aria-expanded="true" title="Hide legend and settings">−</button></div>
+  <div id="info-body">
   <div class="muted" id="stats"></div>
   <div class="legend">
     <svg><line x1="2" y1="5" x2="32" y2="5" class="link accepted" stroke-width="4"/></svg><span>Corroborated: 2+ fans like both</span>
@@ -66,7 +76,10 @@ a{color:var(--accepted)}
   <label class="toggle"><input type="checkbox" id="t-unlinked"> Researched, no links yet</label>
   <button id="reset">Re-layout</button>
   <p class="muted">Closer and thicker = more shared fan endorsements in collected public posts. Drag bubbles; scroll to zoom; click for evidence. Distance is approximate and evidence is sparse: no link does not mean dissimilar.</p>
+  </div>
 </div>
+
+<div id="search" class="card"><input type="search" id="q" placeholder="Search names…" aria-label="Search names" autocomplete="off"><span class="muted" id="search-count"></span></div>
 
 <aside id="panel" class="card"><button class="close" aria-label="Close">×</button><div id="panel-body"></div></aside>
 <div id="tip" class="card"></div>
@@ -152,6 +165,7 @@ function rebuild() {
     // Nodes without attracting links orbit the cluster instead of crowding it.
     .force("orbit", d3.forceRadial(Math.max(380, nodes.length * 9)).strength(n => n.linked ? 0 : .3));
   sim.alpha(1).restart();
+  unfocus();
 }
 
 const keyOf = l => (l.source.id ?? l.source) + "|" + (l.target.id ?? l.target);
@@ -184,7 +198,16 @@ function focus(ids, keepLink) {
   nodeSel.classed("dim", n => !ids.has(n.id));
   linkSel.classed("dim", l => !keepLink(l));
 }
-function unfocus() { nodeSel.classed("dim", false); linkSel.classed("dim", false); }
+function unfocus() {
+  const q = normalize(d3.select("#q").property("value").trim());
+  nodeSel.classed("match", n => q && n.search.includes(q)).classed("dim", n => q && !n.search.includes(q));
+  linkSel.classed("dim", l => q && !l.source.search.includes(q) && !l.target.search.includes(q));
+  const shown = nodes.filter(n => n.search.includes(q)).length, hidden = DATA.nodes.filter(n => n.search.includes(q)).length - shown;
+  d3.select("#search-count").text(q ? shown + (hidden ? ` · ${hidden} not shown` : "") : "");
+}
+// NFD splits most accents off as combining marks; Polish ł has no decomposition, so map it explicitly.
+const normalize = s => s.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase().replace(/ł/g, "l");
+DATA.nodes.forEach(n => n.search = normalize(n.name));
 
 const tipEl = document.getElementById("tip");
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
@@ -259,6 +282,13 @@ d3.select("#stats").text(`${linkedCount} linked performers · ${count("accepted"
 Object.values(toggles).forEach(t => t.on("change", () => { rebuild(); setTimeout(fit, 900); }));
 d3.select("#reset").on("click", () => { nodes.forEach(n => { n.x = n.y = undefined; }); rebuild(); setTimeout(fit, 900); });
 addEventListener("resize", () => fit(0));
+d3.select("#q").on("input", unfocus).on("keydown", e => { if (e.key === "Escape") { e.target.value = ""; unfocus(); } });
+d3.select("#collapse").on("click", e => {
+  const info = d3.select("#info"), collapsed = !info.classed("collapsed");
+  info.classed("collapsed", collapsed);
+  d3.select(e.currentTarget).text(collapsed ? "+" : "−").attr("aria-expanded", !collapsed)
+    .attr("title", collapsed ? "Show legend and settings" : "Hide legend and settings");
+});
 
 rebuild();
 sim.stop();
