@@ -48,3 +48,9 @@ For production, omit `--synthetic`, `--ranking`, and `--data-root`; pass each co
 The current scorer preserves v1 behavior for historical evidence v2. For reviewed evidence v3 it uses each mention's explicit personal `preference`, confidence and verbatim support independently. Unknown, unresolved and low-confidence mentions cannot create edges, but do not discard unrelated clear endorsements. Positive recommendations without personal appreciation do not enter the fan denominator. Personal-favorites replies qualify only with verified, separately attributed question context. Style evidence stays excluded, and acceptance still requires two source-scoped fans with no opposing record. Contradictions and all candidates remain inspectable. Layout distance still does not imply similarity.
 
 Stage 6 uses replacement pilot and separate corroboration manifests. Do not also load the original pilot manifest: that would duplicate interpretations of the same posts. `batch-01/` remains the original v1 snapshot; the calibrated output is `batch-01-calibrated/`.
+
+## Public page
+
+On every push to `main` that touches `graph/`, `.github/workflows/pages.yml` runs `scripts/build_site.sh`. It publishes the highest-numbered `batch-NN/` that has a `view.html` as `index.html`, with its `graph.svg` and `assets/`, at https://mister-gnommer.github.io/token-burner/standupers/. The site root redirects there. The URL never changes, so a new batch only needs its own `view.html`. That file must use relative links, and the build rejects `src`/`href` values that start with `/` or `file:`. On narrow screens the view opens zoomed to 500%.
+
+Preview locally: `bash tasks/standupers-graph/scripts/build_site.sh /tmp/site && python3 -m http.server -d /tmp/site`, then open `http://localhost:8000/standupers/`.
