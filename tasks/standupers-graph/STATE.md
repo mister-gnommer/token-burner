@@ -1,6 +1,6 @@
 # Current state
 
-Last updated: 2026-10-31
+Last updated: 2026-11-03
 Current stage: 7 — Batch 7 complete; ranks55–57 remain incomplete
 Next stage: pause for user command; batch8 ranks71–80 or explicitly budgeted earlier catch-up
 
@@ -42,6 +42,7 @@ Next stage: pause for user command; batch8 ranks71–80 or explicitly budgeted e
 - Standup.pl provides a fresh 448-person catalog, daily YouTube trend rankings, and an all-time popularity sort; its cumulative-view metric differs from Standupedia’s formula.
 
 ## Latest checkpoint
+- Hosting added 2026-11-03: GitHub Pages workflow publishes the newest `graph/batch-NN/view.html` at https://mister-gnommer.github.io/token-burner/standupers/. batch-06/07 views now use relative paths, CSS fallbacks and a phone-friendly zoom. It goes live after merging to `main` and setting Settings → Pages → Source to "GitHub Actions". Future batch views must keep relative links.
 - Batch7 complete2026-10-31:7canonical candidates/3accepted representations/4solo skips; cumulative38records/48relations (8corroborated,25provisional,15contested). New one-fan Pałubski–Poczęty and Zalewski–Borkowski links. Diagram8solid/11dashed,71photos. Actual61queries/21pageattempts;B exceeded24query cap by4. All20tests and strict lineage/recomputedgraph pass.67completed/33pending;earlier55–57 still incomplete. See reports/20261031-batch-07.md.
 - Batch6 recovered snapshot saved2026-10-31:5canonical candidates,2independently accepted representations,3solo skips; cumulative35records/46relations (8accepted,23provisional,15contested). New one-fan Jurkiewicz–Pańczyk link is in data but hidden by degree cap. Graph shows8solid/9dashed,61photos. Ranks55–57 research incomplete and remain pending;57completed/43pending. All20tests and strict lineage/recomputed graph pass. See reports/20261031-batch-06.md.
 - Batch5 complete (2026-10-31):7 candidates/7 reviewed (6accepted,1uncertain); cumulative33 records,45 relations:8 accepted,22 provisional,15 contested/opposing-only. Two new accepted pairs (Jurkiewicz–Syrek-Dąbrowski and Jurkiewicz–Szumowski), none downgraded. Graph displays8 solid/9 dashed with51photos. Six Luna workers plus one targeted middle-tier Terra audit; see reports/20261031-batch-05.md.

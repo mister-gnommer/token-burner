@@ -20,6 +20,7 @@ At the start of a conversation, read `standupers-human-input.md`, `STATE.md`, an
 - A web-cache miss does not prove a source is inaccessible. Within the worker budget, try the full result URL and T3 `preview_status` then `preview_open`; a closed preview reporting `available:false` still needs an open attempt. Never promote unverified search snippets.
 - Keep fan-preference evidence distinct from performer/style similarity. Do not silently substitute one for the other if fan data is insufficient.
 - Use D2 for graph rendering; save editable `.d2` sources alongside SVG snapshots.
+- Each batch's `graph/batch-NN/view.html` is published by `.github/workflows/pages.yml` to https://mister-gnommer.github.io/token-burner/standupers/ (highest batch number wins). Use only relative links (`graph.svg`, `assets/…`), never local absolute paths; the build fails otherwise. Define fallback values for any CSS variables.
 - Save schemas, prompts, model/provider details, source metadata, normalized outputs, and scorer versions so results are inspectable and resumable. Keep raw source excerpts and citations with their extracted claims.
 - Prefer small, inspectable files over a monolithic log or a database until the data volume requires otherwise.
 
