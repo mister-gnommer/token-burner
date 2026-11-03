@@ -1,0 +1,77 @@
+{
+  "run_id": "20261101-coverage-tomasz-machnicki",
+  "status": "correction_complete_unreviewed",
+  "input": "evidence/coverage-expansion/tomasz-machnicki.source-candidates.canonical.jsonl",
+  "input_sha256": "690c0ffd52aedf80f041066f273b6ef2a947e4cab43bba2d9cfc52e9a9ee3fc3",
+  "output": "evidence/coverage-expansion/tomasz-machnicki.evidence.unreviewed.jsonl",
+  "output_sha256": "53d870c679c80033dd4f8df0d29b54bb1d02f279a80a9bb605e109356450894e",
+  "input_excerpt_sha256": {
+    "src_cov_tmach_001": "214636b4c64671ced657b02e945bdeb13b306a40cb07ea9f1712090449f74e59",
+    "src_cov_tmach_002": "e59e800ecb4b8e8c06e84f1fc3c8faffdfe8dfa1e96af6b8af9713df6f535f33",
+    "src_cov_tmach_003": "2b7a6bac2b221434b79d9f5bfb9f42f8c33551ab8232448649320df6bf56e8fb"
+  },
+  "decisions": [
+    {
+      "candidate_id": "src_cov_tmach_001",
+      "decision": "record",
+      "evidence_id": "ev_cov_tmach_001",
+      "scope": "Wolski positive individual appraisal; ambiguous “all men” remains unresolved."
+    },
+    {
+      "candidate_id": "src_cov_tmach_002",
+      "decision": "record",
+      "evidence_id": "ev_cov_tmach_002",
+      "scope": "Explicit recommendation of Litości and the named trio’s solo shows; three contextual collective mentions, with all individual preferences unknown."
+    },
+    {
+      "candidate_id": "src_cov_tmach_003",
+      "decision": "record",
+      "evidence_id": "ev_cov_tmach_003",
+      "scope": "Mixed Machnicki appraisal; neutral Wolski mention; event/date unknown; no individual preferences."
+    }
+  ],
+  "accounting": {
+    "candidates": 3,
+    "records": 3,
+    "skips": 0,
+    "assessed_once": true
+  },
+  "checks": [
+    "canonical IDs and ordering; every candidate assessed exactly once (3 records, 0 skips)",
+    "author keys match canonical source-local keys; source, excerpt, language, and context copied exactly",
+    "frozen IDs only; literal surfaces occur in excerpts; known preference quote is an exact excerpt substring; unknown preference quotes are null",
+    "collector lineage retained in canonical source; extractor provenance is codex/gpt-6-luna/extract-evidence-v3/run_id 20261101-coverage-tomasz-machnicki",
+    "all records unreviewed with reviewer null; existing ev_cov_tmach_001 and ev_cov_tmach_003 lines preserved byte-for-byte",
+    "schema validation and focused correction checks passed"
+  ],
+  "validation_command": "python3 scripts/evidence_pipeline.py validate --kind evidence evidence/coverage-expansion/tomasz-machnicki.evidence.unreviewed.jsonl",
+  "surprises": [
+    "Correction resolves the prior candidate 002 skip using the saved full event page; no new research was performed.",
+    "Positive recommendation sentiment does not establish personal preference for any of the three performers."
+  ],
+  "collector_history": {
+    "src_cov_tmach_001": {
+      "provider": "codex",
+      "model": "gpt-6.1-terra",
+      "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+    },
+    "src_cov_tmach_002": {
+      "provider": "codex",
+      "model": "gpt-6.1-terra",
+      "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+    },
+    "src_cov_tmach_003": {
+      "provider": "codex",
+      "model": "gpt-6.1-terra",
+      "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+    }
+  },
+  "correction_history": [
+    {
+      "candidate_id": "src_cov_tmach_002",
+      "prior_decision": "skip",
+      "prior_reason": "Explicit program/solo-show recommendation but no performer names in author excerpt; verified event roster does not establish author-specific individual appraisal.",
+      "correction": "Saved full event context identifies the trio as the referent of “chłopaków”; record as fan_recommendation while all individual preferences remain unknown."
+    }
+  ]
+}

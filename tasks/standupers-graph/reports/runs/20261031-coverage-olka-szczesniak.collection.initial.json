@@ -1,0 +1,159 @@
+{
+  "surprises": [
+    "An independent Reddit commenter in the same thread spells the performer “Karol Modzelewski” and names his Newsy bez wirusa series; that makes the older “Karol Modrzelewski” spelling plausible but does not directly resolve the original commenter’s referent.",
+    "A separate Reddit fan explicitly says they adore Olka, but does not evaluate any frozen peer in that post."
+  ],
+  "run_id": "20261031-coverage-olka-szczesniak",
+  "performer_id": "olka-szczesniak",
+  "rank": 7,
+  "provider": "codex",
+  "model": "gpt-6-luna",
+  "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1",
+  "queries": [
+    {
+      "query": "site:reddit.com/r/Polska \"Olka Szczęśniak\" \"Karol Modzelewski\"",
+      "status": "searched; results were recommendation/list discussions, including Reddit threads; no verified positive co-appreciation"
+    },
+    {
+      "query": "site:reddit.com \"Olka Szczęśniak\" \"lubię\" OR \"ulubiona\" OR \"podoba\" OR \"fanka\" stand-up",
+      "status": "searched; empty"
+    },
+    {
+      "query": "polskie forum \"Olka Szczęśniak\" \"polecam\" \"lubię\" stand-up forum",
+      "status": "searched; located GRYOnline post (already collected by Magda pilot; do not duplicate) and KupBilecik Olka-only comments; also Gazeta first-person discussion lead"
+    },
+    {
+      "query": "\"Karola Modrzelewskiego czy Olke Szczęśniak\"",
+      "status": "searched; exact phrase has no indexed results"
+    },
+    {
+      "query": "site:kupbilecik.pl \"Olka Szczęśniak\" \"support\" opinie \"stand-up\"",
+      "status": "searched; KupBilecik search returned Olka-only review pages with anonymous support and solo ratings; these are excluded. No direct review lead with a frozen peer."
+    },
+    {
+      "query": "\"Olka Szczęśniak\" \"Mateusz Socha\" (uwielbiam OR lubię OR \"mój ulubiony\" OR śmieszny)",
+      "status": "searched; empty results for Olka + Mateusz Socha targeted pair query"
+    },
+    {
+      "query": "\"Olka Szczęśniak\" (\"najbardziej lubię\" OR \"mój top\" OR \"ulubieni\" OR \"ulubione\") standup",
+      "status": "searched; results are event archives/solo Olka reviews and unrelated noise; no pair candidate. Solo reviews excluded by scope."
+    },
+    {
+      "query": "\"Karol Modzelewski\" \"Newsy bez wirusa\" Olka Szczęśniak",
+      "status": "searched; official standup.pl and Fundacja im. Batorego pages identify canonical Karol Modzelewski as Newsy bez wirusa creator; identity context only, not new fan candidate"
+    }
+  ],
+  "opens": [
+    {
+      "url": "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169",
+      "status": "opened full 1763-line forum thread; target Megera post at lines 483-491 is complete and same as corrected Magda candidate; no new evidence"
+    },
+    {
+      "url": "https://www.reddit.com/r/Polska/comments/17ukdey/polski_stand_up_jest_tylko_jedn%C4%85_p%C3%B3%C5%82k%C4%99_wy%C5%BCej_od/",
+      "status": "opened complete Reddit source; thefafal at lines 235-242 says ‘Karola Modrzelewskiego czy Olke Szczęśniak’; old source spelling preserved; no independent identity proof in this thread; context includes no canon mapping"
+    },
+    {
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+      "status": "opened full 685-line Reddit thread; exact independent canonical spelling at lines 149-155; Olka-only personal evaluation by ImSilas at lines 410-416; Regular_Bat8162 list at lines 227-239 is unelaborated list"
+    },
+    {
+      "url": "https://standup.pl/komicy/karol-modzelewski",
+      "status": "opened official standup.pl profile; lines 14-16 and 25 identify performer Karol Modzelewski and Newsy bez wirusa; external identity route confirmed, but cannot prove thefafal meant same person"
+    }
+  ],
+  "non_navigation_reads": [],
+  "source_family_routes": [
+    {
+      "family": "Reddit discussion/favorites",
+      "route": "broad personal-preference phrasing and peer names",
+      "status": "attempted"
+    },
+    {
+      "family": "Polish web forums",
+      "route": "first-person preference/recommendation wording",
+      "status": "attempted"
+    },
+    {
+      "family": "Reddit argument / source identity repair",
+      "route": "existing candidate src_b01c_002 source and context review",
+      "status": "attempted"
+    },
+    {
+      "family": "Review/event archives",
+      "route": "Olka + support multi-performer comments",
+      "status": "attempted"
+    },
+    {
+      "family": "Polish forums and broad fan discussions",
+      "route": "first-person favorites phrasing, performer-plus-standup",
+      "status": "attempted"
+    }
+  ],
+  "candidates": [],
+  "repair_checks": [
+    {
+      "old_candidate_id": "src_b01c_002",
+      "old_evidence_id": "ev_b01c_002",
+      "direct_source_locator": "https://www.reddit.com/r/Polska/comments/17ukdey/polski_stand_up_jest_tylko_jedn%C4%85_p%C3%B3%C5%82k%C4%99_wy%C5%BCej_od/ lines 235-242, comment by u/thefafal",
+      "verbatim_proof": "Gościa nie znam i nie chce znać, ale Karola Modrzelewskiego czy Olke Szczęśniak zawsze będę bronił, bo prezentują naprawdę dobry poziom i szkoda, że tutaj wszyscy od razu wrzucają wszystkich do jednego wora.",
+      "original_spelling": "Karola Modrzelewskiego; Olke Szczęśniak",
+      "assessment": "Exact primary source confirms original spelling “Karola Modrzelewskiego” and explicit praise for Olka and Karol. Same-thread, different commenter kv665 at lines 149-155 gives exact spelling “Karol Modzelewski” and references Newsy bez wirusa; official standup.pl profile at https://standup.pl/komicy/karol-modzelewski lines 14-16 and 25 confirms the canonical performer and his series. This validates the likely referent path but does not directly bind thefafal’s misspelling to that performer. Retain current provisional mapping; do not bump confidence. Independent adjudication should consider this locator and residual spelling uncertainty."
+    }
+  ],
+  "coverage_gaps": [
+    "No new verified Olka + frozen-peer personal co-appreciation candidate found.",
+    "Reddit: first-person preference leads yielded Olka-only evaluation, unelaborated lists, or existing unresolved evidence.",
+    "GRYOnline forum: the only full multi-performer Olka post is already saved for Magda pilot; it is qualified/comparative and includes negative comparison, not a positive Olka pair.",
+    "KupBilecik archives surfaced Olka-only reviews and anonymous/unidentified support references; solo reviews excluded, generic event praise/co-billing not used.",
+    "No second source-local account supporting the existing Olka/Karol pair located."
+  ],
+  "unused_allowance": {
+    "queries": 16,
+    "opens": 20,
+    "candidates": 16
+  },
+  "stop_reason": "At least three source families (Reddit discussions, Polish forums, review/event archives) were attempted and key full posts checked. No new candidate met the positive co-appreciation and full-context requirements; stopped with unused allowance rather than force a connection.",
+  "full_author_posts": [
+    {
+      "source": "GRYOnline.pl",
+      "url": "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169",
+      "author_hint": "Megera_",
+      "published_at": "2023-01-14T22:11",
+      "locator": "opened source lines 483-491; post 3.1",
+      "full_author_text": "Olka jest \"rezydentką\" mojej mieściny :)\nOgólnie dość lubię kobiety w polskim stand-upie, ale wydaje mi się, że im mniej popularna, tym lepsza... Wiolka Walaszczyk i Magda Kubicka to są persony na Polskę, Olka nadal trochę regionalna, ale np. Marta Łojok (o której mało kto słyszał) zrobiła przed Olką taki support, że ryczałam ze śmiechu i Ola nie była w stanie jej dogonić.",
+      "outcome": "Already saved as src_cov_mkubicka_001; no duplicate. Full passage includes qualified category liking, popularity comparison, laughter at Marta Łojok's support and negative comparison of Olka; not positive co-appreciation."
+    },
+    {
+      "source": "Reddit r/Polska",
+      "url": "https://www.reddit.com/r/Polska/comments/17ukdey/polski_stand_up_jest_tylko_jedn%C4%85_p%C3%B3%C5%82k%C4%99_wy%C5%BCej_od/",
+      "author_hint": "thefafal",
+      "published_at": null,
+      "locator": "opened source lines 235-242; comment by u/thefafal",
+      "full_author_text": "Gościa nie znam i nie chce znać, ale Karola Modrzelewskiego czy Olke Szczęśniak zawsze będę bronił, bo prezentują naprawdę dobry poziom i szkoda, że tutaj wszyscy od razu wrzucają wszystkich do jednego wora.",
+      "outcome": "Already saved as src_b01c_002; do not resave. Olka is explicit; Karol identity remains uncertain pending independent adjudication."
+    },
+    {
+      "source": "Reddit r/PolskaNaLuzie",
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+      "author_hint": "ImSilas",
+      "published_at": null,
+      "locator": "opened source lines 410-416; comment",
+      "full_author_text": "Olke uwielbiam ale ona dużo przeklina. Niemniej punche i puenty są zabawne, oraz dokańczają wątek, a nie tylko „hue hue kur dupa cycki hue hue”",
+      "outcome": "Olka-only personal evaluation; no named frozen peer, so not candidate."
+    },
+    {
+      "source": "Reddit r/PolskaNaLuzie",
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+      "author_hint": "Regular_Bat8162",
+      "published_at": null,
+      "locator": "opened source lines 227-239; comment",
+      "full_author_text": "Magda Kubicka\n\nKatarzyna Piasecka\n\nOlka Szczesniak\n\nMichał Leja",
+      "outcome": "Bare list without evaluations; recommendation context does not establish personal co-appreciation."
+    }
+  ],
+  "baseline_context": {
+    "report": "tasks/standupers-graph/reports/runs/20261031-coverage-baseline.json",
+    "largest_positive_component_size": 26,
+    "component_membership": "Olka Szczęśniak is not in the reported 26-performer largest component; existing candidate repair pair is Olka/Karol, with Karol listed among isolated nodes with contested pairs in saved audit notes."
+  }
+}

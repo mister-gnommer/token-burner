@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101-coverage-tomasz-machnicki",
+  "status": "correction_required",
+  "reviewer": "codex/gpt-6-luna",
+  "prompt_version": "verify-evidence-v3",
+  "verified_at": "2026-11-01",
+  "inputs": {
+    "canonical_candidates": "evidence/coverage-expansion/tomasz-machnicki.source-candidates.canonical.jsonl",
+    "unreviewed_evidence": "evidence/coverage-expansion/tomasz-machnicki.evidence.unreviewed.jsonl",
+    "extraction_report": "reports/runs/20261101-coverage-tomasz-machnicki.extraction.json",
+    "canonicalization_report": "reports/runs/20261101-coverage-tomasz-machnicki.canonicalization.json",
+    "collection_report": "reports/runs/20261101-coverage-tomasz-machnicki.collection.json"
+  },
+  "accounting": {
+    "candidate_count": 3,
+    "reviewed_record_count": 2,
+    "accepted": 2,
+    "uncertain": 0,
+    "rejected": 0,
+    "skip_count": 1,
+    "assessed_once": true,
+    "complete": false,
+    "correction_required_for": [
+      "src_cov_tmach_002"
+    ]
+  },
+  "decisions": [
+    {
+      "candidate_id": "src_cov_tmach_001",
+      "decision": "accepted",
+      "evidence_id": "ev_cov_tmach_001",
+      "identity": "Łukasz Wolski is a high-confidence directly named frozen identity. The generic “all men” clause does not identify or support other performers.",
+      "sentiment": "Positive event-scoped appraisal for Wolski; recommendation of all men remains a show-level recommendation.",
+      "preference": "Positive only for Wolski, supported by exact “szczególnie Łukasz Wolski- super występ.” No preference transferred to others.",
+      "correction": null
+    },
+    {
+      "candidate_id": "src_cov_tmach_002",
+      "decision": "skip_requires_extraction_correction",
+      "evidence_id": null,
+      "identity": "The saved full event page (collection attempt 13, full open, lines 24–25, 66–68) identifies the 2025-09-26 event, names Machnicki, Wolski, and Kasparek in its title, and describes them as the three regulars of Litości. In this attached context, plural “chłopaków” in “solówki chłopaków” has a credible collective referent; this is more than an unverified category roster or mere co-billing. It does not show personal liking of each.",
+      "sentiment": "The author recommends seeing Litości and the men’s solo shows. This qualifies as fan_recommendation without two personal likes. Keep individual preferences unknown; do not transfer generic “świetny występ” or event praise to each performer.",
+      "preference": "Unknown for all; no individual preference quote exists.",
+      "correction": "The extractor skipped this despite identified collective referent. A separate extractor/reviewer pass should add a fan_recommendation record with the three frozen IDs, the verbatim collective surface “chłopaków” (identity confidence kept distinct from preference), and unknown preference/null quote for each. This verifier does not create that record."
+    },
+    {
+      "candidate_id": "src_cov_tmach_003",
+      "decision": "accepted",
+      "evidence_id": "ev_cov_tmach_003",
+      "identity": "Both exact surname surfaces refer with high confidence to frozen Wolski and Machnicki in the event context. This is contextual resolution only; do not create global aliases.",
+      "sentiment": "Wolski is neutral: the observation that he did not mention poop is not praise. Machnicki is mixed: “cokolwiek nie w formie” is scoped criticism, while the overall funny/recommendation clause applies to the event; it does not cancel or transfer to him.",
+      "preference": "Unknown for both. General amusement and event recommendation do not prove individual personal liking.",
+      "context": "Actual comment event/date is unknown in the cross-event widget. Context remains empty; neither the 2025 event date nor search-only 2026-08-12 is copied."
+    }
+  ],
+  "prior_campaign_rule": "Consistent with tasks/standupers-graph/evidence/coverage-expansion/marcin-zbigniew-wojciech.evidence.jsonl, ev_cov_mzwojciech_001: an identified four-person program is retained as fan_recommendation while personal preference is assigned only where the author independently appraises that performer. Here, the identified Litości trio makes the explicit solo-show recommendation recordable, but leaves each preference unknown.",
+  "integrity": {
+    "unreviewed_file_sha256": "1c017b24919b46f50d81a5415a06c25fa5248dde8aa1a015c2a183f81000ad88",
+    "reviewed_file_sha256": "e48ab4ad5922a0a095e9e071116b3b36da231f161c263ae1f1ce1fd73aca252e",
+    "extraction_report_input_sha256_claim_matches": true,
+    "extraction_report_unreviewed_output_sha256_claim_matches": true,
+    "candidate_excerpt_sha256": {
+      "src_cov_tmach_001": "214636b4c64671ced657b02e945bdeb13b306a40cb07ea9f1712090449f74e59",
+      "src_cov_tmach_002": "e59e800ecb4b8e8c06e84f1fc3c8faffdfe8dfa1e96af6b8af9713df6f535f33",
+      "src_cov_tmach_003": "2b7a6bac2b221434b79d9f5bfb9f42f8c33551ab8232448649320df6bf56e8fb"
+    },
+    "source_excerpt_exact_match": true,
+    "full_event_open_attempt": 13,
+    "full_event_open_payload_sha256": "761822368d4f858d33194e0f9df15a0e8499e4218e7902d9c258c67f99a21b8c",
+    "full_event_open_contains_roster_and_show_description": true,
+    "note": "The extraction report input/output and candidate excerpt hashes were recomputed from the named files. Full open payload is preserved in collection report; no external retrieval performed."
+  },
+  "checks": {
+    "validator_command": "python3 tasks/standupers-graph/scripts/evidence_pipeline.py validate --kind evidence tasks/standupers-graph/evidence/coverage-expansion/tomasz-machnicki.evidence.jsonl",
+    "validator_result": "validated 2 evidence record(s)",
+    "focused_result": "passed: all 3 candidate decisions accounted exactly once (2 records and candidate 002 correction-required skip); canonical source, excerpt, language, and context equality for recorded candidates; extraction provenance unchanged; frozen IDs only; literal surfaces and preference quotes checked; review state checked; unknown preferences have null quotes.",
+    "author_hash_commands": [
+      "python3 tasks/standupers-graph/scripts/evidence_pipeline.py author-key --site kupbilecik.pl --author Aneta",
+      "python3 tasks/standupers-graph/scripts/evidence_pipeline.py author-key --site kupbilecik.pl --author 'Agnieszka K.'",
+      "python3 tasks/standupers-graph/scripts/evidence_pipeline.py author-key --site kupbilecik.pl --author Jagoda"
+    ],
+    "author_hash_result": "all match canonical source-local hashes: fan_8abb8ccefbf32fac, fan_bc6f8d50f3f30022, fan_4a69c88d9a5f43dc."
+  },
+  "Surprises": [
+    "Candidate 002’s skip is not defensible under the campaign’s program-recommendation rule: the saved full page identifies the collective referent for “chłopaków”. Extraction correction is required.",
+    "The cross-event widget makes candidate 003 event/date unknown despite the containing page context."
+  ]
+}

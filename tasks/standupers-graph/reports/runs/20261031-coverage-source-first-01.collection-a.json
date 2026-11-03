@@ -1,0 +1,205 @@
+{
+  "Surprises": [
+    "The accessible Reddit and Gazeta.pl threads were already partly in the pilot corpus. Exact prior author-posts were skipped; two different authors on those same pages supplied new eligible posts.",
+    "A third discussion family, Wykop, had a concrete full-page timeout. Search snippets remain quarantined."
+  ],
+  "run_id": "20261031-coverage-source-first-01",
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+source-first-fan-discovery-v1"
+  },
+  "scope": "SLICE A: broad Polish discussions and first-person fan posts spanning frozen performers",
+  "budgets": {
+    "queries_cap": 24,
+    "opens_cap": 24,
+    "verified_candidates_cap": 16,
+    "queries_reserved": 0,
+    "queries_used": 12,
+    "opens_reserved": 0,
+    "opens_used": 3,
+    "verified_candidates": 2
+  },
+  "ledger": [
+    {
+      "action": "search_reservation",
+      "queries": [
+        "\"ulubieni standuperzy\" forum",
+        "\"jakich komików lubicie\" stand up",
+        "site:reddit.com/r/Polska stand up \"lubię\" komik",
+        "site:forum.gazeta.pl stand up ulubieni komicy"
+      ],
+      "count": 4,
+      "status": "used"
+    },
+    {
+      "action": "open_reservation",
+      "urls": [
+        "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+        "https://forum.gazeta.pl/forum/w%2C567%2C176877280%2C176877280%2CStand_up.html"
+      ],
+      "count": 2,
+      "status": "used"
+    },
+    {
+      "action": "search_reservation",
+      "queries": [
+        "site:forum.filmweb.pl \"stand up\" komik lubię",
+        "site:wykop.pl \"stand-up\" \"ulubionym\" komik",
+        "\"moim ulubionym stand-uperem\" Polska",
+        "stand-up \"śmieszy mnie\" \"lubię\" komik blog"
+      ],
+      "count": 4,
+      "status": "used"
+    },
+    {
+      "action": "search_reservation",
+      "queries": [
+        "site:reddit.com/r/Polska \"moim ulubionym\" standup komik",
+        "site:wykop.pl \"lubię\" \"stand-up\" komik",
+        "site:forum.gry-online.pl stand up standuper komik lubię",
+        "site:forum.gazeta.pl/forum \"stand up\" \"podoba mi się\" komik"
+      ],
+      "count": 4,
+      "status": "used",
+      "outcome": "timeout; no retry because URL fetch timed out and preview server is full"
+    },
+    {
+      "action": "open_reservation",
+      "urls": [
+        "https://wykop.pl/wpis/37804097/obejrzalem-dzisiaj-3-ostatnie-standupy-paczesia-tj"
+      ],
+      "count": 1,
+      "status": "reserved_before_call"
+    }
+  ],
+  "full_read_posts": [
+    {
+      "candidate_id": "src_csf01a_001",
+      "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+      "locator": "forum thread author post madame_edith, 2023-11-01 21:07, retrieved-page lines 185-190",
+      "page_status": "opened_full_page",
+      "duplicate_check": "new author-post/excerpt; thread URL existed in graph/pilot, this author-post did not",
+      "site": "forum.gazeta.pl",
+      "retrieved_at": "2026-10-31T22:48:17Z",
+      "published_at": "2023-11-01",
+      "author_hint": "madame_edith",
+      "hash_key": null,
+      "fulltext": "No ja jestem fanką Abelarda i Lotka. Ale i na Rutkowskim się uśmiałam, na Paczesiu, Bendlerze.\nJak u kogoś „zart” na tym polega, że przeklina i tyle, to mnie to nie śmieszy zupełnie, ale bywają i fajne standupy.",
+      "identity_proof": {
+        "lukasz-lotek-lodkowski": "surface Lotek; frozen catalog alias",
+        "rafal-rutkowski": "surface Rutkowskim; unique frozen surname",
+        "rafal-paczes": "surface Paczesiu; frozen canonical surname/declension",
+        "adam-van-bendler": "surface Bendlerze; unique frozen surname",
+        "unresolved": "Abelarda is first-name-only and remains unresolved"
+      },
+      "context_locator": "thread author abasia0, lines 165-170; context copied into source-candidate context verbatim"
+    },
+    {
+      "candidate_id": "src_csf01a_002",
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+      "locator": "Reddit comment michuuu_2108, retrieved-page lines 264-271",
+      "page_status": "opened_full_page",
+      "duplicate_check": "new author-post/excerpt; thread URL existed in graph/pilot, this author-post did not",
+      "site": "reddit.com",
+      "retrieved_at": "2026-10-31T22:48:17Z",
+      "published_at": null,
+      "author_hint": "michuuu_2108",
+      "hash_key": null,
+      "fulltext": "Nie, oglądałem te Wiszowatą która podobno wymiata - też musiała gadać o tym jak współlokatorkę bolcują jej za ścianą.\nOgólnie próbowałem się przekonać, Lotek, Rutkowski. Wszędzie bezbeki.",
+      "identity_proof": {
+        "sylwia-wiszowata": "surface Wiszowatą; unique frozen surname",
+        "lukasz-lotek-lodkowski": "surface Lotek; frozen catalog alias",
+        "rafal-rutkowski": "surface Rutkowski; unique frozen surname"
+      },
+      "context_locator": "thread prompt author Swimming_Speed_7780, lines 21-25; context copied into source-candidate context verbatim"
+    }
+  ],
+  "search_only_leads": [
+    {
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+      "lead": "Search result exposed multi-author thread text; full page opened. Nevsr1 and Username_Koru posts were excluded because existing corpus already contains them."
+    },
+    {
+      "url": "https://forum.gazeta.pl/forum/w%2C567%2C176877280%2C176877280%2CStand_up.html",
+      "lead": "Search result exposed public forum thread; full page opened. Existing authors/posts in this thread were excluded."
+    },
+    {
+      "url": "https://www.autografy-pamiatki.pl/2026_09_06_archive.html",
+      "lead": "Search result is a first-person single-performer fan post about Mateusz Socha; excluded from multi-performer discussion target, no open attempted."
+    },
+    {
+      "url": "https://wykop.pl/wpis/37804097/obejrzalem-dzisiaj-3-ostatnie-standupy-paczesia-tj",
+      "lead": "Search result suggests multi-performer comparison by source-local users; open attempted and timed out, so snippet quarantined and not promoted."
+    },
+    {
+      "url": "https://forum.gazeta.pl/forum/w%2C567%2C179881000%2C179881000%2CZyc_dlugo_i_nudno_czy_krotko_i_po_bandzie_.html",
+      "lead": "Search snippet contains Abelard Giza commentary; does not establish multi-performer authored post; not opened."
+    }
+  ],
+  "dedup": {
+    "other_slice_file_checked": "No source-first other-slice JSONL existed at start; execution lists no active worker tasks.",
+    "coverage_pilot_raw_corrected_canonical_checked": true,
+    "graph_manifest_checked": true,
+    "skipped_known_posts": [
+      {
+        "author": "Username_Koru",
+        "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+        "reason": "exact authored post exists in coverage-pilot/batch-01-calibrated and batch-01 candidates"
+      },
+      {
+        "author": "Nevsr1",
+        "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+        "reason": "exact authored post exists in batch-02 candidates/evidence"
+      },
+      {
+        "author": "other prior Gazeta authors",
+        "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+        "reason": "prior candidate excerpts checked against this thread; exact known posts not repeated"
+      }
+    ]
+  },
+  "identity_resolutions": [
+    {
+      "surface_form": "Abelarda",
+      "candidate_id": "src_csf01a_001",
+      "resolution": null,
+      "reason": "first name only; left unresolved per task instruction"
+    }
+  ],
+  "success_metrics": {
+    "verified_full_posts": 2,
+    "resolved_frozen_peers": 5,
+    "explicit_personal_preferences": 4,
+    "explicit_negative_comparisons": 1,
+    "named_frozen_individuals_with_positive_evaluation": 4,
+    "named_frozen_individuals_with_negative_evaluation": 3,
+    "new_link_claims": 0,
+    "note": "Four resolved frozen performers receive explicit positive personal evaluation in one complete authored post; a separate complete post explicitly rejects three named performers. Collection only; extraction/review and graph adjudication are separate.",
+    "explicit_preference_posts": 1
+  },
+  "stop_reason": "Meaningful route closure after 12/24 queries and 3/24 opens: two accessible discussion families yielded two new complete author-posts; a third family (Wykop) had a concrete full-page timeout. Remaining allowance is preserved; access limits do not imply evidence absence.",
+  "access_limits": {
+    "accessible_full_page_families": [
+      "reddit.com discussion thread",
+      "forum.gazeta.pl discussion thread"
+    ],
+    "blocked_family_attempts": [
+      {
+        "site": "wykop.pl",
+        "url": "https://wykop.pl/wpis/37804097/obejrzalem-dzisiaj-3-ostatnie-standupy-paczesia-tj",
+        "error": "Failed to fetch (400) Timeout fetching",
+        "retry": "not retried; preview server was reported full and shared"
+      }
+    ],
+    "search_only_is_not_absence": true,
+    "no_login_or_challenge_bypass": true,
+    "no_other_tabs_closed": true
+  },
+  "budget_failures": {
+    "query_failures": 0,
+    "open_failures": 1,
+    "candidate_validation_failures": 0,
+    "note": "The Wykop full-page timeout counts as an attempted open."
+  }
+}

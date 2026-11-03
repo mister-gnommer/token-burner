@@ -1,0 +1,97 @@
+{
+  "Surprises": [
+    "Direct page sequence associates Dzierżoniów with preceding Paweł, and Legnica with Elwira; the recovery proposal misassigned the preceding review header."
+  ],
+  "status": "accepted",
+  "reservation": {
+    "searches_allowed": 0,
+    "maximum_added_page_open_navigation_attempts": 2,
+    "prior_opens": 7,
+    "total_cap": 24,
+    "guard": "Count all successes and failures; actual <= 2 and 7 + actual <= 24. First attempt exact supplied URL; second only exact or legitimately returned URL."
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "method": "web open exact supplied URL",
+      "result": "success; cached page response turn0view0, lines 183–206"
+    }
+  ],
+  "source_proof": {
+    "url": "https://www.kupbilecik.pl/pl/event/203718/swiecie/stand-up-blazej-krajewski",
+    "locator": "web open turn0view0 lines 183–206; title link references 48 and 49 respectively",
+    "verbatim_sequence": [
+      "### Adam",
+      "Stand-up super. Było z czego się śmiać",
+      "#### Stand-up: Błażej Krajewski",
+      "##### Legnica, 04 marca 2020",
+      "### Paweł",
+      "Błazej jak zawsze świetny występ, uśmiałem się na maksa, polecam serdecznie",
+      "#### Stand-up: Błażej Krajewski",
+      "##### Dzierżoniów, 21 marca 2025",
+      "### Elwira",
+      "Zarówno Błażej, jak i jego support Patryk Gośiński byli świetni. Obu znałam z YouTube, ale na żywo jeszcze lepiej się ich oglądało. Tak trzymać!!!",
+      "#### Stand-up: Błażej Krajewski",
+      "##### Legnica, 20 marca 2025",
+      "[Button: ❮] [Button: ❯]"
+    ],
+    "inference": "Repeated author / review / event title / city-date sequence identifies Legnica as Elwira’s event and Dzierżoniów as Paweł’s; page itself is Świecie."
+  },
+  "reviewer": {
+    "provider": "codex",
+    "model": "gpt-6.1-terra",
+    "reasoning_effort": "high",
+    "role": "independent verifier"
+  },
+  "counts": {
+    "reviewed": 1,
+    "accepted": 1,
+    "uncertain": 0,
+    "rejected": 0
+  },
+  "budget": {
+    "added_opens": 1,
+    "prior_opens": 7,
+    "cumulative_opens": 8,
+    "cap": 24,
+    "remaining": 16,
+    "searches": 0
+  },
+  "source_proof_interpretation": "Author / review / title / city-date repeats; title links are web response references 48 (Paweł) and 49 (Elwira), but their destination URLs were not opened or resolved. Cached web rendering may change ordering between fetches; attribution rests on this independently observed sequence, not the other report. Original review could not locate Elwira; this rendering does.",
+  "prior_findings": "Original independent review and source adjudication left uncertain because exact post was not located and collector Legnica disagreed with Świecie URL; aggregate review list resolves that discrepancy. Recovery report claimed Dzierżoniów belongs to Elwira, whereas observed sequence assigns it to Paweł. Its no-proposal-written note is stale bookkeeping; proposals exist.",
+  "delta_from_proposals": {
+    "candidate.context[1].excerpt": {
+      "before": "Dzierżoniów, 21 marca 2025",
+      "after": "Legnica, 20 marca 2025"
+    },
+    "evidence.context[1].excerpt": {
+      "before": "Dzierżoniów, 21 marca 2025",
+      "after": "Legnica, 20 marca 2025"
+    },
+    "evidence.review": {
+      "before": "unreviewed, reviewer null, proposal notes",
+      "after": {
+        "status": "accepted",
+        "reviewer": "codex/gpt-6.1-terra",
+        "notes": "The aggregate Świecie page directly displays Elwira’s exact review, followed by the Błażej Krajewski event label and Legnica, 20 marca 2025. The preceding Dzierżoniów label belongs to Paweł. Both performers receive explicit positive evaluations of this event; this does not establish current or broader preference. Elwira is a source-local first name, not a unique verified person; the event date is not a publication date."
+      }
+    }
+  },
+  "delta_from_original": "Candidate and evidence add the same separately attributed parent event date context; all other candidate fields and evidence fields outside review/context unchanged. Original evidence review uncertain becomes accepted by actual reviewer. Historical retrieved_at and null published_at preserved.",
+  "judgment": "Błażej identity supported by attached title and first name; Patryk Gośiński explicitly named as support and frozen identity matches. Positive judgments are explicit for both; .99, .95 and .94 are retained extractor judgments, not calibrated probabilities. Event-specific appraisal only; source-local first name is not a unique person or cross-platform identity.",
+  "checks": {
+    "source_candidate_v2": "passed repository validator and format check",
+    "evidence_v3": "passed repository validator and format check",
+    "original_lineage_and_provenance": "passed exact equality outside context/review",
+    "author_hash": "passed repository author_key calculation",
+    "frozen_ids": "passed",
+    "literal_surfaces_and_preference_quotes": "passed",
+    "candidate_evidence_source_excerpt_language_context": "passed",
+    "status_and_reviewer": "accepted; codex/gpt-6.1-terra"
+  },
+  "outputs": [
+    "evidence/coverage-expansion/src_b05b_003.context-reviewed.jsonl",
+    "evidence/coverage-expansion/ev_b05_b_003.reviewed.jsonl"
+  ],
+  "integration_constraint": "Replacement requires a complete batch05 replacement; never add this old post as a new fan or run alongside the original batch in graph."
+}

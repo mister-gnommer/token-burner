@@ -1,0 +1,65 @@
+{
+  "leadingSurprises": [
+    "The collection ledger calls kv665 same-thread at lines 149–155, but its opens list assigns those lines to a different Reddit thread (1tm7shp); the original post is in 17ukdey. The original-thread open also says there is no independent identity proof in that thread. Treat kv665 as independent corroboration of the canonical name only, not established same-thread context."
+  ],
+  "reviewer": "codex/gpt-6.1-terra",
+  "exact_inputs": [
+    "prompts/verify-evidence-v3.md",
+    "prompts/extract-evidence-v3.md",
+    "prompts/favorite-reply-context-v1.md",
+    "prompts/extraction-decisions-v1.md",
+    "data/schemas/evidence-v3.schema.json",
+    "data/standupers.json",
+    "graph/batch-01-calibrated/graph.json (input_manifests and evidence_sources)",
+    "reports/runs/20261031-batch01-calibrated.json",
+    "evidence/stage-06/evidence.jsonl (ev_b01c_002)",
+    "evidence/stage-06/source-candidates.jsonl (src_b01c_002)",
+    "reports/runs/20261031-coverage-saved-evidence-audit.notes.json",
+    "reports/runs/20261031-coverage-olka-szczesniak.collection.initial.json"
+  ],
+  "prior_issue": "Calibrated record accepted the author’s two positive preferences but retained Karol identity confidence at 0.74: re-extraction did not validate an alias. The saved audit requested source-backed identity/context review. Collector retained 0.74 because the original author did not directly bind the spelling to the canonical person.",
+  "decision": "Propose retaining karol-modzelewski and raising the identity confidence to 0.85 as a source-local entity inference; keep the original spelling, preferences, status and all extraction/source lineage. No alias is asserted.",
+  "evidence": [
+    "The saved complete author post literally says “Karola Modrzelewskiego” alongside “Olke Szczęśniak” while praising their level; the original Reddit source is a Polish stand-up discussion.",
+    "In Polish inflection, Karola Modzelewskiego corresponds to Karol Modzelewski; the observed surname adds r after d, with the rest matching. This is an inferred spelling error, not an exact canonical surname or an independently verified alias.",
+    "The frozen population contains Karol Modzelewski and Karol Kopiec; Kopiec’s surname does not match. Inspection of the 100 frozen names found no competing close full-name match. This cannot rule out a performer outside the population.",
+    "The saved official standup.pl profile identifies Karol Modzelewski as a performer and associates him with Newsy bez wirusa. The collector also reports kv665 naming him and the series; the locator inconsistency prevents relying on that comment as same-thread evidence or as proof of the original author’s intent."
+  ],
+  "alternatives_considered": [
+    "Retaining 0.74 is defensible given the spelling and no direct binding, but the full inflected first and nearly identical surname, stand-up context, named peer and source-backed canonical performer together support a stronger local inference. A direct author acknowledgment is not required.",
+    "A different Karol Kopiec or an outside-population person is possible in principle, but neither has a positive identity cue in the saved passage; Kopiec is a poor surname match. Nulling the identity would discard a well-supported inference."
+  ],
+  "confidence_rationale": "0.85 expresses substantial but imperfect confidence in this particular referent, based on the combined name and topical evidence; it is a model judgment, not a measured probability or a value selected to achieve coverage. It is lower than an exact, directly disambiguated name because the extra r and lack of source-local explicit binding leave room for another referent. The 0.75 graph rule is unchanged.",
+  "remaining_risks": [
+    "The author did not explicitly identify a profile or programme; a different similarly named person outside the frozen population remains possible. A source-local statement connecting this spelling to a work, profile, or canonical name would materially reduce that risk.",
+    "The ledger does not establish that kv665 is in the original thread. No additional source was retrieved or claim of alias verification made."
+  ],
+  "field_diff": [
+    {
+      "field": "mentions[0].confidence",
+      "before": 0.74,
+      "after": 0.85
+    },
+    {
+      "field": "review.reviewer",
+      "before": "codex/gpt-6.1-sol",
+      "after": "codex/gpt-6.1-terra"
+    },
+    {
+      "field": "review.notes",
+      "before": "Parent verified v3 representation; unknown personal preference does not imply dislike. Retained prior conservative identity confidence; re-extraction does not validate aliases.",
+      "after": "Observed: the author wrote “Karola Modrzelewskiego” and praised both named performers. Inferred: this refers to frozen Karol Modzelewski: the inflected full name differs by an inserted r in the surname, the post discusses stand-up and pairs him with Olka Szczęśniak, and the saved official profile identifies the canonical performer. This is a source-local typo inference, not a verified alias. No similarly named Karol in the frozen population is a plausible surname match. The independent commenter and profile do not establish the original author’s intended referent directly; the ledger’s same-thread claim conflicts with its listed locator. Residual risk remains that another person was intended."
+    }
+  ],
+  "validation": {
+    "schema": "evidence-v3.schema.json, Draft 2020-12 with format checking: pass",
+    "record_count": 1,
+    "source_candidate_equality": "source metadata, excerpt, language, context and author key match src_b01c_002",
+    "preservation": "all source, excerpt, context, extraction lineage, IDs, class, review status, and other mention fields unchanged; both surface forms and preference quotes are verbatim substrings",
+    "changed_fields": [
+      "mentions[0].confidence",
+      "review.reviewer",
+      "review.notes"
+    ]
+  }
+}

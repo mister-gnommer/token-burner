@@ -1,0 +1,65 @@
+{
+  "Surprises": [
+    "Candidate 001’s “Abelarda” is not a source-verified full identity; the rare first name and stand-up context support a qualified, lower-confidence match to frozen Abelard Giza.",
+    "Candidate 002 includes hearsay praise (“podobno wymiata”); it is not the author’s positive evaluation and does not create co-endorsement."
+  ],
+  "run_id": "20261031-coverage-source-first-01",
+  "stage": "supplemental_source_first_extraction_slice_a",
+  "slice": "A2verifiedfullfanposts",
+  "inputs": [
+    "evidence/coverage-source-first-01/source-candidates.a.canonical.jsonl",
+    "reports/runs/20261031-coverage-source-first-01.collection-a.json",
+    "reports/runs/20261031-coverage-source-first-01.canonicalization.json",
+    "reports/runs/20261031-coverage-source-first-01.json"
+  ],
+  "outputs": {
+    "evidence_unreviewed": "evidence/coverage-source-first-01/evidence.unreviewed.a.jsonl"
+  },
+  "extractor": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1"
+  },
+  "counts": {
+    "candidates": 2,
+    "records": 2,
+    "skipped": 0
+  },
+  "records": [
+    {
+      "candidate_id": "src_csf01a_001",
+      "evidence_id": "ev_csf01a_001",
+      "evidence_class": "same_user_coendorsement",
+      "resolved_performers": [
+        "abelard-giza",
+        "lukasz-lotek-lodkowski",
+        "rafal-rutkowski",
+        "rafal-paczes",
+        "adam-van-bendler"
+      ],
+      "identity_confidence_basis": "Abelard Giza inferred from rare first name plus Polish stand-up topic; qualified confidence 0.78 because surname is absent. Others resolved contextually from frozen aliases, surnames, and declensions.",
+      "preferences": "positive for all five: explicit fan status for Abelard and Lotek, personal laughter/appreciation for Rutkowski, Pacześ, and Bendler.",
+      "scope": "This post’s stated fandom and reported enjoyment only; profanity-only joke criticism is not assigned to named performers.",
+      "author_key": "fan_719c45e1efe31516"
+    },
+    {
+      "candidate_id": "src_csf01a_002",
+      "evidence_id": "ev_csf01a_002",
+      "evidence_class": "fan_comparison",
+      "resolved_performers": [
+        "sylwia-wiszowata",
+        "lukasz-lotek-lodkowski",
+        "rafal-rutkowski"
+      ],
+      "identity_confidence_basis": "Distinct frozen surnames/alias; exact post surfaces preserved.",
+      "preferences": "negative for the three based on the author’s attempted viewing and “Wszędzie bezbeki”; “podobno wymiata” remains hearsay, not praise.",
+      "scope": "The viewed/attempted material described in this post, not current/general fandom.",
+      "author_key": "fan_5b80b55835353878"
+    }
+  ],
+  "source_family_limits": {
+    "forum.gazeta.pl": "one authored forum post; source-local author hash only",
+    "reddit.com": "one authored comment; source-local author hash only"
+  },
+  "lineage_note": "Both records copy candidate run_id, source metadata, excerpt, language, author_key, and context; review status is unreviewed with null reviewer. No skips."
+}

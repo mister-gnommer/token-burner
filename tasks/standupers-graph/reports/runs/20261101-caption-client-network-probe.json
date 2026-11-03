@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101-caption-client-network-probe",
+  "worker": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "reasoning_effort": "medium"
+  },
+  "surprises": [
+    "The corrected public WEB-client invocation progressed past the prior DNS-only failure and yt-dlp reported that Polish captions are missing because no PO token was provided.",
+    "The explicit stop condition applies: no token acquisition or workaround was attempted. No timed Polish caption text was retrieved, so the required proof is empty."
+  ],
+  "scope": {
+    "video_id": "t82XUmxapzE",
+    "video_url": "https://www.youtube.com/watch?v=t82XUmxapzE",
+    "official_source_only": true,
+    "public_player_client": "web",
+    "access_only": true,
+    "captions_readable": false,
+    "style_labels_relations_or_graph_changes": false,
+    "proof_path": "tasks/standupers-graph/evidence/performance-access-pilot/leja-caption-network-proof.json"
+  },
+  "prerequisites": {
+    "javascript_runtime": {
+      "name": "Node.js",
+      "version": "24.14.1",
+      "path": "/home/kris/.nvm/versions/node/v24.14.1/bin/node",
+      "already_installed": true
+    },
+    "packages": [
+      {
+        "name": "yt-dlp",
+        "version": "2026.10.26",
+        "pin": "yt-dlp==2026.10.26",
+        "install_location": "/tmp/token-burner-20261101-caption-network/venv",
+        "install": "isolated venv; --no-deps; exact version previously verified from official release metadata"
+      },
+      {
+        "name": "yt-dlp-ejs",
+        "version": "0.8.0",
+        "pin": "yt-dlp-ejs==0.8.0",
+        "install_location": "/tmp/token-burner-20261101-caption-network/venv",
+        "install": "isolated venv; --no-deps; exact version from one official PyPI metadata page",
+        "requires": []
+      }
+    ],
+    "syntax_and_option_check": "Local yt-dlp --help confirmed runtime, no-remote-components, no-playlist, skip-download, ignore-no-formats-error, subtitle selection, socket timeout, and retry flags. No source access occurred during checks."
+  },
+  "invocation": {
+    "reserved_invocations": 1,
+    "actual_invocations": 1,
+    "timeout_seconds": 60,
+    "elapsed_seconds": 2,
+    "network_execution_mode": "ordinary exec_command with sandbox_permissions=require_escalated; reviewed and allowed",
+    "argv": [
+      "timeout", "60s",
+      "/tmp/token-burner-20261101-caption-network/venv/bin/yt-dlp",
+      "--no-playlist", "--skip-download", "--ignore-no-formats-error",
+      "--write-subs", "--write-auto-subs", "--sub-langs", "pl",
+      "--sub-format", "json3/vtt", "--extractor-args", "youtube:player_client=web",
+      "--js-runtimes", "node:/home/kris/.nvm/versions/node/v24.14.1/bin/node",
+      "--no-remote-components", "--retries", "0", "--extractor-retries", "0",
+      "--fragment-retries", "0", "--file-access-retries", "0", "--socket-timeout", "15",
+      "--no-colors", "-o", "/tmp/token-burner-20261101-caption-network/%(id)s.%(ext)s",
+      "https://www.youtube.com/watch?v=t82XUmxapzE"
+    ],
+    "stdout_path": "/tmp/token-burner-20261101-caption-network/invocation.stdout",
+    "stderr_path": "/tmp/token-burner-20261101-caption-network/invocation.stderr",
+    "exit_code": 2,
+    "stdout_bytes": 171,
+    "stderr_bytes": 333,
+    "captured_before_parsing": true,
+    "no_remote_components": true,
+    "cookies_oauth_browser_profile_proxy_or_alternate_client": false,
+    "media_audio_video_model_ffmpeg_or_asr_downloaded": false
+  },
+  "observable_requests": {
+    "watch_page": {
+      "logged_events": 1,
+      "event": "Downloading webpage",
+      "http_status_logged": false
+    },
+    "player_api": {
+      "logged_events": 0,
+      "actual_request_count": "not exposed in non-verbose output"
+    },
+    "caption_tracks": {
+      "logged_events": 0,
+      "actual_request_count": "not exposed in non-verbose output"
+    },
+    "http_response_received": {
+      "value": true,
+      "basis": "Inference: yt-dlp completed source extraction and reported its parsed subtitle inventory; no HTTP status was logged."
+    }
+  },
+  "result": {
+    "status": "blocked_by_public_source_token_requirement",
+    "source_error": "There are no subtitles for the requested languages. yt-dlp warned that Polish subtitles and automatic captions are missing because a PO token was not provided.",
+    "timed_polish_caption_text_retrieved": false,
+    "caption_files_created": 0,
+    "event_count": null,
+    "text_count": null,
+    "proof": {},
+    "stop_reason": "The source indicated a PO-token requirement. Token acquisition or workaround is outside the authorized public-source probe; the one invocation was consumed."
+  },
+  "budgets": {
+    "new_searches": 0,
+    "official_component_metadata_or_doc_reads": 1,
+    "exact_package_installs": 2,
+    "install_attempts": 3,
+    "install_attempt_notes": "The first yt-dlp attempt was blocked by sandbox DNS before installation; the same exact pin then installed after review. yt-dlp-ejs installed once after review.",
+    "source_invocations": 1,
+    "process_timeout_seconds": 60,
+    "prior_probe": {
+      "run_id": "20261101-caption-client-access-probe",
+      "invocations": 1,
+      "outcome": "sandbox DNS failure before any HTTP response; no actual caption availability evidence"
+    }
+  },
+  "cleanup": {
+    "full_caption_or_metadata_text_saved": false,
+    "temporary_caption_files": 0,
+    "isolated_venv": "retained at /tmp/token-burner-20261101-caption-network/venv for authorized reuse",
+    "captured_diagnostics": "retained in isolated /tmp directory",
+    "repository_changes": [
+      "tasks/standupers-graph/reports/runs/20261101-caption-client-network-probe.json",
+      "tasks/standupers-graph/evidence/performance-access-pilot/leja-caption-network-proof.json"
+    ]
+  },
+  "official_component_metadata": "https://pypi.org/project/yt-dlp-ejs/"
+}

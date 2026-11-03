@@ -1,0 +1,22 @@
+{
+  "raw_count": 4,
+  "canonical_count": 4,
+  "duplicate_posts": 0,
+  "raw_preserved": true,
+  "changes": [
+    "source-local author hashes computed",
+    "004sourceURL normalized from cache-missed permalink to actuallyreadthread; exactcommentj3bnf41locator retainedin raw/collectionreport"
+  ],
+  "source_text_language_context_unchanged": true,
+  "time_precision": "004retrieved_at is post-readclockupperbound as documented, notclaimednetworkcallprecision",
+  "original_A_cumulative": {
+    "queries": 24,
+    "opens": 15,
+    "raw_candidate_slots": 12
+  },
+  "remaining_original_A": {
+    "queries": 0,
+    "opens": 9,
+    "raw_candidate_slots": 4
+  }
+}

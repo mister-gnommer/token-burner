@@ -1,0 +1,29 @@
+{
+  "run_id": "20261031-batch05",
+  "status": "completed-context-reviewed-replacement",
+  "counts": {
+    "source_candidates": 7,
+    "extracted": 7,
+    "accepted": 7,
+    "uncertain": 0,
+    "rejected": 0
+  },
+  "new_independent_review_count": 1,
+  "retained_previously_reviewed_count": 6,
+  "targeted_review": "reports/runs/20261101-coverage-krajewski-gosinski.verification.json",
+  "prior_full_verification": "reports/runs/20261031-batch05.verification.json",
+  "changed_candidate_ids": [
+    "src_b05b_003"
+  ],
+  "changed_evidence_ids": [
+    "ev_b05_b_003"
+  ],
+  "checks": {
+    "six_untouched_records_exact_equality": "pass",
+    "original_source_and_extraction_fields_preserved": "pass",
+    "target_context_only_candidate_delta": "pass",
+    "target_context_and_review_only_evidence_delta": "pass"
+  },
+  "integration_constraint": "Replace original batch05; never load both. Old source/fan not duplicated.",
+  "updated_at": "2026-11-01T10:51:12Z"
+}

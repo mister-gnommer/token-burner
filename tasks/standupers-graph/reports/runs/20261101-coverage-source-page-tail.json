@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101-coverage-source-page-tail",
+  "stage": "batch",
+  "batch": 1,
+  "status": "completed",
+  "performer_ids": [
+    "mama-na-obrotach",
+    "magda-kubicka",
+    "piotr-jelen",
+    "blazej-krajewski",
+    "piotr-latala",
+    "pan-li",
+    "tomasz-boras-borkowski",
+    "michal-paszczyk",
+    "grzegorz-dolniak",
+    "adam-van-bendler"
+  ],
+  "paths": {
+    "source_candidates": "evidence/coverage-source-page-tail/source-candidates.canonical.jsonl",
+    "evidence_unreviewed": "evidence/coverage-source-page-tail/evidence.unreviewed.jsonl",
+    "evidence": "evidence/coverage-source-page-tail/evidence.jsonl",
+    "verification_report": "reports/runs/20261101-coverage-source-page-tail.verification.json"
+  },
+  "workers": {
+    "collector": {
+      "provider": "codex",
+      "model": "gpt-6.1-terra",
+      "prompt_version": "collect-fan-evidence-v3+source-first-fan-discovery-v1"
+    },
+    "extractor": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1"
+    },
+    "verifier": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "verify-evidence-v3"
+    }
+  },
+  "counts": {
+    "source_candidates": 1,
+    "extracted": 1,
+    "accepted": 1,
+    "uncertain": 0,
+    "rejected": 0
+  },
+  "surprises": [
+    "Supplemental per-performer coverage research; frozen original batch retained."
+  ],
+  "notes": "One independently accepted historical co-endorsement. Pacześ preference unknown; Leja appraisal scoped to improvisation. Original A cumulative 24 queries/21 opens/13 raw slots; no quota reset.",
+  "created_at": "2026-10-31T23:39:23.276681Z",
+  "updated_at": "2026-10-31T23:42:15Z"
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101-caption-client-access-probe",
+  "surprises": [
+    "yt-dlp was absent. The isolated, exactly pinned package installed, but the single source invocation could not resolve YouTube hostnames in the sandbox; no response body or caption file was received.",
+    "Official yt-dlp documentation says the web player client is omitted without a JavaScript runtime and full YouTube support requires yt-dlp-ejs plus a supported runtime. Neither was installed; the explicit web-client attempt stopped at DNS before player selection could be validated."
+  ],
+  "scope": {
+    "video_id": "t82XUmxapzE",
+    "video_url": "https://www.youtube.com/watch?v=t82XUmxapzE",
+    "access_only": true,
+    "captions_readable": false,
+    "style_labels_relations_or_fan_counts_changed": false,
+    "previous_route": "public watch page playable and advertised Polish manual/ASR tracks; direct caption endpoints returned empty bodies",
+    "new_route": "standard yt-dlp public client"
+  },
+  "tool": {
+    "name": "yt-dlp",
+    "version": "2026.10.26",
+    "install_location": "/tmp/token-burner-20261101-caption-client",
+    "install": "one isolated venv install; exact PyPI version; --no-deps; no project or system dependency change",
+    "options": [
+      "--no-playlist",
+      "--skip-download",
+      "--write-subs",
+      "--write-auto-subs",
+      "--sub-langs pl",
+      "--sub-format json3/vtt",
+      "--extractor-args youtube:player_client=web",
+      "output template restricted to the isolated /tmp directory"
+    ],
+    "pre_network_syntax_check": "Local --help confirmed the options; no URL/source accessed during check.",
+    "js_runtime_or_ejs_installed": false,
+    "timeout_seconds": 60,
+    "resource_limits": "One URL; no media download; no transcription, ffmpeg, JS runtime, plugins, browser, cookies or alternate client. Process ended in under one second."
+  },
+  "research_budget": {
+    "documentation_version_queries": 2,
+    "context7_library_resolution_calls": 1,
+    "primary_page_reads": 1,
+    "query_breakdown": [
+      "Context7 official yt-dlp CLI/player-client documentation query",
+      "PyPI official yt-dlp package/version search"
+    ],
+    "page_read": "Official PyPI project metadata for yt-dlp; listed release 2026.10.26.",
+    "source_invocations": 1,
+    "observable_client_requests": 8,
+    "request_breakdown": "yt-dlp logged four webpage download attempts and four initial-data API attempts. DNS failed for each; no HTTP response was observed.",
+    "response_bodies": 0,
+    "caption_files": 0,
+    "caption_text_parsed": false
+  },
+  "result": {
+    "status": "blocked_before_source_response",
+    "exit_code": 1,
+    "error": "Temporary failure in name resolution (Errno -3); yt-dlp exhausted its built-in retries for webpage and API page.",
+    "stdout_bytes": 470,
+    "stderr_bytes": 914,
+    "timed_polish_caption_proof": null,
+    "stop_reason": "The one allowed yt-dlp invocation was consumed. No retry or alternate client was attempted. No evidence about whether this client could retrieve the captions was obtained; a network-enabled environment is the next prerequisite."
+  },
+  "docs": [
+    "Context7 resolved /yt-dlp/yt-dlp and returned official README usage: https://github.com/yt-dlp/yt-dlp/blob/master/README.md",
+    "PyPI official project page/version metadata: https://pypi.org/project/yt-dlp/"
+  ],
+  "cleanup": "Diagnostic stdout/stderr were recorded in the isolated /tmp runtime. No repository artifacts besides this report and the required empty proof were created."
+}

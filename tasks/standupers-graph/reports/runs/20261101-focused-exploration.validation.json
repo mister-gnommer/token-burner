@@ -1,0 +1,61 @@
+{
+  "updated_at": "2026-11-01T20:27:04.888627+00:00",
+  "viewer": "graph/coverage-disputed-reviewed/interactive.html",
+  "default_mode": "focused-exploration",
+  "map_neighbor_limit": 5,
+  "all_performers_selectable": 100,
+  "full_map_retained": true,
+  "opposing_evidence_and_dates_retained": true,
+  "source_and_scoring_changes": false,
+  "unit_tests": "24 passed",
+  "javascript_syntax": "passed",
+  "diff_whitespace": "passed",
+  "browser_checks": [
+    {
+      "width": 1100,
+      "contentHeight": 800,
+      "capturedHeight": 800,
+      "consoleMessages": [
+        {
+          "level": "log",
+          "text": "SMOKE PASS: default focus, page cap, list navigation, accent search, opposing evidence, overview disputes/no pull, isolate, unchanged relations"
+        }
+      ],
+      "screenshot": {
+        "mimeType": "image/png",
+        "width": 1100,
+        "height": 800
+      }
+    },
+    {
+      "width": 390,
+      "contentHeight": 1717,
+      "capturedHeight": 1717,
+      "consoleMessages": [
+        {
+          "level": "log",
+          "text": "SMOKE PASS: default focus, page cap, list navigation, accent search, opposing evidence, overview disputes/no pull, isolate, unchanged relations"
+        }
+      ],
+      "screenshot": {
+        "mimeType": "image/png",
+        "width": 390,
+        "height": 1717
+      }
+    }
+  ],
+  "browser_assertions": [
+    "focused default and bounded nodes/edges",
+    "paging and evidence-row navigation",
+    "diacritic-insensitive search",
+    "opposing excerpts",
+    "overview includes9supported disputes without force pull",
+    "unlinked performer remains selectable",
+    "saved relation objects unchanged by navigation"
+  ],
+  "graph_sha256": "2389c96aa38d381a63bbdcaed15f175697ab77b20cdf9c010192c96aea2888a5",
+  "limitations": [
+    "Preview uses absolute cached-image paths instead of embedded copies; production page embeds avatars.",
+    "No Git staging, commit or push."
+  ]
+}

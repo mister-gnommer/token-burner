@@ -1,0 +1,103 @@
+{
+  "surprises": [
+    "A readable 2020 interview independently joins the exact “Olka Radomska” name with an image caption identifying its interview subject as “Aleksandra Radomska”; this provides strong editorial contextual linkage, though not a self-authored alias statement."
+  ],
+  "run_id": "20261101-radomska-name-linkage",
+  "stage": "identity_followup",
+  "status": "proposal_written_unreviewed",
+  "worker": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "reasoning_effort": "medium"
+  },
+  "scope": {
+    "purpose": "Textual identity support for existing accepted evidence ev_cth02a_003 only",
+    "evidence_id": "ev_cth02a_003",
+    "new_fan_candidates": 0,
+    "original_ab_quotas_renewed_or_charged": false
+  },
+  "budget": {
+    "added_queries": 2,
+    "added_page_attempts": 2,
+    "prior_own_performer_queries": 0,
+    "prior_own_performer_page_attempts": 2,
+    "cumulative_own_performer_queries": 2,
+    "cumulative_own_performer_page_attempts": 4,
+    "caps_queries": 2,
+    "caps_page_attempts": 4,
+    "remaining_from_24_query_ceiling": 22,
+    "remaining_from_22_page_ceiling": 18
+  },
+  "queries": [
+    "\"Olka Radomska\" \"Aleksandra Radomska\"",
+    "site:aleksandraradomska.pl Olka OR \"Olka Radomska\" OR Aleksandra"
+  ],
+  "retrieval": [
+    {
+      "page_attempt": 1,
+      "url": "https://martasoja.pl/nie-zawsze-idzie-z-gorki-czyli-olka-radomska-o-tym-jak-pracowala-na-swoj-sukces-wywiad/",
+      "retrieved_at": "2026-11-01T12:37:12Z",
+      "locator": "Full readable article, title lines 44-45; subject addressed as Radomska at lines 58-60; subject discusses first-person stand-up participation at 100-104; image caption lines 49 and 105: “Aleksandra Radomska - o tym co ma w głowie” / “Aleksandra Radomska - fotonka”; thank-you line 163: “Dziękuję Ola Radomska za udostępnienie zdjęć.”",
+      "quotes": [
+        "Nie zawsze idzie z górki czyli Olka Radomska o tym jak pracowała na swój sukces [wywiad]",
+        "A jak jest u Ciebie Radomska?",
+        "Image: Aleksandra Radomska - o tym co ma w głowie",
+        "Dziękuję Ola Radomska za udostępnienie zdjęć."
+      ],
+      "assessment": "Strong editorial contextual linkage: the interview title calls its interview subject Olka Radomska, while the article image caption identifies the same interview subject as Aleksandra Radomska; interviewer addresses the subject as Radomska and the interview is presented as her first-person answers. Not direct self-authored alias evidence."
+    },
+    {
+      "page_attempt": 2,
+      "url": "https://mamwatpliwosc.pl/standup/",
+      "retrieved_at": "2026-11-01T12:37:12Z",
+      "locator": "Full readable owned stand-up page, lines 12-14 and 25-31.",
+      "quotes": [
+        "Nazywam się Aleksandra Radomska",
+        "W 2020 roku wydałam bestsellerową książkę „Mam Wątpliwość”",
+        "Od 2021 roku jestem również na scenie."
+      ],
+      "assessment": "Performer-owned page self-identifies the person as Aleksandra Radomska and confirms the same stand-up/public career, but does not itself use Olka."
+    }
+  ],
+  "identity_assessment": {
+    "surface_form": "Olkę Radomską",
+    "proposed_frozen_performer_id": "aleksandra-radomska",
+    "evidence_type": "strong editorial contextual linkage plus corroborating owned profile",
+    "direct_alias_evidence": false,
+    "decision": "Propose resolution for independent review. The interview title and subject-specific captions/body make the linkage strong; evidence is editorial rather than a direct self-authored alias statement. Confidence reflects identity linkage only; existing positive preference and its confidence are unchanged."
+  },
+  "proposal": {
+    "written": true,
+    "path": "evidence/coverage-thread-harvest-02/ev_cth02a_003.identity-proposal.unreviewed.jsonl",
+    "field_delta": {
+      "mentions[4].performer_id": {
+        "from": null,
+        "to": "aleksandra-radomska"
+      },
+      "mentions[4].confidence": {
+        "from": 0.69,
+        "to": 0.91
+      },
+      "review.status": {
+        "from": "accepted",
+        "to": "unreviewed"
+      },
+      "review.reviewer": {
+        "from": "codex/gpt-6-luna",
+        "to": null
+      },
+      "review.notes": "replaced with exact identity proof and qualification"
+    },
+    "unchanged": "All other fields, source/excerpt/context/date, extraction/run metadata, all other mentions including unresolved Abelarda and negative Lotek, and Radomska positive preference/sentiment/preference_quote."
+  },
+  "validation": {
+    "schema": "JSON structure matches evidence-v3 required fields and enums; schema file tasks/standupers-graph/data/schemas/evidence-v3.schema.json",
+    "lineage": "id/candidate_id/source/excerpt/context/extraction retained from accepted record",
+    "quotes": "source excerpt and preference_quote preserved exactly",
+    "frozen_id": "aleksandra-radomska exists in frozen data/standupers.json",
+    "other_mentions": "byte-equivalent JSON values retained for all mention objects except target Radomska ID and confidence",
+    "proposal_only": true,
+    "accepted_record_overwritten": false,
+    "other_outputs_written": false
+  }
+}

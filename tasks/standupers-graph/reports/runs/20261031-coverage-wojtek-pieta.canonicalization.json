@@ -1,0 +1,21 @@
+{
+  "canonical_count": 4,
+  "raw_preserved": true,
+  "duplicate_posts": 0,
+  "canonical_changes": [
+    "collector.provider OpenAI→codex based on actual delegated provider selection for both workers",
+    "source-local author_key hashes computed"
+  ],
+  "source_text_and_context_unchanged": true,
+  "actual_attempt_counts": {
+    "queries": 24,
+    "opens_conservatively_including_blank_tab_reservation": 21
+  },
+  "remaining_queries": 0,
+  "remaining_opens": 3,
+  "report_notes": [
+    "Top-level counts_derived verified_candidates3/remaining16 are stale; followup_counts_derived4 andcombined21 are authoritative.",
+    "Initial surprise conflatesWicia andigns; followup separates Wicia verifiedticketreview and unverifiedWykop igns."
+  ],
+  "excluded_unverified_lead": "Wykop igns comment, shell-only pages1–5"
+}

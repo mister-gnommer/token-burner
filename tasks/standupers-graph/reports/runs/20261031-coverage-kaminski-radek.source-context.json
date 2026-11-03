@@ -1,0 +1,79 @@
+{
+  "Surprises": [
+    "The event archive repeats the exact Kamil text under the same named event title and Łódź date, supplying a clear event-level focal performer despite the review not naming Kamiński in its own prose.",
+    "The review assigns “Pasierby rządzą!” without identifying Pasierby; the event page does not resolve that phrase, so it remains unmapped."
+  ],
+  "task": "source-context follow-up for src_b09a_001 / ev_b09_a_001; not duplicate collection or final review",
+  "source": {
+    "review_url": "https://www.kupbilecik.pl/en/comments/12319/stand-up-wojtek-kaminski",
+    "event_page_url": "https://www.kupbilecik.pl/pl/db/12319/stand-up-wojtek-kaminski?kb_ref=event&kb_ref_id=state_past",
+    "verified_event_title_verbatim": "Stand-Up: Wojtek Kamiński",
+    "verified_event_locator_verbatim": "Łódź, 13 października 2024",
+    "post_locator": "KupBilecik comments on the Stand-Up: Wojtek Kamiński archive; author Kamil; Łódź, 13 October 2024; published 2024-10-15.",
+    "full_post_identity_match": true,
+    "identity_basis": "The event archive displays the complete Kamil post verbatim and associates it with the exact title “Stand-Up: Wojtek Kamiński” and event locator “Łódź, 13 października 2024”. The frozen catalog identifies the performer as Wojciech Kamiński (wojciech-kaminski); the page’s own event title uses Wojtek Kamiński. This supports contextualizing the otherwise unnamed main-show appraisal as event-specific to Kamiński, without resolving Pasierby as an alias or person.",
+    "full_author_post_verbatim": "Na występ szedłem z rezerwą, bo widziałem już kabareciarzy robiących stand-up. Ale to było suuuuuper! Świeżo, naturalnie, swobodnie. Świetny kontakt z widownią. Bez zbędnych wulgaryzmów i co najważniejsze, bardzo śmiesznie. Pasierby rządzą! :) Na supporcie Radek Drożdż też bardzo dobrze. Bardzo polecam!",
+    "focal_performance_appraisal": "The positive general assessment of the show in the post is contextually tied to an event titled for Wojtek Kamiński; the source provides no isolated named appraisal sentence for him. Pasierby remains an unresolved group/format reference; Radek Drożdż is explicitly identified as support.",
+    "pasierby_resolution": "unresolved; no alias or performer mapping proposed"
+  },
+  "artifacts": {
+    "proposal_path": "tasks/standupers-graph/evidence/coverage-pilot/src_b09a_001.context-proposal.jsonl",
+    "candidate_id": "src_b09a_001",
+    "run_id": "20261031-batch09",
+    "preserved_fields": [
+      "candidate_id",
+      "run_id",
+      "target_performer_ids",
+      "site",
+      "url",
+      "retrieved_at",
+      "published_at",
+      "author_hint",
+      "author_key",
+      "excerpt",
+      "language",
+      "collector"
+    ],
+    "proposal_change": "appended one separately attributed parent source context containing the verified event title and locator; all original candidate fields and full excerpt retained"
+  },
+  "research_budget": {
+    "queries": {
+      "added": 0,
+      "cumulative": 8,
+      "remaining": 16
+    },
+    "open_navigation_attempts": {
+      "added": 2,
+      "cumulative": 7,
+      "remaining": 17,
+      "counting_note": "The added preview_open and preview_navigate are charged attempts; read-only evaluate and close are not navigation attempts."
+    },
+    "calls": [
+      {
+        "type": "preview_status",
+        "result": "available:false, no tab; then opened own tab as required"
+      },
+      {
+        "type": "preview_open",
+        "result": "success; owned tab tab_17_02a52303-1e3a-4993-a897-62daeceecefe"
+      },
+      {
+        "type": "preview_navigate",
+        "url": "https://www.kupbilecik.pl/pl/db/12319/stand-up-wojtek-kaminski?kb_ref=event&kb_ref_id=state_past",
+        "result": "loaded event archive, page title “Stand-Up: Wojtek Kamiński - bilety 2026/2027, terminy, opinie - KupBilecik (bilety online)”"
+      },
+      {
+        "type": "preview_evaluate",
+        "result": "read visible page text; confirmed exact Kamil post, named title, and Łódź event date"
+      },
+      {
+        "type": "t3_preview_close",
+        "result": "closed own tab successfully"
+      }
+    ],
+    "browser_reads": 2,
+    "search_queries": 0,
+    "external_access_or_challenge_bypass": "none"
+  },
+  "scope": "Only the two authorized output artifacts were written; no production batch/evidence/graph/state/Git files changed."
+}

@@ -1,0 +1,147 @@
+{
+  "run_id": "20261101-coverage-source-page-tail",
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6.1-terra",
+    "prompt_version": "collect-fan-evidence-v3+source-first-fan-discovery-v1"
+  },
+  "surprises": [
+    "Actual page 2 pagination link included a session identifier and returned a cache miss; no pagination content was retrieved.",
+    "A same-thread post by fieldy was not present in prior candidate/evidence bodies; previous thread-level dedup would miss it."
+  ],
+  "opens": [
+    {
+      "url": "https://swiatpilki.com/viewtopic.php?t=20492",
+      "status": "read; page 1, retrieval observed 2026-10-31T23:35:17Z"
+    },
+    {
+      "url": "pagination link 83 on swiatpilki thread, page 2",
+      "status": "cache miss on actual pagination URL https://swiatpilki.com/viewtopic.php?f=21&sid=10ed357b02372024930867250ca88ced&start=15&t=20492"
+    },
+    {
+      "url": "https://www.gry-online.pl/forum/polski-stand-up-wasze-zdanie/zbde8721",
+      "status": "full page read; observed 2026-10-31T23:35:35Z"
+    },
+    {
+      "url": "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169",
+      "status": "full page read beginning; observed 2026-10-31T23:35:44Z"
+    },
+    {
+      "url": "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169, remaining page context at line 755",
+      "status": "read page lines 488–1191; observed 2026-10-31T23:35:57Z"
+    },
+    {
+      "url": "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169, remaining page context at line 1450",
+      "status": "read page lines 1078–1763; observed 2026-10-31T23:36:03Z"
+    }
+  ],
+  "usage_before": {
+    "queries": 24,
+    "open_attempts": 15,
+    "raw_candidate_slots": 12
+  },
+  "stage_caps": {
+    "queries": 0,
+    "open_attempts": 6,
+    "raw_candidate_slots": 4
+  },
+  "candidates": [
+    {
+      "candidate_id": "src_cspt_001",
+      "author": "fieldy",
+      "locator": "swiatpilki thread page 1, post 2018-02-07 20:27, displayed post link 124",
+      "disposition": "Complete authored text retained. Pacześ is a relative ranking; Leja is praised for improvisation and Syrek-Dąbrowski receives qualified approval. Separate extraction/review must decide preferences; no graph inference.",
+      "dedup": "No normalized full-body or substring match in 147 prior evidence JSONL files; author mention in masacra’s different post is not the same post."
+    }
+  ],
+  "duplicate_matches": [
+    {
+      "author": "masacra",
+      "locator": "swiatpilki page 1, 2018-02-07 20:13",
+      "match": "evidence/batch-03/source-candidates.jsonl src_b03a_001, exact body, permalink p=1192622"
+    },
+    {
+      "author": "Tomusmc",
+      "locator": "swiatpilki page 1, 2018-02-07 20:56",
+      "match": "evidence/batch-03/source-candidates.jsonl src_b03a_002, exact body, permalink p=1192638"
+    },
+    {
+      "author": "evolution123",
+      "locator": "GRYOnline zbde8721 #1, 2018-05-14 19:36",
+      "match": "evidence/coverage-source-page-recovery/source-candidates.jsonl src_cspr_001, same body"
+    },
+    {
+      "author": "mohenjodaro",
+      "locator": "GRYOnline zbde8721 #12, 2018-05-14 20:44",
+      "match": "evidence/coverage-source-page-recovery/source-candidates.jsonl src_cspr_002, same body"
+    },
+    {
+      "author": "maciell",
+      "locator": "GRYOnline zff63169 #4, 2023-01-14 22:01",
+      "match": "evidence/coverage-source-page-recovery/source-candidates.jsonl src_cspr_003, same body"
+    },
+    {
+      "author": "Megera_",
+      "locator": "GRYOnline zff63169 #3.1, 2023-01-14 22:11",
+      "match": "evidence/coverage-pilot/magda-kubicka.source-candidates.canonical.jsonl src_cov_mkubicka_001, same body"
+    },
+    {
+      "author": "JohnDoe666",
+      "locator": "GRYOnline zff63169 #6, 2023-01-14 22:08",
+      "match": "evidence/batch-03/source-candidates.jsonl src_b03c_001; also calibration-context src_context_002, same body"
+    },
+    {
+      "author": "Qverty",
+      "locator": "GRYOnline zff63169 #16, 2023-01-15 06:38",
+      "match": "evidence/calibration-context/source-candidates.jsonl src_context_001, same body"
+    }
+  ],
+  "no_candidate_dispositions": [
+    {
+      "locator": "GRYOnline zbde8721 #11 bisfhcrew",
+      "reason": "Previously held: Ola identity unresolved and the sentence “sometimes watch and like” does not unambiguously attribute appreciation to every listed name."
+    },
+    {
+      "locator": "GRYOnline zbde8721 #19 Ryokosha",
+      "reason": "Names given without explicit appreciation in a general opinion/recommendation thread; no favorite-question context."
+    },
+    {
+      "locator": "GRYOnline zff63169 #27 Megera_, 2023-01-21 22:03",
+      "reason": "Kasparek’s support is called good, but Minkiewicz’s program is only relatively better than previous and event is assessed as a whole; no forced individual co-appreciation or filler solo."
+    },
+    {
+      "locator": "GRYOnline zff63169 #31 Megera_, 2023-04-29 17:34",
+      "reason": "Says she saw Syrek-Dąbrowski and Van Bendler with pleasure, but performance enjoyment for each is not explicit; no inference from attendance."
+    },
+    {
+      "locator": "swiatpilki page 1 fieldy 2018-02-07 19:55; Delpiero14 20:31",
+      "reason": "Individual or specific-material evaluations only; no filler solo records."
+    }
+  ],
+  "usage": {
+    "stage": {
+      "queries": 0,
+      "open_attempts": 6,
+      "raw_candidate_slots": 1
+    },
+    "original_cumulative": {
+      "queries": 24,
+      "open_attempts": 21,
+      "raw_candidate_slots": 13
+    },
+    "remaining_original_caps": {
+      "queries": 0,
+      "open_attempts": 3,
+      "raw_candidate_slots": 3
+    },
+    "remaining_this_stage": {
+      "queries": 0,
+      "open_attempts": 0,
+      "raw_candidate_slots": 3
+    }
+  },
+  "validation": "Draft 2020-12 with format checker: 1 candidate passed; dedup scanned 147 prior evidence JSONL files by normalized exact and substring body, plus inspected author and post locators.",
+  "retrieval_time_note": "UTC timestamp is the clock observation immediately after the page read, an upper bound; web tool did not expose exact network completion time. Publication date is displayed date without inventing a timezone.",
+  "access_scope": "No searches, tabs, logins or bypasses. Reddit and Filmweb were not reread within the tighter cap. Page 2 cache miss is not proof of source inaccessibility.",
+  "stop_reason": "Six additional page read/open attempts consumed. Separate low-tier extraction and independent review remain."
+}

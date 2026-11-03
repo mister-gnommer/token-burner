@@ -1,0 +1,24 @@
+{
+  "run_id": "20261101-coverage-pawel-chalupka",
+  "raw": "evidence/coverage-expansion/pawel-chalupka.source-candidates.jsonl",
+  "canonical": "evidence/coverage-expansion/pawel-chalupka.source-candidates.canonical.jsonl",
+  "source_count": 1,
+  "prior_canonical_rows_checked": 129,
+  "duplicates": 0,
+  "parent_intervention": "Preserved a verified complete comparison/appraisal post omitted by collector solely because relative ranking cannot establish personal preference. Candidate preservation does not assign personal preferences; separate extraction/review adjudicates full wording.",
+  "source_proof": "collection.json continuations[1].attempts[1].raw_dom_text for Maciej; attempts[2].raw_dom_text for exact Łódź event lineup.",
+  "author_text_correction": "Actual DOM says “najlepszy”; recovery_resolution normalized it to “najlepsi”. Candidate copies actual DOM spelling.",
+  "retrieval_timestamp_limit": {
+    "value": "2026-11-01T16:25:22.251441Z",
+    "kind": "post-retrieval upper bound from original worker-written collection file mtime before parent edits",
+    "exact_browser_retrieval_second_available": false,
+    "note": "Do not claim this is the precise source request time. Saved full DOM source verified offline; same-day retrieval and upper bound documented."
+  },
+  "derived_changes": "Source-local author hash in canonical file; raw source wording/context preserved.",
+  "raw_dom_sha256": "bb02d8291772381b684efaad17f89abbd84a3ed7b973fc6abb3ab659e03e4b94",
+  "event_dom_sha256": "2df8d8b41ff3be52db4d8b0c61612b917905bbcbac0b2eafe7b2e5e096364cee",
+  "excerpt_sha256": "32bbeb3e24072d69998458eade9ad850ee679d45930f6092e12520d1eecf962f",
+  "created_at": "2026-11-01T16:46:48.476957Z",
+  "navigation_attempts_added": 0,
+  "queries_added": 0
+}

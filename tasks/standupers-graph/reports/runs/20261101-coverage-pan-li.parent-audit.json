@@ -1,0 +1,15 @@
+{
+  "run_id": "20261101-coverage-pan-li",
+  "parent_audited_at": "2026-11-01T11:09:43.756944+00:00",
+  "verified_candidates": 0,
+  "queries_charged": 24,
+  "page_attempts": 9,
+  "remaining_page_attempts": 15,
+  "decision": "Stop documented route set; retain unused opens and access gaps. Empty raw candidates require no extraction or graph rebuild.",
+  "limitations": [
+    "Unknown colleague not mapped to frozen peer.",
+    "Generic duo praise does not establish appreciation of each performer.",
+    "Search-only text remains unverified.",
+    "Access failure is not proof of absent qualifying posts."
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101-coverage-sylwia-wiszowata",
+  "reviewer": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "reasoning_effort": "medium",
+    "prompt_version": "verify-evidence-v3"
+  },
+  "inputs": {
+    "source_candidates": "evidence/coverage-expansion/sylwia-wiszowata.source-candidates.canonical.jsonl",
+    "evidence_unreviewed": "evidence/coverage-expansion/sylwia-wiszowata.evidence.unreviewed.jsonl",
+    "schema": "data/schemas/evidence-v3.schema.json",
+    "frozen_identities": "data/standupers.json",
+    "run_manifest": "reports/runs/20261101-coverage-sylwia-wiszowata.json",
+    "canonicalization_report": "reports/runs/20261101-coverage-sylwia-wiszowata.canonicalization.json",
+    "extraction_report": "reports/runs/20261101-coverage-sylwia-wiszowata.extraction.json"
+  },
+  "output": "evidence/coverage-expansion/sylwia-wiszowata.evidence.jsonl",
+  "surprises": [
+    "006 is the only solo candidate with an explicit recommendation, so it qualifies for fan_recommendation without establishing any pair.",
+    "The extraction report lineage.evidence_ids has a typo (ev_cov_swiszawata_006); the actual unreviewed record ID and final ID are ev_cov_swiszowata_006.",
+    "The extraction report records an unsupported --path validation invocation; actual CLI syntax takes the path positionally."
+  ],
+  "counts": {
+    "candidates": 6,
+    "records_reviewed": 1,
+    "accepted": 1,
+    "uncertain": 0,
+    "rejected": 0,
+    "skipped": 5,
+    "duplicate_candidates": 0,
+    "duplicate_evidence_ids": 0
+  },
+  "coverage": {
+    "candidate_ids": [
+      "src_cov_swiszowata_001",
+      "src_cov_swiszowata_002",
+      "src_cov_swiszowata_003",
+      "src_cov_swiszowata_004",
+      "src_cov_swiszowata_005",
+      "src_cov_swiszowata_006"
+    ],
+    "evidence_ids": [
+      "ev_cov_swiszowata_006"
+    ],
+    "exact_candidate_coverage": "6/6"
+  },
+  "records": [
+    {
+      "candidate_id": "src_cov_swiszowata_006",
+      "evidence_id": "ev_cov_swiszowata_006",
+      "decision": "accepted",
+      "issues": [
+        "Extraction left personal preference unknown despite the author’s explicit absolute appraisal.",
+        "Extraction report misspelled the actual evidence ID as ev_cov_swiszawata_006; the actual ID is ev_cov_swiszowata_006."
+      ],
+      "corrections": [
+        "Set Sylwia preference to positive based on the complete explicit appraisal, and retained a verbatim preference_quote spanning the appraisal.",
+        "Kept correct actual evidence ID ev_cov_swiszowata_006; retained source, context, excerpt, source-local author hash, and extraction provenance."
+      ],
+      "eligibility": "The explicit “Polecam zobaczyć Sylwię na żywo” makes this the sole candidate eligible for fan_recommendation. A single mention is permitted for this class; it is not being treated as pair evidence.",
+      "identity_limits": "Sylwia Wiszowata maps to frozen performer ID sylwia-wiszowata. No second performer is inferred.",
+      "preference_scope": "Positive personal appraisal in this 2023 review; no inference beyond that review."
+    }
+  ],
+  "integrity_checks": {
+    "source_excerpt_context_language_equal": "checked against canonical candidates; accepted record retains exact source metadata, excerpt, language, context and author hash",
+    "source_author_hashes": "preserved from canonical candidates; all six hashes recorded in per-candidate decisions",
+    "extraction_lineage": "preserved: codex/gpt-6-luna, extract-evidence-v3, run 20261101-coverage-sylwia-wiszowata",
+    "literal_surfaces_and_quotes": "Sylwię is verbatim; preference_quote is a verbatim substring of the complete author appraisal",
+    "frozen_ids": "sylwia-wiszowata verified; Zalewa left unresolved, not mapped to Bartosz Zalewski",
+    "reviewer_status": "accepted record reviewed by codex/gpt-6-luna, medium reasoning effort",
+    "validation_command": "python3 scripts/evidence_pipeline.py validate --kind evidence evidence/coverage-expansion/sylwia-wiszowata.evidence.jsonl",
+    "extraction_report_lineage": "authoritative actual evidence ID ev_cov_swiszowata_006; report misspelling was not propagated"
+  },
+  "skips": [
+    {
+      "candidate_id": "src_cov_swiszowata_001",
+      "source_line": 1,
+      "source_sha256": "221f9a1861ee2f660117e8a2a5aa9df68739700b1dc4dad96c232be281e48b8d",
+      "excerpt_sha256": "cccea5d45ca7de4cba3f6bc0f9a2566fdc8753c269e245cacd4c5ab5459d2acf",
+      "decision": "skip",
+      "reason": "Skip. Only Sylwia is explicitly identified; “szacunek za zrobienie materiału specjalnie pod trasę” is craft respect, while “Nie było złych występów” is group-level. No pair class. “Zalewa” is not a frozen alias for Bartosz Zalewski; keep identity unresolved. No adjacent-post or roster inference."
+    },
+    {
+      "candidate_id": "src_cov_swiszowata_002",
+      "source_line": 2,
+      "source_sha256": "afe6192e7cd689572273bab832399587fee949dab58f27d9cd07319669d55b3e",
+      "excerpt_sha256": "6e99848447cf7a1f22274ac2e0f086e9cccf40e91174fdc43dc3c13ff5ff6bc9",
+      "decision": "skip",
+      "reason": "Skip. Directly positive solo appraisal (“super”; her joke style suits the author), but no explicit recommendation or comparison/pair class. Independent author key does not combine this review with other users."
+    },
+    {
+      "candidate_id": "src_cov_swiszowata_003",
+      "source_line": 3,
+      "source_sha256": "4c5898946de8a46d15f6f5f06071d079734713b80ef5163ddf6b856b2c7a526f",
+      "excerpt_sha256": "4be45fdda83f682c7511f54d6cf1a0dfd7bbdeaa519ace9496929611618441da",
+      "decision": "skip",
+      "reason": "Skip. Mixed, program-specific solo reaction; repeated repertoire criticism and preference for “trawniczek” do not form a permissible pair class or clear recommendation."
+    },
+    {
+      "candidate_id": "src_cov_swiszowata_004",
+      "source_line": 4,
+      "source_sha256": "7eedb897f5e3ce0b322e3405ab1069fbbe232f10885b50343320d86b8c4995aa",
+      "excerpt_sha256": "366df4aa972006fb831a043576a509deeda90af321efe8f71e3ebb2f6c4e50ac",
+      "decision": "skip",
+      "reason": "Skip. Clear absolute solo praise (“niesamowita”) but no recommendation or pair relation."
+    },
+    {
+      "candidate_id": "src_cov_swiszowata_005",
+      "source_line": 5,
+      "source_sha256": "604717cfeffffe08e1cf1ed4186e7df3751ab60507eacbb88d691314fdfe57a6",
+      "excerpt_sha256": "d9404237a4789f4eed55dde98d541b9313942199457ea746f76ba319ec6982ce",
+      "decision": "skip",
+      "reason": "Skip. Emphatic solo praise (“nie z tego świata”) but no recommendation or pair relation."
+    }
+  ],
+  "graph_claim": "none"
+}

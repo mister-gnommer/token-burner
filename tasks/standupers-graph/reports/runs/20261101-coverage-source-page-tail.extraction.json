@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101-coverage-source-page-tail",
+  "stage": "extraction",
+  "status": "complete",
+  "extractor": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1"
+  },
+  "paths": {
+    "source_candidates": "evidence/coverage-source-page-tail/source-candidates.canonical.jsonl",
+    "evidence_unreviewed": "evidence/coverage-source-page-tail/evidence.unreviewed.jsonl"
+  },
+  "counts": {
+    "source_candidates": 1,
+    "extracted": 1,
+    "skipped": 0
+  },
+  "decisions": [
+    {
+      "candidate_id": "src_cspt_001",
+      "disposition": "evidence",
+      "evidence_id": "ev_cspt_001",
+      "evidence_class": "same_user_coendorsement",
+      "positive_preferences": [
+        "michal-leja",
+        "antoni-syrek-dabrowski"
+      ],
+      "unknown_preferences": [
+        "rafal-paczes"
+      ],
+      "notes": "Leja's positive appraisal is scoped to improvising; Syrek-Dąbrowski receives a separate positive appraisal. Pacześ's relative ranking alone does not establish preference. Historical post from 2018."
+    }
+  ],
+  "validation": {
+    "command": "python3 scripts/evidence_pipeline.py validate --kind evidence evidence/coverage-source-page-tail/evidence.unreviewed.jsonl",
+    "result": "pending"
+  },
+  "surprises": [
+    "One post contains several distinct evaluations: two positive appraisals, one relative ranking, outside-population US comedians, and an unnamed generic category opinion."
+  ]
+}

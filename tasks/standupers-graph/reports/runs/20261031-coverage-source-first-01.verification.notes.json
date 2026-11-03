@@ -1,0 +1,7 @@
+{
+  "review_report_unchanged": true,
+  "manifest_path": "reports/runs/20261031-coverage-source-first-01.json",
+  "missing_input_cause": "Parent brief accidentally glued actualmanifest label to filename; actualmanifest file exists. Formatting error belongs to parent, not source absence.",
+  "automated_schema_validation": "Reviewer did not execute it; integration worker must run it plus strict real-manifest provenance checks before graph acceptance.",
+  "B_process_deviation": "Two follow-up call reservations recorded afterward, disclosed;7queries/6opens within12/12caps; no candidate was admitted."
+}

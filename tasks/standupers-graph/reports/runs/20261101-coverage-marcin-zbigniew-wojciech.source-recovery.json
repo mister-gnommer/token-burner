@@ -1,0 +1,124 @@
+{
+  "run_id": "20261101-coverage-marcin-zbigniew-wojciech",
+  "budget": {
+    "queries": {
+      "used": 24,
+      "cap": 24,
+      "remaining": 0,
+      "added": 0,
+      "cumulative_used": 24,
+      "cumulative_cap": 24
+    },
+    "page_attempts": {
+      "used_before_recovery": 3,
+      "added": 2,
+      "used": 5,
+      "cap_at_this_stage": 5,
+      "remaining_in_stage": 0,
+      "overall_cap": 24,
+      "overall_remaining": 19,
+      "prior_run_used": 3,
+      "cumulative_used": 5,
+      "cumulative_cap_at_this_stage": 5,
+      "remaining_at_this_stage": 0
+    },
+    "verified_candidates": {
+      "prior": 0,
+      "added": 1,
+      "cumulative_used": 1,
+      "cap": 16,
+      "remaining": 15
+    }
+  },
+  "attempts": [
+    {
+      "url": "https://verbumnapolu.wordpress.com/2017/02/24/stand-up-night-relacjarecenzja/",
+      "kind": "open exact supplied URL",
+      "status": "returned",
+      "reservation_index": 1,
+      "retrieved_at": "2026-11-01T13:24:08Z",
+      "response_status": "success",
+      "tool_source_title": "„Stand-up night” [relacja/recenzja] | VERBUM NA POLU",
+      "tool_source_locator": "web open exact supplied URL; response lines 27-102; relevant contiguous author passage lines 50-85",
+      "raw_relevant_text": "L27: # „Stand-up night” [relacja/recenzja]\nL31: Co?\nL33: Stand-up night\nL35: Kto?\nL37: Marcin Zbigniew Wojciech, Ewa Błachnio, Robert Korólczyk, Tomasz Jachimek\nL39: Kiedy?\nL41: 20.02.2017 r.\nL43: Gdzie?\nL45: Krakowski Teatr Variete\nL50: 20 lutego 2017 roku o godzinie 20:00, praktycznie tuż po Półfinałach 33. EDF PAKI, w krakowskim Teatrze Variete, miał miejsce występ czterech standuperów: Ewy Błachnio, Roberta Korólczyka, Marcina Zbigniewa Wojciecha i Tomasza Jachimka. Program, z którym artyści podróżują, nazywa się „Stand-up night”.\nL51: Miałam okazję obejrzeć go dwa razy, w Krakowie i Gliwicach (dzięki, dziewczyny, że mnie wzięłyście ze sobą!), dzień po dniu. Oczywiście, jako, że jesteśmy blogiem krakowskim, recenzja będzie oparta w dużym stopniu na występie w Teatrze Variete. W dużym, ponieważ niestety w Krakowie nie udało mi się zobaczyć monologu Marcina Wojciecha, co nadrobiłam w Gliwicach. Chciałabym się podzielić także jedną refleksją, która naszła mnie podczas występu na Śląsku, ale po kolei.\nL52: Wieczór rozpoczął się od rozgrzewki w wykonaniu Marcina Zbigniewa Wojciecha oraz Roberta Korólczyka, a całość poprowadził Marcin Wojciech. Widzowie mogli zabawić się w grę pt. „Tak, zróbmy to!” i na przykład dowiedzieć się od sąsiada z boku, że są seksowni.\nL53: Następnie przyszedł czas na monolog Marcina Zbigniewa Wojciecha, który uświadomił mi, że faktycznie jest podobny do złodzieja z filmu „Kevin sam w domu”, czego dotąd nie zauważyłam. Opowiadał także m.in. o swoich przeżyciach na weselach, gdzie goście wraz z czasem i procentami z kulturalnych ludzi zamieniają się w zwierzęta. Jednak najbardziej rozśmieszył mnie weselny paradoks, w którym goście wygłupiają się i ośmieszają przed innymi po to, aby wygrać wódkę, która jest za darmo na stole.\nL54: Nie powiem, sama chętnie biorę udział w oczepinach, a jeszcze chętniej patrzę, jak wydurniają się moi kuzyni czy znajomi. Z pewnością teraz zabawy weselne będą bawić mnie jeszcze bardziej. Dowiedziałam się także, że istnieją tacy szaleńcy, którzy wyprawiają wesele bezalkoholowe! Czy to jest w ogóle możliwe?! Publiczność dowiedziała się też, że Marcina nie stać na wakacje nad polskim morzem, dlatego ostatnie musiał spędzić w Bułgarii.\nL55: Opowiedział także, jak rozpoznaje Polaków za granicą, o swoich podbojach miłosnych na oazach, a także o tym, że puszyste kobiety są lepsze. Na ostatni wątek jeden pan na sali zaczął się histerycznie śmiać, co Marcin od razu podchwycił, sprawnie wchodząc w interakcje z publicznością. Na koniec występu standuper zdradził swój sposób na telemarketingowców, który mnie powalił na kolana i chyba zacznę go stosować.\nL56: Otóż, gdy dzwonią do Marcina z ofertą, on wysłuchuje ich, mówi, że kupi to, co chcą, jednak akurat rozwiązuje krzyżówkę i ma ostatnie hasło: „Innymi słowy, uciekaj na s…?” To jedynie mała część występu artysty, nie będę zdradzać Wam więcej. Pójdziecie, to się dowiecie.\nL57-L59: [fotografia; podpis L59: Fot. Magdalena Rachwał]\nL61: Jako druga pojawiła się Ewa Błachnio, którą poprzednik próbował wkręcić w taniec na scenie, bo, jak wiecie, Ewa była w poprzedniej edycji „Tańca z gwiazdami”. Jednak artystka nie dała się sprowokować, być może dlatego, że Marcin wybrał taniec pole dance.\nL62: Ewa rozpoczęła występ od monologu o swoim staropanieństwie, w którym opowiedziała o podrywaniu przez żonatych mężczyzn i tych obdarzonych odwagą, ale niestety nie wzrostem. Ewa, wiem coś o tym i łączę się z Tobą w bólu. Nie obeszło się także bez poruszania tematu smogu, artystka znalazła przyczynę tylu zdrad w Krakowie: po prostu w tym dymie nie można celnie trafić.\nL63: Na koniec poruszyła temat prowadzenia samochodu przez kobiety, bo przecież faceci wykonując tyle czynności, co my w aucie, w ogóle nie wyjechaliby z parkingu! Pojawił się również temat polityki, w którym Ewa uświadomiła publiczności kilka paradoksów i prawd życiowych, za co dostała gromkie brawa. Schodząc ze sceny udało jej się ubrać Marcina Zbigniewa Wojciecha w ramę. Taneczną ramę.\nL64-L66: [fotografia; podpis L66: Fot. Magdalena Rachwał]\nL67: Jako trzeci swój monolog zaczął Robert Korólczyk, występujący także w Kabarecie Młodych Panów. Zaczął on, jak typowy Polak, od narzekania. Narzekania na swoje dzieciństwo, kiedy to musiał słuchać disco polo, wychował się na nim, bo jego tata lubił tego rodzaju muzykę.\nL68: Publiczność mogła dowiedzieć się, że Roberta do szkoły budził tekst: „Ty i ja, ty i ja, mydełko fa…” Standuper zdradził także wykonywany przez siebie kiedyś zawód, który nie jest lubiany przez większość społeczeństwa, a mianowicie zawód strażnika miejskiego. Z sali od razu można było usłyszeć standardowe „Buuuuuu!”, co chyba nikogo nie dziwi.\nL69: Lecz jest plus tej profesji, bowiem nauczyła Roberta dystansowania się do wyzwisk, a co ważniejsze, nie przejmowania się nimi, co według mnie jest w życiu bardzo przydatną cechą. Robert poruszył też bardzo powszechny temat, jakim są dzwonki ustawiane przez ludzi w telefonach. Przyznam, że temat mi bliski, bo sama zwracam na to uwagę, głównie jeżdżąc MPK i jestem tego samego zdania, co Robert: człowieka można poznać po dzwonku. Zgadzam się również w kwestii typu muzyki ustawionej jako dzwonek.\nL70: Zdarzają się tacy, którzy mają ustawiony fajny hit, aż chciałoby się posłuchać go dalej, niestety zaraz go wyciszają, ale zdarzają się też i tacy, którzy mają ustawione, wspomniane już wcześniej, disco polo i twierdzą, że wszyscy muszą wysłuchać tego do końca. Wspomniał także m.in. o oznaczaniu się na portalach społecznościowych, o operacjach plastycznych kobiet oraz o reklamach leków, płynnie przechodząc do tematów dla dorosłych.\nL71: Na tym zakończę, bo może czytają nas niepełnoletni, nie będę gorszyć młodzieży jeszcze bardziej.\nL72-L74: [fotografia; podpis L74: Fot. Magdalena Rachwał]\nL75: Na koniec standupowego wieczoru wystąpił Tomasz Jachimek, który zaczął z tak zwanego „grubej rury”, mówiąc, że stand-up jest dość wymagającą formą, bo trzeba być zarówno zabawnym, jak i przerażającym, śmiesznym, ale też kontrowersyjnym i obserwując środowisko kabareciarzy, nikt tak nie rzuca mu się w oczy, jak Antoni. Tak rozpoczęty występ zapowiedział, że nie będzie grzecznie… I nie było. Artysta skupił się na temacie seksu, który według niego nie jest w dzisiejszych czasach sferą tabu.\nL76: Mimo że podczas tego wieczoru, na ten temat powiedziano już dość sporo, jednak Tomasz mówił o nim w zupełnie innym aspekcie, niż poprzednicy. Poruszył także wątki m.in. okłamywania dzieci przez rodziców czy sposobu traktowania gości w restauracji przez kelnerów.\nL77: Swoją drogą, jeśli traficie kiedyś na danie zatytułowane tak: „Z ielono-wiosenne listowie nadziewane szlachetnym mięsiwem w gęstej otulinie z sosu imbirowo-śmietanowego, a wszystko to w delikatnej nucie kopru włoskiego” i zastanawiacie się, co to może być, Jachimek odpowiada: gołąbki. Na koniec występu nie omieszkał ponaśmiewać się z naszych polityków, czym też uświadomił nam kilka paradoksów w Polskim życiu politycznym, innych niż poprzednicy.\nL78-L80: [fotografia; podpis L80: Fot. Magdalena Rachwał]\nL81: Podsumowując, standupowy wieczór zaliczam do jak najbardziej udanych. Poruszane przez artystów wątki, mimo że niekiedy się powtarzały, były jednak ujęte z innej perspektywy, co uwidoczniło zarazem wszechstronność występujących, jak również odmienne spojrzenie na te same zagadnienia. Trzeba także zaznaczyć, że podczas tego wieczoru został podjęty szereg tematów. Nie wszystkie zawarłam w swojej relacji, ponieważ chcę Was zachęcić do wybrania się na ten program. Według mnie warto.\nL82: Część z monologów była mi w pełni znana, więc na niej się zbytnio nie ubawiłam, ale ja tak po prostu mam, że nie za bardzo lubię „odgrzewane kotlety”. Część tylko trochę, więc przyjemnie było je sobie przypomnieć. Jeszcze inna część była całkiem nowa i na niej bawiłam się świetnie! Na wyróżnienie zasługuje także interakcja z publicznością, każdy z występujących ją nawiązał, więc publiczność została dopieszczona.\nL83: Teraz taka mała refleksja, która naszła mnie drugiego dnia standupowej trasy: reakcje ludzi. Publiczność w Krakowie nie reagowała tak ochoczo i spontanicznie, jak ta w Gliwicach. Zaczęłam się zatem zastanawiać, od czego to zależy… Od mentalności, ludzi, miejsca, dostępności tego typu rozrywki, a może czegoś jeszcze innego? Wydaje mi się, że każda z wymienionych przeze mnie przyczyn ma w to swój wkład. Jednak nie znalazłam satysfakcjonującej mnie odpowiedzi i zastanawiam się dalej.\nL84: Może Wy macie jakieś pomysły?\nL85: ANETA TABISZEWSKA\nL87-L91: Separate “Mała notka od Bez Przesady”: Mnie się wszystko mega podobało (choć niestety nie było czego zamiatać), a zwłaszcza występ mojego scenicznego Tatusia! Tata daje radę! P S Bo wiecie, że Tata mnie rozpoznał? Jeśli nie, klikajcie TUTAJ. Separate, excluded from author passage and attribution."
+    },
+    {
+      "url": "https://bielskirynek.pl/pl/14_kultura/729_kabarety/18759_smiech-fermentuje-najlepiej-wieczorem-.html",
+      "kind": "open exact supplied URL",
+      "status": "returned",
+      "reservation_index": 2,
+      "retrieved_at": "2026-11-01T13:24:43Z",
+      "response_status": "success",
+      "tool_source_title": "„Śmiech fermentuje najlepiej wieczorem – czyli jak Bielsko-Biała pękało ze śmiechu na Stand FERMENT Up",
+      "tool_source_locator": "web open exact supplied URL; response lines 60-118; complete article body lines 65-107; byline/date line 62",
+      "raw_relevant_text": "L60: # „Śmiech fermentuje najlepiej wieczorem – czyli jak Bielsko-Biała pękało ze śmiechu na Stand FERMENT Up\nL62: Agata Rucińska 08:14, 09.05.2025 Aktualizacja: 10:12, 27.10.2025\nL65: Jeśli śmiech naprawdę przedłuża życie, to uczestnicy wieczoru stand-upowego w Bielskim Centrum Kultury właśnie zyskali kilka dobrych lat więcej. W ramach 25. edycji Festiwalu FERMENTY odbyło się wydarzenie, które śmiało można nazwać stand-upową petardą sezonu – „Stand FERMENT Up”.\nL67: [Image: Piotr Szczutowski i Adam Ruśniak]\nL68: Wieczór stand-upowy w Bielskim Centrum Kultury nie próbował nikogo oszukiwać. Już sama zapowiedź – „tylko dla dorosłych” – mówiła jasno, że nie będzie kompromisów. I rzeczywiście nie było. „Stand FERMENT Up”, zorganizowany w ramach jubileuszowej, 25. edycji Festiwalu FERMENTY, postawił na humor bez filtrów. Czasem celny, czasem ryzykowny, momentami przewidywalny – ale konsekwentny w tonie i zróżnicowany pod względem stylu wykonawców.\nL69: Rozgrzewka? Raczej komediowy trening interwałowy. Mariusz Kałamaga, który otworzył wieczór „Stand FERMENT Up”, od razu wszedł na scenę jak do siebie – z luzem, ironią i tą charakterystyczną, lekko absurdalną manierą, za którą widzowie go kochają albo się go boją. I bardzo dobrze.\nL71: [Image: Mariusz Kałamaga]\nL72: Jego wprowadzenie do wieczoru nie było zwykłym „dzień dobry” – to była rozbiegówka, która przypominała bardziej dynamiczny stand-up niż rolę konferansjera. Zręcznie przeskakiwał między tematami, punktując codzienne absurdy i sytuacje, których wszyscy niby nie zauważamy – aż Kałamaga wyciągnie je na scenę i rozbierze do naga. Dosłownie i w przenośni.\nL73: To nie była tylko rozgrzewka – to było wejście z buta, które ustawiło atmosferę całego wieczoru: bez świętości, bez tabu, z humorem ostrym jak fermentujący ser pleśniowy. I tak właśnie miało być.\nL74: A dalej było tylko mocniej. Na scenie jako pierwszy pojawił się Damian Viking Usewicz, który zanurzył się w tematach erotyki z taką swobodą, że publiczność raz po raz wybuchała śmiechem… lub oblewała się rumieńcem. Jego bezpruderyjne, ale celne żarty balansowały na granicy dobrego smaku, nie przekraczając jej ani o centymetr – no, może o pół.\nL76: [Image: Damian Viking Usewicz]\nL77: Zaraz po nim Damian Kubik z Dąbrowy Górniczej błyskotliwie pochylił się nad parafialnymi kontrowersjami, serwując publiczności opowieści spod ambony okraszone trafnymi obserwacjami. Nie oszczędzał nikogo, zwłaszcza świętości, które w jego interpretacji okazały się zaskakująco ziemskie.\nL79: [Image: Damian Kubik]\nL80: Następnie scenę przejęła Paulina Potocka, zwana przez niektórych Poniedzielskim w spódnicy (raczej nie ze względu na treść lecz tempo przekazu), ale z ostrzejszym językiem i współczesną wrażliwością. Jej obserwacje o kobiecości, absurdach codzienności i presji społecznej trafiły w punkt.\nL82: [Image: Paulina Potocka]\nL83: Po niej wystąpił Marcin Zbigniew Wojciech – żywiołowy jak espresso po Red Bullu, który żonglował tematami z prędkością światła. Z humorem celnie punktował nasze codzienne potknięcia, zostawiając widzów z uśmiechem i lekkim poczuciem, że sami jesteśmy bohaterami jego żartów.\nL85: [Image: Marcin Zbigniew Wojciech]\nL87: Kolejny na scenie był Paweł Reszela, który postawił na szczerość i codzienne rodzinno-związkowe obserwacje. Jego spokojniejsze tempo było jak chwilowa przerwa w śmiechowym maratonie.\nL88: [Image: Paweł Reszela]\nL90: Karol Kopiec, jak to ma w zwyczaju, postawił na absurdalny humor i nieoczywiste skojarzenia, serwując publiczności opowieści o ojcostwie, które dawno wymknęły się spod kontroli logiki. Jego występ – lekko „odklejony”, pełen zaskakujących zwrotów – idealnie trafił w gusta rozgrzanej już sali.\nL92: [Image: Karol Kopiec]\nL93: Co ciekawe, większość komików świadomie unikała tematów politycznych – może dlatego, że dziś nie wiadomo już, z kogo wolno się śmiać, a z kogo jeszcze nie wypada. Delikatnie wyłamał się z tej niepisanej umowy Marcin Daniec, który jak na mistrza przystało, zrobił to z klasą, między wierszami, bez dosłowności – zostawiając publiczności przestrzeń na własną interpretację.\nL94: Dominowały za to tematy relacji damsko-męskich, które – jak widać – nigdy się nie starzeją i zawsze trafiają w punkt. Od pierwszych randek po wieloletnie małżeństwa, od oczekiwań po katastrofy komunikacyjne między płciami – każdy znalazł tu coś, co zna z autopsji. Bo stand-up o związkach to jak lustro – czasem krzywe, ale zawsze prawdziwe.\nL95: Na wielki finał pojawił się Marcin Daniec, legenda polskiej sceny kabaretowej. Klasa, doświadczenie i bezbłędny timing – Dańca nie trzeba było nikomu przedstawiać, a jego występ był jak wisienka na torcie. Nie silił się na młodzieżowe kalki, nie próbował być „na czasie” – był po prostu sobą. I właśnie za to dostał siarczyste brawa.\nL98: Po zakończeniu występów, ci, którzy jeszcze mieli siłę i poczucie humoru w zapasie, przenieśli się do CAFE MARIA. Tam, przy luźnej rozmowie z udziałem Mariusza Kałamagi, Marka Grabie i prowadzącego Ścibora Szpaka, było mniej performansu, a więcej swobodnej refleksji – i to, jak się zdaje, idealnie domknęło ten różnorodny wieczór.\nL103: „Stand FERMENT Up” nie próbował przypodobać się wszystkim. I dobrze. Pokazał spektrum współczesnego stand-upu: od ciężkiego kalibru po lekką obserwację, od klasyki po eksperyment. Niekiedy trafiał celnie, niekiedy obok. Ale bez wątpienia – był wyrazisty.\nL107: To oczywiście nie jeszcze nie koniec fermentowych bojów. Organizatorzy zapraszają na kolejne wydarzenia. Szczegóły znajdziesz tutaj."
+    }
+  ],
+  "decisions": [
+    {
+      "url": "https://verbumnapolu.wordpress.com/2017/02/24/stand-up-night-relacjarecenzja/",
+      "decision": "eligible; append verified candidate src_cov_mzwojciech_001",
+      "class": "fan_recommendation",
+      "proof": {
+        "locator": "complete contiguous article author text, response lines 50-85; byline line 85; source metadata lines 37-51 and WordPress post date tag line 102",
+        "author": "Aneta Tabiszewska",
+        "publication_date": "2017-02-24",
+        "program_recommendation": "“Nie wszystkie zawarłam w swojej relacji, ponieważ chcę Was zachęcić do wybrania się na ten program. Według mnie warto.”",
+        "personal_focal_reaction": "“Jednak najbardziej rozśmieszył mnie weselny paradoks” — author says she had not seen this monologue in Kraków and caught it in Gliwice; keep the reaction scoped to the Gliwice monologue, while article review centers largely on Kraków.",
+        "full_passage_saved_in": "attempts[0].raw_relevant_text and candidate excerpt",
+        "separate_note": "Lines 87-91 are separately labeled “Mała notka od Bez Przesady”; the note says its own preference and is excluded from Aneta attribution and the candidate.",
+        "caveats": [
+          "Whole-program recommendation only; does not endorse every performer individually or establish Ewa preference.",
+          "Mixed familiarity: some monologues fully known and not entertaining to author; some partly familiar; other new material entertained her greatly.",
+          "Marcin personal reaction is tied to a specific bit at Gliwice, not generalized to all work or the Kraków performance.",
+          "Kraków audience reaction comparison with Gliwice is audience-level and not transferred as author preference.",
+          "Robert Korólczyk and Tomasz Jachimek are outside frozen population; Antoni remains unresolved and is not added.",
+          "No forced pair claim; focal plus actually named frozen peer Ewa are only target IDs."
+        ],
+        "dedup": {
+          "corpus": "graph/coverage-sylwia-reviewed/graph.json exact 27 input_manifests",
+          "source_records_checked": 123,
+          "result": "no same-URL or same-author/excerpt duplicate"
+        }
+      }
+    },
+    {
+      "url": "https://bielskirynek.pl/pl/14_kultura/729_kabarety/18759_smiech-fermentuje-najlepiej-wieczorem-.html",
+      "decision": "skip; no candidate",
+      "class": null,
+      "proof": {
+        "locator": "complete relevant article body lines 65-107, author/byline and publication metadata line 62; preceding performers now captured lines 69-83",
+        "author": "Agata Rucińska",
+        "publication_date": "2025-05-09; page shows update 2025-10-27",
+        "full_article_text_saved_in": "attempts[1].raw_relevant_text",
+        "reason": "Complete text retains editorial performance descriptions and reports room/audience response (“zostawiając widzów z uśmiechem”; Karol “idealnie trafił w gusta rozgrzanej już sali”). Even favorable wording for the focal does not state the author’s own personal liking, recommendation or comparison; event-level judgments are mixed and do not transfer preference.",
+        "bias": "Professional regional journalism is recorded as context, not an automatic exclusion.",
+        "preceding_context": "The omitted “Po niej” predecessor is Paulina Potocka (lines 80-83); this resolves article order only, without changing fan-preference classification.",
+        "frozen_mentions": [
+          "Marcin Zbigniew Wojciech (focal)",
+          "Karol Kopiec (frozen peer)"
+        ],
+        "no_preference_transfer": true
+      }
+    }
+  ],
+  "source_candidate_ids_added": [
+    "src_cov_mzwojciech_001"
+  ],
+  "source_fidelity": {
+    "verbatim_relevant_text_saved": true,
+    "complete_contiguous_author_passage_saved_for_candidate": true,
+    "complete_bielskirynek_article_body_saved_for_skip_proof": true,
+    "tool_returned_lines_preserved": true,
+    "timestamps": "actual retrieval clock recorded to seconds; web result itself only says crawled 9 months ago and supplies no origin timestamp"
+  },
+  "summary": {
+    "verified_candidates_added": 1,
+    "cumulative_candidates_this_run": 1,
+    "blocked_pages": 0,
+    "skipped_pages": 1,
+    "attempts_used": 2,
+    "attempts_remaining_this_slice": 0,
+    "overall_page_attempts_remaining": 19
+  }
+}

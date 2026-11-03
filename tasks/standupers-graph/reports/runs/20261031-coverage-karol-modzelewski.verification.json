@@ -1,0 +1,215 @@
+{
+  "leading_surprises": [
+    "Candidate 004’s final sentence directly praises Marcin Chmiel as a rising “perła polskiego stand-upu”; positive event preference is supported despite the extractor leaving preference unknown.",
+    "Candidates 003 and 006 share one source-local author key but describe different dated events. Candidate 003 criticizes unnamed support; that criticism must not be assigned to Marcin across events.",
+    "All candidates came from KupBilecik. This evidence slice has source-family concentration and no cross-site corroboration.",
+    "Several positive support mentions have unresolved identities because their own captured review has no event roster: 005, 007, and 008. Candidate 002 and 004 name Kamil Kozieł, outside the frozen population."
+  ],
+  "schema_version": 1,
+  "reviewer": "codex/gpt-6-luna",
+  "review_prompt": "verify-evidence-v3",
+  "run_id": "20261031-coverage-karol-modzelewski",
+  "counts": {
+    "canonical_candidates": 9,
+    "accounted_exactly_once": 9,
+    "accepted": 8,
+    "uncertain": 0,
+    "rejected": 0,
+    "skipped": 1
+  },
+  "source_accounting": [
+    {
+      "candidate_id": "src_cov_kmodzelewski_001",
+      "evidence_id": "ev_cov_kmodzelewski_001",
+      "decision": "accepted",
+      "corrections": [
+        "Set review status to accepted and reviewer to codex/gpt-6-luna; replaced unreviewed notes with independent event-scoped assessment."
+      ]
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_002",
+      "evidence_id": "ev_cov_kmodzelewski_002",
+      "decision": "accepted",
+      "corrections": [
+        "Set review fields; confirmed Kamil Kozieł is outside frozen population and remains null."
+      ]
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_004",
+      "evidence_id": "ev_cov_kmodzelewski_004",
+      "decision": "accepted",
+      "corrections": [
+        "Set review fields; changed Marcin Chmiel preference unknown→positive and added the verbatim final appraisal as preference_quote."
+      ]
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_005",
+      "evidence_id": "ev_cov_kmodzelewski_005",
+      "decision": "accepted",
+      "corrections": [
+        "Set review fields; confirmed wife’s reported preference is excluded and Chmielu remains unresolved."
+      ]
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_006",
+      "evidence_id": "ev_cov_kmodzelewski_006",
+      "decision": "accepted",
+      "corrections": [
+        "Set review fields; confirmed different event from 003 and retained shared source-local key without attributing 003’s unnamed criticism here."
+      ]
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_007",
+      "evidence_id": "ev_cov_kmodzelewski_007",
+      "decision": "accepted",
+      "corrections": [
+        "Set review fields; retained Kamil and Marcin as unresolved because this author’s record lacks a roster."
+      ]
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_008",
+      "evidence_id": "ev_cov_kmodzelewski_008",
+      "decision": "accepted",
+      "corrections": [
+        "Set review fields; retained Kamila and Chmiela as unresolved because this author’s record lacks a roster."
+      ]
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_009",
+      "evidence_id": "ev_cov_kmodzelewski_009",
+      "decision": "accepted",
+      "corrections": [
+        "Set review fields; confirmed Karol programme context and full-name Marcin Chmiel praise."
+      ]
+    }
+  ],
+  "source_concentration": {
+    "by_site": {
+      "kupbilecik.pl": 8
+    },
+    "by_url": {
+      "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski?page_comments=2#scrollComments": 1,
+      "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski?page_comments=3": 1,
+      "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski?page_comments=4": 3,
+      "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski?page_comments=8": 3
+    },
+    "independent_authors": 8,
+    "note": "All eight emitted records are from one archive/source family and have eight distinct source-local author keys. Across all nine candidates, 003 and 006 share one key; do not infer cross-platform identity or count skipped candidate 003 as another author.",
+    "by_site_note": "KupBilecik is the only source family in this nine-candidate slice; there is no cross-site corroboration."
+  },
+  "skip_audit": {
+    "canonical_skips": 1,
+    "skips": [
+      {
+        "candidate_id": "src_cov_kmodzelewski_003",
+        "reason": "Karol-only positive evidence plus criticism of unnamed support. No second performer is identifiable, so no permissible pair class fits. Shared source-local author key with candidate 006 is not the reason for skipping."
+      }
+    ],
+    "notes": "Reviewed the complete canonical passage: the praise and absolute event evaluation concern Karol; “support” is criticized but unnamed. No criticism is assigned to Marcin Chmiel or any other performer."
+  },
+  "executable_validation": {
+    "schema_command": "python tasks/standupers-graph/scripts/evidence_pipeline.py validate --kind evidence tasks/standupers-graph/evidence/coverage-pilot/karol-modzelewski.evidence.jsonl",
+    "schema_result": "PASS: 8 records validated",
+    "focused_checks": {
+      "canonical accounted exactly once": "pass",
+      "candidate/evidence frozen IDs": "pass",
+      "source/excerpt/language/context exact": "pass",
+      "actual per-performer run IDs/provenance unchanged": "pass",
+      "review fields": "pass",
+      "source-local author hashes": "pass",
+      "literal surfaces and preference quotes": "pass"
+    }
+  },
+  "coverage_note": "This review covers only the nine supplied canonical candidates. It makes no graph claim. No sources were reopened.",
+  "per_record_decisions": [
+    {
+      "candidate_id": "src_cov_kmodzelewski_001",
+      "evidence_id": "ev_cov_kmodzelewski_001",
+      "decision": "accepted",
+      "corrections": [],
+      "alias_risks": [],
+      "scope": "Positive preference is specific to the praised performance/program and this review; it does not establish general/current fandom."
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_002",
+      "evidence_id": "ev_cov_kmodzelewski_002",
+      "decision": "accepted",
+      "corrections": [],
+      "alias_risks": [
+        "Kamil Kozieł is outside frozen standupers.json; null is population exclusion, not a claim that the person is unknown."
+      ],
+      "scope": "Positive preference is specific to the praised performance/program and this review; it does not establish general/current fandom."
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_004",
+      "evidence_id": "ev_cov_kmodzelewski_004",
+      "decision": "accepted",
+      "corrections": [
+        "Changed Marcin Chmiel sentiment/preference to positive and added verbatim preference quote for the direct absolute praise."
+      ],
+      "alias_risks": [
+        "Kamil Kozieł is outside frozen standupers.json; preserve null ID."
+      ],
+      "scope": "Positive preference is specific to the praised performance/program and this review; it does not establish general/current fandom."
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_005",
+      "evidence_id": "ev_cov_kmodzelewski_005",
+      "decision": "accepted",
+      "corrections": [],
+      "alias_risks": [
+        "Do not resolve Chmielu from neighboring reviews or surname resemblance alone."
+      ],
+      "scope": "Positive preference is specific to the praised performance/program and this review; it does not establish general/current fandom."
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_006",
+      "evidence_id": "ev_cov_kmodzelewski_006",
+      "decision": "accepted",
+      "corrections": [],
+      "alias_risks": [],
+      "scope": "Positive preference is specific to the praised performance/program and this review; it does not establish general/current fandom."
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_007",
+      "evidence_id": "ev_cov_kmodzelewski_007",
+      "decision": "accepted",
+      "corrections": [],
+      "alias_risks": [
+        "Do not resolve Kamil or Marcin from neighboring authors’ event reviews."
+      ],
+      "scope": "Positive preference is specific to the praised performance/program and this review; it does not establish general/current fandom."
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_008",
+      "evidence_id": "ev_cov_kmodzelewski_008",
+      "decision": "accepted",
+      "corrections": [],
+      "alias_risks": [
+        "Do not resolve Kamila or Chmiela from neighboring authors’ event reviews."
+      ],
+      "scope": "Positive preference is specific to the praised performance/program and this review; it does not establish general/current fandom."
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_009",
+      "evidence_id": "ev_cov_kmodzelewski_009",
+      "decision": "accepted",
+      "corrections": [],
+      "alias_risks": [],
+      "scope": "Positive preference is specific to the praised performance/program and this review; it does not establish general/current fandom."
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_003",
+      "evidence_id": null,
+      "decision": "skipped",
+      "corrections": [],
+      "alias_risks": [
+        "The criticized support performer is unnamed; do not infer the person from candidate 006 or event adjacency."
+      ],
+      "scope": "Karol-only positive evidence; unnamed support criticism remains unattributed."
+    }
+  ],
+  "missing_inputs": [
+    "The requested manifest20261031-coverage-karol-modzelewski.json was not present anywhere under the repository; the extraction, collection, and canonicalization run artifacts were available."
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101-coverage-blazej-krajewski",
+  "stage": "extraction",
+  "status": "complete",
+  "extractor": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1"
+  },
+  "paths": {
+    "source_candidates": "evidence/coverage-expansion/blazej-krajewski.source-candidates.canonical.jsonl",
+    "evidence_unreviewed": "evidence/coverage-expansion/blazej-krajewski.evidence.unreviewed.jsonl"
+  },
+  "counts": {
+    "source_candidates": 2,
+    "extracted": 2,
+    "skipped": 0
+  },
+  "lineage": {
+    "source_candidates_sha256": "f6e89332dc51c964dc55d93913811c1023966090de745f509cffaba727f0f4c1",
+    "evidence_unreviewed_sha256": "bb4e8df114bf3a589ae417f116d21be6156fedf4936d97ddc38e65dcecd277b4",
+    "candidate_ids": [
+      "src_cov_bkrajewski_001",
+      "src_cov_bkrajewski_002"
+    ],
+    "evidence_ids": [
+      "ev_cov_bkrajewski_001",
+      "ev_cov_bkrajewski_002"
+    ]
+  },
+  "decisions": [
+    {
+      "candidate_id": "src_cov_bkrajewski_001",
+      "disposition": "evidence",
+      "evidence_id": "ev_cov_bkrajewski_001",
+      "evidence_class": "same_user_coendorsement",
+      "positive_preferences": [
+        "adam-sobaniec",
+        "blazej-krajewski"
+      ],
+      "unknown_preferences": [],
+      "notes": "Explicitly praises Adam as a support idea and Błażej’s performance. Historical, event-specific review (Wrocław, 2022-02-13); not current/general preference."
+    },
+    {
+      "candidate_id": "src_cov_bkrajewski_002",
+      "disposition": "evidence",
+      "evidence_id": "ev_cov_bkrajewski_002",
+      "evidence_class": "fan_recommendation",
+      "positive_preferences": [],
+      "unknown_preferences": [
+        "blazej-krajewski",
+        "adam-sobaniec"
+      ],
+      "notes": "The author says earlier programs of both men did not disappoint, praises the humor, and would gladly watch future programs. Positive fan sentiment/recommendation; “Lubię to” does not unambiguously establish preference for either individual. Historical event review (Dzierżoniów, 2022-02-12); no current/general preference inferred."
+    }
+  ],
+  "validation": {
+    "command": "python scripts/evidence_pipeline.py validate --kind evidence evidence/coverage-expansion/blazej-krajewski.evidence.unreviewed.jsonl",
+    "result": "passed: 2 records"
+  },
+  "surprises": [
+    "The reviews support different preference conclusions: the first explicitly praises each performer; the second supports positive joint appraisal but not individual preference."
+  ],
+  "skips": []
+}

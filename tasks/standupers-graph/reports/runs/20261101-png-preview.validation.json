@@ -1,0 +1,13 @@
+{
+  "reason": "Repeated2xPNGconversionstalledat23054x6912; no claimthatthiscausedallpreviousheapoverloads.",
+  "change": "Sharedgraph_pipeline.py uses rsvg-convert-w4000 instead of-z2;READMEupdated",
+  "unit_tests": "22passed",
+  "actual_renderer_smoke": {
+    "png_width": 4000,
+    "png_height": 1200
+  },
+  "git_diff_check": "passed",
+  "data_scorer_changed": false,
+  "new_dependencies_or_tests_added": false,
+  "commit_or_push": false
+}

@@ -1,0 +1,374 @@
+{
+  "graph": "graph/coverage-kaminski-reviewed/graph.json",
+  "positive_linked": 39,
+  "isolated_from_positive_graph": 61,
+  "definition": "No positive degree under displayable existingfanlinks; contested pairs and unknownpreference mentions excluded. Candidate count is canonicaltargetID count, not proof of targetedresearch, preference or sourceread completeness. Ranking is a planning heuristic only.",
+  "performers": [
+    {
+      "rank": 2,
+      "performer_id": "mama-na-obrotach",
+      "name": "Mama Na Obrotach (Klaudia Klimczyk)",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 5,
+      "performer_id": "magda-kubicka",
+      "name": "Magda Kubicka",
+      "canonical_candidate_target_count": 6
+    },
+    {
+      "rank": 9,
+      "performer_id": "piotr-jelen",
+      "name": "Piotr Jeleń",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 11,
+      "performer_id": "blazej-krajewski",
+      "name": "Błażej Krajewski",
+      "canonical_candidate_target_count": 2
+    },
+    {
+      "rank": 12,
+      "performer_id": "piotr-latala",
+      "name": "Piotr Latała",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 13,
+      "performer_id": "pan-li",
+      "name": "Pan Li",
+      "canonical_candidate_target_count": 1
+    },
+    {
+      "rank": 17,
+      "performer_id": "tomasz-boras-borkowski",
+      "name": "Tomasz Boras Borkowski",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 20,
+      "performer_id": "michal-paszczyk",
+      "name": "Michał Paszczyk",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 21,
+      "performer_id": "grzegorz-dolniak",
+      "name": "Grzegorz Dolniak",
+      "canonical_candidate_target_count": 3
+    },
+    {
+      "rank": 22,
+      "performer_id": "adam-van-bendler",
+      "name": "Adam Van Bendler",
+      "canonical_candidate_target_count": 2
+    },
+    {
+      "rank": 23,
+      "performer_id": "sylwia-wiszowata",
+      "name": "Sylwia Wiszowata",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 25,
+      "performer_id": "rafal-rutkowski",
+      "name": "Rafał Rutkowski",
+      "canonical_candidate_target_count": 2
+    },
+    {
+      "rank": 26,
+      "performer_id": "pawel-chalupka",
+      "name": "Paweł Chałupka",
+      "canonical_candidate_target_count": 3
+    },
+    {
+      "rank": 29,
+      "performer_id": "maciej-kwiatkowski",
+      "name": "Maciej Kwiatkowski",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 31,
+      "performer_id": "marcin-zbigniew-wojciech",
+      "name": "Marcin Zbigniew Wojciech",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 34,
+      "performer_id": "tomasz-machnicki",
+      "name": "Tomasz Machnicki",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 35,
+      "performer_id": "arkadiusz-jaksa-jakszewicz",
+      "name": "Arkadiusz Jaksa Jakszewicz",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 36,
+      "performer_id": "katarzyna-piasecka",
+      "name": "Katarzyna Piasecka",
+      "canonical_candidate_target_count": 1
+    },
+    {
+      "rank": 39,
+      "performer_id": "tomek-kolecki",
+      "name": "Tomek Kołecki",
+      "canonical_candidate_target_count": 1
+    },
+    {
+      "rank": 40,
+      "performer_id": "bartosz-gajda",
+      "name": "Bartosz Gajda",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 41,
+      "performer_id": "ryszard-mazur",
+      "name": "Ryszard Mazur",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 42,
+      "performer_id": "wojtek-pieta",
+      "name": "Wojtek Pięta",
+      "canonical_candidate_target_count": 4
+    },
+    {
+      "rank": 44,
+      "performer_id": "michal-skubida",
+      "name": "Michał Skubida",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 46,
+      "performer_id": "patryk-gosinski",
+      "name": "Patryk Gosiński",
+      "canonical_candidate_target_count": 1
+    },
+    {
+      "rank": 47,
+      "performer_id": "ewa-stasiewicz",
+      "name": "Ewa Stasiewicz",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 49,
+      "performer_id": "piotr-splin",
+      "name": "Piotr Splin",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 51,
+      "performer_id": "ewa-blachnio",
+      "name": "Ewa Błachnio",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 52,
+      "performer_id": "pawel-konkiel",
+      "name": "Paweł Konkiel",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 54,
+      "performer_id": "jarek-legonkoff",
+      "name": "Jarek Legońkoff",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 57,
+      "performer_id": "kuba-dabrowski",
+      "name": "Kuba Dąbrowski",
+      "canonical_candidate_target_count": 4
+    },
+    {
+      "rank": 58,
+      "performer_id": "filip-brymora",
+      "name": "Filip Brymora",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 60,
+      "performer_id": "bartosz-strusinski",
+      "name": "Bartosz Strusiński",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 61,
+      "performer_id": "sebastian-rejent",
+      "name": "Sebastian Rejent",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 62,
+      "performer_id": "filip-puzyr",
+      "name": "Filip Puzyr",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 63,
+      "performer_id": "damian-skora",
+      "name": "Damian Skóra",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 64,
+      "performer_id": "robert-gorski",
+      "name": "Robert Górski",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 65,
+      "performer_id": "damian-viking-usewicz",
+      "name": "Damian Viking Usewicz",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 66,
+      "performer_id": "igor-kwiatkowski",
+      "name": "Igor Kwiatkowski",
+      "canonical_candidate_target_count": 4
+    },
+    {
+      "rank": 67,
+      "performer_id": "wojtek-fiedorczuk",
+      "name": "Wojtek Fiedorczuk",
+      "canonical_candidate_target_count": 1
+    },
+    {
+      "rank": 71,
+      "performer_id": "grzegorz-halama",
+      "name": "Grzegorz Halama",
+      "canonical_candidate_target_count": 1
+    },
+    {
+      "rank": 72,
+      "performer_id": "krzysztof-kasparek",
+      "name": "Krzysztof Kasparek",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 75,
+      "performer_id": "rafal-banas",
+      "name": "Rafał Banaś",
+      "canonical_candidate_target_count": 4
+    },
+    {
+      "rank": 76,
+      "performer_id": "rafal-sumowski",
+      "name": "Rafał Sumowski",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 78,
+      "performer_id": "michal-kempa",
+      "name": "Michał Kempa",
+      "canonical_candidate_target_count": 2
+    },
+    {
+      "rank": 79,
+      "performer_id": "lukasz-wolski",
+      "name": "Łukasz Wolski",
+      "canonical_candidate_target_count": 1
+    },
+    {
+      "rank": 80,
+      "performer_id": "marek-gajos-gajewski",
+      "name": "Marek Gajos Gajewski",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 82,
+      "performer_id": "szymon-baraniecki",
+      "name": "Szymon Baraniecki",
+      "canonical_candidate_target_count": 1
+    },
+    {
+      "rank": 83,
+      "performer_id": "synmojegotaty-bartek-skrobisz",
+      "name": "SynMojegoTaty (Bartek Skrobisz)",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 84,
+      "performer_id": "adam-gajda",
+      "name": "Adam Gajda",
+      "canonical_candidate_target_count": 2
+    },
+    {
+      "rank": 85,
+      "performer_id": "mariusz-dabrowski",
+      "name": "Mariusz Dąbrowski",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 86,
+      "performer_id": "karol-kopiec",
+      "name": "Karol Kopiec",
+      "canonical_candidate_target_count": 1
+    },
+    {
+      "rank": 87,
+      "performer_id": "marta-lojek",
+      "name": "Marta Lojek",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 90,
+      "performer_id": "czeslaw-mozil",
+      "name": "Czesław Mozil",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 91,
+      "performer_id": "mateusz-ipkis-dudek",
+      "name": "Mateusz Ipkis Dudek",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 92,
+      "performer_id": "maciek-buchwald",
+      "name": "Maciek Buchwald",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 94,
+      "performer_id": "jacek-noch",
+      "name": "Jacek Noch",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 95,
+      "performer_id": "krzysztof-sawczuk",
+      "name": "Krzysztof Sawczuk",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 96,
+      "performer_id": "aleksandra-radomska",
+      "name": "Aleksandra Radomska",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 97,
+      "performer_id": "martyna-podwysocka",
+      "name": "Martyna Podwysocka",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 99,
+      "performer_id": "patryk-trela",
+      "name": "Patryk Trela",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 100,
+      "performer_id": "cezary-pizewski",
+      "name": "Cezary Piżewski",
+      "canonical_candidate_target_count": 0
+    }
+  ]
+}

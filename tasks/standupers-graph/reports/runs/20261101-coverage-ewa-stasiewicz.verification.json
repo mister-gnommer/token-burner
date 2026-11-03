@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101-coverage-ewa-stasiewicz",
+  "stage": "independent_verification",
+  "status": "complete",
+  "surprises": [
+    "Saved full-page opens at collection raw_tool_results[5] and [8] reproduce the cited payload and excerpt hashes; they support the source-fidelity corrections.",
+    "JoeMonster sidebar items are unrelated page recommendations and provide no comparison target for the author’s generic “other comedians” contrast."
+  ],
+  "reviewer": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "verify-evidence-v3"
+  },
+  "inputs": {
+    "source_candidates": "evidence/coverage-expansion/ewa-stasiewicz.source-candidates.canonical.jsonl",
+    "evidence_unreviewed": "evidence/coverage-expansion/ewa-stasiewicz.evidence.unreviewed.jsonl",
+    "extraction_report": "reports/runs/20261101-coverage-ewa-stasiewicz.extraction.json",
+    "canonicalization_report": "reports/runs/20261101-coverage-ewa-stasiewicz.canonicalization.json",
+    "collection_report": "reports/runs/20261101-coverage-ewa-stasiewicz.collection.json",
+    "run_manifest": "reports/runs/20261101-coverage-ewa-stasiewicz.json",
+    "frozen_id_source": "data/standupers.json"
+  },
+  "counts": {
+    "candidates": 2,
+    "accepted": 1,
+    "uncertain": 0,
+    "rejected": 0,
+    "skipped": 1
+  },
+  "decisions": [
+    {
+      "candidate_id": "src_ewa_cov_001",
+      "decision": "skip",
+      "evidence_id": null,
+      "reason": "Upheld. Full JoeMonster author passage praises Ewa and contrasts her with unnamed generic “other comedians”; it neither identifies a frozen second performer nor establishes performer-to-performer style evidence. Related-video sidebar entries are unrelated recommendations. No peer or performance inference."
+    },
+    {
+      "candidate_id": "src_ewa_cov_002",
+      "decision": "record",
+      "evidence_id": "ev_ewa_cov_002",
+      "review_status": "accepted",
+      "reason": "Upheld. The author says “Lubię panią Ewę, lubię jej poczucie humoru” and recommends her. Explicit liking separately supports positive preference; the event appraisal is historical/event scoped and one mention only."
+    }
+  ],
+  "checks": {
+    "candidate_accounting": "2/2 exactly once: one recorded, one skipped; matches extraction accounting",
+    "source_excerpt_context_language": "exact match to canonical candidate for retained record; exact author excerpt and parent excerpts confirmed in full opened payload at raw_tool_results[8]",
+    "metadata": "published_at remains null; attached event date is not publication date; parent title/date are separate exact excerpts",
+    "identity": "heading “Stand-up: Ewa Stasiewicz” and sole mention surface “panią Ewę” resolve to frozen ewa-stasiewicz; source key remains platform-local",
+    "preference_and_class": "fan_recommendation, positive sentiment, positive personal preference; quote verbatim and in author excerpt; recommendation and preference evaluated separately",
+    "lineage": "extraction provider/model/prompt/run and confidence retained; only review fields changed",
+    "author_key_hashes": "both canonical keys recomputed from site:casefolded author hint using evidence_pipeline.author_key algorithm",
+    "integrity_hashes": [
+      {
+        "candidate_id": "src_ewa_cov_001",
+        "raw_tool_results_index": 5,
+        "payload_sha256": "7dbe0617d7c132860519273cf5dfe08c243200da6287bc52c13cc8f95d0e4010",
+        "excerpt_sha256": "d6f5ea6d5424539b971592df86d9a25a7e7b9ba24005603f328c8826eb64e4d8",
+        "payload_claim": "verified",
+        "excerpt_claim": "verified"
+      },
+      {
+        "candidate_id": "src_ewa_cov_002",
+        "raw_tool_results_index": 8,
+        "payload_sha256": "dec81da28d1dcf2c830310d3d1892688031abc277aa79254ef3f72f655fdb5ae",
+        "excerpt_sha256": "03ed591fd17a1863739988ec7cbf8f8103dab7c489c862c5ab335708afc0d28c",
+        "payload_claim": "verified",
+        "excerpt_claim": "verified"
+      }
+    ],
+    "file_hashes": {
+      "canonical_source_candidates_sha256": "5eedeffadeeaa86f7d9a79f46a45c70ef3484d21c39f092de02f0c8eb587f568",
+      "unreviewed_evidence_sha256": "75fc4d49bbc2a8ff40e6f41e7e233e90feebb56cc4aa651b7271ed2def14a5e9",
+      "final_evidence_sha256": "c99b9ef90960450cbbe84aa816a731d664fd10a4132e08de829acb0cd5e1cec3"
+    }
+  },
+  "alias_risks": [
+    "Rafał is a common first-name display handle; retain only fan_d35b63a0b329e9ba as source-local key. No cross-platform identity or author merge."
+  ],
+  "coverage_gaps": [
+    "This slice yields one individual Ewa recommendation and no peer comparison/co-preference evidence."
+  ],
+  "graph_claim": null,
+  "validation": {
+    "validator_command": "python3 scripts/evidence_pipeline.py validate --kind evidence evidence/coverage-expansion/ewa-stasiewicz.evidence.jsonl",
+    "validator_result": "passed: validated 1 evidence record; schema and frozen performer ID valid",
+    "focused_executable_checks": "passed: 2/2 accounting exactly once; canonical excerpt/context/language/source metadata/run lineage; positive frozen identity and verbatim surface/preference quote; evidence class/preferences; JoeMonster/KupBilecik full-open payload presence and reported hash claims; no pair/graph inference."
+  }
+}

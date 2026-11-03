@@ -1,0 +1,59 @@
+{
+  "records": 96,
+  "canonical_candidates": 112,
+  "relations": 88,
+  "corroborated_relations": 14,
+  "eligible_provisional_relations": 53,
+  "contested_relations": 21,
+  "positive_linked_nodes": 47,
+  "corroborated_linked_nodes": 17,
+  "new_corroborated_linked_performers": [
+    "jacek-stramik",
+    "lukasz-lotek-lodkowski",
+    "rafal-paczes"
+  ],
+  "largest_component": 33,
+  "component_sizes": [
+    33,
+    4,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "strict_loader_and_schemas": "pass",
+  "exact_relations_deferred_reproduction": "pass",
+  "cached_photos_reused": 100,
+  "png_dimensions": [
+    4000,
+    958
+  ],
+  "source_role_caveat": "Professional comedian explicit personal appraisals, not representative audience sample. No preference assigned to focal Kopiec/style-only names.",
+  "graph_inputs": [
+    "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch01-corroboration.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch02.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch03.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch04.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch05.context-reviewed.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch06.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch07.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch09.context-reviewed.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch10.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch06-catchup.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-magda-kubicka.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-olka-szczesniak.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-karol-modzelewski.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-wojtek-pieta.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-wojciech-kaminski.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-source-first-01.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-source-first-01-followup.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-fan-forums-b-followup.json",
+    "tasks/standupers-graph/reports/runs/20261101-coverage-source-page-recovery.json",
+    "tasks/standupers-graph/reports/runs/20261101-coverage-source-page-tail.json",
+    "tasks/standupers-graph/reports/runs/20261101-coverage-blazej-krajewski.json",
+    "tasks/standupers-graph/reports/runs/20261101-coverage-karol-kopiec.json"
+  ]
+}

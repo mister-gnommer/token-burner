@@ -1,0 +1,181 @@
+{
+  "run_id": "20261031-coverage-magda-kubicka",
+  "correction_model": {
+    "provider": "codex",
+    "model": "gpt-6.1-terra",
+    "reasoning_effort": "high"
+  },
+  "status": "partial: source access blocked; quarantined records must be excluded from canonical and extraction",
+  "source_verified_ids": [
+    "src_cov_mkubicka_001"
+  ],
+  "quarantined_unverified_ids": [
+    "src_cov_mkubicka_002",
+    "src_cov_mkubicka_003",
+    "src_cov_mkubicka_004"
+  ],
+  "duplicate_ids": [],
+  "solo_skip_ids": [
+    "src_cov_mkubicka_003"
+  ],
+  "budget": {
+    "original_queries": 17,
+    "original_opens": 6,
+    "additional_query_cap": 4,
+    "additional_open_cap": 8,
+    "additional_queries": 0,
+    "additional_opens": 8,
+    "combined_query_cap": 24,
+    "combined_open_cap": 24,
+    "combined_queries": 17,
+    "combined_opens": 14,
+    "additional_queries_unused": 4,
+    "additional_opens_unused": 0,
+    "original_queries_unused": 7,
+    "original_opens_unused": 10
+  },
+  "query_log": [],
+  "open_log": [
+    {
+      "n": 1,
+      "url": "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169",
+      "method": "T3 preview_open",
+      "status": "failed: Too many server browser tabs are open. Close one with t3_preview_close, or reuse a tabId from preview_status tabs."
+    },
+    {
+      "n": 2,
+      "url": "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169",
+      "method": "T3 preview_open retry",
+      "status": "failed: Too many server browser tabs are open. Close one with t3_preview_close, or reuse a tabId from preview_status tabs."
+    },
+    {
+      "n": 3,
+      "url": "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169",
+      "method": "web open",
+      "status": "opened; post 3.1 complete"
+    },
+    {
+      "n": 4,
+      "url": "https://www.kupbilecik.pl/pl/comments/3704/magda-kubicka-stand-up?page_comments=104",
+      "method": "web open",
+      "status": "failed: Cache miss"
+    },
+    {
+      "n": 5,
+      "url": "https://www.kupbilecik.pl/pl/comments/3704/magda-kubicka-stand-up?page_comments=104",
+      "method": "T3 preview_open after cache miss",
+      "status": "failed: Too many server browser tabs are open. Close one with t3_preview_close, or reuse a tabId from preview_status tabs."
+    },
+    {
+      "n": 6,
+      "url": "https://www.kupbilecik.pl/en/comments/8032/stand-up-magda-kubicka-amp-wiolka-walaszczyk",
+      "method": "web open",
+      "status": "failed: URL is not accessible via this tool"
+    },
+    {
+      "n": 7,
+      "url": "https://www.kupbilecik.pl/en/comments/8032/stand-up-magda-kubicka-amp-wiolka-walaszczyk",
+      "method": "T3 preview_open after web failure",
+      "status": "failed: Too many server browser tabs are open. Close one with t3_preview_close, or reuse a tabId from preview_status tabs."
+    },
+    {
+      "n": 8,
+      "url": "https://www.kupbilecik.pl/en/comments/8032/stand-up-magda-kubicka-amp-wiolka-walaszczyk",
+      "method": "curl fallback",
+      "status": "failed: curl: (6) Could not resolve host: www.kupbilecik.pl; HTTP 000"
+    }
+  ],
+  "discrepancies": [
+    {
+      "id": "src_cov_mkubicka_001",
+      "locator": "GRYOnline comment 3.1, Megera_, 2023-01-14 22:11; parent comment 3, Ozzin_NPC, 2023-01-14 21:56",
+      "proof": "Full author post and parent retrieved from the opened forum page. Parent explicitly names Olka Szczęśniak; Marta Łojok is not present in frozen roster. Collector report incorrectly gave post time 22:01. No other frozen IDs are named in the post.",
+      "before": {
+        "schema_version": 2,
+        "candidate_id": "src_cov_mkubicka_001",
+        "run_id": "20261031-coverage-magda-kubicka",
+        "target_performer_ids": [
+          "magda-kubicka",
+          "wiolka-walaszczyk",
+          "olka-szczesniak"
+        ],
+        "site": "gry-online.pl",
+        "url": "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169",
+        "retrieved_at": "2026-10-31T18:38:27Z",
+        "published_at": "2023-01-14",
+        "author_hint": "Megera_",
+        "author_key": null,
+        "excerpt": "Ogólnie dość lubię kobiety w polskim stand-upie, ale wydaje mi się, że im mniej popularna, tym lepsza... Wiolka Walaszczyk i Magda Kubicka",
+        "language": "pl",
+        "collector": {
+          "provider": "codex",
+          "model": "gpt-6-luna",
+          "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+        },
+        "context": []
+      },
+      "after": {
+        "schema_version": 2,
+        "candidate_id": "src_cov_mkubicka_001",
+        "run_id": "20261031-coverage-magda-kubicka",
+        "target_performer_ids": [
+          "magda-kubicka",
+          "wiolka-walaszczyk",
+          "olka-szczesniak"
+        ],
+        "site": "www.gry-online.pl",
+        "url": "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169",
+        "retrieved_at": "2026-10-31T18:45:41Z",
+        "published_at": "2023-01-14",
+        "author_hint": "Megera_",
+        "author_key": null,
+        "excerpt": "Olka jest \"rezydentką\" mojej mieściny :)\nOgólnie dość lubię kobiety w polskim stand-upie, ale wydaje mi się, że im mniej popularna, tym lepsza... Wiolka Walaszczyk i Magda Kubicka to są persony na Polskę, Olka nadal trochę regionalna, ale np. Marta Łojok (o której mało kto słyszał) zrobiła przed Olką taki support, że ryczałam ze śmiechu i Ola nie była w stanie jej dogonić.",
+        "language": "pl",
+        "collector": {
+          "provider": "codex",
+          "model": "gpt-6-luna",
+          "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+        },
+        "context": [
+          {
+            "role": "parent",
+            "url": "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169",
+            "author_hint": "Ozzin_NPC",
+            "author_key": null,
+            "excerpt": "Nie oglądam. Poza jednym wyjątkiem. Algorytm FB zaproponował mi Olkę Szczęśniak i nie było to takie głupie. Tutaj pierwszy lepszy szort:\n\nhttps://www.youtube.com/shorts/95xdw-2gxF0\n[EDIT]: Ta, Olka w sumie też rzuca k***mi na czas i nie jest to humor pierwszej próby, ale parę tekstów ma IMO niezłych."
+          }
+        ]
+      }
+    },
+    {
+      "id": "src_cov_mkubicka_002",
+      "locator": "Original ledger: Justyna, page 104, review 2021-07-10, Gdańsk event 2021-07-06 19:00",
+      "proof": "Original ledger describes omitted venue caveats and recommendation; full text inaccessible during correction. Filip remains unresolved. Exact venue and lineup were not independently verified. Raw excerpt preserved, quarantined."
+    },
+    {
+      "id": "src_cov_mkubicka_003",
+      "locator": "Original ledger: Dariusz, page 104, review 2021-07-10, Elbląg event 2021-07-08 20:00",
+      "proof": "Original ledger describes a longer review without a named peer; solo-scope skip, independently unverified and quarantined. Raw excerpt preserved."
+    },
+    {
+      "id": "src_cov_mkubicka_004",
+      "locator": "Original ledger: Anna, event comments, review 2020-08-22, Olsztyn event 2020-08-20 20:00",
+      "proof": "Original ledger says the author strongly criticizes both performers in the joint show and calls the evening a waste; omitted continuation could not be recovered verbatim. Raw positive preamble preserved solely for audit and quarantined."
+    }
+  ],
+  "duplicate_audit": {
+    "result": "No matching author/post/excerpt found in existing evidence JSONL files; the same forum URL appears in src_b03c_001 but that is a different post and author. A matching first name Justyna on a different event is not sufficient to identify an author or duplicate.",
+    "limitation": "Records 002–004 could not be compared using full author text or source-local locators during this correction."
+  },
+  "blockers": [
+    "T3 preview_status returned available:false and no tabs. Four preview_open calls failed: Too many server browser tabs are open. Close one with t3_preview_close, or reuse a tabId from preview_status tabs.",
+    "Web open for page 104: Cache miss. Web open for event comments: URL is not accessible via this tool. Direct curl fallback: Could not resolve host. No access controls were bypassed."
+  ],
+  "source_routes": [
+    "GRYOnline forum page opened through web fallback; author and parent post verified.",
+    "KupBilecik page 104: web cache miss, T3 unavailable; original ledger is not independent verification.",
+    "KupBilecik event comments: web inaccessible, T3 unavailable, curl DNS failure."
+  ],
+  "schema_and_provenance": "Four original IDs and run IDs preserved; original collector metadata unchanged. Only verified 001 excerpt, separately attributed parent context, site hostname and retrieval time changed. Other records preserve raw text. Per-record quarantine is carried by this report because the schema forbids extra fields. Schema conformance does not establish evidentiary eligibility.",
+  "stop_reason": "Correction-specific eight-navigation cap exhausted; no extra searches used. Unretrieved posts remain quarantined; full verification and the 004 negative continuation need a later authorized audit."
+}

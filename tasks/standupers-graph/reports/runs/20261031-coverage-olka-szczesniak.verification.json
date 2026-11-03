@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "reviewer": "codex/gpt-6-luna",
+  "review_prompt": "verify-evidence-v3",
+  "counts": {
+    "canonical_candidates": 2,
+    "accounted_exactly_once": 2,
+    "accepted": 2,
+    "uncertain": 0,
+    "rejected": 0,
+    "skipped": 0
+  },
+  "source_accounting": [
+    {
+      "candidate_id": "src_cov_oszczesniak_001",
+      "evidence_id": "ev_cov_oszczesniak_001",
+      "decision": "accepted",
+      "corrections": []
+    },
+    {
+      "candidate_id": "src_cov_oszczesniak_002",
+      "evidence_id": "ev_cov_oszczesniak_002",
+      "decision": "accepted",
+      "corrections": [
+        "Kept the bare first name Michał unresolved while retaining positive sentiment and positive preference at event scope."
+      ]
+    }
+  ],
+  "source_concentration": {
+    "by_site": {
+      "kupbilecik.pl": 2
+    },
+    "by_url": {
+      "https://www.kupbilecik.pl/pl/comments/2709/olka-szczesniak?page_comments=111": 2
+    },
+    "independent_authors": 2,
+    "note": "Records remain independent by source-local author key; concentration reflects this small pilot slice only.",
+    "by_site_note": "Both Olka records share the KupBilecik page URL/archive family, but they are distinct dated reviews with distinct author keys. This is source-family concentration, not independent domain diversity."
+  },
+  "skip_audit": {
+    "canonical_skips": 0,
+    "quarantined_excluded": [],
+    "notes": "No canonical candidate skipped. No quarantined Olka candidates were in this assigned canonical input."
+  },
+  "executable_validation": {
+    "schema_command": "python tasks/standupers-graph/scripts/evidence_pipeline.py validate --kind evidence tasks/standupers-graph/evidence/coverage-pilot/olka-szczesniak.evidence.jsonl",
+    "schema_result": "PASS: 2 records validated",
+    "focused_checks": {
+      "canonical accounted exactly once": "pass",
+      "candidate/evidence frozen IDs": "pass",
+      "source/excerpt/language/context exact": "pass",
+      "actual per-performer run IDs/provenance unchanged": "pass",
+      "review fields": "pass",
+      "source-local author hashes": "pass",
+      "literal surfaces and preference quotes": "pass"
+    }
+  },
+  "coverage_note": "This verifies only the three supplied canonical candidates. No graph or coverage claim is made.",
+  "leading_surprises": [
+    "Olka001 is a positive joint-stage appraisal with fully named Michał Leja; preserve the 2019 event scope.",
+    "Olka002 independently and positively appraises Olka and a person named Michał, but the second event has no captured roster; identity remains null despite the matching first name.",
+    "Identity uncertainty in Olka002 is localized and does not require uncertain record status."
+  ],
+  "per_record_decisions": [
+    {
+      "candidate_id": "src_cov_oszczesniak_001",
+      "evidence_id": "ev_cov_oszczesniak_001",
+      "decision": "accepted",
+      "corrections": [],
+      "alias_risks": [
+        "Michał Leja fully named in this source; no unresolved alias risk."
+      ],
+      "scope": "Joint-stage appraisal in the 2019 Kalisz event."
+    },
+    {
+      "candidate_id": "src_cov_oszczesniak_002",
+      "evidence_id": "ev_cov_oszczesniak_002",
+      "decision": "accepted",
+      "corrections": [
+        "Kept the bare first name Michał unresolved while retaining positive sentiment and positive preference at event scope."
+      ],
+      "alias_risks": [
+        "Do not map bare Michał to Michał Leja using candidate 001; distinct author and event, with no source-specific roster evidence."
+      ],
+      "scope": "Positive joint appraisal in the Poznań event dated 2019-01-08."
+    }
+  ]
+}

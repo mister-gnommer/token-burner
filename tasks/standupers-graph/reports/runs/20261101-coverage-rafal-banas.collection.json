@@ -1,0 +1,248 @@
+{
+  "run_id": "20261101-coverage-rafal-banas",
+  "status": "complete_no_verified_candidates",
+  "scope": {
+    "rank": 75,
+    "id": "rafal-banas",
+    "name": "Rafał Banaś"
+  },
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+  },
+  "caps": {
+    "individual_queries": 24,
+    "open_click_navigation_attempts": 24,
+    "verified_candidates": 16
+  },
+  "usage": {
+    "queries": 16,
+    "open_click_navigation_attempts": 2,
+    "verified_candidates": 0
+  },
+  "reservations": [
+    {
+      "batch": 1,
+      "kind": "search_query",
+      "count": 4,
+      "reserved_at": null,
+      "queries": [
+        "\"Rafał Banaś\" stand-up ulubiony komik opinie forum",
+        "\"Rafała Banasia\" stand-up lubię komik",
+        "site:filmweb.pl \"Rafał Banaś\" stand-up opinie",
+        "site:wykop.pl \"Rafał Banaś\" stand-up komik"
+      ]
+    },
+    {
+      "batch": 2,
+      "kind": "search_query",
+      "count": 4,
+      "reserved_at": null,
+      "queries": [
+        "\"Rafał Banaś\" \"Karol Modzelewski\" opinie stand-up fani",
+        "\"Rafał Banaś\" \"Michał Leja\" lubię stand-up",
+        "\"Rafał Banaś\" \"Abelard Giza\" ulubiony stand-up",
+        "site:reddit.com \"Rafał Banaś\" stand-up komik opinie"
+      ]
+    },
+    {
+      "kind": "web_open",
+      "count": 1,
+      "reserved_at": null,
+      "urls": [
+        "https://www.kupbilecik.pl/pl/db/4829/stand-up-karol-modzelewski-rafal-banas?kb_ref=event&kb_ref_id=state_past"
+      ]
+    },
+    {
+      "batch": 3,
+      "kind": "search_query",
+      "count": 4,
+      "reserved_at": null,
+      "queries": [
+        "\"Rafał Banaś\" \"Bartosz Zalewski\" opinie stand-up",
+        "\"Rafał Banaś\" \"Adam Van Bendler\" fan opinie",
+        "\"Rafał Banaś\" blog recenzja stand-up",
+        "\"Rafał Banaś\" ulubieni stand-uperzy opinie"
+      ]
+    },
+    {
+      "kind": "web_open",
+      "count": 1,
+      "reserved_at": null,
+      "urls": [
+        "https://www.kupbilecik.pl/de/db/9456/stand-up-bartosz-zalewski-karol-modzelewski-rafal-banas-jasiek-borkowski"
+      ]
+    },
+    {
+      "batch": 4,
+      "kind": "search_query",
+      "count": 4,
+      "reserved_at": null,
+      "queries": [
+        "site:forum.gazeta.pl \"Rafał Banaś\" stand-up",
+        "site:gry-online.pl \"Rafał Banaś\" stand-up opinie",
+        "\"Rafał Banaś\" \"mój ulubiony\" komik",
+        "\"Rafał Banaś\" recenzja \"stand-up\" forum"
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "q": "\"Rafał Banaś\" stand-up ulubiony komik opinie forum",
+      "performer": "rafal-banas",
+      "result": "Only performer/catalog, aggregate rating, promotional, event, and unrelated results; no eligible author post surfaced.",
+      "batch": 1
+    },
+    {
+      "q": "\"Rafała Banasia\" stand-up lubię komik",
+      "performer": "rafal-banas",
+      "result": "No relevant results found for inflected full name.",
+      "batch": 1
+    },
+    {
+      "q": "site:filmweb.pl \"Rafał Banaś\" stand-up opinie",
+      "performer": "rafal-banas",
+      "result": "Filmweb result was a person/credit page; no viewer-authored review tied to Banaś.",
+      "batch": 1
+    },
+    {
+      "q": "site:wykop.pl \"Rafał Banaś\" stand-up komik",
+      "performer": "rafal-banas",
+      "result": "No qualifying Wykop discussion surfaced.",
+      "batch": 1
+    },
+    {
+      "q": "\"Rafał Banaś\" \"Karol Modzelewski\" opinie stand-up fani",
+      "performer": "rafal-banas",
+      "result": "Found the same canonical KupBilecik joint-event archive as batch08; no new forum or independent authored post.",
+      "batch": 2
+    },
+    {
+      "q": "\"Rafał Banaś\" \"Michał Leja\" lubię stand-up",
+      "performer": "rafal-banas",
+      "result": "Only ranking/list and streaming-credit pages; no personal fan statement.",
+      "batch": 2
+    },
+    {
+      "q": "\"Rafał Banaś\" \"Abelard Giza\" ulubiony stand-up",
+      "performer": "rafal-banas",
+      "result": "No personal favorite post surfaced; result set comprised source catalog/editorial materials.",
+      "batch": 2
+    },
+    {
+      "q": "site:reddit.com \"Rafał Banaś\" stand-up komik opinie",
+      "performer": "rafal-banas",
+      "result": "Reddit search returned no Banaś fan discussion; other results were ticket archive, editorial, or promotion.",
+      "batch": 2
+    },
+    {
+      "q": "\"Rafał Banaś\" \"Bartosz Zalewski\" opinie stand-up",
+      "performer": "rafal-banas",
+      "result": "KupBilecik archive for a four-performer event surfaced a search-result comment snippet by Jkb: the event was below expectations; Karol met expectations; Rafał had shortened a previously performed bit. The full page cache-missed; snippet remains quarantined.",
+      "batch": 3
+    },
+    {
+      "q": "\"Rafał Banaś\" \"Adam Van Bendler\" fan opinie",
+      "performer": "rafal-banas",
+      "result": "Promotional/performer-owned footage and non-fan content; no personal preference post.",
+      "batch": 3
+    },
+    {
+      "q": "\"Rafał Banaś\" blog recenzja stand-up",
+      "performer": "rafal-banas",
+      "result": "No independent personal blog review surfaced; source result types were artist/catalog and event listings.",
+      "batch": 3
+    },
+    {
+      "q": "\"Rafał Banaś\" ulubieni stand-uperzy opinie",
+      "performer": "rafal-banas",
+      "result": "Generic favorite-list/ranking results, not individually authored preferences.",
+      "batch": 3
+    },
+    {
+      "q": "site:forum.gazeta.pl \"Rafał Banaś\" stand-up",
+      "performer": "rafal-banas",
+      "batch": 4,
+      "result": "No qualifying Gazeta forum post surfaced."
+    },
+    {
+      "q": "site:gry-online.pl \"Rafał Banaś\" stand-up opinie",
+      "performer": "rafal-banas",
+      "batch": 4,
+      "result": "No qualifying GRYOnline authored discussion surfaced."
+    },
+    {
+      "q": "\"Rafał Banaś\" \"mój ulubiony\" komik",
+      "performer": "rafal-banas",
+      "batch": 4,
+      "result": "Results were archive/event/catalog pages, not an explicit personal favorite statement."
+    },
+    {
+      "q": "\"Rafał Banaś\" recenzja \"stand-up\" forum",
+      "performer": "rafal-banas",
+      "batch": 4,
+      "result": "A broad KupBilecik comment archive and unrelated event comments surfaced; no fully verified target preference."
+    }
+  ],
+  "page_attempts": [
+    {
+      "action": "web_open",
+      "url": "https://www.kupbilecik.pl/pl/db/4829/stand-up-karol-modzelewski-rafal-banas?kb_ref=event&kb_ref_id=state_past",
+      "purpose": "inspect actual discovered public review archive page and author block boundaries",
+      "result": "cache miss; shared preview capacity previously reported full, so no unchanged-capacity retry"
+    },
+    {
+      "action": "web_open",
+      "url": "https://www.kupbilecik.pl/de/db/9456/stand-up-bartosz-zalewski-karol-modzelewski-rafal-banas-jasiek-borkowski",
+      "purpose": "verify complete author review, date, and event block boundaries",
+      "result": "cache miss; preview fallback unavailable because shared preview capacity remains full; candidate quarantined as search-result snippet"
+    }
+  ],
+  "candidates": [],
+  "source_families_attempted": [
+    "independent discussion search: Reddit",
+    "Filmweb",
+    "Wykop",
+    "Gazeta forums",
+    "GRYOnline",
+    "KupBilecik authored review archives",
+    "personal blog searches"
+  ],
+  "source_family_gaps": [
+    "No accessible complete personal blog/fan-forum post found in this pass.",
+    "No independent full page review was verified; archive search snippets remain quarantined.",
+    "T3 preview was not retried because the shared preview server was already reported full."
+  ],
+  "dedup_review": {
+    "canonical_inputs": "graph/coverage-boras-reviewed/graph.json input_manifests; use reviewed replacements for batch01, batch05, batch09",
+    "prior_target_records": [
+      "ev_b08_a_006",
+      "ev_b08_a_007",
+      "ev_b08_a_008",
+      "ev_b08_a_009"
+    ],
+    "notes": "Prior target pair is one KupBilecik archive with mixed Banaś preference, including explicit opposition; preserve it and deduplicate author/post/excerpt, not page."
+  },
+  "started_at": "2026-11-01T11:53:31Z",
+  "stop_reason": "Completed four search batches across multiple independent-discussion and review-archive families. Two discovered archive pages each cache-missed; because the shared T3 preview server was already reported full, no unchanged-capacity preview retry was made. No complete new author block was verified; eight queries and twenty-two navigation attempts remain unused. Search-only material was not promoted.",
+  "remaining": {
+    "queries": 8,
+    "open_click_navigation_attempts": 22,
+    "verified_candidates": 16
+  },
+  "search_only_leads": [
+    {
+      "url": "https://www.kupbilecik.pl/de/db/9456/stand-up-bartosz-zalewski-karol-modzelewski-rafal-banas-jasiek-borkowski",
+      "locator": "Web search result for the four-performer KupBilecik archive, section Zuschauerkommentare, author Jkb; result excerpt gives a mixed event-scoped evaluation.",
+      "status": "quarantined; open attempt cache-missed and full author block/date not available"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/db/4829/stand-up-karol-modzelewski-rafal-banas?kb_ref=event&kb_ref_id=state_past",
+      "locator": "Search result 1search0, event title and aggregate 110-comment count.",
+      "status": "same source archive family as four canonical batch08 posts; not resaved; open attempt cache-missed"
+    }
+  ],
+  "retrieved_at_utc": "2026-11-01T11:55:23Z",
+  "reservation_time_note": "All reservation records were persisted before their corresponding calls. Provisional timestamps were removed because they were estimates, not clock readings."
+}

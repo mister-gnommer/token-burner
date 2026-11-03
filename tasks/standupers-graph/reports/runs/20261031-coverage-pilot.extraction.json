@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "run_id": "20261031-coverage-pilot-extraction",
+  "stage": "extraction",
+  "status": "complete_pending_independent_verification",
+  "workers": {
+    "extractor": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1"
+    }
+  },
+  "performer_runs": [
+    {
+      "run_id": "20261031-coverage-magda-kubicka",
+      "performer_id": "magda-kubicka",
+      "source_candidates": 1,
+      "extracted": 1,
+      "skipped": 0,
+      "evidence_ids": [
+        "ev_cov_mkubicka_001"
+      ]
+    },
+    {
+      "run_id": "20261031-coverage-olka-szczesniak",
+      "performer_id": "olka-szczesniak",
+      "source_candidates": 2,
+      "extracted": 2,
+      "skipped": 0,
+      "evidence_ids": [
+        "ev_cov_oszczesniak_001",
+        "ev_cov_oszczesniak_002"
+      ]
+    }
+  ],
+  "counts": {
+    "sources_accounted": 3,
+    "records": 3,
+    "skipped": 0,
+    "same_user_coendorsement": 2,
+    "fan_comparison": 1
+  },
+  "identity_decisions": [
+    {
+      "candidate_id": "src_cov_mkubicka_001",
+      "resolved": [
+        "magda-kubicka",
+        "wiolka-walaszczyk",
+        "olka-szczesniak"
+      ],
+      "unresolved": [
+        {
+          "surface_form": "Marta Łojok",
+          "performer_id": null,
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "candidate_id": "src_cov_oszczesniak_001",
+      "resolved": [
+        "olka-szczesniak",
+        "michal-leja"
+      ]
+    },
+    {
+      "candidate_id": "src_cov_oszczesniak_002",
+      "resolved": [
+        "olka-szczesniak"
+      ],
+      "unresolved": [
+        {
+          "surface_form": "Michałem",
+          "performer_id": null,
+          "confidence": 0.56
+        }
+      ]
+    }
+  ],
+  "leadingSurprises": [
+    "Magda’s sole corrected canonical record combines neutral popularity/region comparisons with one clear positive reaction to unresolved Marta Łojok; it does not establish Magda, Wiolka, or Olka preference.",
+    "Olka candidate 002 clearly appraises both people despite only a first name for Michał; identity remains unresolved, so it cannot add a full-identity corroboration pair."
+  ],
+  "source_accounting": [
+    {
+      "candidate_id": "src_cov_mkubicka_001",
+      "action": "extracted",
+      "evidence_id": "ev_cov_mkubicka_001"
+    },
+    {
+      "candidate_id": "src_cov_oszczesniak_001",
+      "action": "extracted",
+      "evidence_id": "ev_cov_oszczesniak_001"
+    },
+    {
+      "candidate_id": "src_cov_oszczesniak_002",
+      "action": "extracted",
+      "evidence_id": "ev_cov_oszczesniak_002"
+    }
+  ],
+  "quarantine_exclusion": "Magda raw src_cov_mkubicka_002, _003, and _004 are quarantined and absent from the canonical input; none was extracted. Existing old Karol/Olka source was outside these inputs.",
+  "notes": "All excerpts, source fields, language, and context copied from canonical candidates. All records remain unreviewed. No graph or coverage claim; independent verification is pending."
+}

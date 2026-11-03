@@ -1,0 +1,107 @@
+{
+  "surprises": [
+    "The interview contains two distinct image-related labels: a subject-specific caption identifying Aleksandra Radomska and separate photographer-credit language thanking Ola Radomska for photos. The subject mapping is supported by the former together with the interview title/body and owned stand-up page, not by credit attribution."
+  ],
+  "run_id": "20261101-radomska-identity-review",
+  "stage": "independent_identity_review",
+  "status": "complete",
+  "reviewer": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "reasoning_effort": "medium"
+  },
+  "scope": {
+    "evidence_id": "ev_cth02a_003",
+    "candidate_id": "src_cth02a_003",
+    "original_extraction_run_id": "20261101-coverage-thread-harvest-02",
+    "decision": "accepted",
+    "original_status": "accepted"
+  },
+  "decision": {
+    "surface_form": "Olkę Radomską",
+    "performer_id": "aleksandra-radomska",
+    "identity_confidence": 0.91,
+    "rationale": "Qualified cross-source contextual identity mapping. The editorial interview title names Olka Radomska; same interview body addresses its first-person subject as Radomska; its subject-specific image caption identifies Aleksandra Radomska. The owned stand-up page independently self-identifies as Aleksandra Radomska. The mapping is strong, while explicitly not a self-authored alias assertion. Photographer credit alone would be insufficient and is not the basis."
+  },
+  "source_assessment": [
+    {
+      "url": "https://martasoja.pl/nie-zawsze-idzie-z-gorki-czyli-olka-radomska-o-tym-jak-pracowala-na-swoj-sukces-wywiad/",
+      "role": "editorial contextual linkage",
+      "proof": [
+        "Title: “Nie zawsze idzie z górki czyli Olka Radomska o tym jak pracowała na swój sukces [wywiad]”",
+        "Interview addresses its subject as Radomska and uses first-person answers",
+        "Subject-specific caption: “Aleksandra Radomska - o tym co ma w głowie”",
+        "Separate photo-credit wording: “Aleksandra Radomska - fotonka”; thanks Ola Radomska for sharing photos"
+      ],
+      "limitation": "Editorial framing and caption, not direct self-authored alias wording; credit language alone does not establish interview-subject identity."
+    },
+    {
+      "url": "https://mamwatpliwosc.pl/standup/",
+      "role": "performer-owned corroboration",
+      "proof": [
+        "“Nazywam się Aleksandra Radomska”",
+        "Stand-up page states she has been on stage since 2021"
+      ],
+      "limitation": "Does not itself use Olka."
+    }
+  ],
+  "original_to_final_delta": {
+    "mentions[4].performer_id": {
+      "from": null,
+      "to": "aleksandra-radomska"
+    },
+    "mentions[4].confidence": {
+      "from": 0.69,
+      "to": 0.91
+    },
+    "review.status": {
+      "from": "accepted",
+      "to": "accepted"
+    },
+    "review.reviewer": {
+      "from": "codex/gpt-6-luna",
+      "to": "codex/gpt-6-luna"
+    },
+    "review.notes": "Replaced prior unresolved-identity note with qualified linkage reasoning. All other fields/values match original exactly."
+  },
+  "invariants": {
+    "schema_version": 3,
+    "id": "ev_cth02a_003",
+    "candidate_id": "src_cth02a_003",
+    "source_excerpt_context_dates_preserved": true,
+    "extraction_provenance_preserved": true,
+    "original_extraction_run_id": "20261101-coverage-thread-harvest-02",
+    "other_mentions_exactly_preserved": true,
+    "positive_preference_sentiment_and_quote_preserved": true,
+    "abelarda_unresolved_null_preserved": true,
+    "negative_lotek_preference_preserved": true,
+    "no_new_fan_or_source_collected": true,
+    "no_global_alias_table_or_new_fan_row": true,
+    "visual_or_face_matching_used": false,
+    "source_fields_and_extraction_object_byte_value_match_original": true
+  },
+  "budget": {
+    "additional_queries": 0,
+    "additional_page_reads": 0,
+    "prior_queries": 2,
+    "prior_page_reads": 4,
+    "cumulative_queries": 2,
+    "cumulative_page_reads": 4,
+    "query_ceiling": 24,
+    "page_ceiling": 24,
+    "remaining_queries": 22,
+    "remaining_pages": 20,
+    "original_A_B_quota_renewed_or_charged": false
+  },
+  "validation": {
+    "automated_evidence_validator": "passed: 1 record",
+    "explicit_evidence_v3_schema": "passed",
+    "lineage_quote_frozen_id_status_checks": "passed",
+    "non_target_mentions_and_source_field_exact_match": "passed"
+  },
+  "integrity": {
+    "source_excerpt_sha256": "3adaa41bb081011648388e5bc293e1045a6368ae61be14df3e6c99a8fed346d0",
+    "preference_quote_sha256": "d6ffd6abde0ad911ea8f26950a26e7c197b6c63ee6a0ecb90401dde99dae89c3",
+    "frozen_id_exists": true
+  }
+}

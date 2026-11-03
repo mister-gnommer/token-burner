@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101-coverage-blazej-krajewski",
+  "reviewer": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "reasoning_effort": "medium",
+    "prompt_version": "verify-evidence-v3"
+  },
+  "inputs": {
+    "source_candidates": "evidence/coverage-expansion/blazej-krajewski.source-candidates.canonical.jsonl",
+    "evidence_unreviewed": "evidence/coverage-expansion/blazej-krajewski.evidence.unreviewed.jsonl",
+    "schema": "data/schemas/evidence-v3.schema.json",
+    "frozen_identities": "data/standupers.json",
+    "run_manifest": "reports/runs/20261101-coverage-blazej-krajewski.json",
+    "canonicalization_report": "reports/runs/20261101-coverage-blazej-krajewski.canonicalization.json",
+    "extraction_report": "reports/runs/20261101-coverage-blazej-krajewski.extraction.json"
+  },
+  "output": "evidence/coverage-expansion/blazej-krajewski.evidence.jsonl",
+  "surprises": [
+    "Record 002 supports positive individual event-specific appraisals of both performers: the author names their earlier programs, says they did not disappoint, says “Lubię to,” and wants to see their future programs. The extraction left both preferences unknown; this review treats the full sequence as absolute positive evaluation under the rubric.",
+    "Both reviews are separate source-local author labels on the same KupBilecik archive page. They are not independent platforms or representative audience samples."
+  ],
+  "counts": {
+    "candidates": 2,
+    "records_reviewed": 2,
+    "accepted": 2,
+    "uncertain": 0,
+    "rejected": 0,
+    "skipped": 0,
+    "duplicate_candidates": 0,
+    "duplicate_evidence_ids": 0
+  },
+  "coverage": {
+    "candidate_ids": [
+      "src_cov_bkrajewski_001",
+      "src_cov_bkrajewski_002"
+    ],
+    "evidence_ids": [
+      "ev_cov_bkrajewski_001",
+      "ev_cov_bkrajewski_002"
+    ],
+    "exact_candidate_coverage": "2/2"
+  },
+  "records": [
+    {
+      "candidate_id": "src_cov_bkrajewski_001",
+      "evidence_id": "ev_cov_bkrajewski_001",
+      "decision": "accepted",
+      "issues": [
+        "Krajweski is the source typo/transposition; identity mapping is contextual, not a correctly spelled surface."
+      ],
+      "corrections": [
+        "Reduced Błażej mention confidence from 0.99 to 0.93 to reflect the transposed surname spelling; retained the verbatim form."
+      ],
+      "identity_limits": "Błażej identity is strongly supported by the same review naming Adam Sobaniec in the Krajewski show archive context, but the spelling itself is imperfect. Adam is explicitly full-named.",
+      "preference_scope": "Positive appraisals of Adam as a support choice and Błażej’s performance at the Wrocław event on 2022-02-13; no current/general preference."
+    },
+    {
+      "candidate_id": "src_cov_bkrajewski_002",
+      "evidence_id": "ev_cov_bkrajewski_002",
+      "decision": "accepted",
+      "issues": [
+        "Extraction conservatively marked preference unknown and used fan_recommendation despite a positive linked evaluation of both named performers."
+      ],
+      "corrections": [
+        "Changed class to same_user_coendorsement; set both preferences positive with a verbatim quote linking their earlier programs to “Nie zawiodłem się.”"
+      ],
+      "identity_limits": "The surnames appear only in declined forms Krajewskiego and Sobańca, but their source-backed references map to the frozen identities in context; no first-name forms were invented.",
+      "preference_scope": "Positive appraisal of the reviewed programs/event in Dzierżoniów on 2022-02-12. Future attendance is conditional; this is not current/general preference."
+    }
+  ],
+  "integrity_checks": {
+    "source_excerpt_context_language_equal": "checked against canonical candidates",
+    "source_author_hashes": "preserved from canonical candidates",
+    "extraction_lineage": "preserved: codex/gpt-6-luna, extract-evidence-v3+favorite-reply-context-v1+batch-run-v1, run 20261101-coverage-blazej-krajewski",
+    "literal_surfaces_and_quotes": "checked; preference quotes are verbatim substrings",
+    "frozen_ids": "blazej-krajewski and adam-sobaniec verified in frozen identities",
+    "reviewer_status": "both accepted; reviewer set to codex/gpt-6-luna medium",
+    "source_and_event_limits": "same archive URL/page, separate author hashes; event/date details recorded in source extraction notes; no graph claim made"
+  },
+  "skips": [],
+  "graph_claim": "none"
+}

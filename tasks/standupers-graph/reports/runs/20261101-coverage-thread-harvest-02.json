@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101-coverage-thread-harvest-02",
+  "stage": "batch",
+  "batch": 1,
+  "status": "completed",
+  "performer_ids": [
+    "abelard-giza",
+    "aleksandra-radomska",
+    "antoni-syrek-dabrowski",
+    "filip-puzyr",
+    "kacper-rucinski",
+    "lukasz-lotek-lodkowski",
+    "magda-kubicka",
+    "olka-szczesniak",
+    "pan-li",
+    "piotrek-szumowski",
+    "rafal-paczes",
+    "wiolka-walaszczyk"
+  ],
+  "paths": {
+    "source_candidates": "evidence/coverage-thread-harvest-02/source-candidates.canonical.jsonl",
+    "evidence_unreviewed": "evidence/coverage-thread-harvest-02/evidence.unreviewed.jsonl",
+    "evidence": "evidence/coverage-thread-harvest-02/evidence.jsonl",
+    "verification_report": "reports/runs/20261101-coverage-thread-harvest-02.verification.json"
+  },
+  "workers": {
+    "collector": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "collect-fan-evidence-v3+source-first-fan-discovery-v1"
+    },
+    "extractor": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1"
+    },
+    "verifier": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "verify-evidence-v3"
+    }
+  },
+  "counts": {
+    "source_candidates": 4,
+    "extracted": 3,
+    "accepted": 3,
+    "uncertain": 0,
+    "rejected": 0
+  },
+  "surprises": [
+    "Four distinct Gazeta author posts on a previously used thread. A/B use original unused quotas; no new searches.",
+    "Three raw A run IDs had a glued-label prefix, normalized in canonical data with raw preserved.",
+    "Possible Radomska short-name identity and one source containing only one explicit frozen target require independent adjudication."
+  ],
+  "notes": "Four unique historical Gazeta authored posts;3independently accepted records and1reasoned A002 skip. All source text retained; canonical run metadata/hash normalization audited. Negative Lotek preference preserved; Radomska/Abelarda identities unresolved. Original A allowance now24queries/24opens/16raw slots after one failed identity attempt; B12queries/12opens/2raw slots. No quota renewal or style claims.",
+  "created_at": "2026-11-01T12:20:27Z",
+  "updated_at": "2026-11-01T12:31:29Z"
+}

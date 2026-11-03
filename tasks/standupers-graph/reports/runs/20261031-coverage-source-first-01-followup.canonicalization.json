@@ -1,0 +1,29 @@
+{
+  "raw_candidates": 6,
+  "canonical_new_posts": 2,
+  "canonical_ids": [
+    "src_csf01f_003",
+    "src_csf01f_005"
+  ],
+  "duplicate_posts_excluded": {
+    "src_csf01f_001": "src_b01c_005",
+    "src_csf01f_002": "src_b02b_002",
+    "src_csf01f_004": "src_b01b_003",
+    "src_csf01f_006": "src_b01b_002"
+  },
+  "raw_preserved": true,
+  "dedup_basis": "Same source-local author and authored post on same discussion. Nevsr1 direct-comment URL versus thread URL normalized by identity/post text; katarrynka emoji rendering differs. Exact text for other duplicates. No fan-count inflation.",
+  "canonical_changes": "Author/context-author hashes computed; text/source context unchanged. Missing target IDs in003 are not proof of absent mentions; extractor must inspect fullpost.",
+  "usage": {
+    "continuation_queries": 5,
+    "continuation_opens": 3,
+    "original_A_queries": 17,
+    "original_A_opens": 6,
+    "raw_candidate_slots_consumed": 8,
+    "remaining_queries": 7,
+    "remaining_opens": 18,
+    "remaining_raw_slots_conservatively": 8
+  },
+  "deviation": "Reservation write failed due shell quoting before firstopen; attempt counted after, noovercap.",
+  "collector_dedup_error": "Only two recently added posts were excluded; four older canonical posts were erroneously resaved. Parent removed them before extraction."
+}

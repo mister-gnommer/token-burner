@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "run_id": "20261031-coverage-wojtek-pieta",
+  "stage": "extraction",
+  "status": "complete",
+  "performer_ids": [
+    "wojtek-pieta"
+  ],
+  "extractor": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1"
+  },
+  "inputs": {
+    "source_candidates": "evidence/coverage-pilot/wojtek-pieta.source-candidates.canonical.jsonl",
+    "manifest": "reports/runs/20261031-coverage-wojtek-pieta.json"
+  },
+  "output": "evidence/coverage-pilot/wojtek-pieta.evidence.unreviewed.jsonl",
+  "candidate_count": 4,
+  "counts": {
+    "evidence": 3,
+    "skipped": 1
+  },
+  "Surprises": [
+    "Candidate 004 is a verified KupBilecik ticket review recovered from the Bartosz Zalewski archive; it is separate from the unverified Wykop igns snippet, which remains excluded.",
+    "Candidate 001 explicitly praises both Wojtek and support Filip, but the first name cannot be resolved to a frozen performer ID from supplied evidence.",
+    "Candidate 004 praises Bartosz and says Wojtek appealed less only in a relative comparison; the latter is not coded as an absolute negative preference."
+  ],
+  "dispositions": [
+    {
+      "candidate_id": "src_cov_wpieta_001",
+      "status": "evidence",
+      "evidence_id": "ev_cov_wpieta_001",
+      "evidence_class": "same_user_coendorsement",
+      "identities": [
+        {
+          "surface_form": "Wojtek",
+          "performer_id": "wojtek-pieta"
+        },
+        {
+          "surface_form": "Filip",
+          "performer_id": null
+        }
+      ],
+      "preference": "positive event-specific personal appreciation for both named performers; unresolved Filip identity retained null",
+      "scope": "Tarnów show 2024-09-06"
+    },
+    {
+      "candidate_id": "src_cov_wpieta_002",
+      "status": "evidence",
+      "evidence_id": "ev_cov_wpieta_002",
+      "evidence_class": "fan_recommendation",
+      "identities": [
+        {
+          "surface_form": "Wojtka",
+          "performer_id": "wojtek-pieta"
+        },
+        {
+          "surface_form": "Grzegorza Dolniaka",
+          "performer_id": "grzegorz-dolniak"
+        }
+      ],
+      "preference": "positive personal appreciation for Wojtek; Dolniak unknown and context-only",
+      "scope": "earlier Dolniak show and later Wojtek show in Racibórz; no preference inferred from Dolniak attendance"
+    },
+    {
+      "candidate_id": "src_cov_wpieta_003",
+      "status": "skip",
+      "reason": "Negative evaluation concerns only the focal solo review of Wojtek Pięta. No second performer is present and no permissible evidence class fits this one-performer candidate; no mention or criticism is reassigned to an unidentified support act."
+    },
+    {
+      "candidate_id": "src_cov_wpieta_004",
+      "status": "evidence",
+      "evidence_id": "ev_cov_wpieta_004",
+      "evidence_class": "fan_comparison",
+      "identities": [
+        {
+          "surface_form": "Bartka",
+          "performer_id": "bartosz-zalewski"
+        },
+        {
+          "surface_form": "Wojtka",
+          "performer_id": "wojtek-pieta"
+        }
+      ],
+      "preference": "Bartosz positive personal preference; Wojtek unknown, relative “trochę mniej” retained without absolute polarity",
+      "scope": "2020-10-12 Kraków event identified by exact source-local parent context"
+    }
+  ],
+  "concentration": {
+    "by_source_family": {
+      "kupbilecik.pl": 4
+    },
+    "by_candidate_outcome": {
+      "evidence": 3,
+      "skip": 1
+    },
+    "by_evidence_class": {
+      "same_user_coendorsement": 1,
+      "fan_recommendation": 1,
+      "fan_comparison": 1
+    },
+    "by_performer_mentions_in_evidence": {
+      "wojtek-pieta": 3,
+      "bartosz-zalewski": 1,
+      "unresolved": 1,
+      "grzegorz-dolniak_context_only": 1
+    }
+  },
+  "counts_detail": {
+    "records_written": 3,
+    "explicit_skips": 1,
+    "candidate_ids_accounted_exactly_once": 4,
+    "review_unreviewed": 3,
+    "reviewer_null": 3
+  }
+}

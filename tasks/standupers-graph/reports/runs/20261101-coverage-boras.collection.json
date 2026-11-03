@@ -1,0 +1,479 @@
+{
+  "Surprises": [
+    "One direct Gazeta forum author uses personal-taste wording for both Boras and frozen peer Cezary Jurkiewicz; this is the sole verified candidate.",
+    "KupBilecik snippets surfaced a second potentially qualifying fan comment naming Boras and frozen Mariusz Dąbrowski, but all three exact public-page attempts returned Cache miss; it remains quarantined.",
+    "A recent Wykop “Boras” hit concerns football match commentary, with no reliable tie to stand-up performer Tomasz Boras Borkowski. It was excluded.",
+    "The preview server reported tab capacity and could not be opened after status returned available:false; no other tab was closed or manipulated."
+  ],
+  "run_id": "20261101-coverage-boras",
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+  },
+  "target": {
+    "rank": 17,
+    "id": "tomasz-boras-borkowski",
+    "frozen_name": "Tomasz Boras Borkowski",
+    "aliases": []
+  },
+  "reservation": {
+    "query_limit": 24,
+    "open_attempt_limit": 24,
+    "candidate_limit": 16,
+    "queries_used": 24,
+    "open_attempts_used": 10,
+    "candidates_saved": 1,
+    "queries_remaining": 0,
+    "open_attempts_remaining": 14,
+    "candidate_slots_remaining": 15
+  },
+  "query_log": [
+    {
+      "number": 1,
+      "query": "site:reddit.com/r/ \"Boras\" \"stand-up\" ulubiony OR lubię OR śmieszny",
+      "result": "Search surfaced the dedicated Nastroik Boras thread; no Reddit page verified."
+    },
+    {
+      "number": 2,
+      "query": "site:wykop.pl \"Boras\" stand-up lubię OR polecam",
+      "result": "Search surfaced Wykop post “Stand UP: Tomasz Boras Borkowski”; opened and excluded because no same-author frozen-peer preference."
+    },
+    {
+      "number": 3,
+      "query": "\"Boras\" stand-up forum „lubię” OR „śmieszny”",
+      "result": "Surfaced the Nastroik Boras thread, Gazeta forum, standalone KupBilecik reviews and general event listings."
+    },
+    {
+      "number": 4,
+      "query": "\"Boras\" komik stand-up \"Tomasz Borkowski\"",
+      "result": "Surfaced standup.pl profile confirming Tomasz “Boras” Borkowski; identity context only."
+    },
+    {
+      "number": 5,
+      "query": "site:gry-online.pl/forum Boras stand-up opinie",
+      "result": "No qualifying candidate surfaced; results were event and generic index material."
+    },
+    {
+      "number": 6,
+      "query": "site:filmweb.pl \"Tomasz Boras\" stand-up opinie",
+      "result": "Surfaced Filmweb’s ensemble program “Stań i mów”; group rating/credit is not individual preference."
+    },
+    {
+      "number": 7,
+      "query": "site:reddit.com \"Tomasz Boras\" stand-up komicy",
+      "result": "Surfaced a Reddit “Szukam nowych komików” thread; opened URL but cache miss."
+    },
+    {
+      "number": 8,
+      "query": "\"Boras\" \"Cezary Jurkiewicz\" lubię stand-up",
+      "result": "No new source beyond event co-listings; no fan statement."
+    },
+    {
+      "number": 9,
+      "query": "site:reddit.com/r/Polska \"Szukam nowych komików\" Boras",
+      "result": "Surfaced the Reddit fan thread and comments listing Boras; recommendations remain search-only after cache miss."
+    },
+    {
+      "number": 10,
+      "query": "\"Boras\" \"ulubiony stand-up\" komik forum",
+      "result": "Surfaced standalone KupBilecik review pages; no peer-specific authored appraisal."
+    },
+    {
+      "number": 11,
+      "query": "site:blog \"Tomasz Boras\" lubię stand-up",
+      "result": "No eligible personal fan discussion surfaced."
+    },
+    {
+      "number": 12,
+      "query": "\"Tomasz Boras\" \"najlepszy\" stand-up fan opinie",
+      "result": "Surfaced individual Boras event reviews and the Reddit recommendation thread; snippets not used as candidates."
+    },
+    {
+      "number": 13,
+      "query": "site:forum.gazeta.pl \"Tomasz Boras\" stand-up lubię",
+      "result": "Re-surfaced the already opened Gazeta thread and candidate; no second author/source."
+    },
+    {
+      "number": 14,
+      "query": "site:wykop.pl \"Boras\" \"Lotek\" stand-up komentarze",
+      "result": "Re-surfaced the already opened Wykop Boras discussion; Boras and Lotek remarks are by different authors."
+    },
+    {
+      "number": 15,
+      "query": "site:reddit.com/r/ \"Boras\" \"Lotek\" stand-up",
+      "result": "No new qualifying Reddit result; results were older Wykop discussion and event listings."
+    },
+    {
+      "number": 16,
+      "query": "\"Boras\" \"Cezary Jurkiewicz\" „lubię” OR „mi podchodzi”",
+      "result": "Results were event calendars/co-billing, not fan-authored taste."
+    },
+    {
+      "number": 17,
+      "query": "site:wykop.pl/wpis Boras stand-up opinie",
+      "result": "Surfaced a Wykop post about “Boras” commentating a football match; identity as comedy target unresolved."
+    },
+    {
+      "number": 18,
+      "query": "site:reddit.com \"Boras\" \"Uwielbiam\" stand-up komik",
+      "result": "No new qualifying full-page result; mainly re-surfaced prior discussion threads."
+    },
+    {
+      "number": 19,
+      "query": "site:forum.gazeta.pl \"Boras\" \"lubię\" stand-up",
+      "result": "Re-surfaced the candidate Gazeta thread; no additional source-local author."
+    },
+    {
+      "number": 20,
+      "query": "\"Tomasz Boras Borkowski\" „ulubiony” stand-up blog",
+      "result": "Surfaced Tomek Biskup’s personal stand-up list; full page read. Boras entry is biographical/style description, not personal taste."
+    },
+    {
+      "number": 21,
+      "query": "site:forum.kafeteria.pl \"Boras\" stand-up",
+      "result": "No qualifying Kafeteria discussion surfaced; results focused on KupBilecik pages."
+    },
+    {
+      "number": 22,
+      "query": "site:forum.gazeta.pl/forum \"Tomasz Boras\" \"Lotek\"",
+      "result": "No new discussion; result set re-surfaced Boras event reviews and known forum results."
+    },
+    {
+      "number": 23,
+      "query": "\"Tomek Boras\" lubię stand-up forum",
+      "result": "Surfaced event reviews and Boras identification sources; no new frozen-peer appraisal."
+    },
+    {
+      "number": 24,
+      "query": "site:reddit.com/r/Polska \"Tomasz Boras\" polecacie komicy",
+      "result": "Re-surfaced the Reddit recommendation thread and KupBilecik event reviews; no newly verified fan statement."
+    }
+  ],
+  "open_log": [
+    {
+      "number": 1,
+      "action": "T3 preview_open after preview_status available:false",
+      "result": "Attempted once; failed: Too many server browser tabs are open. Did not close/reuse tabs."
+    },
+    {
+      "number": 2,
+      "url": "https://nastroik.pl/temat/tomasz-boras-%E2%80%93-moj-ulubiony-inteligentny-humor/11590/?tab=comments",
+      "result": "Full discovered URL attempted; Cache miss. No preview retry: server tab-capacity error remained."
+    },
+    {
+      "number": 3,
+      "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+      "result": "Full page readable, 677 lines. Candidate src_cov_boras_001 is tanebo001’s entire post at rendered lines 209-213 (01.11.23 21:15). Parent at lines 165-170 asks readers about stand-up and recommendations; candidate text independently states personal liking."
+    },
+    {
+      "number": 4,
+      "url": "https://wykop.pl/link/4090361/stand-up-tomasz-boras-borkowski",
+      "result": "Full page readable, 274 lines. Six comments; the Boras post and Lotek remarks are by different authors. No same-author frozen-peer positive statement."
+    },
+    {
+      "number": 5,
+      "url": "https://www.reddit.com/r/Polska/comments/1suqi5d/szukam-nowych-komik%C3%B3w/",
+      "result": "Full discovered URL attempted; Cache miss. Reddit snippets quarantined."
+    },
+    {
+      "number": 6,
+      "url": "https://www.jegoeminencja.pl/2022/11/01/lista-stand-uperow/",
+      "result": "Full page readable, 367 lines. Authored by professional comedian Tomek Biskup; Boras entry at lines 52-54 is biographical/style description, no personal preference. Page independently distinguishes Jasiek Borkowski from Tomasz “Boras” Borkowski."
+    },
+    {
+      "number": 7,
+      "url": "https://wykop.pl/wpis/86868351/mecz-tak-narzekacie-na-borasa-ale-ja-tam-lubie-jak",
+      "result": "Full discovered URL attempted; Cache miss. Snippet discusses “Boras” match commentary and appears to concern a sports commentator; identity is unresolved and not linked to frozen stand-up performer."
+    },
+    {
+      "number": 8,
+      "url": "https://www.kupbilecik.pl/pl/event/142750/slubice/stand-up-tomasz-boras",
+      "result": "Exact event page surfaced in search and attempted; Cache miss. Search snippet’s reviewer Tomasz explicitly praises Boras and Mariusz Dąbrowski as support, but not promoted without full-page verification."
+    },
+    {
+      "number": 9,
+      "url": "https://www.kupbilecik.pl/en/event/172693/lubin/stand-up-tomasz-boras",
+      "result": "Exact alternate event page surfaced in search and attempted; Cache miss. No snippet promotion."
+    },
+    {
+      "number": 10,
+      "url": "https://www.kupbilecik.pl/komentarze/12784/Stand-up%3A%2BTomasz%2BBoras/5/",
+      "result": "Exact comments archive page surfaced in search and attempted; Cache miss. No snippet promotion."
+    }
+  ],
+  "candidate_locators": [
+    {
+      "candidate_id": "src_cov_boras_001",
+      "author": "tanebo001",
+      "locator": "Gazeta.pl emama “Stand up”, rendered lines 209-213; timestamp 01.11.23 21:15. Full post is the entire excerpt, no additional clause omitted.",
+      "targets": [
+        "tomasz-boras-borkowski",
+        "cezary-jurkiewicz"
+      ],
+      "basis": "Author says “Mi podchodzi” about both. Boras identity is corroborated by frozen profile name and public stand-up profile; Cezary Jurkiewicz is a frozen performer."
+    }
+  ],
+  "search_only_leads": [
+    {
+      "url": "https://nastroik.pl/temat/tomasz-boras-%E2%80%93-moj-ulubiony-inteligentny-humor/11590/?tab=comments",
+      "disposition": "Full URL cache miss; snippets showed praise, criticism and other comedian mentions but no candidate retained."
+    },
+    {
+      "url": "https://www.reddit.com/r/Polska/comments/1suqi5d/szukam-nowych-komik%C3%B3w/",
+      "disposition": "Full URL cache miss; recommendations in search snippets not retained."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/event/142750/slubice/stand-up-tomasz-boras",
+      "disposition": "Search snippet shows a potentially qualifying full comment by “Tomasz” about Boras and Mariusz Dąbrowski; exact event page cache miss, no record saved."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/en/event/172693/lubin/stand-up-tomasz-boras",
+      "disposition": "Search snippet repeated the same Tomasz/Mariusz comment; exact surfaced URL cache miss; not treated as independent post or corroboration."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/komentarze/12784/Stand-up%3A%2BTomasz%2BBoras/5/",
+      "disposition": "Search result contains Boras review excerpts; full page cache miss, no candidate."
+    },
+    {
+      "url": "https://wykop.pl/wpis/86868351/mecz-tak-narzekacie-na-borasa-ale-ja-tam-lubie-jak",
+      "disposition": "Search snippet about football commentary; “Boras” identity unresolved, not linked to target."
+    },
+    {
+      "url": "https://www.jegoeminencja.pl/2022/11/01/lista-stand-uperow/",
+      "disposition": "Full page read; author is a professional comedian and target entry describes style only. No personal liking claim."
+    }
+  ],
+  "deduplication": {
+    "canonical_sources_from_graph_input_manifests": [],
+    "checked_input_manifests": "All paths listed in graph/coverage-kopiec-reviewed/graph.json input_manifests were inspected for these canonical source routes. No candidate route was present. Graph manifests include reviewed batch01/batch05/batch09 replacement runs; original versions were not substituted.",
+    "notes": "No exact author/post/excerpt duplicate was found for the saved Gazeta post. Nastroik, Wykop, Reddit, KupBilecik and blog routes are not among the manifest sources. Search-result reappearances of the same Gazeta thread, Wykop thread, Reddit thread and KupBilecik comment were not counted as new posts."
+  },
+  "source_families_attempted": [
+    "Gazeta.pl public forum (full-page read; one candidate)",
+    "Wykop (full-page read; no target+peer endorsement)",
+    "Nastroik forum (cache miss; search-only)",
+    "Reddit (cache miss; search-only)",
+    "KupBilecik event-review pages (three exact URL attempts; cache misses; search-only)",
+    "Jego Eminencja personal blog (full-page read; identity/style content only)",
+    "Kafeteria/forum and Filmweb searches (no eligible verified record)"
+  ],
+  "coverage_gaps": [
+    "Only one verified author endorsement is saved: Boras + Cezary Jurkiewicz, from tanebo001. No second author corroborates that pair.",
+    "A separate KupBilecik search snippet appears to praise Boras and Mariusz Dąbrowski in one review; exact full pages returned Cache miss, so no evidence row was created.",
+    "Nastroik and Reddit full pages were unavailable after Cache miss; preview_open failed at tab capacity.",
+    "Wykop post about match commentary uses “Boras” without reliable identity evidence for the frozen stand-up performer; excluded.",
+    "No alias repair was made; Borkowski-only and sports-context “Boras” references remain unresolved."
+  ],
+  "stop_reason": "The hard 24-query cap is exhausted. Ten of 24 open attempts were used; 14 open attempts and 15 candidate slots remain, but no further query batch is authorized. One fully verified candidate is saved; no corroboration claim is made.",
+  "reservations": [
+    {
+      "type": "query",
+      "number": 1,
+      "query": "site:reddit.com/r/ \"Boras\" \"stand-up\" ulubiony OR lubię OR śmieszny",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "number": 2,
+      "query": "site:wykop.pl \"Boras\" stand-up lubię OR polecam",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "number": 3,
+      "query": "\"Boras\" stand-up forum „lubię” OR „śmieszny”",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "number": 4,
+      "query": "\"Boras\" komik stand-up \"Tomasz Borkowski\"",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "open",
+      "number": 1,
+      "action": "T3 preview_open",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "open",
+      "number": 2,
+      "url": "https://nastroik.pl/temat/tomasz-boras-%E2%80%93-moj-ulubiony-inteligentny-humor/11590/?tab=comments",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "open",
+      "number": 3,
+      "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "open",
+      "number": 4,
+      "url": "https://wykop.pl/link/4090361/stand-up-tomasz-boras-borkowski",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "number": 5,
+      "query": "site:gry-online.pl/forum Boras stand-up opinie",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "number": 6,
+      "query": "site:filmweb.pl \"Tomasz Boras\" stand-up opinie",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "number": 7,
+      "query": "site:reddit.com \"Tomasz Boras\" stand-up komicy",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "number": 8,
+      "query": "\"Boras\" \"Cezary Jurkiewicz\" lubię stand-up",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "number": 9,
+      "query": "site:reddit.com/r/Polska \"Szukam nowych komików\" Boras",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "number": 10,
+      "query": "\"Boras\" \"ulubiony stand-up\" komik forum",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "number": 11,
+      "query": "site:blog \"Tomasz Boras\" lubię stand-up",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "number": 12,
+      "query": "\"Tomasz Boras\" \"najlepszy\" stand-up fan opinie",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "open",
+      "number": 5,
+      "url": "https://www.reddit.com/r/Polska/comments/1suqi5d/szukam_nowych_komik%C3%B3w/",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "number": 13,
+      "query": "site:forum.gazeta.pl \"Tomasz Boras\" stand-up lubię",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "number": 14,
+      "query": "site:wykop.pl \"Boras\" \"Lotek\" stand-up komentarze",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "number": 15,
+      "query": "site:reddit.com/r/ \"Boras\" \"Lotek\" stand-up",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "number": 16,
+      "query": "\"Boras\" \"Cezary Jurkiewicz\" „lubię” OR „mi podchodzi”",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "number": 17,
+      "query": "site:wykop.pl/wpis Boras stand-up opinie",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "number": 18,
+      "query": "site:reddit.com \"Boras\" \"Uwielbiam\" stand-up komik",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "number": 19,
+      "query": "site:forum.gazeta.pl \"Boras\" \"lubię\" stand-up",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "number": 20,
+      "query": "\"Tomasz Boras Borkowski\" „ulubiony” stand-up blog",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "open",
+      "number": 6,
+      "url": "https://www.jegoeminencja.pl/2022/11/01/lista-stand-uperow/",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "open",
+      "number": 7,
+      "url": "https://wykop.pl/wpis/86868351/mecz-tak-narzekacie-na-borasa-ale-ja-tam-lubie-jak",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "number": 21,
+      "query": "site:forum.kafeteria.pl \"Boras\" stand-up",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "number": 22,
+      "query": "site:forum.gazeta.pl/forum \"Tomasz Boras\" \"Lotek\"",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "number": 23,
+      "query": "\"Tomek Boras\" lubię stand-up forum",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "number": 24,
+      "query": "site:reddit.com/r/Polska \"Tomasz Boras\" polecacie komicy",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "open",
+      "number": 8,
+      "url": "https://www.kupbilecik.pl/pl/event/142750/slubice/stand-up-tomasz-boras",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "open",
+      "number": 9,
+      "url": "https://www.kupbilecik.pl/en/event/172693/lubin/stand-up-tomasz-boras",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "open",
+      "number": 10,
+      "url": "https://www.kupbilecik.pl/komentarze/12784/Stand-up%3A%2BTomasz%2BBoras/5/",
+      "status": "attempted; consumed"
+    }
+  ],
+  "source_role_notes": [
+    "Tomek Biskup is an active comedian and event speaker; his authored list is professional context and its Boras entry is descriptive, not evidence of personal taste.",
+    "No one was counted as endorsing Boras from co-billing, event copy, the professional list, style discussion, or search snippets."
+  ]
+}

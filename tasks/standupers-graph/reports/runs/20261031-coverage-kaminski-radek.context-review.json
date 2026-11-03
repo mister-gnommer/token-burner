@@ -1,0 +1,102 @@
+{
+  "leading_surprises": [
+    "The exact complete Kamil post is independently displayed in the named event archive, binding its main-performance appraisal to “Stand-Up: Wojtek Kamiński” despite no literal Kamiński name in the author’s prose.",
+    "“Pasierby rządzą!” remains unresolved; the event header does not establish that Pasierby is Kamiński or a specific performer."
+  ],
+  "schema_version": 1,
+  "run_id": "20261031-coverage-kaminski-radek-context-review",
+  "stage": "contextual_verification",
+  "reviewer": "codex/gpt-6-luna",
+  "prompt_version": "verify-evidence-v3",
+  "original_run_id": "20261031-batch09",
+  "candidate_id": "src_b09a_001",
+  "evidence_id": "ev_b09_a_001",
+  "source_context_report": "reports/runs/20261031-coverage-kaminski-radek.source-context.json",
+  "proposal_input": "evidence/coverage-pilot/src_b09a_001.context-proposal.jsonl",
+  "reviewed_proposal": "evidence/coverage-pilot/ev_b09_a_001.context-reviewed-proposal.jsonl",
+  "decision": {
+    "status": "accepted",
+    "contextual_identity_supported": true,
+    "identity_basis": "The archive presents the full same-author post verbatim under the named event “Stand-Up: Wojtek Kamiński” and event locator “Łódź, 13 października 2024”. This is event-specific attribution of the main-performance appraisal, not an alias claim and not identity inferred from “Pasierby”.",
+    "focal_surface": "występ",
+    "focal_surface_verbatim_in_excerpt": true,
+    "focal_preference_quote": "Ale to było suuuuuper! Świeżo, naturalnie, swobodnie. Świetny kontakt z widownią. Bez zbędnych wulgaryzmów i co najważniejsze, bardzo śmiesznie.",
+    "pasierby_identity": null,
+    "general_fandom_inferred": false
+  },
+  "old_vs_new": {
+    "evidence_class": {
+      "old": "fan_recommendation",
+      "new": "same_user_coendorsement",
+      "reason": "Now there are two clear event-scoped individual performer appraisals: Kamiński’s main performance is contextually bound by the exact event header, and Radek is explicitly praised as support."
+    },
+    "mentions": {
+      "old": [
+        {
+          "performer_id": null,
+          "surface_form": "Pasierby",
+          "preference": "unknown",
+          "preference_quote": null
+        },
+        {
+          "performer_id": "radek-drozdz",
+          "surface_form": "Radek Drożdż",
+          "preference": "positive",
+          "preference_quote": "Radek Drożdż też bardzo dobrze."
+        }
+      ],
+      "new": [
+        {
+          "performer_id": "wojciech-kaminski",
+          "surface_form": "występ",
+          "sentiment": "positive",
+          "confidence": 0.88,
+          "preference": "positive",
+          "preference_quote": "Ale to było suuuuuper! Świeżo, naturalnie, swobodnie. Świetny kontakt z widownią. Bez zbędnych wulgaryzmów i co najważniejsze, bardzo śmiesznie."
+        },
+        {
+          "performer_id": null,
+          "surface_form": "Pasierby",
+          "preference": "unknown",
+          "preference_quote": null
+        },
+        {
+          "performer_id": "radek-drozdz",
+          "surface_form": "Radek Drożdż",
+          "preference": "positive",
+          "preference_quote": "Radek Drożdż też bardzo dobrze."
+        }
+      ]
+    },
+    "context": {
+      "old": [],
+      "new": "Exact context array copied from the verified context proposal; parent event title and date are separately attributed."
+    },
+    "preserved": [
+      "source fields",
+      "excerpt",
+      "language",
+      "candidate/evidence IDs",
+      "extractor provider/model/prompt/run/confidence",
+      "Pasierby and Radek mentions"
+    ],
+    "preference_scope": "One 2024 event performance; no general/current preference."
+  },
+  "validation": {
+    "evidence_v3_schema": true,
+    "source_candidate_v2_schema": true,
+    "proposal_candidate_equals_original_except_context": true,
+    "evidence_source_excerpt_language_equals_candidate": true,
+    "evidence_context_equals_candidate_context": true,
+    "literal_surfaces_and_preference_quotes": true,
+    "extractor_lineage_equals_original": true,
+    "frozen_performer_ids_valid": true
+  },
+  "risks_and_limits": [
+    "Identity confidence is contextual and event-specific; the post’s prose still does not name Kamiński. Do not reinterpret this as an alias resolution.",
+    "The unrecognized Pasierby reference stays null-ID and unknown preference.",
+    "Class uses only the two identified performers’ appraisals; generic “Bardzo polecam” is not used to create Kamiński preference.",
+    "Source is one dated KupBilecik post. It does not establish a current/general fandom claim.",
+    "This is a proposal only; old batch09 files remain untouched, and no graph claim is made."
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "run_id": "20261101-coverage-source-page-recovery",
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6.1-terra",
+    "prompt_version": "collect-fan-evidence-v3+source-first-fan-discovery-v1"
+  },
+  "surprises": [
+    "Previous rejection of entire threads was invalid; new authored posts occur on already represented pages. Reddit comment direct permalink produced a cache miss even though the complete comment is visible on the thread.",
+    "Paczus remains unresolved; collection does not assert an identity."
+  ],
+  "original_report": "reports/runs/20261101-coverage-source-first-final-a.collection.json (preserved)",
+  "timeline": "thread:delegated-task:command%3Amcp%3Ab8bb504a-a098-4a3f-913f-2b56ec9678db%3Adelegate-task%3Acoverage-source-first-final-a-20261101-r1",
+  "queries_added": [],
+  "candidates": [
+    "src_cspr_001",
+    "src_cspr_002",
+    "src_cspr_003",
+    "src_cspr_004"
+  ],
+  "decisions": [
+    {
+      "candidate_id": "src_cspr_001",
+      "author": "evolution123",
+      "locator": "thread opener #1, 2018-05-14 19:36",
+      "match": "No same-author or normalized body/substring match among scanned source and evidence JSONL records; page-level matches alone ignored",
+      "source_proof": "Prior child activity position 17, web open turn120093view0/view2",
+      "retrieval_time_precision": "Child tool item completion timestamp",
+      "identity_caveat": null
+    },
+    {
+      "candidate_id": "src_cspr_002",
+      "author": "mohenjodaro",
+      "locator": "comment #12, 2018-05-14 20:44; edit 20:48:18",
+      "match": "No same-author or normalized body/substring match among scanned source and evidence JSONL records; page-level matches alone ignored",
+      "source_proof": "Prior child activity position 17, web open turn120093view0/view2",
+      "retrieval_time_precision": "Child tool item completion timestamp",
+      "identity_caveat": null
+    },
+    {
+      "candidate_id": "src_cspr_003",
+      "author": "maciell",
+      "locator": "comment #4, 2023-01-14 22:01; Paczus unresolved",
+      "match": "No same-author or normalized body/substring match among scanned source and evidence JSONL records; page-level matches alone ignored",
+      "source_proof": "Prior child activity position 17, web open turn120093view0/view2",
+      "retrieval_time_precision": "Child tool item completion timestamp",
+      "identity_caveat": "Paczus remains unresolved; only Lotek mapped"
+    },
+    {
+      "candidate_id": "src_cspr_004",
+      "author": "steelyringing",
+      "locator": "comment j3bnf41, thread page lines 478–484; relative date only",
+      "match": "No same-author or normalized body/substring match among scanned source and evidence JSONL records; page-level matches alone ignored",
+      "source_proof": "Fresh full thread turn0view0/turn1view0 lines 478–484; displayed timestamp link yields comment j3bnf41; direct click cache miss",
+      "retrieval_time_precision": "Clock observation after page read; exact call timestamp not exposed, so this is an upper bound",
+      "identity_caveat": null
+    }
+  ],
+  "additional_open_attempts": [
+    {
+      "url": "https://www.reddit.com/r/Polska/comments/105mykf/stand_up_rekomendacje/",
+      "result": "full thread readable, includes steelyringing and duplicate MurderousSofa"
+    },
+    {
+      "url": "https://swiatpilki.com/viewtopic.php?t=20492",
+      "result": "thread readable, first page"
+    },
+    {
+      "url": "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169",
+      "result": "thread readable"
+    },
+    {
+      "url": "https://www.reddit.com/r/Polska/comments/105mykf/stand_up_rekomendacje/",
+      "result": "second read at line 250, complete comments through line 484"
+    },
+    {
+      "url": "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169",
+      "result": "second read at line 1050, Qverty full post"
+    },
+    {
+      "url": "https://www.reddit.com/r/Polska/comments/105mykf/comment/j3bnf41/",
+      "result": "click raw error: Internal Error (); Failed to fetch https://www.reddit.com/r/Polska/comments/105mykf/comment/j3bnf41/: Cache miss"
+    }
+  ],
+  "search_only_routes": [
+    "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+    "https://www.reddit.com/r/Polska/comments/1j7armi/",
+    "https://www.filmweb.pl/person/Abelard+Giza-286174/discussion/Giza+ju%C5%BC+si%C4%99+sko%C5%84czy%C5%82-2154860"
+  ],
+  "usage": {
+    "original_cumulative": {
+      "queries": 24,
+      "open_attempts": 9,
+      "raw_candidate_slots": 8
+    },
+    "added": {
+      "queries": 0,
+      "open_attempts": 6,
+      "raw_candidate_slots": 4
+    },
+    "cumulative": {
+      "queries": 24,
+      "open_attempts": 15,
+      "raw_candidate_slots": 12
+    },
+    "remaining_original_caps": {
+      "queries": 0,
+      "open_attempts": 9,
+      "raw_candidate_slots": 4
+    },
+    "recovery_open_cap_remaining": 0
+  },
+  "schema_validation": "Draft 2020-12 with URI/date-time formats: 4 passed",
+  "stop_reason": "Six additional open attempts consumed; zero searches permitted. Separate extraction and independent verification required.",
+  "retrieval_time_note": "Prior tool event completion is used as retrieval timestamp for prior full reads; Reddit recorded time is a clock observation after the read, not exact network call time."
+}

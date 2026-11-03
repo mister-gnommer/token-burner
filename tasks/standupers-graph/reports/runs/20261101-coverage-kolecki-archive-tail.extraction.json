@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101-coverage-kolecki-archive-tail",
+  "stage": "extraction",
+  "performer_ids": [
+    "tomek-kolecki",
+    "darek-gadowski",
+    "bartosz-zalewski"
+  ],
+  "input": "evidence/coverage-expansion/tomek-kolecki-archive-tail.source-candidates.canonical.jsonl",
+  "output": "evidence/coverage-expansion/tomek-kolecki-archive-tail.evidence.unreviewed.jsonl",
+  "extractor": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "extract-evidence-v3"
+  },
+  "counts": {
+    "source_candidates": 3,
+    "extracted": 3,
+    "skipped": 0,
+    "evidence_class_counts": {
+      "same_user_coendorsement": 3
+    }
+  },
+  "records": [
+    {
+      "candidate_id": "src_cov_tkolecki_tail_001",
+      "evidence_id": "ev_cov_tkolecki_tail_001",
+      "evidence_class": "same_user_coendorsement",
+      "mentions": [
+        {
+          "performer_id": "darek-gadowski",
+          "surface_form": "Darek Gadowski",
+          "sentiment": "positive",
+          "preference": "positive",
+          "preference_quote": "Darek Gadowski mistrzostwo :) bawiłam się wybornie"
+        },
+        {
+          "performer_id": "tomek-kolecki",
+          "surface_form": "Tomek",
+          "sentiment": "positive",
+          "preference": "positive",
+          "preference_quote": "Tomek też super"
+        },
+        {
+          "performer_id": null,
+          "surface_form": "Kuba Wilczek",
+          "sentiment": "positive",
+          "preference": "positive",
+          "preference_quote": "Kuba Wilczek był dla mnie super odkryciem, z chęcią się na niego jeszcze wybiorę."
+        },
+        {
+          "performer_id": "bartosz-zalewski",
+          "surface_form": "Bartosz",
+          "sentiment": "negative",
+          "preference": "unknown",
+          "preference_quote": null
+        }
+      ],
+      "excerpt_sha256": "2c40878af604fd27e81b686406dd25f4da2a4e321fb90a62502660d9a72db829",
+      "context_sha256": [
+        "6eadb542d0ea71ef5dc1fd4b7e4af5be11b278ffdfff2050434792c835a31111",
+        "663f088d4bc0631f38250c272ffe85e3f4e0d67a9b126cc8c22d6c6ddbbb3f36"
+      ],
+      "decision": "Clear event-scoped personal praise supports co-endorsement for Gadowski and Kołecki. Bartosz is negatively appraised in this event only (“no ewidentnie to nie był jego dzień”), not established as generally disliked; preference unknown. Kuba Wilczek is positively praised and recommended but is outside the frozen100, so performer_id remains null. No global alias or roster-to-preference transfer."
+    },
+    {
+      "candidate_id": "src_cov_tkolecki_tail_002",
+      "evidence_id": "ev_cov_tkolecki_tail_002",
+      "evidence_class": "same_user_coendorsement",
+      "mentions": [
+        {
+          "performer_id": "darek-gadowski",
+          "surface_form": "Gadowski",
+          "sentiment": "positive",
+          "preference": "positive",
+          "preference_quote": "Gadowski na plus, pierwszy raz go słyszałam i podobał mi się styl Gościa :)"
+        },
+        {
+          "performer_id": "bartosz-zalewski",
+          "surface_form": "Zalewski",
+          "sentiment": "positive",
+          "preference": "positive",
+          "preference_quote": "Zalewski chłop co ma za flow! Sucho, ale zabawnie. Świetnie wybrnął z sytuacji z przeszkadzającą typiara."
+        },
+        {
+          "performer_id": "tomek-kolecki",
+          "surface_form": "Kolecki",
+          "sentiment": "negative",
+          "preference": "unknown",
+          "preference_quote": null
+        }
+      ],
+      "excerpt_sha256": "2e9448a489fa456fb02f957df572499cf62b0307c8885150b42e0edb0ff0d729",
+      "context_sha256": [
+        "6eadb542d0ea71ef5dc1fd4b7e4af5be11b278ffdfff2050434792c835a31111",
+        "a6dfed4b1b1ff7e2e6e379757975bce252eb8237bdd7d4eda37fa67005b9011a"
+      ],
+      "decision": "Gadowski and Zalewski receive distinct positive personal performance/style appraisals. Kołecki “Rozczarował mnie” and this was not his best performance; negative appraisal is scoped to this event, while the author says she has seen several of his performances, so general preference remains unknown. No ranking-based preference inference."
+    },
+    {
+      "candidate_id": "src_cov_tkolecki_tail_003",
+      "evidence_id": "ev_cov_tkolecki_tail_003",
+      "evidence_class": "same_user_coendorsement",
+      "mentions": [
+        {
+          "performer_id": "darek-gadowski",
+          "surface_form": "Gadowski",
+          "sentiment": "positive",
+          "preference": "positive",
+          "preference_quote": "Gadowski fajnie, sympatycznie, wesoło i w jego stylu, trochę za krótko i lekki niedosyt pozostał ale fajnie było go słyszeć."
+        },
+        {
+          "performer_id": "tomek-kolecki",
+          "surface_form": "Kołecki",
+          "sentiment": "positive",
+          "preference": "positive",
+          "preference_quote": "Pan Kołecki człowiek z potencjałem, mówił ciekawie, był zabawny. Jestem na tak!"
+        },
+        {
+          "performer_id": "bartosz-zalewski",
+          "surface_form": "Pan Zalewski",
+          "sentiment": "negative",
+          "preference": "unknown",
+          "preference_quote": null
+        }
+      ],
+      "excerpt_sha256": "8c26e703a56f9639de1935125d5edccd2e0db2427b1f079d021695550d41e17b",
+      "context_sha256": [
+        "6eadb542d0ea71ef5dc1fd4b7e4af5be11b278ffdfff2050434792c835a31111",
+        "c155a0c4b99c01472cac06bd367924abafbe1cb26d6af2e70fbd6d445f3ae6da"
+      ],
+      "decision": "Positive appraisal of Gadowski includes the caveat that his set was too short and left a slight sense of wanting more. Kołecki is described as interesting and funny, followed by explicit “Jestem na tak!”. Zalewski receives a strong negative appraisal of this event, including the author’s impression (“chyba nie był naczzo”); that impression is not verified biographical fact and is not used to infer preference. “Ani razu się nie uśmiechnąłem . Porażka” supports negative event sentiment; general preference remains unknown."
+    }
+  ],
+  "author_concentration": {
+    "distinct_author_keys": 3,
+    "records_by_author_key": {
+      "fan_b3425685c4730eee": [
+        "ev_cov_tkolecki_tail_001"
+      ],
+      "fan_091aac6625ee61f3": [
+        "ev_cov_tkolecki_tail_002"
+      ],
+      "fan_982c3c8c38c53d9e": [
+        "ev_cov_tkolecki_tail_003"
+      ]
+    },
+    "note": "Three distinct canonical source-local author keys; treat each as source scoped."
+  },
+  "provenance": {
+    "canonical_source_sha256": "b29747de8ffca44e86945aff44071efff1a4a74fd6f5e6c5840e932f8a08c072",
+    "raw_capture_sha256": "8515eb63433ffed8e39cbb6bd07a10fe85547da79e811f277ae458972ea76735",
+    "canonicalization_report": "reports/runs/20261101-coverage-kolecki-archive-tail.canonicalization.json",
+    "collection_report": "reports/runs/20261101-coverage-kolecki-archive-tail.collection.json"
+  },
+  "surprises": [
+    "Retained DOM capture and correction ledger independently confirm exact source excerpts, title and event context; no refetch was needed.",
+    "All three comments support separate same-author positive appraisals while retaining negative event appraisals. Event-level criticism was not generalized into artist dislike.",
+    "Kuba Wilczek is positively appraised in candidate 001 but lies outside the frozen100; his mention is retained unresolved.",
+    "Candidate 003 contains the author’s suspected-intoxication impression about Zalewski; it is not verified fact and does not determine preference."
+  ],
+  "accounting": {
+    "source_candidates": 3,
+    "records": 3,
+    "skips": 0,
+    "unique_candidate_ids": 3,
+    "unique_evidence_ids": 3,
+    "classifiable_candidates": 3
+  },
+  "verification": "Pending independent review; all emitted records remain unreviewed."
+}

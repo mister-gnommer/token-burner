@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101-caption-transport-diagnostic",
+  "surprises": [
+    "The public watch page was readable and advertised two Polish tracks, but both actual player-provided timed-text URLs returned HTTP 200 with empty bodies even with fmt=json3.",
+    "This diagnostic is separate from the original eight-attempt access probe; that result remains unchanged."
+  ],
+  "scope": {
+    "video_id": "t82XUmxapzE",
+    "video_url": "https://www.youtube.com/watch?v=t82XUmxapzE",
+    "queries": 0,
+    "http_attempt_limit": 3,
+    "http_attempts": 3,
+    "response_body_cap_bytes": 2097152,
+    "network_method": "plain public HTTPS GET using standard-library urllib",
+    "browser_emulation_cookies_login_proxies_downloads": false,
+    "original_access_probe_attempts": 8
+  },
+  "attempts": [
+    {
+      "n": 1,
+      "kind": "public_video_page",
+      "at": "2026-10-31T23:17:12Z",
+      "url": "https://www.youtube.com/watch?v=t82XUmxapzE",
+      "status": 200,
+      "body_length": 1554635,
+      "truncated": false,
+      "player_response_found": true,
+      "playability": "OK",
+      "video_id": "t82XUmxapzE",
+      "title": "MICHAŁ LEJA - \"Anatomia\" | Stand-up | 2022 |",
+      "uploader": "Michał Leja",
+      "advertised_tracks": [
+        {
+          "language_code": "pl",
+          "status": "manual",
+          "name": "polski"
+        },
+        {
+          "language_code": "pl",
+          "status": "automatic",
+          "kind": "asr",
+          "name": "polski (wygenerowane automatycznie)"
+        },
+        {
+          "language_code": "ru",
+          "status": "advertised"
+        },
+        {
+          "language_code": "uk",
+          "status": "advertised"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "kind": "provided_public_polish_caption_track",
+      "track_status": "manual",
+      "language_code": "pl",
+      "format_parameter": "fmt=json3",
+      "status": 200,
+      "body_length": 0,
+      "truncated": false,
+      "readable_timed_text": false
+    },
+    {
+      "n": 3,
+      "kind": "provided_public_polish_caption_track",
+      "track_status": "automatic",
+      "language_code": "pl",
+      "format_parameter": "fmt=json3",
+      "status": 200,
+      "body_length": 0,
+      "truncated": false,
+      "readable_timed_text": false
+    }
+  ],
+  "result": {
+    "captions_readable": false,
+    "proof_excerpt_saved": false,
+    "limitation": "The page advertises both Polish tracks, but both provided URLs returned empty bodies. No timed text, coverage, or excerpt could be verified; this is an access-format blocker, not evidence that captions do not exist.",
+    "content_or_style_analysis_performed": false
+  }
+}

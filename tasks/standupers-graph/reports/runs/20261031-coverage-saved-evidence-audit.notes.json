@@ -1,0 +1,52 @@
+{
+  "audit": "reports/runs/20261031-coverage-saved-evidence-audit.json",
+  "status": "parent deterministic corrections; not evidence adjudication",
+  "confirmed_metrics": {
+    "isolated_zero_observed_fans": 57,
+    "positive_linked": 34,
+    "largest_component": 26,
+    "eligible_positive_relations": 43,
+    "D2_drawn_positive_relations": 28,
+    "D2_hidden_eligible_relations": 15,
+    "isolated_nodes_on_positive_but_contested_pairs": [
+      "adam-gajda",
+      "karol-modzelewski",
+      "pawel-chalupka",
+      "rafal-banas"
+    ]
+  },
+  "corrections": [
+    "Magda pilot ledger was read while its collector was actively running; the 2query/0open snapshot is not an interrupted or completed historical attempt. Do not restart or duplicate the active task.",
+    "Audit hidden_eligible_relations=43 is the total eligible pair count, not hidden count; actual D2 hidden count15.",
+    "Removing contradiction veto would expose4isolated endpoints across2pairs, including Rafał Banaś, not3. This is not an approved semantic change.",
+    "Current v3 aggregation can use positive preferences from every fan class, not only coendorsement/rating classes.",
+    "The audit quote for ev_b05_b_003 ends differently from saved canonical text. Use exact canonical excerpt below, then source verify; never replace source with audit paraphrase.",
+    "Catch-up C criticism remains anonymous(nullID), not a verified negative Kuba judgement."
+  ],
+  "targeted_repair_queue": [
+    {
+      "id": "ev_b01c_002",
+      "candidate_id": "src_b01c_002",
+      "status": "source-backed identity/context check required; route into Olka/Modzelewski pilot budgets before changing confidence",
+      "current_excerpt": "Gościa nie znam i nie chce znać, ale Karola Modrzelewskiego czy Olke Szczęśniak zawsze będę bronił, bo prezentują naprawdę dobry poziom i szkoda, że tutaj wszyscy od razu wrzucają wszystkich do jednego wora.",
+      "current_review": {
+        "status": "accepted",
+        "reviewer": "codex/gpt-6.1-sol",
+        "notes": "Parent verified v3 representation; unknown personal preference does not imply dislike. Retained prior conservative identity confidence; re-extraction does not validate aliases."
+      }
+    },
+    {
+      "id": "ev_b05_b_003",
+      "candidate_id": "src_b05b_003",
+      "status": "needs exact Elwira review locator and event linkage; current uncertainty is substantively documented, not a scoring bug",
+      "current_excerpt": "Zarówno Błażej, jak i jego support Patryk Gośiński byli świetni. Obu znałam z YouTube, ale na żywo jeszcze lepiej się ich oglądało. Tak trzymać!!!",
+      "current_review": {
+        "status": "uncertain",
+        "reviewer": "codex/gpt-6.1-terra",
+        "notes": "The source header identifies the Błażej event and its named support. Preserve the excerpt’s spelling “Gośiński” as the surface form; the canonical target is Patryk Gośiński. The current full event page confirms a different review naming Patryk Gosiński, but does not expose Elwira’s supplied excerpt in its visible review list. Collector report says the review is for Legnica (2025-03-20), yet the candidate points to the Świecie event page. Retain the source excerpt and spelling verbatim, but attribution and performer binding remain unresolved pending a direct locator or source-local review permalink."
+      }
+    }
+  ],
+  "evidence_changes": 0,
+  "style_fallback_authorization": "User approved separate performance-verified style layer if deeper fan evidence remains below70%; fan overlap metrics stay separate."
+}

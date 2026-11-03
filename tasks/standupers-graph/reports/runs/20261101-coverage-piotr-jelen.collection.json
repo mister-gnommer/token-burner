@@ -1,0 +1,752 @@
+{
+  "surprises": [
+    "A Filmweb fan post was fully readable and praised Piotr Jeleń only as part of “Piotrek i chłopaki z jelenich jaj”; the other people are unnamed, so it cannot establish appreciation of an identified frozen peer.",
+    "The Trojmiasto archive search result shows one opinion on a Piotr Jeleń improv event, but the full URL returned a cache miss and preview_open was blocked by the full browser server. This is an access failure, not evidence that the opinion is absent.",
+    "A six-query batch exceeded the web tool's documented four-query maximum; its response was lost to a logging exception. All six are charged conservatively, and four were retried as separately charged queries. Thus 24 charged queries does not mean 24 successful individual searches.",
+    "Targeted ticket-platform searches returned no identified Piotr Jeleń event-review archive; a review archive for Piotr Zola Szulowski was a different performer and is not relevant."
+  ],
+  "run_id": "20261101-coverage-piotr-jelen",
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+  },
+  "output": "evidence/coverage-expansion/piotr-jelen.source-candidates.jsonl",
+  "reservations": [
+    {
+      "type": "query",
+      "n": 1,
+      "query": "site:forum.gazeta.pl/forum \"Piotr Jeleń\" stand-up",
+      "status": "used"
+    },
+    {
+      "type": "query",
+      "n": 2,
+      "query": "\"Piotr Jeleń\" stand-up opinie forum -standup.pl",
+      "status": "used"
+    },
+    {
+      "type": "open",
+      "n": 1,
+      "url": "https://www.filmweb.pl/person/Piotr%2BJele%C5%84-2174976/discussion/Jeleniejaja-3158445",
+      "status": "used"
+    },
+    {
+      "type": "query",
+      "n": 3,
+      "query": "site:trojmiasto.pl/imprezy \"Piotr Jeleń\" opinia",
+      "status": "used"
+    },
+    {
+      "type": "query",
+      "n": 4,
+      "query": "\"Piotr Jeleń\" \"opinia\" impro komedia recenzja",
+      "status": "used"
+    },
+    {
+      "type": "open",
+      "n": 2,
+      "url": "https://www.trojmiasto.pl/imprezy/spektakle/improwizacje/dni%2C2017-11-14_2017-12-14.html",
+      "status": "used; cache miss"
+    },
+    {
+      "type": "open",
+      "n": 3,
+      "url": "https://www.trojmiasto.pl/imprezy/spektakle/improwizacje/dni%2C2017-11-14_2017-12-14.html",
+      "method": "preview_open after preview_status returned available:false",
+      "status": "used; server tab capacity error"
+    },
+    {
+      "type": "query",
+      "n": 5,
+      "query": "site:kupbilecik.pl \"Piotr Jeleń\" opinie",
+      "status": "used; see continuation attempts",
+      "collector": "codex/gpt-6.1-terra"
+    },
+    {
+      "type": "query",
+      "n": 6,
+      "query": "site:kupbilet.pl \"Piotr Jeleń\" opinie",
+      "status": "used; see continuation attempts",
+      "collector": "codex/gpt-6.1-terra"
+    },
+    {
+      "type": "query",
+      "n": 7,
+      "query": "\"Piotra Jelenia\" stand up opinie",
+      "status": "used; see continuation attempts",
+      "collector": "codex/gpt-6.1-terra"
+    },
+    {
+      "type": "query",
+      "n": 8,
+      "query": "\"Piotrek Jeleń\" komik występ opinie",
+      "status": "used; see continuation attempts",
+      "collector": "codex/gpt-6.1-terra"
+    },
+    {
+      "type": "query",
+      "n": 9,
+      "query": "site:wykop.pl \"Jeleń\" \"standup\" komik",
+      "status": "used; see continuation attempts",
+      "collector": "codex/gpt-6.1-terra"
+    },
+    {
+      "type": "query",
+      "n": 10,
+      "query": "site:reddit.com/r/Polska \"Jeleń\" standup",
+      "status": "used; see continuation attempts",
+      "collector": "codex/gpt-6.1-terra"
+    },
+    {
+      "type": "query",
+      "n": 11,
+      "query": "site:kupbilecik.pl \"Piotr Jeleń\" opinie",
+      "status": "used; see continuation attempts",
+      "collector": "codex/gpt-6.1-terra"
+    },
+    {
+      "type": "query",
+      "n": 12,
+      "query": "site:kupbilet.pl \"Piotr Jeleń\" opinie",
+      "status": "used; see continuation attempts",
+      "collector": "codex/gpt-6.1-terra"
+    },
+    {
+      "type": "query",
+      "n": 13,
+      "query": "\"Piotra Jelenia\" stand up opinie",
+      "status": "used; see continuation attempts",
+      "collector": "codex/gpt-6.1-terra"
+    },
+    {
+      "type": "query",
+      "n": 14,
+      "query": "\"Piotrek Jeleń\" komik występ opinie",
+      "status": "used; see continuation attempts",
+      "collector": "codex/gpt-6.1-terra"
+    },
+    {
+      "type": "query",
+      "n": 15,
+      "query": "\"jeleniejaja\" \"standup\" forum",
+      "status": "used; see continuation attempts",
+      "collector": "codex/gpt-6.1-terra"
+    },
+    {
+      "type": "query",
+      "n": 16,
+      "query": "site:wykop.pl \"jeleniejaja\" komik",
+      "status": "used; see continuation attempts",
+      "collector": "codex/gpt-6.1-terra"
+    },
+    {
+      "type": "query",
+      "n": 17,
+      "query": "site:reddit.com \"jeleniejaja\" standup",
+      "status": "used; see continuation attempts",
+      "collector": "codex/gpt-6.1-terra"
+    },
+    {
+      "type": "query",
+      "n": 18,
+      "query": "\"piotr jelen\" standup komentarze opinie",
+      "status": "used; see continuation attempts",
+      "collector": "codex/gpt-6.1-terra"
+    },
+    {
+      "type": "query",
+      "n": 19,
+      "query": "\"Jeleniejaja\" stand up komicy opinie forum",
+      "status": "used; see continuation attempts",
+      "collector": "codex/gpt-6.1-terra"
+    },
+    {
+      "type": "query",
+      "n": 20,
+      "query": "\"Piotr Jeleń\" kabaret występ publiczność opinie bilety",
+      "status": "used; see continuation attempts",
+      "collector": "codex/gpt-6.1-terra"
+    },
+    {
+      "type": "query",
+      "n": 21,
+      "query": "\"Jeleń\" \"impro komedia\" opinie bilety",
+      "status": "used; see continuation attempts",
+      "collector": "codex/gpt-6.1-terra"
+    },
+    {
+      "type": "query",
+      "n": 22,
+      "query": "\"Piotr Jeleń\" \"komicy\" komentarze stand up",
+      "status": "used; see continuation attempts",
+      "collector": "codex/gpt-6.1-terra"
+    },
+    {
+      "type": "open",
+      "n": 4,
+      "url": "https://wykop.pl/wpis/77534897/ostatnio-czesto-widze-filmiki-typu-facet-chodzi-po",
+      "status": "used; see continuation attempts",
+      "collector": "codex/gpt-6.1-terra"
+    },
+    {
+      "type": "open",
+      "n": 5,
+      "url": "https://wykop.pl/wpis/13443253/troche-polotu-i-finezji-w-tym-smutnym-jak-pizda-mi",
+      "status": "used; see continuation attempts",
+      "collector": "codex/gpt-6.1-terra"
+    },
+    {
+      "type": "open",
+      "n": 6,
+      "url": "https://m.mojevideo.sk/376e",
+      "status": "used; see continuation attempts",
+      "collector": "codex/gpt-6.1-terra"
+    },
+    {
+      "type": "query",
+      "n": 23,
+      "query": "\"Piotr Jeleń\" \"impro\" \"bilety\" wydarzenie",
+      "status": "used; see continuation attempts",
+      "collector": "codex/gpt-6.1-terra"
+    },
+    {
+      "type": "query",
+      "n": 24,
+      "query": "\"Piotr Jeleń\" site:kupbilecik.pl OR site:biletyna.pl OR site:kupbilet.pl",
+      "status": "used; see continuation attempts",
+      "collector": "codex/gpt-6.1-terra"
+    }
+  ],
+  "queries": [
+    {
+      "n": 1,
+      "query": "site:forum.gazeta.pl/forum \"Piotr Jeleń\" stand-up",
+      "result": "Results were dominated by standup.pl profile/catalog; no Gazeta authored fan thread identified."
+    },
+    {
+      "n": 2,
+      "query": "\"Piotr Jeleń\" stand-up opinie forum -standup.pl",
+      "result": "Search result identified Filmweb personal discussion post praising Piotr Jeleń and Jeleniejaja collectively; peer not identified. Also returned editorial/irrelevant results."
+    },
+    {
+      "n": 3,
+      "query": "site:trojmiasto.pl/imprezy \"Piotr Jeleń\" opinia",
+      "result": "Found archived event listing ‘L et S DUET+ Piotr Jeleń - Impro Komedia’ marked 1 opinion; targeted event-review archive lead."
+    },
+    {
+      "n": 4,
+      "query": "\"Piotr Jeleń\" \"opinia\" impro komedia recenzja",
+      "result": "Mostly unrelated homonyms/editorial pages; no new fan post. Trojmiasto listing corroborated as only relevant lead."
+    },
+    {
+      "n": 11,
+      "query": "site:kupbilecik.pl \"Piotr Jeleń\" opinie",
+      "result": "Targeted KupBilecik/KupBilet and possessive searches: results mainly performer profile, prior Filmweb thread, unrelated Szulowski review archive and homonyms; no identified Piotr Jeleń ticket archive."
+    },
+    {
+      "n": 12,
+      "query": "site:kupbilet.pl \"Piotr Jeleń\" opinie",
+      "result": "See batch 11-14: no identified Piotr Jeleń review archive."
+    },
+    {
+      "n": 13,
+      "query": "\"Piotra Jelenia\" stand up opinie",
+      "result": "See batch 11-14: possessive search yielded profile and unrelated homonyms."
+    },
+    {
+      "n": 14,
+      "query": "\"Piotrek Jeleń\" komik występ opinie",
+      "result": "See batch 11-14: no new relevant authored review."
+    },
+    {
+      "n": 15,
+      "query": "\"jeleniejaja\" \"standup\" forum",
+      "result": "See batch 15-18: profile and unrelated videos dominate."
+    },
+    {
+      "n": 16,
+      "query": "site:wykop.pl \"jeleniejaja\" komik",
+      "result": "See batch 15-18: Wykop posts 13443253 and 77534897 are leads."
+    },
+    {
+      "n": 17,
+      "query": "site:reddit.com \"jeleniejaja\" standup",
+      "result": "See batch 15-18: no identified relevant Reddit post."
+    },
+    {
+      "n": 18,
+      "query": "\"piotr jelen\" standup komentarze opinie",
+      "result": "See batch 15-18: profiles/videos, no new attributable personal overlap."
+    },
+    {
+      "n": 19,
+      "query": "\"Jeleniejaja\" stand up komicy opinie forum",
+      "result": "See batch 19-22: editorial profile and prior Filmweb post."
+    },
+    {
+      "n": 20,
+      "query": "\"Piotr Jeleń\" kabaret występ publiczność opinie bilety",
+      "result": "See batch 19-22: no identifiable event review archive."
+    },
+    {
+      "n": 21,
+      "query": "\"Jeleń\" \"impro komedia\" opinie bilety",
+      "result": "See batch 19-22: no identifiable event review archive."
+    },
+    {
+      "n": 22,
+      "query": "\"Piotr Jeleń\" \"komicy\" komentarze stand up",
+      "result": "See batch 19-22: profile/editorials and Wykop lead."
+    },
+    {
+      "n": 23,
+      "query": "\"Piotr Jeleń\" \"impro\" \"bilety\" wydarzenie",
+      "result": "See batch 23-24: unrelated event listings."
+    },
+    {
+      "n": 24,
+      "query": "\"Piotr Jeleń\" site:kupbilecik.pl OR site:biletyna.pl OR site:kupbilet.pl",
+      "result": "See batch 23-24: no relevant identified ticket event archive."
+    },
+    {
+      "n": 5,
+      "query": "site:kupbilecik.pl \"Piotr Jeleń\" opinie",
+      "result": "Six-query call exceeded documented maximum; response lost to logging exception; conservatively charged. No result available."
+    },
+    {
+      "n": 6,
+      "query": "site:kupbilet.pl \"Piotr Jeleń\" opinie",
+      "result": "Six-query call exceeded documented maximum; response lost to logging exception; conservatively charged. No result available."
+    },
+    {
+      "n": 7,
+      "query": "\"Piotra Jelenia\" stand up opinie",
+      "result": "Six-query call exceeded documented maximum; response lost to logging exception; conservatively charged. No result available."
+    },
+    {
+      "n": 8,
+      "query": "\"Piotrek Jeleń\" komik występ opinie",
+      "result": "Six-query call exceeded documented maximum; response lost to logging exception; conservatively charged. No result available."
+    },
+    {
+      "n": 9,
+      "query": "site:wykop.pl \"Jeleń\" \"standup\" komik",
+      "result": "Six-query call exceeded documented maximum; response lost to logging exception; conservatively charged. No result available."
+    },
+    {
+      "n": 10,
+      "query": "site:reddit.com/r/Polska \"Jeleń\" standup",
+      "result": "Six-query call exceeded documented maximum; response lost to logging exception; conservatively charged. No result available."
+    }
+  ],
+  "opens": [
+    {
+      "n": 1,
+      "url": "https://www.filmweb.pl/person/Piotr+Jele%C5%84-2174976/discussion/Jeleniejaja-3158445",
+      "result": "success; full page accessible, 237 lines. Exact post at lines 116-122 by “użytkownik usunięty”, displayed timestamp 2020-04-11 18:08:05. It praises Piotrek and “chłopaki z jelenich jaj” collectively; no individually named frozen peer."
+    },
+    {
+      "n": 2,
+      "url": "https://www.trojmiasto.pl/imprezy/spektakle/improwizacje/dni%2C2017-11-14_2017-12-14.html",
+      "result": "failed; full-URL web open returned Cache miss; no page content promoted."
+    },
+    {
+      "n": 3,
+      "url": "https://www.trojmiasto.pl/imprezy/spektakle/improwizacje/dni%2C2017-11-14_2017-12-14.html",
+      "method": "T3 preview_open after preview_status returned available:false",
+      "result": "failed; “Too many server browser tabs are open. Close one with t3_preview_close, or reuse a tabId from preview_status tabs.” No tab was closed or reused."
+    },
+    {
+      "n": 4,
+      "url": "https://wykop.pl/wpis/77534897/ostatnio-czesto-widze-filmiki-typu-facet-chodzi-po",
+      "result": "Cache miss; no page content read."
+    },
+    {
+      "n": 5,
+      "url": "https://wykop.pl/wpis/13443253/troche-polotu-i-finezji-w-tym-smutnym-jak-pizda-mi",
+      "result": "Full Wykop post and six replies read, lines 44-160. thisisthesix post tags Jeleniejaja; replies concern a joke, a startled viewer, and a GIF. No identified frozen peer or personal co-appraisal."
+    },
+    {
+      "n": 6,
+      "url": "https://m.mojevideo.sk/376e",
+      "result": "Cache miss; no page content read."
+    }
+  ],
+  "full_reads": [
+    {
+      "url": "https://www.filmweb.pl/person/Piotr+Jele%C5%84-2174976/discussion/Jeleniejaja-3158445",
+      "source_kind": "Filmweb person discussion",
+      "source_family": "Filmweb authored discussion",
+      "verified_full_page": true,
+      "candidate_locators": [
+        "użytkownik usunięty, page lines 116-122; displayed timestamp 2020-04-11 18:08:05"
+      ],
+      "eligibility": "Excluded: the collective Jeleniejaja group is not an identified frozen peer."
+    },
+    {
+      "url": "https://wykop.pl/wpis/13443253/troche-polotu-i-finezji-w-tym-smutnym-jak-pizda-mi",
+      "source_kind": "Wykop microblog and replies",
+      "source_family": "Wykop discussion",
+      "verified_full_page": true,
+      "candidate_locators": [
+        "thisisthesix 2015-07-08 18:58:58 lines 50-63; six replies lines 75-158"
+      ],
+      "eligibility": "Excluded: tag/channel and reactions without identified frozen peer or personal co-appreciation."
+    }
+  ],
+  "search_only_leads": [
+    {
+      "query_numbers": [
+        1,
+        2
+      ],
+      "url": "https://www.filmweb.pl/person/Piotr%2BJele%C5%84-2174976/discussion/Jeleniejaja-3158445",
+      "note": "Initially a search lead, then fully opened. Excluded from candidates because the group appraisal does not identify a frozen peer."
+    },
+    {
+      "query_numbers": [
+        3,
+        4
+      ],
+      "url": "https://www.trojmiasto.pl/imprezy/spektakle/improwizacje/dni%2C2017-11-14_2017-12-14.html",
+      "note": "Archive lists L et S DUET+ Piotr Jeleń - Impro Komedia and indicates one opinion; event page not yet verified."
+    }
+  ],
+  "dedup": [
+    {
+      "url": "https://www.filmweb.pl/person/Piotr+Jele%C5%84-2174976/discussion/Jeleniejaja-3158445",
+      "result": "URL absent from latest graph evidence_sources map in encoded and decoded spellings; no candidate retained, so no post/excerpt canonicalization required."
+    },
+    {
+      "url": "https://www.trojmiasto.pl/imprezy/spektakle/improwizacje/dni%2C2017-11-14_2017-12-14.html",
+      "result": "URL absent from latest graph evidence_sources map; page was not retrieved."
+    },
+    {
+      "result": "No new qualifying post retained; no candidate author/post/excerpt requires canonical dedup. Previously read Filmweb URL checked against graph by prior worker; Wykop post excluded on content, not presumed duplicate. Canonical manifests not exhaustively compared for excluded posts."
+    }
+  ],
+  "errors": [
+    {
+      "type": "page-open",
+      "url": "https://www.trojmiasto.pl/imprezy/spektakle/improwizacje/dni%2C2017-11-14_2017-12-14.html",
+      "detail": "Full-URL open returned Cache miss; preview_status was non-navigation and returned available:false; required preview_open failed because the browser server had too many tabs. No retries; protected tabs untouched."
+    },
+    {
+      "type": "ledger-write",
+      "detail": "A bookkeeping-only Python command had a syntax error while appending query results; it made no research request and was corrected before the next action."
+    },
+    {
+      "type": "query-batch",
+      "detail": "Six-query call exceeded documented web tool limit; response was lost when bookkeeping used unavailable btoa. All six reservations remain charged conservatively."
+    },
+    {
+      "type": "page-open",
+      "url": "https://wykop.pl/wpis/77534897/ostatnio-czesto-widze-filmiki-typu-facet-chodzi-po",
+      "detail": "Full URL web open cache miss. Existing preview capacity failure was not repeated; search snippet only."
+    },
+    {
+      "type": "page-open",
+      "url": "https://m.mojevideo.sk/376e",
+      "detail": "Full URL web open cache miss. Existing preview capacity failure was not repeated; search snippet only."
+    }
+  ],
+  "candidates_saved": 0,
+  "usage": {
+    "queries": 24,
+    "opens": 6,
+    "verified_candidates": 0,
+    "caps": {
+      "queries": 24,
+      "opens": 24,
+      "verified_candidates": 16
+    }
+  },
+  "unused_allowance": {
+    "queries": 0,
+    "opens": 18,
+    "verified_candidates": 16
+  },
+  "source_family_coverage": [
+    {
+      "family": "Filmweb personal discussion",
+      "attempted": true,
+      "full_reads": 1,
+      "qualifying_candidates": 0
+    },
+    {
+      "family": "Trojmiasto event-review archive",
+      "attempted": true,
+      "full_reads": 0,
+      "search_only_leads": 1,
+      "access_failure": "web cache miss; preview server capacity error"
+    },
+    {
+      "family": "Wykop authored discussions",
+      "attempted": true,
+      "full_reads": 1,
+      "qualifying_candidates": 0,
+      "access_failures": 1
+    },
+    {
+      "family": "Ticket archives KupBilecik/KupBilet/Biletyna",
+      "attempted": true,
+      "full_reads": 0,
+      "note": "Searches returned no identified Piotr Jeleń archive; unrelated Piotr Zola Szulowski archive excluded; no general inaccessibility claim."
+    },
+    {
+      "family": "Reddit / independent video forum",
+      "attempted": true,
+      "full_reads": 0,
+      "note": "No relevant Reddit thread discovered; Mojevideo full URL cache miss."
+    }
+  ],
+  "retrieved_at": "2026-10-31T23:49:58Z",
+  "stop_reason": "Initial Luna stop preserved above in prior_stop_reason; continuation exhausted conservatively charged query allowance, with accessible and blocked routes documented; not evidence of no overlap.",
+  "continuation": {
+    "collector": {
+      "provider": "codex",
+      "model": "gpt-6.1-terra",
+      "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+    },
+    "plan": "Search source-led ticket review archives and event pages, plus authored discussions on Filmweb, Reddit, Wykop and independent forums/blogs, using variants and possessives. Read exact discovered URLs and full posts, verify performer identities and deduplicate against graph manifests; retain caveats and distinguish access failure from no evidence.",
+    "started_at": "2026-10-31T23:51:44.697685+00:00",
+    "attempts": [
+      {
+        "type": "query",
+        "n": 5,
+        "query": "site:kupbilecik.pl \"Piotr Jeleń\" opinie",
+        "reserved_at": "2026-10-31T23:51:49.732665+00:00",
+        "result": "Batch submitted with six queries, exceeding web tool maximum of four; response lost to bookkeeping error. Conservatively charged as attempted; no results relied upon."
+      },
+      {
+        "type": "query",
+        "n": 6,
+        "query": "site:kupbilet.pl \"Piotr Jeleń\" opinie",
+        "reserved_at": "2026-10-31T23:51:49.732674+00:00",
+        "result": "Batch submitted with six queries, exceeding web tool maximum of four; response lost to bookkeeping error. Conservatively charged as attempted; no results relied upon."
+      },
+      {
+        "type": "query",
+        "n": 7,
+        "query": "\"Piotra Jelenia\" stand up opinie",
+        "reserved_at": "2026-10-31T23:51:49.732678+00:00",
+        "result": "Batch submitted with six queries, exceeding web tool maximum of four; response lost to bookkeeping error. Conservatively charged as attempted; no results relied upon."
+      },
+      {
+        "type": "query",
+        "n": 8,
+        "query": "\"Piotrek Jeleń\" komik występ opinie",
+        "reserved_at": "2026-10-31T23:51:49.732679+00:00",
+        "result": "Batch submitted with six queries, exceeding web tool maximum of four; response lost to bookkeeping error. Conservatively charged as attempted; no results relied upon."
+      },
+      {
+        "type": "query",
+        "n": 9,
+        "query": "site:wykop.pl \"Jeleń\" \"standup\" komik",
+        "reserved_at": "2026-10-31T23:51:49.732681+00:00",
+        "result": "Batch submitted with six queries, exceeding web tool maximum of four; response lost to bookkeeping error. Conservatively charged as attempted; no results relied upon."
+      },
+      {
+        "type": "query",
+        "n": 10,
+        "query": "site:reddit.com/r/Polska \"Jeleń\" standup",
+        "reserved_at": "2026-10-31T23:51:49.732683+00:00",
+        "result": "Batch submitted with six queries, exceeding web tool maximum of four; response lost to bookkeeping error. Conservatively charged as attempted; no results relied upon."
+      },
+      {
+        "type": "query",
+        "n": 11,
+        "query": "site:kupbilecik.pl \"Piotr Jeleń\" opinie",
+        "reserved_at": "2026-10-31T23:52:00.790319+00:00",
+        "result": "See raw search batch 11-14",
+        "completed_at": "2026-10-31T23:52:02.200871+00:00"
+      },
+      {
+        "type": "query",
+        "n": 12,
+        "query": "site:kupbilet.pl \"Piotr Jeleń\" opinie",
+        "reserved_at": "2026-10-31T23:52:00.790329+00:00",
+        "result": "See raw search batch 11-14",
+        "completed_at": "2026-10-31T23:52:02.200879+00:00"
+      },
+      {
+        "type": "query",
+        "n": 13,
+        "query": "\"Piotra Jelenia\" stand up opinie",
+        "reserved_at": "2026-10-31T23:52:00.790332+00:00",
+        "result": "See raw search batch 11-14",
+        "completed_at": "2026-10-31T23:52:02.200881+00:00"
+      },
+      {
+        "type": "query",
+        "n": 14,
+        "query": "\"Piotrek Jeleń\" komik występ opinie",
+        "reserved_at": "2026-10-31T23:52:00.790334+00:00",
+        "result": "See raw search batch 11-14",
+        "completed_at": "2026-10-31T23:52:02.200882+00:00"
+      },
+      {
+        "type": "query",
+        "n": 15,
+        "query": "\"jeleniejaja\" \"standup\" forum",
+        "reserved_at": "2026-10-31T23:52:06.466142+00:00",
+        "result": "See raw search batch 15-18",
+        "completed_at": "2026-10-31T23:52:07.959596+00:00"
+      },
+      {
+        "type": "query",
+        "n": 16,
+        "query": "site:wykop.pl \"jeleniejaja\" komik",
+        "reserved_at": "2026-10-31T23:52:06.466152+00:00",
+        "result": "See raw search batch 15-18",
+        "completed_at": "2026-10-31T23:52:07.959604+00:00"
+      },
+      {
+        "type": "query",
+        "n": 17,
+        "query": "site:reddit.com \"jeleniejaja\" standup",
+        "reserved_at": "2026-10-31T23:52:06.466155+00:00",
+        "result": "See raw search batch 15-18",
+        "completed_at": "2026-10-31T23:52:07.959606+00:00"
+      },
+      {
+        "type": "query",
+        "n": 18,
+        "query": "\"piotr jelen\" standup komentarze opinie",
+        "reserved_at": "2026-10-31T23:52:06.466156+00:00",
+        "result": "See raw search batch 15-18",
+        "completed_at": "2026-10-31T23:52:07.959607+00:00"
+      },
+      {
+        "type": "query",
+        "n": 19,
+        "query": "\"Jeleniejaja\" stand up komicy opinie forum",
+        "reserved_at": "2026-10-31T23:52:12.993722+00:00",
+        "result": "See raw search batch 19-22",
+        "completed_at": "2026-10-31T23:52:14.679577+00:00"
+      },
+      {
+        "type": "query",
+        "n": 20,
+        "query": "\"Piotr Jeleń\" kabaret występ publiczność opinie bilety",
+        "reserved_at": "2026-10-31T23:52:12.993730+00:00",
+        "result": "See raw search batch 19-22",
+        "completed_at": "2026-10-31T23:52:14.679585+00:00"
+      },
+      {
+        "type": "query",
+        "n": 21,
+        "query": "\"Jeleń\" \"impro komedia\" opinie bilety",
+        "reserved_at": "2026-10-31T23:52:12.993733+00:00",
+        "result": "See raw search batch 19-22",
+        "completed_at": "2026-10-31T23:52:14.679588+00:00"
+      },
+      {
+        "type": "query",
+        "n": 22,
+        "query": "\"Piotr Jeleń\" \"komicy\" komentarze stand up",
+        "reserved_at": "2026-10-31T23:52:12.993735+00:00",
+        "result": "See raw search batch 19-22",
+        "completed_at": "2026-10-31T23:52:14.679589+00:00"
+      },
+      {
+        "type": "open",
+        "n": 4,
+        "url": "https://wykop.pl/wpis/77534897/ostatnio-czesto-widze-filmiki-typu-facet-chodzi-po",
+        "reserved_at": "2026-10-31T23:52:27.248217+00:00",
+        "result": "Cache miss; no page content read.",
+        "completed_at": "2026-10-31T23:52:28.675505+00:00"
+      },
+      {
+        "type": "open",
+        "n": 5,
+        "url": "https://wykop.pl/wpis/13443253/troche-polotu-i-finezji-w-tym-smutnym-jak-pizda-mi",
+        "reserved_at": "2026-10-31T23:52:27.248226+00:00",
+        "result": "Full Wykop post and six replies read, lines 44-160. thisisthesix post tags Jeleniejaja; replies concern a joke, a startled viewer, and a GIF. No identified frozen peer or personal co-appraisal.",
+        "completed_at": "2026-10-31T23:52:28.675514+00:00"
+      },
+      {
+        "type": "open",
+        "n": 6,
+        "url": "https://m.mojevideo.sk/376e",
+        "reserved_at": "2026-10-31T23:52:27.248229+00:00",
+        "result": "Cache miss; no page content read.",
+        "completed_at": "2026-10-31T23:52:28.675516+00:00"
+      },
+      {
+        "type": "query",
+        "n": 23,
+        "query": "\"Piotr Jeleń\" \"impro\" \"bilety\" wydarzenie",
+        "reserved_at": "2026-10-31T23:52:33.136624+00:00",
+        "result": "See raw search batch 23-24",
+        "completed_at": "2026-10-31T23:52:35.098017+00:00"
+      },
+      {
+        "type": "query",
+        "n": 24,
+        "query": "\"Piotr Jeleń\" site:kupbilecik.pl OR site:biletyna.pl OR site:kupbilet.pl",
+        "reserved_at": "2026-10-31T23:52:33.136635+00:00",
+        "result": "See raw search batch 23-24",
+        "completed_at": "2026-10-31T23:52:35.098030+00:00"
+      }
+    ],
+    "raw_search_batches": [
+      {
+        "query_numbers": [
+          11,
+          12,
+          13,
+          14
+        ],
+        "response": "Piotr Jeleń - Stand-up | standup.pl (https://standup.pl/komicy/piotr-jelen)\nciteturn1search0 [wordlim: 200] Crawled: 3 weeks ago; Wyjątkowo wcześnie zadebiutował na ogólnopolskiej scenie - w 2010 roku, mając zaledwie ok. 17-18 lat, wziął udział w programie \"Stand Up. ... Bilety na Piotra Jelenia dostępne są na standup.pl.\n\nImage: Piotr Jeleń - stand-up komik, zdjęcie profilowe\n\n# Piotr Jeleń\n\nPiotr Jeleń - komik i youtuber z Krynicy-Zdroju. \"Zabij mnie śmiechem\" 2010, YouTube \"Jeleniejaja\". Absolwent Szkoły Filmowej w Łodzi. standup.pl\n\n4.5 (2)\n\n### Kim jest Piotr Jeleń?\n\nPiotr Jeleń (ur. 1992 w Krynicy-Zdroju) to komik, aktor i twórca internetowy. Wyjątkowo wcześnie zadebiutował na ogólnopolskiej scenie - w 2010 roku, mając zaledwie ok. 17-18 lat, wziął udział w programie \"Stand Up. Zabij mnie śmiechem\" (Polsat). Absolwent Szkoły Filmowej w Łodzi (2017), twórca kanału YouTube \"Jeleniejaja\" - komediowego kanału z prankami i ukrytą kamerą.\n\n### Programy i kariera Piotra Jelenia\n\nPiotr Jeleń to jeden z nielicznych uczestników \"Zabij mnie śmiechem\" (Polsat, 2010), który był nastolatkiem podczas debiutu - miał zaledwie ok. 17-18 lat. Po ukończeniu Szkoły Filmowej w Łodzi (2017) rozwinął działalność jako twórca internetowy. Kanał YouTube \"Jeleniejaja\", prowadzony wspólnie z Michałem Floriańczykiem, oferuje komedie, pranki i ukrytą kamerę. Piotr Jeleń jest zarejestrowany w agencji aktorskiej Obsada - profil z potwierdzonym kontem IG @piotrjelen_official.\n\n### Gdzie zobaczyć Piotra Jelenia na żywo?\n\nPiotr Jeleń aktywnie działa jako twórca treści na YouTube (kanał \"Jeleniejaja\") i Instagramie @piotrjelen_official. Bilety na jego ewentualne sceniczne występy dostępne są na standup.pl - sprawdź aktualny terminarz. Śledź go na IG i YT, żeby być na bieżąco.\n\n126 931 710\n\nWyświetlenia\n\n115\n\nNagrania\n\n2 689 705\n\nPolubienia\n\n110 360\n\nKomentarze\n\nStatystyki YouTube · Zaktualizowano 07.10.2026\n\nYouTubeInstagramFacebook\n\n## Wszystkie nagrania\n\nCały katalog: 227\n\nNagrania115Shorty112\n\n[Input: Szukaj w całym katalogu]\n\n[Button: Szukaj]\n\n[Select]\n\nWyniki: 1-12 z 115\n\n5:36 UKRADLI MI TELEFON!Piotr Jeleń Data publikacji: 31.01.2026 21 7801147718:16 TRZECI RAZ MNIE ZACZEPIASZ!Piotr Jeleń Data publikacji: 03.09.2025 59 1762693116cite8†8:02 ALE TRAFIŁEM! Ale Akcja!Piotr Jeleń Data publikacji: 17.05.2025 67 1663184163 8:05 PUSZCZAM BĄKA I ZWALAM NA INNYCH Piotr Jeleń Data publikacji: 19.02.2025 62 64337092338:12 CHODZILIŚMY 30 LAT DO JEDNEJ KLASY!Piotr Jeleń Data publikacji: 17.11.2024 91 50746923518:37 KOLEGA PODRYWA PO AMERYKAŃSKU!Piotr Jeleń Data publikacji: 11.07.2024 94 19837091408:02 PAN STEFAN ROZBAWIA LUDZI :)Piotr Jeleń Data publikacji: 23.03.2024 69 75741062098:13 JAK ROZBAWIĆ LUDZI Piotr Jeleń Data publikacji: 12.08.2023 96 89538321095:52 WKRĘCIŁEŚ NAS W GIMNAZJUM!Piotr Jeleń Data publikacji: 18.05.2023 45 81717764211:34 JAK POZNAŁEM MOJĄ ŻONĘ [JeleniaMafia]Piotr Jeleń Data publikacji: 01.04.2023 28 91510301147:30 CELUJE W CIEBIE KASĄ!Piotr Jeleń Data publikacji: 19.03.2023 47 7962032607:29 NAJLEPSZE ŻARTY STYCZNIA 2023 Jeleniejaja Piotr Jeleń Data publikacji: 02.02.2023 41 211164572\n\n## Występuje również na\n\nCały katalog: 1\n\nShorty1\n\n[Input: Szukaj w całym katalogu]\n\n[Button: Szukaj]\n\n[Select]\n\nWyniki: 1-1 z 1\n\n0:42 BYĆ JAK JELEŃ…Katarzyna Piasecka Data publikacji: 02.09.2022 43 90810165\n\n## Często zadawane pytania\n\nKim jest Piotr Jeleń?\n\nPiotr Jeleń (ur. 1992, Krynica-Zdrój) to komik, aktor i youtuber. Uczestnik \"Zabij mnie śmiechem\" (Polsat, 2010) jako nastolatek. Absolwent Szkoły Filmowej w Łodzi (2017). YouTube: @jeleniejaja. IG: @piotrjelen_official.\n\nGdzie kupić bilety na Piotra Jelenia?\n\nBilety na Piotra Jelenia dostępne są na standup.pl. Śledź go na IG @piotrjelen_official i YouTube @jeleniejaja. Sprawdź aktualny terminarz na standup.pl.\n\nCo to jest kanał \"Jeleniejaja\"?\n\n\"Jeleniejaja\" to kanał YouTube Piotra Jelenia i Michała Floriańczyka - komedie, pranki i ukryta kamera. Kanał dostępny na YouTube pod adresem @jeleniejaja.\n\nW czym wystąpił Piotr Jeleń?\n\nPiotr Jeleń wystąpił w programie \"Stand Up. Zabij mnie śmiechem\" (Polsat, 2010, odcinek 1, Grupa 1) jako nastolatek (ur. 1992). Po ukończeniu Szkoły Filmowej w Łodzi (2017) działa jako aktor i twórca YouTube.\n\nGdzie studiował Piotr Jeleń?\n\nPiotr Jeleń ukończył Szkołę Filmową w Łodzi (PWSFTviT) w 2017 roku. Jest zarejestrowany w agencji aktorskiej Obsada.--------------------------------------------------------------------------------\nZASKOCZYŁ JĄ - Jeleniejaja - Piotr Jeleń | standup.pl (https://standup.pl/komicy/piotr-jelen/video/zaskoczyl-ja-jeleniejaja)\nciteturn1search1 [wordlim: 200] Published: 4.5 years ago; Crawled: last month; O czym jest nagranie Piotra Jelenia - Zaskoczył ją?\n\nNagranie przedstawia improwizowany występ Piotra Jelenia, który zadaje publiczności zaskakujące i humorystyczne pytania, takie jak o potrzebę skorzystania z latryny czy rozbieranie się przed psem.\n\n# ZASKOCZYŁ JĄ - Jeleniejaja\n\nPiotr Jeleń\n\n59 873 wyświetleń 4080 polubień 134 komentarzy 01.05.2022 6:13\n\nOcena widzów\n\n–\n\nTen film nie ma jeszcze ocen - bądź pierwszy\n\nOceń ten film\n\n## O tym nagraniu\n\nPiotr Jeleń w swoim programie \"Jeleniejaja\" serwuje serię absurdalnych i zaskakujących pytań, które wywołują salwy śmiechu. Komik pyta o zamówienie latryny, liczbę zjedzonych pączków (\"ile dupa wejdzie\"), rozbieranie się przed psem oraz selfie pod prysznicem. Porusza też wątek spotkania z autorem książki o UFO i podróżach równoległych, a także zabawnie odnosi się do gołębi. Nagranie to dynamiczny przegląd interakcji z publicznością, gdzie Jeleń testuje granice absurdu, a na koniec zachęca do uśmiechu i wspierania Michała, pomagającego bezdomnym i uchodźcom.\n\n## Najczęściej zadawane pytania\n\nO czym jest nagranie Piotra Jelenia - Zaskoczył ją?\n\nNagranie przedstawia improwizowany występ Piotra Jelenia, który zadaje publiczności zaskakujące i humorystyczne pytania, takie jak o potrzebę skorzystania z latryny czy rozbieranie się przed psem.\n\nJaka jest najciekawsza anegdota lub wątek z nagrania?\n\nW jakim kontekście odbywa się występ Piotra Jelenia?\n--------------------------------------------------------------------------------\nHeepsy | Descubre a los mejores influencers de YouTube (https://www.heepsy.com/es/youtube-profile/Jeleniejaja)\nciteturn1search2 [wordlim: 200] Crawled: 3 months ago; # Estadísticas y análisis de YouTube para @Jeleniejaja ... Jeleniejaja - Kanał komediowy Piotra Jelenia, w którym pozytywnie rozbawia ludzi filmami i akcjami z ukrytej kamery :) Wiadomości priv proszę wysyłać na:\n\n# Estadísticas y análisis de YouTube para @Jeleniejaja\n\nImage: Avatar\n\nJeleniejaja\n\nPoland\n\n  [email protected]\n\nContacto\n\nImage: Avatar\n\n@Jeleniejaja\n\nJeleniejaja - Kanał komediowy Piotra Jelenia, w którym pozytywnie rozbawia ludzi filmami i akcjami z ukrytej kamery :) Wiadomości priv proszę wysyłać na:\n\nSeguidores\n\n540K\n\nEngagement\n\n0.63%\n\nContenido seleccionado\n\n1.1K \n\n-  \n\n2.7K \n\n-  \n\n\nInformación sobre publicaciones\n\nEngagement\n\nPromedio 0.6%\n\nMás alto que el 62% de los creadores.\n\nReacciones al contenido\n\nMuy alta 3.4K\n\n 0\n\nMás alto que el 97% de los creadores.\n\nAlcance estimado\n\nMuy alta 63.4K\n\nMás alto que el 95% de los creadores.\n\nActualidad\n\nNot recently >60 days\n\nMás reciente que el 24% de los creadores.\n\nPosts por semana\n\nBaja 0.07\n\n\nInformación sobre la audiencia\n\nEvolución de seguidores\n\nImage: Evolución de seguidores\n\nDesbloquear reporte\n\nAutenticidad\n\nImage: Autenticidad\n\nDesbloquear reporte\n\nUbicación\n\nImage: Ubicación\n\nDesbloquear reporte\n\nIdioma\n\nImage: Idioma\n\nDesbloquear reporte\n\nEdad\n\nImage: Edad\n\nDesbloquear reporte\n\nGénero\n\nImage: Género\n\nDesbloquear reporte\n\nIntereses\n\nImage: Intereses\n\nDesbloquear reporte\n\nMenciones seleccionadas\n\n@iskry_z_nieba\n\nHashtags seleccionados\n\n#jeleniejaja\n--------------------------------------------------------------------------------\nJeleniejaja - Piotr Jeleń - Forum - Filmweb (https://www.filmweb.pl/person/Piotr%2BJele%C5%84-2174976/discussion/Jeleniejaja-3158445)\nciteturn1search3 [wordlim: 200] Published: 6.6 years ago; Crawled: 4 weeks ago; # Piotr Jeleń ... użytkownik usunięty\n\nPiotrek i chłopaki z jelenich jaj są niesamowici.Świetne,sympatyczne,przezabawne,nikogo nie obrażające filmy,które wzbudzają tylko pozytywne emocje.Piotrek w nich również jest bardzo dobry aktorsko,więc czekam teraz na duży ekran.\n\n# Piotr Jeleń\n\n6,8\n\n93 oceny gry aktorskiej\n\n  * Strona osoby\n  * filmografia (19)\n  * Ciekawostki (1)\n  * zdjęcia (4)\n  * Newsy\n  * Forum\n\npowrót do forum osoby Piotr Jeleń\n\n# Jeleniejaja\n\nImage: ${data.name}\n\nużytkownik usunięty\n\nPiotrek i chłopaki z jelenich jaj są niesamowici.Świetne,sympatyczne,przezabawne,nikogo nie obrażające filmy,które wzbudzają tylko pozytywne emocje.Piotrek w nich również jest bardzo dobry aktorsko,więc czekam teraz na duży ekran.\n\n2\n\n2020-04-11 18:08:05--------------------------------------------------------------------------------\n„Półczłowiek, półgłówek” - Piotr Szumowski w Jeleniej Górze | nj24.pl - portal Tygodnika Regionalnego Nowiny Jeleniogórskie | Jelenia Góra (https://old.nj24.pl/article/polczlowiek-polglowek-piotr-szumowski-w-jeleniej-gorze)\nciteturn1search4 [wordlim: 200] Published: 7.6 years ago; Crawled: last month; „Półczłowiek, półgłówek” to tytuł stand-upu, który jeleniogórskim Klubie Kwadrat 15 kwietnia o godz. ... Komediowo, z nutą absurdu doprawionego lekkim czarnym humorem – tak właśnie zapowiada się stand-up Piotra. ... Dla czterech osób, które 11 kwietnia o godzinie 12.00 najszybciej zadzwonią na redakcyjny numer 75 64 24 480 i prawidłowo odpowiedzą na pytanie, jak brzmi tytuł stand-upu Piotra Szumowskiego mamy podwójne zaproszenia na to wydarzenie.\n\n# „Półczłowiek, półgłówek” - Piotr Szumowski w Jeleniej Górze\n\nKAS/NJ | 8 kwietnia, 2019 - 09:07\n\n„Półczłowiek, półgłówek” - Piotr Szumowski w Jeleniej Górze\n\n„Półczłowiek, półgłówek” to tytuł stand-upu, który jeleniogórskim Klubie Kwadrat 15 kwietnia o godz. 20.00 zaprezentuje Piotrek Szumowski. Program, jak podkreśla sam autor, nie jest kolejnym banalnym przedstawieniem o głupocie.\n\nMłody komik, z dystansem do siebie i do świata, postara się razem z widzami wyciągnąć wnioski z ludzkiej głupoty. Czy ona jest nam w ogóle potrzebna? Może działa jak życiowy „hamulec ręczny”? A może właśnie czasami warto odpuścić, stanąć z boku i nie brać udziału w polskiej rzeczywistości? Komediowo, z nutą absurdu doprawionego lekkim czarnym humorem – tak właśnie zapowiada się stand-up Piotra.\nArtysta należący do grupy Stand-up Polska zna 4 języki, zwiedził świat w 400 dni, przeżył niecodzienne przygody. Nie wstydzi się jednak kilku swoich słabości i otwarcie przyznaje, że zdarza mu się być głąbem i trochę „nie ogarniać” – tak, jak zwykłemu człowiekowi. Piotr wtajemniczy też swoich widzów w kilka życiowych przemyśleń oraz w to jakie ma relacje z ojcem czy policją. Opowie też dlaczego nie szanuje dziewczynki z zapałkami.\nStand-up to forma występu opierająca się nie tyle na wyuczonych kwestiach, co na improwizowanym monologu komika, który stara się rozbawić widzów i wciągnąć ich do swojej opowieści. Bardziej niż estradowa precyzja liczy charyzma i osobowość stand-upera. Czy uda się to Piotrowi Szumowskiemu? Jeśli ktoś chciałby dowiedzieć się tego osobiście, ma świetną okazję wygrania wejściówek na to przedstawienie.\n\nUwaga! Dla czterech osób, które 11 kwietnia o godzinie 12.00 najszybciej zadzwonią na redakcyjny numer 75 64 24 480 i prawidłowo odpowiedzą na pytanie, jak brzmi tytuł stand-upu Piotra Szumowskiego mamy podwójne zaproszenia na to wydarzenie. Zapraszamy!--------------------------------------------------------------------------------\nPiotr Zola Szulowski - stand-up 2026/2027, bilety i terminy - KupBilecik (bilety online) (https://www.kupbilecik.pl/pl/db/5863/piotr-zola-szulowski?kb_ref=index&kb_ref_id=toptags&page=1)\nciteturn1search5 [wordlim: 200] Crawled: today; ##### Jelenia Góra, 05 lutego 2020 ... Piotrunia jak zwykle dał czadu , jest genialny , uśmiałam się do łez :) ... Polecam Piotrunia trzzyma klase kupa smiechu\n\n## Komentarze widzów\n\n### Aleksandra\n\nJak zawsze fenomenalne wystąpienie\n\n#### Piotr Zola Szulowski\n\n##### Lublin, 14 maja 2023\n\n### Sandra\n\nByło super. Dużo śmiechu\n\n#### Piotr Zola Szulowski\n\n##### Namysłów, 25 czerwca 2026\n\n### Beata\n\nMega występ ;)\n\n#### Piotr Zola Szulowski\n\n##### Jelenia Góra, 05 lutego 2020\n\n### Marek\n\nMistrzu w pełnej FORMIE i bez brzucha. ;)\n\n#### Piotr Zola Szulowski\n\n##### Świebodzin, 16 marca 2023\n\n### Paweł\n\nJestem pod mega wrażeniem występu Piotruni i Filipa. Gorąco polecam!!!\n\n#### Piotr Zola Szulowski\n\n##### Ostróda, 14 lipca 2023\n\n### Dawid\n\nPo prostu bajka\n\n#### Piotr Zola Szulowski\n\n##### Gdańsk, 27 lutego 2020\n\n### Marzena\n\nPiotrunio Najlepszy.\n\n#### Piotr Zola Szulowski\n\n##### Wrocław, 29 października 2023\n\n### Joanna\n\nSzybko i przyjemnie, kupię jeszcze nie raz\n\n#### Piotr Zola Szulowski\n\n##### Katowice, 04 lutego 2020\n\n### Joanna\n\nPiotrunia jak zwykle dał czadu , jest genialny , uśmiałam się do łez :)\n\n#### Piotr Zola Szulowski\n\n##### Łódź, 19 września 2023\n\n### Magdalena\n\nWszystko super\n\n#### Piotr Zola Szulowski\n\n##### Dębica, 15 września 2020\n\n### Elwira\n\nWystęp świetny. Piotrunia jak zawsze prezentował wysoki poziom. Support Wojtek Pięta też mega zabawny. Wróćcie do Legnicy w przyszłym roku.\n\n#### Piotr Zola Szulowski\n\n##### Legnica, 08 września 2026\n\n### Katarzyna\n\nSuper spędzony wieczór :)\n\n#### Piotr Zola Szulowski\n\n##### Białystok, 24 marca 2024\n\n### Bartosz\n\nWysteo super. Śmiechu kupa :\n\n#### Piotr Zola Szulowski\n\n##### Wałbrzych, 31 marca 2023\n\n### Diana\n\nJeden z najlepszych wydarzeń. Support pozytywnie zaskoczył. Najlepszy zestaw komików.\n\n#### Piotr Zola Szulowski\n\n##### Wołomin, 13 września 2023\n\n### Dominik\n\nPolecam Piotrunia trzzyma klase kupa smiechu\n\n#### Piotr Zola Szulowski\n\n##### Gdańsk, 23 maja 2023\n--------------------------------------------------------------------------------\nPiotrek the13th (2009) - Filmweb (https://www.filmweb.pl/film/Piotrek%2Bthe13th-2009-525346)\nciteturn1search6 [wordlim: 200] Published: 16.7 years ago; Crawled: 5 days ago; ## Opinie o filmie Piotrek the13th ... \"Jeleń\" ... Film, będący parodią słynnego, amerykańskiego horroru, opowiada historię młodzieży, która wyjeżdża do chatki nad jeziorem i wkrótce odkrywa straszną tajemnicę związaną z opuszczonym miejscem. ... 9 ostatni 2016-05-15 06:46:16  /  użytkownik usunięty ... Parę razy można było się uśmiać, jak na przykład \"słyszałeś przypowieść o synu marnotrawnym ?\" - \"nie\" - \"nie marnuj trawy synu\" :D ... Czy da się gdzieś obejrzeć film \"Piotrek Trzynastego\" Moim zdaniem bardzo dobra komedia, jedna z najlepszych polskich jakie widziałem w ostatnich latach.\n\n# Piotrek the13th\n\n## 2009\n\n1h 27m\n\n5,1 4,7 tys. ocen\n\n5,1 10 1 4652\n\n3,6 5   krytyków\n\n  * Opinie (221)\n  * Obsada (43)\n  * Listy (6)\n  * Oceny krytyków (0)\n  * Powiązane tytuły (2)\n  * zdjęcia (7)\n  * Forum\n  * Newsy (9)\n\nGrupa przyjaciół wyjeżdża na weekend do chatki na Mazurach. Wkrótce młodym przychodzi stawić czoło psychopatycznego zabójcy z piłą mechaniczną.\n\nKomedia\n\n### reżyseria Piotr Matwiejczyk\n\n### scenariusz Piotr Matwiejczyk\n\n### produkcja Polska\n\n### premiera 12 lutego 2010 (Światowa i polska premiera kinowa)\n\n## Opinie o filmie Piotrek the13th\n\nPopularna\n\nWalker White 4\n\nPan baka? czytaj dalej\n\nNowa\n\nŁukasz Piątek 5\n\nw momencie w którym przestajesz szukać prawdziwego filmu a dociera że ktoś sobie robi jaja - zaczyna byc fajne czytaj dalej\n\nZobacz więcej opinii   133\n\n## Obsada filmu Piotrek the13th\n\n### Piotr Matwiejczyk\n\nPiotrek\n\n### Dawid Antkowiak\n\nMichał\n\n### Weronika Rosati\n\nAndżelina\n\n### Dominik Matwiejczyk\n\nChłopak robiący zdjęcia w lesie\n\n### Beata Pelc\n\n### Radosław Bugajski\n\n### Łukasz Lipiński\n\n### Magdalena Kielar\n\nKarolina\n\n### Natalia Durczok\n\nNatalia\n\nZobacz pełną obsadę i twórców\n\n## Ranking ról\n\n### Mirosław Baka\n\nKierowca podwożący Piotrka\n\n7,1 94 Oceny\n\n### Andrzej Gałła\n\nOjciec Jeremiego\n\n6,9 82 Oceny\n\n### Wojciech Mecwaldowski\n\n\"Jeleń\"\n\n6,6 70 Ocen\n\n### Cezary Pazura\n\nStrażnik leśny\n\n6,4 114 Ocen\n\n### Marcin Dorociński\n\n\"Terrarium\"\n\n6,2 118 Ocen\n--------------------------------------------------------------------------------\nNaprawy artykułów gospodarstwa domowego • dolnośląskie, Jelenia Góra • Sprawdź adresy, telefony, opinie • Baza firm • pkt.pl (https://www.pkt.pl/szukaj/naprawy-artyku%C5%82%C3%B3w-gospodarstwa-domowego/jelenia-g%C3%B3ra)\nciteturn1search7 [wordlim: 200] Crawled: 3 weeks ago; # 11 wyników dla: naprawy artykułów gospodarstwa domowego w lokalizacji dolnośląskie, Jelenia Góra ... ### Wybrane opinie o firmie ... Serdecznie polecam serwis AGD i pana Piotra! ... B Jelenia Góra, Szkolna 8/9 lok.\n\n# 11 wyników dla: naprawy artykułów gospodarstwa domowego w lokalizacji dolnośląskie, Jelenia Góra\n\n\n## Eldom AGD Serwis\n\nNaprawa AGD\n\n3.8 197 opinii | dodaj\n\nFirma Eldom istnieje już od 1991 roku. Naszą specjalnością są naprawy artykułów gospodarstwa domowego. Siedziba działalności znajduje się w Jeleniej Górze, w województwie dolnośląskim.\n\nA Jelenia Góra, Forteczna 2a\n\nw odległości 200 m\n\ntelefon 75 752 45 36\n\nwww.serwisagd.jgora.pl\n\ngodz. pracy\n\nPn.\n\n08:00 - 16:00\n\nWt.\n\n08:00 - 16:00\n\nŚr.\n\n08:00 - 16:00\n\nCz.\n\n08:00 - 16:00\n\nPt.\n\n08:00 - 16:00\n\nSb.\n\nZadzwoń i sprawdź\n\nNd.\n\nZadzwoń i sprawdź\n\nAktualizuj dane\n\n### Wybrane opinie o firmie\n\nOpinia z Google\n\nKinga Samek\n\n5.0\n\n01.10.2026\n\nJak serwis AGD to tylko na fortecznej. Poznałam tam Pana Piotra, który naprawia różnego rodzaju sprzęty i zawsze jestem zadowolona z jego pracy. Pan Piotr to naprawdę w porządku gość, zna się na tym, co robi, i można się z nim normalnie dogadać. --------------------------------------------------------------------------------\nPiotr Bałtroczyk - STAND UP 2025 - Jeleniogórskie Centrum Kultury, ul. Bankowa 28/30, Jelenia Góra - 21 listopada 2025: 19:00 - było (https://www.cojestgrane.pl/polska/dolnoslaskie/jelenia-gora/wydarzenie/7hzt/piotr-baltroczyk-stand-up-2025/bylo)\nciteturn1search8 [wordlim: 200] Published: 11 months ago; Crawled: last month; # Piotr Bałtroczyk - STAND UP 2025\n\nBrodnica Brzeszcze Bydgoszcz Bystrzyca Kłodzka Chrzanów Ciechanów Ciechocinek Cieszyn Czersk Częstochowa Dzierżoniów Gdańsk Gdynia Głubczyce Grudziądz Hrubieszów Iława Kalwaria Zebrzydowska Kęty Kluczbork Kołobrzeg Koluszki Koszalin Kraków Krapkowice Krasnystaw Krotoszyn Leżajsk Łódź Lubaczów Lubin Lubliniec Międzyrzecz Myszków Nakło Nad Notecią Niepołomice Nowogard Nowy Targ Oława Oleśnica Ostrów Wielkopolski Pabianice Płock Polanica Zdrój Police Poznań Przecław k/Szczecina Przemyśl Sanok Sieradz Sierakowice Słupsk Sopot Śrem Starachowice Stargard Strzegom Świebodzin Świnoujście Szczecin Tczew Toruń Trzebinia Trzebnica Tychy Wałcz Włoszczowa Wołomin Wołów Września Zabrze Zielona Góra Złotoryja Żnin Żyrardów ... Jelenia Góra » ... Posłuchajcie proszę kolejnej wersji opowieści Piotra Bałtroczyka...\n\nBilety do nabycia na: KupBilecik.pl\n--------------------------------------------------------------------------------\nIDOL 4.39 - Telewizja - Forum dyskusyjne | Gazeta.pl (https://forum.gazeta.pl/forum/w%2C14%2C25318099%2C25318099%2CIDOL_4_39.html)\nciteturn1search9 [wordlim: 200] Published: 21.4 years ago; Crawled: last month; swoich planach i ambicjach, tak jak Piotrek a nie walkowali to, co bylo ... wybierasz się na finał? ... wokalista, ale tez i dlatego, ze wreszcie Idola wygrala osoba w pelni dorosla, ... Na szczegolne uznanie zasluzyl chyba Piotrek Lato - jego\n--------------------------------------------------------------------------------\n (https://www.jck.pl/news/)\nciteturn1search10 [wordlim: 200] Crawled: today; Proces twórczy nie ukrywa trudności – przeciwnie, pokazuje je jako naturalny element budowania relacji, odwagi i ekspresji.Na scenie występują członkowie Stowarzyszenia Rodzin i Przyjaciół Osób z Zespołem Downa w Jelenia Góra – aktorzy, którzy w szczery i bezpośredni sposób dzielą się z publicznością swoim sposobem patrzenia na świat ... STAND-UP Michał Leja - \"Chciałbym się mylić\" | 22.06.2023 ... 18.00 serdecznie zapraszamy na spektakl „BAR”, który jest kolejną propozycją Teatru VERBUM działającego od kilku sezonów w JCK w Jeleniej Górze. ... W roku Jego odejścia koncertem Piotra Rodowicza, chcemy przypomnieć atmosferę  spotkań w klubie „Kwadrat”. ... \"Ósmy dzień tygodnia\" to historia dwojga młodych ludzi, Agnieszki i Piotra, pary kochanków, która w obecnej Polsce rozpaczliwie poszukuje odrobiny prywatności.\n--------------------------------------------------------------------------------\n▷ Nowicka Zofia. Bar, Jelenia Góra (https://www.cylex-polska.pl/firmy/nowicka-zofia--bar-13988565.html)\nciteturn1search11 [wordlim: 200] Crawled: 2 months ago; Piotra Ściegiennego 5-7, 58-560 Jelenia Góra ... Bar widnieje w następujących kategoriach: ...   * Opinie\n--------------------------------------------------------------------------------\n6 | 25 lipca 2016 r. | AKTUALNOŚCI / KULTURA | Jelonka w poniedziałek w gazecie, codziennie w internecie (https://m.jbc.jelenia-gora.pl/Content/22354/JEL_23892_2016_Jelonka-com---tygodn_jelonka-3492016-07-25.pdf)\nciteturn1search12 [wordlim: 200] Published: 10.3 years ago; JELENIA GÓRA ... Wiesława Cichego z Teatru Polskiego we Wrocławiu, był ostatnią premierą w trakcie kadencji dyrektora Piotra Jędrzejasa w Teatrze im. ... W części bankietowej reżyser spektaklu „Mąż i żona” Wiesław Cichy podkreślił, że współpraca z jeleniogórskimi aktorami to czysta przyjemność, apelując jednocześnie do nieobecnych władz miasta o godziwe wynagrodzenia dla tych profesjonalistów. - Mogę z całą odpowiedzialnością powiedzieć, że macie tutaj perły - mówił reżyser. ... - Szukałem w lombardzie telefonu, a zobaczyłem gitarę, którą rozpoznałem po naklejce z gazowni oraz po śladach, bowiem Staszek używał charakterystycznych kostek do grania - wycinał je z plastiku przypominającego kartę telefoniczną, który w ten sposób brudził gitarę. Właściciel lombardu potwierdził, że to gitara pana Staszka, który podobno zaniósł tam przed śmiercią trzy gitary - powiedział Sławomir Krupka, który będzie ją trzymał w honorowym miejscu w domu i będzie starał się grać na niej jak najczęściej ze względu na jej wartość sentymentalną. ... mail: fred.meier@superkabel.de\n--------------------------------------------------------------------------------\nZałącznik nr 1 (https://bip.jeleniagora.pl/attachments/download/45899)\nciteturn1search13 [wordlim: 200] Published: 1.8 years ago; Piotra Skargi 15/1 Klub Sportowy \"Sudety\" Jelenia Góra Stowarzyszenie; 58-500 Jelenia Góra; ul. ... Złotnicza 12 | Szkolenie w PUB-GOL Karkonosze – tu spełniają się pływackie marzenia | 24 000,00 zł 5 000,00 zł 19 29 | Klub Sportowy \"Pub-Gol\"; 58-500 Jelenia Góra; ul.\n"
+      },
+      {
+        "query_numbers": [
+          15,
+          16,
+          17,
+          18
+        ],
+        "response": "Piotr Jeleń - Stand-up | standup.pl (https://standup.pl/komicy/piotr-jelen)\nciteturn2search0 [wordlim: 200] Crawled: 3 weeks ago; Image: Piotr Jeleń - stand-up komik, zdjęcie profilowe ... Piotr Jeleń aktywnie działa jako twórca treści na YouTube (kanał \"Jeleniejaja\") i Instagramie @piotrjelen_official. ... Komentarze\n\nImage: Piotr Jeleń - stand-up komik, zdjęcie profilowe\n\n# Piotr Jeleń\n\nPiotr Jeleń - komik i youtuber z Krynicy-Zdroju. \"Zabij mnie śmiechem\" 2010, YouTube \"Jeleniejaja\". Absolwent Szkoły Filmowej w Łodzi. standup.pl\n\n4.5 (2)\n\n### Kim jest Piotr Jeleń?\n\nPiotr Jeleń (ur. 1992 w Krynicy-Zdroju) to komik, aktor i twórca internetowy. Wyjątkowo wcześnie zadebiutował na ogólnopolskiej scenie - w 2010 roku, mając zaledwie ok. 17-18 lat, wziął udział w programie \"Stand Up. Zabij mnie śmiechem\" (Polsat). Absolwent Szkoły Filmowej w Łodzi (2017), twórca kanału YouTube \"Jeleniejaja\" - komediowego kanału z prankami i ukrytą kamerą.\n\n### Programy i kariera Piotra Jelenia\n\nPiotr Jeleń to jeden z nielicznych uczestników \"Zabij mnie śmiechem\" (Polsat, 2010), który był nastolatkiem podczas debiutu - miał zaledwie ok. 17-18 lat. Po ukończeniu Szkoły Filmowej w Łodzi (2017) rozwinął działalność jako twórca internetowy. Kanał YouTube \"Jeleniejaja\", prowadzony wspólnie z Michałem Floriańczykiem, oferuje komedie, pranki i ukrytą kamerę. Piotr Jeleń jest zarejestrowany w agencji aktorskiej Obsada - profil z potwierdzonym kontem IG @piotrjelen_official.\n\n### Gdzie zobaczyć Piotra Jelenia na żywo?\n\nPiotr Jeleń aktywnie działa jako twórca treści na YouTube (kanał \"Jeleniejaja\") i Instagramie @piotrjelen_official. Bilety na jego ewentualne sceniczne występy dostępne są na standup.pl - sprawdź aktualny terminarz. Śledź go na IG i YT, żeby być na bieżąco.\n\n126 931 710\n\nWyświetlenia\n\n115\n\nNagrania\n\n2 689 705\n\nPolubienia\n\n110 360\n\nKomentarze\n\nStatystyki YouTube · Zaktualizowano 07.10.2026\n\nYouTubeInstagramFacebook\n\n## Wszystkie nagrania\n\nCały katalog: 227\n\nNagrania115Shorty112\n\n[Input: Szukaj w całym katalogu]\n\n[Button: Szukaj]\n\n[Select]\n\nWyniki: 1-12 z 115\n\n5:36 UKRADLI MI TELEFON!Piotr Jeleń Data publikacji: 31.01.2026 21 7801147718:16 TRZECI RAZ MNIE ZACZEPIASZ!Piotr Jeleń Data publikacji: 03.09.2025 59 1762693116cite8†8:02 ALE TRAFIŁEM! Ale Akcja!Piotr Jeleń Data publikacji: 17.05.2025 67 1663184163 8:05 PUSZCZAM BĄKA I ZWALAM NA INNYCH Piotr Jeleń Data publikacji: 19.02.2025 62 64337092338:12 CHODZILIŚMY 30 LAT DO JEDNEJ KLASY!Piotr Jeleń Data publikacji: 17.11.2024 91 50746923518:37 KOLEGA PODRYWA PO AMERYKAŃSKU!Piotr Jeleń Data publikacji: 11.07.2024 94 19837091408:02 PAN STEFAN ROZBAWIA LUDZI :)Piotr Jeleń Data publikacji: 23.03.2024 69 75741062098:13 JAK ROZBAWIĆ LUDZI Piotr Jeleń Data publikacji: 12.08.2023 96 89538321095:52 WKRĘCIŁEŚ NAS W GIMNAZJUM!Piotr Jeleń Data publikacji: 18.05.2023 45 81717764211:34 JAK POZNAŁEM MOJĄ ŻONĘ [JeleniaMafia]Piotr Jeleń Data publikacji: 01.04.2023 28 91510301147:30 CELUJE W CIEBIE KASĄ!Piotr Jeleń Data publikacji: 19.03.2023 47 7962032607:29 NAJLEPSZE ŻARTY STYCZNIA 2023 Jeleniejaja Piotr Jeleń Data publikacji: 02.02.2023 41 211164572\n\n## Występuje również na\n\nCały katalog: 1\n\nShorty1\n\n[Input: Szukaj w całym katalogu]\n\n[Button: Szukaj]\n\n[Select]\n\nWyniki: 1-1 z 1\n\n0:42 BYĆ JAK JELEŃ…Katarzyna Piasecka Data publikacji: 02.09.2022 43 90810165\n\n## Często zadawane pytania\n\nKim jest Piotr Jeleń?\n\nPiotr Jeleń (ur. 1992, Krynica-Zdrój) to komik, aktor i youtuber. Uczestnik \"Zabij mnie śmiechem\" (Polsat, 2010) jako nastolatek. Absolwent Szkoły Filmowej w Łodzi (2017). YouTube: @jeleniejaja. IG: @piotrjelen_official.\n\nGdzie kupić bilety na Piotra Jelenia?\n\nBilety na Piotra Jelenia dostępne są na standup.pl. Śledź go na IG @piotrjelen_official i YouTube @jeleniejaja. Sprawdź aktualny terminarz na standup.pl.\n\nCo to jest kanał \"Jeleniejaja\"?\n\n\"Jeleniejaja\" to kanał YouTube Piotra Jelenia i Michała Floriańczyka - komedie, pranki i ukryta kamera. Kanał dostępny na YouTube pod adresem @jeleniejaja.\n\nW czym wystąpił Piotr Jeleń?\n\nPiotr Jeleń wystąpił w programie \"Stand Up. Zabij mnie śmiechem\" (Polsat, 2010, odcinek 1, Grupa 1) jako nastolatek (ur. 1992). Po ukończeniu Szkoły Filmowej w Łodzi (2017) działa jako aktor i twórca YouTube.\n\nGdzie studiował Piotr Jeleń?\n\nPiotr Jeleń ukończył Szkołę Filmową w Łodzi (PWSFTviT) w 2017 roku. Jest zarejestrowany w agencji aktorskiej Obsada.--------------------------------------------------------------------------------\nZakochałem się w Tobie! - Piotr Jeleń | standup.pl (https://standup.pl/komicy/piotr-jelen/video/zakochalem-sie-w-tobie)\nciteturn2search1 [wordlim: 200] Published: 8.5 years ago; Crawled: last month; 523 319 wyświetleń 14 359 polubień 435 komentarzy 26.04.2018 3:22 ... Nagranie to krótki klip, w którym Piotr Jeleń mówi o zakochaniu, swoim pierwszym dniu w pracy, organizacji osiemnastek oraz wspomina o tatuażu pingwina i konkursie na Instagramie. ... W jakim formacie jest nagranie i gdzie można je znaleźć?\n\nZakochałem się w Tobie!\n\nNie odtwarza się? Otwórz na YouTube ↗\n\n# Zakochałem się w Tobie!\n\nPiotr Jeleń\n\n523 319 wyświetleń 14 359 polubień 435 komentarzy 26.04.2018 3:22\n\nOcena widzów\n\n–\n\nTen film nie ma jeszcze ocen - bądź pierwszy\n\nOceń ten film\n\n## O tym nagraniu\n\nPiotr Jeleń prezentuje krótki klip, w którym porusza temat nieśmiałości w nowej pracy i zaskakującego wyznania \"zakochałem się w tobie\". Komik wspomina o organizacji urodzin dla trzynastolatków oraz o osobie z tatuażem pingwina na plaży. Nagranie zawiera również humorystyczne odniesienia do konkursów na Instagramie, gdzie można wygrać bluzę lub otrzymać papier w dziąsło za najgłośniejsze krzyki.\n\n\n## Najczęściej zadawane pytania\n\nO czym jest nagranie Piotra Jelenia 'Zakochałem się w Tobie!'?\n\nNagranie to krótki klip, w którym Piotr Jeleń mówi o zakochaniu, swoim pierwszym dniu w pracy, organizacji osiemnastek oraz wspomina o tatuażu pingwina i konkursie na Instagramie.\n\nJaka nietypowa anegdota pojawia się w klipie?\n\nW jakim formacie jest nagranie i gdzie można je znaleźć?--------------------------------------------------------------------------------\nPRZEJECHAŁ SARNĘ PO CZYM JĄ USMAŻYŁ I ZJADŁ - TV REGIO - Piotr Jeleń | standup.pl (https://standup.pl/komicy/piotr-jelen/video/przejechal-sarne-po-czym-ja-usmazyl-i-zjadl-tv-regio)\nciteturn2search2 [wordlim: 200] Published: 8.8 years ago; Crawled: 2 weeks ago; Piotr Jeleń\n\n206 486 wyświetleń 8964 polubień 659 komentarzy 01.02.2018 5:33 ... Nagranie przedstawia fragment występu stand-upowego Piotra Jelenia w konwencji programu \"TV Regio\". ... Nagranie przedstawia Piotra Jelenia opowiadającego zabawną historię o tym, jak przejechał sarnę, a następnie ją usmażył i zjadł.\n\nPRZEJECHAŁ SARNĘ PO CZYM JĄ USMAŻYŁ I ZJADŁ - TV REGIO\n\nNie odtwarza się? Otwórz na YouTube ↗\n\n# PRZEJECHAŁ SARNĘ PO CZYM JĄ USMAŻYŁ I ZJADŁ - TV REGIO\n\nPiotr Jeleń\n\n206 486 wyświetleń 8964 polubień 659 komentarzy 01.02.2018 5:33\n\nOcena widzów\n\n–\n\nTen film nie ma jeszcze ocen - bądź pierwszy\n\nOceń ten film\n\n## O tym nagraniu\n\nNagranie przedstawia fragment występu stand-upowego Piotra Jelenia w konwencji programu \"TV Regio\". Komik, znany z ciętego języka i umiejętności opowiadania absurdalnych historii, tym razem dzieli się z publicznością anegdotą o niecodziennym spotkaniu z dzikim zwierzęciem. To klasyczny przykład stand-upu klubowego, gdzie artysta przez ponad pięć minut bawi widzów, budując napięcie i zaskakując puentami. Materiał jest częścią jego wczesnych występów, które ugruntowały jego pozycję na polskiej scenie komediowej.\n\n## Najczęściej zadawane pytania\n\nO czym jest nagranie Piotra Jelenia?\n\nNagranie przedstawia Piotra Jelenia opowiadającego zabawną historię o tym, jak przejechał sarnę, a następnie ją usmażył i zjadł.\n\nW jakim programie występuje Piotr Jeleń?\n\nIle trwa nagranie \"Przejechał sarnę po czym ją usmażył i zjadł\"?\n\n← Wróć do profilu Piotr Jeleń--------------------------------------------------------------------------------\nNauczycie mnie tego OŁ JEA ? Q&A part 2 - Piotr Jeleń | standup.pl (https://standup.pl/komicy/piotr-jelen/video/nauczycie-mnie-tego-ol-jea-qa-part-2)\nciteturn2search3 [wordlim: 200] Published: 10.2 years ago; Crawled: 2 months ago; Nauczycie mnie tego OŁ JEA ? ... Piotr Jeleń\n\n97 260 wyświetleń 2794 polubień 247 komentarzy 04.09.2016 25:45 ... Komik, znany ze swojego zaangażowania w interakcję z publicznością, odpowiada na różnorodne pytania zadawane przez widzów, prezentując swoje poczucie humoru i umiejętność improwizacji. Ten blisko 26-minutowy materiał to doskonała okazja, by poznać Piotra Jelenia z nieco innej strony, poza klasycznym monologiem stand-upowym, i zobaczyć, jak radzi sobie z nieprzewidzianymi sytuacjami na scenie.\n\nNauczycie mnie tego OŁ JEA ? Q&A part 2\n\nNie odtwarza się? Otwórz na YouTube ↗\n\n# Nauczycie mnie tego OŁ JEA ? Q&A part 2\n\nPiotr Jeleń\n\n97 260 wyświetleń 2794 polubień 247 komentarzy 04.09.2016 25:45\n\nOcena widzów\n\n–\n\nTen film nie ma jeszcze ocen - bądź pierwszy\n\nOceń ten film\n\n## O tym nagraniu\n\nNagranie przedstawia drugą część sesji pytań i odpowiedzi (Q&A) z Piotrem Jeleniem, nagranej w formacie standardowego klipu z programu stand-upowego. Komik, znany ze swojego zaangażowania w interakcję z publicznością, odpowiada na różnorodne pytania zadawane przez widzów, prezentując swoje poczucie humoru i umiejętność improwizacji. Ten blisko 26-minutowy materiał to doskonała okazja, by poznać Piotra Jelenia z nieco innej strony, poza klasycznym monologiem stand-upowym, i zobaczyć, jak radzi sobie z nieprzewidzianymi sytuacjami na scenie. To typowy przykład segmentu, który często towarzyszy pełnym występom, dodając im dynamiki i osobistego charakteru.\n\n## Najczęściej zadawane pytania\n\nO czym jest nagranie Piotra Jelenia?\n\nNagranie przedstawia Piotra Jelenia odpowiadającego na pytania publiczności w drugiej części sesji Q&A, poruszając różnorodne tematy.\n\nJaki jest format nagrania z Piotrem Jeleniem?\n\nJak długo trwa to nagranie Piotra Jelenia?\n--------------------------------------------------------------------------------\nZASKOCZYŁ JĄ - Jeleniejaja - Piotr Jeleń | standup.pl (https://standup.pl/komicy/piotr-jelen/video/zaskoczyl-ja-jeleniejaja)\nciteturn2search4 [wordlim: 200] Published: 4.5 years ago; Crawled: last month; Piotr Jeleń\n\n59 873 wyświetleń 4080 polubień 134 komentarzy 01.05.2022 6:13 ... Nagranie przedstawia improwizowany występ Piotra Jelenia, który zadaje publiczności zaskakujące i humorystyczne pytania, takie jak o potrzebę skorzystania z latryny czy rozbieranie się przed psem.\n\n# ZASKOCZYŁ JĄ - Jeleniejaja\n\nPiotr Jeleń\n\n59 873 wyświetleń 4080 polubień 134 komentarzy 01.05.2022 6:13\n\nOcena widzów\n\n–\n\nTen film nie ma jeszcze ocen - bądź pierwszy\n\nOceń ten film\n\n## O tym nagraniu\n\nPiotr Jeleń w swoim programie \"Jeleniejaja\" serwuje serię absurdalnych i zaskakujących pytań, które wywołują salwy śmiechu. Komik pyta o zamówienie latryny, liczbę zjedzonych pączków (\"ile dupa wejdzie\"), rozbieranie się przed psem oraz selfie pod prysznicem. Porusza też wątek spotkania z autorem książki o UFO i podróżach równoległych, a także zabawnie odnosi się do gołębi. Nagranie to dynamiczny przegląd interakcji z publicznością, gdzie Jeleń testuje granice absurdu, a na koniec zachęca do uśmiechu i wspierania Michała, pomagającego bezdomnym i uchodźcom.\n\n## Najczęściej zadawane pytania\n\nO czym jest nagranie Piotra Jelenia - Zaskoczył ją?\n\nNagranie przedstawia improwizowany występ Piotra Jelenia, który zadaje publiczności zaskakujące i humorystyczne pytania, takie jak o potrzebę skorzystania z latryny czy rozbieranie się przed psem.\n\nJaka jest najciekawsza anegdota lub wątek z nagrania?\n\nW jakim kontekście odbywa się występ Piotra Jelenia?\n--------------------------------------------------------------------------------\nSZAŁ [Short Film] - Piotr Jeleń | standup.pl (https://standup.pl/komicy/piotr-jelen/video/szal-short-film)\nciteturn2search5 [wordlim: 200] Published: 8.7 years ago; Crawled: last month; 124 039 wyświetleń 5018 polubień 292 komentarzy 08.03.2018 8:59 ... Nagranie \"SZAŁ\" to krótki film, w którym Piotr Jeleń prezentuje swoje umiejętności aktorskie, odchodząc od typowej formy stand-upu.\n\nSZAŁ [Short Film]\n\nNie odtwarza się? Otwórz na YouTube ↗\n\n# SZAŁ [Short Film]\n\nPiotr Jeleń\n\n124 039 wyświetleń 5018 polubień 292 komentarzy 08.03.2018 8:59\n\nOcena widzów\n\n–\n\nTen film nie ma jeszcze ocen - bądź pierwszy\n\nOceń ten film\n\n## O tym nagraniu\n\nNagranie \"SZAŁ\" to krótki film, w którym Piotr Jeleń prezentuje swoje umiejętności aktorskie, odchodząc od typowej formy stand-upu. Ten materiał to świetna okazja, aby zobaczyć komika w innym kontekście, poza sceną komediową. Film trwa blisko 9 minut i jest przykładem kreatywnego podejścia do twórczości, łączącego elementy humoru z fabularną opowieścią. Dzięki temu nagraniu widzowie mogą poznać inną stronę talentu Piotra Jelenia, który udowadnia, że potrafi bawić i intrygować również w formie krótkometrażowej produkcji filmowej, zrealizowanej z dbałością o montaż i ogólny wydźwięk artystyczny.\n\n## Najczęściej zadawane pytania\n\nO czym jest nagranie \"Szał\" Piotra Jelenia?\n\nNagranie \"Szał\" to krótki film (short film) z udziałem Piotra Jelenia, prezentujący jego twórczość komediową w nietypowej formie.\n\nKto odpowiada za montaż filmu \"Szał\"?\n\nJak długo trwa nagranie \"Szał\" Piotra Jelenia i kiedy zostało opublikowane?\n\n← Wróć do profilu Piotr Jeleń--------------------------------------------------------------------------------\nUratowałem Ci życie ! - Jeleniejaja - Piotr Jeleń | standup.pl (https://standup.pl/komicy/piotr-jelen/video/uratowalem-ci-zycie-jeleniejaja)\nciteturn2search6 [wordlim: 200] Published: 10.0 years ago; Crawled: 2 months ago; Piotr Jeleń\n\n1 047 958 wyświetleń 21 541 polubień 606 komentarzy 17.11.2016 5:43\n\nUratowałem Ci życie ! - Jeleniejaja\n\nNie odtwarza się? Otwórz na YouTube ↗\n\n# Uratowałem Ci życie ! - Jeleniejaja\n\nPiotr Jeleń\n\n1 047 958 wyświetleń 21 541 polubień 606 komentarzy 17.11.2016 5:43\n\nOcena widzów\n\n–\n\nTen film nie ma jeszcze ocen - bądź pierwszy\n\nOceń ten film\n\n## O tym nagraniu\n\nW nagraniu \"Uratowałem Ci życie!\" Piotr Jeleń wchodzi w interakcję z publicznością, rozpoczynając od pytania o znajomych w Łodzi i prośby o numery telefonów. Komik przedstawia swoje nietypowe hobby, czyli wspinanie się na latarnie i przyklejanie się do przedmiotów, a także żartuje z zimna i muchy. Całość przeplatana jest improwizowanymi dialogami i zabawnymi scenkami, w tym z \"królikiem\", który ma nie krzyczeć, oraz sceną \"pędzącego zawodnika\" z poduszkami.\n--------------------------------------------------------------------------------\nYoutuber z Krynicy Piotr Jeleń o swojej przemianie: wtedy miałem dużo więcej odwagi | Gazeta Krakowska (https://gazetakrakowska.pl/youtuber-z-krynicy-piotr-jelen-o-swojej-przemianie-wtedy-mialem-duzo-wiecej-odwagi/ar/c1-18746755)\nciteturn2search7 [wordlim: 200] Published: 2.2 years ago; Crawled: 2 months ago; # Youtuber z Krynicy Piotr Jeleń o swojej przemianie: wtedy miałem dużo więcej odwagi ... Można by na tym jechać, ale człowiek też by się na tym w końcu wyłożył – przekazał Jeleń.\n\n# Youtuber z Krynicy Piotr Jeleń o swojej przemianie: wtedy miałem dużo więcej odwagi\n\nImage: Remigiusz Szurek\n\nRemigiusz Szurek\n\n18 sierpnia 2024, 9:15\n\nObserwuj w Google\n\nImage: Piotr Jeleń szerszemu gronu odbiorców jest znany z sympatycznego kanału komediowego na YouTube „Jeleniejaja” \n\nPiotr Jeleń szerszemu gronu odbiorców jest znany z sympatycznego kanału komediowego na YouTube „Jeleniejaja” fot. archiwum Piotra Jelenia\n\nKryniczanin Piotr Jeleń, absolwent Państwowej Wyższej Szkoły Filmowej, Telewizyjnej i Teatralnej im. L. Schillera w Łodzi, reżyser i aktor, szerszemu gronu odbiorców znany z sympatycznego kanału komediowego na YouTube „Jeleniejaja” wystąpił w podcaście Leonarda Michalskiego. Wśród wielu wątków znalazł się również ten traktujący o zmianie sposobu funkcjonowania samego Piotra jako youtubera dotąd kojarzonego z pozytywnym wkręcaniem przypadkowych ludzi.\n--------------------------------------------------------------------------------\nTroche polotu i finezji w tym smutnym jak p---a mieście co to za wy... (@thisisthesix) :: Wykop.pl (https://wykop.pl/wpis/13443253/troche-polotu-i-finezji-w-tym-smutnym-jak-pizda-mi)\nciteturn2search8 [wordlim: 200] Published: 11.3 years ago; Crawled: 5 days ago; #heheszki #jeleniejaja #smiesznyfilmik #humor #wtfcontent\n\n# Wpis z mikrobloga\n\nthisisthesix\n\nthisisthesix\n\n08.07.2015, 18:58:58\n\n  * 10\n\n[Button: +]\n\nTroche polotu i finezji w tym smutnym jak p---a mieście\nco to za wykopek w 1:13?\n#heheszki #jeleniejaja #smiesznyfilmik #humor #wtfcontent\n\nImage: thisisthesix - Troche polotu i finezji w tym smutnym jak p---a mieście co to za wy...\n\n  *     * krzywy_banan\n\nkrzywy_banan\n\n08.07.2015, 19:00:46\n\n  * 0\n\n[Button: +]\n\n> smutnym jak p---a mieście\n\n@thisisthesix: Czemu mówi się że coś jest smutne jak p---a? Przecież p---a niczym smutnym nie jest ( ͡° ͜ʖ ͡°)\n\n  *     *   *     * thisisthesix\n\nthisisthesix\n\nAutor 08.07.2015, 19:01:31\n\n  * 2\n\n[Button: +]\n\n@krzywy_banan: zapytaj bolca\n\nImage: thisisthesix - @krzywy_banan: zapytaj bolca\n\n  *     *   *     * Image: L.....F L.....F\n\nkonto usunięte 08.07.2015, 19:11:46\n\n  * 0\n\n[Button: +]\n\n@thisisthesix: borze jakie głupie\n\n  *     *   *     * kieru\n\nkieru\n\n09.07.2015, 06:07:29\n\n  * 0\n\n[Button: +]\n\n@thisisthesix: a się zlękłam!\n\n  *     *   *     * thisisthesix\n\nthisisthesix\n\nAutor 09.07.2015, 07:10:45\n\n  * 0\n\n[Button: +]\n\n@kieru: Biedna karynka\n\n  *     *   *     * Image: J.....9 J.....9\n\nkonto usunięte 09.07.2015, 10:24:16\n\n  * 0\n\n[Button: +]\n\nZrobi ktoś gifa z uśmiechem dziewczyn w samochodzie? (ʘ‿ʘ)--------------------------------------------------------------------------------\nOstatnio często widzę filmiki typu: facet chodzi po mieście i podrywa ... (@Jkl777) :: Wykop.pl (https://wykop.pl/wpis/77534897/ostatnio-czesto-widze-filmiki-typu-facet-chodzi-po)\nciteturn2search9 [wordlim: 200] Published: 2.2 years ago; Crawled: last month; Pomijając fakt, że goście którzy to nagrywają zazwyczaj są dość atrakcyjni to też np w USA jest inna kultura small talku, a mi przynajmniej wydaje się że zaczepianie obcych ludzi na ulicy w Polsce jest co najmniej dziwne ( ͡° ͜ʖ ͡°) ... i jeszcze ten https://www.youtube.com/@jeleniejaja/videos\n--------------------------------------------------------------------------------\nProgramy i klipy stand-up (5085) - strona 141 | standup.pl (https://standup.pl/video?page=141&type=video)\nciteturn2search10 [wordlim: 200] Crawled: last month; | Jeleniejaja Piotr Jeleń Data publikacji: 05.01.2020 135 7698229306 14:55 Inspektor RODO interweniuje w trakcie mojego występu | STAND-UP | MICHAŁ LEJA vs. publiczność Michał Leja Data publikacji: 05.01.2020 606 71914 628365+9 wyświetleń 1:21:15 Nieporozumienie 24: Cezary Ponttefski Bartosz Zalewski Data publikacji: 04.01.2020 51 876615101+9 wyświetleń 48:46 Remastered - RAFAŁ RUTKOWSKI | Stand-Up | Całe Nagranie (2020)Rafał Rutkowski Data publikacji: 03.01.2020 1 887 88417 256696+628 wyświetleń 11:51 Internet jest lepszy - Tata A Marcin Powiedział 20 lat Później (odc 4)Mateusz Ipkis Dudek Data publikacji: 03.01.2020 360151 3:59:59 BanterBanter vol.23 New Year Extravaganza Bartosz Zalewski Data publikacji: 31.12.2019 208 620643137+2 wyświetleń 8:25 NAJLEPSZE AKCJE 2019 Jeleniejaja HITY W SYLWESTRA Piotr Jeleń Data publikacji: 29.12.2019 123 1896782196+6 wyświetleń 12:41 Wychowanie Dzieci - Tata A Marcin Powiedział 20 lat Później (odc 3)Mateusz Ipkis Dudek Data publikacji: 26.12.2019 540121 22:37 KEVIN SAM W DOMU ANALIZA Cezary Pazura Data publikacji: 25.12.2019 296 46813 895852+3 wyświetleń 8:32 Pawel Hyszko Stand-Up na Emigracji Brexit i Remonty UK Paweł Hyszko Data publikacji: 24.12.2019 98 3401488134 5:04 Janek Wolańczyk Stand-Up - CHOINKA Janek Wolańczyk Data publikacji: 24.12.2019 22 39236218 20:10 DAREK GADOWSKI - \"Best of 2019 - Please Stand-up\"Darek Gadowski Data publikacji: 23.12.2019 644 6397692188+27 wyświetleń 24:33 Maciej Lobo Linke - Trafienie Krytyczne | StandUp | 2019 Maciej Lobo Linke Data publikacji: 21.12.2019 114 3401658183+2 wyświetleń 23:19 Rejent i Jurkiewicz - Resort Komedii - Odcinek z oświadczynami | Stand-up Polska Stand-up Polska Data publikacji: 20.12.2019 277 5285596198+8 wyświetleń 42:35 OLKA SZCZĘŚNIAK | Zespół HAJSpergera I STAND-UP 2019 Olka Szczęśniak Data publikacji: 20.12.2019 6 952 87495 08627335.0(1)+1.3K wyświetleń 11:47 Pieniądze i Polityka - Tata A Marcin Powiedział 20 lat Później [odc.\n--------------------------------------------------------------------------------\nProfil: @Bagietka19 :: Wykop.pl (https://wykop.pl/ludzie/Bagietka19)\nciteturn2search11 [wordlim: 200] Crawled: last month; Krótka kompilacja dziwnych filmików w Łodzi czyli Jeleniejajeczka part. ... Tuptuś urywa się ze smyczy i poluje na baby w Łodzi... więcej na: https://www.facebook.com/jeleniejaja\n--------------------------------------------------------------------------------\nBiophysics\n\n1. IMPRINT\n\n<table id=\"e1\">\n<tr><td><b (https://ed.wum.edu.pl/sites/ed.wum.edu.pl/files/2025-12/sylabuses-1st-year-in-ac.-y.-2025.26.pdf)\nciteturn2search12 [wordlim: 200] Published: 10 months ago; <tr><td><b>Course coordinator</b></td><td>Piotr Jeleń, MSc, PhD<br>e-mail: piotr.jelen@wum.edu.pl<br>phone: +48 22 6286334</td></tr>\n--------------------------------------------------------------------------------\nCANADA\nDébats de la Chambre des communes\nVOLUME 14 (https://www.noscommunes.ca/Content/House/402/Debates/057/HAN057-F.PDF)\nciteturn2search13 [wordlim: 200] Published: 2.2 years ago; magnifique festival et que je l'ai encouragé au fil des ans. ... PIOTR JELEN\n--------------------------------------------------------------------------------\nMedical University of Warsaw (https://ed.wum.edu.pl/sites/ed.wum.edu.pl/files/2025-09/sylabuses-1st-year-in-ac.-y.-2025.26.pdf)\nciteturn2search14 [wordlim: 200] Published: 1.1 years ago; e-mail: piotr.jelen@wum.edu.pl\n--------------------------------------------------------------------------------\nWARSZAWSKI UNIWERSYTET MEDYCZNY (https://ed.wum.edu.pl/sites/wl.wum.edu.pl/files/pliki-wl/2022/09/Przewodnik-dla-I-roku-niestacjonarne-2022_2023-1.pdf)\nciteturn2search15 [wordlim: 200] Published: 8 months ago; Dyscyplina wiodąca ... Sobol, dr Piotr Jeleń, dr A.\n--------------------------------------------------------------------------------\n14 www.naszagazeta.info                                                                 kwiecień 2024 r. (https://naszagazeta.info/wp-content/uploads/2026/02/nasza-gazeta-2024-04.pdf)\nciteturn2search16 [wordlim: 200] Published: 2.6 years ago; Crawled: 2.6 years ago; Upłynął ostateczny termin zgłaszania przez komitety wyborcze kandydatów na wójta naszej gminy. ... <tr><td>12</td><td>Piotr PROFASKA</td></tr>\n--------------------------------------------------------------------------------\nSPIS TREŚCI (https://pisf.pl/wp-content/uploads/2020/02/PF_2017_hyperlinks.pdf)\nciteturn2search17 [wordlim: 200] Published: 9.4 years ago; Jacek Piotr Bławut 21 ... POLANdja reż. ... Joanna Kos-Krauze, Krzysztof Krauze 51 ... Piotr Jelen 96 ... www.pisf.pl\n"
+      },
+      {
+        "query_numbers": [
+          19,
+          20,
+          21,
+          22
+        ],
+        "response": "Piotr Jeleń - Stand-up | standup.pl (https://standup.pl/komicy/piotr-jelen)\nciteturn3search0 [wordlim: 200] Crawled: 3 weeks ago; Piotr Jeleń (ur. 1992 w Krynicy-Zdroju) to komik, aktor i twórca internetowy. ... Piotr Jeleń aktywnie działa jako twórca treści na YouTube (kanał \"Jeleniejaja\") i Instagramie @piotrjelen_official. Bilety na jego ewentualne sceniczne występy dostępne są na standup.pl - sprawdź aktualny terminarz.\n\nImage: Piotr Jeleń - stand-up komik, zdjęcie profilowe\n\n# Piotr Jeleń\n\nPiotr Jeleń - komik i youtuber z Krynicy-Zdroju. \"Zabij mnie śmiechem\" 2010, YouTube \"Jeleniejaja\". Absolwent Szkoły Filmowej w Łodzi. standup.pl\n\n4.5 (2)\n\n### Kim jest Piotr Jeleń?\n\nPiotr Jeleń (ur. 1992 w Krynicy-Zdroju) to komik, aktor i twórca internetowy. Wyjątkowo wcześnie zadebiutował na ogólnopolskiej scenie - w 2010 roku, mając zaledwie ok. 17-18 lat, wziął udział w programie \"Stand Up. Zabij mnie śmiechem\" (Polsat). Absolwent Szkoły Filmowej w Łodzi (2017), twórca kanału YouTube \"Jeleniejaja\" - komediowego kanału z prankami i ukrytą kamerą.\n\n### Programy i kariera Piotra Jelenia\n\nPiotr Jeleń to jeden z nielicznych uczestników \"Zabij mnie śmiechem\" (Polsat, 2010), który był nastolatkiem podczas debiutu - miał zaledwie ok. 17-18 lat. Po ukończeniu Szkoły Filmowej w Łodzi (2017) rozwinął działalność jako twórca internetowy. Kanał YouTube \"Jeleniejaja\", prowadzony wspólnie z Michałem Floriańczykiem, oferuje komedie, pranki i ukrytą kamerę. Piotr Jeleń jest zarejestrowany w agencji aktorskiej Obsada - profil z potwierdzonym kontem IG @piotrjelen_official.\n\n### Gdzie zobaczyć Piotra Jelenia na żywo?\n\nPiotr Jeleń aktywnie działa jako twórca treści na YouTube (kanał \"Jeleniejaja\") i Instagramie @piotrjelen_official. Bilety na jego ewentualne sceniczne występy dostępne są na standup.pl - sprawdź aktualny terminarz. Śledź go na IG i YT, żeby być na bieżąco.\n\n126 931 710\n\nWyświetlenia\n\n115\n\nNagrania\n\n2 689 705\n\nPolubienia\n\n110 360\n\nKomentarze\n\nStatystyki YouTube · Zaktualizowano 07.10.2026\n\nYouTubeInstagramFacebook\n\n## Wszystkie nagrania\n\nCały katalog: 227\n\nNagrania115Shorty112\n\n[Input: Szukaj w całym katalogu]\n\n[Button: Szukaj]\n\n[Select]\n\nWyniki: 1-12 z 115\n\n5:36 UKRADLI MI TELEFON!Piotr Jeleń Data publikacji: 31.01.2026 21 7801147718:16 TRZECI RAZ MNIE ZACZEPIASZ!Piotr Jeleń Data publikacji: 03.09.2025 59 1762693116cite8†8:02 ALE TRAFIŁEM! Ale Akcja!Piotr Jeleń Data publikacji: 17.05.2025 67 1663184163 8:05 PUSZCZAM BĄKA I ZWALAM NA INNYCH Piotr Jeleń Data publikacji: 19.02.2025 62 64337092338:12 CHODZILIŚMY 30 LAT DO JEDNEJ KLASY!Piotr Jeleń Data publikacji: 17.11.2024 91 50746923518:37 KOLEGA PODRYWA PO AMERYKAŃSKU!Piotr Jeleń Data publikacji: 11.07.2024 94 19837091408:02 PAN STEFAN ROZBAWIA LUDZI :)Piotr Jeleń Data publikacji: 23.03.2024 69 75741062098:13 JAK ROZBAWIĆ LUDZI Piotr Jeleń Data publikacji: 12.08.2023 96 89538321095:52 WKRĘCIŁEŚ NAS W GIMNAZJUM!Piotr Jeleń Data publikacji: 18.05.2023 45 81717764211:34 JAK POZNAŁEM MOJĄ ŻONĘ [JeleniaMafia]Piotr Jeleń Data publikacji: 01.04.2023 28 91510301147:30 CELUJE W CIEBIE KASĄ!Piotr Jeleń Data publikacji: 19.03.2023 47 7962032607:29 NAJLEPSZE ŻARTY STYCZNIA 2023 Jeleniejaja Piotr Jeleń Data publikacji: 02.02.2023 41 211164572\n\n## Występuje również na\n\nCały katalog: 1\n\nShorty1\n\n[Input: Szukaj w całym katalogu]\n\n[Button: Szukaj]\n\n[Select]\n\nWyniki: 1-1 z 1\n\n0:42 BYĆ JAK JELEŃ…Katarzyna Piasecka Data publikacji: 02.09.2022 43 90810165\n\n## Często zadawane pytania\n\nKim jest Piotr Jeleń?\n\nPiotr Jeleń (ur. 1992, Krynica-Zdrój) to komik, aktor i youtuber. Uczestnik \"Zabij mnie śmiechem\" (Polsat, 2010) jako nastolatek. Absolwent Szkoły Filmowej w Łodzi (2017). YouTube: @jeleniejaja. IG: @piotrjelen_official.\n\nGdzie kupić bilety na Piotra Jelenia?\n\nBilety na Piotra Jelenia dostępne są na standup.pl. Śledź go na IG @piotrjelen_official i YouTube @jeleniejaja. Sprawdź aktualny terminarz na standup.pl.\n\nCo to jest kanał \"Jeleniejaja\"?\n\n\"Jeleniejaja\" to kanał YouTube Piotra Jelenia i Michała Floriańczyka - komedie, pranki i ukryta kamera. Kanał dostępny na YouTube pod adresem @jeleniejaja.\n\nW czym wystąpił Piotr Jeleń?\n\nPiotr Jeleń wystąpił w programie \"Stand Up. Zabij mnie śmiechem\" (Polsat, 2010, odcinek 1, Grupa 1) jako nastolatek (ur. 1992). Po ukończeniu Szkoły Filmowej w Łodzi (2017) działa jako aktor i twórca YouTube.\n\nGdzie studiował Piotr Jeleń?\n\nPiotr Jeleń ukończył Szkołę Filmową w Łodzi (PWSFTviT) w 2017 roku. Jest zarejestrowany w agencji aktorskiej Obsada.--------------------------------------------------------------------------------\nNapadają na mięsny ze szpadą w dłoni i smyrają kasztanem. Poznaj Jeleniejaja | naTemat.pl (https://natemat.pl/145753%2Cnapadaja-na-miesny-ze-szpada-w-dloni-i-smyraja-kasztanem-poznaj-jeleniejaja)\nciteturn3search1 [wordlim: 200] Published: 11.4 years ago; Crawled: last month; Poznaj Jeleniejaja ... Image: Kanał na YouTube Jelenie jaja ... Mieli nawet pomysł, by zrobić kompilację smutasów, ale zebrali tak mało materiału, że na razie nie wystarczy nawet na jeden odcinek.\n\n# Napadają na mięsny ze szpadą w dłoni i smyrają kasztanem. Poznaj Jeleniejaja\n\nPatrycja Marszałek\n\n16 czerwca 2015, 15:55·2 minuty czytania\n\nPublikacja artykułu: 16 czerwca 2015, 15:55\n\nImage: Kanał na YouTube Jelenie jaja\n\nKanał na YouTube Jelenie jaja Zdjęce pochodzi z facebook.com/jeleniejaja\n\nJeleniejaja to jeden z nielicznych kanałów, na których można obejrzeć naprawdę śmieszne żarty. Uśmiechnięty ziemniak i stopa, prawienie niespodziewanych komplementów, czy rozdawanie w tramwaju cukierków z okazji urodzin. Nikomu się nie narażają, a śmieszą i stają się hitem polskiego YouTube.\n\nUstaw naTemat jako preferowane medium w Google\n\nKanał tworzy kilku studentów z Łodzi, którzy na razie wolą pozostać anonimowi. Ich żarty są po prostu smaczne i to nie bez powodu. Chłopaki mają już dość tzw. pranków, które niekoniecznie dobrze się kojarzą.\n\n– Chcieliśmy nie tylko rozśmieszyć ludzi, lecz także, żeby pomyśleli o nas, że jesteśmy pozytywnymi wariatami – mówią.\n\nA są, co udowadniają tym, że przebierają się za psa, który zrywa się ze smyczy, a później aportuje kaczuszkę. Smyrają ludzi kasztanem, mydłem, napadają na sklep mięsny ze szpadą w dłoni, a wszyscy dookoła, łącznie z \"ofiarą\", się śmieją.\n\nŻarty przeważnie są spontaniczne, a myśl przewodnia inspirowana jest sytuacjami z życia, choć bywa, że filmami oraz serialami.\n\nReakcji ludzi nie da się przewidzieć, ale na szczęście rzadko zdarzają się smutasy: – 90 proc. osób reaguje pozytywnie i zgadzają się na wykorzystanie wizerunku – mówią. – Za każdym razem pytamy o zgodę, rozdajemy ulotki takie wycięte z kartonu z napisem “jeleniejaja”– dodaje.\n\nNie chcą, by ich filmy nazywać prankami, tylko ukrytą kamerą. Stawiają sobie granice, których nie należy przekraczać. Jeżeli ktoś odpowie im chamsko to biorą to na klatę i rozumieją, że każdy może mieć gorszy dzień.\n\nMieli nawet pomysł, by zrobić kompilację smutasów, ale zebrali tak mało materiału, że na razie nie wystarczy nawet na jeden odcinek.\n--------------------------------------------------------------------------------\nWbiliśmy na imprezę udając zespół muzyczny - Jeleniejaja - Piotr Jeleń | standup.pl (https://standup.pl/komicy/piotr-jelen/video/wbilismy-na-impreze-udajac-zespol-muzyczny-jeleniejaja)\nciteturn3search2 [wordlim: 200] Published: 10.5 years ago; Crawled: 3 months ago; W tym dynamicznym fragmencie z programu \"Jeleniejaja\" Piotr Jeleń prezentuje jedną ze swoich charakterystycznych, pełnych absurdu historii. ... Nagranie opowiada zabawną historię o tym, jak Piotr Jeleń wraz z ekipą \"Jeleniejaja\" dostali się na imprezę, udając zespół muzyczny.\n\nWbiliśmy na imprezę udając zespół muzyczny - Jeleniejaja\n\nNie odtwarza się? Otwórz na YouTube ↗\n\n# Wbiliśmy na imprezę udając zespół muzyczny - Jeleniejaja\n\nPiotr Jeleń\n\n865 065 wyświetleń 16 827 polubień 482 komentarzy 14.05.2016 6:19\n\n\n## O tym nagraniu\n\nW tym dynamicznym fragmencie z programu \"Jeleniejaja\" Piotr Jeleń prezentuje jedną ze swoich charakterystycznych, pełnych absurdu historii. Nagranie trwa nieco ponad sześć minut i jest doskonałym przykładem komedii opartej na osobistych doświadczeniach i niecodziennych sytuacjach. Komik, znany z lekkiego stylu i umiejętności budowania napięcia, opowiada o brawurowej próbie wejścia na imprezę pod fałszywym pretekstem. Materiał jest idealny dla fanów stand-upu, którzy cenią sobie humor sytuacyjny i opowieści z życia wzięte, przedstawione w zabawny i angażujący sposób.\n\n## Najczęściej zadawane pytania\n\nO czym jest nagranie Piotra Jelenia?\n\nNagranie opowiada zabawną historię o tym, jak Piotr Jeleń wraz z ekipą \"Jeleniejaja\" dostali się na imprezę, udając zespół muzyczny.\n\nCzym jest \"Jeleniejaja\"?\n\nJak długo trwa to nagranie Piotra Jelenia?\n--------------------------------------------------------------------------------\nJeleniejaja robią sobie jaja z łodzian. Powstał nowy kanał na YouTube [WIDEO] | Łódź Nasze Miasto (https://lodz.naszemiasto.pl/jeleniejaja-robia-sobie-jaja-z-lodzian-powstal-nowy-kanal/ar/c2-3399210)\nciteturn3search3 [wordlim: 200] Published: 11.4 years ago; Crawled: 2 months ago; # Jeleniejaja robią sobie jaja z łodzian. ... Twórcy Jelenichjaj inspiracje czerpią z popularnych współczesnych filmów, pranków, skeczy, programów komediowych, ale przede wszystkim z własnych obserwacji codziennego życia i abstrakcyjnych pomysłów, które przychodzą im do głowy. - Łodzianie są otwartymi i pogodnymi ludźmi. ... Image: emisja bez ograniczeń wiekowych\nTen ostatni wyczyn zakończył się zresztą interwencją ochrony centrum handlowego.\n\nTwórcy Jelenichjaj inspiracje czerpią z popularnych współczesnych filmów, pranków, skeczy, programów komediowych, ale przede wszystkim z własnych obserwacji codziennego życia i abstrakcyjnych pomysłów, które przychodzą im do głowy. - Łodzianie są otwartymi i pogodnymi ludźmi. Reakcje są w większości pozytywne. Nie robimy też żadnych chamskich żartów, które ostatnio są coraz mniej popularne w polskim YouTube - mówią.\n\nJak przyznają twórcy kanału, łodzianie chętnie dają się wciągnąć w spontaniczne akcje w przestrzeni publicznej. - Kręcimy dużo żartów sytuacyjnych. Nigdy nie wiemy jak ludzie zareagują, w jakim są nastroju w danej chwili. Przeważnie są to miłe reakcje świadczące o tym, że łodzianie są pozytywnymi ludźmi - dodają.\n\nNa youtube'owym kanale Jelenichjaj pojawiło się do tej pory sześć filmów. W planach są już kolejne. Docelowo w sieci co tydzień w niedzielę ma pojawiać się nowe nagranie, a w międzyczasie na facebooku krótkie zajawki i dodatki. - W planach mamy wiele pomysłów. Szukamy środków i sponsorów na trochę bardziej złożone akcje, których nie chcemy na razie zdradzać - dodają tajemniczo.\n\nImage: emisja bez ograniczeń wiekowych\n\nZobacz filmy z kanału \"Jeleniejaja\":\n\niframe\n\niframe\n\niframe\n\n  *   * Wiadomości\n\n  * jeleniejaja\n  * youtube łódź\n  * youtube\n  * jeleniejaja łódź\n  * prank łódź\n  * youtuberzy łódź--------------------------------------------------------------------------------\nYoutuber z Krynicy Piotr Jeleń o swojej przemianie: wtedy miałem dużo więcej odwagi | Gazeta Krakowska (https://gazetakrakowska.pl/youtuber-z-krynicy-piotr-jelen-o-swojej-przemianie-wtedy-mialem-duzo-wiecej-odwagi/ar/c1-18746755)\nciteturn3search4 [wordlim: 200] Published: 2.2 years ago; Crawled: 2 months ago; Image: Piotr Jeleń szerszemu gronu odbiorców jest znany z sympatycznego kanału komediowego na YouTube „Jeleniejaja” \n\nPiotr Jeleń szerszemu gronu odbiorców jest znany z sympatycznego kanału komediowego na YouTube „Jeleniejaja” fot. archiwum Piotra Jelenia ... - Słucham Ciebie i ja już słyszę innego Piotrka, innego człowieka – zagaił w pewnym momencie rozmowy autor podcastu.\n\n# Youtuber z Krynicy Piotr Jeleń o swojej przemianie: wtedy miałem dużo więcej odwagi\n\nImage: Remigiusz Szurek\n\nRemigiusz Szurek\n\n18 sierpnia 2024, 9:15\n\nObserwuj w Google\n\nImage: Piotr Jeleń szerszemu gronu odbiorców jest znany z sympatycznego kanału komediowego na YouTube „Jeleniejaja” \n\nPiotr Jeleń szerszemu gronu odbiorców jest znany z sympatycznego kanału komediowego na YouTube „Jeleniejaja” fot. archiwum Piotra Jelenia\n\nKryniczanin Piotr Jeleń, absolwent Państwowej Wyższej Szkoły Filmowej, Telewizyjnej i Teatralnej im. L. Schillera w Łodzi, reżyser i aktor, szerszemu gronu odbiorców znany z sympatycznego kanału komediowego na YouTube „Jeleniejaja” wystąpił w podcaście Leonarda Michalskiego. Wśród wielu wątków znalazł się również ten traktujący o zmianie sposobu funkcjonowania samego Piotra jako youtubera dotąd kojarzonego z pozytywnym wkręcaniem przypadkowych ludzi.\n\n- Słucham Ciebie i ja już słyszę innego Piotrka, innego człowieka – zagaił w pewnym momencie rozmowy autor podcastu. Piotr Jeleń przyznał w kolejnej części rozmowy, że nie ma w sobie na tyle odwagi, by robić takie rzeczy, które przełamują komfort drugiego człowieka, tę barierę.\n\n- Wtedy miałem dużo więcej odwagi, teraz już tak nie ryzykuję. Jakoś tak nie czuję potrzeby, czasami boję się, że mogę kogoś urazić. Raczej mało obchodzi mnie reakcja publiczności, kogoś kto by to komentował, bardziej troszczę się o siebie samego, nie chcę kogoś skrzywdzić, a nie jestem na tyle aktywny, żebym miał ciągłość i pewność siebie większą w żartach. One zeszły (na drugi plan – przyp. red.), teraz to ma kogoś zbudować pozytywnie nakręcić, nie zależy mi na klikbajtach. Można by na tym jechać, ale człowiek też by się na tym w końcu wyłożył – przekazał Jeleń.\n\n\nCałą rozmowę można obejrzeć poniżej.\n\niframe\n\nJeleniejaja (LINK) to kanał komediowy Piotra Jelenia, w którym pozytywnie rozbawia ludzi filmami i akcjami z ukrytej kamery. Dotąd zgromadził 546 tys. subskrybentów.\n--------------------------------------------------------------------------------\nJeleniejaja - Piotr Jeleń - Forum - Filmweb (https://www.filmweb.pl/person/Piotr%2BJele%C5%84-2174976/discussion/Jeleniejaja-3158445)\nciteturn3search5 [wordlim: 200] Published: 6.6 years ago; Crawled: 4 weeks ago;   * Forum ... # Jeleniejaja\n\n# Piotr Jeleń\n\n6,8\n\n93 oceny gry aktorskiej\n\n  * Strona osoby\n  * filmografia (19)\n  * Ciekawostki (1)\n  * zdjęcia (4)\n  * Newsy\n  * Forum\n\npowrót do forum osoby Piotr Jeleń\n\n# Jeleniejaja\n\nImage: ${data.name}\n\nużytkownik usunięty\n\nPiotrek i chłopaki z jelenich jaj są niesamowici.Świetne,sympatyczne,przezabawne,nikogo nie obrażające filmy,które wzbudzają tylko pozytywne emocje.Piotrek w nich również jest bardzo dobry aktorsko,więc czekam teraz na duży ekran.\n\n2\n\n2020-04-11 18:08:05--------------------------------------------------------------------------------\nPoľský troll Jeleniejaja v akcii I - Mojevideo (https://m.mojevideo.sk/376e)\nciteturn3search6 [wordlim: 200] Published: 11.3 years ago; Crawled: last month; Jeleniejaja (jelenie vajcia) je poľský srandista a troll, ktorý si rád strieľa z ľudí zo všetkých vekových kategórii. ... dziecko odvažne :D milionkrat lepsie nez ti hlupaci co sa za moslimov prezliekaju\n--------------------------------------------------------------------------------\nZawód: influencer. JelenieJaja: \"W budowaniu żartu wszystkie elementy są ważne\" (https://tech.wp.pl/zawod-influencer-jeleniejaja-w-budowaniu-zartu-wszystkie-elementy-sa-wazne%2C6362103318304385a)\nciteturn3search7 [wordlim: 200] Published: 7.6 years ago; Crawled: last month; JelenieJaja: \"W budowaniu żartu wszystkie elementy są ważne\" ... Piotr Jeleń: \"Osiemnastka w tramwaju\" - nagraliśmy je kilka miesięcy wcześniej, szykując się do otwarcia kanału. ... PJ: Od początków liceum mieliśmy zacięcie do nagrywania filmików, tworzenia filmowych komediowych treści.\n--------------------------------------------------------------------------------\nCzy mogę nagrywać kogoś w miejscu publicznym np na zatłoczonej ulicy i... (@neverwalkalone) :: Wykop.pl (https://wykop.pl/wpis/77753319/czy-moge-nagrywac-kogos-w-miejscu-publicznym-np-na)\nciteturn3search8 [wordlim: 200] Published: 2.2 years ago; Crawled: 4 days ago; Czy mogę nagrywać kogoś w miejscu publicznym np na zatłoczonej ulicy i potem opublikować nagranie w Internecie bez jego zgody? Przykładem mogą być różnego rodzaju akcje youtuberow typu jeleniejaja.\n--------------------------------------------------------------------------------\nCzy Bóg ma poczucie humoru? Mówią twórcy kanału Jeleniejaja (https://pl.aleteia.org/2018/07/08/jak-bog-rozbawia-na-rekolekcjach-opowiadaja-tworcy-kanalu-jeleniejaja/)\nciteturn3search9 [wordlim: 200] Published: 8.3 years ago; Crawled: last month; Piotr: Pojawia się gorycz związana z tym, że ja chcę robić dobre rzeczy, z wartościami, ale i z dobrym poczuciem humoru, trafiającym do starszych i młodszych, a świat tego do końca nie docenia. Promuje się chamską, kontrowersyjną albo dziecinną rozrywkę, albo goni za komercyjnymi treściami, które nie wnoszą żadnych wartości. ... ### Jeleniejaja: Bez sakramentów nie ma szczęśliwego życia ... Michał: Fajnie się świadczy o Bogu na forum charyzmatycznym, w kościele, we wspólnocie – przyjemnie się tam mówi o wierze. ... Pojawia się myśl: „religia to trochę wstyd, to staroświeckie i głupie”.\n--------------------------------------------------------------------------------\nProgramy i klipy stand-up (5158) - strona 149 | standup.pl (https://standup.pl/video?page=149&type=video)\nciteturn3search10 [wordlim: 200] Crawled: yesterday; KOMICY | Mecz piłkarski | SKRÓT Adam Van Bendler Data publikacji: 27.05.2019 1 404 08816 772956+2 wyświetleń 7:13 Comedians in Poland: Bartosz Zalewski \"Truth About My Family\" - polskie napisy Stand-up Polska Data publikacji: 27.05.2019 110 439216256 5:57 KANAR TAŃCZY I ŚPIEWA Z LUDŹMI W TRAMWAJU | Jeleniejaja Piotr Jeleń Data publikacji: 23.05.2019 121 7456115242 26:47 1500 EURO za spektakl!\n--------------------------------------------------------------------------------\nRanking nagrań stand-up - ostatnie 7 dni (5085) - strona 145 | standup.pl (https://standup.pl/video/ranking?page=145&period=7d&type=video)\nciteturn3search11 [wordlim: 200] Crawled: last month; Autor: Marek Grabie Marek Grabie Data publikacji: 24.05.2020 1222357+2 wyświetleńw 7 dni】#4330 9:30 Kuba Krzymiński - 10 na 10 | Stand-Up Teka Krzysztof Sawczuk Data publikacji: 03.05.2017 118715+2 wyświetleńw 7 dni#4331 5:45 Kanapa Doktora Stand-up'a, odcinek 9 - \" Ostatni seans filmowy \"Waldek Nowak Data publikacji: 03.04.2015 1039342+2 wyświetleńw 7 dni#4332 10:25 Facet VS pająk | stand-up Krzysztof Jahns Data publikacji: 17.03.2026 752433+2 wyświetleńw 7 dni#4333 11:04 AJGOR IGNACY: KOCHAM PRYMITYWNY ŻART, ALE MUSI BYĆ ZROBIONY DOBRZE | PRZEGLĄDARKA PAWŁOWSKIEGO Arkadiusz Pan Pawłowski Data publikacji: 20.04.2020 584323+2 wyświetleńw 7 dni#4334 7:08 04 Stand Up testy listopad 2025 testy 04 Łukasz Tomasz NieMam Data publikacji: 20.12.2025 4341+2 wyświetleńw 7 dni#4335 9:46 Frazeologizmy o mrocznej, smutnej i zadziwiającej historii.Maciek Adamczyk Data publikacji: 02.10.2024 186126+2 wyświetleńw 7 dni#4336 19:27 02 Stand Up Program RETRO testy październik 2025 testy 02 Łukasz Tomasz NieMam Data publikacji: 31.10.2025 15922+2 wyświetleńw 7 dni#4337 7:14 Open mic Bartek Pacuszkie Data publikacji: 23.08.2026 151+2 wyświetleńw 7 dni#4338 45:01 Fermentation pipe Ambient 45 minutes Krzysztof Dz Data publikacji: 08.08.2024 12421+2 wyświetleńw 7 dni#4339 10:55 3 MIASTA W 3 DNI...\n--------------------------------------------------------------------------------\nWPROWADZENIE | INTRODUCTION  17 (https://festiwalgdynia.pl/wp-content/uploads/2022/09/47FPFF_katalog_online-1.pdf)\nciteturn3search12 [wordlim: 200] Published: 4.2 years ago; Pan Berbeluch przejmuje władzę w Państwowym Instytucie ... charakteryzacja | make-up: ... komediowego kanału internetowego „Jeleniejaja”.\n--------------------------------------------------------------------------------\nSlide 1 (https://bpnt.bialystok.pl/Api/Files/Get/sites/bpntportal/BPNTPortal_Documents/fb401751fade2846a6ea8a2ffb48d6b2/%C5%81ukasz-%C5%9Awituniak---EastMedia-081248140.pdf)\nciteturn3search13 [wordlim: 200] Published: 9.5 years ago; JelenieJaja\n--------------------------------------------------------------------------------\nBiuletyn Tygodniowy CiZBiuletyn Centrum Informacyjnego Zakonów opracowywany przez zespół portalu internetowego (https://www.zyciezakonne.pl/download/biuletyn/2025/Biuletyn-Tygodniowy-CIZ-27-2025.pdf)\nciteturn3search14 [wordlim: 200] Published: 7 months ago; mocno zlaicyzowanym środowisku, na ... Nieba i Jeleniejaja. ... Nie bój się pustyni, bo Ja pójdę z ... Olkusza przyjechały do Kokotka po raz ... chrześcijańsko-alternatywnej kompozy-\n--------------------------------------------------------------------------------\nInfluencer marketing - praktycznie    I    whitepress.pl (https://www.loswiaheros.pl/zdjecia/influencer-marketing-praktycznie-whitepress.pdf)\nciteturn3search15 [wordlim: 200] Published: last year; platformach, otrzymuje właśnie takie – przyjazne odbiorcom – natywne ... Dla przykładu, w ubiegłym miesiącu Twórcy kanału Jeleniejaja\n--------------------------------------------------------------------------------\n96 KARMA\n\nKONIEC WIDZENIA  \n*TIME TO GO*\n\nKONSTRUK (https://pisf.pl/wp-content/uploads/2020/02/PF_2017_hyperlinks.pdf)\nciteturn3search16 [wordlim: 200] Published: 9.4 years ago; scenariusz i reżyseria Piotr Jeleń zdjęcia Mateusz Zwoliński muzyka Sebastian Jasnoch montaż Nikodem Chabior scenografia Jan Matysik charakteryzacja Magdalena Fatyga, Joanna Siwy dźwięk Antoni Galoch kierownictwo produkcji Marianna Skórka, Antonina Hamela obsada Piotr Jeleń, Gabriela Muskała, Andrzej Grabowski, Janusz Chabior, Matylda Paszczenko i inni producenci Piotr Jeleń, Michał Floriańczyk, Sebastian Jasnoch, Łukasz Jerzykowski produkcja Lucas Vision, ul. ... scenariusz i reżyseria Grzegorz Mołda zdjęcia Maciej Miller montaż Paweł & Wójcik muzyka Mikołaj Szatko dźwięk Wojciech Cwyk, Jan Chmielewski scenografia Maja Zaleska kostiumy Zuzanna Glińska, Barbara Kakol charakteryzacja Jowita Miłoszewska, Angelika Rywalska opieka artystyczna Robert Gliński kierownik produkcji Joanna Pultyn obsada Zofia Domalik, Juliusz Chrząstowski, Eryk Kulm, Szymon Śędrowski, Maciej Wizner, Rafał Kozok, Krzysztof Suszek, Łukasz Proch, Adam Cybulski, Paweł Podolski, Maja Zaleska, Monika Lach, Paweł Gajdowski producenci Leszek Kopeć, Jerzy Rados produkcja Gdyńska Szkoła Filmowa, pl.\n--------------------------------------------------------------------------------\nuntitled (https://sbc.org.pl/Content/128295/ZycieBytomskie_2012_R056_013_%282856%29.pdf)\nciteturn3search17 [wordlim: 200] Published: 11.9 years ago; “Ze smutkiem żegnamy / Ritę Marię Dubas / Rodzinie i Bliskim / składamy wyrazy głębokiego współczucia / Halina Bieda, Anna Panas / i pracownicy Wydziału Kultury UM” ... Tuż obok Piotr Jeleń prezentuje samochodową arystokrację, buicka z kołami typu artyleryjskiego i z lusterkami przypominającymi dzisiejsze szprychowe alufelgi. ... Wszystkie samochody mają swoich właścicieli, którzy zgodzili się wystawić je na ekspozycji w celu popularyzacji retromotoryzacji. ... Chodzi m.in. o problem, o którym pisaliśmy ostatnio na łamach „Życia Bytomskiego” – niesprzątanie przez właścicieli psów nieczystości pozostawionych przez zwierzęta. – Tego typu wykroczenia porządkowe można traktować jako „szczególnie uciążliwe dla społeczeństwa” – mówi podkomisarz Piotr Misztal, zastępca komendanta komisariatu w Miechowicach. – Dzielnicowy, widząc tego typu zachowania, powinien zareagować.\n"
+      },
+      {
+        "query_numbers": [
+          23,
+          24
+        ],
+        "response": "Wydarzenia w Rzeszowie – koncerty, imprezy, kultura (https://fnt-rzeszow.pl/wydarzenia)\nciteturn5search0 [wordlim: 200] Crawled: yesterday; Piotr Lemańczyk - kontrabas / gitara basowa ... Album zawiera sześć kompozycji i łączy jazz, groove i improwizację z partiami orkiestry kameralnej; w nagraniu uczestniczyła Polska Filharmonia Kameralna Sopot. ... Największe utwory Kayah otrzymują tu nowe, wysmakowane aranżacje -- z przestrzenią na improwizację, subtelność i brzmienie znakomitych muzyków jazzowych. ... - Agnieszka Kowaluk i Piotr Zubek - wrażliwi i utalentowani wokaliści, którzy zaopiekowali się wybranymi specjalnie na to spotkanie nieoczywistymi piosenkami z repertuaru Ireny Santor, no może poza \"Walcem Embarras\", który jest wyborem oczywistym. ... Ten duet myślenicko-teksańsko-szachowo-punkowski zabierze Was w podróż do swojego dzikiego świata, a ich przeciwstawne energie stworzą mieszankę tak wybuchową jak to tylko możliwe. ... To Ty decydujesz, co wydarzy się na scenie. ... * Pojawienie się na wydarzeniu po planowanej godzinie startu oznacza brak gwarancji numeru miejsca z biletu. ... Organizator zastrzega sobie prawo do wyproszenia osób zakłócających przebieg występu, bez możliwości zwrotu za bilety.\n\nBilety do nabycia na: KupBilecik\n\n##### Second Time Around\n\n###### Data wydarzenia\n\n05.11.2026 20:00\n\n###### Miejsce\n\nFilharmonia Podkarpacka im. A. Malawskiego\n\nAga Zaryan powraca z wyjątkowym projektem i nowym albumem nagranym w Los Angeles. To jej dwunasta płyta, tym razem zrealizowana w towarzystwie trzech wybitnych muzyków światowej sceny jazzowej: Darka Oleszkiewicza, Larry'ego Koonse'a i Munyungo Jacksona. Ten sam niezwykły skład towarzyszył artystce przy nagrywaniu bestsellerowego albumu \"Picking Up the Pieces\" blisko dwadzieścia lat temu. To muzycy najwyższej klasy - współpracowali i nagrywali m.in. z takimi legendami jak Miles Davis, Sting, Stevie Wonder, Joe Zawinul, Natalie Cole, Pat Metheny, Brad Mehldau czy Dianne Reeves.\nEfektem ich ponownego spotkania jest muzyka pełna subtelności, przestrzeni i emocji - jazz w najpiękniejszym wydaniu. Głos Agi Zaryan, mistrzowska improwizacja i niezwykła chemia między muzykami tworzą koncert, który staje się prawdziwą ucztą dla ucha i ducha. Podczas tej wyjątkowej, jedynej w Polsce trasy w tym składzie usłyszą Państwo autorskie kompozycje artystki, ponadczasowe standardy jazzowe oraz zaskakujące interpretacje znanych utworów w eleganckich, jazzowych aranżacjach.\nTo zaproszenie do świata muzyki wysmakowanej - świata, w którym każda nuta ma znaczenie, a każda chwila na scenie jest niepowtarzalna, bo \"Second Time Around\" to coś więcej niż koncert. To spotkanie z jazzem w jego najbardziej szlachetnej, intymnej i hipnotyzującej formie.\n\nBilety do nabycia na: KupBilecik\n\nLeszek Możdżer dokonał w polskim jazzie mentalnej i stylistycznej rewolucji, jaka nie stała się wcześniej udziałem żadnego innego jazzmana. Trudne jazzowe frazy, skomplikowane improwizacje, melodykę standardów i subtelność kompozycji ubrał w ramy specyficznego jazzu, który - nie siląc się na wylewność wobec słuchaczy, komercję i przebojowość - stał się tętniącym ekspresją \"jazzem Leszka Możdżera\". Jazzowa wyobraźnia, ciekawy zamysł improwizacji, subtelność chopinowskich etiud i mazurków, \"komedowskie\" inspiracje - tworzą w jego muzyce nową barwę dla jazzowej kameralistyki fortepianowej. Należy do najciekawszych zjawisk polskiego jazzu ostatnich dekad.\n\nBilety do nabycia na: KupBilecik\n\n##### Recital fortepianowy muzyki filmowej w blasku...\n\n###### Data wydarzenia\n\n07.11.2026 19:00\n\n###### Miejsce\n\nDuża Aula Uniwersytetu Rzeszowskiego / bud. A1\n\nZapraszamy na wyjątkowy koncert, który przeniesie Państwa w świat pełen emocji i namiętności. \nDzięki temu każda piosenka to osobna opowieść - czasem liryczna, czasem zabawna, ale zawsze prawdziwa.\n\nJeśli masz ochotę na wieczór, który zostawi w Tobie ciepło i myśl do przemyślenia - przyjdź. Będziemy zaszczyceni Twoją obecnością. Może zaśpiewamy coś razem?\n\nBilety do nabycia na: KupBilecik\n\n##### The Great Time - Adam Golicki feat. G. Auguśc...\n\n###### Data wydarzenia\n\n13.11.2026 20:00\n\n###### Miejsce\n\nFilharmonia Podkarpacka im. A. Malawskiego\n\nJedno z najbardziej rozbudowanych wydarzeń tegorocznego Rzeszów Jazz Festiwal. \"The Great Time\" Adama Golickiego łączy jazzowy zespół z brzmieniem orkiestry, a w centrum projektu spotykają się znakomite osobowości polskiej sceny jazzowej.\n\nGrażyna Auguścik - jeden z najbardziej charakterystycznych polskich głosów jazzowych - jest ważną częścią materiału \"The Great Time\". Jej wokal pojawia się na pięciu z sześciu kompozycji albumu, m.in. \"Friendly Walk\", \"Machu Picchu\", \"Taniec Góralski\", \"Harmonia\" i \"Wiatr (The Wind)\".\n\nDrugą kluczową postacią projektu jest Krzysztof Herdzin - pianista i autor aranżacji. To właśnie jego opracowania pomagają połączyć jazzową improwizację z rozbudowanym brzmieniem orkiestry. Sam album opisywany jest jako spotkanie dwóch światów: subtelności orkiestry i energii jazzu.\n\nNa scenie pojawi się cały znakomity skład:\n\nGrażyna Auguścik - wokal\n\nKrzysztof Herdzin - fortepian, aranżacje\n\nRafał Sarnecki - gitara\n\nPiotr Lemańczyk - kontrabas / gitara basowa\n\nRafał Jackiewicz - saksofon\n\nAdam Golicki - perkusja / lider\n\nOrkiestra Filharmonii Podkarpackiej\n\n\"The Great Time\" ukazał się w 2025 roku nakładem Afro Vibe Records. Album zawiera sześć kompozycji i łączy jazz, groove i improwizację z partiami orkiestry kameralnej; w nagraniu uczestniczyła Polska Filharmonia Kameralna Sopot.\n\n13.11.2026\n\nFilharmonia Podkarpacka\n\nRzeszów Jazz Festiwal 2026\n\nDofinansowano z budżetu Gminy Miasto Rzeszów.\n\nBilety do nabycia na: KupBilecik\n\nProjekt powstał na kanwie albumu \"Młynarski. Bynajmniej.\", wydanego przez SJRecords w grudniu 2024 roku. W studyjnym nagraniu udział wzięli również światowej sławy perkusista Mino Cinelu oraz AUKSO - Orkiestra Kameralna Miasta Tychy pod dyrekcją Marka Mosia.\n\nAlbum i koncerty spotkały się z entuzjastycznym przyjęciem publiczności i krytyków. Paweł Brodowski, redaktor naczelny \"Jazz Forum\", po premierowym koncercie zwracał uwagę na \"wspaniałe interpretacje\" Wojciecha Myrczka, humor, znakomite solówki i reakcję publiczności zakończoną standing ovation. Tomasz Tłuczkiewicz podsumował projekt słowami: \"jazz i poezja, wirtuozeria i elegancja, czad i dowcip\", dodając, że na żywo muzyka robi jeszcze większe wrażenie niż na płycie. \"Młynarski. Bynajmniej.\" nie jest więc nostalgicznym powrotem do dawnych piosenek. To żywa, współczesna muzyka - pełna improwizacji, emocji i nieoczywistych zwrotów - która pokazuje, jak znakomicie twórczość Wojciecha Młynarskiego odnajduje się w języku jazzu. 15 listopada 2026 roku w Filharmonii Podkarpackiej w Rzeszowie zabrzmią piosenki Młynarskiego - bynajmniej nie tak, jak wszyscy je znamy.\n\nBilety do nabycia na: KupBilecik\n\nTa kilkunastoosobowa sceniczna kolaboracja to nie klasycy coverband, to skład który jednocześnie podczas tej podróży pozwala Wam usłyszeć utwory Billy Idola i Slayera, Gary Moora i Pantery, Kinga Diamonda i Queen.\nProjekt wyróżnia się również energią sceniczną i unikalną chemią między artystami. Improwizacje, niespodziewane kolaboracje i spontaniczne momenty sprawiają, że każdy koncert jest jedyny w swoim rodzaju - nie ma dwóch identycznych występów. Dla fanów metalu to okazja, której nie można przegapić. Polish Metal Alliance to nie tylko spotkanie z ulubioną muzyką, ale także szansa, by zobaczyć, jak wygląda prawdziwa siła i szczerość przekazy podczas wspólnego grania na żywo.\nProjekt powstał podczas pandemii covid-19 w 2020 roku z inicjatywy Macieja Koczorowskiego który do współpracy zaprosił między innymi muzyków z zespołów Vader, Nocny Kochanek, Wojtka i Piorta Cugowskich. Ponad 20 nagranych coverów na kanale youtube obejrzało wiele milionów widzów a mogliście w nich zobaczyć Krzysztofa Zalewskiego, Jana Borysewicza, Grzegorza Skawińskiego, Kasię Kowalską, Małgorzatę Ostrowską oraz 50 innych muzyków z polskiej sceny metalowej /Turbo, Decapitated, KAT & Roman Kostrzewski/ i rockowej. Projekt cały czas się rozwija i ewoluuje zaskakując swoimi pomysłami. W jednym z utworów gościnnie wziął udział Tim Ripper Owens śpiewający m.in. w Judas Priest czy Iced Earth. Sporym zaskoczeniem było również wykonanie przeboju Scorpions w którym udział wzięły same kobiety. Kolejne karty projekt odkryje niebawem…\nBilety są już dostępne - liczba miejsc ograniczona. Jeśli chcesz doświadczyć tego wyjątkowego projektu na własnej skórze, nie zwlekaj z decyzją.\n\nBilety do nabycia na: KupBilecik\n\nDzięki interaktywnej formule, publiczność dosłownie poczuje, że jest częścią rodziny, co sprawi, że przeżyje tę historię jeszcze intensywniej!\nOBSADA:\nPADRE - Stefano TERRAZZINO\nMADRE - Janja LESAR\nANGELA - Oliwia BALA\nNINO - Albert KOSIŃSKI / Mykyta SEMENCHENKO\nGIANNA - Sara JANICKA / Maja MAŁCZAK / Liwia JABŁOŃSKA\nPRZEMEK - Hubert KRYSZTOFINSKI / Roman OSADCHIY / Maciej KLOSKOWSKI\n\nBilety do nabycia na: KupBilecik\n\n##### Testy Materiału\n\n###### Data wydarzenia\n\n05.11.2026 19:00\n\n###### Miejsce\n\nUnderground Pub\n\nMaciek Ambicki rusza w solową trasę! Zwyciężył niejednokrotnie Masz Minutę i teraz jedzie w podróż po Polsce, by ponownie skraść Wam serca!\n\nZ tej okazji w Rzeszowie odbędą się testy pełnego programu stand-up. Unikalna okazja by usłyszeć jego nowe żarty, to od Was będzie zależało, które żarty powie po raz ostatni.\n\nWarto wiedzieć:\n- wydarzenia zwykle trwają od 1,5 - 2 godzin\n- wstęp od 18 lat, nieletnich prosimy o zgodę rodzica/opiekuna\n- osoby przeszkadzające lub bardzo pijane mogą zostać proszone o opuszczenie sali, bez możliwości uzyskania zwrotu środków za zakupiony bilet.\n\n- w trakcie wydarzenia, prosimy o nieużywanie telefonów komórkowych i innych urządzeń rejestrujących dźwięk lub wideo. Natomiast nie mamy nic przeciwko, jeżeli zrobicie szybką fotkę i oznaczycie nas na insta.\n\nBilety do nabycia na: KupBilecik\n\nWpadaj, zanim zniknie ze sceny!\nMichał Leja to stand-uper, improwizator i twórca wielu formatów komediowych (m.in. \"Encyklopedia stand-upu\", \"Michał Leja Show\", \"Mini Leja Show\", \"Z kartki\"), który szturmem zdobył sympatię publiczności w całej Polsce oraz uznanie środowiska komediowego. Niecodzienne spojrzenie na świat, świetna interakcja z publicznością oraz otwartość na inne formy sprawiają, że każdy występ Michała to rozrywka na najwyższym poziomie. Brał udział w największych trasach stand-upowych (m.in. Please Stand-up, Gala Stand-upu), a solowo zrealizował do tej pory 6 programów stand-upowych: \"Laugh Out Loud\" (Netflix, 2016), \"Wszystko Pod Kontrolą\" (Youtube, 2018), \"Bezbek\" (2019), \"Anatomia\" (Youtube, 2022), \"Chciałbym się mylić\" (Youtube, 2024) oraz \"1991\" (Youtube, 2026).\n* 18+ Występ tylko dla widzów pełnoletnich.\n* Nagrywanie występu w formie audio i wideo jest zabronione.\n* Osoby nietrzeźwe i przeszkadzające będą wypraszane bez możliwości ubiegania się zwrotu za bilet.\nWszystko poprowadzi lokalny słodziak, Jakub Pudło.\n\nChcesz wystąpić? Napisz do nas w wiadomości na instagramie standup_rzeszow.\n\nWarto wiedzieć:\n- wydarzenia zwykle trwają od 1,5 - 2 godzin\n- wstęp od 18 lat, nieletnich prosimy o zgodę rodzica/opiekuna\n- osoby przeszkadzające lub bardzo pijane mogą zostać proszone o opuszczenie sali, bez możliwości uzyskania zwrotu środków za zakupiony bilet.\n- w trakcie wydarzenia, prosimy o nieużywanie telefonów komórkowych i innych urządzeń rejestrujących dźwięk lub wideo. Natomiast nie mamy nic przeciwko, jeżeli zrobicie szybką fotkę i oznaczycie nas na insta.\n\nBilety do nabycia na: KupBilecik\n\n##### Listopadowy Open-mic | Jakub Pudło\n\n###### Data wydarzenia\n\n17.11.2026 19:00\n\n###### Miejsce\n\nPub K20\n\nW centrum Rzeszowa rodzi się komedia!\n\nZapraszamy do K20, gdzie ujrzycie, jak tworzą się nowe materiały stand-upowe. Open-mic to rzut kością, możesz trafić na prawdziwego gracza, amatora bądź świeżaka. To w Twoich rękach jest los ich żartów.\nWszystko poprowadzi lokalny słodziak, Jakub Pudło.\n\nChcesz wystąpić? Napisz do nas w wiadomości na instagramie standup_rzeszow.\n\nBilety do nabycia na: KupBilecik\n\nMoje żarty są raczej jak czarna kawa, gorzkie i pobudzają, ale nie ma w nich mleczka (na pewno nie grochowego). Jaram się jak wpadniesz. Tu komentarz z kupbilecik, którym zachęcam: \"Bartek Młynarski po raz kolejny bardzo rozbawił mnie swoja niechecia do zycia.\" \n\nBartosz Młynarski - jest komikiem, który na co dzień występuje w Klubie Komediowym w Warszawie oraz w grupie impro Klancyk. Do tej pory bawił ludzi grając w spektaklach improwizowanych. Stand-upem się zajął się bo jego dziewczyna miała dość narzekania w domu. Komediowo wzoruje się na występach Oskara z Ulicy Sezamkowej i Żandarma z Saint Tropez. Mogłeś go też ostatnio widzieć w serialu Netflixa \"1670\" gdzie wcielił się w rolę chłopa Sebastiana. Brał udział w Wielkiej trasie debiutów Stand-up Polska. W tym roku wrzucił swój pierwszy dłuższy \"special\" \"Hakaj Pole\". \n\n* materiał powstawał w trasie Kryzys Wieku Każdego, część rzeczy będzie się powtarzać\n\n* zakaz nagrywania występu\n\n* osoby zakłócające przebieg wydarzenia mogą zostać poproszone o opuszczenie sali - bez zwrotu kosztów biletu\n\n* bilet można okazać w wersji cyfrowej - szkoda drzewek\n\nBilety do nabycia na: KupBilecik\n\n##### Rzeczy Osobiste\n\n###### Data wydarzenia\n\n24.11.2026 19:00\n\n###### Miejsce\n\nPod Palmą\n\nNie wszystkie rzeczy osobiste mieszczą się w kieszeniach.\n\nAdam Sobaniec swoje zabiera na scenę, ale część z nich powinna zostać zatrzymana przy kontroli bezpieczeństwa.\nW swoim piątym solowym programie \"Rzeczy osobiste\" łączy nieokrzesany urok, nieprzewidywalne skojarzenia i sposób opowiadania, przy którym trudno zachować powagę. Lubi improwizować i potrafi wyciągnąć żart z rozmowy, która jeszcze przed chwilą wydawała się zupełnie niewinna. Jest też autorem popularnego improwizowanego formatu komediowego \"10 Pytań\".\n\nBilety do nabycia na: KupBilecik\n\n##### Stand-up i Skecze pt. \"Parodia Ludzka\"\n\n###### Data wydarzenia\n\n24.11.2026 19:00\n\n###### Miejsce\n\nUnderground Pub\n\nJeżeli byliście na ich mini-trasie \"Stand-up i skecze\", przygotujcie się na zupełnie nowe rozdanie! Chłopaki wracają z nowymi materiałami standupowymi, nowymi improwizacjami, nową porcją scenicznej dziczy, którą zobaczysz tylko tego wieczoru!\n\nMarcin Chmiel i Amadeus Cichulski, standuperzy znani z programu Masz Minutę, wspólnego podcastu i licznych występów w programach komediowych na Youtubie łączą siły! Ten duet myślenicko-teksańsko-szachowo-punkowski zabierze Was w podróż do swojego dzikiego świata, a ich przeciwstawne energie stworzą mieszankę tak wybuchową jak to tylko możliwe.\n\nMarcin Chmiel - podobno najlepszy szachista wśród komików, okazyjnie pisarz, ciężki introwertyk, dyplomatycznie nazywany \"oryginałem\". W swoim najnowszym standupie opowiada o byciu nerdem i trudach bycia szachistą w realiach liceum na południu Polski. Jest to historia o pasji, walce ze szkolnym osiłkiem i nienawiści do warcabistów.\n\nAmadeus Cichulski - urodzony w Texasie, wychowany na podkrakowskiej wsi. Z tych dwóch światów powstał on, neurotyczny, nieśmiały i ekscentryczny komik. W swoim programie opowiada o swoich doświadczeniach z dzieciństwa i kontraście polsko-amerykańskim.\n\nNa ostatnie 20 minut, w oparciu o sugestie od publiczności, całkowicie odepniemy wrotki w kilku improwizowanych grach, które nigdy się nie powtórzą i zostaną tylko z Wami!\n\n*Podczas występu obowiązuje zakaz nagrywania audio oraz video.\n\n*Osoby przeszkadzające mogą zostać wyproszone bez możliwości zwrotu biletów .\n\n*Występ przeznaczony jest dla osób dorosłych.\n\n*Nie musisz drukować biletów, mogą one zostać przedstawione w formie elektronicznej.\n\n*Wydarzenie może być nagrywane, biorąc udział wyrażasz zgodę na udostępnienie wizerunku.\n\nBilety do nabycia na: KupBilecik\n\n##### 133. Gala Biznes Boxing Polska\n\n###### Data wydarzenia\n\n28.11.2026 18:00\n\n###### Miejsce\n\nBristol Tradition & Luxury Hotel\n\n##### Dwie potężne jednostki\n\n###### Data wydarzenia\n\n29.11.2026 19:00\n\n###### Miejsce\n\nUnderground Pub\n\nDwóch potężnych zawodników. W ich duszach płonie komediowy ogień.\nWystąpią ze swoimi najnowszymi żartami:\nKuba Pudło - ekspert ds. spokoju ducha i anime.\nFilip \"Kiciuś\" Białoskórski - połączenie ojca, męża i riffa z elektryka.\nWarto wiedzieć:\n- wydarzenia zwykle trwają od 1,5 - 2 godzin\n- wstęp od 18 lat, nieletnich prosimy o zgodę rodzica/opiekuna\n- osoby przeszkadzające lub bardzo pijane mogą zostać proszone o opuszczenie sali, bez możliwości uzyskania zwrotu środków za zakupiony bilet.\n- w trakcie wydarzenia, prosimy o nieużywanie telefonów komórkowych i innych urządzeń rejestrujących dźwięk lub wideo. Natomiast nie mamy nic przeciwko, jeżeli zrobicie szybką fotkę i oznaczycie nas na insta.\n\nBilety do nabycia na: KupBilecik\n\n##### Wieczór komedii improwizowanej\n\n###### Data wydarzenia\n\n03.12.2026 19:00\n\n###### Miejsce\n\nKino za Rogiem Café - Piętro za Rogiem\n\nZapraszamy Cię na wieczór komedii improwizowanej, podczas którego nic nie jest z góry ustalone. Każda scena powstaje na żywo, tu i teraz. Na podstawie inspiracji od publiczności.\nTo Ty decydujesz, co wydarzy się na scenie. Rzucasz hasło, miejsce, postać albo najbardziej absurdalny pomysł, jaki przyjdzie Ci do głowy. My bierzemy go na warsztat i zamieniamy w historie, których nikt wcześniej nie widział. Może powstanie romans w urzędzie, kłótnia na statku kosmicznym albo dramatyczna historia o dwóch skarpetach? W impro wszystko może stać się początkiem komedii. Nie mamy scenariusza, nie wiemy, co wydarzy się za chwilę i nie możemy zagrać tego drugi raz. Każda scena powstanie na Twoich oczach po raz pierwszy... i ostatni.\nPrzyjdź i zainspiruj nas swoimi sugestiami. Resztą zajmiemy się my.\n\nWystąpi Grupa Anyway w składzie:\n- Kamil Dobrowolski\n- Szymon Pietryka\n- Rafał Piorun\n- Natalia Rykała\n- Artur Ryś\n- Maciek Tkacz\n- Łukasz Turzański\n\nGrupa Anyway - rzeszowska grupa improwizacji komediowej. Od 2017 roku rozśmiesza, zaskakuje i zaprasza widzów do świata impro. Każdy ich występ to niepowtarzalne show - pełne humoru, zaskoczeń i sugestii podrzucanych przez publiczność. Przyjdź, zobacz i przekonaj się, jak wygląda komedia tworzona tu i teraz!\n\nBilety do nabycia na: KupBilecik\n\n##### Damian Skóra w programie \"Pan Komentarz\" + Polska Komentująca na żywo\n\n###### Data wydarzenia\n\n04.12.2026 19:00\n\n###### Miejsce\n\nFabryka Smaku\n\nZapraszamy na komediowy wielosztuk:  stand-up +  \"Polska Komentująca\" na żywo jednego wieczora!\n\n1)  stand-up: Damian Skóra rozszyfrowuje dla Was nie tylko internetowe komentarze, ale również otaczającą go rzeczywistość - przynajmniej próbuje - z różnym skutkiem, ale za to dużym przekonaniem. Przyjdźcie posłuchać jak w najnowszym programie \"Pan Komentarz\" robi z igły widły, burzę w szklance wody i szuka dziury w całym czasem ją znajdując, a innym razem odkrywając, że całość od początku była dziurą.\n\n2) znany z internetu autorski format \"Polska Komentująca\" na żywo! Przebrniemy analitycznym okiem przez efekty zmagań komentujących z klawiaturą.\n\nWskazane posiadanie zapasowych boków - istnieje bowiem prawdopodobieństwo, że będą zrywane, a także posiadanie pach, ponieważ ubaw... rozumiecie o co chodzi, nie każcie mi tego dalej pisać, bo kolejne zdanie w trzeciej osobie sprawi, że przestanę poznawać własne odbicie w lustrze. I tak piszę to wierząc, że ktoś kiedyś stwierdził \"wiesz co, miałem nie iść ale OPIS mnie przekonał\".\n\n* Podczas występu obowiązuje zakaz nagrywania audio oraz video. \n* Osoby przeszkadzające mogą zostać wyproszone bez możliwości zwrotu biletów.\n* Występ przeznaczony jest dla osób dorosłych. \n* Nie ma konieczności drukowania biletów, mogą one zostać przedstawione w formie elektronicznej.\n\nBilety do nabycia na: KupBilecik\n\n##### [ZABLOKOWANE]\n\n###### Data wydarzenia\n\n23.03.2027 18:30\n\n###### Miejsce\n\nFabryka Smaku\n\nWyrzucamy wydarzenie w przyszłość tak nieznaną jak i to samo wydarzenie. Szczegóły będą odkrywane 23 dnia każdego miesiąca aż do daty 23.03.2027. Jednakże! Jest haczyk! Co miesiąc będzie zwiększana cena biletu o 5 zł. Kupisz bilet w ciemno? Czy cierpliwie poczekasz na zerwanie kurtyny?\nSzczegóły: W Fabryce Smaku pojawi się nowy format komediowy! [ZABLOKOWANE].\nUwaga: Wydarzenie będzie [ZABLOKOWANE] oraz [ZABLOKOWANE]. Nie przegap!\nWydarzenie poprowadzi [ZABLOKOWANE].\nWystąpi: Piotrek Jaskuła.\nDodatkowo pojawi się [ZABLOKOWANE].\nWarto wiedzieć:\n- wydarzenia zwykle trwają od 1,5-2h w zależności od ilości występujących.\n- wstęp od 18 lat, nieletnich prosimy o zgodę rodzica/opiekuna.\n- osoby przeszkadzające lub bardzo pijane mogą zostać proszone o opuszczenie sali, bez możliwości uzyskania zwrotu środków za zakupiony bilet.\n- w trakcie wydarzenia, prosimy o nieużywanie telefonów komórkowych i innych urządzeń rejestrujących dźwięk lub wideo. --------------------------------------------------------------------------------\nAngora 18 2026 | PDF (https://www.scribd.com/document/1034202787/Angora-18-2026)\nciteturn5search1 [wordlim: 200] Published: 6 months ago; Crawled: 6 months ago; Piotrkowska 138/140 ... 10 V niedziela 16.00 „Wymyślanka” – bajka improwizowana kursu, w którym nagradzane są małe i średnie firmy telekomunikacyjne, ... 24 V niedziela 19.00 „IMPRO Swing!, czyli para na parze” dzie dla [Link]. ... nych oczekiwań klienta. skórką pomarańczową, marcepanem,\nWszystkie przepisy są autorskie – Mak- rodzynkami, daktylami, orzechami włoski-\nREPERTUAR\nSCENA ŁÓDZKA Łódź, ul. Piotrkowska 138/140\n1 V piątek 20.00 „IMPRO Swing!, czyli para na parze”\n2 V sobota 20.00 „Kryminał improwizowany”\n3 V niedziela 16.00 „Wymyślanka” – bajka improwizowana\nFot. MiŚOT\n„Seks, impro, rock’n’roll, czyli\n3 V niedziela 19.00\nhistoria pewnego zespołu”\n7 V czwartek 19.00 „IMPRO! Kamera... akcja”\nBudują relacje,\n8 V piątek 20.00 „HOTéLOVE Story” – komedia romantyczna\n9 V sobota 20.00 „Peron, czyli tam i z powrotem”\nktóre procentują przez lata\nPodczas XI Zjazdu MiŚOT w Zakopanem ogłoszone zostały wyniki kon-\n10 V niedziela 16.00 „Wymyślanka” – bajka improwizowana kursu, w którym nagradzane są małe i średnie firmy telekomunikacyjne,\n10 V niedziela 19.00 „IMPRO Atak!” angażujące się w działania na rzecz lokalnych społeczności. Tytuł TeleOd-\npowiedzialnego 2025 trafił po raz kolejny do firmy GIGAINTERNET. Drugie\n15 V piątek 20.00 „Wyścigi i pościgi, czyli impro bez hamulców” miejsce zdobyła w tym roku firma ART-COM; kapituła przyznała też wyróż-\n--------------------------------------------------------------------------------\nPub, Bar, Dyskoteka powiat Miasto Warszawa - Orły Rozrywki 2026 (https://www.orlyrozrywki.pl/county-1-miasto-warszawa)\nciteturn5search2 [wordlim: 200] Crawled: today; CP-Time Special Events to agencja z wieloletnim doświadczeniem, funkcjonująca w sektorze rozrywki i eventów w Polsce już od prawie dwóch dekad. Jej głównym obszarem działalności jest kompleksowa organizacja różnego rodzaju wydarzeń, które cechuje ... ... Impro Art Space jest nowoczesną lokalizacją usytuowaną w centrum Warszawy, przy ulicy Grochowskiej 23/31, skierowaną do entuzjastów muzyki oraz szeroko rozumianej sztuki dźwiękowej.\n### CP-Time Special Events\n\nImage: 2026 laureat konkursuImage: 2025 laureat konkursuImage: 2024 laureat konkursuImage: 2023 laureat konkursuImage: 2022 laureat konkursuImage: 2021 laureat konkursuImage: 2020 laureat konkursu\n\nPokaż mniej << Pokaż więcej >>\n\n8.7\n\nCP-Time Special Events to agencja z wieloletnim doświadczeniem, funkcjonująca w sektorze rozrywki i eventów w Polsce już od prawie dwóch dekad. Jej głównym obszarem działalności jest kompleksowa organizacja różnego rodzaju wydarzeń, które cechuje ...\n\nLaureaci\n\n### Impro Art Space\n\nImage: 2026 laureat konkursuImage: 2025 laureat konkursuImage: 2025 gold\n\n10\n\nImpro Art Space jest nowoczesną lokalizacją usytuowaną w centrum Warszawy, przy ulicy Grochowskiej 23/31, skierowaną do entuzjastów muzyki oraz szeroko rozumianej sztuki dźwiękowej. Firma udostępnia wszechstronne usługi, stanowiąc odpowiednie ...\n--------------------------------------------------------------------------------\nPub, Bar, Dyskoteka Warszawa - Orły Rozrywki 2026 (https://www.orlyrozrywki.pl/city-6446-warszawa)\nciteturn5search3 [wordlim: 200] Crawled: today; Przy ulicy Wolska 50A w warszawskiej dzielnicy Wola znajduje się The Black Space, nowoczesna i minimalistyczna przestrzeń dedykowana rozmaitym wydarzeniom. ... Oferta TatiVIBE obejmuje zajęcia z gry na fortepianie, gitarze, wokalu, perkusji oraz DJ-ingu, umożliwiając rozwijanie muzycznych zainteresowań na różnych poziomach zaawansowania.\n--------------------------------------------------------------------------------\nAngora 46 | PDF (https://www.scribd.com/document/805685586/Angora-46)\nciteturn5search4 [wordlim: 200] Published: 2.0 years ago; Crawled: 1.9 years ago; 16.00 – „Wymyślanka” – bajka improwizowana już w pierwszym dniu swoich rządów. ... analiz, polityka Trumpa może zwięk- ... 19.30 – „IMPRO Swing!, czyli para na parze” do 2030 roku – to równowartość kilku-\n--------------------------------------------------------------------------------\nAngora Bez Dodatku-23.2025 PL - Pdf.magazine - ebook-XTR | PDF (https://www.scribd.com/document/926304630/Angora-Bez-Dodatku-23-2025-PL-pdf-Magazine-ebook-XTR)\nciteturn5search5 [wordlim: 200] Published: 1.4 years ago; Crawled: 1.1 years ago; nego w urządzenie rentgenowskie, służą- miastami. ... 19.00 – „IMPRO Swing!, czyli para na parze” ... Łukasz Mazurek z recitalem\nny zajrzał bowiem strażnik graniczny, peł- miasteczko, często odwiedzane przez tury- piosenek Franka Sinatry ... 20.00 – „Seks, impro, rock’n’roll, czyli historia pewnego zespołu”\n"
+      }
+    ],
+    "raw_open_batches": [
+      {
+        "open_numbers": [
+          4,
+          5,
+          6
+        ],
+        "response": "Internal Error ()\nciteturn4view0 [wordlim: 200] Source: open({\"ref_id\":\"https://wykop.pl/wpis/77534897/ostatnio-czesto-widze-filmiki-typu-facet-chodzi-po\",\"lineno\":null}); \nFailed to fetch https://wykop.pl/wpis/77534897/ostatnio-czesto-widze-filmiki-typu-facet-chodzi-po: Cache miss--------------------------------------------------------------------------------\nTroche polotu i finezji w tym smutnym jak p---a mieście\n\nco to za wy... (@thisisthesix) :: Wykop.pl (https://wykop.pl/wpis/13443253/troche-polotu-i-finezji-w-tym-smutnym-jak-pizda-mi)\nciteturn4view1 [wordlim: 200] Crawled: 9 months ago; Content type: text/html; Source: open({\"ref_id\":\"https://wykop.pl/wpis/13443253/troche-polotu-i-finezji-w-tym-smutnym-jak-pizda-mi\",\"lineno\":null}); Total lines: 290\nL0: Menu 【0†Wykop.pl】 【0†Wykop.pl】\nL1: \nL2:   * 【0†Główna】\nL3:   * 【1†Wykopalisko】274\nL4:   * 【2†Hity】\nL5:   * 【3†Mikroblog】\nL6: \nL7: Szukaj:\nL8: \nL9:   * 【4†Zaloguj się】\nL10:   * 【5†Zarejestruj się】\nL11: \nL12: 【4† Zaloguj się 】\nL13: \nL14: Zaloguj się z Google Zaloguj się z Facebook Zaloguj się z Apple\nL15: \nL16: #### Popularne tagi\nL17: \nL18:   * 【6†#ciekawostki】\nL19:   * 【7†#informacje】\nL20:   * 【8†#technologia】\nL21:   * 【9†#polska】\nL22:   * 【10†#swiat】\nL23:   * 【11†#motoryzacja】\nL24:   * 【12†#podroze】\nL25:   * 【13†#heheszki】\nL26:   * 【14†#sport】\nL27: #### Wykop\nL28: \nL29:   * 【15†Ranking】\nL30: \nL31:   * 【16†Osiągnięcia】\nL32: \nL33:   * 【17†FAQ】\nL34: \nL35:   * 【18†O nas】\nL36: \nL37:   * 【19†Kontakt】\nL38: \nL39:   * 【20†Reklama】\nL40: \nL41:   * 【21†Regulamin】\nL42: \nL43: Tryb dzienny\nL44: # Wpis z mikrobloga\nL45: \nL46: Skopiuj link\nL47: \nL48: Skopiuj link\nL49: \nL50: 【22† thisisthesix】\nL51: \nL52: 【22† thisisthesix】\nL53: \nL54: 【23†08.07.2015, 18:58:58】\nL55: \nL56:   * 10\nL57: \nL58: +\nL59: \nL60: Troche polotu i finezji w tym smutnym jak p---a mieście\nL61: \nL62: co to za wykopek w 1:13?\nL63: #【13†heheszki】 #【24†jeleniejaja】 #【25†smiesznyfilmik】 #【26†humor】 #【27†wtfcontent】\nL64: \nL65: 【71†Image: thisisthesix - Troche polotu i finezji w tym smutnym jak p---a mieście co to za wy...】\nL66: \nL67:   * 6\nL68:   * Odpowiedz\nL69:   *     *   * Otrzymuj powiadomienia\nL70: o nowych komentarzach\nL71: \nL72: Obserwuj dyskusję\nL73:   *     *\nL74: \nL75: 【28† krzywy_banan】\nL76: \nL77: 【28† krzywy_banan】\nL78: \nL79: 【29†08.07.2015, 19:00:46】\nL80: \nL81:   * 0\nL82: \nL83: +\nL84: \nL85: > smutnym jak p---a mieście\nL86: \nL87: @【22†thisisthesix】: Czemu mówi się że coś jest smutne jak p---a? Przecież p---a niczym smutnym nie jest ( ͡° ͜ʖ ͡°)\nL88: \nL89:   * Odpowiedz\nL90:   *     *   *     *\nL91: \nL92: 【22† thisisthesix】\nL93: \nL94: 【22† thisisthesix】\nL95: \nL96: Autor 【30†08.07.2015, 19:01:31】\nL97: \nL98:   * 2\nL99: \nL100: +\nL101: \nL102: @【28†krzywy_banan】: zapytaj bolca\nL103: \nL104: 【72†Image: thisisthesix - @krzywy_banan: zapytaj bolca】\nL105: \nL106:   * Odpowiedz\nL107:   *     *   *     *\nL108: 【73†Image: L.....F】 L.....F\nL109: \nL110: konto usunięte 【31†08.07.2015, 19:11:46】\nL111: \nL112:   * 0\nL113: \nL114: +\nL115: \nL116: @【22†thisisthesix】: borze jakie głupie\nL117: \nL118:   * Odpowiedz\nL119:   *     *   *     *\nL120: \nL121: 【32† kieru】\nL122: \nL123: 【32† kieru】\nL124: \nL125: 【33†09.07.2015, 06:07:29】\nL126: \nL127:   * 0\nL128: \nL129: +\nL130: \nL131: @【22†thisisthesix】: a się zlękłam!\nL132: \nL133:   * Odpowiedz\nL134:   *     *   *     *\nL135: \nL136: 【22† thisisthesix】\nL137: \nL138: 【22† thisisthesix】\nL139: \nL140: Autor 【34†09.07.2015, 07:10:45】\nL141: \nL142:   * 0\nL143: \nL144: +\nL145: \nL146: @【32†kieru】: Biedna karynka\nL147: \nL148:   * Odpowiedz\nL149:   *     *   *     *\nL150: \nL151: 【74†Image: J.....9】 J.....9\nL152: konto usunięte 【35†09.07.2015, 10:24:16】\nL153: \nL154:   * 0\nL155: \nL156: +\nL157: \nL158: Zrobi ktoś gifa z uśmiechem dziewczyn w samochodzie? (ʘ‿ʘ)\nL159: \nL160:   * Odpowiedz\nL161:   *     *   *     *\nL162: #### Aktywne Wpisy\nL163: \nL164: 【36† JakDorobic_com】\nL165: \nL166: 【36† JakDorobic_com】 +119\nL167: \nL168: 【37†4 godz. i 17 min temu】\nL169: #【38†rozdajo】 z okazji zbliżającego się święta konsumpcjonizmu, czyli Black Friday! Rozdajemy kartę podarunkową Allegro o wartości 100 zł!\nL170: \nL171: Zasady rozdajo są proste. Aby wziąć udział:\nL172: \nL173: • Daj plusika.\nL174: \nL175: •Pokaż całość\nL176: \nL177: 【75†Image: JakDorobiccom - #rozdajo z okazji zbliżającego się święta konsumpcjonizmu, czyli Blac...】\nL178: \nL179: źródło: 【39†Rozdajo JakDorobic (1)】\nL180: \nL181: 【39†Pobierz】\nL182: \nL183: 80 odpowiedzi\nL184: \nL185: 【40† chandler-bing】\nL186: \nL187: 【40† chandler-bing】 +256\nL188: \nL189: 【41†5 godz. i 17 min temu】\nL190: Tak samo kisnę jak widzę typów stojących w godzinnych kolejkach do Manikana czy innych \"fancy\" naleśnikarni w Warszawie.\nL191: \nL192: 【76†Image: chandler-bing - Tak samo kisnę jak widzę typów stojących w godzinnych kolejkach do Ma...】\nL193: \nL194: źródło: 【42†Screenshot 2025-11-14 at 09.31.25】\nL195: \nL196: 【42†Pobierz】\nL197: \nL198: 43 odpowiedzi\nL199: \nL200: 【43† Pokaż więcej 】\nL201: #### Aktywne Znaleziska\nL202: \nL203: 【77†Image: Czy gen. Dąbrowski zasłużył na to, by być bohaterem polskiego hymnu?】\nL204: \nL205: ##### 【44† Czy gen. Dąbrowski zasłużył na to, by być bohaterem polskiego hymnu? 】\nL206: \nL207: 91\nL208: \nL209: 【78†Image: Polacy odkryli jak robić baterie ze śmieci】\nL210: \nL211: ##### 【45† Polacy odkryli jak robić baterie ze śmieci 】\nL212: \nL213: 112\nL214: \nL215: 【79†Image: Erasmus+ został zaakceptowany na rok 2026】\nL216: ##### 【46† Erasmus+ został zaakceptowany na rok 2026 】\nL217: \nL218: 204\nL219: \nL220: 【80†Image: Policja \"siłą wyciągnęła\" kierowcę z auta. Świadkowie myśleli, że był pijany】\nL221: \nL222: ##### 【47† Policja \"siłą wyciągnęła\" kierowcę z auta. Świadkowie myśleli, że był pijany 】\nL223: \nL224: 333\nL225: \nL226: Pokaż 18+\nL227: \nL228: 【81†Image: Funkcjonariusze pobili na stacji benzynowej mężczyznę z chorobą Parkinsona.】\nL229: \nL230: ##### 【48† Funkcjonariusze pobili na stacji benzynowej mężczyznę z chorobą Parkinsona. 】\nL231: \nL232: 841\nL233: \nL234: 【49† Pokaż więcej 】\nL235: #### Popularne tagi\nL236: \nL237:   * #【50†mecz】\nL238:   * #【13†heheszki】\nL239:   * #【51†pdk】\nL240:   * #【9†polska】\nL241:   * #【52†f1】\nL242:   * #【53†muzyka】\nL243:   * #【54†pytanie】\nL244:   * #【6†ciekawostki】\nL245:   * #【55†neuropa】\nL246:   * #【56†4konserwy】\nL247:   * #【57†nieruchomosci】\nL248:   * #【58†gielda】\nL249:   * #【59†humorobrazkowy】\nL250:   * #【60†usa】\nL251:   * #【61†debata】\nL252:   * #【62†rozowepaski】\nL253:   * #【63†logikarozowychpaskow】\nL254:   * #【64†gry】\nL255: \nL256: Wykop © 2005-2025\nL257:   * 【18†O nas】\nL258:   * 【65†Reklama】\nL259:   * 【17†FAQ】\nL260:   * 【19†Kontakt】\nL261:   * 【21†Regulamin】\nL262:   * 【66†Polityka prywatności i cookies】\nL263:   * 【2†Hity】\nL264:   * 【15†Ranking】\nL265:   * 【16†Osiągnięcia】\nL266:   * 【67†Changelog】\nL267:   * więcej\nL268: \nL269: RSS\nL270: \nL271:   * 【68†Wykopane】\nL272:   * 【69†Wykopalisko】\nL273:   * 【70†Komentowane】\nL274: \nL275:   * Ustawienia prywatności\nL276: \nL277: Regulamin\nL278: \nL279: Reklama\nL280: \nL281: Kontakt\nL282: \nL283: O nas\nL284: \nL285: FAQ\nL286: \nL287: Osiągnięcia\nL288: \nL289: Ranking\n--------------------------------------------------------------------------------\nInternal Error ()\nciteturn4view2 [wordlim: 200] Source: open({\"ref_id\":\"https://m.mojevideo.sk/376e\",\"lineno\":null}); \nFailed to fetch https://m.mojevideo.sk/376e: Cache miss"
+      }
+    ],
+    "finished_at": "2026-10-31T23:52:51.637521+00:00",
+    "prior_reports_reviewed": [
+      "reports/runs/20261030-batch01-pilot.collection-a.json",
+      "reports/runs/20261031-coverage-source-first-01-followup.collection.json"
+    ],
+    "unresolved_identities": [
+      "Filmweb group colleagues unnamed; no individual peer inferred.",
+      "Wykop hashtag is group/channel reference, not individual appraisal."
+    ],
+    "stop_reason": "Query allowance exhausted conservatively (including six lost/invalid batch attempts); 18 opens remain. No discovered relevant ticket archive URL; Wykop and Mojevideo cache misses and Trojmiasto preview capacity remain access-limited. Further source routes may exist; no claim of exhaustion or absence."
+  },
+  "prior_stop_reason": "Early stop after a public-page access block in the second source family, while the only fully readable fan post lacked an identified frozen peer. Preserve the lead and access failure; do not infer absence or spend remaining quota on weak repeats."
+}

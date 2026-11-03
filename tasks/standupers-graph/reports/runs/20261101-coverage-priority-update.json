@@ -1,0 +1,57 @@
+{
+  "graph": "graph/coverage-krajewski-repaired/graph.json",
+  "audited_at": "2026-11-01T11:09:43.756944+00:00",
+  "positive_isolates": 53,
+  "isolates_with_observed_fans": [
+    {
+      "rank": 13,
+      "performer_id": "pan-li",
+      "name": "Pan Li",
+      "canonical_candidate_target_count": 1,
+      "observed_fans": 1
+    },
+    {
+      "rank": 26,
+      "performer_id": "pawel-chalupka",
+      "name": "Paweł Chałupka",
+      "canonical_candidate_target_count": 3,
+      "observed_fans": 2
+    },
+    {
+      "rank": 42,
+      "performer_id": "wojtek-pieta",
+      "name": "Wojtek Pięta",
+      "canonical_candidate_target_count": 4,
+      "observed_fans": 2
+    },
+    {
+      "rank": 75,
+      "performer_id": "rafal-banas",
+      "name": "Rafał Banaś",
+      "canonical_candidate_target_count": 4,
+      "observed_fans": 2
+    },
+    {
+      "rank": 84,
+      "performer_id": "adam-gajda",
+      "name": "Adam Gajda",
+      "canonical_candidate_target_count": 2,
+      "observed_fans": 1
+    },
+    {
+      "rank": 86,
+      "performer_id": "karol-kopiec",
+      "name": "Karol Kopiec",
+      "canonical_candidate_target_count": 1,
+      "observed_fans": 1
+    }
+  ],
+  "selected_next": "pawel-chalupka",
+  "rationale": "Two scoring-eligible fan appraisals and a concrete multi-performer archive, but all current pairs opposed. Seek genuine other-peer evidence without suppressing contradictions. Source access/yield remain uncertain.",
+  "known_source": "https://www.kupbilecik.pl/en/db/12167/stand-up-pawel-chalupka-jasiek-borkowski-adam-gajda?kb_ref=event&kb_ref_id=state_past",
+  "existing_pair_records": [
+    "ev_b09_a_002",
+    "ev_b09_a_003"
+  ],
+  "policy_unchanged": "Any opposition keeps a pair contested; more supporting posts alone do not resolve the blocked pair."
+}

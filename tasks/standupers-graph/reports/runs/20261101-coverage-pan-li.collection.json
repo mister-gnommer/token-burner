@@ -1,0 +1,441 @@
+{
+  "Surprises": [
+    "The only prior Pan Li-specific fan passage is the Izabela review; batch06 context audit explicitly leaves the unnamed second performer unresolved."
+  ],
+  "run_id": "20261101-coverage-pan-li",
+  "target": {
+    "rank": 13,
+    "id": "pan-li",
+    "name": "Pan Li"
+  },
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+  },
+  "budgets": {
+    "queries": {
+      "cap": 24,
+      "used": 24,
+      "remaining": 0
+    },
+    "page_attempts": {
+      "cap": 24,
+      "used": 9,
+      "remaining": 15
+    },
+    "verified_candidates": {
+      "cap": 16,
+      "used": 0,
+      "remaining": 16
+    }
+  },
+  "reservations": [
+    {
+      "type": "query_reservation",
+      "queries": [
+        "\"Pan Li\" stand-up ulubieni komicy polecacie",
+        "\"Pan Li\" stand-up \"lubię\" komicy forum",
+        "\"Pan Li\" komicy \"najlepsi\" widzowie stand-up",
+        "\"Pan Li\" stand-up opinie widzów polecenia"
+      ],
+      "reserved": 4,
+      "status": "completed; batch result recorded",
+      "guard": "used 0 + 4 <= cap 24; batch size 4"
+    },
+    {
+      "type": "page_reservation",
+      "attempts": [
+        "open https://www.kupbilecik.pl/pl/comments/6606/pan-li?page_comments=1"
+      ],
+      "reserved": 1,
+      "status": "completed; failed attempt charged",
+      "guard": "used 0 + 1 <= cap 24"
+    },
+    {
+      "type": "page_reservation",
+      "attempts": [
+        "preview_open https://www.kupbilecik.pl/pl/comments/6606/pan-li?page_comments=1"
+      ],
+      "reserved": 1,
+      "status": "completed; failed attempt charged",
+      "guard": "used 1 + 1 <= cap 24"
+    },
+    {
+      "type": "query_reservation",
+      "queries": [
+        "Pan Li stand up ulubiony komik Reddit Polska",
+        "Pan Li stand-up kogo lubicie komicy widzowie",
+        "\"Pan Li\" komik \"polecam\" -kupbilecik",
+        "\"Pan Li\" stand-up \"najlepszy\" komik opinie forum"
+      ],
+      "reserved": 4,
+      "status": "completed; batch result recorded",
+      "guard": "used 4 + 4 <= cap 24; batch size 4"
+    },
+    {
+      "type": "page_reservation",
+      "attempts": [
+        "web.open https://nastroik.pl/temat/przemyslaw-lieske-pan-li-iluzjonista-izulionista/7556/"
+      ],
+      "reserved": 1,
+      "status": "completed; full source read",
+      "guard": "used 2 + 1 <= cap 24"
+    },
+    {
+      "type": "page_reservation",
+      "attempts": [
+        "web.open https://www.kupbilecik.pl/pl/db/10075/stand-up-pan-li-oraz-kuba-dabrowski"
+      ],
+      "reserved": 1,
+      "status": "completed; failed attempt charged",
+      "guard": "used 3 + 1 <= cap 24"
+    },
+    {
+      "type": "query_reservation",
+      "queries": [
+        "site:reddit.com \"Pan Li\" stand-up Polska komik",
+        "site:facebook.com \"Pan Li\" stand-up ulubiony komik",
+        "\"Pan Li\" \"komicy których polecacie\" stand-up",
+        "\"Pan Li\" \"Kuba Dąbrowski\" widzowie komentarze event"
+      ],
+      "reserved": 4,
+      "status": "completed; batch result recorded",
+      "guard": "used 8 + 4 <= cap 24; batch size 4"
+    },
+    {
+      "type": "page_reservation",
+      "attempts": [
+        "web.open https://www.kupbilecik.pl/uk/event/73328/zgierz/stand-up-pan-li-oraz-kuba-dabrowski"
+      ],
+      "reserved": 1,
+      "status": "completed; result recorded; attempt charged",
+      "guard": "used 4 + 1 <= cap 24"
+    },
+    {
+      "type": "query_reservation",
+      "queries": [
+        "\"Pan Li\" \"ulubiony\" komik stand-up",
+        "Pan Li stand-up polecacie komików opinie widzów -kupbilecik -youtube",
+        "site:reddit.com \"Pan Li\" komik stand-up Polska",
+        "\"Pan Li\" stand-up lubię forum komicy -kupbilecik"
+      ],
+      "reserved": 4,
+      "status": "completed; batch result recorded",
+      "guard": "used 12 + 4 <= cap 24; batch size 4"
+    },
+    {
+      "type": "page_reservation",
+      "attempts": [
+        "web.open https://www.kupbilecik.pl/pl/comments?page_comments=5046"
+      ],
+      "reserved": 1,
+      "status": "completed; failed attempt charged",
+      "guard": "used 5 + 1 <= cap 24"
+    },
+    {
+      "type": "page_reservation",
+      "attempts": [
+        "web.open https://www.kupbilecik.pl/pl/db/4529/gruby-i-chudsi-magiczne-show?kb_ref=event&kb_ref_id=state_past"
+      ],
+      "reserved": 1,
+      "status": "completed; failed attempt charged",
+      "guard": "used 6 + 1 <= cap 24"
+    },
+    {
+      "type": "query_reservation",
+      "queries": [
+        "\"Przemysław Lieske\" komik ulubiony widzowie",
+        "\"Przemysław Lieske\" stand-up polecam opinie forum",
+        "\"iżulionista\" polecam widzowie stand-up",
+        "site:reddit.com \"Przemysław Lieske\" OR \"iżulionista\""
+      ],
+      "reserved": 4,
+      "status": "completed; batch result recorded",
+      "guard": "used 16 + 4 <= cap 24; batch size 4"
+    },
+    {
+      "type": "page_reservation",
+      "attempts": [
+        "web.open https://www.kupbilecik.pl/pl/db/6606/pan-li"
+      ],
+      "reserved": 1,
+      "status": "completed; full source read",
+      "guard": "used 7 + 1 <= cap 24"
+    },
+    {
+      "type": "page_reservation",
+      "attempts": [
+        "click link 33 (42 komentarzy) from https://www.kupbilecik.pl/pl/db/6606/pan-li"
+      ],
+      "reserved": 1,
+      "status": "completed; failed attempt charged",
+      "guard": "used 8 + 1 <= cap 24"
+    },
+    {
+      "type": "query_reservation",
+      "queries": [
+        "site:youtube.com/watch \"Pan Li\" \"Kuba Dąbrowski\" stand-up",
+        "site:facebook.com \"Pan Li\" stand-up polecam widzowie",
+        "site:reddit.com \"Pan Li\" OR \"Przemysław Lieske\" stand-up polecam",
+        "\"Pan Li\" najlepsi polscy komicy lubię stand-up forum"
+      ],
+      "reserved": 4,
+      "status": "completed; batch result recorded",
+      "guard": "used 20 + 4 <= cap 24; batch size 4"
+    }
+  ],
+  "search_batches": [
+    {
+      "queries": [
+        "\"Pan Li\" stand-up ulubieni komicy polecacie",
+        "\"Pan Li\" stand-up \"lubię\" komicy forum",
+        "\"Pan Li\" komicy \"najlepsi\" widzowie stand-up",
+        "\"Pan Li\" stand-up opinie widzów polecenia"
+      ],
+      "result_summary": "Search found the public KupBilecik Pan Li comment archive with indexed complete review text; also ranking/solo review material. Search output preserved in functions.store as panli_search1; snippets remain leads pending page inspection.",
+      "urls": [
+        "https://www.kupbilecik.pl/pl/comments/6606/pan-li?page_comments=1"
+      ],
+      "disposition": "Lead only until full page/blocks are inspected."
+    },
+    {
+      "queries": [
+        "Pan Li stand up ulubiony komik Reddit Polska",
+        "Pan Li stand-up kogo lubicie komicy widzowie",
+        "\"Pan Li\" komik \"polecam\" -kupbilecik",
+        "\"Pan Li\" stand-up \"najlepszy\" komik opinie forum"
+      ],
+      "result_summary": "No public authored Reddit/favorite discussion with a full source surfaced. Search located Nastroik forum thread, public KupBilecik archive lead, and unrelated interview/ranking pages. Search output preserved as panli_search2; snippets not admitted.",
+      "urls": [
+        "https://nastroik.pl/temat/przemyslaw-lieske-pan-li-iluzjonista-izulionista/7556/",
+        "https://www.kupbilecik.pl/de/comments/6606/pan-li"
+      ],
+      "disposition": "Forum and archive kept as leads; other results excluded as artist interview or aggregate ranking."
+    },
+    {
+      "queries": [
+        "site:reddit.com \"Pan Li\" stand-up Polska komik",
+        "site:facebook.com \"Pan Li\" stand-up ulubiony komik",
+        "\"Pan Li\" \"komicy których polecacie\" stand-up",
+        "\"Pan Li\" \"Kuba Dąbrowski\" widzowie komentarze event"
+      ],
+      "result_summary": "No Reddit/Facebook favorite thread found. Search returned the same known KupBilecik event archive, a translated duplicate, related event page for Komediowa Staromiejska, and archive page 5046 with neighboring reviews. The five authored review blocks on known archive were fully rendered in search output: Iwona “rewelacja!polecam”; Kasia “Super. Skromnie ale miło zaj***scie”; existing Izabela; Sebastian “Wszystko OK”; Agata “Fajny wieczór. Uśmiałam się”. Non-Izabela text is generic event praise, no explicit preference in both performers. Search output preserved as panli_search3; source remains unverified by full page read.",
+      "urls": [
+        "https://www.kupbilecik.pl/pl/db/10075/stand-up-pan-li-oraz-kuba-dabrowski",
+        "https://www.kupbilecik.pl/de/db/10075/stand-up-pan-li-oraz-kuba-dabrowski?kb_ref=event&kb_ref_id=state_past",
+        "https://www.kupbilecik.pl/pl/db/10241/komediowa-staromiejska",
+        "https://www.kupbilecik.pl/pl/comments?page_comments=5046",
+        "https://www.kupbilecik.pl/uk/event/73328/zgierz/stand-up-pan-li-oraz-kuba-dabrowski"
+      ],
+      "disposition": "Known Izabela and translations are deduplicated; generic duo/event praise not candidate. The Ukrainian event is a source-navigation lead only."
+    },
+    {
+      "queries": [
+        "\"Pan Li\" \"ulubiony\" komik stand-up",
+        "Pan Li stand-up polecacie komików opinie widzów -kupbilecik -youtube",
+        "site:reddit.com \"Pan Li\" komik stand-up Polska",
+        "\"Pan Li\" stand-up lubię forum komicy -kupbilecik"
+      ],
+      "result_summary": "No named-fan favorites or Reddit thread. Results were a group ranking of solo programs (excludes target), Pan Li profile/video listings (not fan preference), and mixed illusion show “Gruby i Chudsi” with a single review criticizing the ensemble without frozen peer identification. Search output preserved as panli_search4.",
+      "urls": [
+        "https://standupedia.pl/najlepsi-stand-uperzy-w-ocenie-publicznosci/",
+        "https://standup.pl/komicy/pan-li?v_type=short",
+        "https://www.kupbilecik.pl/pl/db/4529/gruby-i-chudsi-magiczne-show?kb_ref=event&kb_ref_id=state_past"
+      ],
+      "disposition": "No candidate; do not infer individual performer preference from ensemble criticism, popularity, or profile material."
+    },
+    {
+      "queries": [
+        "\"Przemysław Lieske\" komik ulubiony widzowie",
+        "\"Przemysław Lieske\" stand-up polecam opinie forum",
+        "\"iżulionista\" polecam widzowie stand-up",
+        "site:reddit.com \"Przemysław Lieske\" OR \"iżulionista\""
+      ],
+      "result_summary": "No separate fan-discussion/Reddit results. Search surfaced official/promotional Pan Li profile/video pages, plus the performer-specific KupBilecik `/pl/db/6606/pan-li` page indicating 42 comments. Search result alone is not evidence; performer-profile page will be inspected for full author blocks. Mixed magic/stand-up/improvisation format is in the source description; any review must preserve programme scope. Search output preserved as panli_search5.",
+      "urls": [
+        "https://standup.pl/komicy/pan-li/video/czyli-jednak-mozna-panli-izulionista-iluzjonistapanli",
+        "https://standup.pl/komicy/pan-li/video/sopot-pod-wrazeniem-panli-izulionista-iluzjonistapanli",
+        "https://standup.pl/komicy/pan-li/video/to-na-szczescie-darek-panli-izulionista-iluzjonistapanli",
+        "https://panli.pl/",
+        "https://www.kupbilecik.pl/pl/db/6606/pan-li"
+      ],
+      "disposition": "Official promotional material is excluded; comments page is a new review archive lead."
+    },
+    {
+      "queries": [
+        "site:youtube.com/watch \"Pan Li\" \"Kuba Dąbrowski\" stand-up",
+        "site:facebook.com \"Pan Li\" stand-up polecam widzowie",
+        "site:reddit.com \"Pan Li\" OR \"Przemysław Lieske\" stand-up polecam",
+        "\"Pan Li\" najlepsi polscy komicy lubię stand-up forum"
+      ],
+      "result_summary": "No fan discussion, review or personal favorite source surfaced on these routes. Search returned dynamic standup.pl ranking pages, official profile/video pages and PolandRock promotional article; all are rankings or promotional/performer material, not authored fan preferences. Search output preserved as panli_search6.",
+      "urls": [
+        "https://standup.pl/komicy/ranking",
+        "https://standup.pl/komicy/ranking?period=30d",
+        "https://standup.pl/komicy/ranking?period=7d",
+        "https://standup.pl/komicy/ranking?period=24h",
+        "https://newsroom.polandrockfestival.pl/249965-pan-li-i-kabaret-paranienormalni-lacza-sily",
+        "https://standup.pl/komicy/pan-li?v_type=short"
+      ],
+      "disposition": "No candidate; query cap reached after this batch."
+    }
+  ],
+  "open_history": [
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/6606/pan-li?page_comments=1",
+      "method": "web.open",
+      "result": "Failed to fetch: Cache miss; no evidence read. Search lead remains quarantined."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/6606/pan-li?page_comments=1",
+      "method": "preview_open",
+      "result": "Failed: Too many server browser tabs are open. Preview reported available:false; existing tabs remain untouched."
+    },
+    {
+      "url": "https://nastroik.pl/temat/przemyslaw-lieske-pan-li-iluzjonista-izulionista/7556/",
+      "method": "web.open",
+      "result": "Full 714-line page retrieved. BrakLoginu authored the opening post with promotional biography/video embeds; replies Jacennty and BrakLoginu are about Pan Li/that video only. No frozen peer evaluated; no candidate."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/db/10075/stand-up-pan-li-oraz-kuba-dabrowski",
+      "method": "web.open",
+      "result": "Failed to fetch: Cache miss; existing event page could not be inspected through web reader. This is the known Izabela source and was not resaved or remapped."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/uk/event/73328/zgierz/stand-up-pan-li-oraz-kuba-dabrowski",
+      "method": "web.open",
+      "result": "Failed to fetch: Cache miss; event page was not inspected. Search-rendered reference remains quarantined."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments?page_comments=5046",
+      "method": "web.open",
+      "result": "Failed to fetch: Cache miss; search-rendered page remains unverified."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/db/4529/gruby-i-chudsi-magiczne-show?kb_ref=event&kb_ref_id=state_past",
+      "method": "web.open",
+      "result": "Tool reported URL not accessible; search-rendered result had one group-wide critical review but no evidence for individual preference."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/db/6606/pan-li",
+      "method": "web.open",
+      "result": "Full 394-line performer archive read. Twelve author blocks visible; all are Pan Li-only praise except Marzena’s general “Pan Li i Jego Kolegi” plus evening praise, with no peer identity or individual support. Archive shows 42 total comments; review event title blocks label only Pan Li, dates/cities supplied per entry."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/6606/pan-li",
+      "method": "click link 33 from performer archive",
+      "result": "Failed to fetch: Cache miss. No additional author blocks inspected; failure charged."
+    }
+  ],
+  "candidate_locators": [],
+  "source_families_attempted": [
+    "KupBilecik duo event review archive (search-rendered author blocks; full fetch failed; preview fallback unavailable)",
+    "Broad public web/fan discussions including Reddit/Facebook/YouTube searches (search-only; no suitable authored fan source)",
+    "Nastroik public discussion forum (full page read; solo Pan Li discussion only)",
+    "KupBilecik solo performer review archive (full page read; visible authored blocks only praise Pan Li; full-comments navigation failed)",
+    "Official performer/promotional profiles and rankings (checked as leads, excluded)"
+  ],
+  "dedup_review": {
+    "basis": "input_manifests and canonical source paths in graph/coverage-krajewski-repaired/graph.json; use identity-reviewed batch01, context-reviewed batch05 and context-reviewed batch09 replacement reports",
+    "known_pan_li_source": "https://www.kupbilecik.pl/pl/db/10075/stand-up-pan-li-oraz-kuba-dabrowski",
+    "prior_disposition": "Do not remap Izabela’s unnamed second performer or resave that post; other authored blocks on the archive may qualify.",
+    "canonical_manifest_source_count": 95,
+    "checked_prior_pan_li_records": [
+      "src_b06cc_001 at https://www.kupbilecik.pl/pl/db/10075/stand-up-pan-li-oraz-kuba-dabrowski (existing; not remapped/resaved)"
+    ]
+  },
+  "stop_reason": "The full 24-query allowance is exhausted. No new source-verified co-appreciation of Pan Li with an identified frozen peer was found. Nine page/navigation attempts were used; 15 remain but the discovered KupBilecik archive routes repeatedly failed cache fetch and preview_open was blocked by shared browser capacity. This is an access limitation, not evidence that no qualifying sources exist. No quota renewal.",
+  "search_result_leads": [
+    {
+      "url": "https://www.kupbilecik.pl/pl/db/10075/stand-up-pan-li-oraz-kuba-dabrowski",
+      "retrieval": "search-rendered full page text only; not accepted as verified evidence",
+      "blocks": [
+        {
+          "author": "Iwona",
+          "locator": "Zgierz, 2022-04-21",
+          "text": "rewelacja!polecam",
+          "disposition": "generic duo event praise; not explicit personal enjoyment of each performer"
+        },
+        {
+          "author": "Kasia",
+          "locator": "Łódź, 2022-04-20",
+          "text": "Super. Skromnie ale miło zaj***scie",
+          "disposition": "generic event praise"
+        },
+        {
+          "author": "Izabela",
+          "locator": "Zgierz, 2022-04-21",
+          "text": "Pan Li bardzo fajny. Nawiązał kontakt z publiką i widać, że gość jest myślący i inteligentny. Zrobił show własnym mózgiem. Daję mu wielkiego pozytywa. Ostatnią gwiazdkę urywam za drugiego standuppera. Drugi Pan wyklepał wyuczone teksty. Nie podjął prób dostosowania się do reakcji publiczności, więc wypadł dużo gorzej. Słabo, że przy zakupie biletów nie było info, że będą testować w Zgr program.Agrafka jak zwykle kameralnie i spoczko.",
+          "disposition": "existing candidate src_b06cc_001; deduped; second performer remains unresolved"
+        },
+        {
+          "author": "Sebastian",
+          "locator": "Kwidzyn, 2022-03-18",
+          "text": "Wszystko OK",
+          "disposition": "neutral event praise"
+        },
+        {
+          "author": "Agata",
+          "locator": "Łódź, 2022-04-20",
+          "text": "Fajny wieczór. Uśmiałam się",
+          "disposition": "generic evening praise"
+        }
+      ]
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/db/4529/gruby-i-chudsi-magiczne-show?kb_ref=event&kb_ref_id=state_past",
+      "retrieval": "search-rendered result only; full open tool rejected URL",
+      "blocks": [
+        {
+          "author": "Daniel",
+          "text": "Nie było \"grubo\". Mało ciekawej treści, za dużo monotonnego gadania (według wykonawców chyba zabawnego) i cholernie gorąco!!!!",
+          "disposition": "group-wide criticism; no individual evaluation; show involves Pan Li, Michał Skubida and Aryman; no frozen peer claim"
+        }
+      ]
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/db/6606/pan-li",
+      "retrieval": "full public page read via web.open; complete page retrieved during this collection",
+      "potential_block": {
+        "author": "Marzena",
+        "locator": "Gniezno, 2024-01-11; event title block Pan Li",
+        "text": "Świetny występ Pana Li i Jego Kolegi.Duzo dobrego humoru,zabawy,było bardzo wesoło ,zrywaliśmy boki. Super,że można było po występie chwilę porozmawiać i zrobić wspólne zdjęcie. Polecamy.",
+        "disposition": "positive event/group praise but peer unnamed and no separate performer preference; not eligible"
+      }
+    },
+    {
+      "url": "https://nastroik.pl/temat/przemyslaw-lieske-pan-li-iluzjonista-izulionista/7556/",
+      "retrieval": "full public page read via web.open; lines 70-190 contain opening promotional post, Jacennty reply and BrakLoginu follow-up",
+      "disposition": "solo Pan Li discussion only; no frozen peer evaluated"
+    }
+  ],
+  "counts": {
+    "verified_candidates": 0,
+    "positive_pair_candidates": 0,
+    "search_batches": 6,
+    "queries": 24,
+    "page_open_click_navigation_attempts": 9,
+    "candidate_cap": 16
+  },
+  "identity_risks": [
+    "Do not identify Izabela’s “drugiego standuppera” as Kuba Dąbrowski: user-supplied context and batch06 audit explicitly leave him unresolved.",
+    "Marzena’s “Jego Kolegi” does not identify a frozen performer.",
+    "Do not infer each performer was liked from Iwona/Kasia/Agata generic praise for a duo event.",
+    "Do not infer individual dislike from Daniel’s criticism of the Gruby i Chudsi group show.",
+    "Do not use author header or nearby archive blocks as attribution beyond their visible contiguous title/city-date block."
+  ],
+  "source_family_gaps": [
+    "KupBilecik comments endpoint for Pan Li duo page cache miss and preview fallback blocked by persistent full browser capacity.",
+    "Pan Li solo comments endpoint cache miss; 12 visible blocks on profile page inspected; the “42 comments” click target also cache miss, leaving remaining blocks inaccessible through current route.",
+    "No complete fan-thread pages surfaced from Reddit, Facebook or YouTube searches. Search-only results remain quarantined.",
+    "Mixed magic/stand-up/improvisation performances appeared; no factual style relation or pair evidence inferred."
+  ],
+  "completed_at": "2026-11-01T11:06:07Z",
+  "retrieval_timestamps": {
+    "collection_started_at": "2026-11-01T11:02:00Z",
+    "collection_completed_at": "2026-11-01T11:06:07Z",
+    "candidate_retrievals": [],
+    "note": "No verified candidate rows; individual source retrieval timestamps do not apply to candidates. Historical publication dates remain unknown and no candidate was created."
+  }
+}

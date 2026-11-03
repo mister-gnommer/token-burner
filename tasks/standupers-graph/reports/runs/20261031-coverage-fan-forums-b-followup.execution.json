@@ -1,0 +1,88 @@
+{
+  "run_id": "20261031-coverage-fan-forums-b-followup",
+  "status": "completed",
+  "budget_origin": "Explicit reallocation of original source-first01B rating-probe remainder to publicfanforums; no quota renewal",
+  "budget": {
+    "queries": 5,
+    "opens": 6,
+    "candidates": 8
+  },
+  "prior_original_B_usage": {
+    "queries": 7,
+    "opens": 6,
+    "candidates": 0
+  },
+  "cumulative_B_caps": {
+    "queries": 12,
+    "opens": 12,
+    "candidates": 8
+  },
+  "workers": [
+    {
+      "role": "fan-forum-collector-reallocated-B",
+      "performer_id": null,
+      "run_id": "20261031-coverage-fan-forums-b-followup",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "medium"
+        },
+        {
+          "id": "serviceTier",
+          "value": "default"
+        }
+      ],
+      "status": "completed",
+      "task_id": "node:delegated-task:command%3Amcp%3Ab8bb504a-a098-4a3f-913f-2b56ec9678db%3Adelegate-task%3Acoverage-fan-forums-b-followup-20261031-r1",
+      "child_thread_id": "thread:delegated-task:command%3Amcp%3Ab8bb504a-a098-4a3f-913f-2b56ec9678db%3Adelegate-task%3Acoverage-fan-forums-b-followup-20261031-r1",
+      "brief": "Use the unspent public-rating probe allowance for a bounded fan-forum continuation.\n\nWorkspace: /home/kris/Prog/projects/token-burner.\nRead tasks/standupers-graph/AGENTS.md, prompts/source-first-fan-discovery-v1.md, prompts/favorite-reply-context-v1.md, schemas/source-candidate-v2.schema.json and data/standupers.json.\nOriginal B probe used7queries/6opens/0candidates of12/12/8. Filmweb/Letterboxd/IMDb rating-history access was not verified. Coordinator now explicitly reallocates ONLY its remaining5queries/6opens/8candidate slots to full fan discussions. No quota renewal. Report continuation and cumulative original B counts separately.\n\nNew run_id: 20261031-coverage-fan-forums-b-followup\nCandidate IDs: src_cffb_001 onward\nActual collector: codex / gpt-6-luna\nprompt_version: collect-fan-evidence-v3+source-first-fan-discovery-v1\nExclusive outputs under tasks/standupers-graph:\n- evidence/coverage-fan-forums-b-followup/source-candidates.jsonl\n- reports/runs/20261031-coverage-fan-forums-b-followup.collection.json\n\nFind complete public fan posts on Filmweb discussion threads, Gry-online forums or another accessible independent forum. Do not repeat blocked rating/profile/aggregate pages. The other collector covers broad Reddit/Gazeta discovery; avoid those source families in this slice to reduce duplication. One post explicitly appreciating several frozen performers can qualify. Favor current isolated performers, but any useful frozen100 pair is eligible.\n\nCurrent graph graph/coverage-source-first-01/graph.json has41positive-linked/largest31. Prior cohort and61-isolate inventory are partly historical; use actual current degree if choosing targets. Do not assume absence from sparse data. Deduplicate all previous graph manifest canonical sources plus evidence/coverage-source-first-01 and its active follow-up. Exclude known posts even if not integrated yet.\n\nOnly actually retrieved full authored posts, with complete relevant evaluations/caveats and precise author/date/page locator. Recommendation, attendance, genre suitability and roster membership alone are not personal liking. Verified direct favorite-question replies may qualify: store the exact parent question separately, never transfer another author’s preferences. Distinct nickname/surname mappings need source context; unresolved identity does not erase explicit positive/negative appraisal. Keep relative comparisons separate from absolute liking.\n\nPersist reservations before actual calls with a guard in the same branch. Count failed queries and all opens; no repeated blocked URLs or browser-capacity retries. Use full-page web retrieval; preview is full and you must not close other tabs or bypass authentication/challenges. Save empty files first, then incremental verified candidates. Record actual UTC timestamps, canonical URL, dates only if known, full text and identity proof. Validate source-candidate schema. Empty result is valid if access or qualifying material is missing; report the distinction.\n\nNo Git, code, state, subagents or other files. Lead with Surprises. Return early with durable partial work for an invalid premise, substantial scope expansion or irreversible risk; ignore trivia. Separate extraction and independent review follow, no graph claim."
+    }
+  ],
+  "updated_at": "2026-10-31T23:26:42.310413Z",
+  "review_task": {
+    "role": "verifier",
+    "performer_id": null,
+    "run_ids": [
+      "20261031-coverage-source-first-01-followup",
+      "20261031-coverage-fan-forums-b-followup"
+    ],
+    "brief": "Independently verify the three new canonical posts from two fan-continuation runs.\n\nWorkspace: /home/kris/Prog/projects/token-burner.\nRead tasks/standupers-graph/AGENTS.md, data/standupers.json, data/schemas/evidence-v3.schema.json, prompts/verify-evidence-v3.md, prompts/extract-evidence-v3.md, prompts/favorite-reply-context-v1.md and prompts/extraction-decisions-v1.md.\nAll following paths are relative to tasks/standupers-graph.\n\nRun A: 20261031-coverage-source-first-01-followup\nManifest: reports/runs/20261031-coverage-source-first-01-followup.json\nCanonical input: evidence/coverage-source-first-01-followup/source-candidates.canonical.jsonl (IDs003/005 only)\nUnreviewed: evidence/coverage-source-first-01-followup/evidence.unreviewed.jsonl\nExclusive final outputs: evidence/coverage-source-first-01-followup/evidence.jsonl and reports/runs/20261031-coverage-source-first-01-followup.verification.json\n\nRun B: 20261031-coverage-fan-forums-b-followup\nManifest: reports/runs/20261031-coverage-fan-forums-b-followup.json\nCanonical input: evidence/coverage-fan-forums-b-followup/source-candidates.canonical.jsonl (1)\nUnreviewed: evidence/coverage-fan-forums-b-followup/evidence.unreviewed.jsonl\nExclusive final outputs: evidence/coverage-fan-forums-b-followup/evidence.jsonl and reports/runs/20261031-coverage-fan-forums-b-followup.verification.json\n\nShared extraction report: reports/runs/20261101-coverage-fan-continuations.extraction.json.\nRead canonicalization/collection reports. Four raw A duplicates were excluded before extraction; do not review or count them as new evidence/skips. Actual reviewer codex/gpt-6-luna, prompt verify-evidence-v3. Preserve IDs, exact source/excerpt/language/context and extractor lineage; each record keeps its own run ID. No network/browser/Git/code/state/subagents or other files.\n\nPrior extraction: A003 was classed style_similarity, with no known personal preferences. This is a FAN COMMENT comparing content/style, not agent verification from actual performances. Reassess whether fan_comparison is the appropriate class under the rubric; do not let this record enter the separately approved performance-verified style layer. If retained as style_similarity, explain its fan-authored provenance and exclusion from performance-verified use explicitly. Do not manufacture preferences to get a pair.\nA003 names Leja, ambiguous Borkowski and Szumowski, then qualifies Lotek’s authenticity/talent with “męczy mnie ciut później.” Preserve mixed appraisal/relative fatigue and distinguish preference from suitability. No unsupported Borkowski mapping; no transfer of parent’s opinion.\nA005 explicitly likes Kasia Piasecka and Grzegorz Dolniak. Broad anti-profanity criticism is not assigned to those two.\nB001 lists six “Stand up:” favorites in a direct response to a verified favorite prompt. Independently assess context and historical2012scope. Resolve only frozen identities supported by full names: Abelard Giza, Kacper Ruciński, Cezary Pazura. Krzysztof Piasecki is not Katarzyna; Maciej Stuhr outside population; Jachim Presents is not automatically an individual. Generic group memberships and other authors’ preferences never transfer.\n\nKnown appraisal can remain positive even with null identity. “unknown” is allowed ONLY for preference; sentiment must use positive/negative/mixed/neutral/unclear. Known preferences need coherent literal quotes; unknown preference requires null quote. Scope and notes must agree with fields.\n\nRun AUTOMATED evidence_pipeline.py validate --kind evidence for BOTH outputs, inspect and fix failures. Also check3canonical IDs exactly once across records/skips, copied source/context, actual manifest provenance/run IDs, source-local author hashes, frozen IDs, literal surfaces/preference quotes, reviewed statuses/reviewer. Reports need leading Surprises, counts, per-record changes and class decisions, all skips, identity/medium/source-family limitations. Empty or uncertain outcomes must be honest; no forced connections. Return early with durable partial work for invalid premise, substantial scope growth or irreversible risk; ignore trivia. Parent integrates and measures; no graph claim.",
+    "status": "completed",
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "options": [
+      {
+        "id": "reasoningEffort",
+        "value": "medium"
+      },
+      {
+        "id": "serviceTier",
+        "value": "default"
+      }
+    ],
+    "task_id": "node:delegated-task:command%3Amcp%3Ab8bb504a-a098-4a3f-913f-2b56ec9678db%3Adelegate-task%3Acoverage-fan-continuations-verification-20261101-r1",
+    "child_thread_id": "thread:delegated-task:command%3Amcp%3Ab8bb504a-a098-4a3f-913f-2b56ec9678db%3Adelegate-task%3Acoverage-fan-continuations-verification-20261101-r1"
+  },
+  "integration_task": {
+    "role": "integration",
+    "brief": "Integrate three independently reviewed fan-continuation records using the existing pipeline.\n\nWorkspace: /home/kris/Prog/projects/token-burner.\nRead tasks/standupers-graph/AGENTS.md and graph/README.md.\nActual manifests (relative to tasks/standupers-graph):\n1. reports/runs/20261031-coverage-source-first-01-followup.json — canonical2, reviewed2\n2. reports/runs/20261031-coverage-fan-forums-b-followup.json — canonical1, reviewed1\nEach manifest gives exact source/evidence/verification paths. Read their canonicalization and verification reports, and reports/runs/20261101-coverage-fan-continuations.extraction.json.\n\nFour duplicate raw A posts were excluded BEFORE extraction. Only canonical A003/A005 and B001 belong to these new runs. Do not count duplicates as new sources or extraction skips.\nAll3 final records were accepted. A003 is now fan_comparison with unknown personal preferences; its fan-authored style description is NOT performance-verified fallback evidence. A005 explicitly likes Katarzyna Piasecka and Grzegorz Dolniak. B001 is a historical favorite reply with3 frozen identities; only these mapped identities may score. Source text and context remain canonical. Report actual mention counts rather than trusting summaries about unresolved entries.\n\nExclusive writable scope:\n- the two manifests above: finalize counts/status after validation;\n- graph/coverage-fan-continuations/ and cached assets;\n- reports/runs/20261101-coverage-fan-continuations.integration.json;\n- reports/20261101-coverage-fan-continuations.md.\nNo evidence/source/review edits, code, state, Git, network, subagents or other files. If validation fails, stop and report the exact exception; do not fix semantics yourself.\n\nRun automated source-candidate/evidence/run-manifest schema validation through evidence_pipeline.py. Correct schema location is data/schemas. Check IDs3=records3/no skips, exact source/excerpt/language/context, source-local author hashes, literal surfaces/preference quotes, actual per-record run IDs/extractor provenance and accepted reviewer fields. Finalize each manifest completed with its actual counts only if valid.\n\nUse input manifests from graph/coverage-source-first-01/graph.json and append each new manifest once. Preserve calibrated identity-reviewed and batch09 context-reviewed replacements, never add their originals. Copy100cached assets from previous graph before rendering with scripts/graph_pipeline.py --batch-view10. No downloads. Save JSON/D2/SVG/PNG/interactive.html. Inspect a small SVG thumbnail rather than loading the full PNG.\n\nRe-load all evidence strictly, reproduce aggregate relations/deferred exactly, and compute positive-linked degree using displayable, corroborated degree, largest component and component sizes. Compare against baseline41positive-linked,12corroborated-linked,largest31. List newly linked performers, new relations and changed fan counts/statuses; separate one-fan and corroborated/contested links. Do not predict a gain, reinterpret unknown preferences or change the scorer. Report source-family/history limits,4duplicate exclusions and disclosed reservation-order error.\n\nSave exact graph inputs and validation results. Existing code is unchanged, so no new unit tests required; pipeline checks suffice. Lead with Surprises; return early with durable partial work for invalid premise, substantial scope growth or irreversible risk. Ignore trivia. Parent will spot-check before updating STATE/registry.",
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "options": [
+      {
+        "id": "reasoningEffort",
+        "value": "medium"
+      },
+      {
+        "id": "serviceTier",
+        "value": "default"
+      }
+    ],
+    "status": "completed",
+    "task_id": "node:delegated-task:command%3Amcp%3Ab8bb504a-a098-4a3f-913f-2b56ec9678db%3Adelegate-task%3Acoverage-fan-continuations-integration-20261101-r1",
+    "child_thread_id": "thread:delegated-task:command%3Amcp%3Ab8bb504a-a098-4a3f-913f-2b56ec9678db%3Adelegate-task%3Acoverage-fan-continuations-integration-20261101-r1"
+  },
+  "graph": "graph/coverage-fan-continuations/graph.json"
+}

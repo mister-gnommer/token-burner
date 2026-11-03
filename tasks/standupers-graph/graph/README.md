@@ -15,13 +15,15 @@ All relation candidates, supporting IDs, contradictions, deferred records, sourc
 
 ## D2 output
 
-`graph.d2` is editable; `graph.svg` retains evidence tooltips; `graph.png` is the visual-check preview. Stable node IDs/order make generation repeatable, but D2 layout can move nodes between batches. Edge width represents score and labels show support/confidence. Physical distance does not encode similarity.
+`graph.d2` is editable; `graph.svg` retains evidence tooltips; `graph.png` is a 4,000-pixel-wide visual-check preview to keep raster memory bounded. Stable node IDs/order make generation repeatable, but D2 layout can move nodes between batches. Edge width represents score and labels show support/confidence. Physical distance does not encode similarity.
 
 Nodes show saved profile avatars where available, with names below the image. On `--render`, HTTPS image URLs (including links relative to a performer's profile) are downloaded with a five-second timeout, decoded through Pillow, and normalized to 160×160 PNGs in the output's `assets/` directory. Cached photos work offline; missing, invalid, oversized, or unreachable images use the local laughing-person SVG. Graph JSON records source URL, cache path, status, and failure reason or retrieval time. Copy `assets/` with editable D2 sources; rendered SVG embeds the images.
 
 Without `--render`, existing cached photos are used and uncached photos fall back without network access. Synthetic runs never download photos. `avatar-preview/` separately demonstrates two saved standup.pl profile photos and the fallback, with no preference evidence or batch processing. Pillow is pinned in `requirements.txt`.
 
-The renderer prioritizes accepted edges, then highest-scoring uncontested one-fan candidates, with at most three edges per node. Solid edges require two supporting source-scoped fans and no opposing record; dashed amber edges are explicitly provisional. Opposing-only and contested candidates remain in JSON. Isolated nodes remain visible. D2 does not supply an interactive recommendation interface; source excerpts remain in the cited input artifacts.
+The renderer prioritizes accepted edges, then highest-scoring uncontested one-fan candidates, with at most three such edges per node. Solid edges require two supporting source-scoped fans and no opposing record; dashed amber edges are explicitly provisional. Pairs with at least two supporting source-scoped fans and opposition appear as orange dotted **DISPUTED** links, including opposing source citations. These links remain uncertain and bypass the layout degree cap so a saturated neighbor cannot hide them. Opposition-only and one-supporter opposed pairs stay in JSON. Isolated nodes remain visible.
+
+Display policy `supported-disputes-v1` changes presentation only. Scores, evidence, opposing records and relation acceptance are unchanged. Coverage including disputed connections is reported separately from strict unopposed coverage; disputed links are not called corroborated.
 
 For incremental previews, `--batch-view 1` shows the first batch plus any supported neighbors, including focal performers without edges. Later values include all batches up to that number. All 100 nodes remain in JSON; photos are fetched only for visible nodes. Omit the flag for the full diagram.
 
@@ -41,7 +43,7 @@ PYTHONDONTWRITEBYTECODE=1 python3 tasks/standupers-graph/scripts/graph_pipeline.
   --output tasks/standupers-graph/graph/synthetic-demo --synthetic --render
 ```
 
-For production, omit `--synthetic`, `--ranking`, and `--data-root`; pass each completed batch manifest with `--manifest` and choose an output directory. `--render` uses installed `d2 --sketch --layout elk`, then `rsvg-convert -z 2`; no browser download is required. Without `--render`, JSON, D2 source, and local avatar assets are produced.
+For production, omit `--synthetic`, `--ranking`, and `--data-root`; pass each completed batch manifest with `--manifest` and choose an output directory. `--render` uses installed `d2 --sketch --layout elk`, then `rsvg-convert -w 4000`; no browser download is required. Without `--render`, JSON, D2 source, and local avatar assets are produced.
 
 ## Stage 6 scorer: observed-coendorsement-v2
 
@@ -56,7 +58,11 @@ On every push to `main` that touches `graph/`, `.github/workflows/pages.yml` run
 Preview locally: `bash tasks/standupers-graph/scripts/build_site.sh /tmp/site && python3 -m http.server -d /tmp/site`, then open `http://localhost:8000/standupers/`.
 ## Interactive HTML view
 
-Every `graph_pipeline.py` build also writes `interactive.html` next to `graph.json`: one self-contained page (vendored d3-force 7.9.0, avatars embedded as small JPEGs, cited evidence excerpts inline). It presents saved relations only and never rescores. Link rest length and pull strength scale with score, so corroborated pairs settle closer; provisional links pull weakly; contested pairs (any opposing record) are drawn on demand but exert no pull. Unlinked researched performers orbit the cluster. Photos appear only for avatars cached by `--render`. The legend/settings card collapses; the top-right box live-searches names (case- and diacritic-insensitive substring, `ł` treated as `l`) and highlights matches, counting matches hidden by the current toggles.
+Every `graph_pipeline.py` build also writes `interactive.html` next to `graph.json`: one self-contained page (vendored D3 7.9.0, embedded avatars and cited evidence). It presents saved relations without rescoring.
+
+The default Explore view shows one selected comedian and up to five immediate connections. Arrow buttons page through larger neighborhoods; the adjacent list includes every connection under the filters. Expand a row for supporting/opposing excerpts and known publication dates, or follow its Explore button to change focus. Opening a row on another map page brings that connection into view. Other collected evidence remains accessible below the list even when excluded by filters. All100performers, including isolates, are selectable through the name picker; its search ignores case and Polish diacritics. Focused positions are arranged for readability and do not encode similarity.
+
+Full map retains the force layout as an optional overview. Names appear on hover or when zoomed in; clicking a comedian returns to focused exploration. Corroborated and provisional links attract as before. Supported disputes are visible by default but exert no pull; weaker contested pairs and unlinked performers have separate toggles. The collapsible coverage/legend section reports strict unopposed coverage separately. Desktop uses a persistent evidence sidebar; narrow screens put the map above the evidence list.
 
 To re-render an existing snapshot without rebuilding it (run from the repository root):
 

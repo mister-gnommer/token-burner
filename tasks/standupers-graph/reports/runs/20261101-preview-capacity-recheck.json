@@ -1,0 +1,45 @@
+{
+  "checked_at": "2026-11-01T11:18:03.215324+00:00",
+  "status_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"available\":false,\"visible\":false,\"tabId\":null,\"url\":null,\"title\":null,\"loading\":false,\"profiles\":[{\"id\":\"default\",\"name\":\"Default\"},{\"id\":\"incognito\",\"name\":\"Incognito\",\"incognito\":true}],\"defaultProfileId\":\"default\"}"
+      }
+    ],
+    "structuredContent": {
+      "available": false,
+      "visible": false,
+      "tabId": null,
+      "url": null,
+      "title": null,
+      "loading": false,
+      "profiles": [
+        {
+          "id": "default",
+          "name": "Default"
+        },
+        {
+          "id": "incognito",
+          "name": "Incognito",
+          "incognito": true
+        }
+      ],
+      "defaultProfileId": "default"
+    },
+    "isError": false
+  },
+  "open_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Too many server browser tabs are open. Close one with t3_preview_close, or reuse a tabId from preview_status tabs."
+      }
+    ],
+    "isError": true
+  },
+  "navigation_diagnostic_charged_to": "20261101-coverage-pawel-chalupka",
+  "attempts_charged": 1,
+  "other_tabs_touched": false,
+  "user_action_requested": "Close stale previews or reset server; awaiting external-state change."
+}

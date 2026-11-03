@@ -1,0 +1,47 @@
+{
+  "canonical_count": 6,
+  "raw_preserved": true,
+  "duplicate_posts": 0,
+  "source_text_context_unchanged": true,
+  "author_hashes_computed": true,
+  "timestamp_format_normalized_without_time_change": [
+    {
+      "candidate_id": "src_cov_wkaminski_001",
+      "old_timestamp": "2026-10-31 19:28:49+00:00",
+      "new_timestamp": "2026-10-31T19:28:49Z"
+    },
+    {
+      "candidate_id": "src_cov_wkaminski_002",
+      "old_timestamp": "2026-10-31 19:28:49+00:00",
+      "new_timestamp": "2026-10-31T19:28:49Z"
+    },
+    {
+      "candidate_id": "src_cov_wkaminski_003",
+      "old_timestamp": "2026-10-31 19:28:49+00:00",
+      "new_timestamp": "2026-10-31T19:28:49Z"
+    },
+    {
+      "candidate_id": "src_cov_wkaminski_004",
+      "old_timestamp": "2026-10-31 19:28:49+00:00",
+      "new_timestamp": "2026-10-31T19:28:49Z"
+    },
+    {
+      "candidate_id": "src_cov_wkaminski_005",
+      "old_timestamp": "2026-10-31 19:28:49+00:00",
+      "new_timestamp": "2026-10-31T19:28:49Z"
+    },
+    {
+      "candidate_id": "src_cov_wkaminski_006",
+      "old_timestamp": "2026-10-31 19:28:49+00:00",
+      "new_timestamp": "2026-10-31T19:28:49Z"
+    }
+  ],
+  "initial_usage": {
+    "queries": 8,
+    "charged_opens": 5
+  },
+  "report_limitations": [
+    "Collector report source_count72 for coverage-karol-reviewed is stale; canonicalgraph has80records, currentPięta83. No productioncounts overwritten.",
+    "Six person-specific group-show reviews establish no frozen-peer connection; scope must be retained."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "run_id": "20261101-coverage-boras",
+  "stage": "extraction",
+  "status": "complete",
+  "source_candidate_count": 1,
+  "extracted_count": 1,
+  "skipped_count": 0,
+  "accounting": [
+    {
+      "candidate_id": "src_cov_boras_001",
+      "evidence_id": "ev_cov_boras_001",
+      "decision": "record",
+      "reason": "Complete authored post uses a single personal-taste predicate for two frozen performers."
+    }
+  ],
+  "lineage": {
+    "source_file": "evidence/coverage-expansion/boras.source-candidates.canonical.jsonl",
+    "source_line": 1,
+    "source_sha256": "17f3e28f0d4593de54be5bc8e33243fc29e40b23eaccddd7cedf4d3287a9ed2b",
+    "excerpt_sha256": "d3ed22015bc87ccd927a866c8249cb97b015598faca4c31d04493290c37f4386",
+    "canonical_author_key": "fan_c52034513a032af7",
+    "locator": "Gazeta.pl emama “Stand up”, rendered lines 209–213; 2023-11-01 21:15 (source timezone unknown)."
+  },
+  "provenance": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1",
+    "run_id": "20261101-coverage-boras",
+    "confidence": 0.9
+  },
+  "surprises": [
+    "“Mi podchodzi” explicitly covers both coordinated names, but the source writes only “Tomasz Boras”; the frozen full-name mapping relies on collection’s standup.pl profile evidence and stand-up context."
+  ],
+  "decisions": [
+    "Classified as same_user_coendorsement because the same author expresses personal liking of both named performers.",
+    "Preference quotes are verbatim substrings of the author’s complete post; the Boras quote spans the coordinated phrase, while the Cezary quote isolates its directly attached predicate.",
+    "No publication timezone was inferred; published_at remains the source date only.",
+    "No skips."
+  ],
+  "limits": [
+    "Preference is evidenced in this historical post only; current or general preference is not established.",
+    "This is one author/post and does not establish ordinary audience representativeness or performer-style similarity.",
+    "Boras mapping is not perfectly certain because “Borkowski” is absent from the source surface; the task target was not used as identity proof."
+  ],
+  "validation": {
+    "command": "python3 tasks/standupers-graph/scripts/evidence_pipeline.py validate --kind evidence tasks/standupers-graph/evidence/coverage-expansion/boras.evidence.unreviewed.jsonl",
+    "result": "passed: validated 1 evidence record; semantic/source-copy checks passed"
+  }
+}

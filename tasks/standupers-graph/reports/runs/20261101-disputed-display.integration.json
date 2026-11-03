@@ -1,0 +1,120 @@
+{
+  "display_policy": "supported-disputes-v1",
+  "user_approved": true,
+  "records": 112,
+  "canonical_candidates": 135,
+  "relations": 114,
+  "corroborated_relations": 15,
+  "provisional_relations": 66,
+  "contested_relations": 33,
+  "displayed_disputed_relations": 9,
+  "strict_coverage": {
+    "linked_nodes": 52,
+    "largest_component": 36,
+    "component_sizes": [
+      36,
+      4,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "coverage_including_disputed": {
+    "linked_nodes": 53,
+    "largest_component": 37,
+    "component_sizes": [
+      37,
+      4,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "corroborated_linked_nodes": 17,
+  "aggregate_function_unchanged_from_HEAD": true,
+  "exact_relations_deferred_reproduction": "pass",
+  "strict_loader_and_schemas": "pass",
+  "cached_photos_reused": 100,
+  "png_dimensions": [
+    4000,
+    1160
+  ],
+  "unit_tests": "24passed",
+  "javascript_syntax": "passed",
+  "browser_checks": [
+    {
+      "width": 1100,
+      "contentHeight": 640,
+      "capturedHeight": 640,
+      "consoleMessages": [
+        {
+          "level": "log",
+          "text": "SMOKE {\"coverage\":{\"strict_linked_nodes\":52,\"linked_nodes_including_disputed\":53,\"disputed_links\":9},\"visible_disputes\":9,\"visible_nodes\":53,\"opposing_visible\":true,\"score_status_unchanged\":true}"
+        }
+      ],
+      "screenshot": {
+        "mimeType": "image/png",
+        "width": 1100,
+        "height": 640
+      }
+    },
+    {
+      "width": 390,
+      "contentHeight": 640,
+      "capturedHeight": 640,
+      "consoleMessages": [
+        {
+          "level": "log",
+          "text": "SMOKE {\"coverage\":{\"strict_linked_nodes\":52,\"linked_nodes_including_disputed\":53,\"disputed_links\":9},\"visible_disputes\":9,\"visible_nodes\":53,\"opposing_visible\":true,\"score_status_unchanged\":true}"
+        }
+      ],
+      "screenshot": {
+        "mimeType": "image/png",
+        "width": 390,
+        "height": 640
+      }
+    }
+  ],
+  "source_scope": "All3archive-tail records independently reviewed and added; opposition and scorer/status retained. Disputed is not corroborated. Browser checks assert default eligibility, opposing excerpts/dates, no contested force pull, and scores/evidence unchanged.",
+  "graph_inputs": [
+    "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch01-corroboration.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch02.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch03.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch04.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch05.context-reviewed.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch06.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch07.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch09.context-reviewed.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch10.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch06-catchup.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-magda-kubicka.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-olka-szczesniak.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-karol-modzelewski.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-wojtek-pieta.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-wojciech-kaminski.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-source-first-01.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-source-first-01-followup.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-fan-forums-b-followup.json",
+    "tasks/standupers-graph/reports/runs/20261101-coverage-source-page-recovery.json",
+    "tasks/standupers-graph/reports/runs/20261101-coverage-source-page-tail.json",
+    "tasks/standupers-graph/reports/runs/20261101-coverage-blazej-krajewski.json",
+    "tasks/standupers-graph/reports/runs/20261101-coverage-karol-kopiec.json",
+    "tasks/standupers-graph/reports/runs/20261101-coverage-boras.json",
+    "tasks/standupers-graph/reports/runs/20261101-coverage-thread-harvest-02.identity-reviewed.json",
+    "tasks/standupers-graph/reports/runs/20261101-coverage-sylwia-wiszowata.json",
+    "tasks/standupers-graph/reports/runs/20261101-coverage-marcin-zbigniew-wojciech.json",
+    "tasks/standupers-graph/reports/runs/20261101-coverage-ewa-stasiewicz.json",
+    "tasks/standupers-graph/reports/runs/20261101-coverage-tomasz-machnicki.json",
+    "tasks/standupers-graph/reports/runs/20261101-coverage-pawel-chalupka.json",
+    "tasks/standupers-graph/reports/runs/20261101-coverage-tomek-kolecki.json",
+    "tasks/standupers-graph/reports/runs/20261101-coverage-kolecki-archive-tail.json"
+  ]
+}

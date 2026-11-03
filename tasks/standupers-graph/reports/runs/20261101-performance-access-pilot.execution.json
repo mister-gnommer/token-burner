@@ -1,0 +1,33 @@
+{
+  "status": "completed-access-unverified",
+  "permission": "Userapproved separateperformance-verifiedfallback ifdeeperfanbelow70%; accessprobeonly",
+  "budget": {
+    "queries": 6,
+    "retrieval_attempts": 8
+  },
+  "workers": [
+    {
+      "role": "performance-access-probe",
+      "brief": "Test whether actual public performance material is accessible for the already authorized, separate style fallback. This is source-access feasibility only: do not assign style labels, links or scores.\n\nWorkspace: /home/kris/Prog/projects/token-burner.\nRead tasks/standupers-graph/AGENTS.md, data/standupers.json and reports/runs/20261031-coverage-expansion.execution.json. Fan coverage is41/100 before pending integration; the user approved a separately labeled, performance-verified style layer if deeper fan research stays below70%. Fan counts must remain separate.\n\nProbe at most3 frozen performers: Mama Na Obrotach/Klaudia Klimczyk, Magda Kubicka, and connected anchor Michał Leja. Start from their frozen official performer profile URLs or clearly official artist/channel uploads. Verify identity and uploader attribution; a namesake, fan compilation or event listing is insufficient. Seek actual stand-up performance video captions/transcripts, not profile/promotional descriptions or another person's review.\n\nBudget for this method-access probe: at most6 individual queries and8 page/caption retrieval attempts TOTAL, no fan-performer allowance renewal. Count failures, reserve before calls and guard the action in the same branch. No repeated blocked-URL variants. Shared T3 preview is full; ownership checks could not release five stale agent-session tabs. Do not touch other tabs or bypass session guards. Public full-page/caption text retrieval is allowed where readable. No login, cookies, anti-bot bypass, paid API, new credentials, dependency installation or video/audio downloads. Existing local CLI helpers may be inspected/used for public metadata/captions only if available; do not install them.\n\nAccess proof must include official URL/title/uploader, performer attribution, actual readable timed caption/transcript availability, language and whether auto-generated if known, time coverage and concrete limitations. A video title/search snippet alone does NOT mean a performance was reviewed. If captions are unavailable, say access not verified; do not infer the performer's style. If a transcript is read, distinguish content/structure evidence from delivery/audio traits that text cannot verify. No all-100 scrape.\n\nExclusive outputs:\n- tasks/standupers-graph/reports/runs/20261101-performance-access-pilot.json\n- tasks/standupers-graph/evidence/performance-access-pilot/sources.jsonl\nSave empty files first. Read material only for analysis; do not save or reproduce full copyrighted transcripts. Each source may have at most20quoted words in a short timestamped access-proof excerpt, plus metadata. Store no raw video/audio or long caption files. Record all attempts, exact URLs, timestamps, identity/provenance and why access succeeded/failed. No fan evidence or production graph/schema/code/state/Git edits, subagents or other files.\n\nA valid outcome can be0accessible performances with specific access blockers; this is not evidence that the performers lack recordings. State the smallest next technical/source step if blocked. Leading Surprises; return early with durable partial work if premise fails, scope grows substantially or continuation risks irreversible change. Ignore trivia. Separate method review and actual performance analysis would follow before any style connection.",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "medium"
+        },
+        {
+          "id": "serviceTier",
+          "value": "default"
+        }
+      ],
+      "status": "completed",
+      "task_id": "node:delegated-task:command%3Amcp%3Ab8bb504a-a098-4a3f-913f-2b56ec9678db%3Adelegate-task%3Aperformance-access-pilot-20261101-r1",
+      "child_thread_id": "thread:delegated-task:command%3Amcp%3Ab8bb504a-a098-4a3f-913f-2b56ec9678db%3Adelegate-task%3Aperformance-access-pilot-20261101-r1"
+    }
+  ],
+  "no_style_links_or_fan_metric_changes": true,
+  "caption_proof_count": 0,
+  "parent_direct_attempts": 2,
+  "transport_diagnostic_attempts": 3
+}

@@ -1,0 +1,102 @@
+{
+  "leading_surprises": [
+    "All six posts contain a positive Kamiński appraisal, but this is single-performer coverage and cannot by itself populate a pair-level graph evidence class.",
+    "The out-of-population HrAbi group and its unnamed members cannot be treated as the second frozen individual; the six skips do not imply negative polarity or rejection of the source."
+  ],
+  "schema_version": 1,
+  "run_id": "20261031-coverage-wojciech-kaminski",
+  "stage": "verification",
+  "reviewer": "codex/gpt-6-luna",
+  "prompt_version": "verify-evidence-v3",
+  "source_candidates": "evidence/coverage-pilot/wojciech-kaminski.source-candidates.canonical.jsonl",
+  "evidence_output": "evidence/coverage-pilot/wojciech-kaminski.evidence.jsonl",
+  "counts": {
+    "source_candidates": 6,
+    "extracted": 0,
+    "accepted": 0,
+    "uncertain": 0,
+    "rejected": 0,
+    "skipped": 6,
+    "evidence_rows": 0
+  },
+  "coverage_check": {
+    "candidate_ids_accounted_exactly_once": true,
+    "candidate_ids": [
+      "src_cov_wkaminski_001",
+      "src_cov_wkaminski_002",
+      "src_cov_wkaminski_003",
+      "src_cov_wkaminski_004",
+      "src_cov_wkaminski_005",
+      "src_cov_wkaminski_006"
+    ],
+    "decision_counts": {
+      "skip": 6
+    },
+    "unreviewed_jsonl_empty": true,
+    "final_jsonl_empty": true
+  },
+  "skip_audit": [
+    {
+      "candidate_id": "src_cov_wkaminski_001",
+      "decision": "skip",
+      "reviewer_conclusion": "confirmed",
+      "reason": "“Znakomity występ, inteligentny, zabawny…” praises a performance and “Panowie”/HrAbi collectively; “transfer Wojtka” identifies Kamiński individually, but no second frozen individual is named. Generic show recommendation does not supply a second performer."
+    },
+    {
+      "candidate_id": "src_cov_wkaminski_002",
+      "decision": "skip",
+      "reviewer_conclusion": "confirmed",
+      "reason": "“Wspaniały nowy program” and the recommendation refer to the program; “Wojtek Kamiński” is explicit and positively appraised for fitting with HrAbi, but “hrAbiami” is the out-of-population group, not another frozen individual."
+    },
+    {
+      "candidate_id": "src_cov_wkaminski_003",
+      "decision": "skip",
+      "reviewer_conclusion": "confirmed",
+      "reason": "“Świetny humor kabaretu Hrabi” evaluates the group, and the author calls the transfer “Wojciecha Kamińskiego” a good decision. No other eligible individual is identified; do not convert the group into a null-ID pair mention."
+    },
+    {
+      "candidate_id": "src_cov_wkaminski_004",
+      "decision": "skip",
+      "reviewer_conclusion": "confirmed",
+      "reason": "“Wojtek Kamiński rewelacja” is unambiguous individual praise. “Kabaret hrAbi,” “Chłopaki,” and their return/overall form are group-show evaluations; no second frozen individual is identified."
+    },
+    {
+      "candidate_id": "src_cov_wkaminski_005",
+      "decision": "skip",
+      "reviewer_conclusion": "confirmed",
+      "reason": "The author explicitly praises Wojciech Kamiński’s voice and cabaret acting, while also discussing the ensemble, memorial to Joanna, tears, and program therapy. Joanna is not a performer reference; no other eligible individual is identified. Keep the cabaret, singing, acting, memorial, and emotional scope intact."
+    },
+    {
+      "candidate_id": "src_cov_wkaminski_006",
+      "decision": "skip",
+      "reviewer_conclusion": "confirmed",
+      "reason": "“P. Wojtek” is individually praised for high, clear tones; the rest evaluates the group performance, harmonies, and improvisation. The author says they could not fully enjoy the evening, which is a caveat, not dislike. No second eligible individual is named."
+    }
+  ],
+  "provenance_checks": {
+    "candidate_ids_match_input_exactly_once": true,
+    "source_candidate_provenance_preserved": true,
+    "actual_extractor_run_id": "20261031-coverage-wojciech-kaminski",
+    "extractor_provider": "codex",
+    "extractor_model": "gpt-6-luna",
+    "extractor_prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1",
+    "actual_reviewer_provider": "codex",
+    "actual_reviewer_model": "gpt-6-luna",
+    "actual_reviewer_prompt_version": "verify-evidence-v3"
+  },
+  "source_and_medium_limits": [
+    "kupbilecik.pl group-show review pages, two date slices, six distinct posts; one collection/source family.",
+    "All six are cabaret/group-program reviews; some explicitly cover singing, acting, improvisation, memorial/emotional response, and ensemble work. They are not recast as stand-up/style-similarity evidence.",
+    "Only the population-listed Wojciech Kamiński is individually attributable. HrAbi remains outside the frozen individual population; no group-member identity or preference is inferred.",
+    "No second eligible individual pair occurs in these six records. Under the supplied pair-evidence rubric, skipping is valid; positive polarity does not authorize inventing a pair or evidence class."
+  ],
+  "issues_or_corrections": [],
+  "alias_risks": [
+    "Do not alias HrAbi, “Panowie,” “Chłopaki,” the ensemble, or program to a frozen performer.",
+    "Do not treat “Joanny” in the memorial sentence as a performer.",
+    "“P. Wojtek” is anchored by the named event/archive and the individual-focused review; it does not resolve any group identity."
+  ],
+  "coverage_gaps": [
+    "Six individual positive performance appraisals yield no Kamiński-to-peer evidence. Additional distinct reviews with a second named frozen performer would be needed for pair-level evidence."
+  ]
+}

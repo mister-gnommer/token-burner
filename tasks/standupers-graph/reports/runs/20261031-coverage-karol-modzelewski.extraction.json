@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "run_id": "20261031-coverage-karol-modzelewski",
+  "stage": "extraction",
+  "performer_ids": [
+    "karol-modzelewski"
+  ],
+  "input": "evidence/coverage-pilot/karol-modzelewski.source-candidates.canonical.jsonl",
+  "output": "evidence/coverage-pilot/karol-modzelewski.evidence.unreviewed.jsonl",
+  "extractor": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1"
+  },
+  "counts": {
+    "source_candidates": 9,
+    "extracted": 8,
+    "skipped": 1,
+    "evidence_class_counts": {
+      "same_user_coendorsement": 8
+    }
+  },
+  "records": [
+    {
+      "candidate_id": "src_cov_kmodzelewski_001",
+      "evidence_id": "ev_cov_kmodzelewski_001",
+      "evidence_class": "same_user_coendorsement",
+      "mentions": [
+        {
+          "surface_form": "Karol",
+          "performer_id": "karol-modzelewski",
+          "sentiment": "positive",
+          "preference": "positive"
+        },
+        {
+          "surface_form": "Marcina Chmiela",
+          "performer_id": "marcin-chmiel",
+          "sentiment": "positive",
+          "preference": "positive"
+        }
+      ],
+      "decision": "Karol performance praise and explicit personal anticipation; Marcin Chmiel’s jokes explicitly stole author’s heart. Event-level appreciation only."
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_002",
+      "evidence_id": "ev_cov_kmodzelewski_002",
+      "evidence_class": "same_user_coendorsement",
+      "mentions": [
+        {
+          "surface_form": "Karol Modzelewski",
+          "performer_id": "karol-modzelewski",
+          "sentiment": "positive",
+          "preference": "positive"
+        },
+        {
+          "surface_form": "Marcin Chmiel",
+          "performer_id": "marcin-chmiel",
+          "sentiment": "positive",
+          "preference": "positive"
+        },
+        {
+          "surface_form": "Kamil Kozieł",
+          "performer_id": null,
+          "sentiment": "positive",
+          "preference": "positive"
+        }
+      ],
+      "decision": "Karol praise is despite health caveat. Marcin explicitly praised. Kamil Kozieł is positively appraised but is outside frozen list; identity unresolved. Recommendation does not add preference beyond explicit praise."
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_004",
+      "evidence_id": "ev_cov_kmodzelewski_004",
+      "evidence_class": "same_user_coendorsement",
+      "mentions": [
+        {
+          "surface_form": "Karol",
+          "performer_id": "karol-modzelewski",
+          "sentiment": "positive",
+          "preference": "positive"
+        },
+        {
+          "surface_form": "Kamila Kozieła",
+          "performer_id": null,
+          "sentiment": "positive",
+          "preference": "positive"
+        },
+        {
+          "surface_form": "Marcin Chmiel",
+          "performer_id": "marcin-chmiel",
+          "sentiment": "positive",
+          "preference": "unknown"
+        }
+      ],
+      "decision": "Karol and Kamil have explicit enjoyment/praise. The sentence fragment after Marcin Chmiel is retained as positive sentiment, but attribution/evidence for personal preference is unclear. Praise is scoped to this show/support."
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_005",
+      "evidence_id": "ev_cov_kmodzelewski_005",
+      "evidence_class": "same_user_coendorsement",
+      "mentions": [
+        {
+          "surface_form": "Karol",
+          "performer_id": "karol-modzelewski",
+          "sentiment": "positive",
+          "preference": "positive"
+        },
+        {
+          "surface_form": "Chmielu",
+          "performer_id": null,
+          "sentiment": "positive",
+          "preference": "positive"
+        }
+      ],
+      "decision": "Personal event appraisal supports Karol preference. Chmielu praised as a support act; identity remains unresolved. Wife’s reported reaction excluded; only author’s own statements represented."
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_006",
+      "evidence_id": "ev_cov_kmodzelewski_006",
+      "evidence_class": "same_user_coendorsement",
+      "mentions": [
+        {
+          "surface_form": "program",
+          "performer_id": "karol-modzelewski",
+          "sentiment": "positive",
+          "preference": "positive"
+        },
+        {
+          "surface_form": "Marcina Chmiela",
+          "performer_id": "marcin-chmiel",
+          "sentiment": "positive",
+          "preference": "positive"
+        }
+      ],
+      "decision": "Program and named support positively appraised. Review is separate from candidate 003 despite same source-local author key; do not count as independent author."
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_007",
+      "evidence_id": "ev_cov_kmodzelewski_007",
+      "evidence_class": "same_user_coendorsement",
+      "mentions": [
+        {
+          "surface_form": "Karola",
+          "performer_id": "karol-modzelewski",
+          "sentiment": "positive",
+          "preference": "positive"
+        },
+        {
+          "surface_form": "Kamil",
+          "performer_id": null,
+          "sentiment": "positive",
+          "preference": "positive"
+        },
+        {
+          "surface_form": "Marcin",
+          "performer_id": null,
+          "sentiment": "positive",
+          "preference": "positive"
+        }
+      ],
+      "decision": "Recommendation alone would not establish personal preference; absolute no-weak-moments appraisal is scoped to the almost two-hour event. First-name Kamil and Marcin retained unresolved; adjacent event reviews do not prove identity."
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_008",
+      "evidence_id": "ev_cov_kmodzelewski_008",
+      "evidence_class": "same_user_coendorsement",
+      "mentions": [
+        {
+          "surface_form": "Kamila",
+          "performer_id": null,
+          "sentiment": "positive",
+          "preference": "positive"
+        },
+        {
+          "surface_form": "Chmiela",
+          "performer_id": null,
+          "sentiment": "positive",
+          "preference": "positive"
+        },
+        {
+          "surface_form": "Karola",
+          "performer_id": "karol-modzelewski",
+          "sentiment": "positive",
+          "preference": "positive"
+        }
+      ],
+      "decision": "Author personally appraises the event’s fun. Kamila and Chmiela are retained as unresolved source forms; no aliases inferred from nearby reviews."
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_009",
+      "evidence_id": "ev_cov_kmodzelewski_009",
+      "evidence_class": "same_user_coendorsement",
+      "mentions": [
+        {
+          "surface_form": "Bańka",
+          "performer_id": "karol-modzelewski",
+          "sentiment": "positive",
+          "preference": "positive"
+        },
+        {
+          "surface_form": "Marcina Chmiela",
+          "performer_id": "marcin-chmiel",
+          "sentiment": "positive",
+          "preference": "positive"
+        }
+      ],
+      "decision": "Program praise and personal impression of Marcin Chmiel are explicit. “Bańka” is the program title in this Karol review; thanks to Karol is contextual, not separately treated as preference evidence."
+    }
+  ],
+  "skips": [
+    {
+      "candidate_id": "src_cov_kmodzelewski_003",
+      "reason": "Karol-only positive evidence plus criticism of unnamed support; no second performer can be reliably linked, so no permissible pair evidence class fits."
+    }
+  ],
+  "unresolved_identities": [
+    "Kamil Kozieł (002)",
+    "Kamila Kozieła (004)",
+    "Chmielu (005)",
+    "Kamil and Marcin (007)",
+    "Kamila and Chmiela (008)"
+  ],
+  "author_concentration": {
+    "distinct_author_keys": 8,
+    "records_by_author_key": {
+      "fan_b4b8ed1d863cb5b2": [
+        "ev_cov_kmodzelewski_006"
+      ],
+      "fan_bb683f43b9af604e": [
+        "ev_cov_kmodzelewski_001"
+      ],
+      "fan_09986b05d3e5ca85": [
+        "ev_cov_kmodzelewski_002"
+      ],
+      "fan_1f3bdb3f837b9468": [
+        "ev_cov_kmodzelewski_004"
+      ],
+      "fan_05b243cbf81940cd": [
+        "ev_cov_kmodzelewski_005"
+      ],
+      "fan_fb803473476761b0": [
+        "ev_cov_kmodzelewski_007"
+      ],
+      "fan_9c1aaa85d11f072f": [
+        "ev_cov_kmodzelewski_008"
+      ],
+      "fan_1aa86f88d3bcdb06": [
+        "ev_cov_kmodzelewski_009"
+      ]
+    },
+    "note": "Candidates 003 and 006 share fan_b4b8ed1d863cb5b2; candidate 003 is skipped, so the eight emitted records contain eight distinct author keys. Do not interpret the skipped review as an additional independent fan."
+  },
+  "surprises": [
+    "Candidate 003 shares author_key with candidate 006, so candidate 003 is skipped; the eight emitted records contain eight unique author keys.",
+    "Several support mentions remain unresolved even where neighboring reviews name performers; no event roster is stored in candidate context.",
+    "The report’s source locator text is not treated as a verbatim roster or as identity proof."
+  ],
+  "verification": "Pending independent verification; all records remain unreviewed."
+}

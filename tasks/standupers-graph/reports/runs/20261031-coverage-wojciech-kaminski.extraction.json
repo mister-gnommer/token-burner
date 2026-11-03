@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "run_id": "20261031-coverage-wojciech-kaminski",
+  "stage": "extraction",
+  "target_performer_ids": [
+    "wojciech-kaminski"
+  ],
+  "provider": "codex",
+  "model": "gpt-6-luna",
+  "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1",
+  "leading_surprises": [
+    "All six candidates contain explicit Kamiński evaluation, but each is embedded in a full HrAbi cabaret performance; the group is outside the frozen individual-performer population.",
+    "Positive Kamiński appraisal alone does not establish a link to a frozen peer. None of the six names a second eligible individual performer.",
+    "Candidate 005 mentions “Joanny” in a memorial context, not as clear personal performance preference or evidence for identity resolution. Candidate 006 retains clear praise alongside the author’s inability to fully enjoy the evening; this is not evidence of dislike."
+  ],
+  "scope_and_limits": {
+    "medium": "Cabaret / group-show reviews, including acting and singing appraisal; these are not relabeled as stand-up or style-similarity evidence.",
+    "out_of_population_entity": "HrAbi is a group, not a frozen individual performer. No group member identities or preferences are inferred.",
+    "pair_classes": "No candidate supports same_user_rating_overlap, same_user_coendorsement, fan_recommendation, fan_comparison, or style_similarity between Kamiński and a second frozen individual. Generic show recommendations and group praise do not create such a pair.",
+    "duplicate_exclusion": "The separate saved batch-09 Kamil/Radek post remains excluded and untouched; it is outside these six candidates."
+  },
+  "counts": {
+    "source_candidates": 6,
+    "extracted": 0,
+    "skipped": 6,
+    "evidence_rows": 0
+  },
+  "decisions": [
+    {
+      "candidate_id": "src_cov_wkaminski_001",
+      "decision": "skip",
+      "evidence_class": null,
+      "reason": "Skipped: the praise and recommendation concern the HrAbi group production and Kamiński’s transfer into it. HrAbi is a group outside the frozen individual-performer population; only Kamiński is individually identified, so no permitted pair-level evidence class fits."
+    },
+    {
+      "candidate_id": "src_cov_wkaminski_002",
+      "decision": "skip",
+      "evidence_class": null,
+      "reason": "Skipped: the new-program recommendation and praise identify Kamiński, while “hrAbiami” refers to the out-of-population group. No second frozen individual performer is named, so no permitted pair-level evidence class fits."
+    },
+    {
+      "candidate_id": "src_cov_wkaminski_003",
+      "decision": "skip",
+      "evidence_class": null,
+      "reason": "Skipped: the author praises HrAbi’s humor and calls Kamiński’s transfer into the group a good decision. The only eligible individual is Kamiński; the group cannot be emitted as a null-person mention to force a pair class."
+    },
+    {
+      "candidate_id": "src_cov_wkaminski_004",
+      "decision": "skip",
+      "evidence_class": null,
+      "reason": "Skipped: “Wojtek Kamiński rewelacja” is clear individual praise, but the remaining evaluations address the HrAbi group and shared show. No second frozen individual performer is identified for a pair-level class."
+    },
+    {
+      "candidate_id": "src_cov_wkaminski_005",
+      "decision": "skip",
+      "evidence_class": null,
+      "reason": "Skipped: the author clearly praises Kamiński’s singing and cabaret acting, within a memorial and group-performance context. “Joanny” is not a clear personal performance preference or a resolvable frozen performer reference; HrAbi remains an out-of-population group, leaving no eligible second individual."
+    },
+    {
+      "candidate_id": "src_cov_wkaminski_006",
+      "decision": "skip",
+      "evidence_class": null,
+      "reason": "Skipped: the author praises P. Wojtek’s high tones and the production’s harmony while saying they could not fully enjoy the evening. Preserve that caveat without inferring dislike; no second frozen individual performer is named, so no pair-level class fits."
+    }
+  ]
+}

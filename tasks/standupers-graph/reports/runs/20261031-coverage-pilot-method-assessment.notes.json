@@ -1,0 +1,27 @@
+{
+  "report": "reports/20261031-coverage-pilot-method-assessment.md",
+  "original_report_preserved": true,
+  "corrections": [
+    {
+      "claim": "New source acquisition added3positive-linked performers",
+      "correct": "New posts added1(Marcin Chmiel). Saved-source repairs added4(Olka/Karol andKamiński/Radek). Newcontextretrieval for oldpost is stillsaved-source repair, notnewauthoredpost. Baseline34→39."
+    },
+    {
+      "claim": "Leja is an incidentally newly linked node",
+      "correct": "Leja alreadyhadpositive degree; Olka–Leja grewlargestcomponent26→28 withoutnewdegree."
+    },
+    {
+      "claim": "Largestcomponent mustreach70nodes asminimum",
+      "correct": "Userminimum70%performers withpositive connections. Largestcomponent reportedseparately; no70giantcomponent requirement wasagreed."
+    },
+    {
+      "claim": "Karol17queriesremaining",
+      "correct": "Actualattemptaudit8/24queries means16remaining."
+    },
+    {
+      "claim": "FilipBrymora maybetheunresolvedsupport",
+      "correct": "No source-specificidentityproof; heuristicmustnotbeused asmapping orpriorityclaim. Nextcohort selectedfrom actual61isolates withoutFilipguess."
+    }
+  ],
+  "adopted_method": "Source-first fullauthoredfandiscussionprobe plus accessiblepublicsame-userratingfeasibilityprobe; separate extraction/review andmetrics unchanged."
+}

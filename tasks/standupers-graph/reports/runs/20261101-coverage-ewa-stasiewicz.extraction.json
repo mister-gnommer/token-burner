@@ -1,0 +1,90 @@
+{
+  "surprises": [
+    "Candidate 001’s appraisal does not establish an identified comparison performer or actionable style similarity; it is accounted for as a skip.",
+    "Candidate 002’s full-page canonical record has published_at null; attached title and event date remain separate parent context exactly as canonicalized. Rafał is retained only as a source-local hashed author key, not a verified global identity."
+  ],
+  "schema_version": 1,
+  "run_id": "20261101-coverage-ewa-stasiewicz",
+  "stage": "extraction",
+  "status": "complete",
+  "source_file": "evidence/coverage-expansion/ewa-stasiewicz.source-candidates.canonical.jsonl",
+  "source_candidate_count": 2,
+  "extracted_count": 1,
+  "skipped_count": 1,
+  "accounting": [
+    {
+      "candidate_id": "src_ewa_cov_001",
+      "decision": "skip",
+      "reason": "The author positively appraises Ewa, but contrasts her only with unnamed generic “other comedians” described as swearing and seeking extremes. No frozen peer is identified, so same_user_rating_overlap/coendorsement and fan_comparison have no valid second performer; this is not a concrete style comparison supporting style_similarity. Do not map related-video sidebar names or invent a comparison target."
+    },
+    {
+      "candidate_id": "src_ewa_cov_002",
+      "evidence_id": "ev_ewa_cov_002",
+      "decision": "record",
+      "reason": "The solo review explicitly says “Lubię panią Ewę, lubię jej poczucie humoru” and recommends her. This is a positive individual preference plus fan_recommendation; it does not create a pair."
+    }
+  ],
+  "lineage": [
+    {
+      "candidate_id": "src_ewa_cov_001",
+      "source_line": 1,
+      "source_sha256": "1fe4dd8d64688008a0a4f25a635f351e5d301e6c7a40c3ee05a56ea7a2af1139",
+      "excerpt_sha256": "d6f5ea6d5424539b971592df86d9a25a7e7b9ba24005603f328c8826eb64e4d8",
+      "canonical_author_key": "fan_34fe0aa84e0530f2"
+    },
+    {
+      "candidate_id": "src_ewa_cov_002",
+      "source_line": 2,
+      "source_sha256": "4b307f05cb0b9952b7d55740ada14cd232aa4bb678e1810df09587a4f628bf16",
+      "excerpt_sha256": "03ed591fd17a1863739988ec7cbf8f8103dab7c489c862c5ab335708afc0d28c",
+      "canonical_author_key": "fan_d35b63a0b329e9ba"
+    }
+  ],
+  "provenance": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "extract-evidence-v3",
+    "run_id": "20261101-coverage-ewa-stasiewicz",
+    "review_status": "unreviewed",
+    "reviewer": null
+  },
+  "source_proof": [
+    {
+      "candidate_id": "src_ewa_cov_001",
+      "collection_report": "reports/runs/20261101-coverage-ewa-stasiewicz.collection.json",
+      "raw_tool_result_index": 5,
+      "tool": "JoeMonster open",
+      "payload_sha256": "7dbe0617d7c132860519273cf5dfe08c243200da6287bc52c13cc8f95d0e4010",
+      "excerpt_sha256": "d6f5ea6d5424539b971592df86d9a25a7e7b9ba24005603f328c8826eb64e4d8"
+    },
+    {
+      "candidate_id": "src_ewa_cov_002",
+      "collection_report": "reports/runs/20261101-coverage-ewa-stasiewicz.collection.json",
+      "raw_tool_result_index": 8,
+      "tool": "KupBilecik open",
+      "payload_sha256": "dec81da28d1dcf2c830310d3d1892688031abc277aa79254ef3f72f655fdb5ae",
+      "excerpt_sha256": "03ed591fd17a1863739988ec7cbf8f8103dab7c489c862c5ab335708afc0d28c"
+    }
+  ],
+  "decisions": [
+    "Candidate 001: skipped; no pair class can be formed from generic unnamed “other comedians,” and no style-performance evidence is present.",
+    "Candidate 002: fan_recommendation; Ewa Stasiewicz is the only mention, with positive sentiment and independently explicit positive preference. Preference quote is an exact author-excerpt substring.",
+    "Both source/context payloads, exact excerpts, language, dates and source-local keys follow canonical fields. No cross-record joins, inferred peers, or graph claim."
+  ],
+  "validation": {
+    "command": "python3 scripts/evidence_pipeline.py validate --kind evidence evidence/coverage-expansion/ewa-stasiewicz.evidence.unreviewed.jsonl",
+    "result": "passed: validated 1 evidence record; schema and frozen performer IDs valid",
+    "focused_checks_result": "passed: 2/2 candidate accounting (1 evidence, 1 reasoned skip); exact canonical source/context/excerpt/language/date/author-key fidelity; source-local author key retained without global identity claim; frozen ID and verbatim surface/preference quote; extraction lineage and unreviewed/reviewer-null state; saved full-page proof indexes verified against canonicalization report."
+  },
+  "lineage_sha256": {
+    "source_candidates_sha256": "5eedeffadeeaa86f7d9a79f46a45c70ef3484d21c39f092de02f0c8eb587f568",
+    "evidence_unreviewed_sha256": "75fc4d49bbc2a8ff40e6f41e7e233e90feebb56cc4aa651b7271ed2def14a5e9",
+    "candidate_ids": [
+      "src_ewa_cov_001",
+      "src_ewa_cov_002"
+    ],
+    "evidence_ids": [
+      "ev_ewa_cov_002"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "verified_readable": false,
+  "performer_id": "mama-na-obrotach",
+  "source_url": "https://www.youtube.com/watch?v=3NbLiG_HPEs",
+  "capture_time": "2026-11-01 17:39:45 UTC",
+  "actual_title": "Mama Na Obrotach STAND-UP | CAŁY PROGRAM 2025 | \"Kiedyś, a dziś\" - YouTube",
+  "channel_identity": null,
+  "observed_language": null,
+  "observed_track_kind": null,
+  "segments": [],
+  "coverage_bounds": null,
+  "raw_proof_locator": "T3 preview tab tab_1e_02a52303-1e3a-4993-a897-62daeceecefe; evaluate document.title/location.href/body.innerText returned only player text ‘0:02 / 1:39:09’ at capture; no transcript text/track label. Two preview snapshots timed out."
+}

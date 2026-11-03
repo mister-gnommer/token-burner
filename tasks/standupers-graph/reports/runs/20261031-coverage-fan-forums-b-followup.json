@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "run_id": "20261031-coverage-fan-forums-b-followup",
+  "stage": "batch",
+  "batch": 1,
+  "status": "completed",
+  "performer_ids": [
+    "mama-na-obrotach",
+    "magda-kubicka",
+    "piotr-jelen",
+    "blazej-krajewski",
+    "piotr-latala",
+    "pan-li",
+    "tomasz-boras-borkowski",
+    "michal-paszczyk",
+    "grzegorz-dolniak",
+    "adam-van-bendler"
+  ],
+  "paths": {
+    "source_candidates": "evidence/coverage-fan-forums-b-followup/source-candidates.canonical.jsonl",
+    "evidence_unreviewed": "evidence/coverage-fan-forums-b-followup/evidence.unreviewed.jsonl",
+    "evidence": "evidence/coverage-fan-forums-b-followup/evidence.jsonl",
+    "verification_report": "reports/runs/20261031-coverage-fan-forums-b-followup.verification.json"
+  },
+  "workers": {
+    "collector": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "collect-fan-evidence-v3+source-first-fan-discovery-v1"
+    },
+    "extractor": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1"
+    },
+    "verifier": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "verify-evidence-v3"
+    }
+  },
+  "counts": {
+    "source_candidates": 1,
+    "extracted": 1,
+    "accepted": 1,
+    "uncertain": 0,
+    "rejected": 0
+  },
+  "surprises": [
+    "Supplemental per-performer coverage research; frozen original batch retained."
+  ],
+  "notes": "One new Filmweb directfavorites reply. RawsiteFilmweb normalized tofilmweb.pl andhashesrecomputed; naivepublishedtime reduced todisplayeddate2012-12-31, no timezoneinvented. Outsidepopulation names notmapped. Independentextraction/reviewpending.",
+  "created_at": "2026-10-31T23:04:09.623273Z",
+  "updated_at": "2026-10-31T23:12:32Z"
+}

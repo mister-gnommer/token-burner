@@ -1,0 +1,77 @@
+{
+  "Surprises": [
+    "The canonical source is a single eligible program-level recommendation, even though only Marcin has a clear personal preference in the passage.",
+    "The original collector raw-search capture limitation was disclosed; this candidate passage was independently reread and verified with attribution and dates.",
+    "The canonical source and named run reports contain no excerpt/source hash value to copy; none was invented."
+  ],
+  "run_id": "20261101-coverage-marcin-zbigniew-wojciech",
+  "stage": "extraction",
+  "candidate_file": "evidence/coverage-expansion/marcin-zbigniew-wojciech.source-candidates.canonical.jsonl",
+  "output_file": "evidence/coverage-expansion/marcin-zbigniew-wojciech.evidence.unreviewed.jsonl",
+  "counts": {
+    "canonical_candidates": 1,
+    "records_written": 1,
+    "skips": 0,
+    "accounted_exactly_once": 1
+  },
+  "accounting": [
+    {
+      "candidate_id": "src_cov_mzwojciech_001",
+      "outcome": "record",
+      "evidence_id": "ev_cov_mzwojciech_001",
+      "reason": "Explicit author recommendation to attend the named four-person program."
+    }
+  ],
+  "collection_level_skips": [
+    {
+      "source_url": "https://bielskirynek.pl/pl/14_kultura/729_kabarety/18759_smiech-fermentuje-najlepiej-wieczorem-.html",
+      "outcome": "skip; no canonical candidate",
+      "reason": "Collection-level coverage skip from the actual run; its complete article has event/editorial descriptions and reported audience responses but no explicit author personal recommendation, liking, or comparison. It is not a second candidate."
+    }
+  ],
+  "source_lineage": {
+    "canonical_source_record": {
+      "schema_version": 2,
+      "candidate_id": "src_cov_mzwojciech_001",
+      "run_id": "20261101-coverage-marcin-zbigniew-wojciech",
+      "target_performer_ids": [
+        "marcin-zbigniew-wojciech",
+        "ewa-blachnio"
+      ],
+      "site": "verbumnapolu.wordpress.com",
+      "url": "https://verbumnapolu.wordpress.com/2017/02/24/stand-up-night-relacjarecenzja/",
+      "retrieved_at": "2026-11-01T13:24:08Z",
+      "published_at": "2017-02-24",
+      "author_hint": "Aneta Tabiszewska",
+      "author_key": "fan_6251a3af30b54f49",
+      "excerpt": "20 lutego 2017 roku o godzinie 20:00, praktycznie tuż po Półfinałach 33. EDF PAKI, w krakowskim Teatrze Variete, miał miejsce występ czterech standuperów: Ewy Błachnio, Roberta Korólczyka, Marcina Zbigniewa Wojciecha i Tomasza Jachimka. Program, z którym artyści podróżują, nazywa się „Stand-up night”.\nMiałam okazję obejrzeć go dwa razy, w Krakowie i Gliwicach (dzięki, dziewczyny, że mnie wzięłyście ze sobą!), dzień po dniu. Oczywiście, jako, że jesteśmy blogiem krakowskim, recenzja będzie oparta w dużym stopniu na występie w Teatrze Variete. W dużym, ponieważ niestety w Krakowie nie udało mi się zobaczyć monologu Marcina Wojciecha, co nadrobiłam w Gliwicach. Chciałabym się podzielić także jedną refleksją, która naszła mnie podczas występu na Śląsku, ale po kolei.\nWieczór rozpoczął się od rozgrzewki w wykonaniu Marcina Zbigniewa Wojciecha oraz Roberta Korólczyka, a całość poprowadził Marcin Wojciech. Widzowie mogli zabawić się w grę pt. „Tak, zróbmy to!” i na przykład dowiedzieć się od sąsiada z boku, że są seksowni.\nNastępnie przyszedł czas na monolog Marcina Zbigniewa Wojciecha, który uświadomił mi, że faktycznie jest podobny do złodzieja z filmu „Kevin sam w domu”, czego dotąd nie zauważyłam. Opowiadał także m.in. o swoich przeżyciach na weselach, gdzie goście wraz z czasem i procentami z kulturalnych ludzi zamieniają się w zwierzęta. Jednak najbardziej rozśmieszył mnie weselny paradoks, w którym goście wygłupiają się i ośmieszają przed innymi po to, aby wygrać wódkę, która jest za darmo na stole.\nNie powiem, sama chętnie biorę udział w oczepinach, a jeszcze chętniej patrzę, jak wydurniają się moi kuzyni czy znajomi. Z pewnością teraz zabawy weselne będą bawić mnie jeszcze bardziej. Dowiedziałam się także, że istnieją tacy szaleńcy, którzy wyprawiają wesele bezalkoholowe! Czy to jest w ogóle możliwe?! Publiczność dowiedziała się też, że Marcina nie stać na wakacje nad polskim morzem, dlatego ostatnie musiał spędzić w Bułgarii.\nOpowiedział także, jak rozpoznaje Polaków za granicą, o swoich podbojach miłosnych na oazach, a także o tym, że puszyste kobiety są lepsze. Na ostatni wątek jeden pan na sali zaczął się histerycznie śmiać, co Marcin od razu podchwycił, sprawnie wchodząc w interakcje z publicznością. Na koniec występu standuper zdradził swój sposób na telemarketingowców, który mnie powalił na kolana i chyba zacznę go stosować.\nOtóż, gdy dzwonią do Marcina z ofertą, on wysłuchuje ich, mówi, że kupi to, co chcą, jednak akurat rozwiązuje krzyżówkę i ma ostatnie hasło: „Innymi słowy, uciekaj na s…?” To jedynie mała część występu artysty, nie będę zdradzać Wam więcej. Pójdziecie, to się dowiecie.\nJako druga pojawiła się Ewa Błachnio, którą poprzednik próbował wkręcić w taniec na scenie, bo, jak wiecie, Ewa była w poprzedniej edycji „Tańca z gwiazdami”. Jednak artystka nie dała się sprowokować, być może dlatego, że Marcin wybrał taniec pole dance.\nEwa rozpoczęła występ od monologu o swoim staropanieństwie, w którym opowiedziała o podrywaniu przez żonatych mężczyzn i tych obdarzonych odwagą, ale niestety nie wzrostem. Ewa, wiem coś o tym i łączę się z Tobą w bólu. Nie obeszło się także bez poruszania tematu smogu, artystka znalazła przyczynę tylu zdrad w Krakowie: po prostu w tym dymie nie można celnie trafić.\nNa koniec poruszyła temat prowadzenia samochodu przez kobiety, bo przecież faceci wykonując tyle czynności, co my w aucie, w ogóle nie wyjechaliby z parkingu! Pojawił się również temat polityki, w którym Ewa uświadomiła publiczności kilka paradoksów i prawd życiowych, za co dostała gromkie brawa. Schodząc ze sceny udało jej się ubrać Marcina Zbigniewa Wojciecha w ramę. Taneczną ramę.\nJako trzeci swój monolog zaczął Robert Korólczyk, występujący także w Kabarecie Młodych Panów. Zaczął on, jak typowy Polak, od narzekania. Narzekania na swoje dzieciństwo, kiedy to musiał słuchać disco polo, wychował się na nim, bo jego tata lubił tego rodzaju muzykę.\nPubliczność mogła dowiedzieć się, że Roberta do szkoły budził tekst: „Ty i ja, ty i ja, mydełko fa…” Standuper zdradził także wykonywany przez siebie kiedyś zawód, który nie jest lubiany przez większość społeczeństwa, a mianowicie zawód strażnika miejskiego. Z sali od razu można było usłyszeć standardowe „Buuuuuu!”, co chyba nikogo nie dziwi.\nLecz jest plus tej profesji, bowiem nauczyła Roberta dystansowania się do wyzwisk, a co ważniejsze, nie przejmowania się nimi, co według mnie jest w życiu bardzo przydatną cechą. Robert poruszył też bardzo powszechny temat, jakim są dzwonki ustawiane przez ludzi w telefonach. Przyznam, że temat mi bliski, bo sama zwracam na to uwagę, głównie jeżdżąc MPK i jestem tego samego zdania, co Robert: człowieka można poznać po dzwonku. Zgadzam się również w kwestii typu muzyki ustawionej jako dzwonek.\nZdarzają się tacy, którzy mają ustawiony fajny hit, aż chciałoby się posłuchać go dalej, niestety zaraz go wyciszają, ale zdarzają się też i tacy, którzy mają ustawione, wspomniane już wcześniej, disco polo i twierdzą, że wszyscy muszą wysłuchać tego do końca. Wspomniał także m.in. o oznaczaniu się na portalach społecznościowych, o operacjach plastycznych kobiet oraz o reklamach leków, płynnie przechodząc do tematów dla dorosłych.\nNa tym zakończę, bo może czytają nas niepełnoletni, nie będę gorszyć młodzieży jeszcze bardziej.\nNa koniec standupowego wieczoru wystąpił Tomasz Jachimek, który zaczął z tak zwanego „grubej rury”, mówiąc, że stand-up jest dość wymagającą formą, bo trzeba być zarówno zabawnym, jak i przerażającym, śmiesznym, ale też kontrowersyjnym i obserwując środowisko kabareciarzy, nikt tak nie rzuca mu się w oczy, jak Antoni. Tak rozpoczęty występ zapowiedział, że nie będzie grzecznie… I nie było. Artysta skupił się na temacie seksu, który według niego nie jest w dzisiejszych czasach sferą tabu.\nMimo że podczas tego wieczoru, na ten temat powiedziano już dość sporo, jednak Tomasz mówił o nim w zupełnie innym aspekcie, niż poprzednicy. Poruszył także wątki m.in. okłamywania dzieci przez rodziców czy sposobu traktowania gości w restauracji przez kelnerów.\nSwoją drogą, jeśli traficie kiedyś na danie zatytułowane tak: „Z ielono-wiosenne listowie nadziewane szlachetnym mięsiwem w gęstej otulinie z sosu imbirowo-śmietanowego, a wszystko to w delikatnej nucie kopru włoskiego” i zastanawiacie się, co to może być, Jachimek odpowiada: gołąbki. Na koniec występu nie omieszkał ponaśmiewać się z naszych polityków, czym też uświadomił nam kilka paradoksów w Polskim życiu politycznym, innych niż poprzednicy.\nPodsumowując, standupowy wieczór zaliczam do jak najbardziej udanych. Poruszane przez artystów wątki, mimo że niekiedy się powtarzały, były jednak ujęte z innej perspektywy, co uwidoczniło zarazem wszechstronność występujących, jak również odmienne spojrzenie na te same zagadnienia. Trzeba także zaznaczyć, że podczas tego wieczoru został podjęty szereg tematów. Nie wszystkie zawarłam w swojej relacji, ponieważ chcę Was zachęcić do wybrania się na ten program. Według mnie warto.\nCzęść z monologów była mi w pełni znana, więc na niej się zbytnio nie ubawiłam, ale ja tak po prostu mam, że nie za bardzo lubię „odgrzewane kotlety”. Część tylko trochę, więc przyjemnie było je sobie przypomnieć. Jeszcze inna część była całkiem nowa i na niej bawiłam się świetnie! Na wyróżnienie zasługuje także interakcja z publicznością, każdy z występujących ją nawiązał, więc publiczność została dopieszczona.\nTeraz taka mała refleksja, która naszła mnie drugiego dnia standupowej trasy: reakcje ludzi. Publiczność w Krakowie nie reagowała tak ochoczo i spontanicznie, jak ta w Gliwicach. Zaczęłam się zatem zastanawiać, od czego to zależy… Od mentalności, ludzi, miejsca, dostępności tego typu rozrywki, a może czegoś jeszcze innego? Wydaje mi się, że każda z wymienionych przeze mnie przyczyn ma w to swój wkład. Jednak nie znalazłam satysfakcjonującej mnie odpowiedzi i zastanawiam się dalej.\nMoże Wy macie jakieś pomysły?\nANETA TABISZEWSKA",
+      "language": "pl",
+      "collector": {
+        "provider": "codex",
+        "model": "gpt-6-luna",
+        "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+      },
+      "context": []
+    },
+    "canonical_source_file_sha256": null,
+    "note": "No hash field/value for this canonical row or excerpt appears in the supplied canonical row or actual run/support reports; null records unavailable provenance rather than asserting a hash."
+  },
+  "extraction": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "extract-evidence-v3",
+    "run_id": "20261101-coverage-marcin-zbigniew-wojciech",
+    "confidence": 0.95
+  },
+  "review": {
+    "status": "unreviewed",
+    "reviewer": null,
+    "notes": "The positive recommendation is for the named four-person “Stand-up night” program as a whole; it does not establish individual preferences for the other billed performers. Marcin Zbigniew Wojciech: the author explicitly says the Gliwice wedding-paradox monologue made her laugh most; this is limited to that specific bit and venue, while the review is based largely on Kraków. Do not infer current/general taste or performance/style similarity. Ewa Błachnio: empathy about a topic and applause credited to the audience do not establish the author’s enjoyment; preference remains unknown. Mixed material caveat: some monologues were fully familiar and did not amuse her much, some were partly familiar and pleasant to revisit, and some were new and greatly entertaining; no individual attribution is given. Robert Korólczyk and Tomasz Jachimek are outside the frozen population and remain unresolved. Bare “Antoni” cannot be mapped to a frozen comic and is not the author’s personal endorsement. The shortened host mention “Marcin Wojciech” is not independent identity proof. Kraków-versus-Gliwice audience reactions remain audience-level. Exclude the separately signed Bez Przesady note and the generic event wrap-up from performer-level appraisals."
+  },
+  "surprises_detail": {
+    "recommendation_scope": "Whole four-person program only.",
+    "marcin_preference": "Positive personal preference from the exact laughter quote, specific to the Gliwice monologue.",
+    "ewa_preference": "Unknown; preference_quote null.",
+    "identity_resolution": "Only frozen IDs marcin-zbigniew-wojciech and ewa-blachnio used; relevant other names unresolved as null."
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "run_id": "20261101-coverage-thread-harvest-02",
+  "raw_counts": {
+    "a": 3,
+    "b": 1
+  },
+  "canonical_count": 4,
+  "duplicates": 0,
+  "deltas": [
+    {
+      "candidate_id": "src_cth02a_001",
+      "origin": "A",
+      "changes": [
+        "Derived source-local author keys.",
+        "Normalized raw run20261101 prefix caused by glued label in parent brief; raw retained unchanged."
+      ]
+    },
+    {
+      "candidate_id": "src_cth02a_002",
+      "origin": "A",
+      "changes": [
+        "Derived source-local author keys.",
+        "Normalized raw run20261101 prefix caused by glued label in parent brief; raw retained unchanged."
+      ]
+    },
+    {
+      "candidate_id": "src_cth02a_003",
+      "origin": "A",
+      "changes": [
+        "Derived source-local author keys.",
+        "Normalized raw run20261101 prefix caused by glued label in parent brief; raw retained unchanged.",
+        "Added possible Olka Radomska→Aleksandra Radomska target tag; identity and preference remain for independent extraction/review, tag is not proof."
+      ]
+    },
+    {
+      "candidate_id": "src_cth02b_001",
+      "origin": "B",
+      "changes": [
+        "Derived source-local author keys."
+      ]
+    }
+  ],
+  "source_excerpt_language_dates_preserved": true,
+  "limits": "Target tags are hypotheses, not identity/preference decisions. No global alias table changed.",
+  "created_at": "2026-11-01T12:20:27Z"
+}

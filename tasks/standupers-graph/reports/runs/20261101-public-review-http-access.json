@@ -1,0 +1,19 @@
+{
+  "run_id": "20261101-coverage-tomek-kolecki",
+  "diagnostic_id": "20261101-public-review-http-access",
+  "status": "failed",
+  "url": "https://www.kupbilecik.pl/pl/comments/2534/stand-up-zalewski-x-kolecki-x-bienkowski-x-podwysocka",
+  "method": "Single public GET using standard-library HTTP client, no authentication, cookies, proxies, browser automation or challenge handling. Redirects disabled; 20-second timeout and2MiB response limit.",
+  "budget": {
+    "queries_used": 24,
+    "page_attempts_before": 6,
+    "additional_page_attempts_reserved": 1,
+    "page_attempts_after_reservation": 7,
+    "remaining_after_reservation": 17
+  },
+  "reserved_at": "2026-11-01T13:14:02.497863Z",
+  "started_at": "2026-11-01T13:14:15.893846Z",
+  "error": "HTTP Error 403: Forbidden",
+  "http_status": 403,
+  "completed_at": "2026-11-01T13:14:15.928797Z"
+}

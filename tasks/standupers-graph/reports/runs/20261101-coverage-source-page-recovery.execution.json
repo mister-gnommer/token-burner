@@ -1,0 +1,41 @@
+{
+  "status": "running",
+  "role": "Targeted middle-tier correction after demonstrated low-tierdedup failures",
+  "original_A_reported_usage": {
+    "queries": 24,
+    "opens": 9,
+    "raw_candidate_slots": 8
+  },
+  "additional_budget": {
+    "queries": 0,
+    "opens": 6,
+    "candidates": 8
+  },
+  "original_remaining_before_correction": {
+    "queries": 0,
+    "opens": 15,
+    "candidate_slots": 8
+  },
+  "workers": [
+    {
+      "role": "source-dedup-correction",
+      "brief": "Targeted correction of a failed source-eligibility/dedup pass, not a new broad survey.\n\nWorkspace: /home/kris/Prog/projects/token-burner.\nRead tasks/standupers-graph/AGENTS.md, data/standupers.json, data/schemas/source-candidate-v2.schema.json and prompts/source-first-fan-discovery-v1.md.\nRead reports/runs/20261101-coverage-source-first-final-a.collection.json. It claims7queries/3opens and0candidates, but stores generic query summaries and applies thread-level dedup. Current graph is graph/coverage-fan-continuations/graph.json (43positive-linked/largest31).\n\nWhy escalated: low-tier passes first resaved four old posts, then rejected whole already-known threads and a new forum as “familiar.” Neither implements author-post dedup. Audit/correct only this exception; do not re-review the full existing corpus or relax preference rules.\n\nOriginal slice A is at24queries/9opens/8raw slots. ZERO new searches. You may use at most6additional full-page reads, within its remaining15opens/8candidate slots. Prefer reusing source text from the completed child’s tool timeline when sufficient:\nthread:delegated-task:command%3Amcp%3Ab8bb504a-a098-4a3f-913f-2b56ec9678db%3Adelegate-task%3Acoverage-source-first-final-a-20261101-r1\nUse t3_thread_read activity/items if available to reconstruct exact seven query strings and three actual reads. Tool history reads are not new source opens. Missing logs must stay explicitly unverified; do not invent query text. Preserve the original report.\n\nAlready-read page targets:\n- https://www.gry-online.pl/forum/polski-stand-up-wasze-zdanie/zbde8721\n- https://swiatpilki.com/viewtopic.php?t=20492\n- https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169\nKnown unread full-result lead: https://www.reddit.com/r/Polska/comments/105mykf/stand_up_rekomendacje/\nA page URL appearing in the corpus does NOT make every author post a duplicate. Compare actual source-local author/post/date/body and comment-versus-thread aliases/emoji variants. Accept genuinely new complete authored posts if they meet the existing rubric, even on previously read pages. Prioritize novel authors and isolated individual performers; no forced success, no generic solo/group/roster filler. Recommendation/genre suitability is distinct from personal liking; a verified direct favorite reply may establish preference. Preserve criticism and unknown identities.\n\nRead canonical candidate paths from current graph input manifests and pending/raw source-first runs for dedup. Do not resave the already known Username_Koru,Nevsr1,katarrynka,princy-mincy,madame_edith,michuuu_2108,Springerbaum,youngagain,cotca posts. Same author may have a different genuine post, so do not blacklist the whole author account either.\n\nExclusive outputs under tasks/standupers-graph:\n- evidence/coverage-source-page-recovery/source-candidates.jsonl\n- reports/runs/20261101-coverage-source-page-recovery.collection.json\n- reports/runs/20261101-coverage-source-page-recovery.prior-ledger-audit.json\nUse run_id20261101-coverage-source-page-recovery, IDs src_cspr_001 onward, actual collector codex/gpt-6.1-terra, prompt_version collect-fan-evidence-v3+source-first-fan-discovery-v1. Do not overwrite previous raw/report/production data.\n\nSave empty outputs first. For each candidate store complete relevant author wording, exact locator, date only if known, actual retrieval time/source proof and separately attributed verbatim context. Record precise duplicate-match decisions, opened/read versus search-only routes, added and original cumulative usage, raw errors and stop reason. Validate schema. If previous timeline proves an undeclared attempt, conservatively count it; do not increase original query allowance.\n\nNo browser tab creation/cleanup: shared preview is full and five stale agent-session tabs cannot be operated by current agents. Use only full-page web retrieval or prior stored source text; no snippets, login/challenge/ownership-guard bypass. No Git, code, state, subagents, other files or graph claim. Lead with Surprises; return early with durable partial work for an invalid premise, substantial scope expansion or irreversible risk; ignore trivia. Separate extraction and independent verification follow any recovered posts.",
+      "status": "running",
+      "provider": "codex",
+      "model": "gpt-6.1-terra",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "high"
+        },
+        {
+          "id": "serviceTier",
+          "value": "default"
+        }
+      ],
+      "task_id": "node:delegated-task:command%3Amcp%3Ab8bb504a-a098-4a3f-913f-2b56ec9678db%3Adelegate-task%3Acoverage-source-page-recovery-20261101-r1",
+      "child_thread_id": "thread:delegated-task:command%3Amcp%3Ab8bb504a-a098-4a3f-913f-2b56ec9678db%3Adelegate-task%3Acoverage-source-page-recovery-20261101-r1",
+      "escalation_reason": "Repeated low-tier dedup errors: four old posts resaved, then whole-thread exclusion and generic query summaries. Targeted middle-tier correction only."
+    }
+  ]
+}

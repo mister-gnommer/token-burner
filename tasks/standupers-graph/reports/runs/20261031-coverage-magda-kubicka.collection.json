@@ -1,0 +1,239 @@
+{
+  "run_id": "20261031-coverage-magda-kubicka",
+  "performer": {
+    "id": "magda-kubicka",
+    "name": "Magda Kubicka",
+    "rank": 5
+  },
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+  },
+  "budget": {
+    "queries": {
+      "cap": 24,
+      "used": 17
+    },
+    "opens": {
+      "cap": 24,
+      "used": 6
+    },
+    "verified_candidates": {
+      "cap": 16,
+      "saved": 4
+    }
+  },
+  "query_log": [
+    {
+      "n": 1,
+      "query": "site:reddit.com/r/Polska stand up \"Magda Kubicka\" lubię ulubiona",
+      "status": "failed: first tool dispatch used unavailable namespace; no search executed"
+    },
+    {
+      "n": 2,
+      "query": "site:reddit.com/r/Polska stand up \"Magda Kubicka\" lubię ulubiona",
+      "status": "searched; broad Reddit results were previously known recommendation/list posts; new lead https://www.reddit.com/r/wroclaw/comments/1dmxvv5/ needs full-context review"
+    },
+    {
+      "n": 3,
+      "query": "\"Magda Kubicka\" \"Marek Gajos\" kupbilecik opinie",
+      "status": "searched; yielded prior review lead at kupbilecik.pl comments page 6708, with full review text indexed"
+    },
+    {
+      "n": 4,
+      "query": "site:kupbilecik.pl \"Magda Kubicka w świetnej formie\" \"Gajos\"",
+      "status": "searched; same cache result, live route mismatch unresolved"
+    },
+    {
+      "n": 5,
+      "query": "\"Magda Kubicka\" \"ulubiona\" OR \"ulubiony\" stand-up opinie forum",
+      "status": "searched; no usable fan evidence"
+    },
+    {
+      "n": 6,
+      "query": "\"Magda Kubicka\" \"lubię\" \"stand-up\" forum",
+      "status": "searched; no usable fan evidence"
+    },
+    {
+      "n": 7,
+      "query": "\"Magda Kubicka\" \"Gdańsk\" \"6 lipca 2021\" Filip Parlament support",
+      "status": "searched; found event page confirming Magda event/date/venue, but no supporting-act identity"
+    },
+    {
+      "n": 8,
+      "query": "\"Występy Filipa oraz Magdy wyśmienite\"",
+      "status": "searched; no identity resolution for Filip; exact phrase confirmed but no performer full name"
+    },
+    {
+      "n": 9,
+      "query": "\"Magda Kubicka\" (\"uwielbiam\" OR \"bardzo lubię\" OR \"mój top\" OR \"moja ulubiona\") stand-up",
+      "status": "searched; irrelevant podcast transcript and no explicit personal favorite pair"
+    },
+    {
+      "n": 10,
+      "query": "site:reddit.com \"Magda Kubicka\" \"ulubiona\" komik",
+      "status": "searched; results inspected; no new candidate saved"
+    },
+    {
+      "n": 11,
+      "query": "site:wykop.pl \"Magda Kubicka\" \"lubię\" stand-up",
+      "status": "searched; results inspected; no new candidate saved"
+    },
+    {
+      "n": 12,
+      "query": "site:forum.gazeta.pl/forum \"Magda Kubicka\" (uwielbiam OR lubię)",
+      "status": "searched; Gazette results included a standalone Magda clip reaction in an unrelated thread, no frozen-peer co-appreciation"
+    },
+    {
+      "n": 13,
+      "query": "\"Magda Kubicka\" \"Filip Puzyr\" \"Gdańsk\" 2021",
+      "status": "searched; no independent event or identity proof found"
+    },
+    {
+      "n": 14,
+      "query": "\"Magda Kubicka\" \"Filip Brymora\" \"Gdańsk\" 2021",
+      "status": "searched; no independent event or identity proof found"
+    },
+    {
+      "n": 15,
+      "query": "\"Magda Kubicka\" \"Olka Szczęśniak\" \"lubię\" OR polecam OR ulubiona",
+      "status": "searched; results inspected; no pair evidence"
+    },
+    {
+      "n": 16,
+      "query": "\"Magda Kubicka\" \"Wiolka Walaszczyk\" ulubione OR uwielbiam OR lubię",
+      "status": "searched; located KupBilecik page for Magda Kubicka & Wiolka Walaszczyk with a Wiolka-focused review lead; needs context"
+    },
+    {
+      "n": 17,
+      "query": "\"Magda Kubicka & Wiolka Walaszczyk\" KupBilecik comments event 2020",
+      "status": "searched; indexed review by Anna states prior Magda viewing positive but live Magda/Wiolka show was disappointing for both; event-specific page found"
+    }
+  ],
+  "open_log": [
+    {
+      "n": 1,
+      "url": "https://www.kupbilecik.pl/pl/comments?page_comments=6708",
+      "method": "T3 preview_open",
+      "status": "opened; live page content differs from indexed review lead and does not contain Anika July 1 review"
+    },
+    {
+      "n": 2,
+      "url": "https://www.kupbilecik.pl/pl/comments/3704/magda-kubicka-stand-up?page_comments=104",
+      "method": "T3 preview_open",
+      "status": "opened; exact Magda comments page rendered, including Justyna, Dariusz and nearby reviewers; complete target comments inspected"
+    },
+    {
+      "n": 3,
+      "url": "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169",
+      "method": "T3 preview_open",
+      "status": "opened; exact page rendered and comment 3.1 inspected; full thread shows comparative caveat, no explicit individual appreciation established"
+    },
+    {
+      "n": 4,
+      "url": "https://www.kupbilecik.pl/pl/comments?page_comments=7089",
+      "method": "T3 preview_open",
+      "status": "opened; URL renders unrelated comments from 2020-10-02; indexed event review not present on live shifted page"
+    },
+    {
+      "n": 5,
+      "url": "https://www.kupbilecik.pl/en/db/8032/stand-up-magda-kubicka-amp-wiolka-walaszczyk",
+      "method": "T3 preview_open",
+      "status": "opened; event page confirms event title and 1 comment, but full comment is on linked comment route"
+    },
+    {
+      "n": 6,
+      "url": "https://www.kupbilecik.pl/en/comments/8032/stand-up-magda-kubicka-amp-wiolka-walaszczyk",
+      "method": "T3 preview_navigate",
+      "status": "opened; exact event comment route rendered the full review by Anna, dated 2020-08-22, Olsztyn event 2020-08-20 20:00"
+    }
+  ],
+  "sources_checked_for_duplicates": [
+    "tasks/standupers-graph/evidence/batch-01/source-candidates.jsonl",
+    "tasks/standupers-graph/evidence/batch-02/source-candidates.jsonl",
+    "tasks/standupers-graph/evidence/batch-03/source-candidates.jsonl",
+    "tasks/standupers-graph/evidence/coverage-pilot/"
+  ],
+  "prior_magda_context": [
+    {
+      "source": "forum.gazeta.pl",
+      "author_hint": "dariamax",
+      "post": "reply in Stand_up.html",
+      "result": "asked for listening suggestions; named Magda and Daniel Midas, no personal preference"
+    },
+    {
+      "source": "reddit.com",
+      "author_hint": "Warchadlo16",
+      "post": "/r/poland/comments/1egewxi/polish_standup_comedy/",
+      "result": "recommendations by genre; not explicit personal liking"
+    },
+    {
+      "source": "reddit.com",
+      "author_hint": "NoUnderstanding8721",
+      "post": "/r/Polska/comments/105mykf/stand_up_rekomendacje/",
+      "result": "bare recommendation list; parent asks for recommendations"
+    },
+    {
+      "source": "reddit.com",
+      "author_hint": "Regular_Bat8162",
+      "post": "/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+      "result": "bare reply to a criteria request, not verified favorite question"
+    },
+    {
+      "source": "reddit.com",
+      "author_hint": null,
+      "post": "/r/Polska/comments/105mykf/comment/j3cgbzg/",
+      "result": "bare list in recommendation thread; no personal preference"
+    },
+    {
+      "source": "kupbilecik.pl",
+      "post": "page_comments=6708",
+      "result": "prior search lead suggested Anika evaluates Magda and Marek Gajos; needs complete source verification"
+    }
+  ],
+  "source_families": [
+    "Reddit public discussions (search only; results were prior or bare recommendation/criteria lists)",
+    "KupBilecik comments and event-specific review pages (navigated; candidate pages verified; shifting global pagination produced mismatches)",
+    "GRYOnline forum (full thread navigated and relevant author post inspected)",
+    "Gazeta.pl forum (search result only; unrelated thread snippet excluded)"
+  ],
+  "candidates": [
+    {
+      "candidate_id": "src_cov_mkubicka_001",
+      "locator": "GRYOnline comment 3.1 by Megera_, 2023-01-14 22:01",
+      "assessment": "Complete relevant post reviewed; excerpt records qualified category-level liking, relative popularity comparison, and national prominence claim. The post then says Marta Łojok made the reviewer laugh and Olka could not catch up; not explicit liking of Magda as an individual or a positive pair."
+    },
+    {
+      "candidate_id": "src_cov_mkubicka_002",
+      "locator": "KupBilecik page 104, Justyna review dated 2021-07-10, Gdańsk 2021-07-06 19:00",
+      "assessment": "Full review includes positive evaluation of Magda and first-name-only Filip, caveats about venue/layout, and an explicit recommendation of Magda's program. The source names no full identity for Filip; no frozen ID inferred."
+    },
+    {
+      "candidate_id": "src_cov_mkubicka_003",
+      "locator": "KupBilecik page 104, Dariusz review dated 2021-07-10, Elbląg 2021-07-08 20:00",
+      "assessment": "Full review praises Magda's new program and her handling of hecklers; scoped to that performance; no peer named."
+    },
+    {
+      "candidate_id": "src_cov_mkubicka_004",
+      "locator": "KupBilecik event comment for Stand-up: Magda Kubicka & Wiolka Walaszczyk, Anna, 2020-08-22; event Olsztyn 2020-08-20 20:00",
+      "assessment": "Full review read. Author says she knew Wiolka's older performances by heart and had found one Magda program fairly good; then strongly criticizes Magda live for profanity and says she waited for her to leave, criticizes Wiolka's set topic/execution too, and ends that the evening was a waste. Mixed/historical appreciation plus negative joint-event review; does not count as positive co-appreciation."
+    }
+  ],
+  "skipped_leads": [],
+  "blockers": [
+    "KupBilecik pagination/cache mismatch: indexed page_comments=6708 excerpt contains Anika review dated 2021-07-01, but live route currently renders unrelated comments dated 2021-08-21; not eligible without exact source locator."
+  ],
+  "coverage_gaps": [
+    "No verified positive personal co-appreciation of Magda with an identified frozen peer.",
+    "“Filip” in Justyna review remains identity-ambiguous.",
+    "The event-specific Magda/Wiolka review is mixed/historical then strongly negative toward the joint live show, not a positive pair.",
+    "A second distinct account supporting a positive Magda/peer pair was not found."
+  ],
+  "unused_allowance": {
+    "queries": 7,
+    "opens": 18,
+    "verified_candidates": 12
+  },
+  "stop_reason": "After 17 individual query reservations across Reddit, ticket-review archives, review/forum searches and targeted identity checks, plus direct navigation of the promising pages, the remaining leads were repeated recommendation lists, identity-ambiguous first names, and stale pagination. No positive Magda plus frozen-peer co-appreciation was established; stop without exhausting the allowance rather than count unsupported or stale results."
+}

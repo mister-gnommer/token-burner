@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "run_id": "20261031-coverage-wojtek-pieta",
+  "stage": "verification",
+  "status": "complete",
+  "performer_ids": [
+    "wojtek-pieta"
+  ],
+  "verifier": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "verify-evidence-v3"
+  },
+  "inputs": {
+    "source_candidates": "evidence/coverage-pilot/wojtek-pieta.source-candidates.canonical.jsonl",
+    "evidence_unreviewed": "evidence/coverage-pilot/wojtek-pieta.evidence.unreviewed.jsonl",
+    "extraction_report": "reports/runs/20261031-coverage-wojtek-pieta.extraction.json",
+    "manifest": "reports/runs/20261031-coverage-wojtek-pieta.json"
+  },
+  "outputs": {
+    "evidence": "evidence/coverage-pilot/wojtek-pieta.evidence.jsonl"
+  },
+  "Surprises": [
+    "Candidate 004 is the recovered, full Wicia ticket review from KupBilecik and is separate from the quarantined, unverified Wykop igns snippet.",
+    "Candidate 001 explicitly praises both Wojtek and support Filip; this supports retaining Filip’s positive mention with null identity, not assigning a frozen ID.",
+    "Candidate 004 resolves Wojtek and Bartosz from the source-local event title, while its preference wording remains explicitly relative for Wojtek."
+  ],
+  "counts": {
+    "source_candidates": 4,
+    "records_reviewed": 3,
+    "accepted": 3,
+    "uncertain": 0,
+    "rejected": 0,
+    "explicit_skips": 1,
+    "candidate_ids_accounted_exactly_once": 4,
+    "by_evidence_class": {
+      "same_user_coendorsement": 1,
+      "fan_recommendation": 1,
+      "fan_comparison": 1
+    },
+    "all_records_have_non_null_reviewer": true
+  },
+  "records": [
+    {
+      "candidate_id": "src_cov_wpieta_001",
+      "evidence_id": "ev_cov_wpieta_001",
+      "decision": "accepted",
+      "corrections": [
+        "Confirmed explicit positive event-specific personal appreciation for Wojtek and Filip; kept Filip performer_id null, with positive preference retained despite unresolved identity."
+      ],
+      "alias_risks": [
+        "Do not guess FilipPodejko or another Filip; source-local first name does not identify a frozen performer."
+      ],
+      "scope": "Tarnów event 2024-09-06; event-specific praise."
+    },
+    {
+      "candidate_id": "src_cov_wpieta_002",
+      "evidence_id": "ev_cov_wpieta_002",
+      "decision": "accepted",
+      "corrections": [
+        "Confirmed Wojtek positive personal appreciation from “Tak mnie rozbawił” plus follow-up attendance/recommendation.",
+        "Kept Grzegorz Dolniak neutral/unknown; attendance at his earlier show is context, not preference."
+      ],
+      "alias_risks": [],
+      "scope": "Wojtek support appearance at earlier Dolniak show and later Racibórz show; no general preference extrapolation."
+    },
+    {
+      "candidate_id": "src_cov_wpieta_003",
+      "decision": "skip",
+      "skip_reason": "Solo negative review of Wojtek; no second performer and no permissible pair/evidence class fits. Skipped because the material is a one-performer review, not because its negative evaluation is unusable or because an unidentified support act can be inferred. No criticism reassigned.",
+      "audit": "Exact full passage: “Słaby występ . Trudno mówić o poziomie artystycznym . Małe pieniądze i strata czasu .” Candidate has no evidence record; preserve as explicit extraction skip."
+    },
+    {
+      "candidate_id": "src_cov_wpieta_004",
+      "evidence_id": "ev_cov_wpieta_004",
+      "decision": "accepted",
+      "corrections": [
+        "Confirmed Bartosz personal appreciation and frozen identity from event-specific title/context.",
+        "Kept Wojtek sentiment neutral and preference unknown: “trochę mniej” is relative comparison, not absolute dislike or positive preference."
+      ],
+      "alias_risks": [
+        "“Bartek” and “Wojtek” are resolved only within this own-event context/title; do not turn first names into general aliases or cross-context identities."
+      ],
+      "scope": "Wicia’s 2020-10-12 Kraków event review; parent excerpt identifies event participants only and supplies no author preference."
+    }
+  ],
+  "provenance_audit": {
+    "extractor_expected_from_actual_manifest": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1"
+    },
+    "extractor_report_matches_manifest": true,
+    "record_extraction_fields_match_manifest_and_report": true,
+    "run_id": "20261031-coverage-wojtek-pieta",
+    "canonical_collector_provider_model_prompt": "codex / gpt-6-luna / collect-fan-evidence-v3+coverage-expansion-v1",
+    "canonical_author_keys": [
+      "fan_20bfcddc34502f98",
+      "fan_7937e5cd99e61b37",
+      "fan_1f3bdb3f837b9468",
+      "fan_7767177eb4d98594"
+    ],
+    "author_keys_match_reviewed_record_sources": true
+  },
+  "fidelity_audit": {
+    "candidate_id_order": [
+      "src_cov_wpieta_001",
+      "src_cov_wpieta_002",
+      "src_cov_wpieta_003",
+      "src_cov_wpieta_004"
+    ],
+    "source_excerpt_language_context_preserved_exactly": true,
+    "source_urls_and_timestamps_preserved": true,
+    "frozen_ids_only_or_null": true,
+    "surface_forms_verbatim": true,
+    "preference_quotes_author_attributed_and_verbatim": true,
+    "unreviewed_input_preserved": true
+  },
+  "coverage": {
+    "source_family_concentration": {
+      "kupbilecik.pl": 4
+    },
+    "verified_evidence_sources": {
+      "kupbilecik.pl": 3
+    },
+    "limitation": "All four candidates are from one source family; author first names/source-local hashes are not verified real-person IDs. Coverage remains narrow. No graph claim is made.",
+    "excluded_lead": "Wykop igns is not among canonical candidates or evidence; shell-only reads did not verify the indexed snippet, so it remains quarantined and excluded."
+  },
+  "changes": [
+    "Set review.status accepted and reviewer codex/gpt-6-luna for each complete, reliable evidence record.",
+    "Kept evidence content/provenance unchanged except reviewed judgments/notes; no source text, source metadata, language, context, IDs, or extraction lineage changed.",
+    "Candidate 003 remains a documented skip, not an evidence row."
+  ],
+  "validation": {
+    "command": "python tasks/standupers-graph/scripts/evidence_pipeline.py validate --kind evidence tasks/standupers-graph/evidence/coverage-pilot/wojtek-pieta.evidence.jsonl",
+    "status": "passed"
+  }
+}

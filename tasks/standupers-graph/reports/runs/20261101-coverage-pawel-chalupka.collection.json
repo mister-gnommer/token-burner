@@ -1,0 +1,474 @@
+{
+  "run_id": "20261101-coverage-pawel-chalupka",
+  "focal_performer": {
+    "id": "pawel-chalupka",
+    "rank": 26
+  },
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+  },
+  "limits": {
+    "queries": 24,
+    "page_attempts": 24,
+    "verified_candidates": 16
+  },
+  "reservations": {
+    "queries": [
+      "\"Paweł Chałupka\" \"ulubiony\" stand-up forum",
+      "\"Paweł Chałupka\" \"uwielbiam\" komik forum",
+      "\"Chałupka\" \"stand-up\" \"polecam\" \"Pacześ\"",
+      "\"Paweł Chałupka\" opinie widzowie forum",
+      "site:reddit.com/r/Polska \"Paweł Chałupka\" stand-up",
+      "site:reddit.com \"Pawełka\" stand-up \"Abelard Giza\" OR \"Rafał Pacześ\"",
+      "site:wykop.pl \"Paweł Chałupka\" śmieszny polecam",
+      "\"Paweł Chałupka\" \"Abelard Giza\" opinie widzów",
+      "\"Paweł Chałupka\" \"Błażej Krajewski\" \"świetny\" widz",
+      "\"Paweł Chałupka\" \"Kacper Ruciński\" \"występ\" opinia",
+      "\"Paweł Chałupka\" \"Piotrek Szumowski\" \"polecam\" widz",
+      "\"Paweł Chałupka\" \"Michał Leja\" stand-up komentarze",
+      "\"Paweł Chałupka\" \"lubimy\" stand-up forum",
+      "\"Paweł Chałupka\" \"widzowie\" \"najlepszy\" \"komik\" opinie",
+      "\"Paweł Chałupka\" recenzja blog \"występ\"",
+      "\"Paweł Chałupka\" \"uwielbiam\" -kupbilecik -standup.pl",
+      "site:forum.gazeta.pl \"Paweł Chałupka\"",
+      "site:wykop.pl \"Chałupka\" \"stand-up\" fani",
+      "site:reddit.com \"Chałupka\" stand up ulubieni",
+      "site:facebook.com \"Paweł Chałupka\" \"Abelard Giza\" widz",
+      "site:reddit.com \"Paweł Chałupka\" \"ulubiony\" OR \"ulubieni\"",
+      "site:reddit.com \"Chałupka\" \"mój faworyt\" stand-up",
+      "\"Paweł Chałupka\" \"najbardziej lubię\" komik forum",
+      "\"Paweł Chałupka\" \"polecam\" \"stand-up\" widz \"Olka Szczęśniak\""
+    ],
+    "page_attempts": [
+      "https://www.kupbilecik.pl/pl/comments/3623/pawel-chalupka?page_comments=1",
+      "preview_open https://www.kupbilecik.pl/pl/comments/3623/pawel-chalupka?page_comments=1",
+      "web.open https://www.kupbilecik.pl/uk/event/24702/sopot/trasa-stand-up-sklad",
+      "web.open turn7search4",
+      "web.open https://www.reddit.com/r/wroclaw/comments/1dmxvv5"
+    ]
+  },
+  "queries": [
+    {
+      "query": "\"Paweł Chałupka\" \"ulubiony\" stand-up forum",
+      "status": "searched",
+      "batch": 1,
+      "result_summary": "Search results surfaced the Paweł comments archive (solo reviews), profile/editorial pages, and Standupedia quote material. No qualifying multi-performer fan post was verified."
+    },
+    {
+      "query": "\"Paweł Chałupka\" \"uwielbiam\" komik forum",
+      "status": "searched",
+      "batch": 1,
+      "result_summary": "Search results surfaced the Paweł comments archive (solo reviews), profile/editorial pages, and Standupedia quote material. No qualifying multi-performer fan post was verified."
+    },
+    {
+      "query": "\"Chałupka\" \"stand-up\" \"polecam\" \"Pacześ\"",
+      "status": "searched",
+      "batch": 1,
+      "result_summary": "Search results surfaced the Paweł comments archive (solo reviews), profile/editorial pages, and Standupedia quote material. No qualifying multi-performer fan post was verified."
+    },
+    {
+      "query": "\"Paweł Chałupka\" opinie widzowie forum",
+      "status": "searched",
+      "batch": 1,
+      "result_summary": "Search results surfaced the Paweł comments archive (solo reviews), profile/editorial pages, and Standupedia quote material. No qualifying multi-performer fan post was verified."
+    },
+    {
+      "query": "site:reddit.com/r/Polska \"Paweł Chałupka\" stand-up",
+      "status": "searched",
+      "batch": 2,
+      "result_summary": "Results included broad KupBilecik review archive pages and a fan-vote ranking article. No direct full-page fan post verified in this set."
+    },
+    {
+      "query": "site:reddit.com \"Pawełka\" stand-up \"Abelard Giza\" OR \"Rafał Pacześ\"",
+      "status": "searched",
+      "batch": 2,
+      "result_summary": "Results included broad KupBilecik review archive pages and a fan-vote ranking article. No direct full-page fan post verified in this set."
+    },
+    {
+      "query": "site:wykop.pl \"Paweł Chałupka\" śmieszny polecam",
+      "status": "searched",
+      "batch": 2,
+      "result_summary": "Results included broad KupBilecik review archive pages and a fan-vote ranking article. No direct full-page fan post verified in this set."
+    },
+    {
+      "query": "\"Paweł Chałupka\" \"Abelard Giza\" opinie widzów",
+      "status": "searched",
+      "batch": 2,
+      "result_summary": "Results included broad KupBilecik review archive pages and a fan-vote ranking article. No direct full-page fan post verified in this set."
+    },
+    {
+      "query": "\"Paweł Chałupka\" \"Błażej Krajewski\" \"świetny\" widz",
+      "status": "searched",
+      "batch": 3,
+      "result_summary": "Results were editorial/talk-show/promo material and KupBilecik aggregate archive pages. No personal co-appreciation verified."
+    },
+    {
+      "query": "\"Paweł Chałupka\" \"Kacper Ruciński\" \"występ\" opinia",
+      "status": "searched",
+      "batch": 3,
+      "result_summary": "Results were editorial/talk-show/promo material and KupBilecik aggregate archive pages. No personal co-appreciation verified."
+    },
+    {
+      "query": "\"Paweł Chałupka\" \"Piotrek Szumowski\" \"polecam\" widz",
+      "status": "searched",
+      "batch": 3,
+      "result_summary": "Results were editorial/talk-show/promo material and KupBilecik aggregate archive pages. No personal co-appreciation verified."
+    },
+    {
+      "query": "\"Paweł Chałupka\" \"Michał Leja\" stand-up komentarze",
+      "status": "searched",
+      "batch": 3,
+      "result_summary": "Results were editorial/talk-show/promo material and KupBilecik aggregate archive pages. No personal co-appreciation verified."
+    },
+    {
+      "query": "\"Paweł Chałupka\" \"lubimy\" stand-up forum",
+      "status": "searched",
+      "batch": 4,
+      "result_summary": "Results included a Syroop editorial profile, solo KupBilecik reviews, an event promotion and a separate Trasa Stand-up Skład review excerpt. No full source read completed."
+    },
+    {
+      "query": "\"Paweł Chałupka\" \"widzowie\" \"najlepszy\" \"komik\" opinie",
+      "status": "searched",
+      "batch": 4,
+      "result_summary": "Results included a Syroop editorial profile, solo KupBilecik reviews, an event promotion and a separate Trasa Stand-up Skład review excerpt. No full source read completed."
+    },
+    {
+      "query": "\"Paweł Chałupka\" recenzja blog \"występ\"",
+      "status": "searched",
+      "batch": 4,
+      "result_summary": "Results included a Syroop editorial profile, solo KupBilecik reviews, an event promotion and a separate Trasa Stand-up Skład review excerpt. No full source read completed."
+    },
+    {
+      "query": "\"Paweł Chałupka\" \"uwielbiam\" -kupbilecik -standup.pl",
+      "status": "searched",
+      "batch": 4,
+      "result_summary": "Results included a Syroop editorial profile, solo KupBilecik reviews, an event promotion and a separate Trasa Stand-up Skład review excerpt. No full source read completed."
+    },
+    {
+      "query": "site:forum.gazeta.pl \"Paweł Chałupka\"",
+      "status": "searched",
+      "batch": 5,
+      "result_summary": "Reddit r/wroclaw returned a recommendation list that included Paweł and other comics; Reddit r/Polska returned a request-for-recommendations thread. Gazeta.pl hits were unrelated name collisions. Recommendations/style suitability do not establish personal liking."
+    },
+    {
+      "query": "site:wykop.pl \"Chałupka\" \"stand-up\" fani",
+      "status": "searched",
+      "batch": 5,
+      "result_summary": "Reddit r/wroclaw returned a recommendation list that included Paweł and other comics; Reddit r/Polska returned a request-for-recommendations thread. Gazeta.pl hits were unrelated name collisions. Recommendations/style suitability do not establish personal liking."
+    },
+    {
+      "query": "site:reddit.com \"Chałupka\" stand up ulubieni",
+      "status": "searched",
+      "batch": 5,
+      "result_summary": "Reddit r/wroclaw returned a recommendation list that included Paweł and other comics; Reddit r/Polska returned a request-for-recommendations thread. Gazeta.pl hits were unrelated name collisions. Recommendations/style suitability do not establish personal liking."
+    },
+    {
+      "query": "site:facebook.com \"Paweł Chałupka\" \"Abelard Giza\" widz",
+      "status": "searched",
+      "batch": 5,
+      "result_summary": "Reddit r/wroclaw returned a recommendation list that included Paweł and other comics; Reddit r/Polska returned a request-for-recommendations thread. Gazeta.pl hits were unrelated name collisions. Recommendations/style suitability do not establish personal liking."
+    },
+    {
+      "query": "site:reddit.com \"Paweł Chałupka\" \"ulubiony\" OR \"ulubieni\"",
+      "status": "searched",
+      "batch": 6,
+      "result_summary": "KupBilecik event/archive results surfaced 2018 Paweł+Olka event pages and a 2019 Trasa Stand-up Skład comment by Maciej. The latter excerpt praises Paweł, Olka Szczęśniak and Adam van Bendler, praises host Zalew with caveat, and criticizes Tomek Kołecki and Błażej Krajewski; search excerpt only, not promoted."
+    },
+    {
+      "query": "site:reddit.com \"Chałupka\" \"mój faworyt\" stand-up",
+      "status": "searched",
+      "batch": 6,
+      "result_summary": "KupBilecik event/archive results surfaced 2018 Paweł+Olka event pages and a 2019 Trasa Stand-up Skład comment by Maciej. The latter excerpt praises Paweł, Olka Szczęśniak and Adam van Bendler, praises host Zalew with caveat, and criticizes Tomek Kołecki and Błażej Krajewski; search excerpt only, not promoted."
+    },
+    {
+      "query": "\"Paweł Chałupka\" \"najbardziej lubię\" komik forum",
+      "status": "searched",
+      "batch": 6,
+      "result_summary": "KupBilecik event/archive results surfaced 2018 Paweł+Olka event pages and a 2019 Trasa Stand-up Skład comment by Maciej. The latter excerpt praises Paweł, Olka Szczęśniak and Adam van Bendler, praises host Zalew with caveat, and criticizes Tomek Kołecki and Błażej Krajewski; search excerpt only, not promoted."
+    },
+    {
+      "query": "\"Paweł Chałupka\" \"polecam\" \"stand-up\" widz \"Olka Szczęśniak\"",
+      "status": "searched",
+      "batch": 6,
+      "result_summary": "KupBilecik event/archive results surfaced 2018 Paweł+Olka event pages and a 2019 Trasa Stand-up Skład comment by Maciej. The latter excerpt praises Paweł, Olka Szczęśniak and Adam van Bendler, praises host Zalew with caveat, and criticizes Tomek Kołecki and Błażej Krajewski; search excerpt only, not promoted."
+    }
+  ],
+  "page_attempts": [
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/3623/pawel-chalupka?page_comments=1",
+      "method": "web.open",
+      "status": "failed_cache_miss",
+      "result": "Tool returned Failed to fetch ... Cache miss; search result contained solo comments only."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/3623/pawel-chalupka?page_comments=1",
+      "method": "preview_open",
+      "status": "failed_capacity",
+      "result": "Explicit error: Too many server browser tabs are open. No tab was closed or reused."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/uk/event/24702/sopot/trasa-stand-up-sklad",
+      "method": "web.open",
+      "status": "failed_unavailable",
+      "result": "Tool returned URL ... is not accessible via this tool."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/en/comments/3727/trasa-stand-up-sklad?page_comments=3",
+      "method": "web.open",
+      "status": "failed_cache_miss",
+      "result": "Opened turn7search4; cache miss. Search-result excerpt remains quarantined."
+    },
+    {
+      "url": "https://www.reddit.com/r/wroclaw/comments/1dmxvv5",
+      "method": "web.open",
+      "status": "failed_cache_miss",
+      "result": "Tool returned Failed to fetch ... Cache miss. Search result only; recommendation thread not promoted."
+    },
+    {
+      "url": null,
+      "method": "parent preview_status then preview_open blank capacity diagnostic",
+      "status": "failed_capacity",
+      "result": "Too many server browser tabs are open. Close one with t3_preview_close, or reuse a tabId from preview_status tabs.",
+      "recorded_at": "2026-11-01T11:15:09.559880+00:00",
+      "accounting_note": "No source fetched. Parent diagnostic conservatively charged after call to existing navigation cap; original collector used5."
+    }
+  ],
+  "candidates": [],
+  "status": "completed_no_verified_candidates",
+  "browser_reads": [
+    {
+      "method": "preview_status",
+      "result": "available:false; visible:false; tabId:null. This call is non-navigation and not charged to page_attempts."
+    },
+    {
+      "method": "preview_evaluate document.body.innerText",
+      "result": "Full visible DOM text retained under recovery attempts for Maciej archive, linked Łódź event, and Pszczyna event. No hidden endpoints or fetch used."
+    },
+    {
+      "method": "preview_snapshot",
+      "result": "Two read-only snapshots on loaded Maciej page timed out at 15 seconds each; no navigation charged. Full text was recovered via preview_evaluate."
+    },
+    {
+      "method": "preview_status after owned close",
+      "result": "available:false; tabId:null, confirming owned tab closed."
+    }
+  ],
+  "source_families": [
+    {
+      "family": "KupBilecik public review/comment archives",
+      "attempted": true,
+      "verified_full_pages": 0,
+      "notes": "Search results and lead URLs found; cache misses plus preview capacity failure blocked full-page verification. Recovery after confirmed reset retrieved Maciej full review and exact event page; lead fails preference rubric because praise is a relative ranking. Pszczyna event page contains no reported Łukasz authored post."
+    },
+    {
+      "family": "Reddit public discussions",
+      "attempted": true,
+      "verified_full_pages": 0,
+      "notes": "Two community threads surfaced; one direct full-page open cache-missed. Search content remained quarantined."
+    },
+    {
+      "family": "Forum/blog/editorial pages",
+      "attempted": true,
+      "verified_full_pages": 0,
+      "notes": "Gazeta forum searches, fan-vote recap and editorial stand-up profiles surfaced. No qualifying full authored fan post."
+    },
+    {
+      "family": "Event review/archive pages",
+      "attempted": true,
+      "verified_full_pages": 0,
+      "notes": "KupBilecik historical event pages surfaced, including one promising multi-performer review excerpt. Full pages inaccessible."
+    }
+  ],
+  "search_only_leads": [
+    {
+      "url": "https://www.kupbilecik.pl/en/comments/3727/trasa-stand-up-sklad?page_comments=3",
+      "locator": "Maciej, 2019-04-15; event title Trasa Stand-up Skład; event city/date not visible in retrieved excerpt",
+      "status": "quarantined_search_result",
+      "risk": "Excerpt contains full-looking review text with positive comments on Paweł Chałupka, Olka Szczęśniak and Adam van Bendler, plus criticism of Tomek Kołecki and Błażej Krajewski and caveated praise of host Zalew. Cannot promote without full source read. Same authored post may recur at https://www.kupbilecik.pl/uk/event/24702/sopot/trasa-stand-up-sklad; treat as possible duplicate, not a second account.",
+      "recovery_resolution": "Full authored review recovered; same post as other KupBilecik route; non-qualifying relative ranking, retained only in report."
+    },
+    {
+      "url": "https://www.reddit.com/r/wroclaw/comments/1dmxvv5",
+      "locator": "2024-06-23 thread; commenter identity unavailable in search result",
+      "status": "quarantined_search_result",
+      "risk": "Asked where to find intelligent stand-up; reply listed Paweł Chałupka among several recommendations and explicitly named Antoni Syrek-Dąbrowski as personal favorite. Paweł listing is recommendation/style fit, not confirmed personal preference."
+    },
+    {
+      "url": "https://www.reddit.com/r/Polska/comments/1suqi5d",
+      "locator": "2026-04-24 to 2026-04-28 discussion; several commenters",
+      "status": "quarantined_search_result",
+      "risk": "Request for comedians similar to Giza/Szumowski; Paweł appears as an unelaborated recommendation, with no personal preference statement."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/event/28233/pszczyna/olka-szczesniak",
+      "locator": "Łukasz, 2018-12-18, event page identifies Paweł and Olka; comment also praises Paweł’s gastro stories and Adam Gajda",
+      "status": "quarantined_search_result",
+      "risk": "Potential positive multi-performer appraisal, but full page not opened; comments may be aggregated from adjacent event blocks and locator/event association requires verification.",
+      "recovery_resolution": "Event page fetched; no corresponding Łukasz comment visible. Event lineup is not preference evidence."
+    }
+  ],
+  "dedup_audit": {
+    "canonical_inputs_checked": [
+      "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+      "tasks/standupers-graph/reports/runs/20261031-batch05.context-reviewed.json",
+      "tasks/standupers-graph/reports/runs/20261031-batch09.context-reviewed.json and all other actual input_manifests of graph/coverage-krajewski-repaired/graph.json"
+    ],
+    "pawel_targeted_records": [
+      {
+        "candidate_id": "src_b09a_002",
+        "author_hint": "RADOSŁAW",
+        "note": "Known Paweł/Adam positive, Jasiek mixed record; not reused."
+      },
+      {
+        "candidate_id": "src_b09a_003",
+        "author_hint": "Piotr",
+        "note": "Known Paweł positive with Adam and Jasiek negative; preserved disagreement, not reused."
+      },
+      {
+        "candidate_id": "src_b03b_001",
+        "author_hint": null,
+        "note": "Reddit recommendation list, deleted/unknown author and no personal preference; not treated as a fan."
+      }
+    ],
+    "additional_duplicate_risk": "Search surfaced the Maciej Trasa Stand-up Skład comment through more than one KupBilecik URL/page. It is one likely post, and no copy was saved."
+  },
+  "usage": {
+    "queries_used": 24,
+    "page_attempts_used": 11,
+    "verified_candidates": 1,
+    "queries_remaining": 0,
+    "page_attempts_remaining": 13,
+    "candidate_slots_remaining": 15
+  },
+  "stop_reason": "All 24 queries were used across four source families, including public discussion searches and historical review archives. Five page attempts were made. Search-only candidate leads were not promoted; KupBilecik page reads hit cache misses/inaccessible URLs and preview_open returned an explicit full-server-capacity error, while a different-host Reddit full-page read also cache-missed. No further unchanged capacity retry was made. Stopped with 19 page attempts and all 16 candidate slots unused; this records access-limited non-discovery, not evidence of absence.",
+  "surprises": [
+    "A strong-looking Maciej review snippet from 2019 praises Paweł together with Olka Szczęśniak and Adam van Bendler, while preserving criticism of other acts. Full-page verification failed, so it remains quarantined.",
+    "The Paweł-only KupBilecik review archive showed abundant positive solo comments but no verified co-appreciation in the retrieved excerpt.",
+    "The requested fallback preview was explicitly blocked by “Too many server browser tabs are open”; no other tab was touched. A separate Reddit host also cache-missed, so access failures are route-specific and not treated as proof of absence."
+  ],
+  "completed_at": "2026-11-01 16:24:33 UTC",
+  "parent_capacity_recheck": {
+    "result": "still_full",
+    "owned_tab_created": false,
+    "other_tabs_touched": false,
+    "user_action_requested": "Close stale previews or reset preview server; independent accessible routes may continue.",
+    "diagnostic_attempts_charged": 1
+  },
+  "continuations": [
+    {
+      "started_at": "2026-11-01 11:15:21 UTC",
+      "allowance": "Added maximum 6 page attempts; cumulative maximum 12/24; no queries",
+      "reservations": [
+        {
+          "attempt": 1,
+          "url": "https://www.kupbilecik.pl/pl/event/28233/pszczyna/olka-szczesniak",
+          "status": "reserved_before_call"
+        }
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "url": "https://www.kupbilecik.pl/pl/event/28233/pszczyna/olka-szczesniak",
+          "at": "2026-11-01 11:15 UTC",
+          "result": "web open failed: Cache miss; no page content or links available; charged as one page attempt"
+        }
+      ],
+      "added_page_attempts": 1,
+      "cumulative_page_attempts": 7,
+      "added_verified_candidates": 0,
+      "stop_reason": "Specified untried full public URL cache-missed on first attempt. No page content was returned from which to follow genuine links; prior strong Maciej URLs were already attempted and inaccessible. Stopped without unchanged retries or invented URL variants."
+    },
+    {
+      "started_at": "2026-11-01 during recovery; exact start timestamp not captured",
+      "allowance": "Recovery after user-confirmed browser reset; maximum 6 navigation attempts, no queries",
+      "reservations": [
+        {
+          "attempt": 1,
+          "url": "about:blank (owned preview open; capacity setup)",
+          "status": "reserved_before_call"
+        },
+        {
+          "attempt": 2,
+          "url": "https://www.kupbilecik.pl/en/comments/3727/trasa-stand-up-sklad?page_comments=3",
+          "status": "reserved_before_call"
+        },
+        {
+          "attempt": 3,
+          "url": "https://www.kupbilecik.pl/en/event/32558/lodz/trasa-stand-up-sklad",
+          "status": "reserved_before_call",
+          "basis": "event anchor attached to Maciej post"
+        },
+        {
+          "attempt": 4,
+          "url": "https://www.kupbilecik.pl/pl/event/28233/pszczyna/olka-szczesniak",
+          "status": "reserved_before_call"
+        }
+      ],
+      "attempts": [
+        {
+          "attempt": 1,
+          "url": "about:blank",
+          "method": "preview_open",
+          "status": "success_owned_blank_tab",
+          "tab_id": "tab_1b_02a52303-1e3a-4993-a897-62daeceecefe",
+          "at": "2026-11-01 recovery; exact browser clock timestamp not returned"
+        },
+        {
+          "attempt": 2,
+          "url": "https://www.kupbilecik.pl/en/comments/3727/trasa-stand-up-sklad?page_comments=3",
+          "method": "preview_navigate",
+          "status": "loaded_page_dom_snapshot_timeout",
+          "details": "Navigation returned title and URL. Two preview_snapshot calls timed out; preview_evaluate read full document.body.innerText. Exact attached event link identified from DOM.",
+          "result": "Loaded exact event page. Confirmed event date/location and lineup; no saved candidate because source wording is a relative ranking (not qualifying under rubric).",
+          "raw_dom_text": "Skip to content\nconcerts\nperformances\nstand-up\ncabarets\nfor children\nfestivals\nSet your location\nTo ensure the best experience and show you the most relevant events, we recommend sharing your location.\nLocation...\nCookies\nWe use cookies to improve your experience on the website. Some of them are necessary for the website to function, others help us analyze traffic and personalize content. You can accept all cookies or adjust your settings.\nAccept all\nAdjust settings\nReject all\nTrasa Stand-up Skład\nList of comments for Trasa Stand-up Skład\n320\nnumber of comments\n4.73 / 5\naverage rating\n98%\npositive ratings\nRating 1.0 out of 5\n1%\nRating 2.0 out of 5\n2%\nRating 3.0 out of 5\n3%\nRating 4.0 out of 5\n13%\nRating 5.0 out of 5\n82%\nRating 4.0 out of 5\n2019-04-15\nMaciej:\n\"bardzo udany wieczór... w większości, bo poziom jak zawsze trzymali najlepszy tego wieczoru Adam van Bendler, Olka Szczęściak i Paweł Chałupka a także prowadzący (Zalew znowu w lepszej formie!) Minus dla Kołeckiego oraz dla Krajewskiego, którzy nie powiedzieli nic nowego od dawna (Tomek, bo jedzie na tym samym od jesieni, a Błażej bo mówił o nowym materiale pod tę trasę)\"\n|\nTrasa Stand-up Skład\nŁódź, 14 April 2019 at 17:00\n|\nRating 5.0 out of 5\n2019-04-15\nWojciech:\n\"Super !! Zarówno prowadzący, jak i występujący dali czadu !! Serdecznie polecam dla ludzi kumatych z poczuciem humoru !!!\"\n|\nTrasa Stand-up Skład\nRzeszów, 12 April 2019 at 21:00\n|\nRating 5.0 out of 5\n2019-04-15\nJarosław:\n\"Witam, występ super, ale chciałbym jeszcze bardzo serdecznie pozdrowić i podziękować klubowi ZET PE TE, za to, że dołożyli wszelkich starań, aby udało mi się wejść z dziewczyną na wydarzenie (Głupi pomyliłem godziny, chyba przez to, że nie myślałem zbytnio o wydarzeniu XD, sami wiecie) DZIĘKI WIELKIE MENAGO ! Na pewno wpadnę na Dolnych Młynów i dam zarobić ZET PE TE! POZDRO WYSTĘP SPOCZI!\"\n|\nTrasa Stand-up Skład\nKraków, 11 April 2019 at 18:00\n|\nRating 5.0 out of 5\n2019-04-15\nSandra:\n\"Olka Szczęśniak super - polecam, ale pozostali bez szału, monotematyczne żarty o pedofilach i aborcji...\"\n|\nTrasa Stand-up Skład\nŁódź, 14 April 2019 at 17:00\n|\nRating 5.0 out of 5\n2019-04-15\nMichalina:\n\"Jeden z lepszych występów na jakich byłam polecam :) \"\n|\nTrasa Stand-up Skład\nŁódź, 14 April 2019 at 17:00\n|\nRating 5.0 out of 5\n2019-04-15\nBartosz:\n\"występ bardzo fajny, chłopaki dobrze prowadzili, prawie dwie godziny śmiechu. polecam bo warto\"\n|\nTrasa Stand-up Skład\nRzeszów, 12 April 2019 at 18:00\n|\nRating 5.0 out of 5\n2019-04-15\nPaulina:\n\"Bardzo fajne wydarzenie, dobrze sie bawilismy. Polecam\"\n|\nTrasa Stand-up Skład\nŁódź, 14 April 2019 at 17:00\n|\nRating 5.0 out of 5\n2019-04-15\nDorota:\n\"Super, extra . naprawde sie usmiałam.Polecam z całego swojego serca\"\n|\nTrasa Stand-up Skład\nŁódź, 14 April 2019 at 17:00\n|\nRating 5.0 out of 5\n2019-04-15\nMonika:\n\"Najlepsze występy -Adam i Olka uśmialiśmy sie mega :) Szukamy występów już tylko Oli i Adama-bo reszta poziom...znacznie słabszy Prowadzący ok \"\n|\nTrasa Stand-up Skład\nŁódź, 14 April 2019 at 17:00\n|\nRating 4.0 out of 5\n2019-04-15\nJulia:\n\"Prowadzący super. Chałupki wcześniej nie znałam ale super miłe zaskoczenie :) Olka, Krajewski i Van Bendler rewelacja. Najgorzej jak zwykle Rejent (zbędny) i Tomek Kołecki.\"\n|\nTrasa Stand-up Skład\nŁódź, 14 April 2019 at 20:00\n|\nRating 4.0 out of 5\n2019-04-15\nGM:\n\"Występy jedne z lepszych, w końcu żarty się nie powtarzały. Jednak słabo widać lub praktycznie nie widać występujących z końca sali, scena jest zdecydowanie za niska.\"\n|\nTrasa Stand-up Skład\nRzeszów, 12 April 2019 at 21:00\n|\nRating 5.0 out of 5\n2019-04-15\nPamela:\n\"Polecam z całego serca:) Uśmiałam się strasznie :)\"\n|\nTrasa Stand-up Skład\nRzeszów, 12 April 2019 at 21:00\n|\nRating 4.0 out of 5\n2019-04-15\nKarolina:\n\"Pozdro dla Zalewa i Jaśka- mega w roli prowadzących :) Van Bendler i Olka Szczęściak- zaj***ście \"\n|\nTrasa Stand-up Skład\nŁódź, 14 April 2019 at 17:00\n|\nRating 5.0 out of 5\n2019-04-15\nPAULINA:\n\"SUPER, POLECEM. \"\n|\nTrasa Stand-up Skład\nRzeszów, 12 April 2019 at 18:00\n|\nRating 5.0 out of 5\n2019-04-15\nPiotr:\n\"Pośmiane :D\"\n|\nTrasa Stand-up Skład\nŁódź, 14 April 2019 at 20:00\n|\nRating 5.0 out of 5\n2019-04-15\nAdrianna:\n\"Świetnie było! Wielkie ukłony dla Jaśka i Zalewa - zrobili robotę\"\n|\nTrasa Stand-up Skład\nŁódź, 14 April 2019 at 17:00\n|\nRating 4.0 out of 5\n2019-04-15\nBeata:\n\"Fajna impreza, nie podobał mi się jedynie występ S.Rejenta, uważam ,ze przekroczył granice dobrego smaku, pozostali super, duża dawka dobrego humoru!\"\n|\nTrasa Stand-up Skład\nŁódź, 14 April 2019 at 20:00\n|\nRating 3.0 out of 5\n2019-04-15\nMariusz:\n\"Występ mocno średni. Najlepsi byli prowadzący, przy nich uśmiałem się bardziej, niż przy którymkolwiek wystąpieniu. Dla nich warto, dla pozostałych wedle uznania. \"\n|\nTrasa Stand-up Skład\nŁódź, 14 April 2019 at 20:00\n|\nRating 5.0 out of 5\n2019-04-15\nJacek:\n\"okkkkkkkkkkiii\"\n|\nTrasa Stand-up Skład\nŁódź, 14 April 2019 at 17:00\n|\nRating 5.0 out of 5\n2019-04-15\nAleksandra:\n\"Średnie, prowadzący b. Słabo. Ola-super, gość brodaty super, ale jednak za krótkie te występy, wole solowe niż składanki z kilku osób. \"\n|\nTrasa Stand-up Skład\nŁódź, 14 April 2019 at 20:00\n|\nRating 5.0 out of 5\n2019-04-15\nKatarzyna:\n\"Genialne wystąpienia :) polecam :))) \"\n|\nTrasa Stand-up Skład\nŁódź, 14 April 2019 at 17:00\n|\nRating 5.0 out of 5\n2019-04-15\nKarolina:\n\"Było super :) \"\n|\nTrasa Stand-up Skład\nŁódź, 14 April 2019 at 17:00\n|\nRating 5.0 out of 5\n2019-04-15\nAdam:\n\"Ogień! :)\"\n|\nTrasa Stand-up Skład\nŁódź, 14 April 2019 at 17:00\n|\nRating 4.0 out of 5\n2019-04-15\nRafał:\n\"Występ super, oprócz Rejenta, jest zbędny.\"\n|\nTrasa Stand-up Skład\nŁódź, 14 April 2019 at 17:00\n|\nRating 3.0 out of 5\n2019-04-15\nAdrian:\n\"troszkę zawiedziony powtarzane żarty ok ale jakis nowy? Chałupka brawa. Adam to była bluza?czy do szatni kolejka :/ w sumie sie nie opłacało na 15 min. lepsze solo występy nie ma takiej gonitwy więcej interakcji i improwizacji. DOM spoko mjesce \"\n|\nTrasa Stand-up Skład\nŁódź, 14 April 2019 at 20:00\n|\n«\n1\n2\n3\n4\n5\n…\n13\n»\nEvent toplists\nRatings\n|\nFans\n|\nPopularity\nLoading...\nStay up to date!\nSign up for notifications and stay up to date with events in your area...\n+48\nType of events...\nType of events...\nI consent to the processing of my personal data and accept the terms and privacy policy\nFor customers\nCustomer zone\nEvent search engine\nAnnouncements and changes\nEvent toplists\nPromotions and discounts\nCultural news\nGift vouchers\nTicket alerts\nRefunds and rebookings\nTicket generation\nSales points\nFundraiser for animals\nCustomer comments\nPurchase terms\nPrivacy Policy\nPrivacy settings\nQuestions and answers\nAccessibility statement\nAbout us\nContact us\nCooperation\nFor organizers\nFor websites\nFor branches\nFor job seekers\nSocial Media\nKupBilecik on Facebook\nKupBilecik on Instagram\nKupBilecik on X (Twitter)\nKupBilecik on TikTok\nKupBilecik on YouTube\nHey! Already have our new app?\nDownload KupBilecik on your Android or iOS phone!\nDownload the app\n\n© 2011 - 2026 KupBilecik® - online ticketing system. All rights reserved."
+        },
+        {
+          "attempt": 3,
+          "url": "https://www.kupbilecik.pl/en/event/32558/lodz/trasa-stand-up-sklad",
+          "method": "preview_navigate",
+          "status": "loaded_event_lineup_verified",
+          "details": "Exact event anchor attached to Maciej comment; confirms date, venue and named lineup. Full DOM payload is preserved in recovery resolution notes.",
+          "raw_dom_text": "Skip to content\nconcerts\nperformances\nstand-up\ncabarets\nfor children\nfestivals\nSet your location\nTo ensure the best experience and show you the most relevant events, we recommend sharing your location.\nLocation...\nCookies\nWe use cookies to improve your experience on the website. Some of them are necessary for the website to function, others help us analyze traffic and personalize content. You can accept all cookies or adjust your settings.\nAccept all\nAdjust settings\nReject all\nTrasa Stand-up Skład\nKrajewski, Van Bendler, Chałupka, Rejent, Zalewski, Borkowski, Szczęśniak, Banaś, Kołecki\n | Notify me\n | Map\n | Follow\n | Share\nThis event has already taken place. Check other dates or turn on the Fan Alert and we will let you know about the next one.\n4.73 / 5\n( \nRating 4.7 out of 5\n )\n?\ntoplist\nThis event has already taken place\n14 April 2019 at 17:00\nŁódź, voivodeship Łódzkie, PL\nTeatr DOM, ul. Piotrkowska 243\nKupBilecik means safe shopping\nin case of cancellation of this event\nyou have a guarantee of refund of the ticket value\n??? | ??? | ???\n???\n\nLooking for a gift? Stand-up voucher - they choose the event and the date themselves.\n\n100 zł\n200 zł\n300 zł\n500 zł\nWould you like us to notify you about this event in the future?\n\nRusza II edycja trasy Stand-up Skład! Pierwsza odniosła spory sukces, zatem pora na kolejną dawkę mocnego humoru na najwyższym poziomie. Nowe teksty, których nie usłyszycie na żadnej innej trasie.\n\nWystąpi aż 9 świetnych komików: \n\nProwadzący : Bartosz Zalewski i Jasiek Borkowski \n\noraz\n\nBłażej Krajewski\n\nAdam Van Bendler\n\nSebastian Rejent\n\nPaweł Chałupka\n\nOlka Szczęśniak\n\nTomek Kołecki\n\nRafał Banaś\n\n\n\n\n14.04.2019\n\ngodz 17:00-19:00\n\n\n\n\n*Występ dla osób powyżej 16 roku życia\n**Nagrywanie występu w formie audio i video jest zabronione\n***Bilet nie daje prawa do przeszkadzania występującym. Organizator zastrzega sobie prawo do wyproszenia osób utrudniających przebieg wydarzenia, bez obowiązku zwrotu pieniędzy za bilet osobom przeszkadzającym\n\nTrasa Stand-up Skład\nŁódź\nTeatr DOM\nViewer comments\nŁukasz\nRating 5.0 out of 5\n\n2 godziny super rozrywki :) Jak ktoś nie skuma żartu to Rejent wyjaśni. Beka 100%\n\nTrasa Stand-up Skład\nGdynia, April 17, 2019\nJulia\nRating 4.0 out of 5\n\nProwadzący super. Chałupki wcześniej nie znałam ale super miłe zaskoczenie :) Olka, Krajewski i Van Bendler rewelacja. Najgorzej jak zwykle Rejent (zbędny) i Tomek Kołecki.\n\nTrasa Stand-up Skład\nŁódź, April 14, 2019\nJoanna\nRating 4.0 out of 5\n\nDla mnie wszystko super ładnie, byłam pierwszy raz na stand- upie, prowadzący zaj***ści, ale show Rejenta oglądałam z zażenowaniem, dla mnie nie było w tym nic śmiesznego. Całą reszta super :)\n\nTrasa Stand-up Skład\nCzęstochowa, April 07, 2019\nAnna\nRating 5.0 out of 5\n\nRewelacja\n\nTrasa Stand-up Skład\nToruń, April 01, 2019\nBeata\nRating 5.0 out of 5\n\nświetna zabawa, było super, polecam\n\nTrasa Stand-up Skład\nRzeszów, April 12, 2019\nKarolina\nRating 4.0 out of 5\n\nPozdro dla Zalewa i Jaśka- mega w roli prowadzących :) Van Bendler i Olka Szczęściak- zaj***ście\n\nTrasa Stand-up Skład\nŁódź, April 14, 2019\nDawid\nRating 5.0 out of 5\n\nPolecam zdecydowanie wszystkim, którzy lubią się pośmiać. Ci ludzie są niesamowici. Już czekam na kolejne. :))\n\nTrasa Stand-up Skład\nSosnowiec, May 08, 2018\nWojciech\nRating 5.0 out of 5\n\nSuper :)\n\nTrasa Stand-up Skład\nGdynia, April 17, 2019\nKarol\nRating 5.0 out of 5\n\nIdealnie, polecam.\n\nTrasa Stand-up Skład\nGdynia, April 17, 2019\nZenon\nRating 5.0 out of 5\n\nPolecam wszystkim\n\nTrasa Stand-up Skład\nZielona Góra, April 05, 2019\n❮\n❯\nStand-up: Adam Van Bendler\n24 November 2026, 19:00\nŁódź, Kręgielnia Król Kul\nStand-up Mama Na Obrotach\n13 February 2027, 18:00\nŁódź, Teatr DOM\ncollector tickets\nStand-up: Daniel Midas\n07 March 2027, 19:00\nŁódź, Sport Arena im. Józefa Żylińskiego\ncollector tickets\nKabaret Ani Mru-Mru\n28 November 2026, 19:00\nTomaszów Mazowiecki, Powiatowe Centrum Animacji Społecznej\nStand-up: Ryszard Mazur\n19 November 2026, 19:00\nBełchatów, Pub Gambrinus\ncollector tickets\nStand-up: Łukasz Kowalski\n26 November 2026, 19:00\nŁódź, Przechowalnia\nCzerwony Tulipan\n08 November 2026, 18:00\nŁódź, Sala koncertowa Akademii Muzycznej im. Grażyny i Kiejstuta Bacewiczów\nRafał Rutkowski\n09 February 2027, 19:00\nŁódź, Sala koncertowa Akademii Muzycznej im. Grażyny i Kiejstuta Bacewiczów\nStand-up voucher\nfrom 100 zł to 9 999 zł\ninstant PDF, valid for 12 months\ngift card\nKacper Ruciński\n12 April 2027, 18:00\nŁódź, Teatr Muzyczny\ncollector tickets\nJachimek improwizuje piosenki\n12 November 2026, 20:00\nŁódź, Teatr Komedii Impro w Łodzi scena OFF Piotrkowska\nWiktor Sumliński stand-up\n29 November 2026, 18:00\nŁódź, KIJ\nMariusz Kałamaga\n09 December 2026, 17:30\nŁódź, Klub Scenografia\nnovelty\nKarol Kopiec\n24 February 2027, 19:00\nŁódź, KIJ\nPolska Noc Kabaretowa 2027\n06 March 2027, 19:00\nŁódź, Atlas Arena\ncollector tickets\nPaweł Konkiel stand-up\n19 November 2026, 19:00\nŁódź, Campanile Łódź\ncollector tickets\nMieszko Minkiewicz Stand-up\n26 November 2026, 19:00\nPiotrków Trybunalski, Skyy Pub\ncollector tickets\nStand-up: Bartek Zajda\n17 December 2026, 19:00\nPiotrków Trybunalski, Skyy Pub\nStand-up: Arkadiusz Jaksa Jakszewicz\n10 November 2026, 19:00\nŁódź, KIJ\ncollector tickets\nStand-up: Tomasz Boras\n02 December 2026, 19:00\nŁódź, Kręgielnia Król Kul\ncollector tickets\nStay up to date!\nSign up for notifications and stay up to date with events in your area...\n+48\nType of events...\nType of events...\nI consent to the processing of my personal data and accept the terms and privacy policy\nFor customers\nCustomer zone\nEvent search engine\nAnnouncements and changes\nEvent toplists\nPromotions and discounts\nCultural news\nGift vouchers\nTicket alerts\nRefunds and rebookings\nTicket generation\nSales points\nFundraiser for animals\nCustomer comments\nPurchase terms\nPrivacy Policy\nPrivacy settings\nQuestions and answers\nAccessibility statement\nAbout us\nContact us\nCooperation\nFor organizers\nFor websites\nFor branches\nFor job seekers\nSocial Media\nKupBilecik on Facebook\nKupBilecik on Instagram\nKupBilecik on X (Twitter)\nKupBilecik on TikTok\nKupBilecik on YouTube\nHey! Already have our new app?\nDownload KupBilecik on your Android or iOS phone!\nDownload the app\n\n© 2011 - 2026 KupBilecik® - online ticketing system. All rights reserved."
+        },
+        {
+          "attempt": 4,
+          "url": "https://www.kupbilecik.pl/pl/event/28233/pszczyna/olka-szczesniak",
+          "method": "preview_navigate",
+          "status": "loaded_aggregated_event_page_no_candidate",
+          "details": "Page title/event metadata confirm Paweł and Olka billing in Pszczyna on 2018-12-18; no reported Łukasz authored comment appeared. The comment widget is aggregate Olka solo feedback.",
+          "raw_dom_text": "Przejdź do treści\nThis page is also available in English.\nSwitch to English\nkoncerty\nspektakle\nstand-up\nkabarety\ndla dzieci\nfestiwale\nThis page is also available in English.\nEnglish\nUstaw swoją lokalizację\nAby zapewnić najlepsze wrażenia i wyświetlać najlepiej dopasowane wydarzenia, zalecamy udostępnienie lokalizacji.\nLokalizacja...\nPliki cookies\nUżywamy plików cookies, aby poprawić Twoje doświadczenia na stronie. Niektóre z nich są niezbędne do działania strony, inne pomagają nam analizować ruch i personalizować treści. Możesz zaakceptować wszystkie cookies lub dostosować ustawienia.\nAkceptuj wszystkie\nDostosuj ustawienia\nOdrzuć wszystkie\nOlka Szczęśniak\nStand-up w Pszczynie: Paweł Chałupka i Olka Szczęśniak\n | Powiadom mnie\n | Mapa\n | Obserwuj\n | Udostępnij\nUwaga! W tej okolicy dostępne są także inne terminy tego wydarzenia. Pełną listę znajdziesz tutaj.\nTo wydarzenie już się odbyło. Sprawdź inne terminy albo włącz Alert Fana, a damy Ci znać o kolejnym.\n4.95 / 5\n( \nOcena 5.0 z 5\n )\n#4\ntoplista\nTo wydarzenie już się odbyło\n18 grudnia 2018 o godz. 19:00\nPszczyna, woj. Śląskie, PL\nSztamfer Burger Bar, Bankowa 1\nKupBilecik to bezpieczne zakupy\nw przypadku odwołania tego wydarzenia\nmasz gwarancję zwrotu wartości biletów\n??? | ??? | ???\n???\n\nSzukasz prezentu? Voucher na stand-up - obdarowany sam wybierze wydarzenie i termin.\n\n100 zł\n200 zł\n300 zł\n500 zł\nChcesz, abyśmy powiadamiali Cię o tym wydarzeniu w przyszłości?\n\nOlka Szczęśniak i Paweł Chałupka wystąpią w Pszczynie z nowymi programami! \n\n18.12.18\n\nwpuszczanie na sale: 18:00\n\nStart: 19:00\n\nKoniec: 21:00\n\nbilety : 30 zł przedsprzedaż/ 40zł w dniu występu\n\nBilety dostępne tylko online.\n\n\n\n\n*Występ dla osób dorosłych \n\n*Zakaz nagrywania\n\n*Osoby przeszkadzające występującym zostaną wyproszone z lokalu bez możliwości zwrotu pieniędzy za bilet.\n\nOlka Szczęśniak\nOlka Szczęśniak\nPszczyna\nSztamfer Burger Bar\nKomentarze widzów\nJakub\nOcena 5.0 z 5\n\nWystęp topka. Skoro uśmiała się nawet moja dziewczyna to znaczy, że Pani Ola jest profesjonalistą najwyższych lotów.\n\nOlka Szczęśniak\nWrocław, 26 listopada 2023\nJakub\nOcena 5.0 z 5\n\nOlka zrobiła genialne show. Polecam każdemu, pozdrowienia też dla pana który rozgrzał widownię też genialny. Polecam każdemu!!\n\nOlka Szczęśniak\nPoznań, 12 lutego 2024\nJacek\nOcena 5.0 z 5\n\nBardzo fajny występ, łatwy zakup biletu\n\nOlka Szczęśniak\nWarszawa, 11 grudnia 2021\nJoanna\nOcena 5.0 z 5\n\nOlka nigdy nie zawodzi. Inteligencją, błyskotliwy humor, wyważone żarty z męskiej i damskiej części społeczeństwa, podbudowa rzetelnych faktów, no majstersztyk. Support też extra, pierwszy raz widzieliśmy Martę Łojek, ale chętnie posłuchamy jej jeszcze, bo dziewczyna się co robi i robi to świetnie. Ogółem idealnie\n\nOlka Szczęśniak\nOlsztyn, 22 września 2023\nMonika\nOcena 5.0 z 5\n\nWystęp rewelacyjny. Śmiałam się do łez dosłownie było super z chęcią poszłabym drugi raz\n\nOlka Szczęśniak\nSochaczew, 06 października 2021\npiotr\nOcena 5.0 z 5\n\nSuper występ ..super pozytywna dziewczyna... polecam wszystkim\n\nOlka Szczęśniak\nPoznań, 02 listopada 2023\nTomasz\nOcena 5.0 z 5\n\nWystęp Olki jak mi Marty super:) Ale.. Olka zepsuła mi orgazm.. hahaha:P\n\nOlka Szczęśniak\nRacibórz, 12 października 2021\nAdam\nOcena 5.0 z 5\n\nNajlepszy występ jaki widziałem w tym roku, a widziałem ich sporo. Bardzo fajne i mocne żarty. Support też na odpowiednim poziomie. Polecam każdemu kto nie obraża się za żarty.\n\nOlka Szczęśniak\nŁódź, 30 grudnia 2023\npaulina\nOcena 5.0 z 5\n\nWystęp olki to sztos ogień ,1,5 h śmiechu na sali Dla mnie przebiła rucinskiego\n\nOlka Szczęśniak\nPoznań, 02 listopada 2023\nAgnieszka\nOcena 4.0 z 5\n\nWystęp super, jedyny minus: -nie siedziałam obok męża,\n\nOlka Szczęśniak\nŚwiecie, 24 stycznia 2023\n❮\n❯\nStand-up Mama Na Obrotach\n05 grudnia 2026, godz. 18:00\nRuda Śląska, Dom Kultury Bielszowice\nbilety kolekcjonerskie\nStand-up: Adam Van Bendler\n19 listopada 2026, godz. 19:00\nRuda Śląska, Dom Kultury Bielszowice\nStand-up: Daniel Midas\n12 lutego 2027, godz. 19:00\nZabrze, Dom Muzyki i Tańca\nbilety kolekcjonerskie\nKabaret Ani Mru-Mru\n15 kwietnia 2027, godz. 18:00\nOświęcim, Oświęcimskie Centrum Kultury\nStand-up: Ryszard Mazur\n11 listopada 2026, godz. 19:00\nKatowice, Scena Gliwicka 120\nbilety kolekcjonerskie\nVoucher na stand-up\nod 100 zł do 9 999 zł\nPDF od ręki, ważny 12 miesięcy\nkarta podarunkowa\nPozytywny Marcin\n23 listopada 2026, godz. 19:00\nKatowice, Klub Królestwo\nbilety kolekcjonerskie\nKabaret Nowaki\n14 listopada 2026, godz. 17:00\nJastrzębie-Zdrój, Hala widowiskowo-Sportowa\nbilety kolekcjonerskie\nTomasz Karolak\n19 listopada 2026, godz. 18:00\nKatowice, Miejski Dom Kultury Giszowiec Filia nr 2\nMieszko Minkiewicz Stand-up\n15 grudnia 2026, godz. 19:00\nKatowice, Scena Gliwicka 120\nbilety kolekcjonerskie\nPrzymusowa Polonizacja Instrumentalnie\n11 grudnia 2026, godz. 19:00\nCieszyn, Cieszyński Ośrodek Kultury Dom Narodowy\nKabaret Skeczów Męczących\n19 lutego 2027, godz. 20:30\nChrzanów, Miejskie Centrum Kultury i Sztuki\nbilety kolekcjonerskie\nDamian Skóra Stand-up\n04 listopada 2026, godz. 19:00\nBielsko-Biała, Restauracja Miasto\nbilety kolekcjonerskie\nMariusz Kałamaga\n23 listopada 2026, godz. 19:00\nKatowice, Miejski Dom Kultury Szopienice-Giszowiec\nAndrzej Poniedzielski\n05 listopada 2026, godz. 19:00\nRybnik, Teatr Ziemi Rybnickiej\nbilety kolekcjonerskie\nKabaret pod Wyrwigroszem\n23 listopada 2026, godz. 18:30\nWadowice, Centrum Kultury\nKabaret Moralnego Niepokoju\n20 marca 2027, godz. 16:00\nOświęcim, Oświęcimskie Centrum Kultury\nbilety kolekcjonerskie\nStand-up: Patryk Gosiński\n19 marca 2027, godz. 19:00\nRybnik, Restauracja Patio Sushi\nbilety kolekcjonerskie\nGrzegorz Dolniak stand-up\n25 kwietnia 2027, godz. 18:00\nZabrze, Dom Muzyki i Tańca\nStand Up: Roman Trávniček\n19 listopada 2026, godz. 19:00\nRuda Śląska, Champion Pub\nBądź na bieżąco!\nZapisz się na powiadomienia i bądź na bieżąco z wydarzeniami w Twojej okolicy...\n+48\nRodzaj wydarzeń...\nRodzaj wydarzeń...\nWyrażam zgodę na przetwarzanie moich danych osobowych oraz akceptuję regulamin i politykę prywatności\nGdynia - 03 listopada 2026 o godz. 18:00\nGdynia - 03 listopada 2026 o godz. 21:00\nKraków - 09 listopada 2026 o godz. 17:30\nKraków - 09 listopada 2026 o godz. 21:00\nKielce - 10 listopada 2026 o godz. 18:00\nKielce - 10 listopada 2026 o godz. 21:00\nŁódź - 18 listopada 2026 o godz. 17:30\nŁódź - 18 listopada 2026 o godz. 20:30\nKatowice - 22 listopada 2026 o godz. 18:00\nKraków - 01 grudnia 2026 o godz. 17:30\nKraków - 01 grudnia 2026 o godz. 21:00\nToruń - 14 grudnia 2026 o godz. 17:30\nToruń - 14 grudnia 2026 o godz. 21:00\nToruń - 15 grudnia 2026 o godz. 21:00\nWarszawa - 13 stycznia 2027 o godz. 19:00\nWrocław - 21 marca 2027 o godz. 18:00\nDla klientów\nStrefa klienta\nWyszukiwarka wydarzeń\nKomunikaty i zmiany\nToplisty wydarzeń\nPromocje i rabaty\nWiadomości kulturalne\nVouchery podarunkowe\nAlerty biletowe\nZwroty i przebukowania\nGenerowanie biletów\nPunkty sprzedaży\nZbiórka na zwierzaki\nKomentarze klientów\nRegulamin zakupów\nPolityka prywatności\nUstawienia prywatności\nPytania i odpowiedzi\nDeklaracja dostępności\nO nas\nKontakt z nami\nWspółpraca\nDla organizatorów\nDla stron WWW\nDla oddziałów\nDla szukających pracy\nSocial Media\nKupBilecik na Facebooku\nKupBilecik na Instagramie\nKupBilecik na X (Twitterze)\nKupBilecik na TikToku\nKupBilecik na YouTube\nHej! Masz już naszą nową aplikację?\nPobierz KupBilecik na swój telefon z Android lub iOS!\nPobierz aplikację\n\n© 2011 - 2026 KupBilecik® - internetowy system biletowy. Wszelkie prawa zastrzeżone."
+        }
+      ],
+      "added_page_attempts": 4,
+      "cumulative_page_attempts": 11,
+      "added_verified_candidates": 0,
+      "stop_reason": "Stopped after resolving the Maciej search-result lead and checking the separately prioritized Łukasz event URL. Maciej post and exact linked event/lineup verified; its praise uses a relative ranking and is non-qualifying under the rubric. Łukasz URL confirms event lineup only; displayed reviews are an aggregate solo Olka widget and do not contain the reported 2018 comment. No candidate qualifies. Three of the six recovery navigation attempts remain; no queries remain. No alternate Maciej URL followed because the post was already fully read and would be a duplicate.",
+      "remaining_page_attempts": 13
+    }
+  ],
+  "recovery_resolution": {
+    "verified_maciej_post": {
+      "url": "https://www.kupbilecik.pl/en/comments/3727/trasa-stand-up-sklad?page_comments=3",
+      "author_hint": "Maciej",
+      "published_at": "2019-04-15",
+      "event": "Trasa Stand-up Skład, Łódź, 2019-04-14 17:00",
+      "event_url": "https://www.kupbilecik.pl/en/event/32558/lodz/trasa-stand-up-sklad",
+      "identity_context": "Event page lineup names Paweł Chałupka, Olka Szczęśniak, and Adam Van Bendler. In Maciej’s source wording Olka is misspelled “Olka Szczęściak”; context supports identification.",
+      "verbatim_author_text": "bardzo udany wieczór... w większości, bo poziom jak zawsze trzymali najlepsi tego wieczoru Adam van Bendler, Olka Szczęściak i Paweł Chałupka a także prowadzący (Zalew znowu w lepszej formie!) Minus dla Kołeckiego oraz dla Krajewskiego, którzy nie powiedzieli nic nowego od dawna (Tomek, bo jedzie na tym samym od jesieni, a Błażej bo mówił o nowym materiale pod tę trasę)",
+      "assessment": "Verified authored post; positive relative evening ranking plus explicit criticism; not counted as positive fan-preference evidence per rubric. Zalew is caveated praise; no frozen identity assignment."
+    },
+    "lukasz_lead": "Reported Łukasz 2018-12-18 post was not present in the retrieved aggregate event page; no comment by Łukasz was verified. Event page alone proves show lineup, not appreciation.",
+    "dedup": "The alternate URL https://www.kupbilecik.pl/uk/event/24702/sopot/trasa-stand-up-sklad was not retried because Maciej’s post was fully recovered and identified as one authored post; alternate URL cannot count as another account.",
+    "navigation_accounting": "Recovery used 4 of the additional maximum 6 navigation attempts: one owned blank preview_open, two source page navigations, and one exact event-link navigation. Read-only status/evaluate calls are uncharged. Three added attempts remain. Owned tab closed using t3_preview_close; subsequent preview_status returned available:false and tabId:null."
+  },
+  "parent_post_recovery_audit": {
+    "report": "reports/runs/20261101-coverage-pawel-chalupka.canonicalization.json",
+    "source_candidates_preserved": 1,
+    "reason": "Comparison evidence remains eligible even without established positive preference. Full wording “poziom jak zawsze trzymali” also warrants independent absolute-versus-relative appraisal review. No preference assigned by source preservation.",
+    "retrieval_timestamp_upper_bound": "2026-11-01T16:25:22.251441Z",
+    "navigation_count": "4of6used,2stageattemptsunused; original24cap11used/13remain. Worker narrative said3stageattemptsremain, corrected to2.",
+    "raw_summary_typo": "Copied actual DOM “najlepszy” instead of normalized summary “najlepsi”."
+  }
+}

@@ -1,0 +1,543 @@
+{
+  "Surprises": [
+    "KupBilecik search results exposed mixed-lineup fan reviews beyond the date-range page snippets; three archive pages were read directly and yielded exact review text across multiple years.",
+    "Wykop search results surfaced a potentially useful Wicia comparison, but the directly read page and paginated page 2 did not render that comment. It remains quarantined and is not a verified candidate.",
+    "Some reviews name only a support performer’s first name (“Filip”); no event-specific roster proved a frozen identity, so no peer ID was assigned. The Magda review names Grzegorz Dolniak as show context but only clearly attributes laughter and subsequent following/ticket purchase to Pięta."
+  ],
+  "run_id": "20261031-coverage-wojtek-pieta",
+  "performer": {
+    "id": "wojtek-pieta",
+    "name": "Wojtek Pięta",
+    "rank": 42
+  },
+  "collector": {
+    "provider": "OpenAI",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+  },
+  "caps": {
+    "individual_queries": 24,
+    "open_navigation_attempts": 24,
+    "verified_candidates": 16
+  },
+  "query_attempts": [
+    {
+      "query": "site:kupbilecik.pl \"Wojtek Pięta\" opinie",
+      "status": "completed; results logged in tool transcript",
+      "reserved_at": "2026-10-31T19:12:50.809315+00:00"
+    },
+    {
+      "query": "site:kupbilet.pl \"Wojtek Pięta\" recenzje",
+      "status": "completed; results logged in tool transcript",
+      "reserved_at": "2026-10-31T19:12:50.809323+00:00"
+    },
+    {
+      "query": "\"Wojtek Pięta\" \"stand-up\" \"świetny\" opinia",
+      "status": "completed; results logged in tool transcript",
+      "reserved_at": "2026-10-31T19:12:50.809325+00:00"
+    },
+    {
+      "query": "\"Wojtek Pięta\" forum ulubieni stand-up",
+      "status": "completed; results logged in tool transcript",
+      "reserved_at": "2026-10-31T19:12:50.809326+00:00"
+    },
+    {
+      "query": "\"Wojtek Pięta\" \"12 lutego 2020\" Gliwice support",
+      "status": "completed; results logged in tool transcript",
+      "reserved_at": "2026-10-31T19:14:23.359992+00:00"
+    },
+    {
+      "query": "\"Wojtek Pięta\" \"Grzegorz Dolniak\" widz opinia występ",
+      "status": "completed; results logged in tool transcript",
+      "reserved_at": "2026-10-31T19:14:23.359999+00:00"
+    },
+    {
+      "query": "\"Wojtek Pięta\" \"występy przed\" opinia support",
+      "status": "completed; results logged in tool transcript",
+      "reserved_at": "2026-10-31T19:14:23.360001+00:00"
+    },
+    {
+      "query": "\"Wojtek Pięta\" ulubiony stand-up forum",
+      "status": "completed; results logged in tool transcript",
+      "reserved_at": "2026-10-31T19:14:23.360002+00:00"
+    },
+    {
+      "query": "\"Wojtek Pięta\" Gliwice \"12 lutego 2020\" wydarzenie stand-up lineup",
+      "status": "completed; results logged in tool transcript",
+      "reserved_at": "2026-10-31T19:14:32.267808+00:00"
+    },
+    {
+      "query": "\"Wojtek Pięta\" Szczecinek \"27 listopada 2019\" Grzesiek Wójtowicz",
+      "status": "completed; results logged in tool transcript",
+      "reserved_at": "2026-10-31T19:14:32.267816+00:00"
+    },
+    {
+      "query": "\"Wojtek Pięta\" \"Grzegorz Dolniak\" \"opinia\" stand-up",
+      "status": "completed; results logged in tool transcript",
+      "reserved_at": "2026-10-31T19:14:32.267818+00:00"
+    },
+    {
+      "query": "\"Wojtek Pięta\" stand-up \"lubię\" forum",
+      "status": "completed; results logged in tool transcript",
+      "reserved_at": "2026-10-31T19:14:32.267820+00:00"
+    },
+    {
+      "query": "site:kupbilecik.pl \"Mi najbardziej do gustu przypadł abstrakcyjny i odjechany humor Bartka\"",
+      "status": "completed; results logged in tool transcript",
+      "reserved_at": "2026-10-31T19:15:02.339871+00:00"
+    },
+    {
+      "query": "\"Wojtek Pięta\" Tarnów \"06 września 2024\" Filip support",
+      "status": "completed; results logged in tool transcript",
+      "reserved_at": "2026-10-31T19:15:21.079851+00:00"
+    },
+    {
+      "query": "\"Jak zwykle sztos\" \"support Filip\" Wojtek",
+      "status": "completed; results logged in tool transcript",
+      "reserved_at": "2026-10-31T19:15:21.079860+00:00"
+    },
+    {
+      "query": "\"Wojtek Pięta\" \"Grzegorz Dolniak\" widz \"Bardzo udany występ\"",
+      "status": "completed; results logged in tool transcript",
+      "reserved_at": "2026-10-31T19:15:21.079862+00:00"
+    },
+    {
+      "query": "\"Wojtek Pięta\" \"Wojtek i chłopaki dają świetne show\"",
+      "status": "completed; results logged in tool transcript",
+      "reserved_at": "2026-10-31T19:15:21.079865+00:00"
+    },
+    {
+      "query": "site:kupbilecik.pl \"Stand-up Wojtek Pięta\" Tarnów \"06 września 2024\" Filip",
+      "status": "completed; results logged in tool transcript",
+      "reserved_at": "2026-10-31T19:15:29.598719+00:00"
+    },
+    {
+      "query": "\"Tarnów 06 września 2024\" \"support\" stand-up Filip",
+      "status": "completed; results logged in tool transcript",
+      "reserved_at": "2026-10-31T19:15:29.598728+00:00"
+    },
+    {
+      "query": "site:standup.pl Wojtek Pięta Filip Tarnów 2024",
+      "status": "completed; results logged in tool transcript",
+      "reserved_at": "2026-10-31T19:15:29.598731+00:00"
+    },
+    {
+      "query": "site:kupbilecik.pl/pl/event Tarnów \"Stand-up Wojtek Pięta\" \"06 września 2024\"",
+      "status": "completed; results logged in tool transcript",
+      "reserved_at": "2026-10-31T19:15:37.037345+00:00"
+    },
+    {
+      "query": "\"Stand-up Wojtek Pięta\" \"Tarnów\" \"06 września 2024\" \"Filip\" komik",
+      "status": "completed; results logged in tool transcript",
+      "reserved_at": "2026-10-31T19:15:37.037353+00:00"
+    },
+    {
+      "query": "\"Tarnów, 06 września 2024\" \"Stand-up Wojtek Pięta\" KupBilecik event",
+      "status": "completed; results logged in tool transcript",
+      "reserved_at": "2026-10-31T19:15:54.025631+00:00"
+    },
+    {
+      "query": "site:wykop.pl \"Wojtek Pięta\" (polecam OR lubię OR najlepszy OR występ)",
+      "status": "completed; results logged in tool transcript",
+      "reserved_at": "2026-10-31T19:15:58.996776+00:00"
+    }
+  ],
+  "open_navigation_attempts": [
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/2923/stand-up-wojtek-pieta?page_comments=1",
+      "status": "attempted; browser loaded title/url; snapshots failed twice with PreviewAutomationTimeoutError",
+      "reserved_at": "2026-10-31T19:13:00.359647+00:00",
+      "error": "Preview snapshot timed out after 15000ms (two attempts)"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/2923/stand-up-wojtek-pieta?page_comments=1",
+      "method": "web.open full URL fallback",
+      "status": "failed; Web fallback inaccessible (full URL; see raw tool transcript)",
+      "reserved_at": "2026-10-31T19:13:31.720337+00:00",
+      "error": "Internal Error; URL not accessible via web tool"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/2923/stand-up-wojtek-pieta?page_comments=2",
+      "method": "preview_navigate",
+      "status": "completed; browser navigation+read succeeded",
+      "reserved_at": "2026-10-31T19:13:55.335212+00:00"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/2923/stand-up-wojtek-pieta?page_comments=3",
+      "method": "preview_navigate",
+      "status": "completed; browser navigation+read succeeded",
+      "reserved_at": "2026-10-31T19:14:07.256812+00:00"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/uk/event/51093/krakow/bartosz-zalewski",
+      "method": "preview_navigate",
+      "status": "completed; browser navigation+read succeeded",
+      "reserved_at": "2026-10-31T19:14:40.983484+00:00"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/event/51093/krakow/bartosz-zalewski",
+      "method": "preview_navigate",
+      "status": "completed; direct event page browser read; Wicia absent from rendered comment list despite indexed snippets",
+      "reserved_at": "2026-10-31T19:15:10.361114+00:00"
+    },
+    {
+      "url": "https://wykop.pl/link/4757763/abelard-giza-numer-3-2019",
+      "method": "preview_navigate",
+      "status": "completed; initial Wykop page read, comments paginated",
+      "reserved_at": "2026-10-31T19:16:13.418679+00:00"
+    },
+    {
+      "url": "https://wykop.pl/link/4757763/abelard-giza-numer-3-2019/strona/2",
+      "method": "preview_navigate",
+      "status": "completed; page shell only, comments not rendered",
+      "reserved_at": "2026-10-31T19:16:30.799502+00:00"
+    }
+  ],
+  "browser_reads": [
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/2923/stand-up-wojtek-pieta?page_comments=1",
+      "operation": "preview_snapshot",
+      "status": "failed twice",
+      "raw_error": "Preview snapshot failed: Preview automation snapshot timed out after 15000ms."
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/2923/stand-up-wojtek-pieta?page_comments=1",
+      "operation": "preview_evaluate document.body.innerText",
+      "status": "read complete; archive comments 2025–2022 visible"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/2923/stand-up-wojtek-pieta?page_comments=2",
+      "operation": "preview_evaluate document.body.innerText",
+      "status": "read complete; archive comments 2021–2020 visible"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/2923/stand-up-wojtek-pieta?page_comments=3",
+      "operation": "preview_evaluate document.body.innerText",
+      "status": "read complete; archive comments 2020–2019 visible"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/uk/event/51093/krakow/bartosz-zalewski",
+      "operation": "preview_evaluate document.body.innerText",
+      "status": "read complete; indexed Wicia review not present in rendered viewer comments"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/event/51093/krakow/bartosz-zalewski",
+      "operation": "preview_evaluate document.body.innerText",
+      "status": "read complete; indexed Wicia review not present in rendered viewer comments"
+    },
+    {
+      "url": "https://wykop.pl/link/4757763/abelard-giza-numer-3-2019",
+      "operation": "preview_evaluate document.body.innerText",
+      "status": "page read; comments paginated; target author absent from loaded page"
+    },
+    {
+      "url": "https://wykop.pl/link/4757763/abelard-giza-numer-3-2019",
+      "operation": "preview_evaluate anchor hrefs",
+      "status": "read page links; found /strona/1–5"
+    },
+    {
+      "url": "https://wykop.pl/link/4757763/abelard-giza-numer-3-2019/strona/2",
+      "operation": "preview_evaluate document.body.innerText",
+      "status": "page read; target author still not rendered"
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "src_cov_wpieta_001",
+      "author_hint": "Dominik",
+      "author_date": "2024-09-07",
+      "event": "Stand-up Wojtek Pięta, Tarnów, 2024-09-06",
+      "page_locator": "KupBilecik performer comment archive, page 1; full Dominik comment under event/date",
+      "full_author_text": "Jak zwykle sztos! Zarówno support Filip jak i Wojtek byli świetni! Spora dawka humoru, bez nadmiernych wulgaryzmów tak jak to inni wykonawcy preferują. Talent aktorski Wojtka jest nie do przecenienia",
+      "identity_proof": "Wojtek is explicitly named as Wojtek in the full comment and archive event title. “Filip” is unresolved: no event-specific lineup matching a frozen identity was retrieved; no identity assigned."
+    },
+    {
+      "candidate_id": "src_cov_wpieta_002",
+      "author_hint": "Magda",
+      "author_date": "2024-04-15",
+      "event": "Stand-up Wojtek Pięta, Racibórz, 2024-04-14; post also recalls an earlier Grzegorz Dolniak show with Wojtek Pięta as support (earlier date unknown)",
+      "page_locator": "KupBilecik performer comment archive, page 1; full Magda comment under Racibórz event/date",
+      "full_author_text": "Bardzo udany występ. Będąc na stand-upie Grzegorza Dolniaka był również support Wojtka Pięty. Tak mnie rozbawił, że musiałam zacząć obserwować również go na insta a później zakupić bilety jak dowiedziałam się że ma być w moim mieście (Racibórz) i oczywiście pojawić się na stand-upie Wojtka. Polecam każdemu",
+      "identity_proof": "Wojtek Pięta and Grzegorz Dolniak are both named in author text. The text explicitly praises Wojtek’s effect; Grzegorz is event context only and not independently praised."
+    },
+    {
+      "candidate_id": "src_cov_wpieta_003",
+      "author_hint": "Paweł",
+      "author_date": "2019-11-19",
+      "event": "Stand-up Wojtek Pięta, Radom, 2019-11-17",
+      "page_locator": "KupBilecik performer comment archive, page 3; full Paweł comment under Radom event/date",
+      "full_author_text": "Słaby występ . Trudno mówić o poziomie artystycznym . Małe pieniądze i strata czasu .",
+      "identity_proof": "Wojtek Pięta is named in the archive event title; post evaluates the focal performance negatively."
+    }
+  ],
+  "dedup": {
+    "prior_pieta_material_found": [],
+    "excluded_duplicates": [],
+    "method": "Scanned all repository JSONL source candidates for frozen ID/name and compared prior coverage-pilot canonical/raw material and graph evidence source lineage; no matching Pięta post/excerpt found."
+  },
+  "source_families": [
+    {
+      "family": "KupBilecik",
+      "coverage": "directly read",
+      "pages": [
+        "https://www.kupbilecik.pl/pl/comments/2923/stand-up-wojtek-pieta?page_comments=1",
+        "https://www.kupbilecik.pl/pl/comments/2923/stand-up-wojtek-pieta?page_comments=2",
+        "https://www.kupbilecik.pl/pl/comments/2923/stand-up-wojtek-pieta?page_comments=3"
+      ],
+      "slices": "2025–2022; 2021–2020; 2020–2019",
+      "notes": "Substantive archive pages read in full. Positive solo reviews, contrasts and negative comments retained where relevant; many comments mention unnamed support only."
+    },
+    {
+      "family": "Wykop public discussion",
+      "coverage": "searched and attempted direct browser reads; target post not exposed",
+      "leads": [
+        "https://wykop.pl/link/4757763/abelard-giza-numer-3-2019"
+      ],
+      "notes": "Search result surfaced igns comment recommending Wojtek Pięta while criticizing Abelard Giza and preferring Lotek/Pacześ. Direct page rendered paginated shell only; loaded page 2 omitted comment; quarantined, not promoted."
+    },
+    {
+      "family": "Other indexed pages",
+      "coverage": "search-only",
+      "leads": [
+        "dts24.pl local article on Pięta and Biskup",
+        "Nowy Dwór Mazowiecki municipal magazine mentions Pięta and Grzegorz Dolniak",
+        "KupBilecik Bartosz Zalewski event snippets list Wicia contrast"
+      ],
+      "notes": "Editorial/event pages are not fan statements; Wicia review absent from directly read event page and excluded."
+    }
+  ],
+  "remaining": {
+    "individual_queries": 0,
+    "open_navigation_attempts": 16,
+    "verified_candidates": 13
+  },
+  "stop_reason": "Meaningful source-route completion and hard search cap: all 24 individual queries used after reading three archive slices and attempting a second independent public discussion family. Remaining Wykop lead and first-name support identities could not be verified from page-local evidence; no further search allowance remains. No candidate is counted as a resolved co-appreciation pair.",
+  "counts_derived": {
+    "individual_queries": 24,
+    "open_navigation_attempts": 21,
+    "verified_candidates": 3,
+    "browser_reads": 9
+  },
+  "followup": {
+    "Surprises": [
+      "The archive page had 36 pages; the 2020 review was recoverable via the event’s linked performer archive (page 32). The text is explicitly mixed: it praises Bartosz’s humor and says Wojtek appealed less.",
+      "The related Wykop thread rendered comment shells on pages 1, 3, 4, and 5; predecessor page 2 also lacked rendered comments. This does not establish the indexed igns comment is absent from all server-side or client-loaded data."
+    ],
+    "actual_collector": {
+      "provider": "OpenAI",
+      "model": "gpt-6-luna",
+      "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1",
+      "note": "Predecessor raw entries retain provider OpenAI exactly as originally recorded; canonical provenance normalization is parent-owned."
+    },
+    "open_navigation_attempts": [
+      {
+        "url": "https://wykop.pl/link/4757763/abelard-giza-numer-3-2019/strona/1",
+        "method": "preview_navigate",
+        "reserved_at": "2026-10-31T19:19:21Z",
+        "status": "completed; preview_open created own blank tab (open reported url empty)",
+        "tab_id": "tab_15_02a52303-1e3a-4993-a897-62daeceecefe"
+      },
+      {
+        "url": "https://wykop.pl/link/4757763/abelard-giza-numer-3-2019/strona/1",
+        "method": "preview_navigate",
+        "reserved_at": "2026-10-31T19:19:45Z",
+        "status": "completed; opened page; read described in followup browser_reads",
+        "tab_id": "tab_15_02a52303-1e3a-4993-a897-62daeceecefe"
+      },
+      {
+        "url": "https://wykop.pl/link/4757763/abelard-giza-numer-3-2019/strona/3",
+        "method": "preview_navigate",
+        "reserved_at": "2026-10-31T19:20:09Z",
+        "status": "completed; page shell only, comments not rendered",
+        "tab_id": "tab_15_02a52303-1e3a-4993-a897-62daeceecefe"
+      },
+      {
+        "url": "https://wykop.pl/link/4757763/abelard-giza-numer-3-2019/strona/4",
+        "method": "preview_navigate",
+        "reserved_at": "2026-10-31T19:20:40Z",
+        "status": "completed; page shell only, comments not rendered",
+        "tab_id": "tab_15_02a52303-1e3a-4993-a897-62daeceecefe"
+      },
+      {
+        "url": "https://wykop.pl/link/4757763/abelard-giza-numer-3-2019/strona/5",
+        "method": "preview_navigate",
+        "reserved_at": "2026-10-31T19:21:10Z",
+        "status": "completed; opened page; read described in followup browser_reads",
+        "tab_id": "tab_15_02a52303-1e3a-4993-a897-62daeceecefe"
+      },
+      {
+        "url": "https://www.kupbilecik.pl/pl/event/51093/krakow/bartosz-zalewski",
+        "method": "preview_navigate",
+        "reserved_at": "2026-10-31T19:21:35Z",
+        "status": "completed; opened page; read described in followup browser_reads",
+        "tab_id": "tab_15_02a52303-1e3a-4993-a897-62daeceecefe"
+      },
+      {
+        "url": "https://www.kupbilecik.pl/pl/comments/2441/bartosz-zalewski-stand-up",
+        "method": "preview_navigate via event archive link",
+        "reserved_at": "2026-10-31T19:22:03Z",
+        "status": "completed; opened page; read described in followup browser_reads",
+        "tab_id": "tab_15_02a52303-1e3a-4993-a897-62daeceecefe"
+      },
+      {
+        "url": "https://www.kupbilecik.pl/pl/comments/2441/bartosz-zalewski-stand-up?page_comments=36",
+        "method": "preview_navigate; archive pagination link",
+        "reserved_at": "2026-10-31T19:22:45Z",
+        "status": "completed",
+        "tab_id": "tab_15_02a52303-1e3a-4993-a897-62daeceecefe"
+      },
+      {
+        "url": "https://www.kupbilecik.pl/pl/comments/2441/bartosz-zalewski-stand-up?page_comments=25",
+        "method": "preview_navigate; archive pagination by historical dates",
+        "reserved_at": "2026-10-31T19:23:10Z",
+        "status": "completed",
+        "tab_id": "tab_15_02a52303-1e3a-4993-a897-62daeceecefe"
+      },
+      {
+        "url": "https://www.kupbilecik.pl/pl/comments/2441/bartosz-zalewski-stand-up?page_comments=30",
+        "method": "preview_navigate; date-range narrowing",
+        "reserved_at": "2026-10-31T19:23:45Z",
+        "status": "completed",
+        "tab_id": "tab_15_02a52303-1e3a-4993-a897-62daeceecefe"
+      },
+      {
+        "url": "https://www.kupbilecik.pl/pl/comments/2441/bartosz-zalewski-stand-up?page_comments=31",
+        "method": "preview_navigate; date-range narrowing",
+        "reserved_at": "2026-10-31T19:24:10Z",
+        "status": "completed",
+        "tab_id": "tab_15_02a52303-1e3a-4993-a897-62daeceecefe"
+      },
+      {
+        "url": "https://www.kupbilecik.pl/pl/comments/2441/bartosz-zalewski-stand-up?page_comments=32",
+        "method": "preview_navigate; date-range narrowing",
+        "reserved_at": "2026-10-31T19:24:35Z",
+        "status": "completed",
+        "tab_id": "tab_15_02a52303-1e3a-4993-a897-62daeceecefe"
+      },
+      {
+        "url": "https://www.kupbilecik.pl/pl/event/51093/krakow/bartosz-zalewski",
+        "method": "preview_navigate; verify review event context",
+        "reserved_at": "2026-10-31T19:25:20Z",
+        "status": "completed",
+        "tab_id": "tab_15_02a52303-1e3a-4993-a897-62daeceecefe"
+      }
+    ],
+    "browser_reads": [
+      {
+        "url": "https://wykop.pl/link/4757763/abelard-giza-numer-3-2019/strona/3",
+        "operation": "preview_evaluate document.body.innerText",
+        "status": "page shell/pagination visible, no rendered comments"
+      },
+      {
+        "url": "https://wykop.pl/link/4757763/abelard-giza-numer-3-2019/strona/4",
+        "operation": "preview_evaluate document.body.innerText",
+        "status": "page shell/pagination visible, no rendered comments"
+      },
+      {
+        "url": "https://wykop.pl/link/4757763/abelard-giza-numer-3-2019/strona/2",
+        "operation": "preview_evaluate document.body.innerText",
+        "status": "page shell/pagination visible, no rendered comments"
+      },
+      {
+        "url": "https://wykop.pl/link/4757763/abelard-giza-numer-3-2019/strona/1",
+        "operation": "preview_evaluate document.body.innerText",
+        "status": "comment shell and pagination visible; no rendered comments"
+      },
+      {
+        "url": "https://www.kupbilecik.pl/pl/event/51093/krakow/bartosz-zalewski",
+        "operation": "preview_evaluate anchor hrefs",
+        "status": "found performer archive https://www.kupbilecik.pl/pl/comments/2441/bartosz-zalewski-stand-up; event is 2020-10-12"
+      },
+      {
+        "url": "https://www.kupbilecik.pl/pl/comments/2441/bartosz-zalewski-stand-up",
+        "operation": "preview_evaluate document.body.innerText",
+        "status": "archive page 1 full comments rendered, newest 2026-08 to 2026-10; 879 comments, 36 pages"
+      },
+      {
+        "url": "https://www.kupbilecik.pl/pl/comments/2441/bartosz-zalewski-stand-up?page_comments=32",
+        "operation": "preview_evaluate document.body.innerText",
+        "status": "complete Wicia review visible; event date/title shown; exact text recorded as candidate src_cov_wpieta_004"
+      },
+      {
+        "url": "https://www.kupbilecik.pl/pl/event/51093/krakow/bartosz-zalewski",
+        "operation": "preview_evaluate document.body.innerText",
+        "status": "event title/description directly identifies Stand-up: Wojtek Pięta / Bartosz Zalewski; identifies focal performer in review event context"
+      }
+    ],
+    "candidates": [
+      {
+        "schema_version": 2,
+        "candidate_id": "src_cov_wpieta_004",
+        "run_id": "20261031-coverage-wojtek-pieta",
+        "target_performer_ids": [
+          "wojtek-pieta",
+          "bartosz-zalewski"
+        ],
+        "site": "kupbilecik.pl",
+        "url": "https://www.kupbilecik.pl/pl/comments/2441/bartosz-zalewski-stand-up?page_comments=32",
+        "retrieved_at": "2026-10-31T19:23:33Z",
+        "published_at": "2020-10-16",
+        "author_hint": "Wicia",
+        "author_key": null,
+        "excerpt": "Mi najbardziej do gustu przypadł abstrakcyjny i odjechany humor Bartka. W przypadku Wojtka trochę mniej - takie mam odczucie.",
+        "language": "pl",
+        "collector": {
+          "provider": "OpenAI",
+          "model": "gpt-6-luna",
+          "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+        },
+        "context": [
+          {
+            "role": "parent",
+            "url": "https://www.kupbilecik.pl/pl/event/51093/krakow/bartosz-zalewski",
+            "author_hint": null,
+            "author_key": null,
+            "excerpt": "Stand-up: Wojtek Pięta / Bartosz Zalewski"
+          }
+        ]
+      }
+    ],
+    "dispositions": [
+      {
+        "route": "Wykop lead https://wykop.pl/link/4757763/abelard-giza-numer-3-2019",
+        "status": "pages 1, 3, 4, 5 navigated and read; all render shell only with pagination, no comments. Predecessor read base page and page 2. Lead remains unverified/quarantined; no claim of exhaustion beyond visible pages."
+      },
+      {
+        "route": "Wicia KupBilecik event 51093",
+        "status": "recovered full authored post from Bartosz Zalewski performer comment archive page 32; context independently matched on event detail. Not conflated with Wykop igns lead."
+      },
+      {
+        "route": "Dominik001 missing-event identity route",
+        "status": "not pursued; Wicia route yielded verified full post and context within allowance; Filip identity remains unresolved in existing 001."
+      }
+    ],
+    "candidate_proofs": [
+      {
+        "candidate_id": "src_cov_wpieta_004",
+        "full_author_post": "Mi najbardziej do gustu przypadł abstrakcyjny i odjechany humor Bartka. W przypadku Wojtka trochę mniej - takie mam odczucie.",
+        "url": "https://www.kupbilecik.pl/pl/comments/2441/bartosz-zalewski-stand-up?page_comments=32",
+        "author": "Wicia",
+        "published_at": "2020-10-16",
+        "locator": "Bartosz Zalewski comment archive page_comments=32; review under event “Bartosz Zalewski - Stand-Up”, Kraków, 12 października 2020 o godz. 20:30",
+        "source_context": {
+          "url": "https://www.kupbilecik.pl/pl/event/51093/krakow/bartosz-zalewski",
+          "exact_excerpt": "Stand-up: Wojtek Pięta / Bartosz Zalewski",
+          "interpretation": "Event page title/description ties Wojtek Pięta to this event. Author prefers Bartosz’s humor and states Wojtek appealed less; retain mixed/negative comparison without forcing a positive co-preference."
+        },
+        "retrieved_at": "2026-10-31T19:23:33Z"
+      }
+    ],
+    "remaining": {
+      "individual_queries": 0,
+      "open_navigation_attempts": 3,
+      "verified_candidates": 12
+    },
+    "stop_reason": "Recovered one full review with event-specific context. Wykop pagination 1–5 rendered shell only; no further attempts warranted after route reads, and the second lead is closed as verified. Unused original allowance retained: no new searches; remaining browser/candidate allowance reported from attempt arrays.",
+    "retrieved_at_clock_read": "2026-10-31T19:23:33Z"
+  },
+  "followup_counts_derived": {
+    "individual_queries": 24,
+    "open_navigation_attempts": 21,
+    "verified_candidates": 4
+  }
+}

@@ -1,0 +1,264 @@
+{
+  "Surprises": [
+    "The rich HrAbi & Wojtek Kamiński archive produced multiple explicit reviews of Kamiński, but HrAbi is not a frozen performer and no individual HrAbi member was identified in the frozen catalog; these records cannot support a frozen-peer edge.",
+    "The only verified Kamiński–frozen-peer co-appraisal encountered was Kamil praising Radek Drożdż in a 2024 KupBilecik post already stored as batch-09 src_b09a_001; it was not duplicated."
+  ],
+  "run_id": "20261031-coverage-wojciech-kaminski",
+  "target": "wojciech-kaminski",
+  "rank": 81,
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+  },
+  "limits": {
+    "queries": 24,
+    "open_navigation_attempts": 24,
+    "verified_candidates": 16
+  },
+  "attempts": {
+    "queries": [
+      {
+        "query": "\"Wojciech Kamiński\" KupBilecik opinie stand-up recenzje",
+        "status": "completed",
+        "result": "Target archive discovery; later read full page with 12 reviews."
+      },
+      {
+        "query": "\"Wojtek Kamiński\" \"hrAbi\" \"komentarze\" KupBilecik",
+        "status": "completed",
+        "result": "Mixed-lineup review archive discovery; later read pages 1 and 2."
+      },
+      {
+        "query": "\"Wojciech Kamiński\" \"KupBilet\" opinie",
+        "status": "completed",
+        "result": "Search returned irrelevant Blues.pl material; no KupBilet fan page located."
+      },
+      {
+        "query": "\"Wojtek Kamiński\" stand-up \"bardzo\" opinie forum",
+        "status": "completed",
+        "result": "Gazeta results were namesake noise (politician and organist/workshop)."
+      },
+      {
+        "query": "\"Wojtek Kamiński\" \"Rafał Sumowski\" występ",
+        "status": "completed",
+        "result": "Only separate current performer listings, not a shared event/appraisal."
+      },
+      {
+        "query": "\"Wojtek Kamiński\" \"Radek Drożdż\" opinie stand-up",
+        "status": "completed",
+        "result": "Only previously stored Kamil/Radek review; no second distinct post."
+      },
+      {
+        "query": "site:forum.gazeta.pl \"Wojtek Kamiński\" stand-up",
+        "status": "completed",
+        "result": "Namesake/forum noise only."
+      },
+      {
+        "query": "\"Wojtek Kamiński\" \"Upadek\" recenzja blog stand-up",
+        "status": "completed",
+        "result": "Found official Bogatynia culture-center event report, not fan-authored evidence; excluded."
+      }
+    ],
+    "opens_navigation": [
+      {
+        "kind": "preview_open",
+        "url": null,
+        "result": "Opened one own reusable preview tab successfully.",
+        "status": "completed"
+      },
+      {
+        "kind": "preview_navigate",
+        "url": "https://www.kupbilecik.pl/pl/db/12319/stand-up-wojtek-kaminski?kb_ref=event&kb_ref_id=state_past",
+        "result": "Target archive loaded; snapshot failed twice, evaluate read succeeded.",
+        "status": "completed"
+      },
+      {
+        "kind": "web_open_full_url",
+        "url": "https://www.kupbilecik.pl/pl/db/12319/stand-up-wojtek-kaminski?kb_ref=event&kb_ref_id=state_past",
+        "result": "Cache miss after required full URL attempt; preview had already been used.",
+        "status": "failed_cache_miss"
+      },
+      {
+        "kind": "preview_navigate",
+        "url": "https://www.kupbilecik.pl/pl/comments/13/kabaret-hrabi-wojtek-kaminski?page_comments=1",
+        "result": "Page 1 loaded and complete visible text read.",
+        "status": "completed"
+      },
+      {
+        "kind": "preview_navigate",
+        "url": "https://www.kupbilecik.pl/pl/comments/13/kabaret-hrabi-wojtek-kaminski?page_comments=2",
+        "result": "Page 2 loaded and complete visible text read.",
+        "status": "completed"
+      }
+    ],
+    "browser_reads": [
+      {
+        "kind": "preview_status",
+        "result": "available:false, no initial tab; followed with preview_open as required."
+      },
+      {
+        "kind": "preview_snapshot",
+        "attempts": 2,
+        "result": "Both failed with raw error: Preview automation snapshot timed out after 15000ms."
+      },
+      {
+        "kind": "preview_evaluate",
+        "url": "https://www.kupbilecik.pl/pl/db/12319/stand-up-wojtek-kaminski?kb_ref=event&kb_ref_id=state_past",
+        "result": "Read all 12 complete performer-specific comments and event labels."
+      },
+      {
+        "kind": "preview_evaluate",
+        "url": "https://www.kupbilecik.pl/pl/comments/13/kabaret-hrabi-wojtek-kaminski?page_comments=1",
+        "result": "Read full visible mixed-lineup comments page 1, dates and event locators."
+      },
+      {
+        "kind": "preview_evaluate",
+        "url": "https://www.kupbilecik.pl/pl/comments/13/kabaret-hrabi-wojtek-kaminski?page_comments=2",
+        "result": "Read full visible mixed-lineup comments page 2, including caveats and explicit Kamiński praise."
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "candidate_id": "src_cov_wkaminski_001",
+      "author": "Tadeusz",
+      "published_at": "2026-06-17",
+      "url": "https://www.kupbilecik.pl/pl/comments/13/kabaret-hrabi-wojtek-kaminski?page_comments=1",
+      "locator": "Racibórz, 15 June 2026 19:00; comment dated 2026-06-17",
+      "identity_proof": "Event page title names Kabaret hrAbi & Wojtek Kamiński; author explicitly says transfer Wojtka was very successful. No HrAbi individual has a frozen ID.",
+      "full_author_text": "Znakomity występ, inteligentny, zabawny podany z niesłychaną kulturą. Panowie w nowej rzeczywistości naprawdę dali czadu. Polecamy każdemu, kto jeszcze nie widział. Pozdrawiamy ekipę HrAbi (bardzo udany transfer Wojtka)"
+    },
+    {
+      "candidate_id": "src_cov_wkaminski_002",
+      "author": "Maria",
+      "published_at": "2026-05-29",
+      "url": "https://www.kupbilecik.pl/pl/comments/13/kabaret-hrabi-wojtek-kaminski?page_comments=1",
+      "locator": "Łódź, 27 May 2026 17:00; comment dated 2026-05-29",
+      "identity_proof": "Event page title names both the group and Wojtek Kamiński; author explicitly names Wojtek and praises his fit in that lineup. No HrAbi individual has a frozen ID.",
+      "full_author_text": "Wspaniały nowy program. Wszystkich zachęcam do obejrzenia, Nie będziecie zawiedzeni. Wojtek Kamiński jakby zawsze z hrAbiami występował. MD"
+    },
+    {
+      "candidate_id": "src_cov_wkaminski_003",
+      "author": "Andrzej",
+      "published_at": "2026-05-29",
+      "url": "https://www.kupbilecik.pl/pl/comments/13/kabaret-hrabi-wojtek-kaminski?page_comments=1",
+      "locator": "Łódź, 27 May 2026 17:00; comment dated 2026-05-29",
+      "identity_proof": "Event page title names both acts; author explicitly names Wojciech Kamiński and endorses the transfer. No HrAbi individual has a frozen ID.",
+      "full_author_text": "Super występ!! Świetny humor kabaretu Hrabi jak zawsze.Transfer do kabaretu Wojciecha Kamińskiego to dobra decyzja . Polecam!!!!"
+    },
+    {
+      "candidate_id": "src_cov_wkaminski_004",
+      "author": "Kamila",
+      "published_at": "2026-02-12",
+      "url": "https://www.kupbilecik.pl/pl/comments/13/kabaret-hrabi-wojtek-kaminski?page_comments=2",
+      "locator": "Zielona Góra, 10 February 2026 17:30; comment dated 2026-02-12",
+      "identity_proof": "Event page title names Kabaret hrAbi & Wojtek Kamiński and the author explicitly praises Wojtek Kamiński.",
+      "full_author_text": "Kabaret hrAbi powrócił w wielkiej formie. Chłopaki dali radę. Wojtek Kamiński rewelacja. Dużo śmiechu i wzruszenia. Dobrze, że wrócili."
+    },
+    {
+      "candidate_id": "src_cov_wkaminski_005",
+      "author": "Ewa",
+      "published_at": "2026-02-07",
+      "url": "https://www.kupbilecik.pl/pl/comments/13/kabaret-hrabi-wojtek-kaminski?page_comments=2",
+      "locator": "Toruń, 06 February 2026 20:30; comment dated 2026-02-07",
+      "identity_proof": "Event page title names Kabaret hrAbi & Wojtek Kamiński and author explicitly names Wojciech Kamiński, praising his voice and acting craft; full memorial/emotional caveat retained.",
+      "full_author_text": "Wspaniały występ. Nie ma skali oceny na taki poziom mistrzostwa. Owacje na stojąco na poczatku i na końcu programu, to nie przypadek. Uszanowanie pamięci Joanny nie bylo dla mnie bez znaczenia. To ten element empatii zespołu, który spowodował, że łzy napływały do oczu. Wojciech Kamiński ze swoim mega mocnym głosem, po raz kolejny pokazał swoǰ niesamowity kunszt aktora kabaretowego. Wielkie brawa CHŁOPAKI, za program i TERAPIĘ dla wszystkich."
+    },
+    {
+      "candidate_id": "src_cov_wkaminski_006",
+      "author": "Krzysztof",
+      "published_at": "2026-02-10",
+      "url": "https://www.kupbilecik.pl/pl/comments/13/kabaret-hrabi-wojtek-kaminski?page_comments=2",
+      "locator": "Dębica, 09 February 2026 19:00; comment dated 2026-02-10",
+      "identity_proof": "Event page title names Kabaret hrAbi & Wojtek Kamiński; author explicitly identifies P. Wojtek and praises his voice. Full inability-to-enjoy caveat retained.",
+      "full_author_text": "Występ niezwykle wysokiej jakości,. Musieli się Panowie nieźle napracować, stąd takie efekty! Niestety nie umiałem się na tyle &quot;puścić&quot; żeby w pełni upajać się tym wieczorem. Co chwilę jednak spoglądałem w kierunku pianina i następowała wojna łez z uśmiechem. Głosy dobrane fantastycznie - piękne harmonijne brzmienie, a P. Wojtek - chylę czoła za te wysokie przeczyste tony. Improwizacja i wzajemne podpuszczanie się jak zawsze perfekt. No cóż Panowie trzeba żyć i funkcjonować dalej. Życzę dużo sił"
+    }
+  ],
+  "dedup": {
+    "prior_graph_manifests": [
+      {
+        "path": "tasks/standupers-graph/graph/coverage-pilot-reviewed/graph.json",
+        "source_count": 72,
+        "matching_canonical_source": "ev_b09_a_001 → https://www.kupbilecik.pl/en/comments/12319/stand-up-wojtek-kaminski"
+      },
+      {
+        "path": "tasks/standupers-graph/graph/coverage-karol-reviewed/graph.json",
+        "source_count": 72,
+        "matching_canonical_source": "ev_b09_a_001 → https://www.kupbilecik.pl/en/comments/12319/stand-up-wojtek-kaminski"
+      }
+    ],
+    "prior_posts": [
+      {
+        "author": "Kamil",
+        "published_at": "2024-10-15",
+        "event": "Łódź, 13 October 2024; Stand-Up: Wojtek Kamiński",
+        "url": "https://www.kupbilecik.pl/en/comments/12319/stand-up-wojtek-kaminski",
+        "prior_candidate_id": "src_b09a_001",
+        "decision": "excluded; same post appears in batch09 candidates, initial and merged, and both reviewed graph manifests."
+      }
+    ],
+    "checked_prior_files": "Searched all stored evidence JSONL excerpts and target_performer_ids for Kamiński references; only the prior Kamil post was found."
+  },
+  "source_families": [
+    {
+      "family": "KupBilecik performer-specific stand-up archive",
+      "coverage": "read",
+      "detail": "One complete archive page; 12 distinct comments spanning 2024-09 through 2026-01. Only Kamil named Radek Drożdż in addition to Kamiński; exact post already stored, not duplicated."
+    },
+    {
+      "family": "KupBilecik mixed-lineup Kabaret hrAbi & Wojtek Kamiński archive",
+      "coverage": "read",
+      "detail": "Two full date slices (pages 1 and 2), covering comments from 2026-01 through 2026-10. Six new Kamiński-specific individual posts retained; no second frozen performer could be resolved in this lineup."
+    },
+    {
+      "family": "KupBilet / broad web search",
+      "coverage": "search_only",
+      "detail": "No relevant public fan review located."
+    },
+    {
+      "family": "Gazeta public forums",
+      "coverage": "search_only",
+      "detail": "Name collision noise (politician and organist) only; no stand-up fan evidence."
+    },
+    {
+      "family": "Independent local venue/blog route",
+      "coverage": "search_only",
+      "detail": "Found an official culture-center event report, not fan-authored evidence; excluded."
+    }
+  ],
+  "access_gaps": [
+    {
+      "url": "https://www.kupbilecik.pl/pl/db/12319/stand-up-wojtek-kaminski?kb_ref=event&kb_ref_id=state_past",
+      "issue": "Preview snapshot timed out twice; raw error preserved above. Preview evaluate successfully read the page. Full-URL web open separately returned Cache miss."
+    }
+  ],
+  "stop_reason": "Meaningful source-route completion: full target performer review archive (12 posts across at least two time slices), two full mixed-lineup review archive slices, and independent KupBilet/forum/blog searches completed. The only verified Kamiński–frozen-peer co-appraisal found was the prior Kamil/Radek post; it was deduplicated. New records are person-specific preference/evaluation evidence only, with no invented peer links.",
+  "derived_totals": {
+    "queries": 8,
+    "queries_remaining": 16,
+    "open_navigation_attempts": 5,
+    "open_navigation_attempts_remaining": 19,
+    "verified_candidates": 6,
+    "verified_candidates_remaining": 10
+  },
+  "graph_context": {
+    "coverage-pilot-reviewed": {
+      "positive_linked": 36,
+      "largest_component": 28
+    },
+    "coverage-karol-reviewed": {
+      "positive_linked": 37,
+      "largest_component": 29
+    },
+    "source_manifest_counts": {
+      "coverage-pilot-reviewed": 72,
+      "coverage-karol-reviewed": 72
+    }
+  },
+  "browser_tab_close": {
+    "tab_id": "tab_16_02a52303-1e3a-4993-a897-62daeceecefe",
+    "result": "closed successfully"
+  },
+  "ledger_updated_at": "2026-10-31 19:29:24+00:00",
+  "timestamp_note": "Candidate retrieved_at values use the actual clock. Reservation records were persisted before each call; per-attempt timestamps were not retained in this final ledger reconstruction."
+}

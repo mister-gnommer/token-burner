@@ -1,0 +1,25 @@
+{
+  "raw_candidates": 1,
+  "canonical_candidates": 1,
+  "raw_preserved": true,
+  "duplicate_same_source_author_found": false,
+  "changes": {
+    "site": [
+      "Filmweb",
+      "filmweb.pl"
+    ],
+    "published_at": [
+      "2012-12-31T12:13:51",
+      "2012-12-31"
+    ],
+    "author_keys": "Recomputed source/context source-local hashes for canonicalhostname"
+  },
+  "source_and_context_text_unchanged": true,
+  "budget_original_B": {
+    "queries": 12,
+    "opens": 8,
+    "candidates": 1,
+    "remaining_queries": 0,
+    "remaining_opens": 4
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "run_id": "20261101-coverage-tomek-kolecki",
+  "raw": "evidence/coverage-expansion/tomek-kolecki.source-candidates.jsonl",
+  "canonical": "evidence/coverage-expansion/tomek-kolecki.source-candidates.canonical.jsonl",
+  "source_count": 2,
+  "prior_canonical_rows_checked": 130,
+  "duplicates": 0,
+  "source_fidelity_changes": [
+    {
+      "candidate_id": "src_cov_tkolecki_001",
+      "raw_excerpt_sha256": "f9614efe572464812005fe18d2c6bc7b4c78dcead70f456c943a276a0306af07",
+      "author_body_sha256": "d2dcb3a48b2d6dbed22f9b05c0d37ee86e290df58e0b8d1afe5d4b2b41a52246",
+      "change": "Separated date/byline/title/event framing from author excerpt; copied exact author body and verified parent context; raw untouched."
+    },
+    {
+      "candidate_id": "src_cov_tkolecki_002",
+      "raw_excerpt_sha256": "835a522566d23c572deb20674f73ebccdc890420cce240c6da48478468c7a099",
+      "author_body_sha256": "afd3b576b5657c9ef94647dfd67901d64c44c37fd78475e219253e5560084b1f",
+      "change": "Separated date/byline/title/event framing from author excerpt; copied exact author body and verified parent context; raw untouched."
+    }
+  ],
+  "source_proof": "collection.recovery.source_attempts[1] archive fullDOM and[2] exact event fullDOM, structuredContent.value.text",
+  "source_author_keys": "Derived using canonical site and source-local author hints; two labels, not verified globalpeople.",
+  "identity_context": "Exact Bielsko-Biała2026-08-24 event names allfourperformers, supports contextual nickname/first-name adjudication only.",
+  "historical_contradiction_notice": "Current reviewed2019Maciej post negatively appraises Kołecki while endorsing Zalewski; current ANYopposition rule may keep their pair contested. Do not alter preferences/scoring to increase coverage.",
+  "queries_added": 0,
+  "navigation_attempts_added": 0,
+  "created_at": "2026-11-01T16:55:14.677200Z"
+}

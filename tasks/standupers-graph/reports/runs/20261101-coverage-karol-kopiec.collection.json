@@ -1,0 +1,199 @@
+{
+  "surprises": [
+    "The verified co-favorite passage is from professional comedian Mariusz Kałamaga in an interview, so it is a personal appraisal but not clearly an ordinary audience fan opinion; extraction/review should decide whether it fits fan-preference input."
+  ],
+  "run_id": "20261101-coverage-karol-kopiec",
+  "target_performer_id": "karol-kopiec",
+  "rank": 86,
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+  },
+  "budget": {
+    "queries_cap": 24,
+    "page_attempts_cap": 24,
+    "verified_candidate_cap": 16,
+    "queries_used": 24,
+    "page_attempts_used": 6,
+    "verified_candidates": 1,
+    "queries_unused": 0,
+    "page_attempts_unused": 18,
+    "candidate_slots_unused": 15,
+    "queries_reserved": [
+      "site:reddit.com/r/Polska \"Karol Kopiec\" stand-up",
+      "site:filmweb.pl \"Karol Kopiec\" stand-up opinie",
+      "site:wykop.pl \"Karol Kopiec\" komik OR stand-up",
+      "\"Karol Kopiec\" \"mój ulubiony\" stand-up forum",
+      "site:wykop.pl \"Karol Kopiec\" \"polecam\"",
+      "site:wykop.pl \"Karol Kopiec\" \"uwielbiam\" OR \"świetny\"",
+      "site:reddit.com \"Karol Kopiec\" komedia OR standup OR stand-up -Chodkiewicz",
+      "site:filmweb.pl/forum \"Karol Kopiec\" komik",
+      "\"Karol Kopiec\" \"najlepszy stand-up\" widzowie forum",
+      "\"Karol Kopiec\" \"ulubiony komik\"",
+      "\"Karol Kopiec\" polecacie komicy dyskusja",
+      "Karol Kopiec stand-up fani forum Polska",
+      "site:forum.gazeta.pl \"Karol Kopiec\" stand-up",
+      "site:gry-online.pl \"Karol Kopiec\" stand-up forum",
+      "site:forum.wirtualnemedia.pl \"Karol Kopiec\" komik",
+      "\"Karol Kopiec\" blog \"polecam\" stand-up",
+      "\"Karol Kopiec\" \"Michał Leja\" opinie widzów forum",
+      "\"Karol Kopiec\" \"Abelard Giza\" polecam forum opinia",
+      "\"Karol Kopiec\" \"Antoni Syrek-Dąbrowski\" \"występ\" widziałem",
+      "\"Karol Kopiec\" \"Kacper Ruciński\" \"mój\" stand-up opinia",
+      "site:reddit.com/r/Polska \"Karol Kopiec\" \"Michał Kempa\"",
+      "site:wykop.pl \"Karol Kopiec\" \"Michał Kempa\"",
+      "site:forum.gazeta.pl \"Karol Kopiec\" stand-up humor",
+      "\"Karol Kopiec\" stand-up recenzja blog widziałem występ"
+    ],
+    "page_attempts_reserved": [
+      "https://www.gry-online.pl/forum/polski-stand-up-wasze-zdanie/zbde8721",
+      "https://www.kupbilecik.pl/imprezy/194392/Gdynia/Karol%2BKopiec/",
+      "https://ultramaryna.home.pl/tekst.php?id=1184",
+      "https://ultramaryna.home.pl/tekst.php?id=1184 (web.open continuation at line 80)",
+      "https://verbumnapolu.wordpress.com/tag/smkkpm/",
+      "https://verbumnapolu.wordpress.com/tag/smkkpm/ -> click post 31 (Wakacyjna PAKA z Pompą [reportaż])"
+    ]
+  },
+  "attempts": [
+    {
+      "type": "search_batch",
+      "queries": [
+        "site:reddit.com/r/Polska \"Karol Kopiec\" stand-up",
+        "site:filmweb.pl \"Karol Kopiec\" stand-up opinie",
+        "site:wykop.pl \"Karol Kopiec\" komik OR stand-up",
+        "\"Karol Kopiec\" \"mój ulubiony\" stand-up forum"
+      ],
+      "status": "completed",
+      "result": "Filmweb returned a group-program page with aggregate ratings, Wykop a tag page with a Karol clip but no authored appreciation; no qualifying post verified. Reddit query had no relevant result. Search-only/editorial material excluded."
+    },
+    {
+      "type": "search_batch",
+      "queries": [
+        "site:wykop.pl \"Karol Kopiec\" \"polecam\"",
+        "site:wykop.pl \"Karol Kopiec\" \"uwielbiam\" OR \"świetny\"",
+        "site:reddit.com \"Karol Kopiec\" komedia OR standup OR stand-up -Chodkiewicz",
+        "site:filmweb.pl/forum \"Karol Kopiec\" komik"
+      ],
+      "status": "completed",
+      "result": "Wykop exact-phrase searches were not surfaced in result text; Reddit returned no exact relevant fan discussion. Filmweb returned profile/filmography pages and aggregate work ratings, not author-attributed personal performer preferences. No candidates."
+    },
+    {
+      "type": "search_batch",
+      "queries": [
+        "\"Karol Kopiec\" \"najlepszy stand-up\" widzowie forum",
+        "\"Karol Kopiec\" \"ulubiony komik\"",
+        "\"Karol Kopiec\" polecacie komicy dyskusja",
+        "Karol Kopiec stand-up fani forum Polska"
+      ],
+      "status": "completed",
+      "result": "No relevant exact Karol fan thread in surfaced Reddit/Filmweb/Wykop results; Filmweb returned profile/filmography and aggregate ratings, not author-attributed preference. Wykop exact-phrase searches did not surface qualifying authored comments."
+    },
+    {
+      "type": "search_batch",
+      "queries": [
+        "site:forum.gazeta.pl \"Karol Kopiec\" stand-up",
+        "site:gry-online.pl \"Karol Kopiec\" stand-up forum",
+        "site:forum.wirtualnemedia.pl \"Karol Kopiec\" komik",
+        "\"Karol Kopiec\" blog \"polecam\" stand-up"
+      ],
+      "status": "completed",
+      "result": "No qualifying authored fan posts in the additional favorite/ulubiony/forum searches; results were irrelevant or search-only."
+    },
+    {
+      "type": "open",
+      "url": "https://www.gry-online.pl/forum/polski-stand-up-wasze-zdanie/zbde8721",
+      "method": "web.open",
+      "status": "completed",
+      "result": "GRYOnline full thread verified: Lutz wrote “Niestety nie dalem rady, jedyny ktory jeszcze jakos sie prezentowal to bodajze karol kopiec. wiekszosc jednak to tragedia, chyba ze nie moja grupa docelowa.” Locator: topic “Polski stand up - wasze zdanie”, post 10, Lutz, 2018-05-14 20:25. Separate response by zanonimizowany1246205 praises Andrzej Poniedzielski, but must not be merged with Lutz; Poniedzielski is not a frozen peer. No qualifying co-appreciation. KupBilecik event page surfaced solo event comments and programme promo only; generic praise applied to Karol’s program and no frozen peer; excluded."
+    },
+    {
+      "type": "open",
+      "url": "https://www.kupbilecik.pl/imprezy/194392/Gdynia/Karol%2BKopiec/",
+      "method": "web.open",
+      "status": "completed",
+      "result": "GRYOnline full thread verified: Lutz wrote “Niestety nie dalem rady, jedyny ktory jeszcze jakos sie prezentowal to bodajze karol kopiec. wiekszosc jednak to tragedia, chyba ze nie moja grupa docelowa.” Locator: topic “Polski stand up - wasze zdanie”, post 10, Lutz, 2018-05-14 20:25. Separate response by zanonimizowany1246205 praises Andrzej Poniedzielski, but must not be merged with Lutz; Poniedzielski is not a frozen peer. No qualifying co-appreciation. KupBilecik event page surfaced solo event comments and programme promo only; generic praise applied to Karol’s program and no frozen peer; excluded."
+    },
+    {
+      "type": "search_batch",
+      "queries": [
+        "\"Karol Kopiec\" \"Michał Leja\" opinie widzów forum",
+        "\"Karol Kopiec\" \"Abelard Giza\" polecam forum opinia",
+        "\"Karol Kopiec\" \"Antoni Syrek-Dąbrowski\" \"występ\" widziałem",
+        "\"Karol Kopiec\" \"Kacper Ruciński\" \"mój\" stand-up opinia"
+      ],
+      "status": "completed"
+    },
+    {
+      "type": "open",
+      "url": "https://ultramaryna.home.pl/tekst.php?id=1184",
+      "method": "web.open",
+      "status": "completed",
+      "result": "Ultramaryna interview article was found and fully opened. It contains Mariusz Kałamaga answering a question about being impressed by performers; he says he has several personal favorites and names Karol Kopiec and Michał Kempa together as performers with more absurd humor. This is source-local personal-favorites framing, not promotional copy. Source shows “ultramaryna, luty 2017”; publication day unknown."
+    },
+    {
+      "type": "open",
+      "url": "https://ultramaryna.home.pl/tekst.php?id=1184",
+      "method": "web.open continuation at line 80",
+      "status": "completed",
+      "result": "Verified article footer attribution and publication month: “tekst: Marta Nendza” and “ultramaryna, luty 2017”; lines 64–65. Read answer lines 52–55."
+    },
+    {
+      "type": "search_batch",
+      "queries": [
+        "site:reddit.com/r/Polska \"Karol Kopiec\" \"Michał Kempa\"",
+        "site:wykop.pl \"Karol Kopiec\" \"Michał Kempa\"",
+        "site:forum.gazeta.pl \"Karol Kopiec\" stand-up humor",
+        "\"Karol Kopiec\" stand-up recenzja blog widziałem występ"
+      ],
+      "status": "completed",
+      "result": "Reddit and Wykop pair searches did not yield independent audience accounts. Forum/Gazeta searches irrelevant. A Verbum Na Polu blog result by Aneta contains a first-person account praising both Rafał Pacześ and Karol Kopiec; opened next to verify full text. Search also surfaced KupBilecik source previously known and was not reopened."
+    },
+    {
+      "type": "open",
+      "url": "https://verbumnapolu.wordpress.com/tag/smkkpm/",
+      "method": "web.open",
+      "status": "completed",
+      "result": "Tag page opened and showed related posts; no relevant complete Aneta post on the opened page. A direct post link was separately clicked and cache-missed."
+    },
+    {
+      "type": "click",
+      "url": "https://verbumnapolu.wordpress.com/tag/smkkpm/",
+      "locator": "link 31, Wakacyjna PAKA z Pompą [reportaż]",
+      "status": "failed: cache miss",
+      "result": "Exact article URL returned a cache miss. Kept the Aneta passage as a search-only lead; no full author post retrieved, no candidate admitted."
+    }
+  ],
+  "candidate_urls": [
+    {
+      "candidate_id": "src_cov_kkopiec_001",
+      "url": "https://ultramaryna.home.pl/tekst.php?id=1184",
+      "locator": "Ultramaryna interview “MARIUSZ KAŁAMAGA: Licencja na rozśmieszanie”; answer to question “Zdarzyło się, że czyjś występ cię pozamiatał?”; lines 52–55 in retrieved full page."
+    }
+  ],
+  "coverage": {
+    "karol-kopiec": {
+      "searched": true,
+      "qualifying_candidates": 1,
+      "gap": "One provisional co-favorite candidate with frozen Michał Kempa. No independently verified audience account corroborated the same pair. A potentially relevant Aneta blog appraisal with frozen Rafał Pacześ remains search-only due cache miss."
+    }
+  },
+  "stop_reason": "Stopped at the 24-query cap after a final four-query independent-audience pass. The accessible full interview produced one candidate; one possible independent blog passage remained search-only after the exact article URL cache-missed. Did not use browser preview because its previously reported capacity block had no reported reset.",
+  "family_coverage": {
+    "Reddit": "Two searches; no relevant authored audience discussion surfaced.",
+    "Filmweb": "Profile, filmography and aggregate ratings only; no author-specific personal fan preference.",
+    "Wykop": "Tag/search routes; no qualifying authored co-appreciation surfaced.",
+    "GRYOnline": "Full thread opened. Lutz personally singled out Karol as the only performer who stood out, but named no same-post frozen peer. A separate reply author praised Andrzej Poniedzielski; posts were not merged.",
+    "KupBilecik": "One new event page opened; comments praised Karol’s solo program or event generally and named no co-appreciated frozen peer. Previously reviewed comments URL was not retried.",
+    "Ultramaryna": "Full interview opened and verified; one personal-favorites passage qualified provisionally for Karol Kopiec plus frozen Michał Kempa.",
+    "Verbum Na Polu": "Tag page opened. Search result exposed an Aneta first-person review of Karol Kopiec and Rafał Pacześ; exact article fetch cache-missed, so it remains search-only and is excluded."
+  },
+  "deduplication": {
+    "method": "Checked canonical candidate URL against source paths listed in graph/coverage-krajewski-repaired/graph.json input_manifests only. No match found for the Ultramaryna source. Did not inspect/modify reviewed replacements outside those paths."
+  },
+  "identity_risks": [
+    "Mariusz Kałamaga is the identifiable interviewee/speaker, not necessarily an audience fan; author_key left null.",
+    "Existing Jaro/KupBilecik evidence ev_b09_b_001 remains Karol-positive and Rafał Pacześ unknown: “Skromny, Inteligentny, Zabawny - Karol Kopiec, super program, nieoczywiste puenty Pacześ może się schować !. Już czekam na nowy program na jesieni.” The relative comparison does not infer Pacześ preference. This run did not retry that source.",
+    "GRYOnline author Lutz and the reply about Poniedzielski are different source-local accounts and remain separate."
+  ]
+}

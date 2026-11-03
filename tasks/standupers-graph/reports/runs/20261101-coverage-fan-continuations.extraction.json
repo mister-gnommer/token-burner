@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101-coverage-fan-continuations-extraction",
+  "stage": "extraction",
+  "status": "completed",
+  "extractor": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1"
+  },
+  "runs": [
+    {
+      "run_id": "20261031-coverage-source-first-01-followup",
+      "input": "evidence/coverage-source-first-01-followup/source-candidates.canonical.jsonl",
+      "output": "evidence/coverage-source-first-01-followup/evidence.unreviewed.jsonl",
+      "canonical_ids": [
+        "src_csf01f_003",
+        "src_csf01f_005"
+      ],
+      "extracted": 2,
+      "skipped": 0,
+      "classes": {
+        "style_similarity": 1,
+        "same_user_coendorsement": 1
+      },
+      "notes": "Raw IDs001/002/004/006 are duplicates of older posts and excluded before extraction."
+    },
+    {
+      "run_id": "20261031-coverage-fan-forums-b-followup",
+      "input": "evidence/coverage-fan-forums-b-followup/source-candidates.canonical.jsonl",
+      "output": "evidence/coverage-fan-forums-b-followup/evidence.unreviewed.jsonl",
+      "canonical_ids": [
+        "src_cffb_001"
+      ],
+      "extracted": 1,
+      "skipped": 0,
+      "classes": {
+        "same_user_coendorsement": 1
+      }
+    }
+  ],
+  "counts": {
+    "canonical_inputs": 3,
+    "extracted": 3,
+    "skipped": 0,
+    "unreviewed": 3
+  },
+  "accounting": {
+    "src_csf01f_003": "ev_csf01f_003",
+    "src_csf01f_005": "ev_csf01f_005",
+    "src_cffb_001": "ev_cffb_001"
+  },
+  "source_concentration": {
+    "records_per_source_author": {
+      "fan_ca01b11e0efba0a6": 1,
+      "fan_8257db9ddb686a15": 1,
+      "fan_f31545e8a8c75e3e": 1
+    },
+    "distinct_source_authors": 3
+  },
+  "identity_and_scope_decisions": [
+    "A003: Leja→michal-leja; Borkowski unresolved/null; Szumowski→piotrek-szumowski; Lotek→lukasz-lotek-lodkowski.",
+    "A003 is scoped style similarity among Leja/Borkowski/Szumowski; Lotek remains a mixed evaluative contrast with unknown personal preference.",
+    "A005: Kasie Piasecka→katarzyna-piasecka and Grzegorza Dolniaka→grzegorz-dolniak; both explicitly liked.",
+    "B001: Abelard Giza, Kacper Ruciński and Cezary Pazura resolved; Krzysztof Piasecki, Jachim Presents and Maciej Stuhr retained as null-ID mentions. List interpreted as historical favorites using the direct prompt and separate Stand up heading."
+  ],
+  "review_state": {
+    "status": "unreviewed",
+    "reviewer": null
+  },
+  "surprises": [
+    "The schema is located at data/schemas/evidence-v3.schema.json; the brief’s schemas/ path is absent."
+  ]
+}

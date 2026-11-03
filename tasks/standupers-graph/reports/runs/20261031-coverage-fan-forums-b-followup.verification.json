@@ -1,0 +1,42 @@
+{
+  "run_id": "20261031-coverage-fan-forums-b-followup",
+  "verification_prompt": "verify-evidence-v3",
+  "reviewer": "codex/gpt-6-luna",
+  "surprises": [
+    "The direct favorite prompt asks for favorite cabarets, but the respondent separately labels an individual “Stand up:” list; treat it as historical 2012 stand-up favorites only. Unknown identities may retain positive appraisal without acquiring frozen IDs."
+  ],
+  "counts": {
+    "canonical_inputs": 1,
+    "reviewed_records": 1,
+    "accepted": 1,
+    "uncertain": 0,
+    "rejected": 0,
+    "skipped": 0
+  },
+  "records": [
+    {
+      "candidate_id": "src_cffb_001",
+      "evidence_id": "ev_cffb_001",
+      "decision": "accepted",
+      "class_before": "same_user_coendorsement",
+      "class_after": "same_user_coendorsement",
+      "changes": [
+        "Retained positive historical preference for resolved Abelard Giza, Kacper Ruciński, and Cezary Pazura.",
+        "Retained Krzysztof Piasecki as a positive mention with null identity; not mapped to Katarzyna Piasecka.",
+        "Removed Jachim Presents and Maciej Stuhr as non-frozen/non-individual identities from performer mentions.",
+        "Kept all claims scoped to the author’s 2012 favorites; context does not transfer preferences."
+      ],
+      "limitations": [
+        "Single Filmweb author and one forum source family.",
+        "Historical preference only, not current fandom.",
+        "Only three canonical identities resolved; other list entries do not create graph identities or edges."
+      ]
+    }
+  ],
+  "skips": [],
+  "identity_medium_source_family_limitations": [
+    "Frozen IDs resolved only from full names: Abelard Giza, Kacper Ruciński, Cezary Pazura.",
+    "Krzysztof Piasecki, Jachim Presents, and Maciej Stuhr remain unresolved/out of scope as individual frozen identities.",
+    "One author on Filmweb; no cross-source author identity inference."
+  ]
+}

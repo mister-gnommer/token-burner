@@ -1,0 +1,529 @@
+{
+  "created_at": "2026-10-31T18:33:47.151233Z",
+  "input_graph": "graph/batch-06-catchup/graph.json",
+  "positive_linked_count": 34,
+  "corroborated_linked_count": 10,
+  "largest_positive_component_size": 26,
+  "positive_components": [
+    [
+      "abelard-giza",
+      "antoni-syrek-dabrowski",
+      "bartosz-zalewski",
+      "cezary-jurkiewicz",
+      "cezary-pazura",
+      "cezary-ponttefski",
+      "czarek-sikora",
+      "daniel-midas",
+      "darek-gadowski",
+      "jacek-stramik",
+      "janusz-pietruszka",
+      "jasiek-borkowski",
+      "kacper-rucinski",
+      "karolina-panczyk",
+      "kuba-wu",
+      "lukasz-kowalski",
+      "lukasz-lotek-lodkowski",
+      "marlena-mysza",
+      "mateusz-socha",
+      "michal-leja",
+      "mieszko-minkiewicz",
+      "piotr-zola-szulowski",
+      "piotrek-szumowski",
+      "rafal-paczes",
+      "wiolka-walaszczyk",
+      "wojciech-termos-tremiszewski"
+    ],
+    [
+      "maciej-brudzewski",
+      "pawel-bakteria"
+    ],
+    [
+      "adam-sobaniec",
+      "michal-kutek"
+    ],
+    [
+      "jakub-poczety",
+      "michal-palubski"
+    ],
+    [
+      "tomasz-biskup",
+      "tomek-nowaczyk"
+    ]
+  ],
+  "canonical_candidate_count": 77,
+  "evidence_record_count": 69,
+  "unlinked_count": 66,
+  "unlinked_without_targeted_candidate": 41,
+  "unlinked": [
+    {
+      "id": "mama-na-obrotach",
+      "name": "Mama Na Obrotach (Klaudia Klimczyk)",
+      "rank": 2,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "magda-kubicka",
+      "name": "Magda Kubicka",
+      "rank": 5,
+      "prior_candidate_count": 5
+    },
+    {
+      "id": "olka-szczesniak",
+      "name": "Olka Szczęśniak",
+      "rank": 7,
+      "prior_candidate_count": 3
+    },
+    {
+      "id": "piotr-jelen",
+      "name": "Piotr Jeleń",
+      "rank": 9,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "blazej-krajewski",
+      "name": "Błażej Krajewski",
+      "rank": 11,
+      "prior_candidate_count": 2
+    },
+    {
+      "id": "piotr-latala",
+      "name": "Piotr Latała",
+      "rank": 12,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "pan-li",
+      "name": "Pan Li",
+      "rank": 13,
+      "prior_candidate_count": 1
+    },
+    {
+      "id": "tomasz-boras-borkowski",
+      "name": "Tomasz Boras Borkowski",
+      "rank": 17,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "karol-modzelewski",
+      "name": "Karol Modzelewski",
+      "rank": 19,
+      "prior_candidate_count": 5
+    },
+    {
+      "id": "michal-paszczyk",
+      "name": "Michał Paszczyk",
+      "rank": 20,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "grzegorz-dolniak",
+      "name": "Grzegorz Dolniak",
+      "rank": 21,
+      "prior_candidate_count": 2
+    },
+    {
+      "id": "adam-van-bendler",
+      "name": "Adam Van Bendler",
+      "rank": 22,
+      "prior_candidate_count": 2
+    },
+    {
+      "id": "sylwia-wiszowata",
+      "name": "Sylwia Wiszowata",
+      "rank": 23,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "rafal-rutkowski",
+      "name": "Rafał Rutkowski",
+      "rank": 25,
+      "prior_candidate_count": 2
+    },
+    {
+      "id": "pawel-chalupka",
+      "name": "Paweł Chałupka",
+      "rank": 26,
+      "prior_candidate_count": 3
+    },
+    {
+      "id": "maciej-kwiatkowski",
+      "name": "Maciej Kwiatkowski",
+      "rank": 29,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "marcin-zbigniew-wojciech",
+      "name": "Marcin Zbigniew Wojciech",
+      "rank": 31,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "tomasz-machnicki",
+      "name": "Tomasz Machnicki",
+      "rank": 34,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "arkadiusz-jaksa-jakszewicz",
+      "name": "Arkadiusz Jaksa Jakszewicz",
+      "rank": 35,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "katarzyna-piasecka",
+      "name": "Katarzyna Piasecka",
+      "rank": 36,
+      "prior_candidate_count": 1
+    },
+    {
+      "id": "tomek-kolecki",
+      "name": "Tomek Kołecki",
+      "rank": 39,
+      "prior_candidate_count": 1
+    },
+    {
+      "id": "bartosz-gajda",
+      "name": "Bartosz Gajda",
+      "rank": 40,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "ryszard-mazur",
+      "name": "Ryszard Mazur",
+      "rank": 41,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "wojtek-pieta",
+      "name": "Wojtek Pięta",
+      "rank": 42,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "michal-skubida",
+      "name": "Michał Skubida",
+      "rank": 44,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "patryk-gosinski",
+      "name": "Patryk Gosiński",
+      "rank": 46,
+      "prior_candidate_count": 1
+    },
+    {
+      "id": "ewa-stasiewicz",
+      "name": "Ewa Stasiewicz",
+      "rank": 47,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "piotr-splin",
+      "name": "Piotr Splin",
+      "rank": 49,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "ewa-blachnio",
+      "name": "Ewa Błachnio",
+      "rank": 51,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "pawel-konkiel",
+      "name": "Paweł Konkiel",
+      "rank": 52,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "jarek-legonkoff",
+      "name": "Jarek Legońkoff",
+      "rank": 54,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "kuba-dabrowski",
+      "name": "Kuba Dąbrowski",
+      "rank": 57,
+      "prior_candidate_count": 4
+    },
+    {
+      "id": "filip-brymora",
+      "name": "Filip Brymora",
+      "rank": 58,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "marcin-chmiel",
+      "name": "Marcin Chmiel",
+      "rank": 59,
+      "prior_candidate_count": 1
+    },
+    {
+      "id": "bartosz-strusinski",
+      "name": "Bartosz Strusiński",
+      "rank": 60,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "sebastian-rejent",
+      "name": "Sebastian Rejent",
+      "rank": 61,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "filip-puzyr",
+      "name": "Filip Puzyr",
+      "rank": 62,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "damian-skora",
+      "name": "Damian Skóra",
+      "rank": 63,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "robert-gorski",
+      "name": "Robert Górski",
+      "rank": 64,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "damian-viking-usewicz",
+      "name": "Damian Viking Usewicz",
+      "rank": 65,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "igor-kwiatkowski",
+      "name": "Igor Kwiatkowski",
+      "rank": 66,
+      "prior_candidate_count": 4
+    },
+    {
+      "id": "wojtek-fiedorczuk",
+      "name": "Wojtek Fiedorczuk",
+      "rank": 67,
+      "prior_candidate_count": 1
+    },
+    {
+      "id": "grzegorz-halama",
+      "name": "Grzegorz Halama",
+      "rank": 71,
+      "prior_candidate_count": 1
+    },
+    {
+      "id": "krzysztof-kasparek",
+      "name": "Krzysztof Kasparek",
+      "rank": 72,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "rafal-banas",
+      "name": "Rafał Banaś",
+      "rank": 75,
+      "prior_candidate_count": 4
+    },
+    {
+      "id": "rafal-sumowski",
+      "name": "Rafał Sumowski",
+      "rank": 76,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "michal-kempa",
+      "name": "Michał Kempa",
+      "rank": 78,
+      "prior_candidate_count": 2
+    },
+    {
+      "id": "lukasz-wolski",
+      "name": "Łukasz Wolski",
+      "rank": 79,
+      "prior_candidate_count": 1
+    },
+    {
+      "id": "marek-gajos-gajewski",
+      "name": "Marek Gajos Gajewski",
+      "rank": 80,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "wojciech-kaminski",
+      "name": "Wojciech Kamiński",
+      "rank": 81,
+      "prior_candidate_count": 1
+    },
+    {
+      "id": "szymon-baraniecki",
+      "name": "Szymon Baraniecki",
+      "rank": 82,
+      "prior_candidate_count": 1
+    },
+    {
+      "id": "synmojegotaty-bartek-skrobisz",
+      "name": "SynMojegoTaty (Bartek Skrobisz)",
+      "rank": 83,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "adam-gajda",
+      "name": "Adam Gajda",
+      "rank": 84,
+      "prior_candidate_count": 2
+    },
+    {
+      "id": "mariusz-dabrowski",
+      "name": "Mariusz Dąbrowski",
+      "rank": 85,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "karol-kopiec",
+      "name": "Karol Kopiec",
+      "rank": 86,
+      "prior_candidate_count": 1
+    },
+    {
+      "id": "marta-lojek",
+      "name": "Marta Lojek",
+      "rank": 87,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "radek-drozdz",
+      "name": "Radek Drożdż",
+      "rank": 89,
+      "prior_candidate_count": 1
+    },
+    {
+      "id": "czeslaw-mozil",
+      "name": "Czesław Mozil",
+      "rank": 90,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "mateusz-ipkis-dudek",
+      "name": "Mateusz Ipkis Dudek",
+      "rank": 91,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "maciek-buchwald",
+      "name": "Maciek Buchwald",
+      "rank": 92,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "jacek-noch",
+      "name": "Jacek Noch",
+      "rank": 94,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "krzysztof-sawczuk",
+      "name": "Krzysztof Sawczuk",
+      "rank": 95,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "aleksandra-radomska",
+      "name": "Aleksandra Radomska",
+      "rank": 96,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "martyna-podwysocka",
+      "name": "Martyna Podwysocka",
+      "rank": 97,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "patryk-trela",
+      "name": "Patryk Trela",
+      "rank": 99,
+      "prior_candidate_count": 0
+    },
+    {
+      "id": "cezary-pizewski",
+      "name": "Cezary Piżewski",
+      "rank": 100,
+      "prior_candidate_count": 0
+    }
+  ],
+  "pilot": [
+    {
+      "rank": 5,
+      "id": "magda-kubicka",
+      "name": "Magda Kubicka",
+      "profile_url": "https://standup.pl/komicy/magda-kubicka",
+      "image_url": "https://standup.pl/images/avatars/magda-kubicka.png",
+      "source_position": 5,
+      "aliases": [],
+      "batch": 1,
+      "status": "completed"
+    },
+    {
+      "rank": 7,
+      "id": "olka-szczesniak",
+      "name": "Olka Szczęśniak",
+      "profile_url": "https://standup.pl/komicy/olka-szczesniak",
+      "image_url": "https://standup.pl/images/avatars/olka-szczesniak.png",
+      "source_position": 8,
+      "aliases": [],
+      "batch": 1,
+      "status": "completed"
+    },
+    {
+      "rank": 19,
+      "id": "karol-modzelewski",
+      "name": "Karol Modzelewski",
+      "profile_url": "https://standup.pl/komicy/karol-modzelewski",
+      "image_url": "https://standup.pl/images/avatars/karol-modzelewski.png",
+      "source_position": 21,
+      "aliases": [],
+      "batch": 2,
+      "status": "completed"
+    },
+    {
+      "rank": 42,
+      "id": "wojtek-pieta",
+      "name": "Wojtek Pięta",
+      "profile_url": "https://standup.pl/komicy/wojtek-pieta",
+      "image_url": "https://standup.pl/images/avatars/wojtek-pieta.png",
+      "source_position": 47,
+      "aliases": [],
+      "batch": 5,
+      "status": "completed"
+    },
+    {
+      "rank": 81,
+      "id": "wojciech-kaminski",
+      "name": "Wojciech Kamiński",
+      "profile_url": "https://standup.pl/komicy/wojciech-kaminski",
+      "image_url": "https://standup.pl/images/avatars/wojciech-kaminski.png",
+      "source_position": 92,
+      "aliases": [],
+      "batch": 9,
+      "status": "completed"
+    },
+    {
+      "rank": 95,
+      "id": "krzysztof-sawczuk",
+      "name": "Krzysztof Sawczuk",
+      "profile_url": "https://standup.pl/komicy/krzysztof-sawczuk",
+      "image_url": "https://standup.pl/images/avatars/krzysztof-sawczuk.png",
+      "source_position": 108,
+      "aliases": [],
+      "batch": 10,
+      "status": "completed"
+    }
+  ],
+  "target": {
+    "preferred_positive_linked_nodes": 85,
+    "stretch": 90,
+    "minimum_acceptable": 70
+  },
+  "definition": "Positive degree from accepted fan evidence; corroborated and one-fan provisional reported separately. Also report largest component; opposing-only/contested/style links do not count as fan overlap."
+}

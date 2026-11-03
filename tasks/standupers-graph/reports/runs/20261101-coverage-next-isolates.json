@@ -1,0 +1,346 @@
+{
+  "graph": "graph/coverage-disputed-reviewed/graph.json",
+  "positive_linked": 52,
+  "isolated_from_positive_graph": 48,
+  "linked_including_disputed": 53,
+  "isolated_including_disputed": 47,
+  "definition": "Strict unopposed fan links; displayed supported disputes reported separately. Target counts describe canonical candidate tags, not personal preferences.",
+  "performers": [
+    {
+      "rank": 2,
+      "performer_id": "mama-na-obrotach",
+      "name": "Mama Na Obrotach (Klaudia Klimczyk)",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 9,
+      "performer_id": "piotr-jelen",
+      "name": "Piotr Jeleń",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 12,
+      "performer_id": "piotr-latala",
+      "name": "Piotr Latała",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 20,
+      "performer_id": "michal-paszczyk",
+      "name": "Michał Paszczyk",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 23,
+      "performer_id": "sylwia-wiszowata",
+      "name": "Sylwia Wiszowata",
+      "canonical_candidate_target_count": 7,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 29,
+      "performer_id": "maciej-kwiatkowski",
+      "name": "Maciej Kwiatkowski",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 31,
+      "performer_id": "marcin-zbigniew-wojciech",
+      "name": "Marcin Zbigniew Wojciech",
+      "canonical_candidate_target_count": 1,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 34,
+      "performer_id": "tomasz-machnicki",
+      "name": "Tomasz Machnicki",
+      "canonical_candidate_target_count": 3,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 35,
+      "performer_id": "arkadiusz-jaksa-jakszewicz",
+      "name": "Arkadiusz Jaksa Jakszewicz",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 39,
+      "performer_id": "tomek-kolecki",
+      "name": "Tomek Kołecki",
+      "canonical_candidate_target_count": 6,
+      "connected_only_via_disputed": true
+    },
+    {
+      "rank": 40,
+      "performer_id": "bartosz-gajda",
+      "name": "Bartosz Gajda",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 41,
+      "performer_id": "ryszard-mazur",
+      "name": "Ryszard Mazur",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 42,
+      "performer_id": "wojtek-pieta",
+      "name": "Wojtek Pięta",
+      "canonical_candidate_target_count": 4,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 44,
+      "performer_id": "michal-skubida",
+      "name": "Michał Skubida",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 47,
+      "performer_id": "ewa-stasiewicz",
+      "name": "Ewa Stasiewicz",
+      "canonical_candidate_target_count": 2,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 49,
+      "performer_id": "piotr-splin",
+      "name": "Piotr Splin",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 51,
+      "performer_id": "ewa-blachnio",
+      "name": "Ewa Błachnio",
+      "canonical_candidate_target_count": 1,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 52,
+      "performer_id": "pawel-konkiel",
+      "name": "Paweł Konkiel",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 54,
+      "performer_id": "jarek-legonkoff",
+      "name": "Jarek Legońkoff",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 57,
+      "performer_id": "kuba-dabrowski",
+      "name": "Kuba Dąbrowski",
+      "canonical_candidate_target_count": 4,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 58,
+      "performer_id": "filip-brymora",
+      "name": "Filip Brymora",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 60,
+      "performer_id": "bartosz-strusinski",
+      "name": "Bartosz Strusiński",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 61,
+      "performer_id": "sebastian-rejent",
+      "name": "Sebastian Rejent",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 62,
+      "performer_id": "filip-puzyr",
+      "name": "Filip Puzyr",
+      "canonical_candidate_target_count": 1,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 63,
+      "performer_id": "damian-skora",
+      "name": "Damian Skóra",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 64,
+      "performer_id": "robert-gorski",
+      "name": "Robert Górski",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 65,
+      "performer_id": "damian-viking-usewicz",
+      "name": "Damian Viking Usewicz",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 66,
+      "performer_id": "igor-kwiatkowski",
+      "name": "Igor Kwiatkowski",
+      "canonical_candidate_target_count": 4,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 71,
+      "performer_id": "grzegorz-halama",
+      "name": "Grzegorz Halama",
+      "canonical_candidate_target_count": 1,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 72,
+      "performer_id": "krzysztof-kasparek",
+      "name": "Krzysztof Kasparek",
+      "canonical_candidate_target_count": 2,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 75,
+      "performer_id": "rafal-banas",
+      "name": "Rafał Banaś",
+      "canonical_candidate_target_count": 4,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 76,
+      "performer_id": "rafal-sumowski",
+      "name": "Rafał Sumowski",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 79,
+      "performer_id": "lukasz-wolski",
+      "name": "Łukasz Wolski",
+      "canonical_candidate_target_count": 4,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 80,
+      "performer_id": "marek-gajos-gajewski",
+      "name": "Marek Gajos Gajewski",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 82,
+      "performer_id": "szymon-baraniecki",
+      "name": "Szymon Baraniecki",
+      "canonical_candidate_target_count": 1,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 83,
+      "performer_id": "synmojegotaty-bartek-skrobisz",
+      "name": "SynMojegoTaty (Bartek Skrobisz)",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 84,
+      "performer_id": "adam-gajda",
+      "name": "Adam Gajda",
+      "canonical_candidate_target_count": 2,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 85,
+      "performer_id": "mariusz-dabrowski",
+      "name": "Mariusz Dąbrowski",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 86,
+      "performer_id": "karol-kopiec",
+      "name": "Karol Kopiec",
+      "canonical_candidate_target_count": 2,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 87,
+      "performer_id": "marta-lojek",
+      "name": "Marta Lojek",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 90,
+      "performer_id": "czeslaw-mozil",
+      "name": "Czesław Mozil",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 91,
+      "performer_id": "mateusz-ipkis-dudek",
+      "name": "Mateusz Ipkis Dudek",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 92,
+      "performer_id": "maciek-buchwald",
+      "name": "Maciek Buchwald",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 94,
+      "performer_id": "jacek-noch",
+      "name": "Jacek Noch",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 95,
+      "performer_id": "krzysztof-sawczuk",
+      "name": "Krzysztof Sawczuk",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 97,
+      "performer_id": "martyna-podwysocka",
+      "name": "Martyna Podwysocka",
+      "canonical_candidate_target_count": 1,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 99,
+      "performer_id": "patryk-trela",
+      "name": "Patryk Trela",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    },
+    {
+      "rank": 100,
+      "performer_id": "cezary-pizewski",
+      "name": "Cezary Piżewski",
+      "canonical_candidate_target_count": 0,
+      "connected_only_via_disputed": false
+    }
+  ]
+}

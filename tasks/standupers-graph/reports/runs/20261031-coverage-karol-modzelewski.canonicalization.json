@@ -1,0 +1,90 @@
+{
+  "canonical_count": 9,
+  "raw_preserved": true,
+  "duplicate_posts": 0,
+  "changes": [
+    {
+      "candidate_id": "src_cov_kmodzelewski_001",
+      "fields": [
+        "run_id",
+        "author_key"
+      ],
+      "old_retrieved_at": "2026-10-31T20:45:00Z",
+      "new_retrieved_at": "2026-10-31T19:03:02.679Z",
+      "reason": "raw future timestamp replaced by stored source-page-read completion"
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_002",
+      "fields": [
+        "run_id",
+        "author_key"
+      ]
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_003",
+      "fields": [
+        "run_id",
+        "author_key"
+      ]
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_004",
+      "fields": [
+        "run_id",
+        "author_key"
+      ]
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_005",
+      "fields": [
+        "run_id",
+        "author_key"
+      ]
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_006",
+      "fields": [
+        "run_id",
+        "author_key"
+      ]
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_007",
+      "fields": [
+        "run_id",
+        "author_key"
+      ]
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_008",
+      "fields": [
+        "run_id",
+        "author_key"
+      ]
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_009",
+      "fields": [
+        "run_id",
+        "author_key"
+      ]
+    }
+  ],
+  "timestamp_proof": {
+    "thread_id": "thread:delegated-task:command%3Amcp%3Adba27e94-38e5-44df-9db4-764d912a0e9b%3Adelegate-task%3Acoverage-karol-modzelewski-collection-20261031-r1",
+    "item_id": "turn-item:provider:codex:native-item:exec-27765fd0-2df9-4953-9865-ab12608ad4f3",
+    "retrieved_at": "2026-10-31T19:03:02.679Z",
+    "method": "Completed source-page preview_evaluate timeline timestamp replaces impossible future literal timestamp in raw001; raw preserved."
+  },
+  "actual_attempt_arrays": {
+    "query": 8,
+    "navigation": 9
+  },
+  "reported_queries": 7,
+  "reported_opens": 9,
+  "corrected_queries": 8,
+  "corrected_opens": 9,
+  "remaining_queries": 16,
+  "remaining_opens": 15,
+  "note": "8query entries versus7reported; navigation9correct. No extra searches. Canonical source text/context unchanged."
+}

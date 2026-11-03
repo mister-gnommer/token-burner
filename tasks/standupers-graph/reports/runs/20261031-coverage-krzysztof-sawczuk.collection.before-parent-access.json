@@ -1,0 +1,121 @@
+{
+  "run_id": "20261031-coverage-krzysztof-sawczuk",
+  "target_performer_id": "krzysztof-sawczuk",
+  "rank": 95,
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+  },
+  "attempts": {
+    "queries": [
+      {
+        "query": "Krzysztof Sawczuk KupBilecik opinie recenzje stand-up",
+        "status": "completed",
+        "reserved_at": "2026-10-31T22:39:35Z",
+        "completed_at": "2026-10-31T22:39:45Z",
+        "result": "KupBilecik query returned unrelated Kowalski/Rejent/Zalewski review archive and Sawczuk profile listing his own Stand-Up Teka uploads; no candidate verified."
+      },
+      {
+        "query": "\"Krzysztof Sawczuk\" opinie stand-up fan forum",
+        "status": "completed",
+        "reserved_at": "2026-10-31T22:39:45Z",
+        "completed_at": "2026-10-31T22:39:52Z",
+        "result": "Search returned performer profile, unrelated feature/editorial/profile and structured ratings without author post text; no qualifying co-appreciation."
+      },
+      {
+        "query": "site:kupbilecik.pl/pl/comments \"Krzysztof Sawczuk\"",
+        "status": "completed",
+        "reserved_at": "2026-10-31T22:39:52Z",
+        "completed_at": "2026-10-31T22:40:00Z",
+        "result": "Found event archive pages for Stand-up Warmia with event-roster names and substantive comments; leads include event 27832 and older 2017 pages."
+      },
+      {
+        "query": "site:reddit.com/r/standup \"Krzysztof Sawczuk\" OR \"Sawczuk\" stand-up",
+        "status": "completed",
+        "reserved_at": "2026-10-31T22:40:11Z",
+        "completed_at": "2026-10-31T22:40:19Z",
+        "result": "No Reddit results for targeted exact-name search."
+      },
+      {
+        "query": "\"Krzysztof Sawczuk\" \"polecam\" stand-up opinie",
+        "status": "completed",
+        "reserved_at": "2026-10-31T22:40:19Z",
+        "completed_at": "2026-10-31T22:40:29Z",
+        "result": "Returned unrelated homonym/review hits and KupBilecik event archive search results; no source author text directly retrievable as an opened page, no verified candidate."
+      }
+    ],
+    "navigation": [
+      {
+        "kind": "preview_open",
+        "url": "about:blank",
+        "status": "succeeded",
+        "reserved_at": "2026-10-31T19:32:50.856353+00:00",
+        "opened_tab_id": "tab_18_02a52303-1e3a-4993-a897-62daeceecefe",
+        "available": true,
+        "completed_at": "2026-10-31T19:33:09.184706+00:00"
+      },
+      {
+        "kind": "web_open",
+        "url": "https://www.kupbilecik.pl/pl/event/27832/mragowo/stand-up-warmia",
+        "status": "failed",
+        "reserved_at": "2026-10-31T22:40:00Z",
+        "completed_at": "2026-10-31T22:40:10Z",
+        "raw_error": "Internal Error (); Failed to fetch https://www.kupbilecik.pl/pl/event/27832/mragowo/stand-up-warmia: Cache miss."
+      }
+    ],
+    "browser_reads": []
+  },
+  "candidates": [],
+  "deduplication": {
+    "prior_post_keys": [],
+    "decisions": [
+      {
+        "scope": "prior graph coverage-pieta-reviewed and coverage-kaminski-reviewed",
+        "result": "No raw/canonical candidate manifests matching the frozen performer were found in prior coverage-pilot raw/canonical files. The two graph manifests contain performer node only, no source post keys available for dedup."
+      }
+    ]
+  },
+  "source_families": [
+    {
+      "family": "KupBilecik/KupBilet event review archives",
+      "status": "searched; multiple archive pages found in 2017, 2018 and 2019 periods. Event pages are search-only because full URL opening cache-missed and preview browser is blocked. No candidate promoted."
+    },
+    {
+      "family": "Reddit/forum",
+      "status": "exact-name Reddit route searched; no results."
+    },
+    {
+      "family": "Independent blog/podcast",
+      "status": "search returned a podcast episode page and editorial/profile material; these are search-only and do not contain qualifying independent fan co-appreciation."
+    }
+  ],
+  "access_gaps": [
+    {
+      "route": "T3 preview browser",
+      "detail": "Parent attempted preview_status then preview_open; open failed: “Too many server browser tabs are open. Close one with t3_preview_close, or reuse a tabId from preview_status tabs.” No user/other-agent tabs may be closed. Treat as shared capacity blocker; continue with full-URL web retrieval."
+    },
+    {
+      "route": "KupBilecik event archive full-page retrieval",
+      "url": "https://www.kupbilecik.pl/pl/event/27832/mragowo/stand-up-warmia",
+      "detail": "Full URL open returned cache miss. Required T3 preview_status/preview_open fallback cannot be called in this tool context; shared browser capacity failure already reported by parent. Search-result text quarantined, not promoted."
+    },
+    {
+      "route": "T3 preview browser",
+      "detail": "No preview_status/preview_open tools callable in this context. Parent-observed preview_open capacity error remains the blocker; no own tab opened, no tab closed."
+    }
+  ],
+  "stop_reason": "Access-blocked before source-page verification: KupBilecik archives have substantive search leads, but full-page open returned a cache miss and T3 preview fallback is unavailable here. Search-only snippets were quarantined. No exhaustion or no-evidence conclusion.",
+  "allowance": {
+    "query_cap": 24,
+    "queries_consumed": 5,
+    "queries_remaining": 19,
+    "navigation_cap": 24,
+    "navigation_consumed": 2,
+    "navigation_remaining": 22,
+    "verified_candidate_cap": 16,
+    "verified_candidates": 0,
+    "verified_candidates_remaining": 16
+  },
+  "completed_at": "2026-10-31T22:40:29Z"
+}

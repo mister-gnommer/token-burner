@@ -1,0 +1,76 @@
+{
+  "Surprises": [
+    "The collector report supplies a precise locator and excerpt, but the saved activity item corresponding to the successful event-page open is empty ({}) and no retrievable full-page response text was present in the activity timeline. The source context therefore cannot be independently quoted from the saved tool response in this pass."
+  ],
+  "status": "blocked_source_proof_unavailable",
+  "task": "Prepare saved-source context repair proposal for existing src_b05b_003 / ev_b05_b_003; no independent review or acceptance.",
+  "scope": {
+    "original_run_id": "20261031-batch05",
+    "candidate_id": "src_b05b_003",
+    "evidence_id": "ev_b05_b_003",
+    "current_reviewed_graph": "graph/coverage-source-page-tail/graph.json",
+    "graph_context": "45 positive-linked / largest component 33"
+  },
+  "actual_worker": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "reasoning_effort": "medium",
+    "role": "research sub-agent"
+  },
+  "reviewed_instructions_and_artifacts": [
+    "tasks/standupers-graph/AGENTS.md",
+    "tasks/standupers-graph/prompts/collect-fan-evidence-v3.md",
+    "tasks/standupers-graph/prompts/extract-evidence-v3.md",
+    "tasks/standupers-graph/prompts/extraction-decisions-v1.md",
+    "tasks/standupers-graph/data/schemas/source-candidate-v2.schema.json",
+    "tasks/standupers-graph/data/schemas/evidence-v3.schema.json",
+    "tasks/standupers-graph/data/standupers.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch05.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch05.source-adjudication.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch05.verification-round1.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch05.verification-round2.json",
+    "tasks/standupers-graph/reports/runs/20261101-coverage-blazej-krajewski.collection.json"
+  ],
+  "saved_activity_recovery": {
+    "thread_id": "thread:delegated-task:command%3Amcp%3Ab8bb504a-a098-4a3f-913f-2b56ec9678db%3Adelegate-task%3Acoverage-blazej-krajewski-collection-20261101-r1",
+    "method": "t3_thread_read view=activity, paginated timeline; requested full item text by itemId with maxCharsPerItem=50000",
+    "successful_page_open_activity_item_id": "turn-item:provider:codex:native-item:exec-de8a4624-ae78-4229-a5f9-192a1b71b653",
+    "activity_position": 50,
+    "activity_type": "web_search",
+    "saved_item_text": "{}",
+    "text_truncated": false,
+    "next_text_offset": null,
+    "result": "No exact page response available to quote. No new page navigation, internet search, or browser use was performed."
+  },
+  "prior_source_findings": {
+    "manifest_paths": {
+      "source_candidates": "evidence/batch-05/source-candidates.jsonl",
+      "evidence_unreviewed": "evidence/batch-05/evidence.unreviewed.jsonl",
+      "evidence": "evidence/batch-05/evidence.jsonl",
+      "verification_report": "reports/runs/20261031-batch05.verification.json"
+    },
+    "old_adjudication": "The 20261031 source adjudication retained B003 uncertainty because Elwira excerpt had not been directly located; requested exact locator and event-page confirmation.",
+    "old_verification": "Round 1 and round 2 report the inspected Świecie page had a different Patryk Gosiński review; Elwira excerpt absent from the response available to those reviewers; two Legnica follow-ups also failed to locate it.",
+    "collector_report_assertion": {
+      "source_url": "https://www.kupbilecik.pl/pl/event/203718/swiecie/stand-up-blazej-krajewski",
+      "locator": "opened full page lines 198-204: author Elwira; review header Stand-up: Błażej Krajewski; Legnica, 20 marca 2025",
+      "reported_excerpt": "Zarówno Błażej, jak i jego support Patryk Gośiński byli świetni. Obu znałam z YouTube, ale na żywo jeszcze lepiej się ich oglądało. Tak trzymać!!!",
+      "use": "Recorded as an unverified collector assertion only; not treated as verbatim source proof."
+    }
+  },
+  "proposal_delta": {
+    "source_candidate_jsonl": "not written; no source context can be added without exact independent page proof.",
+    "evidence_jsonl": "not written; keep original unreviewed status and prior evidence unchanged pending source proof.",
+    "proposed_context": "none; no verified separately attributed context excerpt available.",
+    "source_metadata_changes": "none; do not alter URL/date/author/source fields absent direct before/after proof.",
+    "quotes_and_lineage": "no proposal made; preserve original run_id, IDs, excerpt (including spelling Gośiński), collector metadata, mentions and preference quotes in any future repair."
+  },
+  "why_blocked": "The requested repair requires exact source text recovered from the collector activity, and the only corresponding saved successful-open item contains no response body. The report locator and quotation do not independently establish their verbatim fidelity. Creating either proposal would claim source context without the required proof.",
+  "next_step": "Recover the original full-page response from an alternate saved activity payload/item if available, then quote the attached review header and exact Elwira post with itemId/locator in a renewed proposal. If unavailable, retain the record as uncertain for separate adjudication.",
+  "outputs": {
+    "candidate_proposal": "tasks/standupers-graph/evidence/coverage-expansion/src_b05b_003.context-proposal.jsonl (not created)",
+    "evidence_proposal": "tasks/standupers-graph/evidence/coverage-expansion/ev_b05_b_003.review-proposal.unreviewed.jsonl (not created)",
+    "report": "tasks/standupers-graph/reports/runs/20261101-coverage-krajewski-gosinski.source-context.json"
+  },
+  "validation": "No candidate/evidence proposal was written; schema validation and excerpt/lineage/quote checks are therefore not applicable. Frozen canonical IDs verified in original record: blazej-krajewski and patryk-gosinski. No acceptance/scoring performed."
+}

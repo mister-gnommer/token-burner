@@ -1,0 +1,167 @@
+{
+  "surprises": [
+    "Filmweb search surfaced a potentially useful long discussion, but its full-page route failed with Cache miss. A separate Filmweb thread was fully readable and contained a distinct, attributable stand-up favorites list; the previously known post in that thread was excluded."
+  ],
+  "run_id": "20261031-coverage-fan-forums-b-followup",
+  "status": "completed",
+  "scope": "Complete public fan-authored discussions on Filmweb threads, Gry-online forums, or other accessible independent forums; Reddit and Gazeta excluded for this slice.",
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+source-first-fan-discovery-v1"
+  },
+  "outputs": [
+    "evidence/coverage-fan-forums-b-followup/source-candidates.jsonl"
+  ],
+  "budget_basis": "Coordinator reallocated only slice B's remaining allowance; original reservation array is authoritative.",
+  "reservations": [
+    {
+      "type": "query",
+      "n": 1,
+      "query": "site:forum.gry-online.pl stand-up ulubiony komik polski standuperzy",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "n": 2,
+      "query": "site:filmweb.pl/forum stand-up ulubiony komik polski",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "n": 3,
+      "query": "site:forum.gry-online.pl \"Abelard Giza\" OR \"Lotek\" stand-up",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "n": 4,
+      "query": "site:filmweb.pl/forum \"Rafał Pacześ\" OR \"Magda Kubicka\" stand-up dyskusja",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "n": 5,
+      "query": "polski stand-up forum \"ulubiony\" komik dyskusja",
+      "status": "attempted; consumed"
+    }
+  ],
+  "usage": {
+    "continuation": {
+      "queries": 5,
+      "opens": 2,
+      "verified_candidates": 1,
+      "caps": {
+        "queries": 5,
+        "opens": 6,
+        "verified_candidates": 8
+      }
+    },
+    "original_cumulative": {
+      "queries": 12,
+      "opens": 8,
+      "verified_candidates": 1,
+      "caps": {
+        "queries": 12,
+        "opens": 12,
+        "verified_candidates": 8
+      }
+    }
+  },
+  "open_reservations": [
+    {
+      "n": 1,
+      "url": "https://www.filmweb.pl/person/Louis%2BC.K.-65484/discussion/Polski%2Bstand%2Bup%2B%3D%2Btragedia-2948112",
+      "status": "attempted; consumed; failed: Cache miss; not retried"
+    },
+    {
+      "n": 2,
+      "url": "https://www.filmweb.pl/person/Abelard%2BGiza-286174/discussion/Jakie%2Bs%C4%85%2Bwasze%2Bulubione%2Bkabarety-1936249",
+      "status": "attempted; consumed; success; full page, 514 lines"
+    }
+  ],
+  "query_log": [
+    {
+      "n": 1,
+      "query": "site:forum.gry-online.pl stand-up ulubiony komik polski standuperzy",
+      "result": "No relevant Gry-online forum result returned."
+    },
+    {
+      "n": 2,
+      "query": "site:filmweb.pl/forum stand-up ulubiony komik polski",
+      "result": "Surfaced Filmweb discussion “Polski stand up = tragedia” with full indexed discussion text; candidate for full-page inspection."
+    },
+    {
+      "n": 3,
+      "query": "site:forum.gry-online.pl \"Abelard Giza\" OR \"Lotek\" stand-up",
+      "result": "No relevant Gry-online discussion returned."
+    },
+    {
+      "n": 4,
+      "query": "site:filmweb.pl/forum \"Rafał Pacześ\" OR \"Magda Kubicka\" stand-up dyskusja",
+      "result": "Surfaced Filmweb discussion “Polski stand up = tragedia”; no distinct matching thread for these names."
+    },
+    {
+      "n": 5,
+      "query": "polski stand-up forum \"ulubiony\" komik dyskusja",
+      "result": "Surfaced the same Filmweb discussion and broad/non-qualifying results."
+    }
+  ],
+  "open_log": [
+    {
+      "n": 1,
+      "url": "https://www.filmweb.pl/person/Louis%2BC.K.-65484/discussion/Polski%2Bstand%2Bup%2B%3D%2Btragedia-2948112",
+      "access": "Failed: web full-page fetch returned Cache miss. Counted; no retry."
+    },
+    {
+      "n": 2,
+      "url": "https://www.filmweb.pl/person/Abelard%2BGiza-286174/discussion/Jakie%2Bs%C4%85%2Bwasze%2Bulubione%2Bkabarety-1936249",
+      "canonical_url": "https://www.filmweb.pl/person/Abelard+Giza-286174/discussion/Jakie%2Bs%C4%85%2Bwasze%2Bulubione%2Bkabarety-1936249",
+      "access": "Success: full page read, 514 lines; author handles and post dates visible."
+    }
+  ],
+  "full_reads": [
+    {
+      "url": "https://www.filmweb.pl/person/Abelard+Giza-286174/discussion/Jakie%2Bs%C4%85%2Bwasze%2Bulubione%2Bkabarety-1936249",
+      "source_kind": "Filmweb public discussion",
+      "verified_full_page": true,
+      "published_at": "2012-06-02 thread prompt; respondent cotca dated 2012-12-31 12:13:51",
+      "candidate_locators": [
+        "cotca, page lines 263-285; the stand-up preference section is lines 277-283"
+      ],
+      "note": "Complete relevant stand-up preference section saved. It is a direct answer section beneath the thread prompt asking for favorite cabarets; the separate cabaret ranking is unrelated to the individual-performer preference excerpt. Existing known post by bozo777 was excluded."
+    }
+  ],
+  "search_only_leads": [
+    {
+      "url": "https://www.filmweb.pl/person/Louis%2BC.K.-65484/discussion/Polski%2Bstand%2Bup%2B%3D%2Btragedia-2948112",
+      "reason": "Search result surfaced authored evaluations of Abelard Giza, Kacper Ruciński and Rafał Pacześ, but full page open failed with Cache miss; snippets not promoted."
+    }
+  ],
+  "deduplication": {
+    "graph_manifest_checked": true,
+    "prior_evidence_checked": true,
+    "notes": "Checked all 51 graph evidence source URLs and prior source-candidate JSONL files. Excluded known bozo777 post src_b01c_001 in the opened thread. cotca has no prior record for this thread in graph sources or source-candidate files. Reddit/Gazeta source families were not searched or opened in this slice."
+  },
+  "stop_reason": "All five allocated queries were used. One full discussion was successfully read and yielded one candidate for separate extraction/review; the other promising full-page route failed once with Cache miss and was not retried. Stop at the continuation query cap; no allowance renewal.",
+  "candidate_decisions": [
+    {
+      "candidate_id": "src_cffb_001",
+      "decision": "saved for extraction/review",
+      "basis": "Direct response under a favorite prompt; separately attributed exact prompt stored as thread_prompt. The stand-up list explicitly includes three frozen performers. It is a co-favorite list only; no relative comparison or graph relation asserted."
+    }
+  ],
+  "unused_allowance": {
+    "continuation": {
+      "queries": 0,
+      "opens": 4,
+      "verified_candidates": 7
+    },
+    "original_cumulative": {
+      "queries": 0,
+      "opens": 4,
+      "verified_candidates": 7
+    }
+  },
+  "observed_at": "2026-10-31T23:02:56Z"
+}

@@ -1,0 +1,16 @@
+{
+  "run_id": "20261101-coverage-piotr-jelen",
+  "parent_audited_at": "2026-10-31T23:54:13.374341+00:00",
+  "verified_candidates": 0,
+  "queries_charged": 24,
+  "page_attempts": 6,
+  "remaining_queries": 0,
+  "remaining_page_attempts": 18,
+  "decision": "Move to next expansion target; retain unused page allowance and documented access leads. No extraction or graph change for empty sources.",
+  "limitations": [
+    "Conservative query total includes oversized six-query request with lost response; not24 successful searches.",
+    "Filmweb group members unnamed; no frozen peer established.",
+    "Several source pages inaccessible; overlap absence is not established."
+  ],
+  "prevention_for_next_worker": "Explicit batch size<=4, durable reservation and successful guard before action, raw response preserved before parsing."
+}

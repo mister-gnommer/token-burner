@@ -1,0 +1,96 @@
+{
+  "run_id": "20261101-coverage-thread-harvest-02",
+  "stage": "verification",
+  "status": "complete",
+  "reviewer": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "reasoning_effort": "medium",
+    "prompt_version": "verify-evidence-v3"
+  },
+  "inputs": {
+    "canonical_sources": "evidence/coverage-thread-harvest-02/source-candidates.canonical.jsonl",
+    "unreviewed_evidence": "evidence/coverage-thread-harvest-02/evidence.unreviewed.jsonl",
+    "schema": "data/schemas/evidence-v3.schema.json",
+    "frozen_identities": "data/standupers.json",
+    "manifest": "reports/runs/20261101-coverage-thread-harvest-02.json"
+  },
+  "outputs": {
+    "evidence": "evidence/coverage-thread-harvest-02/evidence.jsonl",
+    "verification_report": "reports/runs/20261101-coverage-thread-harvest-02.verification.json"
+  },
+  "surprises": [
+    "The permitted Radomska profile read was attempted once but failed before navigation because the collaborative browser reported “Too many server browser tabs are open.” No profile content was read; identity remains uncertain.",
+    "A002 is correctly skipped despite one clearly liked frozen performer; the remaining laughter/appraisal and foreign performer mentions do not establish a second permitted frozen preference pair."
+  ],
+  "counts": {
+    "canonical_candidates": 4,
+    "reviewed_records": 3,
+    "accepted": 3,
+    "uncertain": 0,
+    "rejected": 0,
+    "skipped": 1,
+    "accounted_candidates": 4
+  },
+  "records": [
+    {
+      "candidate_id": "src_cth02a_001",
+      "evidence_id": "ev_cth02a_001",
+      "decision": "accepted",
+      "checks": "Exact excerpt, source metadata, language, empty context, source-local author key, extraction provenance/run ID, frozen IDs, surfaces and preference quotes preserved/verified. Personal absolute appraisals qualify as positive preference. Ismo is retained unresolved; intoxication phrase is not factized."
+    },
+    {
+      "candidate_id": "src_cth02a_002",
+      "evidence_id": null,
+      "decision": "skip",
+      "reason": "No permissible pair class can be established. Olka Szczęśniak is one explicit personal liking. “śmieszy mnie Puzyr” is a positive appraisal but not sufficient evidence to resolve the frozen identity or turn into personal preference under this evidence rule; “Iliza Shlesinger doprowadza mnie do łez śmiechu” is an explicit laughter response, not personal liking, and remains outside frozen identity scope. Generic “Niby nie lubię” does not cancel the distinct expressed reactions. Collection locator notes a surname match to Filip Puzyr, but the source evidence does not independently prove that mapping. Raw source stays available for audit."
+    },
+    {
+      "candidate_id": "src_cth02a_003",
+      "evidence_id": "ev_cth02a_003",
+      "decision": "accepted",
+      "checks": "Exact fields/context and lineage preserved. Positive list and Lotek negative preference retained; plural account remains one source-local author. Abelard and Olka Radomska preferences are represented independently from unresolved identities (both IDs null); Radomska confidence remains below threshold. No global alias changed."
+    },
+    {
+      "candidate_id": "src_cth02b_001",
+      "evidence_id": "ev_cth02b_001",
+      "decision": "accepted",
+      "checks": "Exact fields and separately attributed parent context preserved. Author’s own “Lubię” establishes each preference; no parent preference transferred. All three frozen IDs and verbatim surfaces/quotes verified."
+    }
+  ],
+  "identity_and_source_limits": [
+    "Source-local forum handles/hash keys do not establish a real person or cross-platform identity.",
+    "Posts are historical (published 2023-11-01); they do not establish current or general preference.",
+    "Same-page posts are distinct authored posts, not independent platforms.",
+    "“ismocomedy” is unresolved; its positive appraisal does not resolve identity.",
+    "“Abelarda” is too incomplete to map to Abelard Giza from catalog context alone.",
+    "“Olkę Radomską” plausibly denotes Aleksandra Radomska, but no direct alias proof was available. Frozen profile attempt URL: https://standup.pl/komicy/aleksandra-radomska; attempted once before 2026-11-01T12:28:11Z (exact second not captured); browser error: Too many server browser tabs are open. Successful profile reads: 0; attempts: 1. No retry or alternate navigation."
+  ],
+  "budget": {
+    "A": {
+      "queries_used": 24,
+      "page_opens_before": 23,
+      "page_open_attempts_this_review": 1,
+      "successful_profile_reads_this_review": 0,
+      "page_opens_used": 24,
+      "remaining_queries": 0,
+      "remaining_page_opens": 0,
+      "remaining_raw_slots": 0
+    },
+    "B": {
+      "queries_used": 12,
+      "page_opens_used": 12,
+      "page_open_attempts_this_review": 0,
+      "remaining_queries": 0,
+      "remaining_page_opens": 0,
+      "remaining_raw_slots": 6
+    }
+  },
+  "validation": {
+    "requested_command": "python3 tasks/standupers-graph/scripts/evidence_pipeline.py validate --kind evidence tasks/standupers-graph/evidence/coverage-thread-harvest-02/evidence.jsonl",
+    "additional_checks": "Source row equality, author key hashes/lineage, exact run/provenance, frozen performer IDs, mention surface and preference quote substrings, unchanged context, one-to-one candidate accounting; checked in local review preparation.",
+    "result": "passed: validated 3 evidence records; schema and frozen performer IDs valid",
+    "focused_checks_result": "passed: source line hashes, excerpt hashes, author-key lineage, exact source/context copy, extraction run/provenance, frozen IDs, verbatim surfaces/quotes, review fields, and 4/4 candidate accounting (3 records plus 1 reasoned skip)"
+  },
+  "created_at": "2026-11-01T12:28:11Z"
+}

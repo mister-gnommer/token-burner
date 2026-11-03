@@ -1,0 +1,51 @@
+{
+  "records": 83,
+  "canonical_candidates": 99,
+  "relations": 67,
+  "corroborated_relations": 11,
+  "eligible_provisional_relations": 36,
+  "contested_relations": 20,
+  "positive_linked_nodes": 39,
+  "corroborated_linked_nodes": 12,
+  "largest_component": 29,
+  "positive_component_sizes": [
+    29,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "new_positive_linked_performers": [
+    "radek-drozdz",
+    "wojciech-kaminski"
+  ],
+  "new_relation_ids": [
+    "rel_radek-drozdz__wojciech-kaminski"
+  ],
+  "strict_source_loader": "pass",
+  "exact_relations_deferred_recomputation": "pass",
+  "six_skip_accounting": "pass",
+  "original_batch09_not_loaded": true,
+  "replacement_manifest": "reports/runs/20261031-batch09.context-reviewed.json",
+  "graph_inputs": [
+    "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch01-corroboration.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch02.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch03.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch04.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch05.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch06.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch07.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch09.context-reviewed.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch10.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch06-catchup.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-magda-kubicka.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-olka-szczesniak.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-karol-modzelewski.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-wojtek-pieta.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-wojciech-kaminski.json"
+  ],
+  "parent_preservation_fix": "Pasierby original nullID positive appraisal restored; review proposal accidentally changed it to unknown while claiming unchanged. No scoring effect."
+}

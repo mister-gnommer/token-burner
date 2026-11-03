@@ -1,0 +1,8 @@
+{
+  "stage": "sliceAonlypendingB",
+  "canonical_a_count": 2,
+  "duplicates": 0,
+  "raw_preserved": true,
+  "source_text_and_context_except_hashes_unchanged": true,
+  "changes": "Source-local author and context-author hashes computed; nointerpretation/identitychange."
+}

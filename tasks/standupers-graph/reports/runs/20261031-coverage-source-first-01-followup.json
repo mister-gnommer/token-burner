@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "run_id": "20261031-coverage-source-first-01-followup",
+  "stage": "batch",
+  "batch": 1,
+  "status": "completed",
+  "performer_ids": [
+    "mama-na-obrotach",
+    "magda-kubicka",
+    "piotr-jelen",
+    "blazej-krajewski",
+    "piotr-latala",
+    "pan-li",
+    "tomasz-boras-borkowski",
+    "michal-paszczyk",
+    "grzegorz-dolniak",
+    "adam-van-bendler"
+  ],
+  "paths": {
+    "source_candidates": "evidence/coverage-source-first-01-followup/source-candidates.canonical.jsonl",
+    "evidence_unreviewed": "evidence/coverage-source-first-01-followup/evidence.unreviewed.jsonl",
+    "evidence": "evidence/coverage-source-first-01-followup/evidence.jsonl",
+    "verification_report": "reports/runs/20261031-coverage-source-first-01-followup.verification.json"
+  },
+  "workers": {
+    "collector": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "collect-fan-evidence-v3+source-first-fan-discovery-v1"
+    },
+    "extractor": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1"
+    },
+    "verifier": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "verify-evidence-v3"
+    }
+  },
+  "counts": {
+    "source_candidates": 2,
+    "extracted": 2,
+    "accepted": 2,
+    "uncertain": 0,
+    "rejected": 0
+  },
+  "surprises": [
+    "Supplemental per-performer coverage research; frozen original batch retained."
+  ],
+  "notes": "Continuation uses originalA remainder.6raw posts yielded2canonical newposts after4duplicate exclusions, including directcomment/threadURL andemoji variants. Raw preserved; missingcandidate targetIDs cannot substitute for fulltext interpretation. Separate extraction/reviewpending.",
+  "created_at": "2026-10-31T23:02:46.467249Z",
+  "updated_at": "2026-10-31T23:12:32Z"
+}

@@ -1,0 +1,61 @@
+{
+  "report_id": "20261101-kasparek-saved-source-context",
+  "case_run_id": "20261101-kasparek-saved-source-context",
+  "stage": "fresh dedicated Kasparek context-only stage; no candidate collection",
+  "surprises": [
+    "The exact Mielec event URL was present in the saved Machnicki collection search result, but the single fresh text open returned Cache miss. Per instruction, the failed open was not repeated and the saved search extract was not promoted to verified source-body evidence."
+  ],
+  "purpose": "Check whether Aneta’s Mielec 16 February 2020 review refers to a historical event roster that clarifies the frozen Krzysztof Kasparek reference.",
+  "source_candidate": {
+    "candidate_id": "src_cov_tmach_001",
+    "original_run_id": "20261101-coverage-tomasz-machnicki",
+    "case_report_id": "20261101-kasparek-saved-source-context",
+    "source_url": "https://www.kupbilecik.pl/pl/db/7359/stand-up-tomek-machnicki-lukasz-wolski-krzysztof-kasparek",
+    "event_url": "https://www.kupbilecik.pl/pl/event/48604/mielec/stand-up-tomek-machnicki-lukasz-wolski-krzysztof-kasparek",
+    "event_url_locator": "reports/runs/20261101-coverage-tomasz-machnicki.collection.json, attempts search result turn11search0; event id 48604",
+    "review_locator": "reports/runs/20261101-coverage-tomasz-machnicki.collection.json, attempts search result turn11search1, Aneta entry dated 2020-02-18; attached event Mielec, 16 lutego 2020 o godz. 18:00",
+    "review_excerpt": "Polecam wszystkich Panów. Występy bardzo udane , szczególnie Łukasz Wolski- super występ.",
+    "review_event_date": "2020-02-16",
+    "review_author_public_hint": "Aneta",
+    "review_published_at": "2020-02-18 (as displayed in saved collection search result; candidate published_at remains null because source review page did not establish it as exact review publication metadata)",
+    "original_candidate_context": "Stand-up: Tomek Machnicki, Łukasz Wolski, Krzysztof Kasparek; Mielec, 16 lutego 2020",
+    "saved_search_excerpt_locator": "reports/runs/20261101-coverage-tomasz-machnicki.collection.json, attempts search result turn11search0",
+    "saved_search_excerpt_verbatim": "Trójka niezawodnych Komików i trzy miasta. W składzie: Tomek Machnicki, Łukasz Wolski Stand-up i Krzysztof Kasparek udowodnią, że stand-up jest dla każdego. Mielec, zapraszamy!\nInformacje:\nStart: 18:00\nData: 16/02/2020",
+    "fresh_open_result": "Cache miss on direct text open of the exact saved event URL.",
+    "fresh_open_reference": "web open turn0view0",
+    "full_historical_cast_verified": false,
+    "kasparek_identity_clarified": false,
+    "proposal_written": false,
+    "limitation": "The saved search extract suggests the three-person billing and identifies Mielec/date, but the event body could not be freshly retrieved. It cannot establish the actual historical event cast for this context check; no roster context or identity attribution is added."
+  },
+  "facts_confirmed_from_prior_saved_retrievals": [
+    "Aneta’s exact review text and its attached Mielec 16 February 2020 event label were present in saved collection output.",
+    "The exact event URL was present in the saved collection search result.",
+    "The saved search extract itself names Tomek Machnicki, Łukasz Wolski, and Krzysztof Kasparek; this remains search-only for this check."
+  ],
+  "unresolved": [
+    "Actual event page body and independently verified historical cast.",
+    "Whether “wszystkich Panów” in Aneta’s review includes Krzysztof Kasparek.",
+    "Whether the frozen Krzysztof Kasparek reference is identity-resolved by this source."
+  ],
+  "retrieval_accounting": {
+    "queries": 0,
+    "text_opens_attempted": 1,
+    "text_opens_successful": 0,
+    "text_opens_failed": 1,
+    "opens_remaining": 2,
+    "fresh_open_url": "https://www.kupbilecik.pl/pl/event/48604/mielec/stand-up-tomek-machnicki-lukasz-wolski-krzysztof-kasparek",
+    "policy": "Reserved one open before call. No retries, queries, browser use, media access, or candidate discovery."
+  },
+  "risk_and_scope_notes": [
+    "Original fan statement explicitly appraises Łukasz Wolski; its broader collective recommendation does not assign individual preference to other performers without a verified referent.",
+    "The source category/title roster cannot substitute for a verified historical event cast.",
+    "No preference extraction, aliases, graph changes, or coverage claim."
+  ],
+  "checks": {
+    "report_serialized_with_json_dumps": true,
+    "report_json_valid": true,
+    "source_candidate_validator": "Not applicable: no source-candidate proposal was written because event proof is incomplete.",
+    "graph_read": "Latest graph/coverage-disputed-reviewed/graph.json read; no modifications."
+  }
+}

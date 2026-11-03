@@ -1,0 +1,70 @@
+{
+  "run_id": "20261101-coverage-source-page-recovery",
+  "stage": "extraction",
+  "provider": "codex",
+  "model": "gpt-6-luna",
+  "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1",
+  "input_path": "evidence/coverage-source-page-recovery/source-candidates.canonical.jsonl",
+  "output_path": "evidence/coverage-source-page-recovery/evidence.unreviewed.jsonl",
+  "input_sha256": "11c717324e3b233b08ea21ebaaf03ac8ca9605f2bb26590d97977168f7b7150b",
+  "output_sha256": "b42ae0e5947be7485ee66703ded58b66727345be1797bf0678c9b9093f05b599",
+  "candidate_count": 4,
+  "extracted_count": 4,
+  "skipped": [],
+  "accounting": [
+    {
+      "candidate_id": "src_cspr_001",
+      "evidence_id": "ev_cspr_001",
+      "count": 1
+    },
+    {
+      "candidate_id": "src_cspr_002",
+      "evidence_id": "ev_cspr_002",
+      "count": 1
+    },
+    {
+      "candidate_id": "src_cspr_003",
+      "evidence_id": "ev_cspr_003",
+      "count": 1
+    },
+    {
+      "candidate_id": "src_cspr_004",
+      "evidence_id": "ev_cspr_004",
+      "count": 1
+    }
+  ],
+  "decisions": [
+    {
+      "candidate_id": "src_cspr_001",
+      "class": "same_user_coendorsement",
+      "preference": "positive Pacześ; positive Giza; negative Ruciński",
+      "scope": "American comparison does not reverse named appraisals."
+    },
+    {
+      "candidate_id": "src_cspr_002",
+      "class": "same_user_coendorsement",
+      "preference": "positive for all five mapped Polish performers",
+      "scope": "Fiedorczuk conditional on humor adjustment; Carlin and Seinfeld excluded as outside frozen100."
+    },
+    {
+      "candidate_id": "src_cspr_003",
+      "class": "fan_recommendation",
+      "preference": "positive Lotek; Paczus unknown due unresolved identity",
+      "scope": "Concrete personal story response supports Lotek liking; reservations about some jokes retained."
+    },
+    {
+      "candidate_id": "src_cspr_004",
+      "class": "same_user_coendorsement",
+      "preference": "positive for all three",
+      "scope": "Recent favorites, scoped to the post; exact source time not inferred."
+    }
+  ],
+  "source_family_limitations": [
+    "Two forum posts from one GRYOnline thread (001–002) and one separate GRYOnline thread (003); one Reddit thread (004). These four recovered posts are not independent source-family coverage.",
+    "004 source URL is the verified full-thread URL; comment locator is j3bnf41 (thread lines 478–484). Direct permalink attempt cache-missed. retrieved_at is a documented post-read upper bound, not exact network-call time. Reddit relative date does not establish published_at, which remains null."
+  ],
+  "surprises": [
+    "Paczus remains unresolved; this does not erase the clear Lotek preference.",
+    "004 comment permalink was unavailable, so the verified thread URL and documented upper-bound retrieval time are retained."
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "run_id": "20261031-coverage-krzysztof-sawczuk",
+  "target_performer_id": "krzysztof-sawczuk",
+  "rank": 95,
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+  },
+  "attempts": {
+    "queries": [
+      {
+        "query": "Krzysztof Sawczuk KupBilecik opinie recenzje stand-up",
+        "status": "completed",
+        "reserved_at": "2026-10-31T22:39:35Z",
+        "completed_at": "2026-10-31T22:39:45Z",
+        "result": "KupBilecik query returned unrelated Kowalski/Rejent/Zalewski review archive and Sawczuk profile listing his own Stand-Up Teka uploads; no candidate verified."
+      },
+      {
+        "query": "\"Krzysztof Sawczuk\" opinie stand-up fan forum",
+        "status": "completed",
+        "reserved_at": "2026-10-31T22:39:45Z",
+        "completed_at": "2026-10-31T22:39:52Z",
+        "result": "Search returned performer profile, unrelated feature/editorial/profile and structured ratings without author post text; no qualifying co-appreciation."
+      },
+      {
+        "query": "site:kupbilecik.pl/pl/comments \"Krzysztof Sawczuk\"",
+        "status": "completed",
+        "reserved_at": "2026-10-31T22:39:52Z",
+        "completed_at": "2026-10-31T22:40:00Z",
+        "result": "Found event archive pages for Stand-up Warmia with event-roster names and substantive comments; leads include event 27832 and older 2017 pages."
+      },
+      {
+        "query": "site:reddit.com/r/standup \"Krzysztof Sawczuk\" OR \"Sawczuk\" stand-up",
+        "status": "completed",
+        "reserved_at": "2026-10-31T22:40:11Z",
+        "completed_at": "2026-10-31T22:40:19Z",
+        "result": "No Reddit results for targeted exact-name search."
+      },
+      {
+        "query": "\"Krzysztof Sawczuk\" \"polecam\" stand-up opinie",
+        "status": "completed",
+        "reserved_at": "2026-10-31T22:40:19Z",
+        "completed_at": "2026-10-31T22:40:29Z",
+        "result": "Returned unrelated homonym/review hits and KupBilecik event archive search results; no source author text directly retrievable as an opened page, no verified candidate."
+      },
+      {
+        "query": "\"Krzysztof Sawczuk\" stand-up opinie forum",
+        "status": "completed",
+        "reserved_at": "2026-10-31T22:43:34.871061+00:00",
+        "completed_at": "2026-10-31T22:43:36.444127+00:00",
+        "result": "Search executed; inspect tool result in research transcript."
+      },
+      {
+        "query": "\"Krzysztof Sawczuk\" komik recenzja widzowie blog",
+        "status": "completed",
+        "reserved_at": "2026-10-31T22:43:36.561801+00:00",
+        "completed_at": "2026-10-31T22:43:37.973210+00:00",
+        "result": "Search executed; inspect tool result in research transcript."
+      },
+      {
+        "query": "\"Krzysztof Sawczuk\" \"Jaksa Jakszewicz\" opinie OR recenzja stand-up",
+        "status": "completed",
+        "reserved_at": "2026-10-31T22:43:46.522555+00:00",
+        "completed_at": "2026-10-31T22:43:47.901077+00:00",
+        "result": "No qualifying full fan post found in result set."
+      },
+      {
+        "query": "site:wykop.pl \"Krzysztof Sawczuk\" komedia",
+        "status": "completed",
+        "reserved_at": "2026-10-31T22:43:58.710849+00:00",
+        "completed_at": "2026-10-31T22:44:00.249945+00:00",
+        "result": "No qualifying readable fan post found."
+      },
+      {
+        "query": "site:reddit.com \"Krzysztof Sawczuk\" stand-up Polska",
+        "status": "completed",
+        "reserved_at": "2026-10-31T22:44:00.364354+00:00",
+        "completed_at": "2026-10-31T22:44:01.701094+00:00",
+        "result": "No qualifying readable fan post found."
+      }
+    ],
+    "navigation": [
+      {
+        "kind": "preview_open",
+        "url": "about:blank",
+        "status": "succeeded",
+        "reserved_at": "2026-10-31T19:32:50.856353+00:00",
+        "opened_tab_id": "tab_18_02a52303-1e3a-4993-a897-62daeceecefe",
+        "available": true,
+        "completed_at": "2026-10-31T19:33:09.184706+00:00"
+      },
+      {
+        "kind": "web_open",
+        "url": "https://www.kupbilecik.pl/pl/event/27832/mragowo/stand-up-warmia",
+        "status": "failed",
+        "reserved_at": "2026-10-31T22:40:00Z",
+        "completed_at": "2026-10-31T22:40:10Z",
+        "raw_error": "Internal Error (); Failed to fetch https://www.kupbilecik.pl/pl/event/27832/mragowo/stand-up-warmia: Cache miss."
+      },
+      {
+        "kind": "parent_direct_http",
+        "url": "https://www.kupbilecik.pl/pl/event/27832/mragowo/stand-up-warmia",
+        "status": "failed",
+        "raw_error": "HTTP Error403:Forbidden; read-only outside-sandbox probe authorized by automatic review, no challenge bypass",
+        "attempted_at": "2026-10-31T22:42:37.194313Z"
+      },
+      {
+        "kind": "parent_web_open",
+        "url": "https://www.kupbilecik.pl/pl/event/27832/mragowo/stand-up-warmia",
+        "status": "failed",
+        "raw_error": "Cache miss",
+        "attempted_at": "2026-10-31T22:42:37.194313Z"
+      },
+      {
+        "kind": "parent_web_open",
+        "url": "https://www.kupbilecik.pl/uk/event/27832/mragowo/stand-up-warmia",
+        "status": "failed",
+        "raw_error": "URL not accessible via this tool",
+        "attempted_at": "2026-10-31T22:42:37.194313Z"
+      },
+      {
+        "kind": "preview_open",
+        "url": "about:blank",
+        "status": "failed",
+        "reserved_at": "2026-10-31T22:43:26.413795+00:00",
+        "completed_at": "2026-10-31T22:44:09.475304+00:00",
+        "raw_error": "Too many server browser tabs are open. Close one with t3_preview_close, or reuse a tabId from preview_status tabs."
+      },
+      {
+        "kind": "web_open",
+        "url": "https://www.kupbilecik.pl/de/event/30275/olsztyn/stand-up-warmia",
+        "status": "completed",
+        "reserved_at": "2026-10-31T22:43:41.021561+00:00",
+        "completed_at": "2026-10-31T22:43:42.307496+00:00",
+        "result": "Full page retrieved; inspect response in transcript."
+      }
+    ],
+    "browser_reads": []
+  },
+  "candidates": [],
+  "deduplication": {
+    "prior_post_keys": [],
+    "decisions": [
+      {
+        "scope": "prior graph coverage-pieta-reviewed and coverage-kaminski-reviewed",
+        "result": "No raw/canonical candidate manifests matching the frozen performer were found in prior coverage-pilot raw/canonical files. The two graph manifests contain performer node only, no source post keys available for dedup."
+      },
+      {
+        "scope": "existing coverage-pilot graph and raw/canonical source manifests",
+        "result": "Searched the reviewed graph and coverage-pilot JSONL manifests for krzysztof-sawczuk/Sawczuk; found only the frozen graph node, no prior post keys or source candidates to reuse. No candidate generated."
+      }
+    ]
+  },
+  "source_families": [
+    {
+      "family": "KupBilecik/KupBilet event review archives",
+      "status": "Search-only; multiple 2017-2019 archives exposed names/rosters and comments in indexed extracts. Full URL open for a distinct 2018 event failed as URL not accessible. Search-extracted generic event praises and mixed reviews were not promoted because they did not specifically appraise Sawczuk plus another identified performer."
+    },
+    {
+      "family": "Independent public forums (Wykop, Reddit)",
+      "status": "Wykop exact-name query resolved to an unrelated namesake; Reddit query empty. No fan post."
+    },
+    {
+      "family": "Independent blogs/event listings",
+      "status": "Searched Sawczuk/Jaksa appraisal route. Accessible results were editorial/event listing or promotional; no first-person appraisal co-mention."
+    }
+  ],
+  "access_gaps": [
+    {
+      "route": "T3 preview browser",
+      "detail": "preview_status returned available:false; required preview_open attempt failed: Too many server browser tabs are open. No tab was created or closed."
+    },
+    {
+      "route": "KupBilecik full page",
+      "url": "https://www.kupbilecik.pl/de/event/30275/olsztyn/stand-up-warmia",
+      "detail": "web open returned: URL is not accessible via this tool. Another locale/event URL was not repeatedly retried."
+    }
+  ],
+  "stop_reason": "Partial continuation stopped after meaningful route closure: KupBilecik archive content remained search-only/full URL inaccessible, T3 preview capacity blocked the browser fallback, and independent forum/blog routes yielded no qualifying first-person co-appreciation. This is not a no-evidence conclusion; unused allowance remains.",
+  "allowance": {
+    "query_cap": 24,
+    "queries_consumed": 10,
+    "queries_remaining": 14,
+    "navigation_cap": 24,
+    "navigation_consumed": 7,
+    "navigation_remaining": 17,
+    "verified_candidate_cap": 16,
+    "verified_candidates": 0,
+    "verified_candidates_remaining": 16
+  },
+  "completed_at": "2026-10-31T22:44:09.475304+00:00",
+  "parent_access_audit": "Only thisthread previewlist is empty. Sharedbrowserfull; directHTTPS403; no authentication/challenge bypass, no otherthreads tabs touched. Continue otherfull-page sources within originalremaining19queries/19opens.",
+  "surprises": [
+    "Archive search extracts contained reviews and event rosters, but a located generic assessment did not identify which lineup members were being praised; treating it as Sawczuk preference would overstate evidence.",
+    "A same-name Wykop result concerns Krzysztof “Herkules” Sawczuk, not the frozen performer."
+  ]
+}

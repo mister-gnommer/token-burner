@@ -1,0 +1,290 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101-coverage-mama-na-obrotach",
+  "performer_id": "mama-na-obrotach",
+  "performer_name": "Mama Na Obrotach (Klaudia Klimczyk)",
+  "rank": 2,
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+  },
+  "paths": {
+    "source_candidates": "evidence/coverage-expansion/mama-na-obrotach.source-candidates.jsonl"
+  },
+  "surprises": [
+    "Broad search results repeatedly place Mama beside other stand-uppers in event listings, venue catalogues, and editorial coverage; these are co-billing/catalogue associations, not fan co-appreciation.",
+    "The surfaced Reddit author explicitly disclaims comparison to Mama. Forum Wanda has 109 replies, but its public page gates them behind registration, so the discussion could not be inspected without login."
+  ],
+  "queries_attempted": [
+    {
+      "n": 1,
+      "query": "\"Mama Na Obrotach\" \"stand-up\" (polecam OR lubię OR ulubiona) forum",
+      "result": "Results dominated by event promotion, standup.pl official profile/shorts, and cultural-center listings; no personal co-appreciation post surfaced."
+    },
+    {
+      "n": 2,
+      "query": "\"Mama na obrotach\" \"Pacześ\" OR \"Midas\" OR \"Socha\" forum opinie",
+      "result": "Search found an editorial scene overview and event/category pages listing frozen performers; no authored fan opinion qualifying for Mama plus a frozen peer."
+    },
+    {
+      "n": 3,
+      "query": "\"Mama na obrotach\" site:reddit.com/r/ stand-up polecacie",
+      "result": "Search surfaced Reddit thread https://www.reddit.com/r/Polska/comments/1d2gcbk; comment by Maleficent_Sail_4530 is a negative solo appraisal of Mama and explicitly says the commenter is not comparing the OP to Mama."
+    },
+    {
+      "n": 4,
+      "query": "\"Mama na Obrotach\" (\"Olka Szczęśniak\" OR \"Magda Kubicka\" OR \"Michał Leja\") (lubię OR polecam OR śmieszna)",
+      "result": "No qualifying authored post; results were standup.pl homepage/index material, local event pages, and city venue pages."
+    },
+    {
+      "n": 5,
+      "query": "\"mama na obrotach\" site:wykop.pl (standup OR stand-up)",
+      "result": "Search surfaced Wykop post https://wykop.pl/wpis/73895225/hotelparadise-ciekawostka-dnia-pojawi-sie-nowy-pro; reality-TV context, no frozen stand-up peer evaluated."
+    },
+    {
+      "n": 6,
+      "query": "site:kupbilecik.pl/komentarze/ \"Mama Na Obrotach\" opinie",
+      "result": "Search surfaced KupBilecik performer listing and comment archive; archive has no comments."
+    },
+    {
+      "n": 7,
+      "query": "\"Mama na obrotach\" forum (Pacześ OR Socha OR Midas OR Lotek) -bilety",
+      "result": "Search surfaced Forum Wanda long discussion https://forumwanda.pl/viewtopic.php?start=25&t=1535; visible opening post negatively evaluates Mama alone; replies registration-gated."
+    },
+    {
+      "n": 8,
+      "query": "\"Matka na obrotach\" stand-up (Pacześ OR Lotek OR \"Olka Szczęśniak\") opinie",
+      "result": "Search mainly returned standup.pl profile/catalog, Kafeteria profile rather than topical posts, and editorial/promotional material; no qualifying pair post."
+    },
+    {
+      "n": 9,
+      "query": "\"Mama na Obrotach\" \"Daniel Midas\" -standup.pl -bilety -wystąpi",
+      "result": "Search produced event listings/venue material, not fan evaluations."
+    },
+    {
+      "n": 10,
+      "query": "\"Mama na obrotach\" \"Mateusz Socha\" (lubię OR polecam OR śmieszna OR nieśmieszna)",
+      "result": "Search produced standup.pl rankings/catalog, event listings, and repeated editorial content; no qualifying fan post."
+    },
+    {
+      "n": 11,
+      "query": "site:reddit.com \"Mama na obrotach\" (Midas OR Pacześ OR Socha OR \"Olka Szczęśniak\")",
+      "result": "No Reddit results found."
+    },
+    {
+      "n": 12,
+      "query": "site:reddit.com \"Klaudia Klimczyk\" (stand-up OR standup OR komedia)",
+      "result": "No Reddit results found for the frozen person name Klaudia Klimczyk."
+    },
+    {
+      "n": 13,
+      "query": "\"Mama Na Obrotach\" \"Daniel Midas\" (lubię OR lubię obu OR najlepszy OR najlepsza) -site:standup.pl",
+      "result": "Search returned a ticketing article with generic isolated performer suitability blurbs, not a fan’s personal pair preference; other results were promotional/catalogue."
+    },
+    {
+      "n": 14,
+      "query": "\"Klaudia Klimczyk\" stand-up (lubię OR polecam OR śmieszna OR nieśmieszna) forum",
+      "result": "Search surfaced official Filmweb person page with no forum threads, institutional/venue promo and interviews, plus media articles; no authored fan pair discussion. Full-name exact variant route checked; no qualifying lead."
+    },
+    {
+      "n": 15,
+      "query": "\"Mama na Obrotach\" (\"Pacześ\" OR \"Mateusz Socha\" OR \"Daniel Midas\") (forum OR dyskusja OR opinie) -bilety",
+      "result": "Search returned previously known scene overview and event listings, plus an authored humor blog profile list that includes Mama and frozen performers; blog is a possible authored-review lead, but search excerpt alone cannot establish personal preference."
+    },
+    {
+      "n": 16,
+      "query": "\"Mama Na Obrotach\" (\"widziałam\" OR \"byłam\" OR \"oglądałam\" OR \"mój ulubiony\" OR \"lubię\") stand-up opinie komentarze -bilety -zapowiedź",
+      "result": "Search results were noisy or unrelated (podcast transcript about reality TV, old unrelated forum archives). No relevant authored fan post or review surfaced."
+    },
+    {
+      "n": 17,
+      "query": "\"Mama na obrotach\" recenzja \"stand-up\" (Pacześ OR Midas OR Socha OR Lotek)",
+      "result": "Search found the same previously rejected Włoszczowa recap: institutional praise of Mama with a non-frozen Piotr Przytuła support mention, not fan co-appreciation; other hits are promo/editorial. Not reopened per prior instruction."
+    },
+    {
+      "n": 18,
+      "query": "\"Mama Na Obrotach\" (site:biletyna.pl OR site:ebilet.pl OR site:goingapp.pl) (opinie OR recenzje OR komentarze)",
+      "result": "eBilet results are ticket sales/venue catalogues with organizer blurbs, not review or user-comment archives; no qualifying route found."
+    },
+    {
+      "n": 19,
+      "query": "\"Mama na obrotach\" (\"recenzja\" OR \"moja opinia\" OR \"byłam na\" OR \"widziałam\") (komik OR standup) -oficjalny -bilety",
+      "result": "Search did not surface an authored fan review or discussion; returned an unrelated blog index and old/noisy forum pages. No qualifying lead."
+    },
+    {
+      "n": 20,
+      "query": "site:forumwanda.pl \"Mama Na Obrotach\" (stand-up OR komik OR śmieszna) -t=1535",
+      "result": "Forum Wanda search returned only the known registration-gated Mama topic; an index page lists other creator topics but no author-level candidate or readable pair evaluation. No new URL opened."
+    },
+    {
+      "n": 21,
+      "query": "site:wykop.pl (\"Mama na obrotach\" OR \"Klaudia Klimczyk\") (stand-up OR komedia) -hotelparadise",
+      "result": "Wykop results were reality-TV/fan discussions about unrelated show contestants, duplicate existing Wykop post, or health/social-media topics; no stand-up peer evaluation."
+    },
+    {
+      "n": 22,
+      "query": "\"Mama Na Obrotach\" \"recenzja występu\" OR \"moja opinia\" OR \"byłam na stand-upie\"",
+      "result": "No results found for this authored-review query; no page opened."
+    }
+  ],
+  "page_attempts": [
+    {
+      "n": 1,
+      "url": "https://www.reddit.com/r/Polska/comments/1d2gcbk",
+      "purpose": "Verify full thread and author-level context for search lead; count as navigation attempt",
+      "result": "Full Reddit thread opened (1334 lines); author Maleficent_Sail_4530 at lines 327-334: “Nieśmieszne dla mnie, ale niektórych śmieszy mama na obrotach na przykład. Nie że porównuję twój filmik do mamy na obrotach, tylko że jak taki bezbek może dodawać filmiki to ty też możesz XD”. Solo negative evaluation; explicit comparison disclaimer; no candidate."
+    },
+    {
+      "n": 2,
+      "url": "https://forumwanda.pl/viewtopic.php?start=25&t=1535",
+      "purpose": "Check public accessibility of long fan discussion; exact page attempt",
+      "result": "Full public page opened (86 lines). Opening post author kotekciemnosci at lines 28-32 criticizes Mama’s popularity/content alone. Page says 109 replies, but replies require registration at lines 35-39. No candidate."
+    },
+    {
+      "n": 3,
+      "url": "https://www.kupbilecik.pl/komentarze/12010/Stand-up%2BMama%2BNa%2BObrotach/",
+      "purpose": "Check full review/archive page for author posts or pair-level appraisals",
+      "result": "Full comment archive opened (136 lines); lines 73-75 say there are no comments. No candidate."
+    },
+    {
+      "n": 4,
+      "url": "https://wykop.pl/wpis/73895225/hotelparadise-ciekawostka-dnia-pojawi-sie-nowy-pro",
+      "purpose": "Verify public Wykop full post context; search lead is non-stand-up discussion",
+      "result": "Full Wykop post opened (347 lines). Comments at lines 129-143 identify Mama and insult her in unrelated Królowa Przetrwania/reality-TV context; no frozen peer or stand-up evaluation. No candidate."
+    }
+  ],
+  "candidates_saved": [],
+  "source_families": [
+    {
+      "family": "Reddit",
+      "attempts": [
+        "search 3",
+        "search 11",
+        "page 1"
+      ],
+      "outcome": "Full thread verified; one Mama-only negative comment with explicit non-comparison; no qualifying pair record."
+    },
+    {
+      "family": "Wykop",
+      "attempts": [
+        "search 5",
+        "page 4"
+      ],
+      "outcome": "Full thread verified; reality-TV discussion, unrelated to stand-up preference or a frozen peer."
+    },
+    {
+      "family": "Forum Wanda",
+      "attempts": [
+        "search 7",
+        "page 2"
+      ],
+      "outcome": "Opening post verified as Mama-only negative critique; 109 replies registration-gated; no access without login."
+    },
+    {
+      "family": "KupBilecik",
+      "attempts": [
+        "search 6",
+        "page 3"
+      ],
+      "outcome": "Actual comment archive opened and reports no comments; search/page returned no recoverable fan reviews."
+    },
+    {
+      "family": "Gazeta forum (prior pilot)",
+      "attempts": [
+        "prior run 20261030-batch01-pilot.collection-a"
+      ],
+      "outcome": "Prior ledger records solo Mama opinions or a cache-missed Mama-only post; no qualifying frozen-peer linkage. Avoided repeating exact query/URL routes."
+    }
+  ],
+  "search_only_leads": [
+    {
+      "url": "https://www.dkwloszczowa.pl/aktualnosci/dom-kultury/stund-up-mama-na-obrotach-ptniezly-bajzel-10032026-.html",
+      "locator": "Search result turn0search0; 12 March 2026 event recap",
+      "status": "not opened in this run; promotional praise of Mama plus non-frozen Piotr Przytuła; excluded as co-billing/event praise; same route already rejected in 20261030 pilot"
+    },
+    {
+      "url": "https://sucha24.pl/artykul/stand-up-w-malopolsce-n2294719",
+      "locator": "Search result turn1search0",
+      "status": "search-only editorial scene overview; several names listed together without personal authored evaluations"
+    },
+    {
+      "url": "https://www.jegoeminencja.pl/2023/07/17/znani-stand-uperzy/",
+      "locator": "Search result turn1search1 / turn16search1",
+      "status": "search-only humorous editorial profiles and co-mentions, not source-local personal fan co-appreciation"
+    },
+    {
+      "url": "https://www.kupbilecik.pl/pl/news/id/15/stand-up-w-polsce-2026-najlepsi-komicy-ruszaja-w-trasy-po-calym-kraju",
+      "locator": "Search result turn16search0",
+      "status": "search-only generic editorial recommendations by separate performers, not a fan’s own linked preferences"
+    }
+  ],
+  "identity_risks": [
+    {
+      "locator": "https://www.reddit.com/r/Polska/comments/1d2gcbk/robi%C4%99_dla_znajomych_%C5%9Bmieszne_filmiki_jak_gotuj%C4%99/ lines 327-334",
+      "status": "Mama is identifiable by exact public nickname. No second frozen performer is evaluated; OP is not a frozen performer."
+    },
+    {
+      "locator": "https://forumwanda.pl/viewtopic.php?start=25&t=1535 lines 28-32",
+      "status": "Mama is identifiable by exact nickname. The post is solo appraisal; hidden replies not identity-checked."
+    },
+    {
+      "locator": "https://wykop.pl/wpis/73895225/hotelparadise-ciekawostka-dnia-pojawi-sie-nowy-pro lines 129-143",
+      "status": "Mama identified by exact nickname in unrelated reality-TV thread; other public personalities discussed there do not establish a frozen stand-up peer."
+    }
+  ],
+  "gaps": [
+    "No verified source-local fan post in this run personally appreciates or compares Mama with an identified frozen peer; no candidate row was saved.",
+    "Forum Wanda replies are inaccessible without registration, so this long discussion remains an access-limited lead. No login or challenge bypass was attempted.",
+    "KupBilecik archive is accessible but empty (zero comments).",
+    "Prior batch pilot reported two weak Gazeta routes: https://forum.gazeta.pl/forum/w,567,178713713,178713713,sanah_myslalam_ze_mnie_juz_nic_nie_zaskoc.html was an opened Mama-only opinion with non-frozen Sanah/Julia Wieniawa; https://forum.gazeta.pl/forum/w,567,176920531,176920531,A_latwe_zajecia_ktore_ludzie_kreuja_na_trudne_.html cache-missed and search snippet was Mama-only. Not retried.",
+    "The latest coverage-source-page-tail canonical file contained a single candidate for Pacześ, Leja, and Syrek-Dąbrowski; the latest recovery canonical file contained four candidates for other performers. Neither includes Mama. No duplicate source/post was found in the source-candidate corpora."
+  ],
+  "usage": {
+    "queries": 22,
+    "query_limit": 24,
+    "page_attempts": 5,
+    "page_attempt_limit": 24,
+    "verified_candidates": 0,
+    "candidate_limit": 16
+  },
+  "stop_reason": "Stopped after 13 guarded searches and 4 guarded full-page attempts across multiple source families produced no qualifying pair-level fan post; remaining leads are promotional/editorial, solo opinions, irrelevant co-mentions, or access-limited. No quota renewal.",
+  "retrieved_at": "2026-11-01T23:47:40Z",
+  "page_attempts_log": [
+    {
+      "n": 5,
+      "url": "https://www.jegoeminencja.pl/2023/07/17/znani-stand-uperzy/",
+      "purpose": "Inspect full authored scene profile found during name-variant search for first-person personal appraisal and Mama-peer linkage.",
+      "result": "Full blog page verified as an intentionally flattering profile list, not an independent personal review; Mama/Midas passage compares audience reach rather than comedy preference. No candidate."
+    }
+  ],
+  "continuations": [
+    {
+      "continued_at": "2026-11-01T23:47:40Z",
+      "note": "Bounded follow-up to the same run and allowance. Preserved the original stop_reason and all initial logs; no candidates added.",
+      "queries_added": 9,
+      "query_numbers_added": "14-22",
+      "page_attempts_added": 1,
+      "page_attempt_numbers_added": "5",
+      "verified_candidates_added": 0,
+      "source_families_checked": [
+        "personal-authored comedy blog (full page read; editorially framed superlatives, excluded)",
+        "eBilet (search only; event listings and organizer copy, no review archive surfaced)",
+        "Forum Wanda (search only; only known gated Mama thread returned)",
+        "Wykop (search only; reality-TV posts, no stand-up peer evaluation)"
+      ],
+      "stop_reason": "Name variants outside Reddit and authored-review/archive routes were checked. The only full authored blog page explicitly framed its praise as an inverse roast; eBilet returned sales/venue listings; Forum Wanda returned its known registration-gated thread; Wykop returned unrelated reality-TV discussions. Further searches were unlikely to improve coverage within the bounded follow-up. No positive or negative fan connection established.",
+      "usage_after_continuation": {
+        "queries": 22,
+        "query_limit": 24,
+        "queries_remaining": 2,
+        "page_attempts": 5,
+        "page_attempt_limit": 24,
+        "page_attempts_remaining": 19,
+        "verified_candidates": 0,
+        "candidate_limit": 16,
+        "candidate_slots_remaining": 16
+      }
+    }
+  ]
+}

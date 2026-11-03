@@ -1,0 +1,342 @@
+{
+  "run_id": "20261031-coverage-source-first-01",
+  "slice": "B",
+  "status": "early_return",
+  "scope": "Public same-user ratings or public favorite histories for identifiable individual-performer works; feasibility probe only.",
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+source-first-fan-discovery-v1"
+  },
+  "budgets": {
+    "queries_cap": 12,
+    "opens_cap": 12,
+    "verified_candidates_cap": 8,
+    "queries_used": 7,
+    "opens_used": 6,
+    "verified_candidates": 0,
+    "queries_remaining": 5,
+    "opens_remaining": 6,
+    "verified_candidates_remaining": 8
+  },
+  "reservations": [
+    {
+      "type": "query",
+      "number": 1,
+      "query": "site:filmweb.pl/user \"stand-up\" ocena Filmweb użytkownik",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "open",
+      "number": 1,
+      "url": "https://www.filmweb.pl/ranking/tvshow/country/42/genre/17",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "number": 2,
+      "query": "site:filmweb.pl \"Magda Kubicka\" \"stand-up\" ocena OR site:filmweb.pl \"Grzegorz Dolniak\" \"stand-up\" ocena",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "number": 3,
+      "query": "site:filmweb.pl/film/ \"Rafał Pacześ\" opinie oceny stand-up",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "open",
+      "number": 2,
+      "url": "https://www.filmweb.pl/tvshow/ProkuraTOUR%27a%2BRafa%C5%82%2BPacze%C5%9B-2025-10107212/opinie",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "query",
+      "number": 4,
+      "query": "site:filmweb.pl/user \"alliwant_filmweb\" Filmweb oceny",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "open",
+      "number": 3,
+      "source": "turn5search0 link 37",
+      "status": "attempted; consumed",
+      "purpose": "follow visible author link to test public same-user history"
+    },
+    {
+      "type": "query",
+      "number": 5,
+      "query": "site:filmweb.pl/user alliwant_filmweb",
+      "status": "attempted; consumed"
+    },
+    {
+      "type": "open",
+      "number": 4,
+      "url": "https://www.filmweb.pl/user/alliwant_filmweb",
+      "status": "attempted; consumed",
+      "purpose": "test public profile route inferred only from the site’s observed /user/{handle} route; not evidence if inaccessible"
+    }
+  ],
+  "query_log": [
+    {
+      "number": 1,
+      "query": "site:filmweb.pl/user \"stand-up\" ocena Filmweb użytkownik",
+      "result": "Filmweb publicly indexed user opinion/ratings pages, but result includes only one irrelevant film page and aggregate ranking pages."
+    },
+    {
+      "number": 2,
+      "query": "site:filmweb.pl \"Magda Kubicka\" \"stand-up\" ocena OR site:filmweb.pl \"Grzegorz Dolniak\" \"stand-up\" ocena",
+      "result": "No results returned; exact name query did not discover attributable Filmweb work pages."
+    },
+    {
+      "number": 3,
+      "query": "site:filmweb.pl/film/ \"Rafał Pacześ\" opinie oceny stand-up",
+      "result": "Filmweb surfaces a person filmography plus title pages for ProkuraTOUR’a and Pacześ Show. A review page presents named user handles with explicit numeric per-title ratings; first useful public route found."
+    },
+    {
+      "number": 4,
+      "query": "site:filmweb.pl/user \"alliwant_filmweb\" Filmweb oceny",
+      "result": "Search returned a Filmweb opinion page that displays the handle alliwant_filmweb next to an explicit rating token 3 and authored review text; user-profile URL not established."
+    },
+    {
+      "number": 5,
+      "query": "site:filmweb.pl/user alliwant_filmweb",
+      "result": "No matching user page; results were generic public user rankings and an unrelated public profile route (/user/Selekcjaaa). Indexed handle page not found."
+    },
+    {
+      "number": 5,
+      "query": "site:filmweb.pl/user alliwant_filmweb",
+      "result": "No matching user page. Returned generic ranking pages and an unrelated user profile."
+    }
+  ],
+  "open_log": [
+    {
+      "number": 1,
+      "url": "https://www.filmweb.pl/ranking/tvshow/country/42/genre/17",
+      "access": "full page readable, 628 lines; content is an aggregate ranking and gives title-level mean/count, no same-user preference history."
+    },
+    {
+      "number": 2,
+      "url": "https://www.filmweb.pl/tvshow/ProkuraTOUR%27a%2BRafa%C5%82%2BPacze%C5%9B-2025-10107212/opinie",
+      "access": "failed: HTTP fetch returned 400 redirect loop; not retried with URL variants."
+    },
+    {
+      "number": 3,
+      "source": "turn5search0 link 37",
+      "access": "failed: web click unable to resolve link call (invalid arguments); no URL guessed or retried."
+    },
+    {
+      "number": 4,
+      "url": "https://www.filmweb.pl/user/alliwant_filmweb",
+      "access": "failed: URL is not accessible via web tool."
+    }
+  ],
+  "eligible_individual_work_inventory": [
+    {
+      "performer_id": "rafal-paczes",
+      "work": "ProkuraTOUR’a Rafał Pacześ",
+      "source_url": "https://www.filmweb.pl/tvshow/ProkuraTOUR%27a%2BRafa%C5%82%2BPacze%C5%9B-2025-10107212/opinie",
+      "performer_attribution": "Title is individually named for Rafał Pacześ in indexed Filmweb result; full opinion page inaccessible."
+    },
+    {
+      "performer_id": "rafal-paczes",
+      "work": "Pacześ Show",
+      "source_url": "https://www.filmweb.pl/tvshow/Pacze%C5%9B+Show-2021-10001725",
+      "performer_attribution": "Title/person result identifies Rafał Pacześ; it is a mixed-format show, so not treated as a qualifying individual stand-up work."
+    },
+    {
+      "performer_id": "rafal-paczes",
+      "work": "Katarzyna Piasecka, Rafał Pacześ: Seriously Funny",
+      "source_url": "https://www.filmweb.pl/person/Rafa%C5%82%2BPacze%C5%9B-2558944",
+      "performer_attribution": "Shared-title credit; excluded because an ensemble rating cannot be assigned to either individual."
+    }
+  ],
+  "read_routes": [
+    {
+      "site": "filmweb.pl",
+      "route": "Public ranking page",
+      "result": "Full-page read available; only aggregate title scores/counts and ranking order. Excluded from candidates."
+    },
+    {
+      "site": "filmweb.pl",
+      "route": "Title opinion pages and source-local review ratings",
+      "result": "Search-indexed page content shows individually named reviewers, explicit numeric title ratings and authored opinions for a Rafał Pacześ work. Direct full-page read failed with HTTP 400 redirect loop; following indexed reviewer link failed to resolve; observed /user/{handle} profile route test was inaccessible."
+    }
+  ],
+  "search_only_leads": [
+    {
+      "url": "https://www.filmweb.pl/tvshow/ProkuraTOUR%27a%2BRafa%C5%82%2BPacze%C5%9B-2025-10107212/opinie?page=2",
+      "reason": "Indexed page displays multiple source-local handles and explicit per-title score tokens, including alliwant_filmweb with rating 3. Not admitted: no full page or independently verified same-user second work/history."
+    },
+    {
+      "url": "https://www.filmweb.pl/ranking/tvshow/country/42/genre/17",
+      "reason": "Aggregate ranking page, full page opened; average score and aggregate rating count only."
+    },
+    {
+      "url": "https://www.filmweb.pl/tvshow/ProkuraTOUR%27a%2BRafa%C5%82%2BPacze%C5%9B-2025-10107212/opinie",
+      "reason": "Indexed Filmweb route; direct open returned redirect loop."
+    }
+  ],
+  "deduplication": {
+    "graph_manifest_checked": true,
+    "coverage_pilot_checked": true,
+    "notes": "Reviewed baseline graph source manifest and coverage-pilot source/evidence paths for overlapping Filmweb records. No candidate was saved, so no candidate-level merge was required; the prior Filmweb records located were discussion/favorite-text sources, not this rating-history route."
+  },
+  "surprises": [
+    "Filmweb search results expose per-reviewer handles and numeric ratings for one clearly named Rafał Pacześ special, so the route is not purely aggregate. However, this evidence remained search-index output: the exact public opinion URL returned a redirect loop, its visible author link could not be resolved, and an observed /user/{handle} pattern test was inaccessible.",
+    "No accessible public same-user rating history spanning two individual-performer works was verified. This is a source-access/provenance limitation, not evidence that the performers or ratings are absent."
+  ],
+  "result": {
+    "status": "no_qualifying_candidates",
+    "reason": "Feasibility stop: one individual work has indexed reviewer-level ratings, but there is no verified full-page route or same-user history across two individual works. Do not promote search-index excerpts or aggregate rankings."
+  },
+  "observed_at": "2026-10-31T22:49:26Z",
+  "followup": {
+    "section": "followup_same_budget",
+    "observed_at": "2026-10-31T22:52:25Z",
+    "budget_basis": "Original reservation array is authoritative. The prior duplicated query_log entry numbered 5 is not counted as an additional query.",
+    "followup_usage": {
+      "queries_used": 2,
+      "opens_used": 2,
+      "verified_candidates": 0
+    },
+    "cumulative_usage": {
+      "queries_used": 7,
+      "opens_used": 6,
+      "verified_candidates": 0,
+      "queries_remaining": 5,
+      "opens_remaining": 6,
+      "verified_candidates_remaining": 8
+    },
+    "reservations": [
+      {
+        "type": "query",
+        "number": 6,
+        "query": "site:letterboxd.com/film \"stand-up\" Polska Rafał Pacześ",
+        "status": "attempted; consumed"
+      },
+      {
+        "type": "query",
+        "number": 7,
+        "query": "site:imdb.com/title Polish stand-up special \"Magda Kubicka\" OR \"Grzegorz Dolniak\"",
+        "status": "attempted; consumed"
+      },
+      {
+        "type": "open",
+        "number": 5,
+        "url": "https://letterboxd.com/film/rafal-paczes-prokuratoura/reviews/",
+        "status": "attempted; consumed; failed: web full-page read returned Cache miss"
+      },
+      {
+        "type": "open",
+        "number": 6,
+        "url": "https://www.imdb.com/list/ls523223611/",
+        "status": "attempted; consumed; failed: HTTP 403 Forbidden"
+      }
+    ],
+    "query_log": [
+      {
+        "number": 6,
+        "query": "site:letterboxd.com/film \"stand-up\" Polska Rafał Pacześ",
+        "result": "Search surfaced a Letterboxd review page for the individually named Rafał Pacześ special ProkuraTOUR’A. Indexed page text showed review/watch entries with source-local usernames and authored text, but no verified same-user ratings across two individual-performer works."
+      },
+      {
+        "number": 7,
+        "query": "site:imdb.com/title Polish stand-up special \"Magda Kubicka\" OR \"Grzegorz Dolniak\"",
+        "result": "Search surfaced IMDb’s Polish Stand-up list with individually titled Magda Kubicka and Grzegorz Dolniak specials and public Rate controls. These are work/list pages, not evidence of any user’s submitted ratings or cross-work history."
+      }
+    ],
+    "open_log": [
+      {
+        "number": 5,
+        "url": "https://letterboxd.com/film/rafal-paczes-prokuratoura/reviews/",
+        "access": "Failed with Cache miss; no full authored review text or profile history was inspected."
+      },
+      {
+        "number": 6,
+        "url": "https://www.imdb.com/list/ls523223611/",
+        "access": "Failed with 403 Forbidden; no list membership, ratings, or profile history was treated as evidence."
+      }
+    ],
+    "eligible_individual_work_inventory": [
+      {
+        "performer_id": "rafal-paczes",
+        "work": "Rafał Pacześ - ProkuraTOUR’A",
+        "source_url": "https://letterboxd.com/film/rafal-paczes-prokuratoura/reviews/",
+        "performer_attribution": "Search result identifies an individually titled special; reviews page not fully readable in this probe."
+      },
+      {
+        "performer_id": "magda-kubicka",
+        "work": "Magda Kubicka: Nie o taka Polske walczylam (2019)",
+        "source_url": "https://www.imdb.com/list/ls523223611/",
+        "performer_attribution": "Search-indexed IMDb list entry identifies her as star; list page returned 403, so entry is inventory lead only."
+      },
+      {
+        "performer_id": "magda-kubicka",
+        "work": "Magda Kubicka: Love Me Tinder (2020)",
+        "source_url": "https://www.imdb.com/list/ls523223611/",
+        "performer_attribution": "Search-indexed IMDb list entry identifies her as star; list page returned 403, so entry is inventory lead only."
+      },
+      {
+        "performer_id": "magda-kubicka",
+        "work": "Magda Kubicka: Kazdy ma swoje Wejherowo (2022)",
+        "source_url": "https://www.imdb.com/list/ls523223611/",
+        "performer_attribution": "Search-indexed IMDb list entry identifies her as star; list page returned 403, so entry is inventory lead only."
+      },
+      {
+        "performer_id": "grzegorz-dolniak",
+        "work": "Grzegorz Dolniak: Klamka zapadla (2018)",
+        "source_url": "https://www.imdb.com/list/ls523223611/",
+        "performer_attribution": "Search-indexed IMDb list entry identifies him as star; list page returned 403, so entry is inventory lead only."
+      },
+      {
+        "performer_id": "grzegorz-dolniak",
+        "work": "Grzegorz Dolniak: Flashback (2019)",
+        "source_url": "https://www.imdb.com/list/ls523223611/",
+        "performer_attribution": "Search-indexed IMDb list entry identifies him as star; list page returned 403, so entry is inventory lead only."
+      },
+      {
+        "performer_id": "grzegorz-dolniak",
+        "work": "Grzegorz Dolniak: Termin przydatnosci (2020)",
+        "source_url": "https://www.imdb.com/list/ls523223611/",
+        "performer_attribution": "Search-indexed IMDb list entry identifies him as star; list page returned 403, so entry is inventory lead only."
+      },
+      {
+        "performer_id": "grzegorz-dolniak",
+        "work": "Grzegorz Dolniak: Sztuka relaksu (2022)",
+        "source_url": "https://www.imdb.com/list/ls523223611/",
+        "performer_attribution": "Search-indexed IMDb list entry identifies him as star; list page returned 403, so entry is inventory lead only."
+      }
+    ],
+    "read_routes": [
+      {
+        "site": "letterboxd.com",
+        "route": "Public work review page",
+        "result": "Search-index result showed source-local usernames, watch markers, and review text for one individual special; direct full-page fetch failed with Cache miss. No two-work same-user history verified."
+      },
+      {
+        "site": "imdb.com",
+        "route": "Public Polish stand-up list",
+        "result": "Search-index result identified individual specials and IMDb Rate controls; opening the list returned 403. A list and rate affordance do not establish individual user ratings."
+      }
+    ],
+    "search_only_leads": [
+      {
+        "url": "https://letterboxd.com/film/rafal-paczes-prokuratoura/reviews/",
+        "reason": "Indexed review/watch entries show source-local author labels, but full-page content could not be opened; no second work by the same author verified."
+      },
+      {
+        "url": "https://www.imdb.com/list/ls523223611/",
+        "reason": "Indexed list establishes work inventory leads only. List order, Rate controls and watched actions are not same-user preference evidence; page returned 403."
+      }
+    ],
+    "surprises": [
+      "Two additional services surfaced relevant individual work pages, but neither provided a readable full public page in this probe: Letterboxd returned Cache miss and IMDb returned 403. This documents route/access limitations, not absence of ratings, preferences, performers, or works."
+    ],
+    "process_note": "Follow-up reservations were recorded in this report after the two queries and opens had been executed; the prior empty JSONL and baseline report existed before follow-up. No further calls were made after documenting this sequencing deviation.",
+    "result": {
+      "status": "no_qualifying_candidates",
+      "reason": "Additional-family feasibility check found only search-indexed author labels/watch-review leads and an IMDb work list. No full public same-user preference history covering two identifiable individual-performer works was read."
+    }
+  }
+}

@@ -1,0 +1,430 @@
+{
+  "run_id": "run20261101-coverage-thread-harvest-02",
+  "collector": "codex/gpt-6-luna",
+  "prompt_version": "collect-fan-evidence-v3+source-first-fan-discovery-v1",
+  "status": "complete",
+  "budget_origins": {
+    "A": {
+      "original_cap": {
+        "queries": 24,
+        "opens": 24,
+        "raw_slots": 16
+      },
+      "prior_used": {
+        "queries": 24,
+        "opens": 21,
+        "raw_slots": 13
+      },
+      "this_run": {
+        "queries": 0,
+        "page_attempts": 2,
+        "new_raw_candidates": 3
+      },
+      "cumulative_used": {
+        "queries": 24,
+        "opens": 23,
+        "raw_slots": 16
+      },
+      "remaining_original_allowance": {
+        "queries": 0,
+        "opens": 1,
+        "raw_slots": 0
+      }
+    },
+    "B": {
+      "original_cap": {
+        "queries": 12,
+        "opens": 12,
+        "raw_slots": 8
+      },
+      "prior_used": {
+        "queries": 12,
+        "opens": 8,
+        "raw_slots": 1
+      },
+      "this_run": {
+        "queries": 0,
+        "page_attempts": 4,
+        "new_raw_candidates": 1
+      },
+      "cumulative_used": {
+        "queries": 12,
+        "opens": 12,
+        "raw_slots": 2
+      },
+      "remaining_original_allowance": {
+        "queries": 0,
+        "opens": 0,
+        "raw_slots": 6
+      }
+    }
+  },
+  "sources": [
+    {
+      "origin": "A",
+      "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+      "site": "forum.gazeta.pl",
+      "retrieved_at": "2026-11-01T12:04:27Z",
+      "attempts": 2,
+      "full_read": true,
+      "result": "Full rendered thread read across lines 167-416; no actual pagination link observed. Follow-up line-range open returned the remaining comments from the same page.",
+      "locators": [
+        {
+          "candidate_id": "src_cth02a_001",
+          "author_hint": "asia.sthm",
+          "published_at_visible": "2023-11-01 21:24",
+          "rendered_lines": "285-291",
+          "note": "Complete post text. The other named act is outside the frozen performer set."
+        },
+        {
+          "candidate_id": "src_cth02a_002",
+          "author_hint": "annaboleyn",
+          "published_at_visible": "2023-11-01 21:54",
+          "rendered_lines": "310-314",
+          "note": "Complete textual post; the trailing author-added wink is rendered as an image and was not converted into a guessed emoji. “Puzyr” is the exact frozen surname match for Filip Puzyr in this stand-up thread."
+        },
+        {
+          "candidate_id": "src_cth02a_003",
+          "author_hint": "brenda_bee",
+          "published_at_visible": "2023-11-01 21:33",
+          "rendered_lines": "295-299",
+          "note": "Complete authored post. Olka Radomska and Abelarda are preserved as source text but not resolved to frozen IDs."
+        }
+      ],
+      "reservation_status": "completed"
+    },
+    {
+      "origin": "B",
+      "url": "https://www.filmweb.pl/person/Abelard+Giza-286174/discussion/Jakie%2Bs%C4%85%2Bwasze%2Bulubione%2Bkabarety-1936249",
+      "site": "www.filmweb.pl",
+      "retrieved_at": "2026-11-01T12:04:27Z",
+      "attempts": 1,
+      "full_read": true,
+      "result": "Full rendered page read, 514 lines. No separate pagination link observed; full replies visible in one page result.",
+      "locators": [],
+      "reservation_status": "completed"
+    }
+  ],
+  "new_candidate_ids": [
+    "src_cth02a_001",
+    "src_cth02a_002",
+    "src_cth02a_003",
+    "src_cth02b_001"
+  ],
+  "duplicates": [
+    {
+      "origin": "A",
+      "author_hint": "madame_edith",
+      "published_at_visible": "2023-11-01 21:07",
+      "rendered_lines": "185-190",
+      "decision": "Exact saved author/post in graph manifest canonical sources; did not resave."
+    },
+    {
+      "origin": "A",
+      "author_hint": "tanebo001",
+      "published_at_visible": "2023-11-01 21:15",
+      "rendered_lines": "209-213",
+      "decision": "Exact saved tanebo001 Boras/Jurkiewicz post; did not resave."
+    },
+    {
+      "origin": "A",
+      "author_hint": "dariamax",
+      "published_at_visible": "2023-11-01 23:07",
+      "rendered_lines": "333-337",
+      "decision": "Exact saved post; did not resave."
+    },
+    {
+      "origin": "A",
+      "author_hint": "katarrynka",
+      "published_at_visible": "2023-11-02 07:03",
+      "rendered_lines": "341-345",
+      "decision": "Exact saved post; emoji/render variant does not make it new."
+    },
+    {
+      "origin": "A",
+      "author_hint": "memphis90",
+      "published_at_visible": "2023-11-02 07:26",
+      "rendered_lines": "349-352",
+      "decision": "Exact saved post; did not resave."
+    },
+    {
+      "origin": "A",
+      "author_hint": "segregatorwpaski",
+      "published_at_visible": "2023-11-02 08:12",
+      "rendered_lines": "371-376",
+      "decision": "Exact saved post; did not resave."
+    },
+    {
+      "origin": "A",
+      "author_hint": "princy-mincy",
+      "published_at_visible": "2023-11-02 10:25",
+      "rendered_lines": "388-392",
+      "decision": "Exact saved post; did not resave."
+    },
+    {
+      "origin": "A",
+      "author_hint": "youngagain",
+      "published_at_visible": "2023-11-02 12:37",
+      "rendered_lines": "396-401",
+      "decision": "Exact saved post; did not resave."
+    },
+    {
+      "origin": "B",
+      "author_hint": "cotca",
+      "published_at_visible": "2012-12-31 12:13:51",
+      "rendered_lines": "263-285",
+      "decision": "Exact saved Filmweb list post; did not resave."
+    }
+  ],
+  "skips": [
+    {
+      "origin": "A",
+      "author_hint": "mika_p",
+      "rendered_lines": "267-271",
+      "reason": "Bare performer names; no explicit personal liking."
+    },
+    {
+      "origin": "A",
+      "author_hint": "ga-ti",
+      "rendered_lines": "275-281",
+      "reason": "States the author's teen likes Olka Szczęśniak; the author says only that she is selectively amused, so no preference transferred."
+    },
+    {
+      "origin": "A",
+      "author_hint": "wiosennedni5",
+      "rendered_lines": "326-329",
+      "reason": "Bare names without preference predicate."
+    },
+    {
+      "origin": "A",
+      "author_hint": "laruara",
+      "rendered_lines": "412-416",
+      "reason": "Recommendations and work/genre praise do not establish personal performer liking."
+    },
+    {
+      "origin": "B",
+      "author_hint": "bozo777",
+      "rendered_lines": "160-181",
+      "reason": "Top individual acts are introduced as relatively best; ranking alone does not establish personal liking. Performer praise appears within a kabaret-favorites thread prompt."
+    },
+    {
+      "origin": "B",
+      "author_hint": "weekendowy_filmowiec",
+      "rendered_lines": "289-300",
+      "reason": "Personal liking is stated for Andrus, Grabowski, Jachimek, none identified as a frozen performer from this source."
+    },
+    {
+      "origin": "B",
+      "author_hint": "Trojden",
+      "rendered_lines": "341-369",
+      "reason": "Ranked list of individual satirists without explicit personal liking; ranking alone is insufficient."
+    }
+  ],
+  "surprises": [
+    "The assigned Filmweb page was fully readable but yielded no new eligible post naming an identified frozen performer: its known cotca list is a duplicate; remaining individual names occur in relative rankings or outside the frozen set.",
+    "The Gazeta thread contains previously saved posts and distinct readable full posts. Dedup was author/post/excerpt-level against canonical inputs referenced by the specified graph manifests, not thread-wide.",
+    "One additional clear Gazeta multi-performer preference post by zona_glusia was deferred after A used its three candidate slots. The Gazeta thread prompt asks for recommendations, so it was not copied as favorite-reply context."
+  ],
+  "stop_reason": "Stopped after exhausting the three reallocated B page-open attempts; one new Gazeta candidate saved. Filmweb audit remained blocked after the known URL returned UnexpectedStatusCode and preview_open was unavailable because server browser tabs were full; no retries, searches, alternate routes, or extra budget used.",
+  "dedup_basis": {
+    "graph": "tasks/standupers-graph/graph/coverage-boras-reviewed/graph.json",
+    "exact_input_manifests": [
+      "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+      "tasks/standupers-graph/reports/runs/20261031-batch01-corroboration.json",
+      "tasks/standupers-graph/reports/runs/20261031-batch02.json",
+      "tasks/standupers-graph/reports/runs/20261031-batch03.json",
+      "tasks/standupers-graph/reports/runs/20261031-batch04.json",
+      "tasks/standupers-graph/reports/runs/20261031-batch05.context-reviewed.json",
+      "tasks/standupers-graph/reports/runs/20261031-batch06.json",
+      "tasks/standupers-graph/reports/runs/20261031-batch07.json",
+      "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+      "tasks/standupers-graph/reports/runs/20261031-batch09.context-reviewed.json",
+      "tasks/standupers-graph/reports/runs/20261031-batch10.json",
+      "tasks/standupers-graph/reports/runs/20261031-batch06-catchup.json",
+      "tasks/standupers-graph/reports/runs/20261031-coverage-magda-kubicka.json",
+      "tasks/standupers-graph/reports/runs/20261031-coverage-olka-szczesniak.json",
+      "tasks/standupers-graph/reports/runs/20261031-coverage-karol-modzelewski.json",
+      "tasks/standupers-graph/reports/runs/20261031-coverage-wojtek-pieta.json",
+      "tasks/standupers-graph/reports/runs/20261031-coverage-wojciech-kaminski.json",
+      "tasks/standupers-graph/reports/runs/20261031-coverage-source-first-01.json",
+      "tasks/standupers-graph/reports/runs/20261031-coverage-source-first-01-followup.json",
+      "tasks/standupers-graph/reports/runs/20261031-coverage-fan-forums-b-followup.json",
+      "tasks/standupers-graph/reports/runs/20261101-coverage-source-page-recovery.json",
+      "tasks/standupers-graph/reports/runs/20261101-coverage-source-page-tail.json",
+      "tasks/standupers-graph/reports/runs/20261101-coverage-blazej-krajewski.json",
+      "tasks/standupers-graph/reports/runs/20261101-coverage-karol-kopiec.json",
+      "tasks/standupers-graph/reports/runs/20261101-coverage-boras.json"
+    ],
+    "canonical_source_candidate_paths": [
+      {
+        "manifest": "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+        "canonical_source_candidates": "tasks/standupers-graph/evidence/stage-06/source-candidates.jsonl"
+      },
+      {
+        "manifest": "tasks/standupers-graph/reports/runs/20261031-batch01-corroboration.json",
+        "canonical_source_candidates": "tasks/standupers-graph/evidence/stage-06/corroboration.sources.jsonl"
+      },
+      {
+        "manifest": "tasks/standupers-graph/reports/runs/20261031-batch02.json",
+        "canonical_source_candidates": "tasks/standupers-graph/evidence/batch-02/source-candidates.jsonl"
+      },
+      {
+        "manifest": "tasks/standupers-graph/reports/runs/20261031-batch03.json",
+        "canonical_source_candidates": "tasks/standupers-graph/evidence/batch-03/source-candidates.jsonl"
+      },
+      {
+        "manifest": "tasks/standupers-graph/reports/runs/20261031-batch04.json",
+        "canonical_source_candidates": "tasks/standupers-graph/evidence/batch-04/source-candidates.jsonl"
+      },
+      {
+        "manifest": "tasks/standupers-graph/reports/runs/20261031-batch05.context-reviewed.json",
+        "canonical_source_candidates": "tasks/standupers-graph/evidence/batch-05-context-reviewed/source-candidates.jsonl"
+      },
+      {
+        "manifest": "tasks/standupers-graph/reports/runs/20261031-batch06.json",
+        "canonical_source_candidates": "tasks/standupers-graph/evidence/batch-06/source-candidates.jsonl"
+      },
+      {
+        "manifest": "tasks/standupers-graph/reports/runs/20261031-batch07.json",
+        "canonical_source_candidates": "tasks/standupers-graph/evidence/batch-07/source-candidates.jsonl"
+      },
+      {
+        "manifest": "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+        "canonical_source_candidates": "tasks/standupers-graph/evidence/batch-08/source-candidates.jsonl"
+      },
+      {
+        "manifest": "tasks/standupers-graph/reports/runs/20261031-batch09.context-reviewed.json",
+        "canonical_source_candidates": "tasks/standupers-graph/evidence/coverage-pilot/batch09.context-reviewed.source-candidates.jsonl"
+      },
+      {
+        "manifest": "tasks/standupers-graph/reports/runs/20261031-batch10.json",
+        "canonical_source_candidates": "tasks/standupers-graph/evidence/batch-10/source-candidates.jsonl"
+      },
+      {
+        "manifest": "tasks/standupers-graph/reports/runs/20261031-batch06-catchup.json",
+        "canonical_source_candidates": "tasks/standupers-graph/evidence/batch-06-catchup/source-candidates.jsonl"
+      },
+      {
+        "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-magda-kubicka.json",
+        "canonical_source_candidates": "tasks/standupers-graph/evidence/coverage-pilot/magda-kubicka.source-candidates.canonical.jsonl"
+      },
+      {
+        "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-olka-szczesniak.json",
+        "canonical_source_candidates": "tasks/standupers-graph/evidence/coverage-pilot/olka-szczesniak.source-candidates.canonical.jsonl"
+      },
+      {
+        "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-karol-modzelewski.json",
+        "canonical_source_candidates": "tasks/standupers-graph/evidence/coverage-pilot/karol-modzelewski.source-candidates.canonical.jsonl"
+      },
+      {
+        "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-wojtek-pieta.json",
+        "canonical_source_candidates": "tasks/standupers-graph/evidence/coverage-pilot/wojtek-pieta.source-candidates.canonical.jsonl"
+      },
+      {
+        "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-wojciech-kaminski.json",
+        "canonical_source_candidates": "tasks/standupers-graph/evidence/coverage-pilot/wojciech-kaminski.source-candidates.canonical.jsonl"
+      },
+      {
+        "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-source-first-01.json",
+        "canonical_source_candidates": "tasks/standupers-graph/evidence/coverage-source-first-01/source-candidates.canonical.jsonl"
+      },
+      {
+        "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-source-first-01-followup.json",
+        "canonical_source_candidates": "tasks/standupers-graph/evidence/coverage-source-first-01-followup/source-candidates.canonical.jsonl"
+      },
+      {
+        "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-fan-forums-b-followup.json",
+        "canonical_source_candidates": "tasks/standupers-graph/evidence/coverage-fan-forums-b-followup/source-candidates.canonical.jsonl"
+      },
+      {
+        "manifest": "tasks/standupers-graph/reports/runs/20261101-coverage-source-page-recovery.json",
+        "canonical_source_candidates": "tasks/standupers-graph/evidence/coverage-source-page-recovery/source-candidates.canonical.jsonl"
+      },
+      {
+        "manifest": "tasks/standupers-graph/reports/runs/20261101-coverage-source-page-tail.json",
+        "canonical_source_candidates": "tasks/standupers-graph/evidence/coverage-source-page-tail/source-candidates.canonical.jsonl"
+      },
+      {
+        "manifest": "tasks/standupers-graph/reports/runs/20261101-coverage-blazej-krajewski.json",
+        "canonical_source_candidates": "tasks/standupers-graph/evidence/coverage-expansion/blazej-krajewski.source-candidates.canonical.jsonl"
+      },
+      {
+        "manifest": "tasks/standupers-graph/reports/runs/20261101-coverage-karol-kopiec.json",
+        "canonical_source_candidates": "tasks/standupers-graph/evidence/coverage-expansion/karol-kopiec.source-candidates.canonical.jsonl"
+      },
+      {
+        "manifest": "tasks/standupers-graph/reports/runs/20261101-coverage-boras.json",
+        "canonical_source_candidates": "tasks/standupers-graph/evidence/coverage-expansion/boras.source-candidates.canonical.jsonl"
+      }
+    ],
+    "reviewed_replacements": {
+      "count": 3,
+      "handling": "Used only through their canonical source paths in the exact graph input manifests; each canonical path was deduplicated by source-local author/post/excerpt."
+    }
+  },
+  "candidate_budget_origins": {
+    "src_cth02a_001": "A",
+    "src_cth02a_002": "A",
+    "src_cth02a_003": "A",
+    "src_cth02b_001": "B"
+  },
+  "budget_deferred": [
+    {
+      "origin": "A",
+      "author_hint": "zona_glusia",
+      "published_at_visible": "2023-11-01 21:48",
+      "rendered_lines": "303-306",
+      "reason": "Explicit multi-performer personal liking and eligible in principle, but A reached its three-new-candidate run allowance; prioritized candidates with stronger current-isolate coverage."
+    }
+  ],
+  "continuation_b": {
+    "reservations": [
+      {
+        "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+        "status": "completed",
+        "attempts": 1,
+        "purpose": "Read deferred zona_glusia post; B-only reallocation",
+        "result": "Read full 677-line page; zona_glusia L303-306, no duplicate found against raw A or canonical sources."
+      },
+      {
+        "url": "https://www.filmweb.pl/person/Abelard+Giza-286174/discussion/Jakie%2Bs%C4%85%2Bwasze%2Bulubione%2Bkabarety-1936249",
+        "status": "failed",
+        "attempts": 2,
+        "purpose": "Audit bozo777 and Trojden replies; B-only reallocation"
+      }
+    ],
+    "raw_results": [
+      {
+        "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+        "retrieval": "web open turn0view0, full returned page 677 lines",
+        "raw_relevant_lines": "L303 zona_glusia 01.11.23, 21:48: \"Lubię Abelarda Gizę, Piotrka Szumowskiego, Antoniego Syrka-Dąbrowskiego.\" Full post, no quoted/context block. Parent L170 asks \"Polecicie kogoś jeszcze do posłuchania?\""
+      },
+      {
+        "url": "https://www.filmweb.pl/person/Abelard+Giza-286174/discussion/Jakie%2Bs%C4%85%2Bwasze%2Bulubione%2Bkabarety-1936249",
+        "retrieval": "first reserved web open returned UnexpectedStatusCode; one preview_open attempt failed with Too many server browser tabs are open",
+        "raw_relevant_lines": "Previously stored full-read record identifies the exact question as a favorites prompt and locator bozo777 lines 160-181, Trojden lines 341-369; bozo777 canonical saved excerpt is: \"Natomiast jeżeli mówimy o pojedynczych występach to najlepsi są: 1. Cezary Pazura 2. Jerzy Kryszak 3. Maciej Stuhr 4. Abelard Giza Jeszcze dorzuciłbym Andrzeja Grabowskiego bo daje radę i Piotra Bałtroczyka.\" Exact Trojden wording unavailable in local saved artifacts."
+      }
+    ],
+    "decisions": [
+      {
+        "candidate_id": "src_cth02b_001",
+        "decision": "saved",
+        "proof": "Explicit first-person Lubię list, full authored post, answers original recommendation prompt; eligible on own wording independent of prompt. Exact-author/post/excerpt checked against all graph input-manifest canonical sources and raw A; no duplicate. Dedup loaded all 25 canonical_source_candidates paths from the report-specified exact graph input manifests (116 rows) plus raw A; zero hits for zona_glusia or the normalized excerpt.",
+        "locator": "Gazeta rendered L303-306, author zona_glusia, 01.11.23 21:48",
+        "caveat": "Prompt asks for recommendations; it is stored as separately attributed context, not used to infer preference."
+      },
+      {
+        "origin": "B",
+        "author_hint": "bozo777",
+        "decision": "skip_existing_duplicate",
+        "proof": "Existing canonical source candidate src_b01c_001 contains complete wording; it says these are \"najlepsi\" individual acts and includes third-party names. Favorites thread title/question does not by itself make relative ranking personal preference; no new candidate."
+      },
+      {
+        "origin": "B",
+        "author_hint": "Trojden",
+        "decision": "skip_uncertain_source_unavailable",
+        "proof": "Prior full-read report logs lines 341-369 as ranked individual-satirist list without explicit personal liking. New audit retrieval failed, and exact wording was not locally persisted; no new candidate or preference inference."
+      }
+    ]
+  }
+}

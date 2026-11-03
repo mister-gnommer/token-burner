@@ -1,0 +1,73 @@
+{
+  "surprises": [
+    "Canonicalization correctly separated the exact author bodies from date, byline, title, and event framing; the original raw blocks remain preserved.",
+    "The two author labels are distinct source-local keys on one archive, not verified global people or independent source families.",
+    "The positive group appraisal in each post is scoped to the 2026-08-24 event; Paweł’s Martyna observation and crowdwork caveat are not generalized."
+  ],
+  "run_id": "20261101-coverage-tomek-kolecki",
+  "status": "complete_unreviewed",
+  "input": "evidence/coverage-expansion/tomek-kolecki.source-candidates.canonical.jsonl",
+  "input_sha256": "cfe902c1a28d19ee04718e61ff65e86fd30e1521bd325c37af7ae96ca6a12fc1",
+  "output": "evidence/coverage-expansion/tomek-kolecki.evidence.unreviewed.jsonl",
+  "output_sha256": "0c610a116425d2e1ed8cc161aab9e7c65de30edf5d82e063d8d182927446f72a",
+  "excerpt_sha256": "4c512f8bc65cf3b7ce2b32489663fe679e0c79d2efda628568ea2f70edb2dcac",
+  "accounting": {
+    "candidates": 2,
+    "records": 2,
+    "skips": 0,
+    "assessed_once": true
+  },
+  "collector_history": {
+    "src_cov_tkolecki_001": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+    },
+    "src_cov_tkolecki_002": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+    }
+  },
+  "extractor": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "extract-evidence-v3",
+    "run_id": "20261101-coverage-tomek-kolecki",
+    "confidence": 0.92
+  },
+  "decisions": [
+    {
+      "candidate_id": "src_cov_tkolecki_001",
+      "decision": "record",
+      "evidence_id": "ev_cov_tkolecki_001",
+      "evidence_class": "same_user_coendorsement",
+      "reason": "“Polecam wszystkim” recommends the event but does not establish personal preference. The explicit shared predicate “Zalew i Kołecki mega śmieszni” positively evaluates both named performers, supporting historical/event-scoped coendorsement and positive preference.",
+      "mentions": {
+        "bartosz-zalewski": "“mega śmieszni” explicitly evaluates Zalew positively; event 208296 lineup resolves “Zalew” contextually to Bartosz Zalewski.",
+        "tomek-kolecki": "“mega śmieszni” explicitly evaluates Kołecki positively; canonical form and event title/lineup resolve him to Tomek Kołecki."
+      },
+      "scope": "2026-08-24 Bielsko-Biała event only; no general/current taste inference. The 2019 negative evidence remains independent and unchanged."
+    },
+    {
+      "candidate_id": "src_cov_tkolecki_002",
+      "decision": "record",
+      "evidence_id": "ev_cov_tkolecki_002",
+      "evidence_class": "same_user_coendorsement",
+      "reason": "“Zalew, Kołek i Marcel spoko” is a positive direct appraisal of each named performer and supports event-scoped coendorsement; “spoko” is kept as the exact preference quote. “Martyna trochę zestresowana” is a mild state observation, not an explicit dislike or positive evaluation. “Mało crowdworku” is a separate event-format criticism and is not assigned to a performer.",
+      "mentions": {
+        "bartosz-zalewski": "“spoko” is a positive direct evaluation; event roster resolves “Zalew” contextually to Bartosz Zalewski.",
+        "tomek-kolecki": "“spoko” is a positive direct evaluation; event title/roster resolve “Kołek” contextually to Tomek Kołecki.",
+        "unresolved:Marcel": "“spoko” positively appraises Marcel in the lineup context, but Marcel Bieńkowski is outside frozen100; retain mention with null ID and do not invent an ID.",
+        "martyna-podwysocka": "“trochę zestresowana” reports an observed state; sentiment is neutral and personal preference unknown. Event 208296 roster resolves Martyna contextually. “Mało crowdworku” remains a separate format caveat."
+      },
+      "scope": "2026-08-24 Bielsko-Biała event only; no general/current taste inference. The 2019 negative evidence remains independent and unchanged."
+    }
+  ],
+  "source_fidelity": {
+    "canonicalization_report": "reports/runs/20261101-coverage-tomek-kolecki.canonicalization.json",
+    "saved_dom_proof": "reports/runs/20261101-coverage-tomek-kolecki.collection.json recovery.source_attempts[1] and [2], raw_payload.structuredContent.value.text",
+    "verification": "Both exact review excerpts, publication date 2026-08-25, event framing Bielsko-Biała 24 August 2026, and event 208296 lineup match the saved DOM. Canonical excerpt strings and context objects copied exactly."
+  },
+  "validation_command": "python3 scripts/evidence_pipeline.py validate --kind evidence evidence/coverage-expansion/tomek-kolecki.evidence.unreviewed.jsonl"
+}

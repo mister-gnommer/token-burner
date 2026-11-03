@@ -1,0 +1,90 @@
+{
+  "run_id": "20261101-coverage-karol-kopiec",
+  "input": "src_cov_kkopiec_001",
+  "output": "evidence/coverage-expansion/karol-kopiec.evidence.unreviewed.jsonl",
+  "source_count": 1,
+  "extracted": 1,
+  "skipped": 0,
+  "records": [
+    {
+      "candidate_id": "src_cov_kkopiec_001",
+      "evidence_id": "ev_cov_kkopiec_001",
+      "evidence_class": "same_user_coendorsement",
+      "status": "unreviewed",
+      "source_role_issue": "Professional comedian interviewee; explicit personal appraisal preserved, eligibility for fan-preference graph requires independent review.",
+      "mention_decisions": {
+        "Rafał Pacześ": {
+          "performer_id": "rafal-paczes",
+          "sentiment": "positive",
+          "preference": "positive"
+        },
+        "Łukasz „Lotek” Lodkowski": {
+          "performer_id": "lukasz-lotek-lodkowski",
+          "sentiment": "positive",
+          "preference": "positive"
+        },
+        "Cezarego Jurkiewicza": {
+          "performer_id": "cezary-jurkiewicz",
+          "sentiment": "positive",
+          "preference": "positive"
+        },
+        "Abelard Giza": {
+          "performer_id": "abelard-giza",
+          "sentiment": "positive",
+          "preference": "unknown"
+        },
+        "Kacper Ruciński": {
+          "performer_id": "kacper-rucinski",
+          "sentiment": "positive",
+          "preference": "positive"
+        },
+        "Jacek Stramik": {
+          "performer_id": "jacek-stramik",
+          "sentiment": "positive",
+          "preference": "unknown"
+        },
+        "Karol Kopiec": {
+          "performer_id": "karol-kopiec",
+          "sentiment": "neutral",
+          "preference": "unknown"
+        },
+        "Michał Kempa": {
+          "performer_id": "michal-kempa",
+          "sentiment": "neutral",
+          "preference": "unknown"
+        },
+        "Wiolka Walaszczyk": {
+          "performer_id": "wiolka-walaszczyk",
+          "sentiment": "neutral",
+          "preference": "unknown"
+        },
+        "Kasia Piasecka": {
+          "performer_id": "katarzyna-piasecka",
+          "sentiment": "neutral",
+          "preference": "unknown"
+        },
+        "Aleksandrę Petrus": {
+          "performer_id": null,
+          "sentiment": "positive",
+          "preference": "unknown"
+        }
+      }
+    }
+  ],
+  "extractor": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1",
+    "run_id": "20261101-coverage-karol-kopiec",
+    "confidence": 0.88
+  },
+  "source_excerpt_unchanged": true,
+  "context_unchanged": true,
+  "published_at": null,
+  "source_date_note": "Article footer says Ultramaryna, luty 2017; exact day unknown.",
+  "surprises": [
+    "Personal favorite framing and explicit likes occur in an interview with professional comedian Mariusz Kałamaga; eligibility as audience fan evidence remains unresolved.",
+    "The same passage mixes personal taste, craft appraisal, style description, bare mentions, and support for a friend; these were not treated uniformly."
+  ],
+  "skip_reason": null
+}

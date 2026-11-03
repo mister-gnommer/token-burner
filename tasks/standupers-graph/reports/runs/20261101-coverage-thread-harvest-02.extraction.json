@@ -1,0 +1,101 @@
+{
+  "run_id": "20261101-coverage-thread-harvest-02",
+  "stage": "extraction",
+  "status": "complete",
+  "source_file": "evidence/coverage-thread-harvest-02/source-candidates.canonical.jsonl",
+  "source_candidate_count": 4,
+  "extracted_count": 3,
+  "skipped_count": 1,
+  "accounting": [
+    {
+      "candidate_id": "src_cth02a_001",
+      "evidence_id": "ev_cth02a_001",
+      "decision": "record",
+      "reason": "Multiple explicit absolute positive appraisals from one author, including two frozen performers; unresolved foreign social-handle mention retained."
+    },
+    {
+      "candidate_id": "src_cth02a_002",
+      "decision": "skip",
+      "reason": "One resolved frozen performer receives explicit personal liking (“lubię patrzeć” Olka Szczęśniak); Puzyr and Iliza Shlesinger remain unresolved, and “śmieszy mnie Puzyr” plus laughter response are appraisals rather than explicit liking/favorite status under this preference rule. No second frozen personal preference and no permissible pair class is established. Mentions were assessed independently; no identity or preference is inferred from appearance/consumption or the generic genre dislike."
+    },
+    {
+      "candidate_id": "src_cth02a_003",
+      "evidence_id": "ev_cth02a_003",
+      "decision": "record",
+      "reason": "Explicit “Najbardziej lubimy” list plus explicit Lotek opposition; joint account remains one source-local author, unresolved Abelarda and Olka Radomska retained."
+    },
+    {
+      "candidate_id": "src_cth02b_001",
+      "evidence_id": "ev_cth02b_001",
+      "decision": "record",
+      "reason": "Direct first-person “Lubię” list independently establishes the three named frozen preferences; parent recommendation prompt kept as context only."
+    }
+  ],
+  "lineage": [
+    {
+      "candidate_id": "src_cth02a_001",
+      "source_line": 1,
+      "source_sha256": "9812d7a610a5041cb70666f94942b4c96242b4783e4227c261139cde169fb2bb",
+      "excerpt_sha256": "ea5017aedbf681cbb01a8383e8b40626300b7cb3bd3c59e09b5b7a031c925819",
+      "canonical_author_key": "fan_509d1527b3c54954"
+    },
+    {
+      "candidate_id": "src_cth02a_002",
+      "source_line": 2,
+      "source_sha256": "3216a1fb473cb9dcea06aa9fa68664e9992bcc2bd5a78f32cb681365b936c0c9",
+      "excerpt_sha256": "cf53aebf3883af1ba85a9e123afda3f87b4dc5511822e0f4ed38121e92c58b93",
+      "canonical_author_key": "fan_866dd593e4a93a38"
+    },
+    {
+      "candidate_id": "src_cth02a_003",
+      "source_line": 3,
+      "source_sha256": "44338fd893e2269ba09b2c130cbba1f76dde365d66a5f0eb2da1a1e1f683a183",
+      "excerpt_sha256": "3adaa41bb081011648388e5bc293e1045a6368ae61be14df3e6c99a8fed346d0",
+      "canonical_author_key": "fan_f8fdfd74e3368a82"
+    },
+    {
+      "candidate_id": "src_cth02b_001",
+      "source_line": 4,
+      "source_sha256": "0178731d7fab93c70191dc151d12d28251c362f821b25a3bc0d76f5ec3cdba59",
+      "excerpt_sha256": "87b07a634dda3bde82bcb384fa0625b1addad958876fb3deb4e67577f6255cee",
+      "canonical_author_key": "fan_1b0c34ad0329361e"
+    }
+  ],
+  "provenance": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1",
+    "run_id": "20261101-coverage-thread-harvest-02",
+    "review_status": "unreviewed",
+    "reviewer": null
+  },
+  "surprises": [
+    "A001 supports positive preference for an unresolved foreign Ismo handle via an absolute appraisal; identity is not established.",
+    "A002 has one clear frozen positive preference (Olka Szczęśniak) but no permissible multi-performer/pair evidence after keeping Puzyr unresolved and separating laughter/appraisal from explicit liking.",
+    "A003 contains both an affirmative joint-account list and explicit Lotek opposition; these remain one source-local author. The tentative Radomska target tag is not identity proof."
+  ],
+  "decisions": [
+    "A001: same_user_coendorsement; preference quotes are verbatim author substrings. “pijany w trupa” is retained in the unchanged excerpt but not converted into a factual behavior/style claim.",
+    "A002: explicit skip; the unresolved names remain accounted for in the report, not emitted as a graph evidence record. Frozen Olka Szczęśniak identity is established from the full name in the stand-up thread, while Puzyr surname alone is insufficient in this brief.",
+    "A003: same_user_coendorsement; positive list members and negative Lotek preference are all retained. “Abelarda” and “Olkę Radomską” have null performer IDs; no global alias was changed.",
+    "B001: same_user_coendorsement from the author’s own direct predicate. Parent is copied verbatim as separately attributed context; favorite-reply exception is not invoked.",
+    "All posts are historical (2023-11-01); none establishes current or general preference. Same-page posts are distinct authored posts but not independent platforms. No graph/scoring claim is made."
+  ],
+  "limits": [
+    "Social handles and author keys are source-local; they do not verify real-world or cross-platform identity.",
+    "Confidence values are judgments, not measured probabilities.",
+    "Parent context is copied only for B001 and never transfers the parent’s preference.",
+    "No source page was reopened; extraction used only saved canonical data, manifest, collection and canonicalization reports."
+  ],
+  "validation": {
+    "command": "python3 tasks/standupers-graph/scripts/evidence_pipeline.py validate --kind evidence tasks/standupers-graph/evidence/coverage-thread-harvest-02/evidence.unreviewed.jsonl",
+    "result": "passed: validated 3 evidence records; schema and frozen performer IDs valid",
+    "additional_audits": [
+      "Exact source fields, excerpt, language and context copied from matching canonical rows.",
+      "All emitted surface forms and known preference quotes are verbatim substrings of the author excerpt; unknown preference quotes are null.",
+      "Review fields are unreviewed with reviewer null.",
+      "Source line hashes and excerpt hashes recorded for all four candidates.",
+      "Exact accounting: 4/4 candidates, 3 evidence records and 1 explicit reasoned skip."
+    ]
+  }
+}

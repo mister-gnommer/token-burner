@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101-coverage-kolecki-archive-tail",
+  "reviewer": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "verify-evidence-v3"
+  },
+  "surprises": [
+    "The extractor correctly retained event criticism but left all negative personal preferences unknown. “Rozczarował mnie Kolecki” and the explicit no-laughter/“Porażka” appraisal are direct individual performance judgments, supporting negative event preferences without implying general dislike.",
+    "Candidate 001 praises out-of-roster Kuba Wilczek; the mention remains null-ID. “Nie był jego dzień” criticizes Bartosz’s event without clear personal liking/dislike.",
+    "Candidate 003 includes suspected intoxication only as an author impression; it is preserved in the source excerpt and not endorsed as fact or used as the preference signal."
+  ],
+  "inputs": {
+    "canonical_candidates": "evidence/coverage-expansion/tomek-kolecki-archive-tail.source-candidates.canonical.jsonl",
+    "unreviewed_evidence": "evidence/coverage-expansion/tomek-kolecki-archive-tail.evidence.unreviewed.jsonl",
+    "actual_run": "reports/runs/20261101-coverage-kolecki-archive-tail.json",
+    "source_proof": "reports/runs/20261101-coverage-kolecki-archive-tail.collection.json recovery.capture_reconciliation proof locators/hashes; canonicalization and extraction sidecars"
+  },
+  "outputs": {
+    "evidence": "evidence/coverage-expansion/tomek-kolecki-archive-tail.evidence.jsonl",
+    "verification": "reports/runs/20261101-coverage-kolecki-archive-tail.verification.json"
+  },
+  "counts": {
+    "candidates": 3,
+    "records": 3,
+    "accepted": 3,
+    "uncertain": 0,
+    "rejected": 0,
+    "skips": 0,
+    "each_candidate_once": true
+  },
+  "records": [
+    {
+      "candidate_id": "src_cov_tkolecki_tail_001",
+      "evidence_id": "ev_cov_tkolecki_tail_001",
+      "status": "accepted",
+      "issues_or_corrections": "Corrected “Tomek” to tomek-kolecki using this event title only. Retained positive Gadowski/Kołecki appraisals, positive/null-ID Kuba Wilczek, and event-negative Bartosz with unknown preference."
+    },
+    {
+      "candidate_id": "src_cov_tkolecki_tail_002",
+      "evidence_id": "ev_cov_tkolecki_tail_002",
+      "status": "accepted",
+      "issues_or_corrections": "Kept positive Gadowski/Zalewski. Changed Kołecki from unknown to negative event preference based on direct “Rozczarował mnie”; relative “ten nie był najlepszy” alone would not qualify. Not a global dislike judgment."
+    },
+    {
+      "candidate_id": "src_cov_tkolecki_tail_003",
+      "evidence_id": "ev_cov_tkolecki_tail_003",
+      "status": "accepted",
+      "issues_or_corrections": "Kept positive Gadowski/Kołecki with Gadowski caveat. Changed Zalewski from unknown to negative event preference based on no laughter/“Porażka”. Suspected sobriety is unverified author impression only."
+    }
+  ],
+  "audit": {
+    "source_fidelity": "All 3 excerpts and source metadata copied from canonical candidates; event title and city/date context match corrected retained-DOM context. Extraction provenance and evidence IDs preserved. Collection ledger confirms raw_payload, author-post locators, exact excerpt/context hashes; malformed raw history remains untouched.",
+    "identity": "All resolved IDs occur in frozen standupers.json. Candidate 001 “Tomek” is grounded only by its event title. Kuba Wilczek is kept null because not frozen-roster member. Surname resolutions remain record-scoped; no aliases or lineup-to-preference transfer.",
+    "appraisal": "Positive and negative individual performance evaluations are recorded symmetrically as event-scoped preference signals when explicit. Relative comparison alone is not used. Candidate 001 Bartosz remains unknown preference because “not his day” does not establish the author’s personal liking/dislike. No general artist dislike inferred.",
+    "provenance": "Extraction lineage unchanged: codex/gpt-6-luna/extract-evidence-v3/20261101-coverage-kolecki-archive-tail. Reviewer: codex/gpt-6-luna/verify-evidence-v3.",
+    "scope": "All three candidates represented once. No graph claim, global alias, roster preference, or factual claim about Zalewski’s sobriety."
+  },
+  "validation": {
+    "command": "python3 scripts/evidence_pipeline.py validate --kind evidence evidence/coverage-expansion/tomek-kolecki-archive-tail.evidence.jsonl",
+    "result": "passed: validated 3 evidence records; focused accounting/source/context/provenance/IDs/surfaces/quotes/review audit passed (3/3)."
+  }
+}

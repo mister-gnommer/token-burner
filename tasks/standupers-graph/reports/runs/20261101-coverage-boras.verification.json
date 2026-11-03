@@ -1,0 +1,99 @@
+{
+  "run_id": "20261101-coverage-boras",
+  "reviewer": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "reasoning_effort": "medium",
+    "prompt_version": "verify-evidence-v3"
+  },
+  "surprises": [
+    "“Mi podchodzi” is one shared personal-taste predicate over the coordinated names, not a bare co-mention.",
+    "The source gives “Tomasz Boras” only; mapping to the frozen full name depends on the collection report’s recorded profile confirmation plus stand-up context, so identity confidence remains below the exact Cezary match."
+  ],
+  "counts": {
+    "source_candidates": 1,
+    "reviewed_records": 1,
+    "accepted": 1,
+    "uncertain": 0,
+    "rejected": 0,
+    "skipped": 0
+  },
+  "source_accounting": {
+    "candidate_ids": [
+      "src_cov_boras_001"
+    ],
+    "reviewed_candidate_ids": [
+      "src_cov_boras_001"
+    ],
+    "skipped_candidate_ids": [],
+    "exactly_once": true
+  },
+  "lineage": {
+    "candidate_id": "src_cov_boras_001",
+    "evidence_id": "ev_cov_boras_001",
+    "run_id": "20261101-coverage-boras",
+    "canonical_candidate_path": "evidence/coverage-expansion/boras.source-candidates.canonical.jsonl",
+    "unreviewed_evidence_path": "evidence/coverage-expansion/boras.evidence.unreviewed.jsonl",
+    "reviewed_evidence_path": "evidence/coverage-expansion/boras.evidence.jsonl",
+    "canonical_candidate_sha256": "17f3e28f0d4593de54be5bc8e33243fc29e40b23eaccddd7cedf4d3287a9ed2b",
+    "unreviewed_evidence_sha256": "e7d5b8e7debfcc1de32da14730e14cc5d8e825db3da92c54301865345cae2502",
+    "extractor": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1",
+      "run_id": "20261101-coverage-boras",
+      "confidence": 0.9
+    },
+    "source_excerpt_language_context_copied_exactly": true,
+    "source_metadata_and_author_key_copied": true,
+    "author_key": "fan_c52034513a032af7"
+  },
+  "eligibility": {
+    "decision": "accepted",
+    "basis": "The full source post directly states “Mi podchodzi” about both coordinated performers; this is personal liking, not recommendation, attendance, relative superiority, or transferred parent context.",
+    "limits": "Boras alias mapping is plausible and source-backed by the collection report’s noted standup.pl profile confirmation, but the excerpt itself lacks “Borkowski”; identity confidence is moderate and task target alone was not used as proof. The post is historical (2023-11-01), timezone unknown, and does not establish current or general preference. One author/post does not establish ordinary audience representativeness or performer-style similarity."
+  },
+  "mention_decisions": [
+    {
+      "surface_form": "Cezary Jurkiewicz",
+      "performer_id": "cezary-jurkiewicz",
+      "decision": "positive personal preference retained",
+      "quote": "Mi podchodzi Cezary Jurkiewicz",
+      "identity": "high; exact frozen name",
+      "sentiment": "positive",
+      "preference": "positive"
+    },
+    {
+      "surface_form": "Tomasz Boras",
+      "performer_id": "tomasz-boras-borkowski",
+      "decision": "positive personal preference retained; alias mapping uncertainty localized",
+      "quote": "Mi podchodzi Cezary Jurkiewicz i Tomasz Boras",
+      "identity": "moderate-high; collection report records standup.pl profile confirmation for Tomasz “Boras” Borkowski and stand-up context; surname is not in source surface",
+      "sentiment": "positive",
+      "preference": "positive"
+    }
+  ],
+  "class_decision": {
+    "evidence_class": "same_user_coendorsement",
+    "basis": "One author applies the explicit personal-taste predicate “Mi podchodzi” to both names."
+  },
+  "validation": {
+    "command": "python3 tasks/standupers-graph/scripts/evidence_pipeline.py validate --kind evidence tasks/standupers-graph/evidence/coverage-expansion/boras.evidence.jsonl",
+    "status": "passed",
+    "records": 1
+  },
+  "skip_audit": [],
+  "checks": {
+    "candidate_accounted_exactly_once": true,
+    "source_excerpt_language_context_exact_copy": true,
+    "source_metadata_and_author_key_lineage": true,
+    "extractor_provenance_matches_run_manifest": true,
+    "source_and_extraction_sha256_recorded": true,
+    "all_non_null_performer_ids_frozen": true,
+    "all_surface_forms_verbatim": true,
+    "known_preference_quotes_verbatim": true,
+    "unknown_preferences_have_null_quotes": true,
+    "review_status_and_actual_reviewer_present": true,
+    "mention_count": 2
+  }
+}

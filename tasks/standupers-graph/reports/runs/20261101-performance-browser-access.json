@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101-performance-browser-access",
+  "surprises": [
+    "The official watch page loaded with an exact title different from the earlier translated search title, but neither the channel identity nor the transcript interface could be read from this preview session.",
+    "Two snapshots timed out and the page DOM read exposed only the player timer; this establishes an access limitation in this capture, not that captions are absent."
+  ],
+  "scope": {
+    "performer_id": "mama-na-obrotach",
+    "video_url": "https://www.youtube.com/watch?v=3NbLiG_HPEs",
+    "access_only": true,
+    "verified_readable": false,
+    "style_or_graph_claims": false,
+    "proof_path": "evidence/performance-browser-access/mama-transcript-proof.json"
+  },
+  "action_ledger": {
+    "allocation": {"queries": 0, "browser_navigation_or_click_actions": 6},
+    "used": {"queries": 0, "browser_navigation_or_click_actions": 1},
+    "remaining": {"queries": 0, "browser_navigation_or_click_actions": 5},
+    "actions": [
+      {"action": "preview_status", "time": "2026-11-01 17:39:45 UTC", "result": "available:false; no current tab"},
+      {"action": "preview_open", "url": "https://www.youtube.com/watch?v=3NbLiG_HPEs", "time": "2026-11-01 17:39:45 UTC", "result": "available:true; owned tab tab_1e_02a52303-1e3a-4993-a897-62daeceecefe"},
+      {"action": "preview_snapshot", "time": "2026-11-01 17:39:45 UTC", "result": "timeout after 15000ms"},
+      {"action": "preview_snapshot", "time": "2026-11-01 17:39:45 UTC", "result": "timeout after 15000ms"},
+      {"action": "preview_evaluate DOM read", "time": "2026-11-01 17:39:45 UTC", "result": "title/url and body text ‘0:02 / 1:39:09’; no timed transcript text"},
+      {"action": "preview_evaluate control text read", "time": "2026-11-01 17:39:45 UTC", "result": "no controls matching transcript/transkrypcja/show more/więcej or consent wording"},
+      {"action": "preview_close", "time": "2026-11-01 17:39:45 UTC", "result": "closed owned tab"}
+    ],
+    "read_only_snapshots_and_dom_reads_logged_separately": true
+  },
+  "public_source_metadata": {
+    "actual_page_title": "Mama Na Obrotach STAND-UP | CAŁY PROGRAM 2025 | \"Kiedyś, a dziś\" - YouTube",
+    "channel_identity": "unverified",
+    "identity_note": "Title is visible from document.title; page body/metadata channel attribution was not available in the captured DOM."
+  },
+  "raw_capture": {
+    "stored_immediately_in_session": true,
+    "durably_saved_before_interpretation": true,
+    "dom_read_result": {"url": "https://www.youtube.com/watch?v=3NbLiG_HPEs", "title": "Mama Na Obrotach STAND-UP | CAŁY PROGRAM 2025 | \"Kiedyś, a dziś\" - YouTube", "text": "0:02 / 1:39:09"},
+    "snapshots": ["Preview automation snapshot timed out after 15000ms", "Preview automation snapshot timed out after 15000ms"]
+  },
+  "cleanup": {"owned_tab_closed": true, "closure_result": "preview_close returned success", "media_downloaded_or_recorded": false},
+  "outcome": "No readable timed transcript obtained. This run does not establish caption absence. No further navigation/click action taken because the browser could not expose page controls or transcript content."
+}

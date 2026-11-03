@@ -1,0 +1,30 @@
+{
+  "at": "2026-10-31T23:15:10.213913Z",
+  "performer_id": "michal-leja",
+  "video_url": "https://www.youtube.com/watch?v=t82XUmxapzE",
+  "attempts": [
+    {
+      "kind": "public_video_page",
+      "url": "https://www.youtube.com/watch?v=t82XUmxapzE"
+    },
+    {
+      "kind": "provided_public_polish_caption_track",
+      "url_host": "youtube.com",
+      "video_id": "t82XUmxapzE"
+    }
+  ],
+  "style_assessed": false,
+  "captions_readable": false,
+  "original_probe_attempts": 6,
+  "maximum_combined_attempts": 8,
+  "page_status": 200,
+  "playability": "OK",
+  "visible_caption_languages": [
+    "pl",
+    "pl",
+    "ru",
+    "uk"
+  ],
+  "error": "ParseError: no element found: line 1, column 0",
+  "combined_attempts": 8
+}

@@ -1,0 +1,1327 @@
+{
+  "Surprises": [
+    "Batch 04 found focal-only audience comments and one pairing with a non-frozen performer; its 12 queries and 17 page events belong to that old run, not this allowance."
+  ],
+  "run_id": "20261101-coverage-marcin-zbigniew-wojciech",
+  "focal": {
+    "id": "marcin-zbigniew-wojciech",
+    "name": "Marcin Zbigniew Wojciech",
+    "rank": 31
+  },
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+  },
+  "candidate_file": "evidence/coverage-expansion/marcin-zbigniew-wojciech.source-candidates.jsonl",
+  "input_manifests": [
+    "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch01-corroboration.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch02.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch03.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch04.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch05.context-reviewed.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch06.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch07.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch09.context-reviewed.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch10.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch06-catchup.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-magda-kubicka.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-olka-szczesniak.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-karol-modzelewski.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-wojtek-pieta.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-wojciech-kaminski.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-source-first-01.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-source-first-01-followup.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-fan-forums-b-followup.json",
+    "tasks/standupers-graph/reports/runs/20261101-coverage-source-page-recovery.json",
+    "tasks/standupers-graph/reports/runs/20261101-coverage-source-page-tail.json",
+    "tasks/standupers-graph/reports/runs/20261101-coverage-blazej-krajewski.json",
+    "tasks/standupers-graph/reports/runs/20261101-coverage-karol-kopiec.json",
+    "tasks/standupers-graph/reports/runs/20261101-coverage-boras.json",
+    "tasks/standupers-graph/reports/runs/20261101-coverage-thread-harvest-02.identity-reviewed.json",
+    "tasks/standupers-graph/reports/runs/20261101-coverage-sylwia-wiszowata.json"
+  ],
+  "canonical_source_paths_from_input_manifests": [
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+      "candidate_path": "evidence/stage-06/source-candidates.jsonl",
+      "candidate_id": "src_b01a_001",
+      "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+      "author_hint": "dariamax",
+      "excerpt": "Magdę Kubicką i Daniela Midasa z jego Szopką dla reportera"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+      "candidate_path": "evidence/stage-06/source-candidates.jsonl",
+      "candidate_id": "src_b01a_003",
+      "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+      "author_hint": "memphis90",
+      "excerpt": "IMO Midas w standard- up na żywo za bardzo się rozgaduje i zbacza z tematu w kierunku miliona dygresji… Jego shorty z „Szopki” lepsze. Ale ogólnie występ fajny."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+      "candidate_path": "evidence/stage-06/source-candidates.jsonl",
+      "candidate_id": "src_b01a_004",
+      "url": "https://www.reddit.com/r/poland/comments/1egewxi/polish_standup_comedy/",
+      "author_hint": "Warchadlo16",
+      "excerpt": "Yes, stand-up is a thing in Poland. Depending on what type of comedy you're looking for, i'd recommend these comedians:\n\n-If you're looking for something calm, i'd try Łukasz Kowalski, Cezary Jurkiewicz or Cezary Ponttefski\n\n-If you like abstract and absurd humour, try Piotr Szumowski and Bartosz Zalewski\n\n-For more story focused stand-up i'd recommend Antoni Syrek-Dąbrowski\n-For simple humor go for Grzegorz Dolniak, Lotek, Mateusz Socha, Daniel Midas, I'd also include Tomek Kołecki here but his stand-up is more focused on drugs and sex\n\n-From female stand-upers i can recommend Olka Szczęśniak and Magda Kubicka"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+      "candidate_path": "evidence/stage-06/source-candidates.jsonl",
+      "candidate_id": "src_b01b_001",
+      "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+      "author_hint": "segregatorwpaski",
+      "excerpt": "Piotrek Szumowski, najbardziej mi odpowiada jego poczucie humoru. Lubię też Lutka, Kutka, Syrka-Dąbrowskiego, Leję.\nNatomiast Paczesia nie odpowiada mi wg, mam na niego alergię."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+      "candidate_path": "evidence/stage-06/source-candidates.jsonl",
+      "candidate_id": "src_b01b_002",
+      "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+      "author_hint": "princy-mincy",
+      "excerpt": "Dla mnie Socha akurat slaby. Nie przepadam za stand upem, ale czasem poslucham Rafala Paczesia, Lotka (nie pamietam jak sie nazywa- Lodkowski?), Wiolke Walaszczyk. Walaszczyk dla mnie za duzo klnie ale zarty ma fajne.\nPaczes troche zjechal ostatnimi czasy ale kiedys wymiatal."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+      "candidate_path": "evidence/stage-06/source-candidates.jsonl",
+      "candidate_id": "src_b01b_003",
+      "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+      "author_hint": "katarrynka",
+      "excerpt": "Lubię i śmieszą mnie ‍♀️ bywam na występach. Najbardziej lubię Aberalda, Sochę i Paczesia. W tym miesiącu idę na Midasa i na duet Pacześ + Lotek."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+      "candidate_path": "evidence/stage-06/source-candidates.jsonl",
+      "candidate_id": "src_b01b_004",
+      "url": "https://wykop.pl/link/7849575/prokuratoura-czyli-jak-rafal-paczes-sprzedal-nam-bilety-do-rynsztoku",
+      "author_hint": "vidic15",
+      "excerpt": "Typ jest kompletnie nieśmieszny. Jego żarty to poziom dna. Do tego buc i ego w kosmosie. Całe szczęście że Socha i Midas nie są z tej samej ligi. Nie jestem ekspertem w standupie, ale Jurkiewicz, Lotek, Midas, Socha potrafią rozśmieszyć. Pacześ wzbudza jedynie dyskomfort."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+      "candidate_path": "evidence/stage-06/source-candidates.jsonl",
+      "candidate_id": "src_b01b_005",
+      "url": "https://wykop.pl/link/7849575/prokuratoura-czyli-jak-rafal-paczes-sprzedal-nam-bilety-do-rynsztoku",
+      "author_hint": "Kismeth",
+      "excerpt": "Socha zjada Paczesia na śniadanie."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+      "candidate_path": "evidence/stage-06/source-candidates.jsonl",
+      "candidate_id": "src_b01b_006",
+      "url": "https://www.reddit.com/r/Polska/comments/105mykf/stand_up_rekomendacje/",
+      "author_hint": "NoUnderstanding8721",
+      "excerpt": "Midas, Pacześ, Lotek, Rutkowski, Socha, Magda Kubicka, Jakub Dąbrowski, Van Blender, Piotr Zola, Dolniak . To tak na szybko. Wszytko zależy od gustu czy wolisz słabszy czy ostrzejszy. Zawsze, któryś powinien podpaść"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+      "candidate_path": "evidence/stage-06/source-candidates.jsonl",
+      "candidate_id": "src_b01b_007",
+      "url": "https://www.reddit.com/r/Polska/comments/105mykf/stand_up_rekomendacje/",
+      "author_hint": null,
+      "excerpt": "Midas jest cienki jako stand uper. Paczes król, Lotek był dobry ale osłabł. Van Bendler jest spoko, na resztę szkoda czasu. Oczywiście to tylko moja opinia."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+      "candidate_path": "evidence/stage-06/source-candidates.jsonl",
+      "candidate_id": "src_b01c_001",
+      "url": "https://www.filmweb.pl/person/Abelard%2BGiza-286174/discussion/Jakie%2Bs%C4%85%2Bwasze%2Bulubione%2Bkabarety-1936249",
+      "author_hint": "bozo777",
+      "excerpt": "Natomiast jeżeli mówimy o pojedynczych występach to najlepsi są:\n1. Cezary Pazura\n2. Jerzy Kryszak\n3. Maciej Stuhr\n4. Abelard Giza\nJeszcze dorzuciłbym Andrzeja Grabowskiego bo daje radę i Piotra Bałtroczyka."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+      "candidate_path": "evidence/stage-06/source-candidates.jsonl",
+      "candidate_id": "src_b01c_002",
+      "url": "https://www.reddit.com/r/Polska/comments/17ukdey/polski_stand_up_jest_tylko_jedn%C4%85_p%C3%B3%C5%82k%C4%99_wy%C5%BCej_od/",
+      "author_hint": "thefafal",
+      "excerpt": "Gościa nie znam i nie chce znać, ale Karola Modrzelewskiego czy Olke Szczęśniak zawsze będę bronił, bo prezentują naprawdę dobry poziom i szkoda, że tutaj wszyscy od razu wrzucają wszystkich do jednego wora."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+      "candidate_path": "evidence/stage-06/source-candidates.jsonl",
+      "candidate_id": "src_b01c_003",
+      "url": "https://www.reddit.com/r/Polska/comments/17ukdey/polski_stand_up_jest_tylko_jedn%C4%85_p%C3%B3%C5%82k%C4%99_wy%C5%BCej_od/",
+      "author_hint": "Macamagucha",
+      "excerpt": "Ja uwielbiam polski stand up, ale jak ze wszystkim - są tacy, co są w tym dobrzy, są tacy, co są w tym źli, a też różne osoby mają różne style i nie każdy mi leży. Mój top to Abelard Giza, Antoni Syrek Dąbrowski (od programu Sierpień), Kacper Ruciński.\n\nAle jeśli ktoś jest nieprzekonany zupełnie, to nie polecam. Żeby się bawić trzeba mieć do tego odpowiednie nastawienie i nastrój."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+      "candidate_path": "evidence/stage-06/source-candidates.jsonl",
+      "candidate_id": "src_b01c_004",
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+      "author_hint": "Regular_Bat8162",
+      "excerpt": "Magda Kubicka\n\nKatarzyna Piasecka\n\nOlka Szczesniak\n\nMichał Leja"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+      "candidate_path": "evidence/stage-06/source-candidates.jsonl",
+      "candidate_id": "src_b01c_005",
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+      "author_hint": "Username_Koru",
+      "excerpt": "Swego czasu Lotek. Zwłaszcza stare, krótkie standupy które nie wiem czy jeszcze można znaleźć na Yt. Zawsze mnie bardzo bawił jego humor właśnie dlatego, że nie było dużo „haha segs, siurki haha”. Historie o holowaniu dieselkiem, o specyficznym starym i jego historiach, o byciu najmłodszym bratem czy z nowszych jak mu dziewczyna kupiła gumiaki to ja płakałem ze śmiechu. Wiadomo humor jest subiektywny ale ze standupu w Polsce to i tak uważam topka.\nNo i Abelard Giza miał dobry start w standup moim zdaniem, próbował iść w stronę takiego oryginalnego amerykańskiego standupu, a nie polskiego opowiadania żartów i śmiesznych historii. Tylko mam wrażenie, że potem trochę osłabł w tym i nie śledziłem dalej jego kariery."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch01-corroboration.json",
+      "candidate_path": "evidence/stage-06/corroboration.sources.jsonl",
+      "candidate_id": "src_s06_001",
+      "url": "https://www.reddit.com/r/poland/comments/15hf8l2/comment/jupxhf1/",
+      "author_hint": "MacCyp_1985",
+      "excerpt": "Stand up: -abelard giza -cesary jurkiewicz -mateusz socha -piotr zola szulowski -rafał pacześ"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch02.json",
+      "candidate_path": "evidence/batch-02/source-candidates.jsonl",
+      "candidate_id": "src_b02a_001",
+      "url": "https://www.reddit.com/r/poland/comments/1egewxi/polish_standup_comedy/",
+      "author_hint": "Successful-Speed8582",
+      "excerpt": "I'd add Mateusz Socha and Błażej Krajewski."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch02.json",
+      "candidate_path": "evidence/batch-02/source-candidates.jsonl",
+      "candidate_id": "src_b02b_001",
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/comment/onktt8p/",
+      "author_hint": "bryndz-a",
+      "excerpt": "Czarek Potefski to jedyny, którego jestem w stanie bez zażenowania przesłuchać cały special właśnie z powodu minimalnej zawartości tego typu treści, a jak już coś się pojawia to jego podanie jest bardzo spoko. Łukasz Kowalski jeszcze w sumie wpisuje się w twoje wymagania, ale jest trochę mniej śmieszny i ma wadę słuchu, która sprawia że trochę niewyraźnie mówi, chociaż koniec końców też jest fajny.\nBardziej od standupu per se wolę oglądać formaty standuperow (np Masz Minutę, Zero presji, Z kartki) albo podcasty, bo są wtedy spontanicznie śmieszni."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch02.json",
+      "candidate_path": "evidence/batch-02/source-candidates.jsonl",
+      "candidate_id": "src_b02b_002",
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/comment/onkskt3/",
+      "author_hint": "Nevsr1",
+      "excerpt": "Piotrek Szumowski jest moim ulubionym. Nie tak dawno sam powiedział w wywiadzie, że fekalia, wagina to etap w stand upie, od którego niemal musi wyjść początkujący.\nAczkolwiek Szumi jest mega specyficzny i trzeba go lubić po prostu. Jeszcze w miarę Leję lubię i Syrka-Dąbrowskiego, ale nie pamiętam na ile sprośni są, ale chyba nie jakoś bardzo."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch02.json",
+      "candidate_path": "evidence/batch-02/source-candidates.jsonl",
+      "candidate_id": "src_b02b_003",
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/comment/onlip1v/",
+      "author_hint": "Lucidder",
+      "excerpt": "Antek i Tomek Nowaczyk też."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch03.json",
+      "candidate_path": "evidence/batch-03/source-candidates.jsonl",
+      "candidate_id": "src_b03a_001",
+      "url": "https://swiatpilki.com/viewtopic.php?p=1192622",
+      "author_hint": "masacra",
+      "excerpt": "Stand up w Polsce raczkuje ale juz mozna stwierzic, ze nawet najslabsi standuperzy miażdzą te wszystkie pozal sie Boze kabarety, które od przeszło dekady wciskają nam telewizje.\n\nAbelard to nie moej klimaty, tak samo jak Kacper Rucinski. Kompletnie nie kumam teog goscia.\nZa to wg mnie Paczes to totalny przehuj. Tak samo propsuje Lotka, którego fieldy wrzucał\nOgólnie jak tak sobie słucham czasem tych gosci, to dochodze do wniosku, ze nie wazne jest co sie mówi, wazne jest jak sie to mówi/ Moze dlatego nie umam Rucinskiego, który wszystkie zaty opowiada w ten sam sposob"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch03.json",
+      "candidate_path": "evidence/batch-03/source-candidates.jsonl",
+      "candidate_id": "src_b03a_002",
+      "url": "https://swiatpilki.com/viewtopic.php?p=1192638",
+      "author_hint": "Tomusmc",
+      "excerpt": "W zeszłym roku dwa razy byłem na improwizacjach (taki stand-upowy freestyle) gdzie był m.in. Giza i Ruciński. Oni we dwójkę rozpieprzali system, jak dobierali się w parę to nie było na nich mocnych. Oprócz nich jest Kuba Śliwiński, Karolina Rucińska i Szymon Jachimek. Bardzo fajna sprawa"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch03.json",
+      "candidate_path": "evidence/batch-03/source-candidates.jsonl",
+      "candidate_id": "src_b03b_001",
+      "url": "https://www.reddit.com/r/Polska/comments/105mykf/comment/j3cgbzg/",
+      "author_hint": null,
+      "excerpt": "Piotrek Szumowski, Mieszko Minkiewicz, Magda Kubicka, Paweł Chałupka."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch03.json",
+      "candidate_path": "evidence/batch-03/source-candidates.jsonl",
+      "candidate_id": "src_b03c_001",
+      "url": "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169",
+      "author_hint": "JohnDoe666",
+      "excerpt": "Gama jest u nas dość szeroka. Zdecydowanym numerem jeden w tej chwili w Polsce jest chyba Pacześ (pod względem popularności). Cham, szowinista, seksista, ale lubię go też z innych powodów. Z takich \"lżejszych\" a jednocześnie wciąż bardzo popularnych to chyba Lotek i Giza.\nOsobiście lubię też Mieszka Minkiewicza który jest takim trochę przeciwieństwem Rafała Paczesia, polonista (i to słychać), lubi się bawić formą, naprawdę da się na tym z przyjemnością tą godzinkę wysiedzieć.\nOgólnie jest tego w tej chwili bardzo dużo, na bardzo różnym poziomie. Większość stand-uperów umieszcza swoje stare programy na YT więc zanim kupisz bilet możesz sobie sprawdzić czy Ci taka energia pasuje."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch04.json",
+      "candidate_path": "evidence/batch-04/source-candidates.jsonl",
+      "candidate_id": "src_b04b_001",
+      "url": "https://www.reddit.com/r/Polska/comments/105mykf/stand_up_rekomendacje/",
+      "author_hint": "MurderousSofa",
+      "excerpt": "Mój ulubiony to Ponttefski. Lubię jeszcze Zalewskiego i Piotrka Szumowskiego. Tych trzech trafia w mój humor"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch04.json",
+      "candidate_path": "evidence/batch-04/source-candidates.jsonl",
+      "candidate_id": "src_b04c_001",
+      "url": "https://www.kupbilecik.pl/pl/comments/9245/stand-up-adam-sobaniec-i-michal-kutek",
+      "author_hint": "Kamil",
+      "excerpt": "Mistrzowski duet jak zwykle na najwyższym poziomie! Świetna improwizacja i solidna dawka dobrego stand up'u :)"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch05.context-reviewed.json",
+      "candidate_path": "evidence/batch-05-context-reviewed/source-candidates.jsonl",
+      "candidate_id": "src_b05a_001",
+      "url": "https://www.kupbilecik.pl/pl/comments/5667/stand-up-piotrek-szumowski?page_comments=7",
+      "author_hint": "Kacper",
+      "excerpt": "Dostałem więcej, niż się spodziewałem. Nie zwykły stand-up, a niezwykłe przemyślany komediowy spektakl stand-upowy. Bawiłem się wybitnie. Totalne zaskoczenie. Piotrek jest fantastycznym komikiem. Supporty - Kuba Wu świetny, kolega Kalbarczyk przeciętnie."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch05.context-reviewed.json",
+      "candidate_path": "evidence/batch-05-context-reviewed/source-candidates.jsonl",
+      "candidate_id": "src_b05b_001",
+      "url": "https://nastroik.pl/temat/wiolka-walaszczyk/8055/",
+      "author_hint": "Amani",
+      "excerpt": "Średnio mnie powaliło a właściwie wcale, wole Gizę, ten rzeczywiście jest dobry, zwłaszcza w jednym swoim występie, o wyborach prezydenckich. Jak znajde to wkleję...."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch05.context-reviewed.json",
+      "candidate_path": "evidence/batch-05-context-reviewed/source-candidates.jsonl",
+      "candidate_id": "src_b05b_002",
+      "url": "https://www.kupbilecik.pl/pl/event/26442/plock/stand-up-plock",
+      "author_hint": "Krzysztof",
+      "excerpt": "Wiola dawała radę, ale to Mieszko był gwiazdą wieczoru. Głębokie ukłony. Artysta o ogromnym potencjale. Kto wie, czy kiedyś nie osiągnie takiego sukcesu jak Pacześ."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch05.context-reviewed.json",
+      "candidate_path": "evidence/batch-05-context-reviewed/source-candidates.jsonl",
+      "candidate_id": "src_b05b_003",
+      "url": "https://www.kupbilecik.pl/pl/event/203718/swiecie/stand-up-blazej-krajewski",
+      "author_hint": "Elwira",
+      "excerpt": "Zarówno Błażej, jak i jego support Patryk Gośiński byli świetni. Obu znałam z YouTube, ale na żywo jeszcze lepiej się ich oglądało. Tak trzymać!!!"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch05.context-reviewed.json",
+      "candidate_path": "evidence/batch-05-context-reviewed/source-candidates.jsonl",
+      "candidate_id": "src_b05c_001",
+      "url": "https://www.kupbilecik.pl/en/comments/9731/stand-up-marlena-mysza",
+      "author_hint": "Robert",
+      "excerpt": "Marlena-200% śmiechu, Piotrek Szumowski -150%, musi jeszcze popracować nad biustem :) Mega super wieczór, nie można było się nudzić !! Rodzinna atmosfera i profesjonalizm sprawdzania biletów. Czekam na nowe programy obojga :)"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch05.context-reviewed.json",
+      "candidate_path": "evidence/batch-05-context-reviewed/source-candidates.jsonl",
+      "candidate_id": "src_b05c_002",
+      "url": "https://www.kupbilecik.pl/en/comments/2671/wielka-trasa-stand-up-polska?page_comments=23",
+      "author_hint": "Dominika",
+      "excerpt": "Świetna zabawa, 2 godziny śmiechoterapii na wysokim poziomie! Syrek-Dąbrowski - klasa sama w sobie. Jurkiewicz w roli prowadzącego sprawdził się pierwszorzędnie. Szumowski rewelacyjnie zamknął imprezę. Krokiem bażanta pomknę na kolejne występy tej ekipy (choć do tramwaju z Szumowskim nigdy nie wsiądę!) ;)"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch05.context-reviewed.json",
+      "candidate_path": "evidence/batch-05-context-reviewed/source-candidates.jsonl",
+      "candidate_id": "src_b05c_003",
+      "url": "https://www.kupbilecik.pl/en/comments/2671/wielka-trasa-stand-up-polska?page_comments=23",
+      "author_hint": "Maciej",
+      "excerpt": "U mnie to Czarek Jurkiewicz był niezłym prowadzącym, pewnie się wymieniają. Syrek mega, Szumowski znowu w formie, Kutek ciekawy, ale Kępą się zawiodłem. W sumie jednak forma 8 komików po 10 minut to tak średnio. Wolałbym mniej, a dłużej bo sporo skoków w wypowiedziach było. Plus za improwizacje ale generalnie to byłem na lepszych występach."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch06.json",
+      "candidate_path": "evidence/batch-06/source-candidates.jsonl",
+      "candidate_id": "src_b06a_001",
+      "url": "https://www.kupbilecik.pl/en/comments/1846/cezary-jurkiewicz?page_comments=2",
+      "author_hint": "Maciej",
+      "excerpt": "No Czarek to jest sztos od zawsze, więc zero zaskoczenia - było świetnie. Uwielbiam jego talent do opowiadania w taki sposób, że masz wrażenie, że wymyśla to na bieżąco. Świetny jest też segment testowania żartów bo wprowadza taka świeża energię w połowie występu. Na supporcie Karolina Pańczyk, którą również bardzo lubię i znam z Kanału Komediowego, więc dostałem 2w1, aż bym chyba z chęcią dopłacił (ale jestem z Poznania, więc tak tylko gadam XD). Jednym słowem POLECAM!"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch06.json",
+      "candidate_path": "evidence/batch-06/source-candidates.jsonl",
+      "candidate_id": "src_b06b_001",
+      "url": "https://www.kupbilecik.pl/pl/comments/4185/stand-up-kuba-dabrowski",
+      "author_hint": "Agata",
+      "excerpt": "Doskonała interakcja z publicznością. Super luz sceniczny. Byliśmy w środę w Krakowie i to był doskonały przerywnik w tygodniu pracy. Polecam każdemu! Kuba jest świetny!"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch06.json",
+      "candidate_path": "evidence/batch-06/source-candidates.jsonl",
+      "candidate_id": "src_b06b_002",
+      "url": "https://www.kupbilecik.pl/pl/comments/4185/stand-up-kuba-dabrowski",
+      "author_hint": "Michał",
+      "excerpt": "Bardzo zabawny stand up, support też spoko, polecam każdemu kto się waha czy pójść na występ Kuby Dąbrowskiego. Pozdrawiam ŁYSY :)"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch06.json",
+      "candidate_path": "evidence/batch-06/source-candidates.jsonl",
+      "candidate_id": "src_b06b_003",
+      "url": "https://www.kupbilecik.pl/pl/comments/4185/stand-up-kuba-dabrowski",
+      "author_hint": "Mirosław",
+      "excerpt": "Chłopaki dają radę. Większość rzeczy śmiesznych, miło spędzony czas. Może trochę za dużo przekleństw. Nie jestem zbulwersowany, ale uważam, że można trochę odpuścić w tym względzie."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch06.json",
+      "candidate_path": "evidence/batch-06/source-candidates.jsonl",
+      "candidate_id": "src_b06c_001",
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/comment/onqmf22/",
+      "author_hint": "SeparateRace7699",
+      "excerpt": "Piotek Szumowski, Cezary Pontefski, Marcin Chmiel, Mieszko Minkiewicz, Abelard Giza, Antoni Syrek-Dąbrowski, Michał Leja"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch07.json",
+      "candidate_path": "evidence/batch-07/source-candidates.jsonl",
+      "candidate_id": "src_b07b_001",
+      "url": "https://adria-art.pl/repertuar/168/kabarety-igor-kwiatkowski-pol-geniusz-pol-kretyn-rejestracja-materialu",
+      "author_hint": "Basia",
+      "excerpt": "Wspaniały występ , napewno polecę go znajomym. Mam tylko zastrzeżenie do widowni która kręciła się jak na Marszałkowskiej, może warto ograniczyć alkohole, bo takie wędrówki świadczą o braku szacunku dla artysty. Pozdrawiam serdecznie Pana Igora"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch07.json",
+      "candidate_path": "evidence/batch-07/source-candidates.jsonl",
+      "candidate_id": "src_b07b_002",
+      "url": "https://adria-art.pl/repertuar/168/kabarety-igor-kwiatkowski-pol-geniusz-pol-kretyn-rejestracja-materialu",
+      "author_hint": "Teresa",
+      "excerpt": "Byliśmy już drugi raz i było cudownie. Igor ma niesamowity dar rozśmieszania ludzi :)"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch07.json",
+      "candidate_path": "evidence/batch-07/source-candidates.jsonl",
+      "candidate_id": "src_b07b_003",
+      "url": "https://adria-art.pl/repertuar/168/kabarety-igor-kwiatkowski-pol-geniusz-pol-kretyn-rejestracja-materialu",
+      "author_hint": "Mario",
+      "excerpt": "Fantastycznie, duża dawka bardzo dobrego humoru. Żona uwielbia Pana Igora i jego genialne poczucie humoru."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch07.json",
+      "candidate_path": "evidence/batch-07/source-candidates.jsonl",
+      "candidate_id": "src_b07b_005",
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/comment/onktx1j/",
+      "author_hint": "book-scorpion",
+      "excerpt": "Cezary Ponteffski, Bartosz Zalewski, Wojtek Fiedorczuk"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch07.json",
+      "candidate_path": "evidence/batch-07/source-candidates.jsonl",
+      "candidate_id": "src_b07b_006",
+      "url": "https://adria-art.pl/repertuar/168/kabarety-igor-kwiatkowski-pol-geniusz-pol-kretyn-rejestracja-materialu",
+      "author_hint": "Ada",
+      "excerpt": "Swietny wystep. Usmialam sie bardzo duzo. P.Igor jest do tego swietbnym muzykoem, raperem, tancerzem ( nasladlowal Micheaela Jacksona). Sam na scenie przez 80 minut, bez zadnej przerwy. Zarty wyborne, wieczor swietna. Polecam"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch07.json",
+      "candidate_path": "evidence/batch-07/source-candidates.jsonl",
+      "candidate_id": "src_b07c_001",
+      "url": "https://www.kupbilecik.pl/pl/db/7489/stand-up-michal-palubski-i-jakub-poczety?kb_ref=event&kb_ref_id=state_past",
+      "author_hint": "Kazimierz",
+      "excerpt": "Świetna zabawa, Pałubski wymiatał jak zawsze , Poczętego pierwszy raz widziałem na żywo, ale też wykonał świetną robotę :-)."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch07.json",
+      "candidate_path": "evidence/batch-07/source-candidates.jsonl",
+      "candidate_id": "src_b07c_002",
+      "url": "https://www.kupbilecik.pl/pl/comments/3483/zalewski-borkowski-przedstawiaja",
+      "author_hint": "Michał",
+      "excerpt": "Świetna zabawa -- Bartosz i Jasiek mają bardzo dobrą chemię i fajny, konwersacyjny styl. Marek mial dobry, dygresyjny występ, a Adam miał doskonały kontakt z widownią."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+      "candidate_path": "evidence/batch-08/source-candidates.jsonl",
+      "candidate_id": "src_b08a_001",
+      "url": "https://www.kupbilecik.de/imprezy/217717/Warszawa/Backstreet%2BStand-up/",
+      "author_hint": "Rafał",
+      "excerpt": "Było bardzo śmiesznie. Kuba Wu i Bartosz Zalewski pokazali klasę. Maks Rosa też dowiózł."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+      "candidate_path": "evidence/batch-08/source-candidates.jsonl",
+      "candidate_id": "src_b08a_002",
+      "url": "https://www.kupbilecik.pl/en/comments/8034/stand-up-darek-gadowski?page_comments=1",
+      "author_hint": "Wiktor",
+      "excerpt": "Darek jest wybitnym komikiem. Prześmieszny!!! Tak jak support Jasiek Borkowski!"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+      "candidate_path": "evidence/batch-08/source-candidates.jsonl",
+      "candidate_id": "src_b08a_003",
+      "url": "https://www.kupbilecik.pl/en/comments/8034/stand-up-darek-gadowski?page_comments=1",
+      "author_hint": "Agnieszka",
+      "excerpt": "Darek Gadowski i Jacek Stramik świetny występ- zapraszamy częściej do Słupska."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+      "candidate_path": "evidence/batch-08/source-candidates.jsonl",
+      "candidate_id": "src_b08a_004",
+      "url": "https://www.kupbilecik.pl/en/comments/8034/stand-up-darek-gadowski?page_comments=1",
+      "author_hint": "Ferdynand",
+      "excerpt": "Piotr Zola Szulowski (support) - humor kabaretowy, człowiek o niezasłużonej popularności gdy pośród tyle mniej popularnych komików jest po prostu lepszych. Widz komediowy musi dorosnąć, ale dzięki takim osobom jak Zola czy Socha będzie postępować to dłużej Darek Gadowski - fajny i miły program na relaksie, trzyma poziom, odrobina przekmin wpleciona za co plus :D"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+      "candidate_path": "evidence/batch-08/source-candidates.jsonl",
+      "candidate_id": "src_b08a_005",
+      "url": "https://www.filmweb.pl/person/Grzegorz+Halama-132242/discussion/Debil-751992",
+      "author_hint": "jago18",
+      "excerpt": "Coz kazdy ma swoje upodobania jdnych moze smieszyc Grzegorz Halama innych nie musi nie jestem jakas zagorzałą fanka Grzegorza Halamy szczerze to Grzegorz mnei bardziej smieszy niz Kuba ktory beszczesci wlasny kraj (wtykajac flage z psia kupe) jak mozna popierac kogos kto w taki sposob sie zachowuje jak na 46 letniego mężczyzne powinieb byc bardziej dojrzaly i nie robic z siebie pajaca.\nKabaret Ani mru mru spada na psy ciagle pokazuja te same skecze.\nKabaret Moralnego niepokoju może ten z dużym nosem to Robert Górski (jak chcesz polecać jakiś kabaret to powinieneś troszeczkę więcej wiedzieć\nDane`go Cook`a nie znam wiec się nie wypowiadam\nJeff Dunham rzeczywiście jest wspaniały i jego programy śmieszą"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+      "candidate_path": "evidence/batch-08/source-candidates.jsonl",
+      "candidate_id": "src_b08b_001",
+      "url": "https://www.kupbilecik.pl/de/comments/4829/stand-up-karol-modzelewski-rafal-banas",
+      "author_hint": "Patryk",
+      "excerpt": "Rafał Banaś był mi dobrze znany wcześniej. Wiedziałem czego można się po nim spodziewać i nie zawiodłem się. Karol Modzelewski był dla mnie niewiadomą - niby oglądałem wczesniej newsy bez wirusa, jednak na kilku odcinkach owego programu moja znajomość jego twórczości się kończyła. Muszę przyznać, że jego program \"Afryka\" spowodował u mnie ból brzucha i szczęki, oraz doprowadził mnie do łez. Mocno polecam obu panów."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+      "candidate_path": "evidence/batch-08/source-candidates.jsonl",
+      "candidate_id": "src_b08b_002",
+      "url": "https://www.kupbilecik.pl/de/comments/4829/stand-up-karol-modzelewski-rafal-banas",
+      "author_hint": "Katarzyna",
+      "excerpt": "Rafał Banaś to nie moje klimaty. Za to Karol dał czadu! - program rewelacja! zdecydowanie polecam!"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+      "candidate_path": "evidence/batch-08/source-candidates.jsonl",
+      "candidate_id": "src_b08b_003",
+      "url": "https://www.kupbilecik.pl/de/comments/4829/stand-up-karol-modzelewski-rafal-banas",
+      "author_hint": "Bartłomiej",
+      "excerpt": "Super wieczór z Modzelem, anegdoty z trasy w bekowym sosie i czas minął jak z bicza strzelił! Wyjątkowy rodzaj stand-upu ze slajdami :) Pan Banaś bardziej zwyczajnie, \"standardowy\" program, ale też wiele momentów uśmiechu. Łódź dziękuje!"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+      "candidate_path": "evidence/batch-08/source-candidates.jsonl",
+      "candidate_id": "src_b08b_004",
+      "url": "https://www.kupbilecik.pl/de/comments/4829/stand-up-karol-modzelewski-rafal-banas",
+      "author_hint": "Sylwia",
+      "excerpt": "Banaś rewelacja! Modzelewski - ciekawie, ale czy to był stand up w 100%?"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+      "candidate_path": "evidence/batch-08/source-candidates.jsonl",
+      "candidate_id": "src_b08b_005",
+      "url": "https://www.kupbilecik.pl/pl/comments/1129/abelard-giza?page_comments=8",
+      "author_hint": "Gabi i Marcin",
+      "excerpt": "Świetny support (Kuba Śliwka i Janusz Pietruszka), sam Abelard oczywiście również, uśmialiśmy się do łez. Nie był to nasz pierwszy raz na standupie Abelarda i mamy nadzieję, że nie ostatni. Polecamy gorąco!"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+      "candidate_path": "evidence/batch-08/source-candidates.jsonl",
+      "candidate_id": "src_b08b_006",
+      "url": "https://www.kupbilecik.pl/pl/comments/1129/abelard-giza?page_comments=8",
+      "author_hint": "Jarosław",
+      "excerpt": "Abelard super. Zresztą jak zawsze. Supporty Śliwki i Pietruszki też bardzo dobre. W sumie dwie godziny śmiechu."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+      "candidate_path": "evidence/batch-08/source-candidates.jsonl",
+      "candidate_id": "src_b08b_007",
+      "url": "https://www.kupbilecik.pl/pl/comments/1129/abelard-giza?page_comments=8",
+      "author_hint": "Norbert",
+      "excerpt": "Abelard, chyba ostatni komik, który nie schodzi poniżej pewnego poziomu. Pierwszy raz na żywo jego występ ale jeden z lepszych o ile nie najlepszy z wszystkich. Support ok, Śliwka mega pozytywne zaskoczenie. Pietruszka ok, ale nie wiem czy bym chciał być na jego występie solo."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+      "candidate_path": "evidence/batch-08/source-candidates.jsonl",
+      "candidate_id": "src_b08b_008",
+      "url": "https://www.kupbilecik.pl/pl/comments/1129/abelard-giza?page_comments=8",
+      "author_hint": "Damian",
+      "excerpt": "Kuba Śliwka i Janusz Pietruszka na supporcie robią MEGA ROBOTĘ. Bardzo duży plus za to, że nie było przerwy pomiędzy nimi, a Abelardem (nie jestem fanem, a to zawsze przedłuża niepotrzebnie). Abelard... Wszystko fajnie, tylko tych motocyklistów to sobie mogłeś darować, ch*ju. Żartuję, było fantastycznie, jak zwykle z resztą. Abelard to artysta, na którego czekam ten raz w roku, a później zostaje mi już tylko rok czekania do kolejnego programu."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+      "candidate_path": "evidence/batch-08/source-candidates.jsonl",
+      "candidate_id": "src_b08b_009",
+      "url": "https://www.kupbilecik.pl/pl/comments/1129/abelard-giza?page_comments=8",
+      "author_hint": "Katarzyna",
+      "excerpt": "Zdecydowanie warto! Wszyscy trzej Panowie świetnie- szczególnie Janusz i ABELARD ( może i Albert ;) ) wymiatali. Byłam na wcześniejszym programie w 2023 i teraz na tym nowym było równie wyborowo. :):):)"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+      "candidate_path": "evidence/batch-08/source-candidates.jsonl",
+      "candidate_id": "src_b08b_010",
+      "url": "https://www.kupbilecik.pl/pl/comments/1129/abelard-giza?page_comments=50",
+      "author_hint": "Wojciech",
+      "excerpt": "Był to trzeci program Abelarda, na którym byłem na żywo. Muszę przyznać, że ten NAJLEPSZY. Szczęka bolała od ilości śmiechu. Dodatkowo Pietruszka i Śliwka też świetni. Polecam ;)"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+      "candidate_path": "evidence/batch-08/source-candidates.jsonl",
+      "candidate_id": "src_b08b_011",
+      "url": "https://www.kupbilecik.pl/pl/comments/1129/abelard-giza?page_comments=50",
+      "author_hint": "Marta",
+      "excerpt": "5 gwiazdek za amazing job supportu! Łzy śmiechu ciekły mi po policzkach przy Januszu Pietruszce, chociaż Śliwka też miał super momenty. Abelard 3,5 no może 4/5. Na pewno lepszy niż zeszłoroczny program. Przyjemne 120 minut, na szczęście z supportem, było z czego pośmiać się i oderwać od rzeczywistości."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+      "candidate_path": "evidence/batch-08/source-candidates.jsonl",
+      "candidate_id": "src_b08b_012",
+      "url": "https://www.kupbilecik.pl/pl/comments/1129/abelard-giza?page_comments=50",
+      "author_hint": "Bartosz",
+      "excerpt": "Tak jak się spodziewałem- było super. Nie tylko ze względu na gwiazdę wieczoru. Czekam na dłuższe programy Śliwki i Pietruszki."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+      "candidate_path": "evidence/batch-08/source-candidates.jsonl",
+      "candidate_id": "src_b08b_013",
+      "url": "https://www.kupbilecik.pl/pl/comments/1129/abelard-giza?page_comments=50",
+      "author_hint": "Patrycja",
+      "excerpt": "Fajna impreza, miło i z uśmiechem zleciał czas . Giza: żarty jak to żarty jedne bawią bardziej inne mniej , ale ogólnie ok. Suporty: Śliwka i Pietruszka duży plus."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+      "candidate_path": "evidence/batch-08/source-candidates.jsonl",
+      "candidate_id": "src_b08b_014",
+      "url": "https://www.kupbilecik.pl/pl/comments/1129/abelard-giza?page_comments=50",
+      "author_hint": "Aleksandra",
+      "excerpt": "Klasa! Jak zawsze zresztą :) Jeden z niewielu komików, który trzyma poziom i jest on bardzo wysoki. W sensie poziom, a nie Giza. :P Janusz i Jakub - też bardzo fajnie. Lepsi od wielu 'głośniejszych' nazwisk stand-upu. Bardzo warto wydać pieniądze na bilet :D"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+      "candidate_path": "evidence/batch-08/source-candidates.jsonl",
+      "candidate_id": "src_b08c_001",
+      "url": "https://www.kupbilecik.pl/pl/comments/16941/stand-up-lukasz-wolski",
+      "author_hint": "Katarzyna",
+      "excerpt": "Łukasz na żywo jeszcze lepszy niż na YT. Polecam serdecznie i czekam na Litości i Dwójkę w Lublinie."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+      "candidate_path": "evidence/batch-08/source-candidates.jsonl",
+      "candidate_id": "src_b08c_002",
+      "url": "https://www.kupbilecik.pl/de/comments/105/stand-up-polska?page_comments=17",
+      "author_hint": "Marta",
+      "excerpt": "Cezary Jurkiewicz, uwielbiam Cię i Twój poziom czarnego humoru! Michał Kępa, również jesteś świetny! Jedyny mankament tego występu to obowiązkowa wzmianka o korona wirusie na samym początku - następne 50 minut przy każdym ataku śmiechu starałam się nie udusić w obawie o wywołanie paniki w następstwie mojego kaszlu. To tylko kaszel palacza, przysięgam!"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch09.context-reviewed.json",
+      "candidate_path": "evidence/coverage-pilot/batch09.context-reviewed.source-candidates.jsonl",
+      "candidate_id": "src_b09a_001",
+      "url": "https://www.kupbilecik.pl/en/comments/12319/stand-up-wojtek-kaminski",
+      "author_hint": "Kamil",
+      "excerpt": "Na występ szedłem z rezerwą, bo widziałem już kabareciarzy robiących stand-up. Ale to było suuuuuper! Świeżo, naturalnie, swobodnie. Świetny kontakt z widownią. Bez zbędnych wulgaryzmów i co najważniejsze, bardzo śmiesznie. Pasierby rządzą! :) Na supporcie Radek Drożdż też bardzo dobrze. Bardzo polecam!"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch09.context-reviewed.json",
+      "candidate_path": "evidence/coverage-pilot/batch09.context-reviewed.source-candidates.jsonl",
+      "candidate_id": "src_b09a_002",
+      "url": "https://www.kupbilecik.pl/en/db/12167/stand-up-pawel-chalupka-jasiek-borkowski-adam-gajda?kb_ref=event&kb_ref_id=state_past",
+      "author_hint": "RADOSŁAW",
+      "excerpt": "Mimo że to testy było super , Paweł Chałupka rewelacja uśmiałem się jak zawsze w punkt pięknie i abstrakcyjnie,Adam Gajda ( nie ten z Łowcy.B ) jak zawsze ciekawe historie z życia i pożycia w swoim nieporadnym stylu, Jaśiek Borkowski jako prowadzący super, ale sam występ coś zabrakło...jakby nie on.... pan Pająk jak na początkującego całkiem ciekawie i hardcorowo naprawdę super dobrze się bawiłem ,się zrelaksowałem. dzięki wielkie za ten show, występ :) dobrze że jesteście :)"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch09.context-reviewed.json",
+      "candidate_path": "evidence/coverage-pilot/batch09.context-reviewed.source-candidates.jsonl",
+      "candidate_id": "src_b09a_003",
+      "url": "https://www.kupbilecik.pl/en/db/12167/stand-up-pawel-chalupka-jasiek-borkowski-adam-gajda?kb_ref=event&kb_ref_id=state_past",
+      "author_hint": "Piotr",
+      "excerpt": "Gajda i |Borkowski słabo. Nawet czasem żenująco. cały wieczór uratował Chałupka. Ogólnie ocena 3/6"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch09.context-reviewed.json",
+      "candidate_path": "evidence/coverage-pilot/batch09.context-reviewed.source-candidates.jsonl",
+      "candidate_id": "src_b09a_004",
+      "url": "https://www.kupbilecik.pl/pl/comments/108/rafal-rutkowski?page_comments=39",
+      "author_hint": "Marcin",
+      "excerpt": "Początek był kiepski z powodu organizacji - co było powodem obsówy. Ale za to co było potem w pełni zrekompensowało. Support - Szymon vel Marcin Baraniecki. Nikomu wcześniej nie znany, dał się poznać z zaje***stej strony. Potem Rutek. Klasa sama w sobie. Zanim zaczął tematy reżyserowane już wszyscy byli &quot;pochachani&quot;. Samo miejsce Klub Fama jak bardziej na plus. Fajny wystrój, miła obsługa i niczego sobie bar. Podsumowując - zadowolony w ch*j :)"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch09.context-reviewed.json",
+      "candidate_path": "evidence/coverage-pilot/batch09.context-reviewed.source-candidates.jsonl",
+      "candidate_id": "src_b09b_001",
+      "url": "https://www.kupbilecik.pl/pl/comments/117/karol-kopiec",
+      "author_hint": "Jaro",
+      "excerpt": "Skromny, Inteligentny, Zabawny - Karol Kopiec, super program, nieoczywiste puenty Pacześ może się schować !. Już czekam na nowy program na jesieni."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch09.context-reviewed.json",
+      "candidate_path": "evidence/coverage-pilot/batch09.context-reviewed.source-candidates.jsonl",
+      "candidate_id": "src_b09c_001",
+      "url": "https://www.kupbilecik.pl/de/comments/1217/stand-up-time?page_comments=1",
+      "author_hint": "Marcin",
+      "excerpt": "Dawno się tak nie uśmiałem. W Sopocie Jacek Stramik i prowadzący Rafał Pacześ \"zmietli\"nas z powierzchni ziemi;)"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch10.json",
+      "candidate_path": "evidence/batch-10/source-candidates.jsonl",
+      "candidate_id": "src_b10a_001",
+      "url": "https://www.kupbilecik.pl/pl/comments/1642/stand-up-tomek-nowaczyk",
+      "author_hint": "Mirosław",
+      "excerpt": "Polecam bardzo Tomka Nowaczyka jak i Tomka Biskupa , Biskup chyba troszkę testował ale było nieźle. Natomiast Nowaczyk pojechał ostro mnie się bardzo podobało ."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch06-catchup.json",
+      "candidate_path": "evidence/batch-06-catchup/source-candidates.jsonl",
+      "candidate_id": "src_b06ca_001",
+      "url": "https://www.kupbilecik.pl/uk/comments/17404/zero-presji-show?page_comments=2",
+      "author_hint": "Paweł",
+      "excerpt": "No przecież oni są boscy. Tutaj nie ważne czy sami stan uperzy są gośćmi czy osoby show biznesu. Czarek i Kaceper wymiatają z Termosem."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch06-catchup.json",
+      "candidate_path": "evidence/batch-06-catchup/source-candidates.jsonl",
+      "candidate_id": "src_b06cb_001",
+      "url": "https://www.kupbilecik.pl/pl/comments/7353/stand-up-maciej-brudzewski?page_comments=21",
+      "author_hint": "Natalia",
+      "excerpt": "Pełna profeska. Support Paweł jak i Maciej to wspaniali ludzie z dobrym poczuciem humoru. Bardzo dobry kontakt z publicznością. Widać tu duże zaangażowanie i multum energi. Dzieki za piosenke urodzinową. Od teraz będę urodziny obchodziła dwa razy w roku"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch06-catchup.json",
+      "candidate_path": "evidence/batch-06-catchup/source-candidates.jsonl",
+      "candidate_id": "src_b06cb_002",
+      "url": "https://www.kupbilecik.pl/pl/comments?page_comments=2059",
+      "author_hint": "Justyna",
+      "excerpt": "Jesteśmy z mężem mega zadowoleni z występu Pawła jak i Maćka. Polecamy! Kupujcie bilety! :)"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch06-catchup.json",
+      "candidate_path": "evidence/batch-06-catchup/source-candidates.jsonl",
+      "candidate_id": "src_b06cc_001",
+      "url": "https://www.kupbilecik.pl/pl/db/10075/stand-up-pan-li-oraz-kuba-dabrowski",
+      "author_hint": "Izabela",
+      "excerpt": "Pan Li bardzo fajny. Nawiązał kontakt z publiką i widać, że gość jest myślący i inteligentny. Zrobił show własnym mózgiem. Daję mu wielkiego pozytywa. Ostatnią gwiazdkę urywam za drugiego standuppera. Drugi Pan wyklepał wyuczone teksty. Nie podjął prób dostosowania się do reakcji publiczności, więc wypadł dużo gorzej. Słabo, że przy zakupie biletów nie było info, że będą testować w Zgr program.Agrafka jak zwykle kameralnie i spoczko."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-magda-kubicka.json",
+      "candidate_path": "evidence/coverage-pilot/magda-kubicka.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_mkubicka_001",
+      "url": "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169",
+      "author_hint": "Megera_",
+      "excerpt": "Olka jest \"rezydentką\" mojej mieściny :)\nOgólnie dość lubię kobiety w polskim stand-upie, ale wydaje mi się, że im mniej popularna, tym lepsza... Wiolka Walaszczyk i Magda Kubicka to są persony na Polskę, Olka nadal trochę regionalna, ale np. Marta Łojok (o której mało kto słyszał) zrobiła przed Olką taki support, że ryczałam ze śmiechu i Ola nie była w stanie jej dogonić."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-olka-szczesniak.json",
+      "candidate_path": "evidence/coverage-pilot/olka-szczesniak.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_oszczesniak_001",
+      "url": "https://www.kupbilecik.pl/pl/comments/2709/olka-szczesniak?page_comments=111",
+      "author_hint": "Kacper",
+      "excerpt": "Byłem na wstępie Olki z Michałem Leją i kiedy są we dwoje na scenie roz******lają system totalnie!"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-olka-szczesniak.json",
+      "candidate_path": "evidence/coverage-pilot/olka-szczesniak.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_oszczesniak_002",
+      "url": "https://www.kupbilecik.pl/pl/comments/2709/olka-szczesniak?page_comments=111",
+      "author_hint": "Aleksandra",
+      "excerpt": "Było super! Dawno się tak dobrze nie bawiłam! Olka z Michałem wymiatają!"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-karol-modzelewski.json",
+      "candidate_path": "evidence/coverage-pilot/karol-modzelewski.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_kmodzelewski_001",
+      "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski?page_comments=2#scrollComments",
+      "author_hint": "Mariusz",
+      "excerpt": "Karol w znakomitej formie, chętnie przyjdę na kolejny występ. Wielkie brawa również dla Marcina Chmiela, który skradł moje serce żartami szachowymi;-)."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-karol-modzelewski.json",
+      "candidate_path": "evidence/coverage-pilot/karol-modzelewski.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_kmodzelewski_002",
+      "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski?page_comments=3",
+      "author_hint": "Remigiusz",
+      "excerpt": "Rewelacyjny stand-up. Karol Modzelewski mimo lekkiej niedyspozycji zdrowotnej nie zawiódł. Supprort super zarówno Marcin Chmiel jak i Kamil Kozieł. Polecam."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-karol-modzelewski.json",
+      "candidate_path": "evidence/coverage-pilot/karol-modzelewski.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_kmodzelewski_003",
+      "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski?page_comments=10",
+      "author_hint": "Leszek",
+      "excerpt": "Wspaniały występ Karola. Byłem pierwszy raz na jego programie, ale uważam ten program za jeden z najlepszych w ostatnich kilku latach w polskim stand-upie. przede wszystkim Karol ma bardzo celne obserwacje i śmiesząc daje do myślenia widzowi. Zdecydowanie warto zobaczyć na żywo i samemu ocenić. Jedyny minus to support, który był jednym z najgorszych rozgrzewających jakich widziałem na żywo."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-karol-modzelewski.json",
+      "candidate_path": "evidence/coverage-pilot/karol-modzelewski.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_kmodzelewski_004",
+      "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski?page_comments=4",
+      "author_hint": "Paweł",
+      "excerpt": "Karol przechodzi sam siebie. Tego wspaniałego doświadczenia nie da się zamknąć w 500 znakach i w pełni oddać zachwytu. Krótko mówiąc: to trzeba przeżyć. Szczególnie, że Karol przywozi ze sobą genialny support. W głos się śmiałem z historii zbudowanych przez Kamila Kozieła, a Marcin Chmiel... Rośnie prawdziwa perła polskiego stand-upu. Szach-mat!"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-karol-modzelewski.json",
+      "candidate_path": "evidence/coverage-pilot/karol-modzelewski.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_kmodzelewski_005",
+      "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski?page_comments=4",
+      "author_hint": "Przemysław",
+      "excerpt": "Super występ. Jak zawsze ubaw po sufit. Perfekcyjna ilość opowiadania przepleciona kontaktem z publicznością. Spontaniczny pocisk na Zgierz był wisienką na szczycie tego miodnego występu, nikt się chyba nie spodziewał. Żona mówi, że było fajnie ale jest oszczędna w emocjach więc zakładam, że też się jej mega podobało, tym bardziej, że na koniec zmieniła zdanie i jednak chciała piąteczkę z Karolem - przed występem była na nie. Support super, troszkę powtarzalny, Chmielu na duży plus! Chcę więcej!"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-karol-modzelewski.json",
+      "candidate_path": "evidence/coverage-pilot/karol-modzelewski.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_kmodzelewski_006",
+      "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski?page_comments=4",
+      "author_hint": "Leszek",
+      "excerpt": "Rewelacyjny program! Musisz go zobaczyć na żywo. Bardzo fajny tez support najlepszego komika wsród szachistów Marcina Chmiela."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-karol-modzelewski.json",
+      "candidate_path": "evidence/coverage-pilot/karol-modzelewski.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_kmodzelewski_007",
+      "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski?page_comments=8",
+      "author_hint": "Igor",
+      "excerpt": "Jeśli ktoś nie był jeszcze na występie Karola to powinien jak najszybciej nadrobić zaległości! &quot;Bańkę&quot; oglądałem drugi raz, po kilkunastu miesiącach i program się bardzo przyjemnie rozbudował. Ale nie sposób nie wspomnieć o supporcie - zarówno Kamil jak i Marcin robią super robotę. Tu nie ma słabych momentów, od początku do końca, przez blisko 2h nie ma chwili wytchnienia."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-karol-modzelewski.json",
+      "candidate_path": "evidence/coverage-pilot/karol-modzelewski.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_kmodzelewski_008",
+      "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski?page_comments=8",
+      "author_hint": "Wojciech",
+      "excerpt": "Świetna zabawa zapewniona zarówno przez support (Kamila i Chmiela) jak i przez Karola."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-karol-modzelewski.json",
+      "candidate_path": "evidence/coverage-pilot/karol-modzelewski.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_kmodzelewski_009",
+      "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski?page_comments=8",
+      "author_hint": "Anna",
+      "excerpt": "&quot;Bańka&quot; jest świetnym programem. Wszystko spójne, dopracowane. Aż chciałoby się posłuchać dłużej :D Idealnie dobrany support - specjalne pozdrowienia dla Marcina Chmiela, jego elokwencja i dobór słów zrobiły na mnie ogromne wrażenie :) Wspaniały wieczór, Karolu, dzięki!! :)"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-wojtek-pieta.json",
+      "candidate_path": "evidence/coverage-pilot/wojtek-pieta.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_wpieta_001",
+      "url": "https://www.kupbilecik.pl/pl/comments/2923/stand-up-wojtek-pieta?page_comments=1",
+      "author_hint": "Dominik",
+      "excerpt": "Jak zwykle sztos! Zarówno support Filip jak i Wojtek byli świetni! Spora dawka humoru, bez nadmiernych wulgaryzmów tak jak to inni wykonawcy preferują. Talent aktorski Wojtka jest nie do przecenienia"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-wojtek-pieta.json",
+      "candidate_path": "evidence/coverage-pilot/wojtek-pieta.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_wpieta_002",
+      "url": "https://www.kupbilecik.pl/pl/comments/2923/stand-up-wojtek-pieta?page_comments=1",
+      "author_hint": "Magda",
+      "excerpt": "Bardzo udany występ. Będąc na stand-upie Grzegorza Dolniaka był również support Wojtka Pięty. Tak mnie rozbawił, że musiałam zacząć obserwować również go na insta a później zakupić bilety jak dowiedziałam się że ma być w moim mieście (Racibórz) i oczywiście pojawić się na stand-upie Wojtka. Polecam każdemu"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-wojtek-pieta.json",
+      "candidate_path": "evidence/coverage-pilot/wojtek-pieta.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_wpieta_003",
+      "url": "https://www.kupbilecik.pl/pl/comments/2923/stand-up-wojtek-pieta?page_comments=3",
+      "author_hint": "Paweł",
+      "excerpt": "Słaby występ . Trudno mówić o poziomie artystycznym . Małe pieniądze i strata czasu ."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-wojtek-pieta.json",
+      "candidate_path": "evidence/coverage-pilot/wojtek-pieta.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_wpieta_004",
+      "url": "https://www.kupbilecik.pl/pl/comments/2441/bartosz-zalewski-stand-up?page_comments=32",
+      "author_hint": "Wicia",
+      "excerpt": "Mi najbardziej do gustu przypadł abstrakcyjny i odjechany humor Bartka. W przypadku Wojtka trochę mniej - takie mam odczucie."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-wojciech-kaminski.json",
+      "candidate_path": "evidence/coverage-pilot/wojciech-kaminski.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_wkaminski_001",
+      "url": "https://www.kupbilecik.pl/pl/comments/13/kabaret-hrabi-wojtek-kaminski?page_comments=1",
+      "author_hint": "Tadeusz",
+      "excerpt": "Znakomity występ, inteligentny, zabawny podany z niesłychaną kulturą. Panowie w nowej rzeczywistości naprawdę dali czadu. Polecamy każdemu, kto jeszcze nie widział. Pozdrawiamy ekipę HrAbi (bardzo udany transfer Wojtka)"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-wojciech-kaminski.json",
+      "candidate_path": "evidence/coverage-pilot/wojciech-kaminski.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_wkaminski_002",
+      "url": "https://www.kupbilecik.pl/pl/comments/13/kabaret-hrabi-wojtek-kaminski?page_comments=1",
+      "author_hint": "Maria",
+      "excerpt": "Wspaniały nowy program. Wszystkich zachęcam do obejrzenia, Nie będziecie zawiedzeni. Wojtek Kamiński jakby zawsze z hrAbiami występował. MD"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-wojciech-kaminski.json",
+      "candidate_path": "evidence/coverage-pilot/wojciech-kaminski.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_wkaminski_003",
+      "url": "https://www.kupbilecik.pl/pl/comments/13/kabaret-hrabi-wojtek-kaminski?page_comments=1",
+      "author_hint": "Andrzej",
+      "excerpt": "Super występ!! Świetny humor kabaretu Hrabi jak zawsze.Transfer do kabaretu Wojciecha Kamińskiego to dobra decyzja . Polecam!!!!"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-wojciech-kaminski.json",
+      "candidate_path": "evidence/coverage-pilot/wojciech-kaminski.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_wkaminski_004",
+      "url": "https://www.kupbilecik.pl/pl/comments/13/kabaret-hrabi-wojtek-kaminski?page_comments=2",
+      "author_hint": "Kamila",
+      "excerpt": "Kabaret hrAbi powrócił w wielkiej formie. Chłopaki dali radę. Wojtek Kamiński rewelacja. Dużo śmiechu i wzruszenia. Dobrze, że wrócili."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-wojciech-kaminski.json",
+      "candidate_path": "evidence/coverage-pilot/wojciech-kaminski.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_wkaminski_005",
+      "url": "https://www.kupbilecik.pl/pl/comments/13/kabaret-hrabi-wojtek-kaminski?page_comments=2",
+      "author_hint": "Ewa",
+      "excerpt": "Wspaniały występ. Nie ma skali oceny na taki poziom mistrzostwa. Owacje na stojąco na poczatku i na końcu programu, to nie przypadek. Uszanowanie pamięci Joanny nie bylo dla mnie bez znaczenia. To ten element empatii zespołu, który spowodował, że łzy napływały do oczu. Wojciech Kamiński ze swoim mega mocnym głosem, po raz kolejny pokazał swoǰ niesamowity kunszt aktora kabaretowego. Wielkie brawa CHŁOPAKI, za program i TERAPIĘ dla wszystkich."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-wojciech-kaminski.json",
+      "candidate_path": "evidence/coverage-pilot/wojciech-kaminski.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_wkaminski_006",
+      "url": "https://www.kupbilecik.pl/pl/comments/13/kabaret-hrabi-wojtek-kaminski?page_comments=2",
+      "author_hint": "Krzysztof",
+      "excerpt": "Występ niezwykle wysokiej jakości,. Musieli się Panowie nieźle napracować, stąd takie efekty! Niestety nie umiałem się na tyle &quot;puścić&quot; żeby w pełni upajać się tym wieczorem. Co chwilę jednak spoglądałem w kierunku pianina i następowała wojna łez z uśmiechem. Głosy dobrane fantastycznie - piękne harmonijne brzmienie, a P. Wojtek - chylę czoła za te wysokie przeczyste tony. Improwizacja i wzajemne podpuszczanie się jak zawsze perfekt. No cóż Panowie trzeba żyć i funkcjonować dalej. Życzę dużo sił"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-source-first-01.json",
+      "candidate_path": "evidence/coverage-source-first-01/source-candidates.canonical.jsonl",
+      "candidate_id": "src_csf01a_001",
+      "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+      "author_hint": "madame_edith",
+      "excerpt": "No ja jestem fanką Abelarda i Lotka. Ale i na Rutkowskim się uśmiałam, na Paczesiu, Bendlerze.\nJak u kogoś „zart” na tym polega, że przeklina i tyle, to mnie to nie śmieszy zupełnie, ale bywają i fajne standupy."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-source-first-01.json",
+      "candidate_path": "evidence/coverage-source-first-01/source-candidates.canonical.jsonl",
+      "candidate_id": "src_csf01a_002",
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+      "author_hint": "michuuu_2108",
+      "excerpt": "Nie, oglądałem te Wiszowatą która podobno wymiata - też musiała gadać o tym jak współlokatorkę bolcują jej za ścianą.\nOgólnie próbowałem się przekonać, Lotek, Rutkowski. Wszędzie bezbeki."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-source-first-01-followup.json",
+      "candidate_path": "evidence/coverage-source-first-01-followup/source-candidates.canonical.jsonl",
+      "candidate_id": "src_csf01f_003",
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+      "author_hint": "Springerbaum",
+      "excerpt": "Rozumiem o co pytasz, mam podobnie, ale po prostu jesteśmy w mniejszości.\nParę kurew, ruchanie i sranie - Polacy tak właśnie rozumieją stand-up. Komicy nie są idiotami, robią testy, wiedzą które żarty najlepiej 'siadają' publiczności.\nPowiedziawszy co wyżej, musimy szukać takich, którzy przemycają w miarę dużo trochę mądrzejszych rzeczy. Myślę, że Leja, Borkowski i Szumowski próbują bilansować niskie z wyższym.\nTakim podziałom wymyka się Lotek, który dużo klnie, ma dużo srania i ruchania, a mimo to u niego nie razi to tak jak u innych, bo po prostu jest autentyczny, ma naturalny talent komiczny, co sprawia, że męczy mnie ciut później."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-source-first-01-followup.json",
+      "candidate_path": "evidence/coverage-source-first-01-followup/source-candidates.canonical.jsonl",
+      "candidate_id": "src_csf01f_005",
+      "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+      "author_hint": "youngagain",
+      "excerpt": "Nie lubię stand upow bazujących na tym jak często standuper powie \"kur**\".\nNie mam nic do przekleństw, samej mi się zdarza rzucić mięsem ale są standupy jednak mniej i bardziej inteligentne.\nJa lubię Kasie Piasecka i Grzegorza Dolniaka"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-coverage-fan-forums-b-followup.json",
+      "candidate_path": "evidence/coverage-fan-forums-b-followup/source-candidates.canonical.jsonl",
+      "candidate_id": "src_cffb_001",
+      "url": "https://www.filmweb.pl/person/Abelard+Giza-286174/discussion/Jakie%2Bs%C4%85%2Bwasze%2Bulubione%2Bkabarety-1936249",
+      "author_hint": "cotca",
+      "excerpt": "Stand up:\n1. Krzysztof Piasecki\n2. Abelard Giza\n3. Kacper Ruciński\n4. Cezary Pazura\n5. Jachim Presents\n6. Maciej Stuhr"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261101-coverage-source-page-recovery.json",
+      "candidate_path": "evidence/coverage-source-page-recovery/source-candidates.canonical.jsonl",
+      "candidate_id": "src_cspr_001",
+      "url": "https://www.gry-online.pl/forum/polski-stand-up-wasze-zdanie/zbde8721",
+      "author_hint": "evolution123",
+      "excerpt": "Dajecie szanse polskim stand uperom? Ja polecam osobiście Paczesia, koleś ma dobre teksty, oprócz tego Giza, też jest naprawdę dobry i cenię dystans u niego. Z kolei nie przepadam za Rucińskim, jakoś odrzuca mnie na wstępie jego persona.\n\nhttps://www.youtube.com/watch?v=M4ANTgkixNE&t=1s\n\nZaznaczam, że nie porównuje tego do amerykańskiego stand upu, bo do tego nam jeszcze krok milowy brakuje."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261101-coverage-source-page-recovery.json",
+      "candidate_path": "evidence/coverage-source-page-recovery/source-candidates.canonical.jsonl",
+      "candidate_id": "src_cspr_002",
+      "url": "https://www.gry-online.pl/forum/polski-stand-up-wasze-zdanie/zbde8721",
+      "author_hint": "mohenjodaro",
+      "excerpt": "Ja lubię Antoniego Syrka-Dąbrowskiego, to jest chyba najbardziej kompletny materiał standupowy w Polsce: https://www.youtube.com/watch?v=UyqJEzXqN4U\n\nDobry jest jeszcze Michał Kempa, Bartosz Zalewski https://www.youtube.com/watch?v=ki3Kn2gRhYY czy wspomniany Rafał Pacześ. Wojciech Fiedorczuk też jest dobry, jeśli tylko odpowiedni przestawimy poczucie humoru https://www.youtube.com/watch?v=UIvjtcsYPJ0\n\nA co do tej podniety amerykańskim stand-upem. Też mam kilka fajnych monologów, ale mimo wszystko mam wrażenie, że to jest taka egzaltacja licealisty, który chce pokazać jak gardzi Polską ;). Wcale nie są jakieś wybitne, taki np. Carlin to w kółko jeden zgrany żart, Seinfeld fatalny, naprawdę cholernie przereklamowana sprawa."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261101-coverage-source-page-recovery.json",
+      "candidate_path": "evidence/coverage-source-page-recovery/source-candidates.canonical.jsonl",
+      "candidate_id": "src_cspr_003",
+      "url": "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169",
+      "author_hint": "maciell",
+      "excerpt": "Lotek i Paczus. Lotka opowiesc jak zamawial pizze zjarany z kolegami to sie poplakalem i ogladalem kilka razy. Tak samo jak opowiadal jak wyladowal na izbie wytrzewien bo wbili na slub na krzywy ryj. Paczus i jego opowiesc jak z kobieta i 2 parka pojechali na wakacje kamperem do Wloch. No, ale tez przyznam, ze niektore zarty maja prostackie i jak dla mnie malo smieszne. No, ale wydaje mi sie, ze to top polskich stand up na ten moment. Paczus zapelnia Katowicki spodek. A tym to malo sie moze ktos pochwalic."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261101-coverage-source-page-recovery.json",
+      "candidate_path": "evidence/coverage-source-page-recovery/source-candidates.canonical.jsonl",
+      "candidate_id": "src_cspr_004",
+      "url": "https://www.reddit.com/r/Polska/comments/105mykf/stand_up_rekomendacje/",
+      "author_hint": "steelyringing",
+      "excerpt": "Rafał Pacześ, Cezary Jurkiewicz i Antoni Syrek Dąbrowski to moje ulubione polskie opcje ostatnio, polecam!"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261101-coverage-source-page-tail.json",
+      "candidate_path": "evidence/coverage-source-page-tail/source-candidates.canonical.jsonl",
+      "candidate_id": "src_cspt_001",
+      "url": "https://swiatpilki.com/viewtopic.php?t=20492",
+      "author_hint": "fieldy",
+      "excerpt": "Oprócz Louisa CK to jeszcze Jim Jefferies znakomity, a ze starych, to Eddie Murphy, Delirious - polecam.\n\nPacześ też jeden z lepszych w Polsce. Jeśli o improwizowanie chodzi, to Michał Leja jest dobry. Antoni Syrek-Dąbrowski też daje radę.\nKobiety z kolei tylko hejtować, kompletnie mi się nie widzą, zwlaszcza jak próbują przeklinać, co mega słabo wychodzi."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261101-coverage-blazej-krajewski.json",
+      "candidate_path": "evidence/coverage-expansion/blazej-krajewski.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_bkrajewski_001",
+      "url": "https://www.kupbilecik.pl/komentarze/4698/Stand-up%3A%2BB%C5%82a%C5%BCej%2BKrajewski/19/",
+      "author_hint": "Mateusz",
+      "excerpt": "Adam Sobaniec jako support to genialny pomysł, dawno tak dobrego supportu nie widziałem :D Błażej Krajweski, świetny występ, dużo poruszonych tematów, często z pogranicza temató tabu, więc tym bardziej spoko. Polecam!"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261101-coverage-blazej-krajewski.json",
+      "candidate_path": "evidence/coverage-expansion/blazej-krajewski.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_bkrajewski_002",
+      "url": "https://www.kupbilecik.pl/komentarze/4698/Stand-up%3A%2BB%C5%82a%C5%BCej%2BKrajewski/19/",
+      "author_hint": "Aleksander",
+      "excerpt": "Pierwszy raz byłem na stand - upie i jestem pod wrażeniem. Znałem wcześniejsze programy Pana Krajewskiego i Sobańca. Nie zawiodłem się. Duża dawka dobrego humoru podszyta czasami refleksją społeczno polityczną. Lubię to. Chętnie obejrzę następne programy jeśli Panowie zawitają w nasze strony."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261101-coverage-karol-kopiec.json",
+      "candidate_path": "evidence/coverage-expansion/karol-kopiec.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_kkopiec_001",
+      "url": "https://ultramaryna.home.pl/tekst.php?id=1184",
+      "author_hint": "Mariusz Kałamaga",
+      "excerpt": "Zdarza się to regularnie z różnych powodów. Chodzi o energię albo o flow… Mam kilku swoich ulubionych zawodników. Rafał Pacześ jest fajnym typem, ma świetny kontakt z publicznością, bardzo podoba mi się, jak podaje żarty. Łukasz „Lotek” Lodkowski – miszczunio! Taki mały, wkurwiony koleś, który wpada na scenę i opowiada o wszystkim wokoło. Lubię Cezarego Jurkiewicza, choć znam go tylko z Youtuba. Abelard Giza – wiadomo. Jego popularność jest w pełni zasłużona. Tu nie ma przypadku, wszystko jest świetnie przygotowane i przemyślane. Imponuje mi jego pracowitość i pełen profesjonalizm. Bardzo mnie śmieszy Kacper Ruciński i Jacek Stramik, który jest ostry. Jak dowali, to sobie myślisz: „no nie wiem, czy bym to powiedział…”. Trochę bardziej absurdalnym humorem atakują Karol Kopiec i Michał Kempa. Są i dziewuchy: Wiolka Walaszczyk i Kasia Piasecka. Ostatnio udało mi się namówić też do powrotu moją koleżankę, Aleksandrę Petrus, która jest karlicą. Przepraszam – ona nie lubi tego określenia – jest nieduża (ale ma wielkie serducho). Mocno jej kibicuję."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261101-coverage-boras.json",
+      "candidate_path": "evidence/coverage-expansion/boras.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_boras_001",
+      "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+      "author_hint": "tanebo001",
+      "excerpt": "Mi podchodzi Cezary Jurkiewicz i Tomasz Boras"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261101-coverage-thread-harvest-02.identity-reviewed.json",
+      "candidate_path": "evidence/coverage-thread-harvest-02/source-candidates.canonical.jsonl",
+      "candidate_id": "src_cth02a_001",
+      "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+      "author_hint": "asia.sthm",
+      "excerpt": "magdakubicka.standup - genialna kobieta chociaz tego nie wie\nismocomedy - Fin znakomity podbil juz Ameryke i okolice\n\npanli.pl - Pan Li to pijany w trupa iluzjonista, tez geniusz. nie da sie go nie pokochac"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261101-coverage-thread-harvest-02.identity-reviewed.json",
+      "candidate_path": "evidence/coverage-thread-harvest-02/source-candidates.canonical.jsonl",
+      "candidate_id": "src_cth02a_002",
+      "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+      "author_hint": "annaboleyn",
+      "excerpt": "Niby nie lubię, ale... śmieszy mnie Puzyr, lubię patrzeć na Olkę Szcześniak, Iliza Shlesinger doprowadza mnie do łez śmiechu"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261101-coverage-thread-harvest-02.identity-reviewed.json",
+      "candidate_path": "evidence/coverage-thread-harvest-02/source-candidates.canonical.jsonl",
+      "candidate_id": "src_cth02a_003",
+      "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+      "author_hint": "brenda_bee",
+      "excerpt": "Lubimy, oglądamy. Najbardziej lubimy Paczesia, Abelarda, Kacpra Rucińskiego, Wiolkę Walaszczyk, Olkę Radomską. Jakoś nie przemawia do nas Lotek."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261101-coverage-thread-harvest-02.identity-reviewed.json",
+      "candidate_path": "evidence/coverage-thread-harvest-02/source-candidates.canonical.jsonl",
+      "candidate_id": "src_cth02b_001",
+      "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+      "author_hint": "zona_glusia",
+      "excerpt": "Lubię Abelarda Gizę, Piotrka Szumowskiego, Antoniego Syrka-Dąbrowskiego."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261101-coverage-sylwia-wiszowata.json",
+      "candidate_path": "evidence/coverage-expansion/sylwia-wiszowata.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_swiszowata_001",
+      "url": "https://www.kupbilecik.pl/imprezy/115431/Pozna%C5%84/Wielka%2BTrasa%2BStand-up%2BPolska/",
+      "author_hint": "Arnold",
+      "excerpt": "Można mieć wątpliwości, bo to młodzi stażem komicy, ale dowieźli. Nie było złych występów. Rogozin - myślałem, że będzie średnio, a było fajnie. Kostelecki - spoko. Chachulska - ta Pani ma przed sobą świetlaną przyszłość, Skrzypek - dobry występ. Potem Młynarski - tu zaskoczenie, bo było dla odmiany fajnie (bluza pomaga), Wiszowata - szacunek za zrobienie materiału specjalnie pod trasę, Płocha - spoko, Bieńkowski - dobry występ, końcówka mocno w stylu Zalewa, ale bardzo dobra, świetne podanie"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261101-coverage-sylwia-wiszowata.json",
+      "candidate_path": "evidence/coverage-expansion/sylwia-wiszowata.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_swiszowata_002",
+      "url": "https://www.kupbilecik.pl/pl/event/219130/warszawa/stand-up-sylwia-wiszowata",
+      "author_hint": "Grażyna",
+      "excerpt": "Byłam drugi raz na występie pani Sylwii, super. Bardzo mi odpowiada jej rodzaj żartu"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261101-coverage-sylwia-wiszowata.json",
+      "candidate_path": "evidence/coverage-expansion/sylwia-wiszowata.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_swiszowata_003",
+      "url": "https://www.kupbilecik.pl/pl/event/219130/warszawa/stand-up-sylwia-wiszowata",
+      "author_hint": "Michał",
+      "excerpt": "Byłem drugi raz i było fajnie ale mam wrażenie że ten sam repertuar był to za pierwszym razem u Sylwii, trawniczek był lepszy"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261101-coverage-sylwia-wiszowata.json",
+      "candidate_path": "evidence/coverage-expansion/sylwia-wiszowata.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_swiszowata_004",
+      "url": "https://www.kupbilecik.pl/pl/event/219130/warszawa/stand-up-sylwia-wiszowata",
+      "author_hint": "Sylwester",
+      "excerpt": "Sylwia jak zawsze była niesamowita ."
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261101-coverage-sylwia-wiszowata.json",
+      "candidate_path": "evidence/coverage-expansion/sylwia-wiszowata.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_swiszowata_005",
+      "url": "https://www.kupbilecik.pl/pl/event/219130/warszawa/stand-up-sylwia-wiszowata",
+      "author_hint": "Rafał",
+      "excerpt": "Obłęd. SYLWIA jest nie z tego świata"
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261101-coverage-sylwia-wiszowata.json",
+      "candidate_path": "evidence/coverage-expansion/sylwia-wiszowata.source-candidates.canonical.jsonl",
+      "candidate_id": "src_cov_swiszowata_006",
+      "url": "https://www.kupbilecik.pl/pl/event/219130/warszawa/stand-up-sylwia-wiszowata",
+      "author_hint": "Dawid",
+      "excerpt": "Jak dla mnie, tegoroczne odkrycie sceny Stand Up. Zabawna, z ciętym językiem, uszczypliwa ale przede wszystkim mająca swój niepodrabialny styl. Polecam zobaczyć Sylwię na żywo bo to dziewczyna którą można pokochać lub znienawidzić."
+    }
+  ],
+  "reviewed_replacements_preserved": [
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+      "candidate_path": "evidence/stage-06/source-candidates.jsonl",
+      "candidate_count": 15,
+      "candidate_ids": [
+        "src_b01a_001",
+        "src_b01a_003",
+        "src_b01a_004",
+        "src_b01b_001",
+        "src_b01b_002",
+        "src_b01b_003",
+        "src_b01b_004",
+        "src_b01b_005",
+        "src_b01b_006",
+        "src_b01b_007",
+        "src_b01c_001",
+        "src_b01c_002",
+        "src_b01c_003",
+        "src_b01c_004",
+        "src_b01c_005"
+      ]
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch05.context-reviewed.json",
+      "candidate_path": "evidence/batch-05-context-reviewed/source-candidates.jsonl",
+      "candidate_count": 7,
+      "candidate_ids": [
+        "src_b05a_001",
+        "src_b05b_001",
+        "src_b05b_002",
+        "src_b05b_003",
+        "src_b05c_001",
+        "src_b05c_002",
+        "src_b05c_003"
+      ]
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261031-batch09.context-reviewed.json",
+      "candidate_path": "evidence/coverage-pilot/batch09.context-reviewed.source-candidates.jsonl",
+      "candidate_count": 6,
+      "candidate_ids": [
+        "src_b09a_001",
+        "src_b09a_002",
+        "src_b09a_003",
+        "src_b09a_004",
+        "src_b09b_001",
+        "src_b09c_001"
+      ]
+    },
+    {
+      "manifest": "tasks/standupers-graph/reports/runs/20261101-coverage-thread-harvest-02.identity-reviewed.json",
+      "candidate_path": "evidence/coverage-thread-harvest-02/source-candidates.canonical.jsonl",
+      "candidate_count": 4,
+      "candidate_ids": [
+        "src_cth02a_001",
+        "src_cth02a_002",
+        "src_cth02a_003",
+        "src_cth02b_001"
+      ]
+    }
+  ],
+  "dedup_rule": "Use only the candidate files referenced by the exact 27 graph input_manifests; this includes the four full reviewed replacement manifests (batch01 identity-reviewed, batch05 context-reviewed, batch09 context-reviewed, thread-harvest-02 identity-reviewed). Do not load their originals alongside the replacements. Candidate dedup is author/post/excerpt, not whole-thread.",
+  "queries": [
+    "\"Marcin Zbigniew Wojciech\" stand-up opinie forum ulubiony",
+    "\"Marcin Zbigniew\" stand-up \"lubię\" OR \"uwielbiam\"",
+    "\"Marcin Zbigniew Wojciech\" site:reddit.com stand up",
+    "\"Marcin Zbigniew Wojciech\" recenzja widzów stand-up",
+    "\"Marcin Wojciech\" stand-up ulubiony komik forum",
+    "\"Marcin Zbigniew Wojciech\" \"najlepszy\" stand-up komik forum",
+    "\"Marcin Zbigniew Wojciech\" \"Rafał Pacześ\" OR \"Lotek\" OR \"Socha\" opinie",
+    "\"Marcin Zbigniew Wojciech\" \"lubię\" stand-up -bilety",
+    "\"Marcin Zbigniew Wojciech\" \"Ewa Błachnio\" opinie występ",
+    "\"Marcin Zbigniew Wojciech\" \"Robert Korólczyk\" recenzja widzów",
+    "\"Marcin Zbigniew Wojciech\" \"Tomasz Jachimek\" \"podobał\" OR \"świetny występ\"",
+    "\"Marcin Zbigniew Wojciech\" \"Paweł Reszela\" widzowie opinie",
+    "\"Marcin Zbigniew Wojciech\" recenzja \"stand-up\" blog -kupbilecik",
+    "\"Marcin Zbigniew Wojciech\" \"występ\" \"Ewa Błachnio\" recenzja publiczność",
+    "\"Marcin Zbigniew Wojciech\" \"świetnie się bawiłam\" OR \"bardzo mi się podobał\"",
+    "\"Marcin Zbigniew Wojciech\" \"moim ulubionym\" OR \"lubię\" komik",
+    "\"Marcin Zbigniew Wojciech\" \"Ewa Błachnio\" \"podobało mi się\"",
+    "\"Marcin Zbigniew Wojciech\" \"Ewa Błachnio\" \"bawiłam się\" recenzja",
+    "\"Marcin Zbigniew Wojciech\" \"Karol Kopiec\" opinie OR lubię OR ulubiony",
+    "\"Marcin Zbigniew Wojciech\" forum stand-up \"występ\" -kupbilecik",
+    "\"Marcin Zbigniew Wojciech\" \"Ewa Błachnio\" opinie komentarze stand-up night",
+    "\"Stand-up night\" \"Ewa Błachnio\" \"Marcin\" recenzja 2017",
+    "\"Marcin Zbigniew Wojciech\" \"Ewa Błachnio\" \"polecam\" komentarz",
+    "\"Marcin Zbigniew Wojciech\" \"Karol Kopiec\" recenzja FERMENTY widz"
+  ],
+  "page_events": [
+    {
+      "type": "search_query_batch",
+      "queries": [
+        "\"Marcin Zbigniew Wojciech\" stand-up opinie forum ulubiony",
+        "\"Marcin Zbigniew\" stand-up \"lubię\" OR \"uwielbiam\"",
+        "\"Marcin Zbigniew Wojciech\" site:reddit.com stand up",
+        "\"Marcin Zbigniew Wojciech\" recenzja widzów stand-up"
+      ],
+      "result_summary": "Search returned official focal site reviews (several focal-only appraisals and an ambiguous “both gentlemen” review), prior KupBilecik comments URL previously tried in batch04, standup.pl profile/video catalog, and no verified written fan comparison. No new source opened yet.",
+      "raw_result_retained": "tool response was inspected in full in the active turn; no candidate inferred from snippets."
+    },
+    {
+      "type": "search_query_batch",
+      "queries": [
+        "\"Marcin Wojciech\" stand-up ulubiony komik forum",
+        "\"Marcin Zbigniew Wojciech\" \"najlepszy\" stand-up komik forum",
+        "\"Marcin Zbigniew Wojciech\" \"Rafał Pacześ\" OR \"Lotek\" OR \"Socha\" opinie",
+        "\"Marcin Zbigniew Wojciech\" \"lubię\" stand-up -bilety"
+      ],
+      "result_summary": "No fan comparison surfaced. Search returned ranking/catalog pages, a Reddit thread already present in the canonical corpus (not a new post), an interviewer/editorial interview (professional speaker context), and generic listings. No candidate saved."
+    },
+    {
+      "type": "search_query_batch",
+      "queries": [
+        "\"Marcin Zbigniew Wojciech\" \"Ewa Błachnio\" opinie występ",
+        "\"Marcin Zbigniew Wojciech\" \"Robert Korólczyk\" recenzja widzów",
+        "\"Marcin Zbigniew Wojciech\" \"Tomasz Jachimek\" \"podobał\" OR \"świetny występ\"",
+        "\"Marcin Zbigniew Wojciech\" \"Paweł Reszela\" widzowie opinie"
+      ],
+      "result_summary": "Search found candidate first-person review on VERBUM NA POLU for Stand-up night (focal plus frozen Ewa Błachnio, Robert Korólczyk, Tomasz Jachimek), plus other lineup/event/editorial pages. Search-result excerpts do not establish author preference; opening only the review."
+    },
+    {
+      "type": "open_reservation",
+      "url": "https://verbumnapolu.wordpress.com/2017/02/24/stand-up-night-recenzja/",
+      "reserved_before_call": true
+    },
+    {
+      "type": "open",
+      "url": "https://verbumnapolu.wordpress.com/category/stand-up/",
+      "result_summary": "Full category page opened; locator lines 219-279 contain the standalone post title, identity/scope, author’s post-level reactions and a separately authored signed note. Candidate remains pending exact post URL and pair review."
+    },
+    {
+      "type": "click_reservation",
+      "locator": "link 69 “Stand-up night” [relacja/recenzja] from category page",
+      "reserved_before_call": true
+    },
+    {
+      "type": "click",
+      "url": "https://verbumnapolu.wordpress.com/2017/02/24/stand-up-night-relacjarecenzja/",
+      "result_summary": "Exact post opened. Lines 50-85 are complete author passage for all four acts and event wrap-up. Author byline Aneta Tabiszewska; separate Bez Przesady note lines 87-91 is excluded from her attribution. Focal reaction is explicit; peer Ewa response is empathetic/possibly positive but appreciation is weaker/ambiguous. No candidate yet."
+    },
+    {
+      "type": "search_query_batch",
+      "queries": [
+        "\"Marcin Zbigniew Wojciech\" recenzja \"stand-up\" blog -kupbilecik",
+        "\"Marcin Zbigniew Wojciech\" \"występ\" \"Ewa Błachnio\" recenzja publiczność",
+        "\"Marcin Zbigniew Wojciech\" \"świetnie się bawiłam\" OR \"bardzo mi się podobał\"",
+        "\"Marcin Zbigniew Wojciech\" \"moim ulubionym\" OR \"lubię\" komik"
+      ],
+      "result_summary": "Search uncovered two independent personal/editorial reviews: Iwona Wróblak’s solo Marcin + non-frozen Krzysztof Kamyszek event (excluded from pair goal), and a bielskirynek.pl review of a multi-comedian FERMENT 2025 bill describing Marcin and Karol Kopiec separately. Also surfaced exact old blocked KupBilecik comments route; not retried. Opening bielskirynek only."
+    },
+    {
+      "type": "open_reservation",
+      "url": "https://bielskirynek.pl/pl/14_kultura/729_kabarety/18759_smiech-fermentuje-najlepiej-wieczorem-.html",
+      "reserved_before_call": true
+    },
+    {
+      "type": "open",
+      "url": "https://bielskirynek.pl/pl/14_kultura/729_kabarety/18759_smiech-fermentuje-najlepiej-wieczorem-.html",
+      "result_summary": "Full review confirms article byline Agata Rucińska and individual sections for Marcin (lines 83-84) and Karol Kopiec (line 90), but Karol appraisal is explicitly attributed to the room’s tastes, and article supplies no explicit personal liking by author. Professional/editorial bias noted; excluded from fan-authored pair evidence."
+    },
+    {
+      "type": "search_query_batch",
+      "queries": [
+        "\"Marcin Zbigniew Wojciech\" \"Ewa Błachnio\" \"podobało mi się\"",
+        "\"Marcin Zbigniew Wojciech\" \"Ewa Błachnio\" \"bawiłam się\" recenzja",
+        "\"Marcin Zbigniew Wojciech\" \"Karol Kopiec\" opinie OR lubię OR ulubiony",
+        "\"Marcin Zbigniew Wojciech\" forum stand-up \"występ\" -kupbilecik"
+      ],
+      "result_summary": "Queries mostly returned the focal’s official/KupBilecik review archives, including isolated negative comments and standalone praise but no frozen peer in same author post. The peer-specific searches repeated only the VERBUM review / Karol event review already inspected."
+    }
+  ],
+  "candidates": [],
+  "coverage_gaps": [],
+  "counts": {
+    "queries": 24,
+    "navigation_attempts": 3,
+    "verified_candidates": 0,
+    "remaining_queries": 0,
+    "remaining_navigation_attempts": 21,
+    "remaining_candidate_slots": 16
+  },
+  "accessed_sources": [
+    {
+      "family": "independent review blog",
+      "url": "https://verbumnapolu.wordpress.com/2017/02/24/stand-up-night-relacjarecenzja/",
+      "retrieval": "web open then exact post click (2 navigation attempts)",
+      "locator": "lines 27-85; author byline ANETA TABISZEWSKA at line 85. Review identifies Stand-up Night, 20.02.2017, Krakowski Teatr Variete (lines 31-50).",
+      "finding": "Author personally praises focal: “najbardziej rozśmieszył mnie weselny paradoks” (line 53) and says a bit “mnie powalił na kolana” (line 55). For frozen Ewa Błachnio, author reports her material and writes “Ewa, wiem coś o tym i łączę się z Tobą w bólu” (line 62); this is empathetic resonance, while applause at line 63 is attributed to audience. Whole event is “jak najbardziej udany” and author liked some new material (lines 81-83). Peer-directed personal appreciation is ambiguous, so no candidate row."
+    },
+    {
+      "family": "regional editorial event review",
+      "url": "https://bielskirynek.pl/pl/14_kultura/729_kabarety/18759_smiech-fermentuje-najlepiej-wieczorem-.html",
+      "retrieval": "full web open (1 navigation attempt)",
+      "locator": "article byline Agata Rucińska (line 62); focal lines 83-84; Karol Kopiec lines 90-92.",
+      "finding": "Both acts are individually described, but the positive Karol conclusion is explicitly attributed to the warmed-up room’s tastes, and focal phrasing speaks for viewers. No explicit personal preference by author; professional/editorial bias makes this unsuitable for the fan-preference dataset."
+    }
+  ],
+  "search_only_leads": [
+    {
+      "family": "KupBilecik review archive",
+      "url": "https://www.kupbilecik.pl/en/comments/1853/stand-up-testy-nowego-programu-marcin-zbigniew-wojciech",
+      "status": "search-indexed excerpt only in this run; this exact URL was a cache miss during batch04 and was not retried per instruction. Search snippets include individual Marcin reviews/one negative review, but none pairs him with a frozen peer."
+    },
+    {
+      "family": "KupBilecik duo event archive",
+      "url": "https://www.kupbilecik.com/komentarze/6666/Stand-up%3A%2B%C5%81ukasz%2BKaczmarczyk%2B%26%2BMarcin%2BZbigniew%2BWojciech/",
+      "status": "search-indexed only; broad positive reviews are about Marcin and Łukasz Kaczmarczyk, who is not frozen. One reviewer asks that they bring Ewa next time; this is not personal appreciation of Ewa."
+    },
+    {
+      "family": "Reddit",
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+      "status": "search-only; corpus already contains this thread with distinct authors/comments. No qualifying Marcin-plus-frozen-peer statement surfaced in query excerpts; not reopened because the same thread was previously verified and no new post lead emerged."
+    },
+    {
+      "family": "official/performer and event catalogs",
+      "status": "search-only: marcinwojciech.pl, standup.pl, Standupedia, event and press listings. They yielded focal-only comments, professional descriptions, lineups or recommendations, not qualifying personal pair statements."
+    }
+  ],
+  "dedup_checks": [
+    {
+      "url": "https://verbumnapolu.wordpress.com/2017/02/24/stand-up-night-relacjarecenzja/",
+      "canonical_source_match": false,
+      "author_post_excerpt_match": "No candidate row; exact source URL does not occur in canonical input records."
+    },
+    {
+      "url": "https://bielskirynek.pl/pl/14_kultura/729_kabarety/18759_smiech-fermentuje-najlepiej-wieczorem-.html",
+      "canonical_source_match": false,
+      "author_post_excerpt_match": "No candidate row; exact source URL does not occur in canonical input records."
+    }
+  ],
+  "stop_reason": "Used all 24 individual queries. The full individual review with Marcin and Ewa had explicit personal positive reaction to Marcin but only ambiguous empathy/audience response for Ewa; the other accessed event review appraised Marcin and Karol but attributed the positive Karol reaction to the room, not personal author preference. Search routes repeated focal-only review archives, listings, lineups, or previously inspected threads. No candidate met same-author personal appreciation of focal plus frozen peer; stopping at 0 candidates avoids forcing an edge. No style fallback.",
+  "reservations": [
+    {
+      "type": "search_query_batch",
+      "queries": [
+        "\"Marcin Zbigniew Wojciech\" \"Ewa Błachnio\" opinie komentarze stand-up night",
+        "\"Stand-up night\" \"Ewa Błachnio\" \"Marcin\" recenzja 2017",
+        "\"Marcin Zbigniew Wojciech\" \"Ewa Błachnio\" \"polecam\" komentarz",
+        "\"Marcin Zbigniew Wojciech\" \"Karol Kopiec\" recenzja FERMENTY widz"
+      ],
+      "reserved_before_call": true
+    },
+    {
+      "type": "final_search_query_batch",
+      "queries": [
+        "\"Marcin Zbigniew Wojciech\" \"Ewa Błachnio\" opinie komentarze stand-up night",
+        "\"Stand-up night\" \"Ewa Błachnio\" \"Marcin\" recenzja 2017",
+        "\"Marcin Zbigniew Wojciech\" \"Ewa Błachnio\" \"polecam\" komentarz",
+        "\"Marcin Zbigniew Wojciech\" \"Karol Kopiec\" recenzja FERMENTY widz"
+      ],
+      "reserved_before_call": true,
+      "result_summary": "No new candidate. KupBilecik surfaced focal-only customer reviews, standup.pl content that names Ewa only as a co-performer in a clip, and the previously opened bielskirynek article; archives/listings repeated earlier leads."
+    }
+  ],
+  "relevant_full_passages": [
+    {
+      "url": "https://verbumnapolu.wordpress.com/2017/02/24/stand-up-night-relacjarecenzja/",
+      "author": "Aneta Tabiszewska",
+      "locator": "post lines 50-85 (all relevant body text, excluding a separately signed note)",
+      "excerpt": "20 lutego 2017 roku o godzinie 20:00, praktycznie tuż po Półfinałach 33. EDF PAKI, w krakowskim Teatrze Variete, miał miejsce występ czterech standuperów: Ewy Błachnio, Roberta Korólczyka, Marcina Zbigniewa Wojciecha i Tomasza Jachimka. Program, z którym artyści podróżują, nazywa się „Stand-up night”.\nMiałam okazję obejrzeć go dwa razy, w Krakowie i Gliwicach (dzięki, dziewczyny, że mnie wzięłyście ze sobą!), dzień po dniu. Oczywiście, jako, że jesteśmy blogiem krakowskim, recenzja będzie oparta w dużym stopniu na występie w Teatrze Variete. W dużym, ponieważ niestety w Krakowie nie udało mi się zobaczyć monologu Marcina Wojciecha, co nadrobiłam w Gliwicach. Chciałabym się podzielić także jedną refleksją, która naszła mnie podczas występu na Śląsku, ale po kolei.\nWieczór rozpoczął się od rozgrzewki w wykonaniu Marcina Zbigniewa Wojciecha oraz Roberta Korólczyka, a całość poprowadził Marcin Wojciech. Widzowie mogli zabawić się w grę pt. „Tak, zróbmy to!” i na przykład dowiedzieć się od sąsiada z boku, że są seksowni.\nNastępnie przyszedł czas na monolog Marcina Zbigniewa Wojciecha, który uświadomił mi, że faktycznie jest podobny do złodzieja z filmu „Kevin sam w domu”, czego dotąd nie zauważyłam. Opowiadał także m.in. o swoich przeżyciach na weselach, gdzie goście wraz z czasem i procentami z kulturalnych ludzi zamieniają się w zwierzęta. Jednak najbardziej rozśmieszył mnie weselny paradoks, w którym goście wygłupiają się i ośmieszają przed innymi po to, aby wygrać wódkę, która jest za darmo na stole.\nNie powiem, sama chętnie biorę udział w oczepinach, a jeszcze chętniej patrzę, jak wydurniają się moi kuzyni czy znajomi. Z pewnością teraz zabawy weselne będą bawić mnie jeszcze bardziej. Dowiedziałam się także, że istnieją tacy szaleńcy, którzy wyprawiają wesele bezalkoholowe! Czy to jest w ogóle możliwe?! Publiczność dowiedziała się też, że Marcina nie stać na wakacje nad polskim morzem, dlatego ostatnie musiał spędzić w Bułgarii.\nOpowiedział także, jak rozpoznaje Polaków za granicą, o swoich podbojach miłosnych na oazach, a także o tym, że puszyste kobiety są lepsze. Na ostatni wątek jeden pan na sali zaczął się histerycznie śmiać, co Marcin od razu podchwycił, sprawnie wchodząc w interakcje z publicznością. Na koniec występu standuper zdradził swój sposób na telemarketingowców, który mnie powalił na kolana i chyba zacznę go stosować.\nOtóż, gdy dzwonią do Marcina z ofertą, on wysłuchuje ich, mówi, że kupi to, co chcą, jednak akurat rozwiązuje krzyżówkę i ma ostatnie hasło: „Innymi słowy, uciekaj na s…?” To jedynie mała część występu artysty, nie będę zdradzać Wam więcej. Pójdziecie, to się dowiecie.\nJako druga pojawiła się Ewa Błachnio, którą poprzednik próbował wkręcić w taniec na scenie, bo, jak wiecie, Ewa była w poprzedniej edycji „Tańca z gwiazdami”. Jednak artystka nie dała się sprowokować, być może dlatego, że Marcin wybrał taniec pole dance.\nEwa rozpoczęła występ od monologu o swoim staropanieństwie, w którym opowiedziała o podrywaniu przez żonatych mężczyzn i tych obdarzonych odwagą, ale niestety nie wzrostem. Ewa, wiem coś o tym i łączę się z Tobą w bólu. Nie obeszło się także bez poruszania tematu smogu, artystka znalazła przyczynę tylu zdrad w Krakowie: po prostu w tym dymie nie można celnie trafić.\nNa koniec poruszyła temat prowadzenia samochodu przez kobiety, bo przecież faceci wykonując tyle czynności, co my w aucie, w ogóle nie wyjechaliby z parkingu! Pojawił się również temat polityki, w którym Ewa uświadomiła publiczności kilka paradoksów i prawd życiowych, za co dostała gromkie brawa. Schodząc ze sceny udało jej się ubrać Marcina Zbigniewa Wojciecha w ramę. Taneczną ramę.\nJako trzeci swój monolog zaczął Robert Korólczyk, występujący także w Kabarecie Młodych Panów. Zaczął on, jak typowy Polak, od narzekania. Narzekania na swoje dzieciństwo, kiedy to musiał słuchać disco polo, wychował się na nim, bo jego tata lubił tego rodzaju muzykę.\nPubliczność mogła dowiedzieć się, że Roberta do szkoły budził tekst: „Ty i ja, ty i ja, mydełko fa…” Standuper zdradził także wykonywany przez siebie kiedyś zawód, który nie jest lubiany przez większość społeczeństwa, a mianowicie zawód strażnika miejskiego. Z sali od razu można było usłyszeć standardowe „Buuuuuu!”, co chyba nikogo nie dziwi.\nLecz jest plus tej profesji, bowiem nauczyła Roberta dystansowania się do wyzwisk, a co ważniejsze, nie przejmowania się nimi, co według mnie jest w życiu bardzo przydatną cechą. Robert poruszył też bardzo powszechny temat, jakim są dzwonki ustawiane przez ludzi w telefonach. Przyznam, że temat mi bliski, bo sama zwracam na to uwagę, głównie jeżdżąc MPK i jestem tego samego zdania, co Robert: człowieka można poznać po dzwonku. Zgadzam się również w kwestii typu muzyki ustawionej jako dzwonek.\nZdarzają się tacy, którzy mają ustawiony fajny hit, aż chciałoby się posłuchać go dalej, niestety zaraz go wyciszają, ale zdarzają się też i tacy, którzy mają ustawione, wspomniane już wcześniej, disco polo i twierdzą, że wszyscy muszą wysłuchać tego do końca. Wspomniał także m.in. o oznaczaniu się na portalach społecznościowych, o operacjach plastycznych kobiet oraz o reklamach leków, płynnie przechodząc do tematów dla dorosłych.\nNa tym zakończę, bo może czytają nas niepełnoletni, nie będę gorszyć młodzieży jeszcze bardziej.\nNa koniec standupowego wieczoru wystąpił Tomasz Jachimek, który zaczął z tak zwanego „grubej rury”, mówiąc, że stand-up jest dość wymagającą formą, bo trzeba być zarówno zabawnym, jak i przerażającym, śmiesznym, ale też kontrowersyjnym i obserwując środowisko kabareciarzy, nikt tak nie rzuca mu się w oczy, jak Antoni. Tak rozpoczęty występ zapowiedział, że nie będzie grzecznie… I nie było. Artysta skupił się na temacie seksu, który według niego nie jest w dzisiejszych czasach sferą tabu.\nMimo że podczas tego wieczoru, na ten temat powiedziano już dość sporo, jednak Tomasz mówił o nim w zupełnie innym aspekcie, niż poprzednicy. Poruszył także wątki m.in. okłamywania dzieci przez rodziców czy sposobu traktowania gości w restauracji przez kelnerów.\nSwoją drogą, jeśli traficie kiedyś na danie zatytułowane tak: „Z ielono-wiosenne listowie nadziewane szlachetnym mięsiwem w gęstej otulinie z sosu imbirowo-śmietanowego, a wszystko to w delikatnej nucie kopru włoskiego” i zastanawiacie się, co to może być, Jachimek odpowiada: gołąbki. Na koniec występu nie omieszkał ponaśmiewać się z naszych polityków, czym też uświadomił nam kilka paradoksów w Polskim życiu politycznym, innych niż poprzednicy.\nPodsumowując, standupowy wieczór zaliczam do jak najbardziej udanych. Poruszane przez artystów wątki, mimo że niekiedy się powtarzały, były jednak ujęte z innej perspektywy, co uwidoczniło zarazem wszechstronność występujących, jak również odmienne spojrzenie na te same zagadnienia. Trzeba także zaznaczyć, że podczas tego wieczoru został podjęty szereg tematów. Nie wszystkie zawarłam w swojej relacji, ponieważ chcę Was zachęcić do wybrania się na ten program. Według mnie warto.\nCzęść z monologów była mi w pełni znana, więc na niej się zbytnio nie ubawiłam, ale ja tak po prostu mam, że nie za bardzo lubię „odgrzewane kotlety”. Część tylko trochę, więc przyjemnie było je sobie przypomnieć. Jeszcze inna część była całkiem nowa i na niej bawiłam się świetnie! Na wyróżnienie zasługuje także interakcja z publicznością, każdy z występujących ją nawiązał, więc publiczność została dopieszczona.\nTeraz taka mała refleksja, która naszła mnie drugiego dnia standupowej trasy: reakcje ludzi. Publiczność w Krakowie nie reagowała tak ochoczo i spontanicznie, jak ta w Gliwicach. Zaczęłam się zatem zastanawiać, od czego to zależy… Od mentalności, ludzi, miejsca, dostępności tego typu rozrywki, a może czegoś jeszcze innego? Wydaje mi się, że każda z wymienionych przeze mnie przyczyn ma w to swój wkład. Jednak nie znalazłam satysfakcjonującej mnie odpowiedzi i zastanawiam się dalej.\nMoże Wy macie jakieś pomysły?\nANETA TABISZEWSKA",
+      "caveat": "The separately signed “Mała notka od Bez Przesady” is not included or attributed to the review author. Author’s focal praise is explicit; Ewa appraisal is mixed/ambiguous and includes audience-attributed applause. This is not saved as a verified candidate."
+    },
+    {
+      "url": "https://bielskirynek.pl/pl/14_kultura/729_kabarety/18759_smiech-fermentuje-najlepiej-wieczorem-.html",
+      "author": "Agata Rucińska",
+      "locator": "article lines 60-103; author identifier line 62",
+      "excerpt": "Jeśli śmiech naprawdę przedłuża życie, to uczestnicy wieczoru stand-upowego w Bielskim Centrum Kultury właśnie zyskali kilka dobrych lat więcej. W ramach 25. edycji Festiwalu FERMENTY odbyło się wydarzenie, które śmiało można nazwać stand-upową petardą sezonu – „Stand FERMENT Up”.\n„Stand FERMENT Up”, zorganizowany w ramach jubileuszowej, 25. edycji Festiwalu FERMENTY, postawił na humor bez filtrów. Czasem celny, czasem ryzykowny, momentami przewidywalny – ale konsekwentny w tonie i zróżnicowany pod względem stylu wykonawców.\nPo niej wystąpił Marcin Zbigniew Wojciech – żywiołowy jak espresso po Red Bullu, który żonglował tematami z prędkością światła. Z humorem celnie punktował nasze codzienne potknięcia, zostawiając widzów z uśmiechem i lekkim poczuciem, że sami jesteśmy bohaterami jego żartów.\nKolejny na scenie był Paweł Reszela, który postawił na szczerość i codzienne rodzinno-związkowe obserwacje. Jego spokojniejsze tempo było jak chwilowa przerwa w śmiechowym maratonie.\nKarol Kopiec, jak to ma w zwyczaju, postawił na absurdalny humor i nieoczywiste skojarzenia, serwując publiczności opowieści o ojcostwie, które dawno wymknęły się spod kontroli logiki. Jego występ – lekko „odklejony”, pełen zaskakujących zwrotów – idealnie trafił w gusta rozgrzanej już sali.\n“Stand FERMENT Up” nie próbował przypodobać się wszystkim. I dobrze. Pokazał spektrum współczesnego stand-upu: od ciężkiego kalibru po lekką obserwację, od klasyki po eksperyment. Niekiedy trafiał celnie, niekiedy obok. Ale bez wątpienia – był wyrazisty.",
+      "caveat": "Regional professional article; phrasing gives audience reactions rather than explicit personal preference. Not saved as a fan-preference candidate."
+    }
+  ],
+  "frozen_peer_ids": [
+    "ewa-blachnio",
+    "karol-kopiec"
+  ],
+  "source_families_attempted": [
+    "Reddit public discussions (search-only; prior canonical thread checked in batch04)",
+    "KupBilecik audience review archive (search-only; same blocked batch04 URL not retried)",
+    "independent personal review blog VERBUM NA POLU (full page accessed)",
+    "regional editorial event review bielskirynek.pl (full page accessed; professional framing excluded)"
+  ],
+  "notes": {
+    "batch04_prior_leads": "Read reports/runs/20261031-batch04.collection-a.json and evidence/batch-04/source-candidates.jsonl. Old batch04 used 12 queries/17 page events and saved no candidate for this focal. It found focal-only comments, one pair with non-frozen performer, and a Reddit thread whose focal mention was absent; no old leads duplicated as candidates. The KupBilecik focal comments URL https://www.kupbilecik.pl/en/comments/1853/stand-up-testy-nowego-programu-marcin-zbigniew-wojciech was a cache miss then; do not retry.",
+    "query_failure_and_reservation": "One local ledger reservation command initially targeted the wrong relative cwd and failed before making any search call; no query/navigation attempt consumed. A corrected reservation was persisted before the first search. All actual queries, including failures if any, are logged in order in queries; this run had no failed web search calls.",
+    "preview_access": "The two newly opened full public source pages were readable through web source retrieval; shared T3 preview was already reported stale/obsolete in campaign context. No identical preview ownership attempts were repeated. No challenge/login/cookie/proxy workaround attempted.",
+    "raw_response_policy": "Web tool responses were inspected in the active turn. The durable report retains full accessed relevant passages and query list plus source result summaries, but not wholesale raw search-result payloads.",
+    "canonical_corpus_audit": "Recomputed directly from all 27 manifests in graph/coverage-sylwia-reviewed/graph.json; all referenced source candidate files total123 records and 65 unique URLs. Preserved exactly four full replacement manifests as listed in reviewed_replacements_preserved. No originals are loaded in parallel.",
+    "navigation_count": "Three actual navigation actions: category archive open, click to exact VERBUM post, and full bielskirynek review open. The earlier permalink open reservation was replaced by the category result open, not an additional attempt."
+  },
+  "canonical_source_corpus_count": {
+    "source_records": 123,
+    "unique_urls": 65,
+    "reviewed_replacement_manifest_count": 4,
+    "source_note": "The exact graph input_manifests resolve to 123 source records across 27 manifests; the corpus also represents 101 reviewed evidence records per supplied task context."
+  }
+}

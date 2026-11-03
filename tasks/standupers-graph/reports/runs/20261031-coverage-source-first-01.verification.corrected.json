@@ -1,0 +1,31 @@
+{
+  "original_review": "reports/runs/20261031-coverage-source-first-01.verification.json",
+  "original_invalid_evidence": "evidence/coverage-source-first-01/evidence.reviewed.initial.jsonl",
+  "parent_correction": {
+    "provider": "codex",
+    "model": "gpt-6.1-sol",
+    "scope": "reported schema/identity-versus-appraisal exception",
+    "evidence_id": "ev_csf01a_001",
+    "before": {
+      "performer_id": null,
+      "surface_form": "Abelarda",
+      "sentiment": "unknown",
+      "confidence": 0.55,
+      "preference": "unknown",
+      "preference_quote": null
+    },
+    "after": {
+      "performer_id": null,
+      "surface_form": "Abelarda",
+      "sentiment": "positive",
+      "confidence": 0.55,
+      "preference": "positive",
+      "preference_quote": "jestem fanką Abelarda"
+    },
+    "rationale": "Explicit source statement “jestem fanką Abelarda” supports positive appraisal regardless of unresolved identity. Unknown is not a valid sentiment enum. Null ID/confidence retained; other4positive identities and negative record unchanged.",
+    "graph_scoring_effect": "none from corrected mention: null performer ID remains ineligible"
+  },
+  "original_review_report_unchanged": true,
+  "accepted": 2,
+  "skips": 0
+}

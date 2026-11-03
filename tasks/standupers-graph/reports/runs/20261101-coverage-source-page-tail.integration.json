@@ -1,0 +1,262 @@
+{
+  "records": 93,
+  "canonical_candidates": 109,
+  "relations": 82,
+  "corroborated_relations": 11,
+  "eligible_provisional_relations": 50,
+  "contested_relations": 21,
+  "positive_linked_nodes": 45,
+  "corroborated_linked_nodes": 12,
+  "largest_component": 33,
+  "component_sizes": [
+    33,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "changes": [
+    {
+      "pair": [
+        "abelard-giza",
+        "antoni-syrek-dabrowski"
+      ],
+      "fields": {
+        "score": {
+          "old": 0.045455,
+          "new": 0.043478
+        },
+        "explanation": {
+          "old": "1 source-scoped fans explicitly co-endorse this pair; 22 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+          "new": "1 source-scoped fans explicitly co-endorse this pair; 23 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional."
+        }
+      }
+    },
+    {
+      "pair": [
+        "antoni-syrek-dabrowski",
+        "bartosz-zalewski"
+      ],
+      "fields": {
+        "score": {
+          "old": 0.090909,
+          "new": 0.083333
+        },
+        "explanation": {
+          "old": "1 source-scoped fans explicitly co-endorse this pair; 11 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+          "new": "1 source-scoped fans explicitly co-endorse this pair; 12 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional."
+        }
+      }
+    },
+    {
+      "pair": [
+        "antoni-syrek-dabrowski",
+        "cezary-jurkiewicz"
+      ],
+      "fields": {
+        "score": {
+          "old": 0.3,
+          "new": 0.272727
+        },
+        "explanation": {
+          "old": "3 source-scoped fans explicitly co-endorse this pair; 10 observed fans endorse either performer. 0 opposing preference records. Provisional observed overlap.",
+          "new": "3 source-scoped fans explicitly co-endorse this pair; 11 observed fans endorse either performer. 0 opposing preference records. Provisional observed overlap."
+        }
+      }
+    },
+    {
+      "pair": [
+        "antoni-syrek-dabrowski",
+        "kacper-rucinski"
+      ],
+      "fields": {
+        "score": {
+          "old": 0.1,
+          "new": 0.090909
+        },
+        "explanation": {
+          "old": "1 source-scoped fans explicitly co-endorse this pair; 10 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+          "new": "1 source-scoped fans explicitly co-endorse this pair; 11 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional."
+        }
+      }
+    },
+    {
+      "pair": [
+        "antoni-syrek-dabrowski",
+        "michal-kempa"
+      ],
+      "fields": {
+        "score": {
+          "old": 0.142857,
+          "new": 0.125
+        },
+        "explanation": {
+          "old": "1 source-scoped fans explicitly co-endorse this pair; 7 observed fans endorse either performer. 1 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+          "new": "1 source-scoped fans explicitly co-endorse this pair; 8 observed fans endorse either performer. 1 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional."
+        }
+      }
+    },
+    {
+      "pair": [
+        "antoni-syrek-dabrowski",
+        "michal-leja"
+      ],
+      "fields": {
+        "support_evidence_ids": {
+          "old": [
+            "ev_b01b_001",
+            "ev_b02a_003"
+          ],
+          "new": [
+            "ev_b01b_001",
+            "ev_b02a_003",
+            "ev_cspt_001"
+          ]
+        },
+        "independent_source_count": {
+          "old": 2,
+          "new": 3
+        },
+        "independent_fan_count": {
+          "old": 2,
+          "new": 3
+        },
+        "score": {
+          "old": 0.25,
+          "new": 0.333333
+        },
+        "confidence": {
+          "old": 0.9,
+          "new": 0.913333
+        },
+        "explanation": {
+          "old": "2 source-scoped fans explicitly co-endorse this pair; 8 observed fans endorse either performer. 0 opposing preference records. Provisional observed overlap.",
+          "new": "3 source-scoped fans explicitly co-endorse this pair; 9 observed fans endorse either performer. 0 opposing preference records. Provisional observed overlap."
+        }
+      }
+    },
+    {
+      "pair": [
+        "antoni-syrek-dabrowski",
+        "piotrek-szumowski"
+      ],
+      "fields": {
+        "score": {
+          "old": 0.4,
+          "new": 0.363636
+        },
+        "explanation": {
+          "old": "4 source-scoped fans explicitly co-endorse this pair; 10 observed fans endorse either performer. 0 opposing preference records. Provisional observed overlap.",
+          "new": "4 source-scoped fans explicitly co-endorse this pair; 11 observed fans endorse either performer. 0 opposing preference records. Provisional observed overlap."
+        }
+      }
+    },
+    {
+      "pair": [
+        "antoni-syrek-dabrowski",
+        "rafal-paczes"
+      ],
+      "fields": {
+        "score": {
+          "old": 0.142857,
+          "new": 0.133333
+        },
+        "explanation": {
+          "old": "2 source-scoped fans explicitly co-endorse this pair; 14 observed fans endorse either performer. 1 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+          "new": "2 source-scoped fans explicitly co-endorse this pair; 15 observed fans endorse either performer. 1 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional."
+        }
+      }
+    },
+    {
+      "pair": [
+        "antoni-syrek-dabrowski",
+        "wojtek-fiedorczuk"
+      ],
+      "fields": {
+        "score": {
+          "old": 0.142857,
+          "new": 0.125
+        },
+        "explanation": {
+          "old": "1 source-scoped fans explicitly co-endorse this pair; 7 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+          "new": "1 source-scoped fans explicitly co-endorse this pair; 8 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional."
+        }
+      }
+    },
+    {
+      "pair": [
+        "michal-leja",
+        "olka-szczesniak"
+      ],
+      "fields": {
+        "score": {
+          "old": 0.2,
+          "new": 0.166667
+        },
+        "explanation": {
+          "old": "1 source-scoped fans explicitly co-endorse this pair; 5 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+          "new": "1 source-scoped fans explicitly co-endorse this pair; 6 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional."
+        }
+      }
+    },
+    {
+      "pair": [
+        "michal-leja",
+        "piotrek-szumowski"
+      ],
+      "fields": {
+        "score": {
+          "old": 0.285714,
+          "new": 0.25
+        },
+        "explanation": {
+          "old": "2 source-scoped fans explicitly co-endorse this pair; 7 observed fans endorse either performer. 0 opposing preference records. Provisional observed overlap.",
+          "new": "2 source-scoped fans explicitly co-endorse this pair; 8 observed fans endorse either performer. 0 opposing preference records. Provisional observed overlap."
+        }
+      }
+    },
+    {
+      "pair": [
+        "michal-leja",
+        "rafal-paczes"
+      ],
+      "fields": {
+        "explanation": {
+          "old": "0 source-scoped fans explicitly co-endorse this pair; 12 observed fans endorse either performer. 1 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+          "new": "0 source-scoped fans explicitly co-endorse this pair; 13 observed fans endorse either performer. 1 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional."
+        }
+      }
+    }
+  ],
+  "strict_loader_and_schemas": "pass",
+  "exact_relations_deferred_reproduction": "pass",
+  "accounting": "1 accepted / 1 candidate / no skips",
+  "graph_inputs": [
+    "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch01-corroboration.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch02.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch03.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch04.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch05.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch06.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch07.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch09.context-reviewed.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch10.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch06-catchup.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-magda-kubicka.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-olka-szczesniak.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-karol-modzelewski.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-wojtek-pieta.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-wojciech-kaminski.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-source-first-01.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-source-first-01-followup.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-fan-forums-b-followup.json",
+    "tasks/standupers-graph/reports/runs/20261101-coverage-source-page-recovery.json",
+    "tasks/standupers-graph/reports/runs/20261101-coverage-source-page-tail.json"
+  ],
+  "cached_photos_reused": 100,
+  "avatar_note": "Visual check caught placeholders in the new output directory. Copied the prior checkpoint asset cache and rebuilt; all 100 photos verified."
+}

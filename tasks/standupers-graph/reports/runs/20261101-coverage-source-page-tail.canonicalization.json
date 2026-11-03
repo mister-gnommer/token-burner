@@ -1,0 +1,18 @@
+{
+  "raw_count": 1,
+  "canonical_count": 1,
+  "duplicates": 0,
+  "raw_preserved": true,
+  "source_text_context_unchanged": true,
+  "normalization": "source-local author hash computed",
+  "original_A_usage": {
+    "queries": 24,
+    "opens": 21,
+    "raw_candidate_slots": 13
+  },
+  "remaining_A": {
+    "queries": 0,
+    "opens": 3,
+    "raw_slots": 3
+  }
+}

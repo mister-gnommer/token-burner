@@ -1,0 +1,241 @@
+{
+  "run_id": "20261031-coverage-source-first-01",
+  "status": "completed",
+  "scope": "Supplemental coverage-method experiment, source-first across frozen100; priority cohort heuristic only. Does not reset originalper-performer allowances.",
+  "priority_performers": [
+    {
+      "rank": 2,
+      "performer_id": "mama-na-obrotach",
+      "name": "Mama Na Obrotach (Klaudia Klimczyk)",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 5,
+      "performer_id": "magda-kubicka",
+      "name": "Magda Kubicka",
+      "canonical_candidate_target_count": 6
+    },
+    {
+      "rank": 9,
+      "performer_id": "piotr-jelen",
+      "name": "Piotr Jeleń",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 11,
+      "performer_id": "blazej-krajewski",
+      "name": "Błażej Krajewski",
+      "canonical_candidate_target_count": 2
+    },
+    {
+      "rank": 12,
+      "performer_id": "piotr-latala",
+      "name": "Piotr Latała",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 13,
+      "performer_id": "pan-li",
+      "name": "Pan Li",
+      "canonical_candidate_target_count": 1
+    },
+    {
+      "rank": 17,
+      "performer_id": "tomasz-boras-borkowski",
+      "name": "Tomasz Boras Borkowski",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 20,
+      "performer_id": "michal-paszczyk",
+      "name": "Michał Paszczyk",
+      "canonical_candidate_target_count": 0
+    },
+    {
+      "rank": 21,
+      "performer_id": "grzegorz-dolniak",
+      "name": "Grzegorz Dolniak",
+      "canonical_candidate_target_count": 3
+    },
+    {
+      "rank": 22,
+      "performer_id": "adam-van-bendler",
+      "name": "Adam Van Bendler",
+      "canonical_candidate_target_count": 2
+    }
+  ],
+  "baseline_graph": "graph/coverage-kaminski-reviewed/graph.json",
+  "baseline_positive_linked": 39,
+  "baseline_largest_component": 29,
+  "collector_a_budget": {
+    "queries": 24,
+    "opens": 24,
+    "candidates": 16
+  },
+  "collector_b_budget": {
+    "queries": 12,
+    "opens": 12,
+    "candidates": 8
+  },
+  "success_measures": [
+    "verified fullsourceposts",
+    "accepted pair records",
+    "newpositive-linked performers",
+    "corroboratedlinked performers",
+    "largestcomponent change"
+  ],
+  "worker_tasks": [
+    {
+      "role": "source-first-collector-a",
+      "performer_id": null,
+      "run_id": "20261031-coverage-source-first-01",
+      "brief": "Supplemental source-first coverage experiment in /home/kris/Prog/projects/token-burner. Exact run_id20261031-coverage-source-first-01; actualcollector codex/gpt-6-luna, prompt_version collect-fan-evidence-v3+source-first-fan-discovery-v1. Read tasks/standupers-graph/AGENTS.md, data/standupers.json, source-candidate-v2.schema.json, prompts/collect-fan-evidence-v3.md, source-first-fan-discovery-v1.md, favorite-reply-context-v1.md, extraction-decisions-v1.md, preview-tab-lifecycle-v1.md, reports/runs/20261031-coverage-source-first-01.execution.json.\nLatestgraph graph/coverage-kaminski-reviewed/graph.json:39positive-linked,largest29. Prioritycohort names/IDs inexperimentexecution are10currentlyisolated performers; this is ONEsource-methodbudget, notfreshbudgetperperformer. Wholefrozen100 allowed iffullpostactuallyuseful. Retainnegativecomparisons asdistinctevidence, but noforcedpositiveconnections.\nNo snippets promoted, no closed/privatecontent/login/challengebypass, no otheruser/agenttabs closed. SharedT3previewservercurrentlyfull/rootownsnone, KupBilecikdirectHTTP403/cachemiss. Avoidrepeatedblankopens/blockedURLloops; actuallyverifiedfullpagewebreads preferredwhereavailable. First-nameidentitiesunresolved absentownsourcespecificproof. Do notturneventrosters, recommendationsorgenre suitability intopersonalpreferences. A verifieddirectfavoritequestionreply canqualifyundercontextsupplement; preserveactualparentquestion andauthorattribution. Allsource/excerpts completeauthoredposts inccriticisms/qualifiers, contextverbatimseparate.\nDedup existinggraphmanifestcanonicalposts AND coverage-pilot raw/corrected/canonical posts. Do notresavealreadyknownfanposts; repeatedsource-localauthorlabels preserved and notmerged acrossplatforms. Eachcandidate needsactualopenedURL, actualclockretrieved_at ISO, publicationdateonlyifknown, authorhint, fulltext and locator/identityproof inledger. Hashkeynullifnotcomputed,parentnormalizes; no invented dates. Candidate targetIDs frozen only, allrelevantfrozenindividuals, no fictitious groupmembers.\nSave emptyassignedJSONL+ledgerfirst, then incrementalverifiedposts. Persist exactindividualquery andallopen reservations, guardedcall inSAMEbranch beforeaction; cap failures count; no resets. Fullread vssearch-onlyleads separated. Validate source-candidate schema. No code/state/Git/subagents/otherfiles. ReportsleadingSurprises, materiallyinvalidpremise/substantialscopegrowth/irreversiblerisk→returnearlydurablepartial, ignoretrivia. Parentseparateextraction/reviewer follows; no graphclaim.\nSLICE A: Discover complete authored public fan/favorite discussions spanning multiple comedians. Broad Polish“ulubieni standuperzy”,“jakich komików lubicie”, first-personlike/dislike/comparison discussions; forum/Reddit/Gry-online/Filmweb discussions andfirstpersonfanblogs. Prioritize anyprioritycohort memberwithfrozenpeer, butvaluablewholepostswithotherisolates permitted. Use source-first broadthread discovery+readwholeauthorcomments; no needtenname exactqueryloops. Scalable hypothesis: acompletefanpost spanningseveralperformers canaddressmultipleisolates. Recommendationswithoutpersonalpreference retainedfaithfully onlyifpermittedclass, don'tfillquotaunknownlists.\nCaps24queries/24openattempts/16verifiedcandidates total. Exclusiveoutputs under tasks/standupers-graph: evidence/coverage-source-first-01/source-candidates.a.jsonl and reports/runs/20261031-coverage-source-first-01.collection-a.json. IDs src_csf01a_001 onward. Yourdistinctsourcefamily is discussions/firstpersonfanposts, notstructuredratings (othercollectorownsprofile-ratingprobe). Check othersliceJSONL forduplicateposts ifexists; ifsamepostalreadythere skip/ledger.\nStopmeaningfulrouteclosure/cap, notafteronecachemiss; twoaccessibleforumfamilies orconcreteaccessblockers beforeconcludinglimitedyield. Keep fullsameauthorpost evenlongwithallnamedperformers, but no entireunrelatedthreaddump. Record goalsuccessmetrics fullposts/resolvedpeers/explicitpreferences, andaccesslimitsnotabsence.",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "medium"
+        },
+        {
+          "id": "serviceTier",
+          "value": "default"
+        }
+      ],
+      "status": "completed",
+      "task_id": "node:delegated-task:command%3Amcp%3Ab8bb504a-a098-4a3f-913f-2b56ec9678db%3Adelegate-task%3Acoverage-source-first-01-collection-a-20261031-r1",
+      "child_thread_id": "thread:delegated-task:command%3Amcp%3Ab8bb504a-a098-4a3f-913f-2b56ec9678db%3Adelegate-task%3Acoverage-source-first-01-collection-a-20261031-r1"
+    },
+    {
+      "role": "public-rating-probe-b",
+      "performer_id": null,
+      "run_id": "20261031-coverage-source-first-01",
+      "brief": "Supplemental source-first coverage experiment in /home/kris/Prog/projects/token-burner. Exact run_id20261031-coverage-source-first-01; actualcollector codex/gpt-6-luna, prompt_version collect-fan-evidence-v3+source-first-fan-discovery-v1. Read tasks/standupers-graph/AGENTS.md, data/standupers.json, source-candidate-v2.schema.json, prompts/collect-fan-evidence-v3.md, source-first-fan-discovery-v1.md, favorite-reply-context-v1.md, extraction-decisions-v1.md, preview-tab-lifecycle-v1.md, reports/runs/20261031-coverage-source-first-01.execution.json.\nLatestgraph graph/coverage-kaminski-reviewed/graph.json:39positive-linked,largest29. Prioritycohort names/IDs inexperimentexecution are10currentlyisolated performers; this is ONEsource-methodbudget, notfreshbudgetperperformer. Wholefrozen100 allowed iffullpostactuallyuseful. Retainnegativecomparisons asdistinctevidence, but noforcedpositiveconnections.\nNo snippets promoted, no closed/privatecontent/login/challengebypass, no otheruser/agenttabs closed. SharedT3previewservercurrentlyfull/rootownsnone, KupBilecikdirectHTTP403/cachemiss. Avoidrepeatedblankopens/blockedURLloops; actuallyverifiedfullpagewebreads preferredwhereavailable. First-nameidentitiesunresolved absentownsourcespecificproof. Do notturneventrosters, recommendationsorgenre suitability intopersonalpreferences. A verifieddirectfavoritequestionreply canqualifyundercontextsupplement; preserveactualparentquestion andauthorattribution. Allsource/excerpts completeauthoredposts inccriticisms/qualifiers, contextverbatimseparate.\nDedup existinggraphmanifestcanonicalposts AND coverage-pilot raw/corrected/canonical posts. Do notresavealreadyknownfanposts; repeatedsource-localauthorlabels preserved and notmerged acrossplatforms. Eachcandidate needsactualopenedURL, actualclockretrieved_at ISO, publicationdateonlyifknown, authorhint, fulltext and locator/identityproof inledger. Hashkeynullifnotcomputed,parentnormalizes; no invented dates. Candidate targetIDs frozen only, allrelevantfrozenindividuals, no fictitious groupmembers.\nSave emptyassignedJSONL+ledgerfirst, then incrementalverifiedposts. Persist exactindividualquery andallopen reservations, guardedcall inSAMEbranch beforeaction; cap failures count; no resets. Fullread vssearch-onlyleads separated. Validate source-candidate schema. No code/state/Git/subagents/otherfiles. ReportsleadingSurprises, materiallyinvalidpremise/substantialscopegrowth/irreversiblerisk→returnearlydurablepartial, ignoretrivia. Parentseparateextraction/reviewer follows; no graphclaim.\nSLICE B: Test accessibility/provenance of PUBLIC SAME-USER ratings orpublicfavorite histories forworks bytwo frozenindividualperformers. This is a small feasibilityprobe, not a requirementtofindlink. Candidatefamilies Filmwebpublic userratings/listpages foractualindividualstandup specials andotherpublicrating/favoriteprofiles ifdiscoverable. Verifyfullpageaccess andsignedsource-localauthor, twoactuallydisplayed explicitratings/preferences, clearindividualwork/performer attribution. Aggregatefilmratings, popularityorder, performerprofiles, ratingcounts, venueaverages, watchedlists, promotionalgroupcredits NOTsameuserpreference. Agroup/ensemblefilm rating cannotbeautomaticallyassigned toindividuals. Don'tturn“seen”intoliking. No accountlogin orprivatehistories/authbypass.\nCaps12queries/12openattempts/8verifiedcandidates TOTAL. Firstcheckwhetherthisdataispublic/readable andindividual-attributable; ifclearlyunavailable/aggregateonly returnearlywithpreciseevidenceoflimitation, notperformerabsence. Avoidall12opensononesite'sinaccessiblevariants. Apublicuser-authoredcomparisonwithactualtwoindividualratingscouldqualifybutcompleteproofrequired. Ifzeroqualifies, emptyJSONL+feasibilityreport iscorrect; do notswitchtofilleredits.\nExclusiveoutputs under tasks/standupers-graph: evidence/coverage-source-first-01/source-candidates.b.jsonl and reports/runs/20261031-coverage-source-first-01.collection-b.json. IDs src_csf01b_001onward. Sameactualrunandmetadataasbase. Preserveallliteralratingtokens/headers/separatelyattributedauthorcontext; do notinventratingsorformatyourinterpretationasverbatimexcerpt. If dataonlyJSONrenderbutpublicactualHTTPread, savepreciseactualkeys/values/sourceURL contextwithoutguessinghumanpreference; extractorwilladjudicate. Don'tuseinternalplatformAPIwithoutdocumentedpublicreadaccess.\nOthercollector Aownsfullfandiscussions; don'tduplicatetheirs orrunbroadforumworkinstead. Reportreadroutesvssearchleads, eligibleindividualworkinventoryandpublicaccessconditions, anysource-specificationambiguity, exactusage/remaining. No browserneedediffullpagewebreadworks; do notconsumeT3tabs whileothercollector mayneedone.",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "medium"
+        },
+        {
+          "id": "serviceTier",
+          "value": "default"
+        }
+      ],
+      "status": "completed",
+      "task_id": "node:delegated-task:command%3Amcp%3Ab8bb504a-a098-4a3f-913f-2b56ec9678db%3Adelegate-task%3Acoverage-source-first-01-collection-b-20261031-r1",
+      "child_thread_id": "thread:delegated-task:command%3Amcp%3Ab8bb504a-a098-4a3f-913f-2b56ec9678db%3Adelegate-task%3Acoverage-source-first-01-collection-b-20261031-r1"
+    },
+    {
+      "role": "public-rating-probe-followup",
+      "performer_id": null,
+      "run_id": "20261031-coverage-source-first-01",
+      "status": "completed",
+      "brief": "Supplemental source-first coverage experiment in /home/kris/Prog/projects/token-burner. Exact run_id20261031-coverage-source-first-01; actualcollector codex/gpt-6-luna, prompt_version collect-fan-evidence-v3+source-first-fan-discovery-v1. Read tasks/standupers-graph/AGENTS.md, data/standupers.json, source-candidate-v2.schema.json, prompts/collect-fan-evidence-v3.md, source-first-fan-discovery-v1.md, favorite-reply-context-v1.md, extraction-decisions-v1.md, preview-tab-lifecycle-v1.md, reports/runs/20261031-coverage-source-first-01.execution.json.\nLatestgraph graph/coverage-kaminski-reviewed/graph.json:39positive-linked,largest29. Prioritycohort names/IDs inexperimentexecution are10currentlyisolated performers; this is ONEsource-methodbudget, notfreshbudgetperperformer. Wholefrozen100 allowed iffullpostactuallyuseful. Retainnegativecomparisons asdistinctevidence, but noforcedpositiveconnections.\nNo snippets promoted, no closed/privatecontent/login/challengebypass, no otheruser/agenttabs closed. SharedT3previewservercurrentlyfull/rootownsnone, KupBilecikdirectHTTP403/cachemiss. Avoidrepeatedblankopens/blockedURLloops; actuallyverifiedfullpagewebreads preferredwhereavailable. First-nameidentitiesunresolved absentownsourcespecificproof. Do notturneventrosters, recommendationsorgenre suitability intopersonalpreferences. A verifieddirectfavoritequestionreply canqualifyundercontextsupplement; preserveactualparentquestion andauthorattribution. Allsource/excerpts completeauthoredposts inccriticisms/qualifiers, contextverbatimseparate.\nDedup existinggraphmanifestcanonicalposts AND coverage-pilot raw/corrected/canonical posts. Do notresavealreadyknownfanposts; repeatedsource-localauthorlabels preserved and notmerged acrossplatforms. Eachcandidate needsactualopenedURL, actualclockretrieved_at ISO, publicationdateonlyifknown, authorhint, fulltext and locator/identityproof inledger. Hashkeynullifnotcomputed,parentnormalizes; no invented dates. Candidate targetIDs frozen only, allrelevantfrozenindividuals, no fictitious groupmembers.\nSave emptyassignedJSONL+ledgerfirst, then incrementalverifiedposts. Persist exactindividualquery andallopen reservations, guardedcall inSAMEbranch beforeaction; cap failures count; no resets. Fullread vssearch-onlyleads separated. Validate source-candidate schema. No code/state/Git/subagents/otherfiles. ReportsleadingSurprises, materiallyinvalidpremise/substantialscopegrowth/irreversiblerisk→returnearlydurablepartial, ignoretrivia. Parentseparateextraction/reviewer follows; no graphclaim.\nSLICE B: Test accessibility/provenance of PUBLIC SAME-USER ratings orpublicfavorite histories forworks bytwo frozenindividualperformers. This is a small feasibilityprobe, not a requirementtofindlink. Candidatefamilies Filmwebpublic userratings/listpages foractualindividualstandup specials andotherpublicrating/favoriteprofiles ifdiscoverable. Verifyfullpageaccess andsignedsource-localauthor, twoactuallydisplayed explicitratings/preferences, clearindividualwork/performer attribution. Aggregatefilmratings, popularityorder, performerprofiles, ratingcounts, venueaverages, watchedlists, promotionalgroupcredits NOTsameuserpreference. Agroup/ensemblefilm rating cannotbeautomaticallyassigned toindividuals. Don'tturn“seen”intoliking. No accountlogin orprivatehistories/authbypass.\nCaps12queries/12openattempts/8verifiedcandidates TOTAL. Firstcheckwhetherthisdataispublic/readable andindividual-attributable; ifclearlyunavailable/aggregateonly returnearlywithpreciseevidenceoflimitation, notperformerabsence. Avoidall12opensononesite'sinaccessiblevariants. Apublicuser-authoredcomparisonwithactualtwoindividualratingscouldqualifybutcompleteproofrequired. Ifzeroqualifies, emptyJSONL+feasibilityreport iscorrect; do notswitchtofilleredits.\nExclusiveoutputs under tasks/standupers-graph: evidence/coverage-source-first-01/source-candidates.b.jsonl and reports/runs/20261031-coverage-source-first-01.collection-b.json. IDs src_csf01b_001onward. Sameactualrunandmetadataasbase. Preserveallliteralratingtokens/headers/separatelyattributedauthorcontext; do notinventratingsorformatyourinterpretationasverbatimexcerpt. If dataonlyJSONrenderbutpublicactualHTTPread, savepreciseactualkeys/values/sourceURL contextwithoutguessinghumanpreference; extractorwilladjudicate. Don'tuseinternalplatformAPIwithoutdocumentedpublicreadaccess.\nOthercollector Aownsfullfandiscussions; don'tduplicatetheirs orrunbroadforumworkinstead. Reportreadroutesvssearchleads, eligibleindividualworkinventoryandpublicaccessconditions, anysource-specificationambiguity, exactusage/remaining. No browserneedediffullpagewebreadworks; do notconsumeT3tabs whileothercollector mayneedone.\nFOLLOW-UP SAMEBUDGET, NOTFRESHQUOTA. PreviousBcompleted5queries/4opens/0candidates, Filmweb only. Initialreportretained. ORIGINALremaining7queries/8opens/8candidates, totalcaps12/12/8unchanged. Preserve existing candidatefile/attemptledger, appendfollowupsection and deriveactualtotals. Do notduplicatequery_logentry5as2actualqueries; reservationarray5is authoritative.\n\nCheck1–2OTHERpublicrating/review services orpublicfavoriteprofilehistories (e.g Letterboxd/IMDb if relevantPolishstandup specials exist) for actualauthor-specific two-individual-work preferences. Needappropriateactualwork/pagesfound, notimaginedentries orpublicityprofiles. Don't assume publicAPI/endpoint/privatehistoryorby-passthrottles. Reviewauthor mayexplicitly compare twofrozenperformers infulldirectpost, but don'tswitchto broadforumdiscussions ownedbysliceA. Aggregates andmultiperformerensemblecredits remainineligible.\nFilmweb oneauthorlink “invalid arguments” is a toolcallformatfailure, notproofauthoraccessclosed. Onlyrevisitifactionablewithinremainingallowance andmorelikelythanotherfamily; no redirectURLguessloop. Prioritypublicnormalfullpageaccess, recordactualauthor/sourcecontext; sourcecandidateONLYif fullsameauthorproof for2individuals. Emptyfilecorrectifnotfound.\nStoponceclearlydocumentedadditionalfamilyaccess/provenanceprobe completedorcap; notneedburnallquota. SourcefirstA has2newposts nowunderextraction, nooverlapneeded. Actualcodex/gpt-6-luna/samepromptmetadata. Alloriginalexclusiveoutput/quality/Surprisesconstraintsapply; nootherfiles/Git/subagents.",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "medium"
+        },
+        {
+          "id": "serviceTier",
+          "value": "default"
+        }
+      ],
+      "task_id": "node:delegated-task:command%3Amcp%3Ab8bb504a-a098-4a3f-913f-2b56ec9678db%3Adelegate-task%3Acoverage-source-first-01-collection-b-followup-20261031-r2",
+      "child_thread_id": "thread:delegated-task:command%3Amcp%3Ab8bb504a-a098-4a3f-913f-2b56ec9678db%3Adelegate-task%3Acoverage-source-first-01-collection-b-followup-20261031-r2"
+    },
+    {
+      "role": "extractor",
+      "performer_id": null,
+      "run_id": "20261031-coverage-source-first-01",
+      "status": "completed",
+      "brief": "Extract sliceA2verifiedfullfanposts for supplemental source-first run in /home/kris/Prog/projects/token-burner. Read tasks/standupers-graph/AGENTS.md, data/standupers.json, schemas/evidence-v3.schema.json, schemas/source-candidate-v2.schema.json; prompts/extract-evidence-v2.md,extract-evidence-v3.md,favorite-reply-context-v1.md,extraction-decisions-v1.md,batch-run-v1.md.\nInputs relative tasks/standupers-graph: evidence/coverage-source-first-01/source-candidates.a.canonical.jsonl ONLY(2immutable), reports/runs/20261031-coverage-source-first-01.collection-a.json,20261031-coverage-source-first-01.canonicalization.json; metadata actualmanifest reports/runs/20261031-coverage-source-first-01.json. Bcollectorstillactive, don'ttouchitsfile orcombinedsource. Exactrun20261031-coverage-source-first-01; extractor actualcodex/gpt-6-luna,prompt_version extract-evidence-v3+favorite-reply-context-v1+batch-run-v1.\nExclusiveoutputs evidence/coverage-source-first-01/evidence.unreviewed.a.jsonl and reports/runs/20261031-coverage-source-first-01.extraction-a.json. IDs ev_csf01a_001/002 matchingcandidatesuffixifrecord. No Git/network/browser/subagents/code/state/otherfiles. Allreview.statusunreviewed/reviewernull. BothcandidateIDs exactlyonce evidenceor explicitreasonedskip; source/excerpt/language/context EXACTcopy, actualrun/extractorlineage/hash preserved. Literal surfaces/knownpreferencequotes; unknownpreference→nullquote.\n\n001 madame_edith Gazetaforum: “No ja jestem fanką Abelarda i Lotka. Ale i na Rutkowskim się uśmiałam, na Paczesiu, Bendlerze.” This isexplicitpersonalcoappreciation; broadfollowingcriticismofmereprofanity notautomaticallyoppositiontonamedcomedian. Interpretownfullpost, don'ttransferparent's Socha/Kutekpreferences. Lotekalias, Rutkowski, Pacześ, Bendlerdeclensions mapfromfrozenidentitiescontextually; no scoretargetconfidence. “Abelarda” first-name-only remainedunresolvedincollection. Independently assess contextualidentity, notautomaticalias: rarefirst name/standuptopic may justifyanexplicitlyqualified inference toAbelardGiza if unambiguous andsufficient, otherwise null. Do notborrowotherauthoropinionorclaimverifiedfullnamethatisabsent. Preserveclearpositivepreferenceevenifnullidentity; no forcedthreshold.\n002 michuuu_2108 Reddit: author personallytriedWiszowata,Lotek,Rutkowski andfindsthem“bezbeki”. “która podobno wymiata” ishearsay, nothispositiveevaluation. Preserveherquotedvulgarcontent/fullauthorcaveat. No preferences inheritedfromparentgenre-suitabilityrequest. Allnegativepersonalappraisals mayqualifyfancomparisonifrubricpermits; determineclassfaithfully. No posfrozenmention meansdo notfabricatecontrast/coendorsementormere genrelistlikes. Ifnopermittedclassfits explicitreasonedskipvalid, butnotbecausepostnegative. No needcreatelink.\nAllappraisals scoperestrictedtopost/programme/time; datesunknownremainnull, no generalcurrentfandomclaim. Source-local firstnames/hashnotreal-personidentityproof. Preservecontext's separateparentauthorhashes; parentsupply questionmeaning/identitycontextonly.\n\nValidate evidence_v3 via evidence_pipeline.py validate --kind evidence, plus2coverage exact records+skips, copiedsource/context, frozennIDs, literalsurfaces/preferencesquotes, authorhashes, run/provenance, unreviewed/nullreviewer. Report leadingSurprises, classes/identityconfidencebasis/preference/scope/skips/counts, sourcefamilylimits. Separateindependentverifierfollows; no graphclaim. Returnearlydurablepartialwork ifpremiseinvalid, substantialscopegrowthorirreversiblerisk;ignoretrivia.",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "medium"
+        },
+        {
+          "id": "serviceTier",
+          "value": "default"
+        }
+      ],
+      "task_id": "node:delegated-task:command%3Amcp%3Ab8bb504a-a098-4a3f-913f-2b56ec9678db%3Adelegate-task%3Acoverage-source-first-01-extraction-a-20261031-r1",
+      "child_thread_id": "thread:delegated-task:command%3Amcp%3Ab8bb504a-a098-4a3f-913f-2b56ec9678db%3Adelegate-task%3Acoverage-source-first-01-extraction-a-20261031-r1"
+    },
+    {
+      "role": "verifier",
+      "performer_id": null,
+      "run_id": "20261031-coverage-source-first-01",
+      "status": "completed",
+      "brief": "Independently verify2 source-first fan records in /home/kris/Prog/projects/token-burner. Read tasks/standupers-graph/AGENTS.md,data/standupers.json,schemas/evidence-v3.schema.json and prompts/verify-evidence-v3.md,extract-evidence-v3.md,favorite-reply-context-v1.md,extraction-decisions-v1.md,batch-run-v1.md.\nInputs relative tasks/standupers-graph: evidence/coverage-source-first-01/source-candidates.canonical.jsonl(2),evidence.unreviewed.jsonl(2), reports/runs/20261031-coverage-source-first-01.extraction-a.json,canonicalization.json and actualmanifest20261031-coverage-source-first-01.json. SliceAcollectionreport fullpostlocators. Bcandidatefileempty afteraccess/provenancelimitedratingsprobe across Filmweb/Letterboxd/IMDb; no snippets/aggregate/historyclaims included.\nExclusiveoutputs evidence/coverage-source-first-01/evidence.jsonl and reports/runs/20261031-coverage-source-first-01.verification.json. No Git/network/browser/newcollection/subagents/code/state/otherfiles. Actualreviewer codex/gpt-6-luna,promptverify-evidence-v3. Exactrun20261031-coverage-source-first-01; preserve IDs/source/excerpt/language/context andextractionlineage. Independentreview corrects fixableinterpretation, retainsrejectedrows, acceptedlocalizeduncertainty allowed. All2IDs exactlyonce evidenceorskip documented.\n\nPrior extraction:\n001 madame_edith coendorsement, explicitfankąAbelarda/Lotka andlaughatRutkowski/Pacześ/Bendler. QualifiedAbelardGiza first-namecontextinferenceconfidence.78; collectorleftnull. Independentlyassess name/topic uniqueness andsource-specificcontext, notblindlyacceptorautomaticallyrejectallfirstnames. No missing surnameclaimedasverifiedalias, confidencegroundednotthresholdtarget. Ifinsufficient keepunresolved withclearpositivepreference; other4clearappraisals retained.\nPacześ preferencequote currentlyjust“na Paczesiu” andBendlerjust“Bendlerze” areliteralbutdon'tthemselvesexpressevaluation; use coherentliteralwholeappraisalsentence ifkeepingpositive: “Ale i na Rutkowskim się uśmiałam, na Paczesiu, Bendlerze.” Fullpostclause supportsellipsis, no name-onlyevidencequote. Broadnextsentencecriticismofprofanity notautomaticallyoppositiontospecificnamedperformer. ParentasksrecommendationsandlikesSocha/Kutek; nevertransferparentlikesintosourceauthor.\n002 michuuu_2108 negativefancomparison, explicitlytriedWiszowata/Lotek/Rutkowski:“Wszędzie bezbeki.” Hearsay“która podobno wymiata”notauthorpraise. Thisposthasnonewpositiveperformer; don'tfabricatepositivecontrast, coendorsementorgraphoppositionfromco-dislike. Faithfulclassifrubricfits, elseexplicitclassreasonedskip/rejection; notexcludedsolelynegativepolarity. Parentgenre-suitabilityrequestsuppliesnoauthorpreference.\nHistoricalauthorappraisals only, no currentgeneralpopulation inference. Source-localhandlesnotverifiedrealpeople,2families/contextauthorquoteskeptseparate.\n\nValidatefinalevidence_v3 andexecutablecandidate2coverage, exactsource/context/sourceauthorhashes, literalmention/preferencequotes, extractorprovider/model/prompt/run equalitywithactualmanifest, frozenIDs, finalreviewstatuses/nonnullreviewer. Report leadingSurprises, counts/perrecordchanges, aliasconfidencebasis, fullquoteadequacy, scope/sourcefamilylimitations, skips audit evennone. Parentwillstrictload/recomputegraph; no graphclaim. Returnearlydurablepartialwork ifpremiseinvalid, substantialscopegrowthorirreversiblerisk;ignoretrivia.",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "medium"
+        },
+        {
+          "id": "serviceTier",
+          "value": "default"
+        }
+      ],
+      "task_id": "node:delegated-task:command%3Amcp%3Ab8bb504a-a098-4a3f-913f-2b56ec9678db%3Adelegate-task%3Acoverage-source-first-01-verification-20261031-r1",
+      "child_thread_id": "thread:delegated-task:command%3Amcp%3Ab8bb504a-a098-4a3f-913f-2b56ec9678db%3Adelegate-task%3Acoverage-source-first-01-verification-20261031-r1"
+    },
+    {
+      "role": "integration",
+      "performer_id": null,
+      "run_id": "20261031-coverage-source-first-01",
+      "status": "completed",
+      "brief": "Integrate the independently reviewed source-first checkpoint using existing scripts, without semantic rewriting.\n\nWorkspace: /home/kris/Prog/projects/token-burner.\nRead tasks/standupers-graph/AGENTS.md and graph/README.md. All paths below are relative to tasks/standupers-graph.\nActual manifest path: reports/runs/20261031-coverage-source-first-01.json\nCanonical sources: evidence/coverage-source-first-01/source-candidates.canonical.jsonl (2)\nUnreviewed evidence: evidence/coverage-source-first-01/evidence.unreviewed.jsonl (2)\nReviewed evidence: evidence/coverage-source-first-01/evidence.jsonl (2)\nReview report: reports/runs/20261031-coverage-source-first-01.verification.json\n\nThe independent reviewer accepted both records, kept Abelarda unresolved, and replaced name-only preference quotes with the full appraisal sentence. It did NOT run automated JSON Schema validation. The review brief accidentally glued a label to the manifest filename; the reviewer reported that nonexistent concatenated filename missing. The actual manifest above exists. Record this as a parent brief formatting error, then validate the real manifest/provenance. Do not claim the worker validated it. Do not edit reviewed evidence or the original review report.\n\nExclusive writable outputs:\n- reports/runs/20261031-coverage-source-first-01.json (finalize counts/status only after checks)\n- reports/runs/20261031-coverage-source-first-01.integration.json\n- reports/20261031-coverage-source-first-01.md\n- graph/coverage-source-first-01/ and its cached assets.\nNo other files, Git, network, new research, subagents or code changes.\n\nRun evidence_pipeline.py automated schema validation for both sources and reviewed evidence; check two candidate IDs accounted exactly once and no skips. Check source/context/excerpt equality, literal surfaces/preference quotes, author hashes, actual run and extractor provenance, accepted statuses/reviewer. Finalize manifest completed with source2/extracted2/accepted2/uncertain0/rejected0 if valid. Slice B is empty: its public rating probe yielded no verified history; preserve limitations and disclosed posthoc reservations in the report. If a check fails, stop with a clear partial report; do not repair semantic fields yourself.\n\nTake graph inputs from graph/coverage-kaminski-reviewed/graph.json and append the new manifest exactly once. Existing inputs include calibrated identity and batch09 context replacement manifests; never add their originals. Use scripts/graph_pipeline.py with --batch-view10 and existing renderer; copy all cached assets from previous graph before rendering so no downloads occur. Save JSON/D2/SVG/PNG/interactive.html. Full PNG is large: inspect a small rsvg-convert thumbnail or SVG, never decode the full image. No browser inspection needed.\n\nRe-load through graph_pipeline.load_evidence, reproduce aggregate relations/deferred exactly, and compute positive degree using displayable, corroborated degree, largest component and all component sizes. Compare with baseline39positive-linked,12corroborated-linked,largest29; report actual newly linked names, new/changed relations and one-fan versus corroborated/contested counts. Co-dislike in record002 creates no fabricated positive overlap or opposition to another record’s fans. Do not alter the scorer or predict a gain. Distinguish new authored posts from saved-source repairs.\n\nSave exact input manifests, checks performed, schema results, metrics, renderer outputs and limitations. No new tests for unchanged code; existing pipeline checks suffice. Leading Surprises; return early with durable partial work if premise fails, scope expands substantially or irreversible risk. Ignore trivia. Parent will spot-check the result before updating STATE/execution registry.",
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "options": [
+        {
+          "id": "reasoningEffort",
+          "value": "medium"
+        },
+        {
+          "id": "serviceTier",
+          "value": "default"
+        }
+      ],
+      "task_id": "node:delegated-task:command%3Amcp%3Ab8bb504a-a098-4a3f-913f-2b56ec9678db%3Adelegate-task%3Acoverage-source-first-01-integration-20261031-r1",
+      "child_thread_id": "thread:delegated-task:command%3Amcp%3Ab8bb504a-a098-4a3f-913f-2b56ec9678db%3Adelegate-task%3Acoverage-source-first-01-integration-20261031-r1"
+    }
+  ],
+  "created_at": "2026-10-31T22:48:00.560688Z",
+  "prompt_sha256": "5908a07f2a7c224421a86c1e93634552247ec82dcb81a396a0c56d9183a0be4b",
+  "updated_at": "2026-10-31T23:01:29.669776Z",
+  "collection_results": {
+    "a": {
+      "queries": 12,
+      "opens": 3,
+      "canonical_candidates": 2,
+      "remaining_queries": 12,
+      "remaining_opens": 21
+    },
+    "b": {
+      "queries": 7,
+      "opens": 6,
+      "candidates": 0,
+      "remaining_queries": 5,
+      "remaining_opens": 6,
+      "limits": "No verified same-user history after three platform routes; access/provenance failures; follow-up reservations logged after calls."
+    }
+  },
+  "reviewed_records": 2,
+  "graph": "graph/coverage-source-first-01/graph.json",
+  "positive_linked_nodes": 41,
+  "largest_component": 31,
+  "parent_schema_correction": "reports/runs/20261031-coverage-source-first-01.verification.corrected.json",
+  "B_remainder_reallocated_to": "20261031-coverage-fan-forums-b-followup"
+}

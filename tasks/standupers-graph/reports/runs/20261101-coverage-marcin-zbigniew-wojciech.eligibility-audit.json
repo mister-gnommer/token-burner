@@ -1,0 +1,97 @@
+{
+  "Surprises": [
+    "The VERBUM review explicitly recommends the named multi-performer program, even though only one frozen performer has a clear personal preference in the saved passage.",
+    "The Bielskirynek passage starts mid-sequence with “Po niej”; the saved excerpt is not the complete article, despite the ledger recording a full-page read. Missing preceding context could contain further mentions or qualifications."
+  ],
+  "run_id": "20261101-coverage-marcin-zbigniew-wojciech",
+  "scope": "Offline classification of saved passages and frozen identities; no source reread, canonicalization or graph inference.",
+  "sources": [
+    {
+      "url": "https://verbumnapolu.wordpress.com/2017/02/24/stand-up-night-relacjarecenzja/",
+      "author": "Aneta Tabiszewska",
+      "decision": "eligible",
+      "class": "fan_recommendation",
+      "qualification": "Textually eligible as a recommendation of the whole four-person program, subject to source and metadata verification before canonicalization. It does not recommend Ewa separately or establish two personal endorsements.",
+      "quotes": {
+        "program_and_cast": "występ czterech standuperów: Ewy Błachnio, Roberta Korólczyka, Marcina Zbigniewa Wojciecha i Tomasza Jachimka. Program, z którym artyści podróżują, nazywa się „Stand-up night”.",
+        "explicit_recommendation": "chcę Was zachęcić do wybrania się na ten program. Według mnie warto.",
+        "marcin_personal_reaction": "najbardziej rozśmieszył mnie weselny paradoks",
+        "ewa_empathy": "Ewa, wiem coś o tym i łączę się z Tobą w bólu.",
+        "ewa_audience": "za co dostała gromkie brawa",
+        "mixed_scope": "Część z monologów była mi w pełni znana, więc na niej się zbytnio nie ubawiłam",
+        "other_material": "Jeszcze inna część była całkiem nowa i na niej bawiłam się świetnie!"
+      },
+      "frozen_mentions": [
+        {
+          "id": "marcin-zbigniew-wojciech",
+          "surface": "Marcina Zbigniewa Wojciecha",
+          "preference": "positive",
+          "preference_quote": "najbardziej rozśmieszył mnie weselny paradoks",
+          "scope": "Personal enjoyment of a specific bit at the Gliwice show; do not generalize to all work."
+        },
+        {
+          "id": "ewa-blachnio",
+          "surface": "Ewy Błachnio",
+          "preference": "unknown",
+          "preference_quote": null,
+          "scope": "Empathy with a topic and applause attributed to the audience do not independently establish the author’s liking."
+        }
+      ],
+      "identity_limits": "Robert Korólczyk and Tomasz Jachimek are not in the frozen list. The quoted “Antoni” is insufficient to identify any frozen performer and is not the author’s own appraisal. Marcin Wojciech as host is not independently resolved to the focal from the shortened name.",
+      "missing_before_canonicalization": [
+        "Obtain an actual per-page retrieval date-time for a verified reread; the saved ledger has no page-specific timestamp.",
+        "Verify the complete author text, event/cast context and separation of the separately signed note against the source, preserving exact wording and mixed-material caveat.",
+        "Verify publication date from the page if displayed; the URL date is tentative only and otherwise use null.",
+        "Record source-candidate-v2 fields including canonical site and exact URL, language, source-local author hint, collector provenance, run ID, relevant frozen target IDs, and separately attributed context if needed; author_key remains null until derived. Preserve a contiguous complete excerpt."
+      ],
+      "bias": "Authored review on a blog; editorial setting is relevant source-role context. The recommendation and laughter are explicitly the author’s own."
+    },
+    {
+      "url": "https://bielskirynek.pl/pl/14_kultura/729_kabarety/18759_smiech-fermentuje-najlepiej-wieczorem-.html",
+      "author": "Agata Rucińska",
+      "decision": "insufficiently captured",
+      "class": null,
+      "qualification": "The captured text supports no permitted fan-evidence class: it contains editorial performance descriptions, audience-attributed reactions and mixed event-level judgments, without an explicit own personal appraisal, recommendation or comparison of the performers. The full-page read is reported but the saved excerpt omits preceding material, so the complete article cannot be classified from the ledger alone.",
+      "quotes": {
+        "omitted_predecessor": "Po niej wystąpił Marcin Zbigniew Wojciech",
+        "marcin_audience": "zostawiając widzów z uśmiechem",
+        "karol_audience": "idealnie trafił w gusta rozgrzanej już sali",
+        "event_editorial_assessment": "Czasem celny, czasem ryzykowny, momentami przewidywalny",
+        "event_editorial_conclusion": "Niekiedy trafiał celnie, niekiedy obok. Ale bez wątpienia – był wyrazisty."
+      },
+      "frozen_mentions": [
+        {
+          "id": "marcin-zbigniew-wojciech",
+          "surface": "Marcin Zbigniew Wojciech",
+          "preference": "unknown",
+          "preference_quote": null,
+          "scope": "Description and reported viewer reaction do not establish the author’s personal liking."
+        },
+        {
+          "id": "karol-kopiec",
+          "surface": "Karol Kopiec",
+          "preference": "unknown",
+          "preference_quote": null,
+          "scope": "The positive reception is attributed to the room, not explicitly the author."
+        }
+      ],
+      "identity_limits": "Paweł Reszela is not in the frozen list. “Po niej” refers to an omitted predecessor; do not resolve or exclude that person from the full article on this capture.",
+      "bias": "Professional journalism is a disclosed source-role bias, not an automatic exclusion. An explicit own personal appraisal could qualify under campaign precedent, but none is established by this saved text.",
+      "missing_before_canonicalization_if_new_eligible_text_found": [
+        "Reread and preserve the complete relevant author text, including the predecessor and all evaluations, qualifications, byline and source context; assess its class and all frozen mentions anew.",
+        "Record the actual reread timestamp, verified page publication date or null, canonical site and URL, language, author hint, collector provenance, run ID, target IDs and any separately attributed context."
+      ]
+    }
+  ],
+  "material_objections": [
+    "The collector’s stop reason required same-author personal appreciation of focal plus frozen peer; that is appropriate for coendorsement coverage, but prematurely filters an explicit program recommendation from permissible records.",
+    "The v2 collector says to reject editorial/promotional text, while the campaign precedent allows explicit personal appraisals by professional speakers with disclosed source-role bias. The blog recommendation is personal; the newspaper’s saved evaluative reporting does not itself resolve that boundary.",
+    "A program recommendation is a program-level recommendation only; it does not independently establish Ewa’s preference, a pairwise comparison, or a positive coverage gain. Generic co-billing and audience reactions do not become preferences."
+  ],
+  "follow_up_guidance": [
+    "Collect explicit recommendations and negative or one-sided performer comparisons even when fewer than two personal preferences are established, preserving their actual scope and attribution.",
+    "Evaluate each performer’s preference independently, retaining unknown where the author only reports audience reaction, co-billing, empathy or editorial descriptions.",
+    "Use the existing scoring and verification rules; do not convert a program recommendation into individual endorsements."
+  ],
+  "next_action": "Parent may allocate a remaining page read to verify the VERBUM complete author text and metadata before separately collecting, extracting and verifying a program-level recommendation. Reopen Bielskirynek only if its omitted context is worth checking for a distinct explicit personal statement or permitted comparison; otherwise skip the saved excerpt."
+}

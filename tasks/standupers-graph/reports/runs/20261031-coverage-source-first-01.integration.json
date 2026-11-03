@@ -1,0 +1,75 @@
+{
+  "run_id": "20261031-coverage-source-first-01",
+  "status": "completed",
+  "records": 85,
+  "canonical_candidates": 101,
+  "relations": 72,
+  "corroborated_relations": 11,
+  "eligible_provisional_relations": 41,
+  "contested_relations": 20,
+  "positive_linked_nodes": 41,
+  "corroborated_linked_nodes": 12,
+  "largest_component": 31,
+  "positive_component_sizes": [
+    31,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "new_positive_linked_performers": [
+    "adam-van-bendler",
+    "rafal-rutkowski"
+  ],
+  "new_relation_ids": [
+    "rel_adam-van-bendler__lukasz-lotek-lodkowski",
+    "rel_adam-van-bendler__rafal-paczes",
+    "rel_adam-van-bendler__rafal-rutkowski",
+    "rel_lukasz-lotek-lodkowski__rafal-rutkowski",
+    "rel_rafal-paczes__rafal-rutkowski"
+  ],
+  "changed_support_or_status": [
+    {
+      "id": "rel_lukasz-lotek-lodkowski__rafal-paczes",
+      "old_status": "uncertain",
+      "new_status": "uncertain",
+      "old_fans": 1,
+      "new_fans": 2
+    }
+  ],
+  "strict_source_loader": "pass",
+  "automated_source_evidence_manifest_schemas": "pass",
+  "exact_relations_deferred_recomputation": "pass",
+  "candidate_accounting": "2records/2candidates/no skips; B0candidates",
+  "parent_correction_audit": "reports/runs/20261031-coverage-source-first-01.verification.corrected.json",
+  "original_failure_audit": "reports/runs/20261031-coverage-source-first-01.integration.initial.json",
+  "graph_inputs": [
+    "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch01-corroboration.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch02.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch03.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch04.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch05.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch06.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch07.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch09.context-reviewed.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch10.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch06-catchup.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-magda-kubicka.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-olka-szczesniak.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-karol-modzelewski.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-wojtek-pieta.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-wojciech-kaminski.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-source-first-01.json"
+  ],
+  "render_outputs_verified": [
+    "graph.json",
+    "graph.d2",
+    "graph.svg",
+    "graph.png",
+    "interactive.html"
+  ],
+  "thumbnail_inspected": true
+}

@@ -1,0 +1,11 @@
+# Kamiński coverage checkpoint — 2026-10-31
+
+The reviewed Kamiński–Radek Drożdż pair raises positive-linked coverage from37to39/100. It is a one-review provisional pair forming a separate two-person component; largest component stays29 and corroborated-linked count stays12. Target70–90% remains unmet.
+
+The browser source worker matched Kamil’s complete2024review to the exact named “Stand-Up: Wojtek Kamiński” event and Łódź2024-10-13 locator. An independent Luna reviewer attributed the main-performance appraisal to Kamiński at0.88identity confidence, preserving event scope. Pasierby remains unresolved; no alias was invented. Five other batch09records are unchanged. The original reviewer proposal accidentally changed the existing Pasierby preference while claiming to preserve it; parent restored the exact earlier null-ID positive mention and quote, which has no scoring effect. Original proposals and an explicit correction audit are retained.
+
+Use `reports/runs/20261031-batch09.context-reviewed.json` instead of original batch09. Continue using the calibrated identity-reviewed replacement instead of original calibrated manifest. Loading either replacement alongside its original is forbidden by duplicate-source guards. No historical batch files were overwritten.
+
+The six new Kamiński/HrAbi reviews were independently audited as six skips: they name no second eligible individual. They add no evidence rows or fan links. Snapshot `graph/coverage-kaminski-reviewed/` contains JSON/D2/SVG/PNG/interactive HTML,83evidence records,99canonical candidates and67relations:11corroborated,36eligible provisional,20contested. All100cached photos reused. Strict manifest/source/provenance loading, exact relation/deferred reproduction and six-skip coverage passed. SVG thumbnail inspected; no code/scorer changes or new unit tests.
+
+Pięta’s exact-Filip roster recovery hit the shared browser’s tab limit before creating a tab. Parent confirmed the same error and no parent-owned tabs; no other tabs were touched. Filip stays unresolved, with0queries/2opens left. Sawczuk resumed from its saved24-query/23-open allowance and may use verified full-page web retrieval if browser capacity remains unavailable. No Git staging, commit or push performed.

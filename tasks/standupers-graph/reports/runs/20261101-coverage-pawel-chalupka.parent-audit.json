@@ -1,0 +1,13 @@
+{
+  "run_id": "20261101-coverage-pawel-chalupka",
+  "audited_at": "2026-11-01T11:18:03.215324+00:00",
+  "queries": 24,
+  "page_attempts": 7,
+  "remaining_page_attempts": 17,
+  "verified_candidates": 0,
+  "initial_source_attempts": 5,
+  "parent_blank_preview_diagnostic_attempts": 1,
+  "bounded_source_recovery_attempts": 1,
+  "lead_status": "Maciej2019 and Łukasz2018 source text remains quarantined; actual pages unavailable. No extraction or graph change.",
+  "limitation": "Access failure is not proof that co-appreciation does not exist."
+}

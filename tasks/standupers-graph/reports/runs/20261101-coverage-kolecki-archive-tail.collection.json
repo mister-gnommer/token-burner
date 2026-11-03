@@ -1,0 +1,597 @@
+{
+  "run_id": "20261101-coverage-kolecki-archive-tail",
+  "performer_id": "tomek-kolecki",
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+  },
+  "budget": {
+    "original_allowance": {
+      "queries": 24,
+      "navigation_attempts": 13,
+      "candidates": 2
+    },
+    "remaining_at_stage_start": {
+      "queries": 0,
+      "navigation_attempts": 11,
+      "candidate_slots": 14
+    },
+    "stage_cap": {
+      "queries": 0,
+      "navigation_attempts": 4,
+      "new_candidates": 4
+    },
+    "cumulative_max": {
+      "queries": 24,
+      "navigation_attempts": 17,
+      "candidates": 6
+    }
+  },
+  "queries_used": 0,
+  "navigation_attempts_used": 2,
+  "candidates_saved": 3,
+  "reservations": [
+    {
+      "type": "navigation",
+      "url": "https://www.kupbilecik.pl/pl/comments/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+      "reserved_before_action": 1,
+      "status": "completed"
+    }
+  ],
+  "navigation_attempts": [
+    {
+      "url": "https://www.kupbilecik.pl/pl/comments/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+      "status": "complete",
+      "captured_at": "2026-11-01T17:05:49.693Z",
+      "title": "Stand-up Testy: Kołecki x Zalewski x Gadowski | lista komentarzy - KupBilecik (bilety online)",
+      "raw_payload_saved_before_interpretation": true,
+      "raw_capture_note": "Full page DOM text and links were captured in session store as tail_capture1. Relevant author passages transcribed verbatim below; page reports 17 comments but DOM rendered 15 review passages.",
+      "event_context_links": [
+        "https://www.kupbilecik.pl/pl/event/78407/krakow/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "https://www.kupbilecik.pl/pl/event/78171/bielsko-biala/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "https://www.kupbilecik.pl/pl/event/78166/katowice/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "https://www.kupbilecik.pl/pl/event/78170/tarnow/stand-up-testy-kolecki-x-zalewski-x-gadowski"
+      ],
+      "relevant_passages": [
+        {
+          "author": "Karolina",
+          "published_at": "2022-08-09",
+          "parent": "Stand-up Testy: Kołecki x Zalewski x Gadowski — Katowice, 08 sierpnia 2022",
+          "excerpt": "Darek Gadowski mistrzostwo :) bawiłam się wybornie, Tomek też super, Kuba Wilczek był dla mnie super odkryciem, z chęcią się na niego jeszcze wybiorę. Bartosz... no ewidentnie to nie był jego dzień:D"
+        },
+        {
+          "author": "Michał",
+          "published_at": "2022-08-09",
+          "parent": "Stand-up Testy: Kołecki x Zalewski x Gadowski — Kraków, 06 sierpnia 2022",
+          "excerpt": "Zalewski sztos, wcześniej znany mi wcześniej tylko z internetu nie zawiódł. Natomiast reszta to trochę nie mój klimat(żarty z wyglądu osoby trans bardzo na minus)"
+        },
+        {
+          "author": "Magdalena",
+          "published_at": "2022-08-09",
+          "parent": "Stand-up Testy: Kołecki x Zalewski x Gadowski — Kraków, 06 sierpnia 2022",
+          "excerpt": "Gadowski na plus, pierwszy raz go słyszałam i podobał mi się styl Gościa :) Zalewski chłop co ma za flow! Sucho, ale zabawnie. Świetnie wybrnął z sytuacji z przeszkadzającą typiara. Rozczarował mnie Kolecki, widziałam kilka jego występów i ten nie był najlepszy."
+        },
+        {
+          "author": "Krzysztof",
+          "published_at": "2022-08-08",
+          "parent": "Stand-up Testy: Kołecki x Zalewski x Gadowski — Tarnów, 05 sierpnia 2022",
+          "excerpt": "Testy jak testy, nie można było się spodziewać cudów. Gadowski fajnie, sympatycznie, wesoło i w jego stylu, trochę za krótko i lekki niedosyt pozostał ale fajnie było go słyszeć. Pan Kołecki człowiek z potencjałem, mówił ciekawie, był zabawny. Jestem na tak! Natomiast Pan Zalewski chyba pomylił imprezy. Człowiek oderwany od rzeczywistości, chyba nie był naczzo delikatniw mówiąc. Najlepiej bawił się właśnie on sam. Ani razu się nie uśmiechnąłem . Porażka"
+        },
+        {
+          "author": "Kamila",
+          "published_at": "2022-08-07",
+          "parent": "Stand-up Testy: Kołecki x Zalewski x Gadowski — Kraków, 06 sierpnia 2022",
+          "excerpt": "No Darek Gadowski najlepszy na tym występie, 10/10! Fajnie było go zobaczyć w tak dobrej formie (stand-upowej i fizycznej). Na końcu trochę bolały uszy przy ostatnim komiku. Pan Bartosz Zalewski bez szału ale to przecież były tylko testy. Polecam!"
+        }
+      ],
+      "other_posts_reviewed": 10
+    }
+  ],
+  "source_family_coverage": [
+    "ticketed_event_review_archive"
+  ],
+  "deduplication": {
+    "prior_canonical_sources": 132,
+    "prior_reviewed_records": 109,
+    "prior_tomek_candidates": 2,
+    "four_full_replacements_preserved": true,
+    "method": "Search all canonical source candidate files and prior Tomek raw/canonical candidates; author/post/excerpt comparison",
+    "duplicates_found": 0
+  },
+  "identity_and_scope": {
+    "frozen_ids": [
+      "tomek-kolecki",
+      "bartosz-zalewski",
+      "darek-gadowski"
+    ],
+    "identity_basis": "Exact event context/title roster; contextual identity only",
+    "unknown_identity": "Kuba Wilczek and unnamed last performer not frozen targets and not mapped",
+    "author_keys": null,
+    "author_hints": [
+      "Karolina",
+      "Magdalena",
+      "Krzysztof",
+      "Kamila"
+    ],
+    "note": "Michał passage is generic about 'reszta' and is not mapped to any unnamed performer."
+  },
+  "unused_stage_allowance": {
+    "queries": 0,
+    "navigation_attempts": 2,
+    "candidate_slots": 1
+  },
+  "stop_reason": "Three qualifying performer-appraisal posts saved. Remaining rendered posts were generic event praise or did not support an appraisal of assigned focal Tomek Kołecki. Kamila appraised Darek Gadowski and Bartosz Zalewski but not Kołecki; left out. Page's 17-comment count exceeded 15 rendered review passages; no pagination link exposed in inspected DOM; stopped without inventing URL variants.",
+  "cleanup": {
+    "owned_tab_id": "tab_1d_02a52303-1e3a-4993-a897-62daeceecefe",
+    "close_result": "closed",
+    "post_close_status": {
+      "available": false,
+      "tabId": null
+    }
+  },
+  "parent_json_repair": {
+    "original_preserved": "20261101-coverage-kolecki-archive-tail.collection.invalid.txt",
+    "change": "Removed stray closing object brace inside event_context_links array; all source strings preserved.",
+    "pending": "Recover full functions.store tail_capture1 payload; reconcile blank-open/navigation counts and original13attempt baseline before extraction."
+  },
+  "raw_payload": {
+    "captured_at": "2026-11-01T17:05:49.693Z",
+    "links": [
+      {
+        "href": "https://appleid.apple.com/auth/authorize?response_type=code&response_mode=form_post&scope=email+name&client_id=pl.kupbilecik.app&redirect_uri=https%3A%2F%2Fwww.kupbilecik.pl%2Fpl%2Fclients%2Flogin%2Fapple-callback&state=e967e8ca3fa1c380e15cf5cba4b48136",
+        "text": "                                                                        Apple\n                                "
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/clients/register",
+        "text": "załóż nowe konto"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/clients/password",
+        "text": "nie pamiętam hasła"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/organizers/register",
+        "text": "załóż konto"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/organizers/login",
+        "text": "idź do panelu"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/partners/register",
+        "text": "                                załóż konto                            "
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/partners/login",
+        "text": "                                idź do panelu                            "
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/comments/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "                                                        PL    \n                        "
+      },
+      {
+        "href": "https://www.kupbilecik.pl/en/comments/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "                                                        EN    \n                        "
+      },
+      {
+        "href": "https://www.kupbilecik.pl/de/comments/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "                                                        DE    \n                        "
+      },
+      {
+        "href": "https://www.kupbilecik.pl/uk/comments/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "                                                        UA    \n                        "
+      },
+      {
+        "href": "https://www.kupbilecik.pl/en/comments/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "English"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/cookies",
+        "text": "Politykę cookies"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/db/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "Stand-up Testy: Kołecki x Zalewski x Gadowski"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/db/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "|\nStand-up Testy: Kołecki x Zalewski x Gadowski"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/event/78407/krakow/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "Kraków, 06 sierpnia 2022 o godz. 18:00\n|"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/db/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "|\nStand-up Testy: Kołecki x Zalewski x Gadowski"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/event/78171/bielsko-biala/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "Bielsko-Biała, 09 sierpnia 2022 o godz. 19:00\n|"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/db/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "|\nStand-up Testy: Kołecki x Zalewski x Gadowski"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/event/78171/bielsko-biala/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "Bielsko-Biała, 09 sierpnia 2022 o godz. 19:00\n|"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/db/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "|\nStand-up Testy: Kołecki x Zalewski x Gadowski"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/event/78171/bielsko-biala/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "Bielsko-Biała, 09 sierpnia 2022 o godz. 19:00\n|"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/db/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "|\nStand-up Testy: Kołecki x Zalewski x Gadowski"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/event/78171/bielsko-biala/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "Bielsko-Biała, 09 sierpnia 2022 o godz. 19:00\n|"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/db/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "|\nStand-up Testy: Kołecki x Zalewski x Gadowski"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/event/78407/krakow/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "Kraków, 06 sierpnia 2022 o godz. 18:00\n|"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/db/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "|\nStand-up Testy: Kołecki x Zalewski x Gadowski"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/event/78166/katowice/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "Katowice, 08 sierpnia 2022 o godz. 20:00\n|"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/db/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "|\nStand-up Testy: Kołecki x Zalewski x Gadowski"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/event/78166/katowice/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "Katowice, 08 sierpnia 2022 o godz. 20:00\n|"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/db/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "|\nStand-up Testy: Kołecki x Zalewski x Gadowski"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/event/78407/krakow/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "Kraków, 06 sierpnia 2022 o godz. 18:00\n|"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/db/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "|\nStand-up Testy: Kołecki x Zalewski x Gadowski"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/event/78407/krakow/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "Kraków, 06 sierpnia 2022 o godz. 18:00\n|"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/db/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "|\nStand-up Testy: Kołecki x Zalewski x Gadowski"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/event/78407/krakow/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "Kraków, 06 sierpnia 2022 o godz. 18:00\n|"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/db/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "|\nStand-up Testy: Kołecki x Zalewski x Gadowski"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/event/78170/tarnow/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "Tarnów, 05 sierpnia 2022 o godz. 19:00\n|"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/db/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "|\nStand-up Testy: Kołecki x Zalewski x Gadowski"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/event/78407/krakow/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "Kraków, 06 sierpnia 2022 o godz. 18:00\n|"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/db/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "|\nStand-up Testy: Kołecki x Zalewski x Gadowski"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/event/78407/krakow/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "Kraków, 06 sierpnia 2022 o godz. 18:00\n|"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/db/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "|\nStand-up Testy: Kołecki x Zalewski x Gadowski"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/event/78407/krakow/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "Kraków, 06 sierpnia 2022 o godz. 18:00\n|"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/db/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "|\nStand-up Testy: Kołecki x Zalewski x Gadowski"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/event/78407/krakow/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "Kraków, 06 sierpnia 2022 o godz. 18:00\n|"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/db/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "|\nStand-up Testy: Kołecki x Zalewski x Gadowski"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/event/78170/tarnow/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+        "text": "Tarnów, 05 sierpnia 2022 o godz. 19:00\n|"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/toplist",
+        "text": "Toplisty wydarzeń"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/rules",
+        "text": "regulamin"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/policy",
+        "text": "politykę prywatności"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/clients/login",
+        "text": "Strefa klienta"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/search",
+        "text": "Wyszukiwarka wydarzeń"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/changes",
+        "text": "Komunikaty i zmiany"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/toplist",
+        "text": "Toplisty wydarzeń"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/promotions",
+        "text": "Promocje i rabaty"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/news",
+        "text": "Wiadomości kulturalne"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/vouchers",
+        "text": "Vouchery podarunkowe"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/alerts",
+        "text": "Alerty biletowe"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/returns",
+        "text": "Zwroty i przebukowania"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/tickets",
+        "text": "Generowanie biletów"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/shops",
+        "text": "Punkty sprzedaży"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/animals",
+        "text": "Zbiórka na zwierzaki"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/comments",
+        "text": "Komentarze klientów"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/rules",
+        "text": "Regulamin zakupów"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/policy",
+        "text": "Polityka prywatności"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/faq",
+        "text": "Pytania i odpowiedzi"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/accessibility",
+        "text": "Deklaracja dostępności"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/about",
+        "text": "O nas"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/contact",
+        "text": "Kontakt z nami"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/organizers/login",
+        "text": "Dla organizatorów"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/partners/login",
+        "text": "Dla stron WWW"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/shops/login",
+        "text": "Dla oddziałów"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/work",
+        "text": "Dla szukających pracy"
+      },
+      {
+        "href": "https://www.facebook.com/KupBilecik/",
+        "text": "KupBilecik na Facebooku"
+      },
+      {
+        "href": "https://www.instagram.com/kupbilecik/",
+        "text": "KupBilecik na Instagramie"
+      },
+      {
+        "href": "https://www.x.com/KupBilecik/",
+        "text": "KupBilecik na X (Twitterze)"
+      },
+      {
+        "href": "https://www.tiktok.com/@kupbilecik",
+        "text": "KupBilecik na TikToku"
+      },
+      {
+        "href": "https://www.youtube.com/@KupBilecikTV",
+        "text": "KupBilecik na YouTube"
+      },
+      {
+        "href": "https://www.kupbilecik.pl/pl/app",
+        "text": "Pobierz aplikację"
+      }
+    ],
+    "text": "Przejdź do treści\nThis page is also available in English.\nSwitch to English\nkoncerty\nspektakle\nstand-up\nkabarety\ndla dzieci\nfestiwale\nThis page is also available in English.\nEnglish\nUstaw swoją lokalizację\nAby zapewnić najlepsze wrażenia i wyświetlać najlepiej dopasowane wydarzenia, zalecamy udostępnienie lokalizacji.\nLokalizacja...\nPliki cookies\nUżywamy plików cookies, aby poprawić Twoje doświadczenia na stronie. Niektóre z nich są niezbędne do działania strony, inne pomagają nam analizować ruch i personalizować treści. Możesz zaakceptować wszystkie cookies lub dostosować ustawienia.\nAkceptuj wszystkie\nDostosuj ustawienia\nOdrzuć wszystkie\nStand-up Testy: Kołecki x Zalewski x Gadowski\nLista komentarzy dla Stand-up Testy: Kołecki x Zalewski x Gadowski\n17\nliczba komentarzy\n4.76 / 5\nśrednia ocena\n100%\npozytywnych ocen\nOcena 1.0 z 5\n0%\nOcena 2.0 z 5\n0%\nOcena 3.0 z 5\n6%\nOcena 4.0 z 5\n12%\nOcena 5.0 z 5\n82%\nOcena 5.0 z 5\n2022-08-11\nPiotr:\n\"Beka\"\n|\nStand-up Testy: Kołecki x Zalewski x Gadowski\nKraków, 06 sierpnia 2022 o godz. 18:00\n|\nOcena 5.0 z 5\n2022-08-11\nŁukasz:\n\"Super. Polecam. Panowie prawie gotowy materiał\"\n|\nStand-up Testy: Kołecki x Zalewski x Gadowski\nBielsko-Biała, 09 sierpnia 2022 o godz. 19:00\n|\nOcena 5.0 z 5\n2022-08-10\nJakub:\n\"Było miodzio\"\n|\nStand-up Testy: Kołecki x Zalewski x Gadowski\nBielsko-Biała, 09 sierpnia 2022 o godz. 19:00\n|\nOcena 5.0 z 5\n2022-08-10\nBro:\n\"Jako że to testy materiału to spodziewałem się nieco słabszych występów a było MEGA! Warto! Dzięki Panowie za odwiedzenie Bielska!\"\n|\nStand-up Testy: Kołecki x Zalewski x Gadowski\nBielsko-Biała, 09 sierpnia 2022 o godz. 19:00\n|\nOcena 5.0 z 5\n2022-08-10\nwiq:\n\"Dwie i pół godziny doskonałej zabawy (Zalewski, Kołecki, Gadowski) w nie-do-końca doskonałych warunkach (niewygodne siedzenia i duchota).\"\n|\nStand-up Testy: Kołecki x Zalewski x Gadowski\nBielsko-Biała, 09 sierpnia 2022 o godz. 19:00\n|\nOcena 5.0 z 5\n2022-08-10\nKarolina:\n\"Wow chłopaki będą mieć świetne programy! Śmiech do łez\"\n|\nStand-up Testy: Kołecki x Zalewski x Gadowski\nKraków, 06 sierpnia 2022 o godz. 18:00\n|\nOcena 5.0 z 5\n2022-08-09\nJakub:\n\"Super zabawa świetne żarty zmiana lokalizacji na minus ale to nie ich wina. Na pewno jeszcze raz pójdę może jak będzie cały program\"\n|\nStand-up Testy: Kołecki x Zalewski x Gadowski\nKatowice, 08 sierpnia 2022 o godz. 20:00\n|\nOcena 4.0 z 5\n2022-08-09\nKarolina:\n\"Darek Gadowski mistrzostwo :) bawiłam się wybornie, Tomek też super, Kuba Wilczek był dla mnie super odkryciem, z chęcią się na niego jeszcze wybiorę. Bartosz... no ewidentnie to nie był jego dzień:D\"\n|\nStand-up Testy: Kołecki x Zalewski x Gadowski\nKatowice, 08 sierpnia 2022 o godz. 20:00\n|\nOcena 5.0 z 5\n2022-08-09\nMichał:\n\"Zalewski sztos, wcześniej znany mi wcześniej tylko z internetu nie zawiódł. Natomiast reszta to trochę nie mój klimat(żarty z wyglądu osoby trans bardzo na minus)\"\n|\nStand-up Testy: Kołecki x Zalewski x Gadowski\nKraków, 06 sierpnia 2022 o godz. 18:00\n|\nOcena 4.0 z 5\n2022-08-09\nMagdalena:\n\"Gadowski na plus, pierwszy raz go słyszałam i podobał mi się styl Gościa :) Zalewski chłop co ma za flow! Sucho, ale zabawnie. Świetnie wybrnął z sytuacji z przeszkadzającą typiara. Rozczarował mnie Kolecki, widziałam kilka jego występów i ten nie był najlepszy.\"\n|\nStand-up Testy: Kołecki x Zalewski x Gadowski\nKraków, 06 sierpnia 2022 o godz. 18:00\n|\nOcena 5.0 z 5\n2022-08-08\nKrzysztof:\n\"Super występ, miałybyć testy a wyszły same petardy nie bomby. Dało się nawet podejść do kowalów stand-upu po występie, zrobić zdjęcie i pogadać. Kraków Drukarnia w piwniczce super miejsce. 3 typów z widowni obraziło się że na nieoznaczonych miejscach w ciągu przerwy &quot;na ich miejcach&quot; usiadły osoby w tym osoba chodząca o kulach. Pojedyńcze miejsca były a takie 3 obok siebie też były ale z tyłu, skończyło się na tym że 3 piwniczaki stały obok &quot;swoich miejsc&quot; obrażeni.\"\n|\nStand-up Testy: Kołecki x Zalewski x Gadowski\nKraków, 06 sierpnia 2022 o godz. 18:00\n|\nOcena 3.0 z 5\n2022-08-08\nKrzysztof:\n\"Testy jak testy, nie można było się spodziewać cudów. Gadowski fajnie, sympatycznie, wesoło i w jego stylu, trochę za krótko i lekki niedosyt pozostał ale fajnie było go słyszeć. Pan Kołecki człowiek z potencjałem, mówił ciekawie, był zabawny. Jestem na tak! Natomiast Pan Zalewski chyba pomylił imprezy. Człowiek oderwany od rzeczywistości, chyba nie był naczzo delikatniw mówiąc. Najlepiej bawił się właśnie on sam. Ani razu się nie uśmiechnąłem . Porażka\"\n|\nStand-up Testy: Kołecki x Zalewski x Gadowski\nTarnów, 05 sierpnia 2022 o godz. 19:00\n|\nOcena 5.0 z 5\n2022-08-08\nBeata:\n\"Polecam, super miejsce = udany wieczór\"\n|\nStand-up Testy: Kołecki x Zalewski x Gadowski\nKraków, 06 sierpnia 2022 o godz. 18:00\n|\nOcena 5.0 z 5\n2022-08-07\nDominik:\n\"Świetna atmosfera, pierwszy raz na testach - pozytywnie się zaskoczyłem\"\n|\nStand-up Testy: Kołecki x Zalewski x Gadowski\nKraków, 06 sierpnia 2022 o godz. 18:00\n|\nOcena 5.0 z 5\n2022-08-07\nKamila:\n\"No Darek Gadowski najlepszy na tym występie, 10/10! Fajnie było go zobaczyć w tak dobrej formie (stand-upowej i fizycznej). Na końcu trochę bolały uszy przy ostatnim komiku. Pan Bartosz Zalewski bez szału ale to przecież były tylko testy. Polecam!\"\n|\nStand-up Testy: Kołecki x Zalewski x Gadowski\nKraków, 06 sierpnia 2022 o godz. 18:00\n|\nOcena 5.0 z 5\n2022-08-07\nPaulina:\n\"Aaaa...... !!! Bylo super. Polecam każdemu testy.\"\n|\nStand-up Testy: Kołecki x Zalewski x Gadowski\nKraków, 06 sierpnia 2022 o godz. 18:00\n|\nOcena 5.0 z 5\n2022-08-07\nPiotr:\n\"Wysoki poziom, błyskotliwe pointy, pierwsza klasa jeśli chodzi o podawanie żartów!\"\n|\nStand-up Testy: Kołecki x Zalewski x Gadowski\nTarnów, 05 sierpnia 2022 o godz. 19:00\n|\nToplisty wydarzeń\nOceny\n|\nFani\n|\nPopularność\nTrwa ładowanie...\nBądź na bieżąco!\nZapisz się na powiadomienia i bądź na bieżąco z wydarzeniami w Twojej okolicy...\n+48\nRodzaj wydarzeń...\nRodzaj wydarzeń...\nWyrażam zgodę na przetwarzanie moich danych osobowych oraz akceptuję regulamin i politykę prywatności\nNajczęściej zadawane pytania i odpowiedzi (FAQ)\nJaka jest średnia ocena dla \"Stand-up Testy: Kołecki x Zalewski x Gadowski\"?\nIle komentarzy ma \"Stand-up Testy: Kołecki x Zalewski x Gadowski\"?\nIle komentarzy dla \"Stand-up Testy: Kołecki x Zalewski x Gadowski\" jest pozytywnych?\nJak można dodać komentarz dla \"Stand-up Testy: Kołecki x Zalewski x Gadowski\"?\nKto może dodać komentarz dla \"Stand-up Testy: Kołecki x Zalewski x Gadowski\"?\nCzy trzeba się zarejestrować, aby zostawić komentarz?\nJakie są zasady moderacji komentarzy?\nCzy artyści czytają otrzymane komentarze?\nDlaczego warto pozostawić komentarz na KupBilecik po wydarzeniu?\nDla klientów\nStrefa klienta\nWyszukiwarka wydarzeń\nKomunikaty i zmiany\nToplisty wydarzeń\nPromocje i rabaty\nWiadomości kulturalne\nVouchery podarunkowe\nAlerty biletowe\nZwroty i przebukowania\nGenerowanie biletów\nPunkty sprzedaży\nZbiórka na zwierzaki\nKomentarze klientów\nRegulamin zakupów\nPolityka prywatności\nUstawienia prywatności\nPytania i odpowiedzi\nDeklaracja dostępności\nO nas\nKontakt z nami\nWspółpraca\nDla organizatorów\nDla stron WWW\nDla oddziałów\nDla szukających pracy\nSocial Media\nKupBilecik na Facebooku\nKupBilecik na Instagramie\nKupBilecik na X (Twitterze)\nKupBilecik na TikToku\nKupBilecik na YouTube\nHej! Masz już naszą nową aplikację?\nPobierz KupBilecik na swój telefon z Android lub iOS!\nPobierz aplikację\n\n© 2011 - 2026 KupBilecik® - internetowy system biletowy. Wszelkie prawa zastrzeżone.",
+    "title": "Stand-up Testy: Kołecki x Zalewski x Gadowski | lista komentarzy - KupBilecik (bilety online)",
+    "url": "https://www.kupbilecik.pl/pl/comments/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski"
+  },
+  "actual_request_accounting": {
+    "basis": "Counted actual preview tool calls in this conversation, not reservations: preview_open(blank)=1, preview_navigate(exact URL)=1; no navigation failures, clicks, or retries. preview_status/evaluate/close are non-navigation.",
+    "added": {
+      "queries": 0,
+      "navigation_attempts": 2,
+      "candidates": 3
+    },
+    "cumulative": {
+      "queries": 24,
+      "navigation_attempts": 15,
+      "candidates": 5
+    },
+    "original_allowance": {
+      "queries": 24,
+      "navigation_attempts": 24,
+      "candidates": 16
+    },
+    "remaining": {
+      "queries": 0,
+      "navigation_attempts": 9,
+      "candidates": 11
+    },
+    "stage_cap": {
+      "navigation_attempts": 4,
+      "new_candidates": 4
+    },
+    "stage_cap_unused": {
+      "navigation_attempts": 2,
+      "candidate_slots": 1
+    },
+    "prior_reported_counts_preserved_as_disputed_history": {
+      "added_navigation_attempts": 1,
+      "cumulative_navigation_attempts": 17,
+      "reason": "Prior report counted URL navigation only and stated an inconsistent cumulative number; actual preview_open blank tab also counts, yielding 2 added and 15 cumulative."
+    }
+  },
+  "capture_reconciliation": {
+    "availability": "Recovered functions.load(\"tail_capture1\").structuredContent.value; persisted as JSON-valued raw_payload before parsing.",
+    "captured_at": "2026-11-01T17:05:49.693Z",
+    "raw_payload_sha256": "8515eb63433ffed8e39cbb6bd07a10fe85547da79e811f277ae458972ea76735",
+    "corrected_output": "evidence/coverage-expansion/tomek-kolecki-archive-tail.source-candidates.corrected.jsonl",
+    "corrections": [
+      "Preserved source-candidate values and candidate IDs; set retrieved_at to the retained DOM capture timestamp.",
+      "Replaced each combined title/em-dash/city-date context with two separate exact DOM substrings: parent title and linked event city/date/time.",
+      "Kept author excerpts verbatim and isolated; no author identity or preference adjudication added."
+    ],
+    "proof_locators_and_hashes": [
+      {
+        "candidate_id": "src_cov_tkolecki_tail_001",
+        "author_hint": "Karolina",
+        "published_at": "2022-08-09",
+        "author_post_locator": {
+          "url": "https://www.kupbilecik.pl/pl/comments/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+          "dom_text_start": 2362,
+          "dom_text_end": 2561,
+          "occurrence": 1
+        },
+        "excerpt_sha256": "2c40878af604fd27e81b686406dd25f4da2a4e321fb90a62502660d9a72db829",
+        "context_sha256": {
+          "parent_title": "6eadb542d0ea71ef5dc1fd4b7e4af5be11b278ffdfff2050434792c835a31111",
+          "parent_city_date": "663f088d4bc0631f38250c272ffe85e3f4e0d67a9b126cc8c22d6c6ddbbb3f36"
+        },
+        "checks": {
+          "author_post_exact_substring": true,
+          "date_byline_and_parent_adjacency_verified": true,
+          "parent_title_exact_substring": true,
+          "parent_city_date_exact_substring": true
+        }
+      },
+      {
+        "candidate_id": "src_cov_tkolecki_tail_002",
+        "author_hint": "Magdalena",
+        "published_at": "2022-08-09",
+        "author_post_locator": {
+          "url": "https://www.kupbilecik.pl/pl/comments/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+          "dom_text_start": 2978,
+          "dom_text_end": 3240,
+          "occurrence": 1
+        },
+        "excerpt_sha256": "2e9448a489fa456fb02f957df572499cf62b0307c8885150b42e0edb0ff0d729",
+        "context_sha256": {
+          "parent_title": "6eadb542d0ea71ef5dc1fd4b7e4af5be11b278ffdfff2050434792c835a31111",
+          "parent_city_date": "a6dfed4b1b1ff7e2e6e379757975bce252eb8237bdd7d4eda37fa67005b9011a"
+        },
+        "checks": {
+          "author_post_exact_substring": true,
+          "date_byline_and_parent_adjacency_verified": true,
+          "parent_title_exact_substring": true,
+          "parent_city_date_exact_substring": true
+        }
+      },
+      {
+        "candidate_id": "src_cov_tkolecki_tail_003",
+        "author_hint": "Krzysztof",
+        "published_at": "2022-08-08",
+        "author_post_locator": {
+          "url": "https://www.kupbilecik.pl/pl/comments/10930/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+          "dom_text_start": 3986,
+          "dom_text_end": 4443,
+          "occurrence": 1
+        },
+        "excerpt_sha256": "8c26e703a56f9639de1935125d5edccd2e0db2427b1f079d021695550d41e17b",
+        "context_sha256": {
+          "parent_title": "6eadb542d0ea71ef5dc1fd4b7e4af5be11b278ffdfff2050434792c835a31111",
+          "parent_city_date": "c155a0c4b99c01472cac06bd367924abafbe1cb26d6af2e70fbd6d445f3ae6da"
+        },
+        "checks": {
+          "author_post_exact_substring": true,
+          "date_byline_and_parent_adjacency_verified": true,
+          "parent_title_exact_substring": true,
+          "parent_city_date_exact_substring": true
+        }
+      }
+    ],
+    "named_event_links_from_retained_dom": [
+      "https://www.kupbilecik.pl/pl/event/78407/krakow/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+      "https://www.kupbilecik.pl/pl/event/78407/krakow/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+      "https://www.kupbilecik.pl/pl/event/78166/katowice/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+      "https://www.kupbilecik.pl/pl/event/78166/katowice/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+      "https://www.kupbilecik.pl/pl/event/78407/krakow/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+      "https://www.kupbilecik.pl/pl/event/78407/krakow/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+      "https://www.kupbilecik.pl/pl/event/78407/krakow/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+      "https://www.kupbilecik.pl/pl/event/78170/tarnow/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+      "https://www.kupbilecik.pl/pl/event/78407/krakow/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+      "https://www.kupbilecik.pl/pl/event/78407/krakow/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+      "https://www.kupbilecik.pl/pl/event/78407/krakow/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+      "https://www.kupbilecik.pl/pl/event/78407/krakow/stand-up-testy-kolecki-x-zalewski-x-gadowski",
+      "https://www.kupbilecik.pl/pl/event/78170/tarnow/stand-up-testy-kolecki-x-zalewski-x-gadowski"
+    ],
+    "note": "Review parent title and location/time are separate DOM text lines. The event links shown are exact source-provided links. No inferred roster field was added."
+  }
+}

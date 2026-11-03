@@ -1,0 +1,919 @@
+{
+  "surprises": [
+    "Baseline isolates are acquisition-heavy: 57/66 have zero observed eligible-fan statements; 41/66 lack even a targeted candidate. Renderer exposure cannot connect these.",
+    "The Magda saved collection ledger used only 2/24 query reservations and 0 opens; one query failed before dispatch and the other remained pending. This is an interrupted attempt, not negative source evidence.",
+    "One potentially pair-forming excerpt is explicitly positive but loses Karol Modzelewski at confidence 0.74 (<0.75); identity spelling and author context require source verification before any correction.",
+    "The source-level Magda lead `page_comments=6708` is explicitly unresolved in the ledger, so it is a route to verify, not evidence."
+  ],
+  "methods": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "read_only": true,
+    "scored_relations_or_evidence_rewritten": false,
+    "loaded_evidence": "Only evidence files at `paths.evidence` from the 12 input_manifests in graph/batch-06-catchup/graph.json; no original pilot/calibration/raw slices double-loaded.",
+    "traceability": "Read source-candidate ledgers and run/collection/verification metadata only for provenance; no sources reopened or searched.",
+    "inputs": [
+      "tasks/standupers-graph/AGENTS.md",
+      "tasks/standupers-graph/PLAN.md",
+      "tasks/standupers-graph/reports/20261031-coverage-expansion-plan.md",
+      "tasks/standupers-graph/reports/runs/20261031-coverage-baseline.json",
+      "tasks/standupers-graph/graph/batch-06-catchup/graph.json",
+      "tasks/standupers-graph/scripts/graph_pipeline.py",
+      "tasks/standupers-graph/scripts/render_interactive.py",
+      "tasks/standupers-graph/prompts/extract-evidence-v3.md",
+      "tasks/standupers-graph/prompts/verify-evidence-v3.md"
+    ]
+  },
+  "metrics": {
+    "nodes": 100,
+    "positive_linked": 34,
+    "corroborated_linked": 10,
+    "largest_positive_component": 26,
+    "isolated": 66,
+    "isolated_zero_observed_fans": 57,
+    "isolated_with_targeted_candidate": 25,
+    "isolated_without_targeted_candidate": 41,
+    "isolated_with_any_positive_preference_mention_in_saved_evidence": 13,
+    "isolated_with_nonaccepted_evidence_record": 2,
+    "renderer_hidden_eligible_pair_count": 43,
+    "interpretation": "Degree already includes accepted plus qualifying uncontested one-fan provisional edges. Hidden presentation links cannot explain the 66 isolated nodes."
+  },
+  "per_node_loss_categories": [
+    {
+      "id": "adam-gajda",
+      "rank": 84,
+      "target_candidates": 2,
+      "observed_fans": 1,
+      "saved_mentions": [
+        "ev_b09_a_002",
+        "ev_b09_a_003"
+      ],
+      "loss": "pair_support_or_scoring_threshold",
+      "detail": "Existing mention(s) do not form a displayable accepted or uncontested one-fan relation; inspect candidates and fields before attributing the gap."
+    },
+    {
+      "id": "adam-van-bendler",
+      "rank": 22,
+      "target_candidates": 2,
+      "observed_fans": 0,
+      "saved_mentions": [
+        "ev_b01b_006",
+        "ev_b01b_007"
+      ],
+      "loss": "pair_support_or_scoring_threshold",
+      "detail": "Existing mention(s) do not form a displayable accepted or uncontested one-fan relation; inspect candidates and fields before attributing the gap."
+    },
+    {
+      "id": "aleksandra-radomska",
+      "rank": 96,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "arkadiusz-jaksa-jakszewicz",
+      "rank": 35,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "bartosz-gajda",
+      "rank": 40,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "bartosz-strusinski",
+      "rank": 60,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "blazej-krajewski",
+      "rank": 11,
+      "target_candidates": 2,
+      "observed_fans": 0,
+      "saved_mentions": [
+        "ev_b02a_001",
+        "ev_b05_b_003"
+      ],
+      "loss": "pair_support_or_scoring_threshold",
+      "detail": "Existing mention(s) do not form a displayable accepted or uncontested one-fan relation; inspect candidates and fields before attributing the gap."
+    },
+    {
+      "id": "cezary-pizewski",
+      "rank": 100,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "czeslaw-mozil",
+      "rank": 90,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "damian-skora",
+      "rank": 63,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "damian-viking-usewicz",
+      "rank": 65,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "ewa-blachnio",
+      "rank": 51,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "ewa-stasiewicz",
+      "rank": 47,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "filip-brymora",
+      "rank": 58,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "filip-puzyr",
+      "rank": 62,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "grzegorz-dolniak",
+      "rank": 21,
+      "target_candidates": 2,
+      "observed_fans": 0,
+      "saved_mentions": [
+        "ev_b01a_004",
+        "ev_b01b_006"
+      ],
+      "loss": "identity_preference_or_review_eligibility",
+      "detail": "Existing mention(s) do not form a displayable accepted or uncontested one-fan relation; inspect candidates and fields before attributing the gap."
+    },
+    {
+      "id": "grzegorz-halama",
+      "rank": 71,
+      "target_candidates": 1,
+      "observed_fans": 0,
+      "saved_mentions": [
+        "ev_b08_a_005"
+      ],
+      "loss": "identity_preference_or_review_eligibility",
+      "detail": "Existing mention(s) do not form a displayable accepted or uncontested one-fan relation; inspect candidates and fields before attributing the gap."
+    },
+    {
+      "id": "igor-kwiatkowski",
+      "rank": 66,
+      "target_candidates": 4,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "jacek-noch",
+      "rank": 94,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "jarek-legonkoff",
+      "rank": 54,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "karol-kopiec",
+      "rank": 86,
+      "target_candidates": 1,
+      "observed_fans": 1,
+      "saved_mentions": [
+        "ev_b09_b_001"
+      ],
+      "loss": "pair_support_or_scoring_threshold",
+      "detail": "Existing mention(s) do not form a displayable accepted or uncontested one-fan relation; inspect candidates and fields before attributing the gap."
+    },
+    {
+      "id": "karol-modzelewski",
+      "rank": 19,
+      "target_candidates": 5,
+      "observed_fans": 3,
+      "saved_mentions": [
+        "ev_b01c_002",
+        "ev_b08_a_006",
+        "ev_b08_a_007",
+        "ev_b08_a_008",
+        "ev_b08_a_009"
+      ],
+      "loss": "pair_support_or_scoring_threshold",
+      "detail": "Existing mention(s) do not form a displayable accepted or uncontested one-fan relation; inspect candidates and fields before attributing the gap."
+    },
+    {
+      "id": "katarzyna-piasecka",
+      "rank": 36,
+      "target_candidates": 1,
+      "observed_fans": 0,
+      "saved_mentions": [
+        "ev_b01c_004"
+      ],
+      "loss": "identity_preference_or_review_eligibility",
+      "detail": "Existing mention(s) do not form a displayable accepted or uncontested one-fan relation; inspect candidates and fields before attributing the gap."
+    },
+    {
+      "id": "krzysztof-kasparek",
+      "rank": 72,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "krzysztof-sawczuk",
+      "rank": 95,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "kuba-dabrowski",
+      "rank": 57,
+      "target_candidates": 4,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "lukasz-wolski",
+      "rank": 79,
+      "target_candidates": 1,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "maciej-kwiatkowski",
+      "rank": 29,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "maciek-buchwald",
+      "rank": 92,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "magda-kubicka",
+      "rank": 5,
+      "target_candidates": 5,
+      "observed_fans": 0,
+      "saved_mentions": [
+        "ev_b01a_001",
+        "ev_b01a_004",
+        "ev_b01b_006",
+        "ev_b01c_004",
+        "ev_b03_b_001"
+      ],
+      "loss": "identity_preference_or_review_eligibility",
+      "detail": "Existing mention(s) do not form a displayable accepted or uncontested one-fan relation; inspect candidates and fields before attributing the gap."
+    },
+    {
+      "id": "mama-na-obrotach",
+      "rank": 2,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "marcin-chmiel",
+      "rank": 59,
+      "target_candidates": 1,
+      "observed_fans": 0,
+      "saved_mentions": [
+        "ev_b06_c_001"
+      ],
+      "loss": "identity_preference_or_review_eligibility",
+      "detail": "Existing mention(s) do not form a displayable accepted or uncontested one-fan relation; inspect candidates and fields before attributing the gap."
+    },
+    {
+      "id": "marcin-zbigniew-wojciech",
+      "rank": 31,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "marek-gajos-gajewski",
+      "rank": 80,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "mariusz-dabrowski",
+      "rank": 85,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "marta-lojek",
+      "rank": 87,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "martyna-podwysocka",
+      "rank": 97,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "mateusz-ipkis-dudek",
+      "rank": 91,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "michal-kempa",
+      "rank": 78,
+      "target_candidates": 2,
+      "observed_fans": 0,
+      "saved_mentions": [
+        "ev_b05_c_003",
+        "ev_b08_a_020"
+      ],
+      "loss": "pair_support_or_scoring_threshold",
+      "detail": "Existing mention(s) do not form a displayable accepted or uncontested one-fan relation; inspect candidates and fields before attributing the gap."
+    },
+    {
+      "id": "michal-paszczyk",
+      "rank": 20,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "michal-skubida",
+      "rank": 44,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "olka-szczesniak",
+      "rank": 7,
+      "target_candidates": 3,
+      "observed_fans": 1,
+      "saved_mentions": [
+        "ev_b01a_004",
+        "ev_b01c_002",
+        "ev_b01c_004"
+      ],
+      "loss": "pair_support_or_scoring_threshold",
+      "detail": "Existing mention(s) do not form a displayable accepted or uncontested one-fan relation; inspect candidates and fields before attributing the gap."
+    },
+    {
+      "id": "pan-li",
+      "rank": 13,
+      "target_candidates": 1,
+      "observed_fans": 1,
+      "saved_mentions": [
+        "ev_b06catch_c_001"
+      ],
+      "loss": "pair_support_or_scoring_threshold",
+      "detail": "Existing mention(s) do not form a displayable accepted or uncontested one-fan relation; inspect candidates and fields before attributing the gap."
+    },
+    {
+      "id": "patryk-gosinski",
+      "rank": 46,
+      "target_candidates": 1,
+      "observed_fans": 0,
+      "saved_mentions": [
+        "ev_b05_b_003"
+      ],
+      "loss": "pair_support_or_scoring_threshold",
+      "detail": "Existing mention(s) do not form a displayable accepted or uncontested one-fan relation; inspect candidates and fields before attributing the gap."
+    },
+    {
+      "id": "patryk-trela",
+      "rank": 99,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "pawel-chalupka",
+      "rank": 26,
+      "target_candidates": 3,
+      "observed_fans": 2,
+      "saved_mentions": [
+        "ev_b03_b_001",
+        "ev_b09_a_002",
+        "ev_b09_a_003"
+      ],
+      "loss": "pair_support_or_scoring_threshold",
+      "detail": "Existing mention(s) do not form a displayable accepted or uncontested one-fan relation; inspect candidates and fields before attributing the gap."
+    },
+    {
+      "id": "pawel-konkiel",
+      "rank": 52,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "piotr-jelen",
+      "rank": 9,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "piotr-latala",
+      "rank": 12,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "piotr-splin",
+      "rank": 49,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "radek-drozdz",
+      "rank": 89,
+      "target_candidates": 1,
+      "observed_fans": 1,
+      "saved_mentions": [
+        "ev_b09_a_001"
+      ],
+      "loss": "pair_support_or_scoring_threshold",
+      "detail": "Existing mention(s) do not form a displayable accepted or uncontested one-fan relation; inspect candidates and fields before attributing the gap."
+    },
+    {
+      "id": "rafal-banas",
+      "rank": 75,
+      "target_candidates": 4,
+      "observed_fans": 2,
+      "saved_mentions": [
+        "ev_b08_a_006",
+        "ev_b08_a_007",
+        "ev_b08_a_008",
+        "ev_b08_a_009"
+      ],
+      "loss": "pair_support_or_scoring_threshold",
+      "detail": "Existing mention(s) do not form a displayable accepted or uncontested one-fan relation; inspect candidates and fields before attributing the gap."
+    },
+    {
+      "id": "rafal-rutkowski",
+      "rank": 25,
+      "target_candidates": 2,
+      "observed_fans": 1,
+      "saved_mentions": [
+        "ev_b01b_006",
+        "ev_b09_a_004"
+      ],
+      "loss": "pair_support_or_scoring_threshold",
+      "detail": "Existing mention(s) do not form a displayable accepted or uncontested one-fan relation; inspect candidates and fields before attributing the gap."
+    },
+    {
+      "id": "rafal-sumowski",
+      "rank": 76,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "robert-gorski",
+      "rank": 64,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [
+        "ev_b08_a_005"
+      ],
+      "loss": "identity_preference_or_review_eligibility",
+      "detail": "Existing mention(s) do not form a displayable accepted or uncontested one-fan relation; inspect candidates and fields before attributing the gap."
+    },
+    {
+      "id": "ryszard-mazur",
+      "rank": 41,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "sebastian-rejent",
+      "rank": 61,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "sylwia-wiszowata",
+      "rank": 23,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "synmojegotaty-bartek-skrobisz",
+      "rank": 83,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "szymon-baraniecki",
+      "rank": 82,
+      "target_candidates": 1,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "tomasz-boras-borkowski",
+      "rank": 17,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "tomasz-machnicki",
+      "rank": 34,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "tomek-kolecki",
+      "rank": 39,
+      "target_candidates": 1,
+      "observed_fans": 0,
+      "saved_mentions": [
+        "ev_b01a_004"
+      ],
+      "loss": "identity_preference_or_review_eligibility",
+      "detail": "Existing mention(s) do not form a displayable accepted or uncontested one-fan relation; inspect candidates and fields before attributing the gap."
+    },
+    {
+      "id": "wojciech-kaminski",
+      "rank": 81,
+      "target_candidates": 1,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    },
+    {
+      "id": "wojtek-fiedorczuk",
+      "rank": 67,
+      "target_candidates": 1,
+      "observed_fans": 0,
+      "saved_mentions": [
+        "ev_b07_b_005"
+      ],
+      "loss": "identity_preference_or_review_eligibility",
+      "detail": "Existing mention(s) do not form a displayable accepted or uncontested one-fan relation; inspect candidates and fields before attributing the gap."
+    },
+    {
+      "id": "wojtek-pieta",
+      "rank": 42,
+      "target_candidates": 0,
+      "observed_fans": 0,
+      "saved_mentions": [],
+      "loss": "acquisition_or_candidate_discovery",
+      "detail": "No saved canonical evidence record mentions this performer."
+    }
+  ],
+  "repair_proposals": [
+    {
+      "priority": 1,
+      "type": "targeted_correction_candidate",
+      "record_id": "ev_b01c_002",
+      "candidate_id": "src_b01c_002",
+      "performer_ids": [
+        "karol-modzelewski",
+        "olka-szczesniak"
+      ],
+      "current_fields": {
+        "review": "accepted",
+        "evidence_class": "same_user_coendorsement",
+        "karol_surface": "Karola Modrzelewskiego",
+        "karol_confidence": 0.74,
+        "karol_preference": "positive",
+        "karol_preference_quote": "zawsze będę bronił",
+        "olka_confidence": 0.9,
+        "olka_preference": "positive",
+        "author_key": "source-scoped key present"
+      },
+      "exact_quote": "Gościa nie znam i nie chce znać, ale Karola Modrzelewskiego czy Olke Szczęśniak zawsze będę bronił, bo prezentują naprawdę dobry poziom i szkoda, że tutaj wszyscy od razu wrzucają wszystkich do jednego wora.",
+      "problem": "Explicit absolute defense/appraisal supports both mentions, but Karol is excluded by the 0.75 mention threshold. Name surface has a spelling variant; verify author/source context and frozen identity before any confidence or surface correction.",
+      "rationale": "Could add one eligible provisional co-endorsement if identity/confidence independently verify; threshold must not be relaxed.",
+      "uncertainty": "Medium-high; quote alone does not resolve extraction confidence or typo identity."
+    },
+    {
+      "priority": 2,
+      "type": "targeted_correction_candidate",
+      "record_id": "ev_b05_b_003",
+      "candidate_id": "src_b05b_003",
+      "performer_ids": [
+        "blazej-krajewski",
+        "patryk-gosinski"
+      ],
+      "current_fields": {
+        "review": "uncertain",
+        "evidence_class": "same_user_coendorsement",
+        "mentions": {
+          "Błażej": {
+            "preference": "positive",
+            "quote": "Błażej, jak i jego support Patryk Gośiński byli świetni",
+            "confidence": 0.99
+          },
+          "Patryk": {
+            "preference": "positive",
+            "quote": "Błażej, jak i jego support Patryk Gośiński byli świetni",
+            "confidence": 0.95
+          }
+        }
+      },
+      "exact_quote": "Zarówno Błażej, jak i jego support Patryk Gośiński byli świetni. Obu znałam z YouTube, ale na żywo jeszcze lepiej się ich oglądało. Tak trzymajcie!!!",
+      "problem": "Eligible-looking absolute co-appreciation is saved but record is marked uncertain; ledger/rubric review outcome should be checked for the exact reliability issue before deciding whether accepted is warranted.",
+      "rationale": "Targeted review may resolve a recoverable status bottleneck for an isolated performer; do not accept merely to create coverage.",
+      "uncertainty": "Medium; current uncertainty may be substantively correct, and exact canonical quote/context from source candidate must be compared before repair."
+    },
+    {
+      "priority": 3,
+      "type": "targeted_correction_candidate",
+      "record_id": "ev_b08_a_006",
+      "candidate_id": "src_b08b_001",
+      "performer_ids": [
+        "karol-modzelewski",
+        "rafal-banas"
+      ],
+      "current_fields": {
+        "review": "accepted",
+        "evidence_class": "fan_recommendation",
+        "Banaś": {
+          "preference": "unknown",
+          "quote": null
+        },
+        "Modzelewski": {
+          "preference": "positive",
+          "quote": "Muszę przyznać, że jego program \"Afryka\" spowodował u mnie ból brzucha i szczęki, oraz doprowadził mnie do łez."
+        }
+      },
+      "exact_quote": "Rafał Banaś był mi dobrze znany wcześniej. Wiedziałem czego można się po nim spodziewać i nie zawiodłem się. Karol Modzelewski był dla mnie niewiadomą - niby oglądałem wczesniej newsy bez wirusa, jednak na kilku odcinkach owego programu moja znajomość jego twórczości się kończyła. Muszę przyznać, że jego program \"Afryka\" spowodował u mnie ból brzucha i szczęki, oraz doprowadził mnie do łez. Mocno polecam obu panów.",
+      "problem": "Current extraction correctly preserves Karol's absolute programme appreciation and Banaś as unknown. This is not a recoverable pair: recommendation of Banaś is not personal appreciation, so no repair proposed to connect them.",
+      "uncertainty": "Low; evidence class/known preference distinction matches rubric; included as a negative control against over-extraction."
+    }
+  ],
+  "acquisition_opportunities": [
+    {
+      "priority": 1,
+      "performer_ids": [
+        "magda-kubicka"
+      ],
+      "route": "Resume failed/unused coverage collection ledger; inspect KupBilecik comments page_comments=6708 lead for Anika’s source passage reportedly evaluating Magda and Marek Gajos; navigate performer-specific comment archive and retrieve full author post/context.",
+      "status": "hypothetical_unverified_lead",
+      "supporting_ledger": "reports/runs/20261031-coverage-magda-kubicka.collection.json",
+      "limit": "2/24 query reservations used, 0/24 opens, 0 candidates; do not treat as failed evidence search."
+    },
+    {
+      "priority": 2,
+      "performer_ids": [
+        "magda-kubicka",
+        "olka-szczesniak"
+      ],
+      "route": "Existing recommendation threads contain many targeted names but broad recommendation prompts/lists are not personal endorsements. Mine thread replies for independently attributed first-person absolute appraisal or verified replies to explicit favorite questions; preserve parent/reply attribution.",
+      "status": "source_known_but_no_qualifying_passage_verified",
+      "supporting_records": [
+        "src_b01a_001",
+        "src_b01a_004",
+        "src_b01b_006",
+        "src_b01c_004",
+        "src_b03b_001"
+      ]
+    },
+    {
+      "priority": 3,
+      "performer_ids": [
+        "wojtek-pieta",
+        "wojciech-kaminski",
+        "krzysztof-sawczuk"
+      ],
+      "route": "Prior route evidence is sparse; prioritize event-specific KupBilecik comments archives and fan-authored discussion threads, using exact performer/profile variants and support-act/event navigation; Kaminski source’s ‘Pasierby’ identity was unresolved in another event record, so seek independent contextual mapping, not alias assumption.",
+      "status": "hypothetical_route",
+      "supporting_records": [
+        "ev_b09_a_001"
+      ],
+      "limit": "event praise for Radek Drożdż is verified; no implication about Wojciech Kamiński because ‘Pasierby’ is unresolved."
+    },
+    {
+      "priority": 4,
+      "performer_ids": [
+        "karol-modzelewski",
+        "grzegorz-dolniak",
+        "adam-van-bendler",
+        "rafal-rutkowski",
+        "pawel-chalupka"
+      ],
+      "route": "For candidates already named in same-source co-endorsement/comparison material, search within the canonical post and replies for separate first-person positive absolute preferences; avoid turning recommendation lists, comparative ranking, or different account posts into overlap.",
+      "status": "candidate_mining_route",
+      "supporting_records": [
+        "src_b01c_002",
+        "src_b01b_007",
+        "src_b03b_001",
+        "src_b09_a_002"
+      ]
+    },
+    {
+      "priority": 5,
+      "performer_ids": [
+        "pawel-bakteria",
+        "kuba-dabrowski"
+      ],
+      "route": "Catch-up ledger demonstrates event/comments-page navigation can recover exact live comments missed by snippets; extend across archived performer-specific event reviews and support listings. Existing catch-up for Kuba yielded Pan Li-positive/Kuba-negative, which cannot connect the pair.",
+      "status": "verified_method_not_new_evidence",
+      "supporting_records": [
+        "src_b06cc_001"
+      ],
+      "limit": "Do not infer fan overlap from event co-billing."
+    }
+  ],
+  "policy_limitations": {
+    "scoring": "v3 requires accepted fan-class record, source-scoped author key, extraction confidence >=0.75, and per-mention confidence >=0.75; same-user coendorsement/rating overlap creates support pairs. One distinct fan is displayable only absent any contradiction; solid accepted requires >=2 distinct source-scoped fans and no opposition.",
+    "contradiction_veto": {
+      "affected_isolated_nodes": [
+        "adam-gajda",
+        "pawel-chalupka",
+        "karol-modzelewski"
+      ],
+      "max_additional_nodes_if_veto_removed": 3,
+      "actual_relations": [
+        {
+          "pair": [
+            "adam-gajda",
+            "pawel-chalupka"
+          ],
+          "fans": 1,
+          "support": [
+            "ev_b09_a_002"
+          ],
+          "opposition": [
+            "ev_b09_a_003"
+          ]
+        },
+        {
+          "pair": [
+            "karol-modzelewski",
+            "rafal-banas"
+          ],
+          "fans": 1,
+          "support": [
+            "ev_b08_a_008"
+          ],
+          "opposition": [
+            "ev_b08_a_007"
+          ]
+        }
+      ],
+      "explanation": "These one-fan relations are contested, so the current no-opposition rule withholds their provisional links. Removing veto could expose at most 3 currently isolated nodes in this graph; it changes semantics to display contested relations as links and is not recommended."
+    },
+    "author_hash_collisions": {
+      "status": "no_evidence_in_loaded_relations_of_distinct_people_colliding_into_same_site_author_key; source-local key deduplication intentionally merges same-key repeated endorsements. Cannot quantify false merges from hashes alone.",
+      "maximum_additional_nodes": "0 supported by observed graph data; any larger count would be speculative."
+    },
+    "presentation": {
+      "max_degree": 3,
+      "hidden_eligible_relations": 43,
+      "effect": "Degree cap can hide links for already-connected nodes, but cannot connect any of the 66 isolated nodes because their actual positive displayable degree is zero. Interactive HTML reveals saved contested candidates and cites existing evidence but never rescores."
+    },
+    "semantic_change_warning": "Do not count contested, style, unknown-preference or recommendation-only edges as fan overlap; that would change the target definition."
+  },
+  "risks": [
+    "Suggested corrections are triage only; independent source verification is required before accepting any correction.",
+    "Saved recommendation evidence and event co-presence are not personal preference.",
+    "Some evidence is event/program scoped; do not generalize historical or one-performance appraisal to current fandom.",
+    "Source-local author keys do not establish unique real people; repeated/cross-posted excerpts do not add support."
+  ],
+  "recommended_actions": [
+    "Continue six-performer research pilot with per-performer query/open accounting; first repair the Magda ledger dispatch failure and finish unused allowance, then document negatives honestly.",
+    "Keep extraction and independent verification separate; require extraction decisions to distinguish preference from sentiment, identity and event scope.",
+    "Parallelize source discovery routes only after each lead has been verified from the full canonical source passage; preserve two-source-family attempts.",
+    "Route the Karol/Olka low-confidence record and Błażej/Patryk uncertain record to independent targeted review; do not change thresholds or statuses in this audit.",
+    "Scale only after comparing pilot yields by source family, query/open usage, verified candidate yield, accepted preference yield and newly connected nodes; select methods that generate source-verifiable co-endorsements rather than broader keyword volume.",
+    "Do not forecast the 70% floor from the current pilot or expose contested/style edges as coverage; report one-fan provisional, corroborated, and component growth separately."
+  ]
+}

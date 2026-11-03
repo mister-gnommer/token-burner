@@ -1,0 +1,11 @@
+# Coverage repair checkpoint — 2026-10-31
+
+Positive-link coverage increased from **34 to 36 performers** by repairing one saved identity mapping. This is a provisional Olka Szczęśniak–Karol Modzelewski link based on one source-local fan account, not new research or a corroborated pair. The largest positive component remains 26; this pair forms a separate two-person component.
+
+A middle-tier independent reviewer assessed the complete original post, frozen canonical name, stand-up topic and retrieved profile context. The observed surname “Modrzelewskiego” differs by one inserted letter from the inflected canonical surname. The reviewer supported the referent inference at 0.85, retaining the literal wording and residual uncertainty. This is not a verified alias. An asserted same-thread corroboration was discarded because the saved locator referred to another Reddit thread; it was not used to justify the decision.
+
+The parent applied only the exact proposed change to mention confidence and review metadata in a versioned copy of the calibrated batch 1 evidence. All other 14 records, author text, source/context, extraction provenance, preferences and scoring thresholds are unchanged. The original evidence, manifest and graph remain intact. New graphs use `20261031-batch01-calibrated.identity-reviewed.json` instead of the original calibrated manifest; loading both would duplicate the same source posts and is forbidden by strict validation.
+
+Cumulative checkpoint: 69 records, 64 relation candidates,10 corroborated/34 eligible provisional/20 contested. D2 draws 10 solid/19 dashed links. All 100 photos are reused. Strict loading, copied-source equality, exact proposal diff and graph recomputation pass; all 22 tests pass. The SVG overview was inspected. JSON/D2/SVG/PNG/interactive.html are saved under `graph/coverage-repairs/`.
+
+The research campaign continues. Magda has one source-verified full forum post pending extraction/review and three quarantined ticket-review fragments, with no new positive source link counted. Olka’s archive follow-up is active within her original remaining allowance. Fan-overlap target remains 85–90%,minimum 70%; a separately labeled performance/style fallback is approved if deeper fan acquisition falls short. No Git action performed.

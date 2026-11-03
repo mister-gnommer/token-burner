@@ -1,0 +1,265 @@
+{
+  "surprises": [
+    "The exact Elwira post was recovered on a complete read of the Świecie event page; its own comment header identifies Legnica, 2025-03-20. The page also has another, separate Patryk Gosiński review, explaining the earlier discrepancy. Elwira is documented as a repair of src_b05b_003 and is not counted as a fresh author.",
+    "The directly opened comments page 19 yielded two different source-local authors explicitly praising Błażej Krajewski and frozen peer Adam Sobaniec. Other nearby comments mention only an unidentified first-name Patryk or generic support and were excluded."
+  ],
+  "run_id": "20261101-coverage-blazej-krajewski",
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+  },
+  "output": "evidence/coverage-expansion/blazej-krajewski.source-candidates.jsonl",
+  "reservations": [
+    {
+      "type": "query_batch",
+      "n": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "queries": [
+        "site:kupbilecik.pl/pl/event/203718/swiecie \"Patryk Gosiński\"",
+        "site:kupbilecik.pl/pl/event/ \"Błażej Krajewski\" \"Patryk Gosiński\"",
+        "\"Błażej Krajewski\" \"Patryk Gosiński\" opinie",
+        "\"Błażej Krajewski\" \"Patryk Gosiński\" recenzja"
+      ],
+      "status": "used",
+      "results": [
+        "KupBilecik event 215069 (Karpacz), comments archive page 5 URL /pl/comments/4698/stand-up-blazej-krajewski?page_comments=5, event 33573, event 218824; results included Patryk Gosiński and archive links."
+      ]
+    },
+    {
+      "type": "open",
+      "n": 1,
+      "url": "https://www.kupbilecik.pl/pl/comments/4698/stand-up-blazej-krajewski?page_comments=5",
+      "status": "used; web cache miss"
+    },
+    {
+      "type": "open",
+      "n": 2,
+      "url": "https://www.kupbilecik.pl/pl/comments/4698/stand-up-blazej-krajewski?page_comments=5",
+      "method": "preview_open after preview_status",
+      "status": "used; preview_open failed because browser server was full"
+    },
+    {
+      "type": "query_batch",
+      "n": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "queries": [
+        "site:reddit.com/r/Polska \"Błażej Krajewski\" \"Patryk Gosiński\"",
+        "site:wykop.pl \"Błażej Krajewski\" \"Patryk Gosiński\"",
+        "site:filmweb.pl \"Błażej Krajewski\" \"Patryk Gosiński\"",
+        "\"Błażej Krajewski\" \"Patryk Gosiński\" -kupbilecik"
+      ],
+      "status": "used",
+      "results": [
+        "KupBilecik event 218824, event 197945, original Świecie event 203718, Katowice event 204832 and related event listing; no independent platform result."
+      ]
+    },
+    {
+      "type": "open",
+      "n": 3,
+      "url": "https://www.kupbilecik.pl/pl/event/203718/swiecie/stand-up-blazej-krajewski",
+      "method": "web open search-result ref turn2search2",
+      "status": "used; full page read succeeded"
+    },
+    {
+      "type": "query_batch",
+      "n": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "queries": [
+        "\"Legnica\" \"20 marca 2025\" \"Błażej Krajewski\" \"Patryk Gosiński\"",
+        "site:kupbilecik.pl/pl/event/ \"Legnica\" \"20 marca 2025\" \"Błażej Krajewski\"",
+        "\"Stand-up: Błażej Krajewski\" \"Legnica, 20 marca 2025\"",
+        "\"Błażej Krajewski\" \"Patryk Gośiński\" Legnica"
+      ],
+      "status": "used",
+      "results": [
+        "KupBilecik event 140980 for Legnica 2025-03-20; comments archive page 5; original Świecie event; review excerpts for Elwira and Małgorzata appeared in indexed result text. PDF turn4search12 was group/event material only."
+      ]
+    },
+    {
+      "type": "open",
+      "n": 4,
+      "url": "https://www.kupbilecik.pl/pl/comments/4698/stand-up-blazej-krajewski?page_comments=5",
+      "method": "web open search-result ref turn4search1",
+      "status": "used; web cache miss"
+    },
+    {
+      "type": "query_batch",
+      "n": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "queries": [
+        "\"Błażej Krajewski\" stand-up forum ulubiony",
+        "\"Blazej Krajewski\" stand up polecam forum",
+        "\"Błażej Krajewski\" \"uwielbiam\" stand-up",
+        "\"Błażej Krajewski\" \"najlepszy\" \"stand-up\" forum"
+      ],
+      "status": "used",
+      "results": [
+        "KupBilecik comments page 2 URL /pl/comments/4698/stand-up-blazej-krajewski?page_comments=2; Reddit thread 105mykf (old recommendation context); separate archive view /komentarze/4698/Stand-up%3A%2BB%C5%82a%C5%BCej%2BKrajewski/19/; other results non-fan material."
+      ]
+    },
+    {
+      "type": "open",
+      "n": 5,
+      "url": "https://www.kupbilecik.pl/komentarze/4698/Stand-up%3A%2BB%C5%82a%C5%BCej%2BKrajewski/19/",
+      "method": "web open search-result ref turn6search2",
+      "status": "used; full page read succeeded"
+    },
+    {
+      "type": "query_batch",
+      "n": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "queries": [
+        "\"Błażej Krajewski\" \"Adam Sobaniec\" forum",
+        "\"Błażej Krajewski\" \"Piotr Zola Szulowski\" lubię",
+        "\"Błażej Krajewski\" \"Michał Leja\" polecam forum",
+        "\"Błażej Krajewski\" \"Mateusz Socha\" forum opinie"
+      ],
+      "status": "used",
+      "results": [
+        "KupBilecik comments page 19 returned direct reviews by Mateusz and Aleksander naming Adam Sobaniec and Błażej; other indexed results were event/promotional or out of scope."
+      ]
+    },
+    {
+      "type": "query_batch",
+      "n": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "queries": [
+        "site:reddit.com \"Błażej Krajewski\" \"Adam Sobaniec\"",
+        "site:wykop.pl \"Błażej Krajewski\" \"Adam Sobaniec\"",
+        "site:forum.gazeta.pl \"Błażej Krajewski\" \"Adam Sobaniec\"",
+        "site:filmweb.pl \"Błażej Krajewski\" \"Adam Sobaniec\""
+      ],
+      "status": "used",
+      "results": [
+        "No results found across Reddit, Wykop, Gazeta forum, Filmweb."
+      ]
+    }
+  ],
+  "prior_reports_reviewed": [
+    "reports/runs/20261031-batch02.collection-a.json",
+    "reports/runs/20261031-batch02.collection-b.json",
+    "reports/runs/20261031-batch02.collection-c.json",
+    "reports/runs/20261031-batch05.collection-b.json",
+    "reports/runs/20261031-batch05.verification-round1.json",
+    "reports/runs/20261031-batch05.verification-round2.json",
+    "reports/runs/20261031-batch05.source-adjudication.json"
+  ],
+  "candidates": [],
+  "unresolved_identities": [],
+  "finish_reason": "Paused at user request after 24 individual queries. This is a session pause, not quota exhaustion for page navigation/candidate capacity and not a no-evidence conclusion. No extraction, independent review, or graph update performed.",
+  "access_notes": [
+    "preview_status returned available:false, tabId:null; preview_open failed with 'Too many server browser tabs are open'. No other-session tab was touched, and no tab was created by this agent.",
+    "Search-only and cache-miss leads remain quarantined; full-read candidates are limited to the two records from the opened page-19 archive view."
+  ],
+  "candidate_locators": [
+    {
+      "candidate_id": "src_cov_bkrajewski_001",
+      "author_hint": "Mateusz",
+      "published_at": "2022-02-18",
+      "source_url": "https://www.kupbilecik.pl/komentarze/4698/Stand-up%3A%2BB%C5%82a%C5%BCej%2BKrajewski/19/",
+      "locator": "opened page 19, lines 71-77; review event link at lines 75-76 identifies Wrocław, 2022-02-13 20:00",
+      "named_performers": [
+        "Błażej Krajewski (source spelling: Błażej Krajweski)",
+        "Adam Sobaniec"
+      ],
+      "identity_basis": "Full name in the same complete review; frozen id adam-sobaniec."
+    },
+    {
+      "candidate_id": "src_cov_bkrajewski_002",
+      "author_hint": "Aleksander",
+      "published_at": "2022-02-15",
+      "source_url": "https://www.kupbilecik.pl/komentarze/4698/Stand-up%3A%2BB%C5%82a%C5%BCej%2BKrajewski/19/",
+      "locator": "opened page 19, lines 139-144; review event link at lines 143-144 identifies Dzierżoniów, 2022-02-12 19:30",
+      "named_performers": [
+        "Błażej Krajewski (surname in prose as Krajewskiego)",
+        "Adam Sobaniec (surname in prose as Sobańca)"
+      ],
+      "identity_basis": "The complete review names both in one statement and refers to both as Panowie; frozen id adam-sobaniec."
+    }
+  ],
+  "repair_of": [
+    {
+      "candidate_id": "src_b05b_003",
+      "evidence_id": "ev_b05_b_003",
+      "status": "recovered exact prior post; repair only, not fresh evidence",
+      "source_url": "https://www.kupbilecik.pl/pl/event/203718/swiecie/stand-up-blazej-krajewski",
+      "locator": "opened full page lines 198-204: author Elwira; review header Stand-up: Błażej Krajewski; Legnica, 20 marca 2025",
+      "excerpt": "Zarówno Błażej, jak i jego support Patryk Gośiński byli świetni. Obu znałam z YouTube, ale na żywo jeszcze lepiej się ich oglądało. Tak trzymać!!!",
+      "note": "Preserve the source spelling Gośiński; event-specific review context supplies Legnica/date. Parent should use a versioned replacement for src_b05b_003 and avoid double counting."
+    }
+  ],
+  "search_only_leads": [
+    {
+      "author_hint": "Małgorzata",
+      "published_at": "2025-03-23",
+      "source_url": "https://www.kupbilecik.pl/pl/comments/4698/stand-up-blazej-krajewski?page_comments=5",
+      "locator": "search result displayed full review text and Legnica 2025-03-20 context; direct open returned cache miss",
+      "excerpt": "Świetna rozrywka dla fanów standupu - top of the top. Support w osobie Patryka Gosińskiego to strzał w dziesiątkę, bardzo przyjemne doświadczenie. Potem było jeszcze lepiej. Śledzę występy Błażeja od początku jego kariery i nie rozczarowałam się w Legnicy. To ten sam specyficzny Błażej, który albo \"wchodzi\" albo nie. Przeszkadzali mi jedynie ludzie, którzy dopowiadali nieadekwatne rzeczy, niestety czuć było, że alkohol w niektórych przypadkach za bardzo buzował w żyłach. Generalnie - złoto",
+      "disposition": "quarantined; not counted because the complete archive page did not open."
+    }
+  ],
+  "source_families_attempted": [
+    {
+      "family": "KupBilecik event/review pages",
+      "result": "full reads succeeded for event page 203718 and archive view page 19; archive page 5 direct reads failed with cache misses."
+    },
+    {
+      "family": "Reddit, Wykop, Gazeta forum, Filmweb",
+      "result": "targeted searches attempted; no qualifying full-read post found."
+    }
+  ],
+  "dedup_check": {
+    "method": "checked source-candidate files referenced by graph/coverage-source-page-tail/graph.json input_manifests only",
+    "result": "no matching authored post/excerpt for either new page-19 candidate found."
+  },
+  "usage": {
+    "queries": {
+      "used": 24,
+      "allowance": 24,
+      "remaining": 0,
+      "failed_requests": 0
+    },
+    "page_open_click_navigation_attempts": {
+      "used": 5,
+      "allowance": 24,
+      "remaining": 19,
+      "successful_full_reads": 2,
+      "cache_misses": 2,
+      "preview_capacity_failures": 1
+    },
+    "non_navigation_preview_status_reads": 1,
+    "verified_candidates": {
+      "used": 2,
+      "allowance": 16,
+      "remaining": 14
+    },
+    "unused_reserved_actions": 0
+  },
+  "paused": true,
+  "completed_at": "2026-10-31T23:56:58Z"
+}

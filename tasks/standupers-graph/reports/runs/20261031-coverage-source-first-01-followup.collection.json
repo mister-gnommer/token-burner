@@ -1,0 +1,200 @@
+{
+  "surprises": [
+    "One Reddit open was attempted after a shell quoting error prevented the reservation write; the failed ordering is disclosed in errors and the attempted open was counted immediately afterward. No allowance was exceeded.",
+    "A third Reddit full-page open returned a cache miss; it was counted and not retried."
+  ],
+  "run_id": "20261031-coverage-source-first-01-followup",
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+source-first-fan-discovery-v1"
+  },
+  "outputs": [
+    "evidence/coverage-source-first-01-followup/source-candidates.jsonl"
+  ],
+  "reservations": [
+    {
+      "type": "query",
+      "n": 1,
+      "query": "site:reddit.com/r/Polska standuperzy ulubiony stand-up Magda Kubicka"
+    },
+    {
+      "type": "query",
+      "n": 2,
+      "query": "site:forum.gazeta.pl stand up ulubieni komicy Abelard Lotek"
+    },
+    {
+      "type": "query",
+      "n": 3,
+      "query": "site:reddit.com polski standup lubię standuperów Piotr Jeleń"
+    },
+    {
+      "type": "open",
+      "n": 1,
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+      "status": "used; reservation persisted after shell quoting error, immediately documented"
+    },
+    {
+      "type": "query",
+      "n": 4,
+      "query": "site:forum.gazeta.pl/forum stand up ulubiony komik lubię fan"
+    },
+    {
+      "type": "query",
+      "n": 5,
+      "query": "site:forum.gazeta.pl/forum stand-up śmieszny komik Abelard Lotek fanem"
+    },
+    {
+      "type": "open",
+      "n": 2,
+      "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html"
+    },
+    {
+      "type": "open",
+      "n": 3,
+      "url": "https://www.reddit.com/r/Polska/comments/105mykf/"
+    }
+  ],
+  "queries": [
+    {
+      "n": 1,
+      "query": "site:reddit.com/r/Polska standuperzy ulubiony stand-up Magda Kubicka",
+      "result": "broad Reddit results; candidate Reddit discussion identified"
+    },
+    {
+      "n": 2,
+      "query": "site:forum.gazeta.pl stand up ulubieni komicy Abelard Lotek",
+      "result": "Gazeta stand-up thread identified; exact old thread later opened for unread comments"
+    },
+    {
+      "n": 3,
+      "query": "site:reddit.com polski standup lubię standuperów Piotr Jeleń",
+      "result": "no additional strong match beyond Reddit discussion lead"
+    },
+    {
+      "n": 4,
+      "query": "site:forum.gazeta.pl/forum stand up ulubiony komik lubię fan",
+      "result": "existing Gazeta stand-up discussion with multiple unread comments identified"
+    },
+    {
+      "n": 5,
+      "query": "site:forum.gazeta.pl/forum stand-up śmieszny komik Abelard Lotek fanem",
+      "result": "old topic-specific discussions found; not used"
+    }
+  ],
+  "opens": [
+    {
+      "n": 1,
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+      "result": "success; 685-line full page"
+    },
+    {
+      "n": 2,
+      "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+      "result": "success; 677-line full page; unread comments on previously read thread"
+    },
+    {
+      "n": 3,
+      "url": "https://www.reddit.com/r/Polska/comments/105mykf/",
+      "result": "failed cache miss; no content promoted"
+    }
+  ],
+  "full_reads": [
+    {
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+      "source_kind": "Reddit discussion",
+      "verified_full_page": true,
+      "note": "685-line full page. Three new authored comments saved; prior canonical michuuu_2108 excluded. Candidate locators are usernames plus exact quote within the thread; publication date unknown (displayed only as relative age).",
+      "candidate_locators": [
+        "Username_Koru, Reddit page lines 68-69",
+        "Nevsr1, Reddit page lines 178-179",
+        "Springerbaum, Reddit page lines 311-315"
+      ]
+    },
+    {
+      "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+      "source_kind": "Forum Gazeta discussion",
+      "verified_full_page": true,
+      "note": "677-line full page; original post was previously read, but several other authors’ comments are newly read. Three distinct qualifying comments saved with displayed dates and author handles; prior canonical madame_edith comment excluded.",
+      "candidate_locators": [
+        "katarrynka, Gazeta page lines 341-344",
+        "princy-mincy, Gazeta page lines 388-390",
+        "youngagain, Gazeta page lines 396-400"
+      ]
+    }
+  ],
+  "search_only_leads": [
+    {
+      "queries": [
+        "site:reddit.com/r/Polska standuperzy ulubiony stand-up Magda Kubicka",
+        "site:forum.gazeta.pl stand up ulubieni komicy Abelard Lotek",
+        "site:reddit.com polski standup lubię standuperów Piotr Jeleń"
+      ],
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+      "note": "Full page opened. Repeats prior canonical michuuu_2108 post, excluded; page has new comments read below."
+    },
+    {
+      "queries": [
+        "site:forum.gazeta.pl/forum stand up ulubiony komik lubię fan",
+        "site:forum.gazeta.pl/forum stand-up śmieszny komik Abelard Lotek fanem"
+      ],
+      "urls": [
+        "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+        "https://forum.gazeta.pl/forum/w,28,143414132,143414132,Abelard_Giza_z_kabaretu_Limo.html"
+      ],
+      "note": "First URL opened; second remains search-only and is topic-specific old political discussion, not pursued."
+    }
+  ],
+  "dedup": [
+    {
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+      "excluded_author": "michuuu_2108",
+      "reason": "exact prior canonical post src_csf01a_002; only newly read distinct-author comments collected"
+    },
+    {
+      "url": "https://forum.gazeta.pl/forum/w,567,176877280,176877280,Stand_up.html",
+      "excluded_author": "madame_edith",
+      "reason": "previous canonical post; new distinct-author comments collected"
+    }
+  ],
+  "errors": [
+    {
+      "type": "reservation-order",
+      "detail": "Shell quoting error prevented reservation write before the open. Open was called immediately after failed write. Reservation and usage are now recorded; no allowance exceeded."
+    },
+    {
+      "type": "page-open",
+      "url": "https://www.reddit.com/r/Polska/comments/105mykf/",
+      "detail": "Cache miss; one attempt counted. Not retried; no snippet promoted."
+    }
+  ],
+  "candidates_saved": 6,
+  "usage": {
+    "continuation": {
+      "queries": 5,
+      "opens": 3,
+      "verified_candidates": 6,
+      "caps": {
+        "queries": 12,
+        "opens": 21,
+        "verified_candidates": 14
+      }
+    },
+    "original_cumulative": {
+      "queries": 17,
+      "opens": 6,
+      "verified_candidates": 8,
+      "caps": {
+        "queries": 24,
+        "opens": 24,
+        "verified_candidates": 16
+      }
+    }
+  },
+  "unused_allowance": {
+    "queries": 7,
+    "opens": 18,
+    "verified_candidates": 8
+  },
+  "stop_reason": "Meaningful route completion: full pages read across Reddit and forum.gazeta.pl, with six distinct-author candidates. A third known Reddit discussion failed its single full-page open with cache miss; no same-URL retry. Stopped before query/open/candidate caps; unused allowance reported."
+}

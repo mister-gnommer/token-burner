@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "reviewer": "codex/gpt-6-luna",
+  "review_prompt": "verify-evidence-v3",
+  "counts": {
+    "canonical_candidates": 1,
+    "accounted_exactly_once": 1,
+    "accepted": 1,
+    "uncertain": 0,
+    "rejected": 0,
+    "skipped": 0
+  },
+  "source_accounting": [
+    {
+      "candidate_id": "src_cov_mkubicka_001",
+      "evidence_id": "ev_cov_mkubicka_001",
+      "decision": "accepted",
+      "corrections": [
+        "Changed unresolved Marta sentiment to positive and preference to positive; set verbatim preference_quote for explicit event appraisal.",
+        "Retained null Marta performer identity; did not create “Marta Lojek” alias.",
+        "Retained unknown preference for Olka, Wiolka and Magda; their wording is category-level or relative popularity/status comparison.",
+        "Accepted record despite unresolved Marta identity because uncertainty is localized."
+      ]
+    }
+  ],
+  "source_concentration": {
+    "by_site": {
+      "gry-online.pl": 1
+    },
+    "by_url": {
+      "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169": 1
+    },
+    "independent_authors": 1,
+    "note": "Records remain independent by source-local author key; concentration reflects this small pilot slice only.",
+    "by_site_note": "Both Olka records share the KupBilecik page URL/archive family, but they are distinct dated reviews with distinct author keys. This is source-family concentration, not independent domain diversity."
+  },
+  "skip_audit": {
+    "canonical_skips": 0,
+    "quarantined_excluded": [
+      "src_cov_mkubicka_002",
+      "src_cov_mkubicka_003",
+      "src_cov_mkubicka_004"
+    ],
+    "notes": "No canonical candidate skipped. Magda raw002/raw003/raw004 are quarantined and outside canonical input; not treated as candidates or evidence."
+  },
+  "executable_validation": {
+    "schema_command": "python tasks/standupers-graph/scripts/evidence_pipeline.py validate --kind evidence tasks/standupers-graph/evidence/coverage-pilot/magda-kubicka.evidence.jsonl",
+    "schema_result": "PASS: 1 records validated",
+    "focused_checks": {
+      "canonical accounted exactly once": "pass",
+      "candidate/evidence frozen IDs": "pass",
+      "source/excerpt/language/context exact": "pass",
+      "actual per-performer run IDs/provenance unchanged": "pass",
+      "review fields": "pass",
+      "source-local author hashes": "pass",
+      "literal surfaces and preference quotes": "pass"
+    }
+  },
+  "coverage_note": "This verifies only the three supplied canonical candidates. No graph or coverage claim is made.",
+  "leading_surprises": [
+    "The excerpt’s category-level liking and relative popularity comparison do not establish preference for Magda, Wiolka, or Olka.",
+    "Marta Łojok is unresolved, but explicit laughter at her support set establishes positive event-level appraisal; identity uncertainty does not erase the preference.",
+    "Parent Ozzin_NPC is a separate speaker and contributes no preference evidence."
+  ],
+  "per_record_decisions": [
+    {
+      "candidate_id": "src_cov_mkubicka_001",
+      "evidence_id": "ev_cov_mkubicka_001",
+      "decision": "accepted",
+      "corrections": [
+        "Changed unresolved Marta sentiment to positive and preference to positive; set verbatim preference_quote for explicit event appraisal.",
+        "Retained null Marta performer identity; did not create “Marta Lojek” alias.",
+        "Retained unknown preference for Olka, Wiolka and Magda; their wording is category-level or relative popularity/status comparison.",
+        "Accepted record despite unresolved Marta identity because uncertainty is localized."
+      ],
+      "alias_risks": [
+        "Marta Łojok is unresolved; no alias was inferred. “Ola” was not separately resolved."
+      ],
+      "source_context": "Parent Ozzin_NPC is distinct from source author Megera_ and excluded from mentions/preferences."
+    }
+  ]
+}

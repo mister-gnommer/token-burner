@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101-coverage-sylwia-wiszowata",
+  "stage": "extraction",
+  "status": "complete",
+  "extractor": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "extract-evidence-v3"
+  },
+  "paths": {
+    "source_candidates": "evidence/coverage-expansion/sylwia-wiszowata.source-candidates.canonical.jsonl",
+    "evidence_unreviewed": "evidence/coverage-expansion/sylwia-wiszowata.evidence.unreviewed.jsonl"
+  },
+  "counts": {
+    "source_candidates": 6,
+    "extracted": 1,
+    "skipped": 5
+  },
+  "lineage": {
+    "source_candidates_sha256": "3025fc1c39d7332109550cb281b03c8fe331d4a7ce4dbca27ec3a03bfc8ec521",
+    "evidence_unreviewed_sha256": "b42ff1aed80ab65321fc1c322ab0d87cf71d9940a0e6491ed91dea1ac90b4ead",
+    "candidate_ids": [
+      "src_cov_swiszowata_001",
+      "src_cov_swiszowata_002",
+      "src_cov_swiszowata_003",
+      "src_cov_swiszowata_004",
+      "src_cov_swiszowata_005",
+      "src_cov_swiszowata_006"
+    ],
+    "evidence_ids": [
+      "ev_cov_swiszawata_006"
+    ],
+    "sources": {
+      "src_cov_swiszowata_001": {
+        "source_line": 1,
+        "source_sha256": "221f9a1861ee2f660117e8a2a5aa9df68739700b1dc4dad96c232be281e48b8d",
+        "excerpt_sha256": "cccea5d45ca7de4cba3f6bc0f9a2566fdc8753c269e245cacd4c5ab5459d2acf",
+        "canonical_author_key": "fan_ab86ae256c1097a6"
+      },
+      "src_cov_swiszowata_002": {
+        "source_line": 2,
+        "source_sha256": "afe6192e7cd689572273bab832399587fee949dab58f27d9cd07319669d55b3e",
+        "excerpt_sha256": "6e99848447cf7a1f22274ac2e0f086e9cccf40e91174fdc43dc3c13ff5ff6bc9",
+        "canonical_author_key": "fan_a339f0e03d258043"
+      },
+      "src_cov_swiszowata_003": {
+        "source_line": 3,
+        "source_sha256": "4c5898946de8a46d15f6f5f06071d079734713b80ef5163ddf6b856b2c7a526f",
+        "excerpt_sha256": "4be45fdda83f682c7511f54d6cf1a0dfd7bbdeaa519ace9496929611618441da",
+        "canonical_author_key": "fan_489d3e9abfe09786"
+      },
+      "src_cov_swiszowata_004": {
+        "source_line": 4,
+        "source_sha256": "7eedb897f5e3ce0b322e3405ab1069fbbe232f10885b50343320d86b8c4995aa",
+        "excerpt_sha256": "366df4aa972006fb831a043576a509deeda90af321efe8f71e3ebb2f6c4e50ac",
+        "canonical_author_key": "fan_f3c8d4c276b6e6a7"
+      },
+      "src_cov_swiszowata_005": {
+        "source_line": 5,
+        "source_sha256": "604717cfeffffe08e1cf1ed4186e7df3751ab60507eacbb88d691314fdfe57a6",
+        "excerpt_sha256": "d9404237a4789f4eed55dde98d541b9313942199457ea746f76ba319ec6982ce",
+        "canonical_author_key": "fan_d35b63a0b329e9ba"
+      },
+      "src_cov_swiszowata_006": {
+        "source_line": 6,
+        "source_sha256": "da1efd052b9fcb8ac7d0f75bab0a57f6deb0b3705ca5e3e125343928fc149f0d",
+        "excerpt_sha256": "2977f9eea9edb0ae14fc4b5e1a2aa822a099ccf93dadd53a787b664f04dbafa0",
+        "canonical_author_key": "fan_13f933c6243ea419"
+      }
+    }
+  },
+  "decisions": [
+    {
+      "candidate_id": "src_cov_swiszowata_001",
+      "decision": "skip",
+      "reason": "One relevant performer mention (Sylwia) and no permissible pair class. Her tour-specific “szacunek za zrobienie materiału specjalnie pod trasę” is craft respect; “Nie było złych występów” is a group-level appraisal, not an individual Sylwia appraisal. Other apparent mentions do not establish another frozen performer: Rogozin, Kostelecki, Chachulska, Skrzypek, Młynarski, Płocha and Bieńkowski do not match frozen names; “Zalewa” is not a frozen alias and is not resolved from adjacent posts. No names or preferences transferred from event context."
+    },
+    {
+      "candidate_id": "src_cov_swiszowata_002",
+      "decision": "skip",
+      "reason": "The author directly says her joke style suits them and calls the show great, but this is a solo review. The source-local author identity is preserved but does not combine with other reviewers; parent event metadata does not transfer a preference or create a second performer mention."
+    },
+    {
+      "candidate_id": "src_cov_swiszowata_003",
+      "decision": "skip",
+      "reason": "The author says the repeat show was fun while criticizing repeated material and preferring the earlier lawn set; this mixed, program-specific solo review has no permissible pair class. The source-local author identity is preserved but does not combine with other reviewers; parent event metadata does not transfer a preference or create a second performer mention."
+    },
+    {
+      "candidate_id": "src_cov_swiszowata_004",
+      "decision": "skip",
+      "reason": "The author gives an absolute positive appraisal (“niesamowita”), but only Sylwia is mentioned; no permissible pair class. The source-local author identity is preserved but does not combine with other reviewers; parent event metadata does not transfer a preference or create a second performer mention."
+    },
+    {
+      "candidate_id": "src_cov_swiszowata_005",
+      "decision": "skip",
+      "reason": "The author gives an emphatic positive appraisal (“nie z tego świata”), but only Sylwia is mentioned; no permissible pair class. The source-local author identity is preserved but does not combine with other reviewers; parent event metadata does not transfer a preference or create a second performer mention."
+    },
+    {
+      "candidate_id": "src_cov_swiszowata_006",
+      "decision": "evidence",
+      "evidence_id": "ev_cov_swiszowata_006",
+      "evidence_class": "fan_recommendation",
+      "reason": "Explicit personal recommendation to see Sylwia live, with positive appraisal of her humor and style; personal preference remains unknown because the closing love-or-hate statement is conditional."
+    }
+  ],
+  "provenance": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "extract-evidence-v3",
+    "run_id": "20261101-coverage-sylwia-wiszowata",
+    "review_status": "unreviewed",
+    "reviewer": null
+  },
+  "validation": {
+    "command": "python3 scripts/evidence_pipeline.py validate --kind evidence --path evidence/coverage-expansion/sylwia-wiszowata.evidence.unreviewed.jsonl",
+    "result": "passed: 1 evidence record; pipeline CLI uses positional path argument"
+  },
+  "surprises": [
+    "The tour review’s craft respect for Sylwia is not personal preference; the broad “no bad performances” sentence does not isolate her.",
+    "Only Bartosz Zalewski among the tour excerpt’s potentially comparable surnames appears in the frozen population, but “Zalewa” is not a listed alias; Bieńkowski is not a frozen performer and no identity is inferred.",
+    "Four solo reviews contain positive or mixed appraisals/preferences but have no permissible pair class and are skipped as requested."
+  ],
+  "assumptions": [
+    "The explicit “Polecam zobaczyć Sylwię na żywo” qualifies as fan_recommendation with positive sentiment while personal preference remains unknown.",
+    "A conditional audience reaction (“można pokochać lub znienawidzić”) is not an assertion of the reviewer’s own liking."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "run_id": "20261101-coverage-marcin-zbigniew-wojciech",
+  "raw": "evidence/coverage-expansion/marcin-zbigniew-wojciech.source-candidates.jsonl",
+  "canonical": "evidence/coverage-expansion/marcin-zbigniew-wojciech.source-candidates.canonical.jsonl",
+  "source_count": 1,
+  "prior_canonical_rows_checked": 123,
+  "duplicates": 0,
+  "change": "Source-local author hash only; raw wording, source metadata and context preserved.",
+  "source_recovery": "reports/runs/20261101-coverage-marcin-zbigniew-wojciech.source-recovery.json",
+  "eligibility_audit": "reports/runs/20261101-coverage-marcin-zbigniew-wojciech.eligibility-audit.json",
+  "created_at": "2026-11-01T13:26:46.684941Z"
+}

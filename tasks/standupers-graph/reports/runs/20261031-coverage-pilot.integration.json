@@ -1,0 +1,63 @@
+{
+  "records": 72,
+  "relations": 65,
+  "positive_linked_nodes": 36,
+  "corroborated_linked_nodes": 10,
+  "positive_component_sizes": [
+    28,
+    2,
+    2,
+    2,
+    2
+  ],
+  "largest_component": 28,
+  "status_counts": {
+    "uncertain": 55,
+    "accepted": 10
+  },
+  "eligible_provisional_relations": 35,
+  "new_relations": [
+    {
+      "schema_version": 1,
+      "id": "rel_michal-leja__olka-szczesniak",
+      "pair": [
+        "michal-leja",
+        "olka-szczesniak"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_cov_oszczesniak_001"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 1,
+      "independent_fan_count": 1,
+      "score": 0.2,
+      "confidence": 0.97,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "1 source-scoped fans explicitly co-endorse this pair; 5 observed fans endorse either performer. 0 opposing preference records. Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional.",
+      "updated_at": "2026-10-31T19:06:52Z"
+    }
+  ],
+  "strict_source_loader": "pass",
+  "recomputed_relations": "exact",
+  "graph_inputs": [
+    "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch01-corroboration.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch02.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch03.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch04.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch05.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch06.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch07.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch09.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch10.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch06-catchup.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-magda-kubicka.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-olka-szczesniak.json"
+  ],
+  "new_source_positive_linked_gain": 0,
+  "saved_evidence_repair_linked_gain": 2,
+  "baseline_positive_linked_nodes": 34
+}

@@ -1,0 +1,81 @@
+{
+  "surprises": [
+    "The profile and its linked blog support the profile identity Aleksandra Radomska, but neither retrieved text uses the alias Olka. The textual identity remains unresolved under the direct-alias evidence requirement."
+  ],
+  "run_id": "20261101-radomska-identity",
+  "stage": "source_recovery",
+  "status": "complete_unresolved",
+  "worker": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "reasoning_effort": "medium"
+  },
+  "created_at": "2026-11-01T12:33:25Z",
+  "scope": {
+    "purpose": "External textual identity support for existing accepted evidence ev_cth02a_003 only",
+    "evidence_id": "ev_cth02a_003",
+    "candidate_id": "src_cth02a_003",
+    "frozen_performer": {
+      "id": "aleksandra-radomska",
+      "name": "Aleksandra Radomska",
+      "rank": 96,
+      "profile_url": "https://standup.pl/komicy/aleksandra-radomska"
+    },
+    "query_attempts": 0,
+    "new_fan_candidates": 0,
+    "public_page_attempts": 2,
+    "public_page_attempts_reserved": 2,
+    "profile_owner_page_attempts_before_this_run": 0,
+    "profile_owner_page_attempts_after_this_run": 2,
+    "profile_owner_page_attempts_remaining_of_24": 22,
+    "original_ab_quotas_renewed_or_charged": false,
+    "preview_used": false
+  },
+  "retrieval": [
+    {
+      "page_attempt": 1,
+      "url": "https://standup.pl/komicy/aleksandra-radomska",
+      "method": "public web open of exact frozen profile URL",
+      "retrieved_at": "2026-11-01T12:33:25Z",
+      "locator": "profile heading and biography, lines 14-16; linked website, line 48",
+      "verbatim_text": [
+        "Aleksandra Radomska",
+        "Aleksandra Radomska - biografia, programy stand-up i bilety.",
+        "YouTube Instagram Facebook TikTok Web mamwatpliwosc.pl"
+      ],
+      "result": "Loaded. The profile names Aleksandra Radomska but does not state that she is called Olka. It includes a link to mamwatpliwosc.pl, used for the sole follow-up page attempt."
+    },
+    {
+      "page_attempt": 2,
+      "url": "https://mamwatpliwosc.pl/",
+      "method": "public web click on the profile's Web link (profile locator link 13)",
+      "retrieved_at": "2026-11-01T12:33:25Z",
+      "locator": "site title, lines 0-4; stand-up link, lines 1 and 13; self-reference / author labels, lines 25-28",
+      "verbatim_text": [
+        "Mam Wątpliwość – Blog Radomskiej",
+        "Stand-up aleksandraradomska.pl",
+        "Kim jest Radomska?",
+        "Świat Radomskiej",
+        "Radomska"
+      ],
+      "result": "Loaded. The linked site contextually corroborates Radomska and a stand-up identity, but the retrieved text does not contain Olka or an explicit Olka-to-Aleksandra name linkage. No further page was opened."
+    }
+  ],
+  "identity_assessment": {
+    "source_surface_form": "Olkę Radomską",
+    "proposed_frozen_performer_id": null,
+    "direct_alias_evidence": false,
+    "contextual_identity_evidence": "The exact frozen profile is headed Aleksandra Radomska; its linked blog calls itself Blog Radomskiej and links to aleksandraradomska.pl. Neither page text names Olka.",
+    "decision": "Unresolved. Profile identity and surname make the target contextually plausible, but the requested textual alias linkage is not present. No parent target tag or inferred match was used as proof."
+  },
+  "proposal": {
+    "written": false,
+    "path": "evidence/coverage-thread-harvest-02/ev_cth02a_003.identity-proposal.unreviewed.jsonl",
+    "reason": "No direct textual Olka-to-Aleksandra name linkage was retrieved; do not change the accepted record based on contextual inference alone."
+  },
+  "validation": {
+    "schema_lineage_quote_frozen_id_checks": "not applicable; no proposal written",
+    "accepted_record_or_existing_reports_overwritten": false,
+    "other_files_written": false
+  }
+}

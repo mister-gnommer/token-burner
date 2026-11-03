@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101-coverage-source-page-tail",
+  "stage": "verification",
+  "status": "complete",
+  "reviewer": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "effort": "medium"
+  },
+  "paths": {
+    "source_candidates": "evidence/coverage-source-page-tail/source-candidates.canonical.jsonl",
+    "evidence_unreviewed": "evidence/coverage-source-page-tail/evidence.unreviewed.jsonl",
+    "evidence": "evidence/coverage-source-page-tail/evidence.jsonl"
+  },
+  "counts": {
+    "source_candidates": 1,
+    "extracted": 1,
+    "accepted": 1,
+    "uncertain": 0,
+    "rejected": 0,
+    "skipped": 0
+  },
+  "coverage": {
+    "exact_1_to_1": true,
+    "candidate_ids": [
+      "src_cspt_001"
+    ],
+    "evidence_ids": [
+      "ev_cspt_001"
+    ],
+    "unreviewed_ids": [
+      "ev_cspt_001"
+    ],
+    "reviewed_ids": [
+      "ev_cspt_001"
+    ],
+    "one_source_one_author": true,
+    "independent_author_families": 1,
+    "author_key_matches_source": "fan_6744d7e9e7bd41d8"
+  },
+  "source_fidelity": {
+    "source_metadata_excerpt_language_context_equal": true,
+    "excerpt_matches_canonical_source_exactly": true,
+    "surface_forms_verbatim": true,
+    "preference_quotes_verbatim_substrings": true,
+    "published_at_preserved": "2018-02-07"
+  },
+  "lineage": {
+    "candidate_id": "src_cspt_001",
+    "evidence_id": "ev_cspt_001",
+    "run_id": "20261101-coverage-source-page-tail",
+    "extractor": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1"
+    }
+  },
+  "decisions": [
+    {
+      "candidate_id": "src_cspt_001",
+      "evidence_id": "ev_cspt_001",
+      "status": "accepted",
+      "evidence_class": "same_user_coendorsement",
+      "positive_preferences": [
+        "michal-leja",
+        "antoni-syrek-dabrowski"
+      ],
+      "unknown_preferences": [
+        "rafal-paczes"
+      ],
+      "issues": [],
+      "corrections": [],
+      "reason": "Leja receives absolute positive appraisal scoped to improvisation; Syrek-Dąbrowski receives separate absolute positive appraisal. Pacześ is only relatively ranked. Generic women remark names no frozen performer."
+    }
+  ],
+  "skips": [],
+  "alias_risks": [],
+  "coverage_gaps": [],
+  "checks": {
+    "schema_cli_validation": "passed: validated 1 evidence record",
+    "frozen_identity_ids_valid": true,
+    "author_hash_matches_candidate": true,
+    "run_id_and_extraction_lineage_match": true,
+    "source_candidate_and_extraction_counts_match": true
+  },
+  "surprises": [
+    "One post independently evaluates three named frozen performers: two absolute appraisals and one relative ranking; the generic remark about women does not identify any individual performer."
+  ],
+  "limits": [
+    "One source and one source-local author only; this is not independent-family corroboration.",
+    "The post reflects a historical 2018 view; no current preference is inferred.",
+    "Page 2 was not retrieved because the actual pagination URL returned a cache miss; this review makes no claim about its contents."
+  ]
+}

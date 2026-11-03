@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101-coverage-tomek-kolecki",
+  "reviewer": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "verify-evidence-v3"
+  },
+  "surprises": [
+    "Two distinct archive bylines/source-local author keys are visible, but both posts come from one archive URL/source family; neither establishes global author identity or independence.",
+    "The exact archive DOM and event 208296 DOM confirm event date/location and lineup. Published date is 2026-08-25; event took place in Bielsko-Biała on 2026-08-24.",
+    "Paweł’s “spoko” supports a mild positive appraisal in context. Martyna’s reported nervousness and the crowdwork complaint do not state preference or evaluate every act."
+  ],
+  "inputs": {
+    "canonical_candidates": "evidence/coverage-expansion/tomek-kolecki.source-candidates.canonical.jsonl",
+    "unreviewed_evidence": "evidence/coverage-expansion/tomek-kolecki.evidence.unreviewed.jsonl",
+    "actual_run": "reports/runs/20261101-coverage-tomek-kolecki.json",
+    "source_proof": "reports/runs/20261101-coverage-tomek-kolecki.collection.json recovery.source_attempts[1] archive DOM and [2] event 208296 DOM, raw_payload.structuredContent.value.text"
+  },
+  "outputs": {
+    "evidence": "evidence/coverage-expansion/tomek-kolecki.evidence.jsonl",
+    "verification": "reports/runs/20261101-coverage-tomek-kolecki.verification.json"
+  },
+  "counts": {
+    "candidates": 2,
+    "records": 2,
+    "accepted": 2,
+    "uncertain": 0,
+    "rejected": 0,
+    "skips": 0,
+    "each_candidate_once": true
+  },
+  "records": [
+    {
+      "candidate_id": "src_cov_tkolecki_001",
+      "evidence_id": "ev_cov_tkolecki_001",
+      "status": "accepted",
+      "issues_or_corrections": "No field correction. “Polecam wszystkim” is event recommendation; separate “mega śmieszni” supports the two event-scoped positive appraisals. Contextual identity mapping only; no alias added."
+    },
+    {
+      "candidate_id": "src_cov_tkolecki_002",
+      "evidence_id": "ev_cov_tkolecki_002",
+      "status": "accepted",
+      "issues_or_corrections": "No field correction. Mild positive “spoko” applies to the three listed performers; Marcel remains null-ID/outside frozen100. Martyna state observation stays neutral with unknown preference; crowdwork caveat is event-level."
+    }
+  ],
+  "audit": {
+    "source_fidelity": "Both author excerpts exactly match archive DOM bodies. Publication date, archive title and adjacent event context match. Parent title/date and complete lineup context match saved DOM text; raw blocks and canonicalization lineage remain untouched.",
+    "identity": "Frozen IDs used only for Bartosz Zalewski, Tomek Kołecki, and Martyna Podwysocka. “Zalew”, “Kołek”, and “Martyna” are preserved as literal surfaces and resolved only from event 208296 roster. Marcel remains null because excluded from frozen100. No global aliases or cross-record author identity inferred.",
+    "preference": "Quote substrings are verbatim and local to each author excerpt. No preference transferred from general event recommendation, Martyna observation, crowdwork caveat, roster, or other author.",
+    "provenance": "Original extraction provider/model/prompt/run_id retained exactly: codex/gpt-6-luna/extract-evidence-v3/20261101-coverage-tomek-kolecki. Reviewer recorded as codex/gpt-6-luna/verify-evidence-v3. Review status reflects record reliability; identity uncertainty is scoped separately.",
+    "source_independence": "Two separate posts/bylines and hashes on one archive; this is not proof of separate global people or independent source families. Existing 2019 Maciej record ev_cov_pchalupka_001 remains separate and unchanged; no graph claim made."
+  },
+  "validation": {
+    "command": "python3 scripts/evidence_pipeline.py validate --kind evidence evidence/coverage-expansion/tomek-kolecki.evidence.jsonl",
+    "result": "passed: validated 2 evidence records; focused audit passed (2/2)."
+  }
+}

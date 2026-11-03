@@ -1,0 +1,117 @@
+{
+  "run_id": "run20261031-coverage-karol-modzelewski",
+  "performer_id": "karol-modzelewski",
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+  },
+  "budget": {
+    "query_limit": 24,
+    "open_limit": 24,
+    "candidate_limit": 16,
+    "queries_used": 4,
+    "opens_used": 3,
+    "candidates_used": 1
+  },
+  "attempts": [
+    {
+      "kind": "query",
+      "query": "Karol Modzelewski recenzja stand-up blog",
+      "status": "completed"
+    },
+    {
+      "kind": "query",
+      "query": "Karol Modzelewski opinie bilety recenzje publiczność",
+      "status": "completed"
+    },
+    {
+      "kind": "query",
+      "query": "Karol Modzelewski występ recenzja Abelard Giza Lotek",
+      "status": "completed"
+    },
+    {
+      "kind": "query",
+      "query": "site:filmweb.pl Karol Modzelewski stand-up opinie",
+      "status": "completed"
+    },
+    {
+      "kind": "navigation",
+      "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski",
+      "status": "opened"
+    },
+    {
+      "kind": "navigation",
+      "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski?page=2",
+      "status": "opened"
+    },
+    {
+      "kind": "navigation",
+      "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski?page_comments=2#scrollComments",
+      "status": "opened"
+    },
+    {
+      "kind": "navigation",
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+      "status": "opened"
+    }
+  ],
+  "source_families": [
+    {
+      "family": "performer-specific ticket-review archive (KupBilecik)",
+      "accessed_pages": [
+        {
+          "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski",
+          "substantive": true,
+          "observed": "page 1: current reviews; several mixed-lineup references but only generic support praise excluded"
+        },
+        {
+          "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski?page_comments=2#scrollComments",
+          "substantive": true,
+          "observed": "page 2: older 2026 reviews; Mariusz explicitly appreciates Karol and Marcin Chmiel"
+        }
+      ],
+      "search_only_leads": []
+    },
+    {
+      "family": "Reddit fan discussion",
+      "accessed_pages": [
+        {
+          "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+          "substantive": true,
+          "observed": "full thread read; Karol and multiple peers named in separate commenters, no same-author co-appreciation pair"
+        }
+      ],
+      "search_only_leads": [
+        "r/Polska, Szukam nowych komików; excerpt search result names Karol and Pawel Chalupka but not verified/opened"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "src_cov_kmodzelewski_001",
+      "locator": "KupBilecik comment by Mariusz, 2026-07-17; page 2; event Łódź 2026-07-12",
+      "identity_proof": "source displays author label Mariusz; no cross-site identity claim",
+      "relevant_full_author_text": "Karol w znakomitej formie, chętnie przyjdę na kolejny występ. Wielkie brawa również dla Marcina Chmiela, który skradł moje serce żartami szachowymi;-).",
+      "dedup": "Exact phrase/author locator checked with rg across all prior batch source-candidates and coverage-pilot source-candidate files; no match.",
+      "peer": "Marcin Chmiel is a frozen performer; candidate cites him by full name",
+      "event_header_exact": "Stand-up: Karol Modzelewski\nŁódź, 12 lipca 2026 o godz. 19:00"
+    }
+  ],
+  "dedup_audit": {
+    "prior_batch_sources_checked": true,
+    "pilot_sources_checked": true,
+    "duplicates": []
+  },
+  "unused_allowance": {
+    "queries": 20,
+    "opens": 21,
+    "verified_candidates": 15
+  },
+  "stop_reason": "Returning partial durable result at turn boundary after archive pages 1–2 and a full public fan thread; query/open budgets remain, so this is not a no-evidence conclusion. Further expansion requires continuing with additional archive time slices, another fan/forum/blog route and more page reads.",
+  "surprises": [
+    "KupBilecik exposes 943 comments over 38 pages and offers a distinct older time slice; page 2 yielded one explicit Karol–Marcin Chmiel positive co-appreciation. It is one source-local account and provisional only.",
+    "Reddit result thread contains Karol praise and frozen peers, but in different commenters; do not combine speakers.",
+    "The first-page ticket archive includes broad support criticism/praise. Those general remarks lack performer-specific frozen identities and were not treated as co-endorsement."
+  ]
+}

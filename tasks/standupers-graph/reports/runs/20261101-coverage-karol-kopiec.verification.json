@@ -1,0 +1,181 @@
+{
+  "run_id": "20261101-coverage-karol-kopiec",
+  "reviewer": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "reasoning_effort": "medium",
+    "prompt_version": "verify-evidence-v3"
+  },
+  "surprises": [
+    "The speaker is a professional comedian, but the passage contains direct first-person personal appraisals in an interview rather than editorial or promotional copy; current rules do not exclude a speaker by occupation. The record is accepted as personal-appraisal evidence with industry-speaker bias explicitly noted.",
+    "The extraction missed the shared predicate applying to Jacek Stramik in “Bardzo mnie śmieszy Kacper Ruciński i Jacek Stramik, który jest ostry.”"
+  ],
+  "counts": {
+    "source_candidates": 1,
+    "reviewed_records": 1,
+    "accepted": 1,
+    "uncertain": 0,
+    "rejected": 0,
+    "skipped": 0
+  },
+  "source_accounting": {
+    "candidate_ids": [
+      "src_cov_kkopiec_001"
+    ],
+    "reviewed_candidate_ids": [
+      "src_cov_kkopiec_001"
+    ],
+    "skipped_candidate_ids": [],
+    "exactly_once": true
+  },
+  "lineage": {
+    "candidate_id": "src_cov_kkopiec_001",
+    "evidence_id": "ev_cov_kkopiec_001",
+    "run_id": "20261101-coverage-karol-kopiec",
+    "canonical_candidate_path": "evidence/coverage-expansion/karol-kopiec.source-candidates.canonical.jsonl",
+    "unreviewed_evidence_path": "evidence/coverage-expansion/karol-kopiec.evidence.unreviewed.jsonl",
+    "reviewed_evidence_path": "evidence/coverage-expansion/karol-kopiec.evidence.jsonl",
+    "canonical_candidate_sha256": "26e2ce5de98fcc613cac098916e9898ba0f5b855159f8591508f290979b753bd",
+    "unreviewed_evidence_sha256": "8b8611e15575ab70e3384bb85f00a666007624a61249c61d19e25dcea783bea5",
+    "extractor": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "extract-evidence-v3+favorite-reply-context-v1+batch-run-v1",
+      "run_id": "20261101-coverage-karol-kopiec",
+      "confidence": 0.88
+    },
+    "source_excerpt_language_context_copied_exactly": true,
+    "source_metadata_and_author_key_copied": true,
+    "author_key": "fan_02d34dd798481c3d",
+    "interviewer_context_author_key": "fan_d72cc5d0f7ca55c7"
+  },
+  "eligibility": {
+    "decision": "accepted",
+    "basis": "Personal appraisals by the interviewee are directly authored evidence. The collection contract excludes editorial/promotional text and the source is neither; it does not prohibit a professional speaker from expressing personal preferences.",
+    "limits": "Speaker Mariusz Kałamaga is a professional comedian. This establishes an industry perspective and possible professional bias, not representative audience preference. No audience-wide, current, or fan-count claim follows. Interviewer Marta Nendza is not the preference author. The interview question asks about an impressive performance, not formal favorites; qualification rests on the speaker’s own explicit wording, not the favorite-reply exception."
+  },
+  "mention_decisions": [
+    {
+      "surface_form": "Rafał Pacześ",
+      "performer_id": "rafal-paczes",
+      "decision": "positive preference retained",
+      "quote": "bardzo podoba mi się, jak podaje żarty.",
+      "identity": "high; full frozen name",
+      "sentiment": "positive",
+      "preference": "positive"
+    },
+    {
+      "surface_form": "Łukasz „Lotek” Lodkowski",
+      "performer_id": "lukasz-lotek-lodkowski",
+      "decision": "positive preference retained",
+      "quote": "miszczunio!",
+      "identity": "high; full name and frozen Lotek alias in the excerpt",
+      "sentiment": "positive",
+      "preference": "positive"
+    },
+    {
+      "surface_form": "Cezarego Jurkiewicza",
+      "performer_id": "cezary-jurkiewicz",
+      "decision": "positive preference retained",
+      "quote": "Lubię Cezarego Jurkiewicza",
+      "identity": "high; full frozen name in inflected form",
+      "sentiment": "positive",
+      "preference": "positive"
+    },
+    {
+      "surface_form": "Abelard Giza",
+      "performer_id": "abelard-giza",
+      "decision": "positive craft appraisal; preference unknown",
+      "quote": null,
+      "identity": "high; exact frozen name",
+      "sentiment": "positive",
+      "preference": "unknown"
+    },
+    {
+      "surface_form": "Kacper Ruciński",
+      "performer_id": "kacper-rucinski",
+      "decision": "positive preference retained",
+      "quote": "Bardzo mnie śmieszy Kacper Ruciński",
+      "identity": "high; exact frozen name",
+      "sentiment": "positive",
+      "preference": "positive"
+    },
+    {
+      "surface_form": "Jacek Stramik",
+      "performer_id": "jacek-stramik",
+      "decision": "corrected to positive preference; shared predicate covers coordinated names",
+      "quote": "Bardzo mnie śmieszy Kacper Ruciński i Jacek Stramik",
+      "identity": "high; exact frozen name",
+      "sentiment": "positive",
+      "preference": "positive"
+    },
+    {
+      "surface_form": "Karol Kopiec",
+      "performer_id": "karol-kopiec",
+      "decision": "style description only; preference unknown",
+      "quote": null,
+      "identity": "high; exact frozen name",
+      "sentiment": "neutral",
+      "preference": "unknown"
+    },
+    {
+      "surface_form": "Michał Kempa",
+      "performer_id": "michal-kempa",
+      "decision": "style description only; preference unknown",
+      "quote": null,
+      "identity": "high; exact frozen name",
+      "sentiment": "neutral",
+      "preference": "unknown"
+    },
+    {
+      "surface_form": "Wiolka Walaszczyk",
+      "performer_id": "wiolka-walaszczyk",
+      "decision": "bare mention; preference unknown",
+      "quote": null,
+      "identity": "high; exact frozen name",
+      "sentiment": "neutral",
+      "preference": "unknown"
+    },
+    {
+      "surface_form": "Kasia Piasecka",
+      "performer_id": "katarzyna-piasecka",
+      "decision": "bare mention; preference unknown",
+      "quote": null,
+      "identity": "moderate-high (0.86); Kasia is not a frozen alias, tag alone not proof",
+      "sentiment": "neutral",
+      "preference": "unknown"
+    },
+    {
+      "surface_form": "Aleksandrę Petrus",
+      "performer_id": null,
+      "decision": "retain unresolved out-of-frozen-set mention; career/friend support is not performer preference",
+      "quote": null,
+      "identity": "unresolved; outside frozen100",
+      "sentiment": "positive",
+      "preference": "unknown"
+    }
+  ],
+  "class_decision": {
+    "evidence_class": "same_user_coendorsement",
+    "basis": "Five distinct frozen performers have explicit positive personal preferences by the same source author: Pacześ, Lotek, Jurkiewicz, Ruciński and Stramik."
+  },
+  "validation": {
+    "command": "python scripts/evidence_pipeline.py validate --kind evidence evidence/coverage-expansion/karol-kopiec.evidence.jsonl",
+    "status": "passed",
+    "records": 1
+  },
+  "skip_audit": [],
+  "checks": {
+    "candidate_accounted_exactly_once": true,
+    "source_excerpt_language_context_exact_copy": true,
+    "source_metadata_and_author_key_lineage": true,
+    "extractor_provenance_matches_run_manifest": true,
+    "source_and_extraction_sha256_recorded": true,
+    "all_non_null_performer_ids_frozen": true,
+    "all_surface_forms_verbatim": true,
+    "known_preference_quotes_verbatim": true,
+    "unknown_preferences_have_null_quotes": true,
+    "review_status_and_actual_reviewer_present": true,
+    "mention_count": 11
+  }
+}

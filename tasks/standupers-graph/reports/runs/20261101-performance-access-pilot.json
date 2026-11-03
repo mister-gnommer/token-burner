@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101-performance-access-pilot",
+  "stage": "source-access-feasibility-only",
+  "surprises": [
+    "Search exposed official full-show uploads for all three frozen performers, including a verified Mama Na Obrotach channel upload explicitly credited to Klaudia Klimczyk.",
+    "Public page retrieval and one Polish timed-caption endpoint attempt per video all failed at the web cache. No readable timed caption or transcript was obtained; the performer material therefore remains unreviewed."
+  ],
+  "scope": {
+    "performers": ["mama-na-obrotach", "magda-kubicka", "michal-leja"],
+    "fan_counts_changed": false,
+    "style_labels_links_or_scores_assigned": false,
+    "source_limit": 3,
+    "query_budget": 6,
+    "page_or_caption_retrieval_budget": 8,
+    "actual_queries": 4,
+    "actual_page_or_caption_retrieval_attempts": 6,
+    "local_cli_helpers": {"yt-dlp": "not found on PATH", "youtube-dl": "not found on PATH"},
+    "browser": "No T3 preview tabs touched; user reported shared preview full and forbade tab actions."
+  },
+  "attempts": [
+    {"n": 1, "kind": "search_query", "at": "2026-10-31T23:13:30Z (batch; observed run time)", "query": "site:youtube.com/@ \"Mama na obrotach\" stand up cały występ", "result": "official channel result for video 3NbLiG_HPEs"},
+    {"n": 2, "kind": "search_query", "at": "2026-10-31T23:13:30Z (batch; observed run time)", "query": "site:youtube.com/@ \"Magda Kubicka\" stand up cały występ", "result": "official artist channel result for video HMH9uAvw8Dw"},
+    {"n": 3, "kind": "search_query", "at": "2026-10-31T23:13:30Z (batch; observed run time)", "query": "site:youtube.com/@ \"Michał Leja\" stand-up cały program", "result": "verified official channel results for videos t82XUmxapzE and FHlUfE09bMw"},
+    {"n": 4, "kind": "search_query", "at": "2026-10-31T23:13:30Z (batch; observed run time)", "query": "site:youtube.com/@ \"Michał Leja\" stand-up cały program", "result": "separate targeted query returned two full-show results"},
+    {"n": 5, "kind": "page_retrieval", "url": "https://www.youtube.com/watch?v=3NbLiG_HPEs", "result": "failed: web cache miss"},
+    {"n": 6, "kind": "page_retrieval", "url": "https://www.youtube.com/watch?v=HMH9uAvw8Dw", "result": "failed: page fetch error"},
+    {"n": 7, "kind": "page_retrieval", "url": "https://www.youtube.com/watch?v=t82XUmxapzE", "result": "failed: page fetch error"},
+    {"n": 8, "kind": "caption_retrieval", "url": "https://www.youtube.com/api/timedtext?v=3NbLiG_HPEs&lang=pl", "result": "failed: web cache miss; no repeated URL variants"},
+    {"n": 9, "kind": "caption_retrieval", "url": "https://www.youtube.com/api/timedtext?v=HMH9uAvw8Dw&lang=pl", "result": "failed: web cache miss; no repeated URL variants"},
+    {"n": 10, "kind": "caption_retrieval", "url": "https://www.youtube.com/api/timedtext?v=t82XUmxapzE&lang=pl", "result": "failed: web cache miss; no repeated URL variants"}
+  ],
+  "results": [
+    {
+      "performer_id": "mama-na-obrotach",
+      "profile_url": "https://standup.pl/komicy/mama-na-obrotach",
+      "video_url": "https://www.youtube.com/watch?v=3NbLiG_HPEs",
+      "video_title": "Mama Na Obrotach STAND-UP | FULL SHOW 2025 | \"Then vs. Now\"",
+      "uploader": "Mama_na_ obrotach (verified; 417000 followers per search result)",
+      "performer_attribution": "Search result description credits stand-up to Mama Na Obrotach - Klaudia Klimczyk and lists Klaudia Klimczyk as producer; identity matches frozen profile.",
+      "performance_material": "Search result identifies entire stand-up show; published 2025-12-18; reported runtime approximately 1h 25m.",
+      "page_readable": false,
+      "timed_caption_or_transcript_readable": false,
+      "caption_language": null,
+      "auto_generated_status": "unknown",
+      "caption_time_coverage": null,
+      "access_status": "not verified; no performance transcript reviewed",
+      "limitation": "Video result metadata is not transcript access. No captions, timing, content, structure, or delivery traits verified."
+    },
+    {
+      "performer_id": "magda-kubicka",
+      "profile_url": "https://standup.pl/komicy/magda-kubicka",
+      "video_url": "https://www.youtube.com/watch?v=HMH9uAvw8Dw",
+      "video_title": "MAGDA KUBICKA - \"Każdy ma swoje Wejherowo\" | stand-up | (cały program) 2022",
+      "uploader": "Magda Kubicka (247000 followers per search result; not marked verified there)",
+      "performer_attribution": "Search result description uses first person, links her stand-up social accounts, and says the program was recorded 2022-02-20 at Klub Kwadrat; uploader name matches frozen profile.",
+      "performance_material": "Search result identifies entire stand-up program, published 2022-04-16.",
+      "page_readable": false,
+      "timed_caption_or_transcript_readable": false,
+      "caption_language": null,
+      "auto_generated_status": "unknown",
+      "caption_time_coverage": null,
+      "access_status": "not verified; no performance transcript reviewed",
+      "limitation": "Uploader attribution is supported by self-referential description and matching artist channel name, but channel verification badge was not shown in search metadata. No captions or performance content verified."
+    },
+    {
+      "performer_id": "michal-leja",
+      "profile_url": "https://standup.pl/komicy/michal-leja",
+      "video_url": "https://www.youtube.com/watch?v=t82XUmxapzE",
+      "video_title": "MICHAŁ LEJA - \"Anatomia\" | Stand-up | 2022",
+      "uploader": "Michał Leja (verified; 215000 followers per search result)",
+      "performer_attribution": "Search result description says the material was recorded at Hybrydy and played by the first-person uploader; uploader's official channel handle is listed in description, matching frozen profile.",
+      "performance_material": "Search result identifies stand-up show. Description lists chapter headings from 00:00 through 55:18, but these are promotional/page metadata, not read captions. Published 2022-02-20.",
+      "page_readable": false,
+      "timed_caption_or_transcript_readable": false,
+      "caption_language": null,
+      "auto_generated_status": "unknown",
+      "caption_time_coverage": null,
+      "access_status": "not verified; no performance transcript reviewed",
+      "limitation": "Chapter metadata does not count as captions. No performance text, structure, or delivery/audio traits verified."
+    }
+  ],
+  "conclusion": "0/3 performances have verified readable captions/transcripts through this bounded method. This is an access blocker, not evidence that recordings or captions do not exist. No performer style was inferred.",
+  "next_step": "Use a permitted public metadata/caption-capable retrieval path (for example an already-installed local tool or accessible official transcript interface) on these same official video URLs; keep the 0/3 status until actual timed caption text is readable. Do not retry blocked URL variants or use login, cookies, bypasses, downloads, paid APIs, or new credentials."
+}

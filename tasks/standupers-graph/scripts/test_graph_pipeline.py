@@ -4,12 +4,25 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from graph_pipeline import TASK_ROOT, aggregate, d2_source, load_evidence
+from graph_pipeline import TASK_ROOT, aggregate, d2_source, displayable, load_evidence
+from render_interactive import build_payload, supported_dispute
 
 FIXTURE_ROOT = TASK_ROOT / "fixtures/synthetic-graph"
 PERFORMERS = json.loads((FIXTURE_ROOT / "ranking.json").read_text())["performers"]
 RECORDS = [json.loads(line) for line in (FIXTURE_ROOT / "evidence.jsonl").read_text().splitlines()]
 UPDATED_AT = "2026-10-30T00:00:00Z"
+AVATAR = {"status": "placeholder", "path": "assets/lorem.svg"}
+EXPECTED_DISPUTED_COVERAGE = {"strict_linked_nodes": 2, "linked_nodes_including_disputed": 3, "disputed_links": 1}
+
+
+def opposed_records():
+    record = copy.deepcopy(next(r for r in RECORDS if {"ipsum", "dolor"} <= {m["performer_id"] for m in r["mentions"]}))
+    record.update(id="ev_synthetic_display_opposition", evidence_class="fan_comparison")
+    record["source"]["author_key"] = "fan_0000000000000abc"
+    record["mentions"] = [m for m in record["mentions"] if m["performer_id"] in {"ipsum", "dolor"}]
+    for mention in record["mentions"]:
+        mention["sentiment"] = "negative" if mention["performer_id"] == "dolor" else "positive"
+    return RECORDS + [record]
 
 
 def rejects_load(paths, root, synthetic):
@@ -46,6 +59,33 @@ class GraphTests(unittest.TestCase):
         relations, _, _ = aggregate(PERFORMERS, RECORDS[:2] + [opposing], UPDATED_AT)
         assert relations[0]["status"] == "uncertain"
         assert relations[0]["contradictory_evidence_ids"] == ["ev_synthetic_opposed"]
+
+    def test_supported_disputes_keep_strict_coverage_and_require_distinct_fans(self):
+        records = opposed_records()
+        relations, _, coverage = aggregate(PERFORMERS, records, UPDATED_AT)
+        graph = {"updated_at": UPDATED_AT, "scorer_version": "synthetic", "relations": relations,
+                 "nodes": [{**p, "observed_fans": coverage[p["id"]], "avatar": AVATAR} for p in PERFORMERS]}
+        payload = build_payload(graph, {"performers": PERFORMERS}, records)
+        assert payload["coverage"] == EXPECTED_DISPUTED_COVERAGE
+        disputed = next(r for r in relations if set(r["pair"]) == {"ipsum", "dolor"})
+        assert disputed["status"] == "uncertain"
+        assert not displayable(disputed) and displayable(disputed, include_disputed=True)
+        assert next(r for r in payload["relations"] if r["supported_dispute"])["opposing"][0]["id"] == records[-1]["id"]
+        repeated_fan = {**disputed, "independent_fan_count": 1}
+        assert not supported_dispute(repeated_fan)
+        assert not displayable(repeated_fan, include_disputed=True)
+        assert not supported_dispute({**disputed, "support_evidence_ids": []})
+
+    def test_supported_dispute_is_not_hidden_by_a_saturated_neighbor(self):
+        records = opposed_records()
+        relations, _, coverage = aggregate(PERFORMERS, records, UPDATED_AT)
+        graph = {"synthetic": True, "relations": relations,
+                 "nodes": [{**p, "observed_fans": coverage[p["id"]]} for p in PERFORMERS],
+                 "evidence_sources": {r["id"]: r["source"]["url"] for r in records}}
+        source = d2_source(graph, max_degree=1)
+        assert source.count(" -- ") == 2
+        assert "DISPUTED (1 opposing)" in source and "Opposing sources:" in source
+        assert 'style.stroke: "#c2410c"' in source
 
     def test_neutral_mentions_and_comparisons_never_create_support(self):
         for sentiment, evidence_class in [("neutral", "same_user_coendorsement"), ("positive", "fan_comparison")]:

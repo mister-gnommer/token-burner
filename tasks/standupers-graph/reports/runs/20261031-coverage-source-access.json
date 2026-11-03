@@ -1,0 +1,15 @@
+{
+  "shared_browser": "Too many server browser tabs are open. Close one with t3_preview_close, or reuse a tabId from preview_status tabs.",
+  "parent_preview_tabs": [],
+  "public_http_probe": "DNSfailedinsandbox; outside-sandboxSawczukfetch403Forbidden",
+  "web_full_urls": "plcachemiss,uknotaccessible",
+  "no_source_verified": true,
+  "no_other_tabs_touched": true,
+  "no_challenge_bypass": true,
+  "charged_sawczuk_opens": 3,
+  "charged_pieta_opens": 1,
+  "sawczuk_remaining_queries": 19,
+  "sawczuk_remaining_opens": 19,
+  "pieta_remaining_opens": 1,
+  "timestamp": "2026-10-31T22:42:37.194313Z"
+}

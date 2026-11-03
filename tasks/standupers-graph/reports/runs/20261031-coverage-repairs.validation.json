@@ -1,0 +1,24 @@
+{
+  "tests_passed": 22,
+  "strict_loader_records": 69,
+  "graph_recomputed": true,
+  "positive_linked_nodes": 36,
+  "largest_component": 26,
+  "positive_component_sizes": [
+    26,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "relations": 64,
+  "corroborated": 10,
+  "provisional": 34,
+  "contested_or_opposing_only": 20,
+  "drawn_links": 29,
+  "solid": 10,
+  "dashed": 19,
+  "photos": 100,
+  "all_performers_completed": true
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101-coverage-tomasz-machnicki",
+  "verification_prompt": "verify-evidence-v3",
+  "reviewer": "codex/gpt-6-luna",
+  "status": "complete",
+  "Surprises": [
+    "Candidate 002 is a defensible fan recommendation of the Litości show and trio members’ solo shows; saved exact-event context grounds collective “chłopaków” to the three named performers, while it does not establish individual preferences.",
+    "Candidate 003 is displayed on a 2025 event page but its review widget is cross-event; its actual event and date remain unknown and context correctly stays empty."
+  ],
+  "counts": {
+    "candidates": 3,
+    "accepted": 3,
+    "uncertain": 0,
+    "rejected": 0,
+    "skips": 0,
+    "coverage": 3
+  },
+  "records": [
+    {
+      "candidate_id": "src_cov_tmach_001",
+      "evidence_id": "ev_cov_tmach_001",
+      "status": "accepted",
+      "issues": [],
+      "corrections": [],
+      "adjudication": "Retain Wolski’s explicit named positive appraisal and preference quote. “Polecam wszystkich Panów” remains a show-level recommendation and does not resolve other identities from candidate target IDs or the category heading; the Mielec event listing is search-only."
+    },
+    {
+      "candidate_id": "src_cov_tmach_002",
+      "evidence_id": "ev_cov_tmach_002",
+      "status": "accepted",
+      "issues": [],
+      "corrections": [],
+      "adjudication": "Correction required by initial report is resolved. Full saved event page attempt 13 identifies the 2025-09-26 Warszawa event and names Machnicki, Wolski, and Kasparek as Litości performers (raw page lines 24–25, 66–68). “polecam się wybrać na Litości i solówki chłopaków” explicitly recommends the program and trio solo shows. This grounds the collective mention and justifies one fan_recommendation record with positive recommendation sentiment; “świetny występ” and general event praise are not person-specific. Each personal preference remains unknown, with null quote."
+    },
+    {
+      "candidate_id": "src_cov_tmach_003",
+      "evidence_id": "ev_cov_tmach_003",
+      "status": "accepted",
+      "issues": [],
+      "corrections": [],
+      "adjudication": "Preserves neutral/unknown Wolski and mixed/unknown Machnicki. Overall amusement and “Polecam” endorse the experience, not each person; scoped criticism does not establish general dislike. The cross-event widget leaves date/event context unknown; surname resolution in this page context creates no global alias."
+    }
+  ],
+  "alias_risks": [
+    "No global aliases inferred for surname mentions in candidate 003.",
+    "The collective phrase “chłopaków” in candidate 002 resolves only within the saved event context; it is not an alias."
+  ],
+  "coverage_gaps": [
+    "No source establishes an individual preference for Machnicki or Kasparek in this run.",
+    "Candidate 001 Mielec lineup is search-only; non-Wolski performers were not attributed.",
+    "Candidate 003 actual review event/date is unknown."
+  ],
+  "integrity": {
+    "source_file": "evidence/coverage-expansion/tomasz-machnicki.source-candidates.canonical.jsonl",
+    "unreviewed_file": "evidence/coverage-expansion/tomasz-machnicki.evidence.unreviewed.jsonl",
+    "reviewed_file": "evidence/coverage-expansion/tomasz-machnicki.evidence.jsonl",
+    "initial_verification_preserved": "reports/runs/20261101-coverage-tomasz-machnicki.verification.json",
+    "source_passage": "reports/runs/20261101-coverage-tomasz-machnicki.collection.json attempts[13]",
+    "source_parity": "all 3 records match source URL, retrieval timestamp, published_at, author_key, excerpt, language, and context; author keys remain source-local hashes",
+    "extraction_lineage": "provider codex, model gpt-6-luna, prompt extract-evidence-v3, run_id 20261101-coverage-tomasz-machnicki preserved",
+    "previously_accepted_records": "ev_cov_tmach_001 and ev_cov_tmach_003 preserved byte-for-byte",
+    "validation": "python3 scripts/evidence_pipeline.py validate --kind evidence evidence/coverage-expansion/tomasz-machnicki.evidence.jsonl"
+  },
+  "limitations": [
+    "Review is confined to saved source material; no new collection or web calls.",
+    "Confidence values are extractor judgments, not calibrated probabilities.",
+    "No graph relation or evidence beyond these three candidates is claimed."
+  ]
+}

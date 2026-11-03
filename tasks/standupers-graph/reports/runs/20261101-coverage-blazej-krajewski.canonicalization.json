@@ -1,0 +1,26 @@
+{
+  "run_id": "20261101-coverage-blazej-krajewski",
+  "raw": "evidence/coverage-expansion/blazej-krajewski.source-candidates.jsonl",
+  "canonical": "evidence/coverage-expansion/blazej-krajewski.source-candidates.canonical.jsonl",
+  "source_count": 2,
+  "duplicates": 0,
+  "changes": [
+    {
+      "candidate_id": "src_cov_bkrajewski_001",
+      "author_key": "fan_cf6dbb0218d4178f",
+      "change": "Derived source-local author key; all other fields unchanged."
+    },
+    {
+      "candidate_id": "src_cov_bkrajewski_002",
+      "author_key": "fan_e5797d98344a2b8a",
+      "change": "Derived source-local author key; all other fields unchanged."
+    }
+  ],
+  "old_repair_excluded": "src_b05b_003",
+  "checks": [
+    "source-candidate-v2 schema",
+    "frozen IDs",
+    "duplicate author/post/excerpt against current graph inputs"
+  ],
+  "created_at": "2026-11-01T10:43:12Z"
+}

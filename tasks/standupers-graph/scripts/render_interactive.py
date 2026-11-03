@@ -26,6 +26,11 @@ def edge_kind(relation):
     return "accepted" if relation["status"] == "accepted" else "provisional"
 
 
+def supported_dispute(relation):
+    return bool(relation["contradictory_evidence_ids"] and relation["support_evidence_ids"]
+                and relation["independent_fan_count"] >= 2)
+
+
 def avatar_data_uri(path):
     if path.suffix == ".svg":
         return "data:image/svg+xml;base64," + base64.b64encode(path.read_bytes()).decode()
@@ -53,6 +58,7 @@ def evidence_view(record, pair):
         "class": record["evidence_class"].replace("_", " "),
         "site": record["source"]["site"],
         "url": record["source"]["url"],
+        "published_at": record["source"].get("published_at"),
         "excerpt": record["excerpt"],
         "sentiments": sentiments,
     }
@@ -68,6 +74,7 @@ def build_payload(graph, ranking, evidence_records):
             "source": pair[0],
             "target": pair[1],
             "kind": edge_kind(relation),
+            "supported_dispute": supported_dispute(relation),
             "score": relation["score"],
             "confidence": relation["confidence"],
             "fans": relation["independent_fan_count"],
@@ -88,7 +95,12 @@ def build_payload(graph, ranking, evidence_records):
             "photo": node["avatar"]["status"] == "photo",
             "avatar": node["avatar"]["path"],
         })
-    return {"updated_at": graph["updated_at"], "scorer": graph["scorer_version"], "nodes": nodes, "relations": relations}
+    strict_nodes = {pid for r in relations if r["kind"] != "contested" for pid in [r["source"], r["target"]]}
+    displayed_nodes = strict_nodes | {pid for r in relations if r["supported_dispute"] for pid in [r["source"], r["target"]]}
+    coverage = {"strict_linked_nodes": len(strict_nodes), "linked_nodes_including_disputed": len(displayed_nodes),
+                "disputed_links": sum(r["supported_dispute"] for r in relations)}
+    return {"updated_at": graph["updated_at"], "scorer": graph["scorer_version"], "nodes": nodes, "relations": relations,
+            "coverage": coverage}
 
 
 def embed_avatars(payload, graph_dir):

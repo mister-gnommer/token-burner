@@ -1,0 +1,21 @@
+{
+  "run_id": "20261101-coverage-thread-harvest-02",
+  "counts": {
+    "source_candidates": 4,
+    "extracted": 3,
+    "accepted": 3,
+    "uncertain": 0,
+    "rejected": 0
+  },
+  "canonical_candidates": 4,
+  "retained_skip": "src_cth02a_002",
+  "new_independent_review_count": 1,
+  "retained_previously_reviewed_count": 2,
+  "identity_review": "reports/runs/20261101-radomska-identity.verification.json",
+  "original_full_review": "reports/runs/20261101-coverage-thread-harvest-02.verification.json",
+  "changed_record": "ev_cth02a_003",
+  "all_non_target_mentions_and_source_fields_unchanged": true,
+  "new_fans_or_sources": 0,
+  "integration_constraint": "Full replacement only; original run excluded.",
+  "updated_at": "2026-11-01T12:44:48Z"
+}

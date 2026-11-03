@@ -1,0 +1,1231 @@
+{
+  "schema_version": 1,
+  "integration": "20261101-coverage-fan-continuations",
+  "status": "validated",
+  "surprises": [
+    "Actual mention rows are A003 4 (3 mapped), A005 2 (2 mapped), B001 4 (3 mapped); six visible list entries do not create six mentions. Four duplicate raw A posts were excluded before extraction, not added sources or skips.",
+    "A003 remains fan_comparison with unknown personal preferences; its fan-authored style description is not performance-verified fallback evidence.",
+    "B001 is a historical favorite reply; only its three mapped frozen identities may score.",
+    "Collector reservation write failed before its first open; the attempted open was counted afterward and stayed within cap."
+  ],
+  "input_manifests": [
+    "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch01-corroboration.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch02.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch03.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch04.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch05.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch06.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch07.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch09.context-reviewed.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch10.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch06-catchup.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-magda-kubicka.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-olka-szczesniak.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-karol-modzelewski.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-wojtek-pieta.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-wojciech-kaminski.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-source-first-01.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-source-first-01-followup.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-fan-forums-b-followup.json"
+  ],
+  "input_manifest_count": 20,
+  "replacement_manifests_preserved": [
+    "20261031-batch01-calibrated.identity-reviewed.json",
+    "20261031-batch09.context-reviewed.json"
+  ],
+  "original_manifests_excluded": [
+    "20261031-batch01.json",
+    "20261031-batch09.json"
+  ],
+  "new_runs": [
+    {
+      "run_id": "20261031-coverage-source-first-01-followup",
+      "status": "completed",
+      "counts": {
+        "source_candidates": 2,
+        "extracted": 2,
+        "accepted": 2,
+        "uncertain": 0,
+        "rejected": 0,
+        "skipped": 0,
+        "pre_extraction_duplicate_exclusions": 4
+      }
+    },
+    {
+      "run_id": "20261031-coverage-fan-forums-b-followup",
+      "status": "completed",
+      "counts": {
+        "source_candidates": 1,
+        "extracted": 1,
+        "accepted": 1,
+        "uncertain": 0,
+        "rejected": 0,
+        "skipped": 0
+      }
+    }
+  ],
+  "extraction_accounting": {
+    "canonical_inputs": 3,
+    "extracted": 3,
+    "skipped": 0,
+    "accepted": 3,
+    "records": [
+      {
+        "id": "ev_csf01f_003",
+        "run_id": "20261031-coverage-source-first-01-followup",
+        "evidence_class": "fan_comparison",
+        "mention_count": 4,
+        "mapped_mention_count": 3,
+        "positive_preference_count": 0,
+        "unknown_preference_count": 4,
+        "mentions": [
+          {
+            "surface_form": "Leja",
+            "performer_id": "michal-leja",
+            "preference": "unknown",
+            "preference_quote": null
+          },
+          {
+            "surface_form": "Borkowski",
+            "performer_id": null,
+            "preference": "unknown",
+            "preference_quote": null
+          },
+          {
+            "surface_form": "Szumowski",
+            "performer_id": "piotrek-szumowski",
+            "preference": "unknown",
+            "preference_quote": null
+          },
+          {
+            "surface_form": "Lotek",
+            "performer_id": "lukasz-lotek-lodkowski",
+            "preference": "unknown",
+            "preference_quote": null
+          }
+        ]
+      },
+      {
+        "id": "ev_csf01f_005",
+        "run_id": "20261031-coverage-source-first-01-followup",
+        "evidence_class": "same_user_coendorsement",
+        "mention_count": 2,
+        "mapped_mention_count": 2,
+        "positive_preference_count": 2,
+        "unknown_preference_count": 0,
+        "mentions": [
+          {
+            "surface_form": "Kasie Piasecka",
+            "performer_id": "katarzyna-piasecka",
+            "preference": "positive",
+            "preference_quote": "Ja lubię Kasie Piasecka i Grzegorza Dolniaka"
+          },
+          {
+            "surface_form": "Grzegorza Dolniaka",
+            "performer_id": "grzegorz-dolniak",
+            "preference": "positive",
+            "preference_quote": "Ja lubię Kasie Piasecka i Grzegorza Dolniaka"
+          }
+        ]
+      },
+      {
+        "id": "ev_cffb_001",
+        "run_id": "20261031-coverage-fan-forums-b-followup",
+        "evidence_class": "same_user_coendorsement",
+        "mention_count": 4,
+        "mapped_mention_count": 3,
+        "positive_preference_count": 4,
+        "unknown_preference_count": 0,
+        "mentions": [
+          {
+            "surface_form": "Krzysztof Piasecki",
+            "performer_id": null,
+            "preference": "positive",
+            "preference_quote": "Stand up:\n1. Krzysztof Piasecki\n2. Abelard Giza\n3. Kacper Ruciński\n4. Cezary Pazura\n5. Jachim Presents\n6. Maciej Stuhr"
+          },
+          {
+            "surface_form": "Abelard Giza",
+            "performer_id": "abelard-giza",
+            "preference": "positive",
+            "preference_quote": "Stand up:\n1. Krzysztof Piasecki\n2. Abelard Giza\n3. Kacper Ruciński\n4. Cezary Pazura\n5. Jachim Presents\n6. Maciej Stuhr"
+          },
+          {
+            "surface_form": "Kacper Ruciński",
+            "performer_id": "kacper-rucinski",
+            "preference": "positive",
+            "preference_quote": "Stand up:\n1. Krzysztof Piasecki\n2. Abelard Giza\n3. Kacper Ruciński\n4. Cezary Pazura\n5. Jachim Presents\n6. Maciej Stuhr"
+          },
+          {
+            "surface_form": "Cezary Pazura",
+            "performer_id": "cezary-pazura",
+            "preference": "positive",
+            "preference_quote": "Stand up:\n1. Krzysztof Piasecki\n2. Abelard Giza\n3. Kacper Ruciński\n4. Cezary Pazura\n5. Jachim Presents\n6. Maciej Stuhr"
+          }
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "source_candidate_schema": "passed (3)",
+    "evidence_v3_schema": "passed (3)",
+    "run_manifest_schema": "passed (2)",
+    "author_hashes": "passed for source and context author keys",
+    "source_evidence_lineage": "passed for candidate/run/source/excerpt/language/context",
+    "literal_surfaces_and_preference_quotes": "passed",
+    "extractor_provenance_and_accepted_reviewer": "passed through strict graph loader",
+    "manifest_counts": "passed",
+    "strict_reload_aggregate_reproduction": "passed; relations and deferred records exactly reproduced (relation timestamps ignored)",
+    "duplicate_run_or_post_check": "passed",
+    "cached_assets": {
+      "copied_photo_assets": 100,
+      "network_fetches": 0
+    },
+    "render": [
+      "graph.d2, graph.svg and interactive.html written",
+      "graph.png rendered from saved SVG at width 4000 after 2x pipeline rasterization stalled at 23054x6912",
+      "small SVG thumbnail visually inspected"
+    ]
+  },
+  "aggregate_comparison": {
+    "baseline": {
+      "displayable_relations": 52,
+      "positive_linked_performers": 41,
+      "displayable_degree_total": 104,
+      "displayable_degree_histogram": {
+        "1": 17,
+        "2": 9,
+        "3": 5,
+        "4": 3,
+        "5": 4,
+        "7": 2,
+        "8": 1
+      },
+      "corroborated_relations": 11,
+      "corroborated_linked_performers": 12,
+      "corroborated_degree_total": 22,
+      "largest_component": 31,
+      "component_sizes": [
+        31,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    "current": {
+      "displayable_relations": 54,
+      "positive_linked_performers": 43,
+      "displayable_degree_total": 108,
+      "displayable_degree_histogram": {
+        "1": 18,
+        "2": 10,
+        "3": 5,
+        "4": 2,
+        "5": 5,
+        "7": 2,
+        "8": 1
+      },
+      "corroborated_relations": 12,
+      "corroborated_linked_performers": 13,
+      "corroborated_degree_total": 24,
+      "largest_component": 31,
+      "component_sizes": [
+        31,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    "delta": {
+      "positive_linked_performers": 2,
+      "corroborated_linked_performers": 1,
+      "largest_component": 0
+    }
+  },
+  "newly_linked_performers": [
+    {
+      "id": "grzegorz-dolniak",
+      "name": "Grzegorz Dolniak",
+      "displayable_degree": 1
+    },
+    {
+      "id": "katarzyna-piasecka",
+      "name": "Katarzyna Piasecka",
+      "displayable_degree": 1
+    }
+  ],
+  "new_relations": [
+    {
+      "id": "rel_cezary-pazura__kacper-rucinski",
+      "pair": [
+        "Cezary Pazura",
+        "Kacper Ruciński"
+      ],
+      "status": "uncertain",
+      "fans": 1,
+      "contradictory_evidence_ids": []
+    },
+    {
+      "id": "rel_grzegorz-dolniak__katarzyna-piasecka",
+      "pair": [
+        "Grzegorz Dolniak",
+        "Katarzyna Piasecka"
+      ],
+      "status": "uncertain",
+      "fans": 1,
+      "contradictory_evidence_ids": []
+    }
+  ],
+  "changed_existing_fan_counts_or_statuses": [
+    {
+      "id": "rel_abelard-giza__cezary-pazura",
+      "pair": [
+        "Abelard Giza",
+        "Cezary Pazura"
+      ],
+      "before": {
+        "status": "uncertain",
+        "fans": 1
+      },
+      "after": {
+        "status": "accepted",
+        "fans": 2
+      }
+    },
+    {
+      "id": "rel_abelard-giza__kacper-rucinski",
+      "pair": [
+        "Abelard Giza",
+        "Kacper Ruciński"
+      ],
+      "before": {
+        "status": "accepted",
+        "fans": 2
+      },
+      "after": {
+        "status": "accepted",
+        "fans": 3
+      }
+    }
+  ],
+  "one_fan_displayable_links": [
+    {
+      "pair": [
+        "Abelard Giza",
+        "Antoni Syrek-Dąbrowski"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b01c_003"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Abelard Giza",
+        "Cezary Jurkiewicz"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_s06_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Abelard Giza",
+        "Piotr Zola Szulowski"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_s06_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Adam Sobaniec",
+        "Michał Kutek"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b04_c_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Adam Van Bendler",
+        "Łukasz Lotek Lodkowski"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_csf01a_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Adam Van Bendler",
+        "Rafał Pacześ"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_csf01a_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Adam Van Bendler",
+        "Rafał Rutkowski"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_csf01a_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Antoni Syrek-Dąbrowski",
+        "Kacper Ruciński"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b01c_003"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Bartosz Zalewski",
+        "Cezary Ponttefski"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b04_b_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Bartosz Zalewski",
+        "Jasiek Borkowski"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b07_c_002"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Bartosz Zalewski",
+        "Kuba Wu"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b08_a_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Bartosz Zalewski",
+        "Piotrek Szumowski"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b04_b_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Cezary Jurkiewicz",
+        "Daniel Midas"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b01b_004"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Cezary Jurkiewicz",
+        "Karolina Pańczyk"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b06_a_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Cezary Jurkiewicz",
+        "Łukasz Lotek Lodkowski"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b01b_004"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Cezary Jurkiewicz",
+        "Piotr Zola Szulowski"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_s06_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Cezary Pazura",
+        "Kacper Ruciński"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_cffb_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Cezary Ponttefski",
+        "Łukasz Kowalski"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b02a_002"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Cezary Ponttefski",
+        "Piotrek Szumowski"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b04_b_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Czarek Sikora",
+        "Kacper Ruciński"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b06catch_a_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Czarek Sikora",
+        "Wojciech Termos Tremiszewski"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b06catch_a_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Daniel Midas",
+        "Łukasz Lotek Lodkowski"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b01b_004"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Daniel Midas",
+        "Mateusz Socha"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b01b_004"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Darek Gadowski",
+        "Jacek Stramik"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b08_a_003"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Darek Gadowski",
+        "Jasiek Borkowski"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b08_a_002"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Grzegorz Dolniak",
+        "Katarzyna Piasecka"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_csf01f_005"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Jacek Stramik",
+        "Rafał Pacześ"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b09_c_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Jakub Poczęty",
+        "Michał Pałubski"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b07_c_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Kacper Ruciński",
+        "Wojciech Termos Tremiszewski"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b06catch_a_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Karol Modzelewski",
+        "Olka Szczęśniak"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b01c_002"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Kuba Wu",
+        "Piotrek Szumowski"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b05_a_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Łukasz Lotek Lodkowski",
+        "Mateusz Socha"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b01b_004"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Łukasz Lotek Lodkowski",
+        "Rafał Rutkowski"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_csf01a_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Marlena Mysza",
+        "Piotrek Szumowski"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b05_c_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Mateusz Socha",
+        "Piotr Zola Szulowski"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_s06_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Michał Leja",
+        "Olka Szczęśniak"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_cov_oszczesniak_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Mieszko Minkiewicz",
+        "Rafał Pacześ"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b03_c_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Mieszko Minkiewicz",
+        "Wiolka Walaszczyk"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b05_b_002"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Piotr Zola Szulowski",
+        "Rafał Pacześ"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_s06_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Radek Drożdż",
+        "Wojciech Kamiński"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b09_a_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Rafał Pacześ",
+        "Rafał Rutkowski"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_csf01a_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Tomasz Biskup",
+        "Tomek Nowaczyk"
+      ],
+      "fans": 1,
+      "status": "uncertain",
+      "support_evidence_ids": [
+        "ev_b10_a_001"
+      ],
+      "contested": false
+    }
+  ],
+  "corroborated_links": [
+    {
+      "pair": [
+        "Abelard Giza",
+        "Cezary Pazura"
+      ],
+      "fans": 2,
+      "status": "accepted",
+      "support_evidence_ids": [
+        "ev_b01c_001",
+        "ev_cffb_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Abelard Giza",
+        "Janusz Pietruszka"
+      ],
+      "fans": 7,
+      "status": "accepted",
+      "support_evidence_ids": [
+        "ev_b08_a_010",
+        "ev_b08_a_011",
+        "ev_b08_a_013",
+        "ev_b08_a_014",
+        "ev_b08_a_015",
+        "ev_b08_a_018",
+        "ev_b08_a_019"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Abelard Giza",
+        "Kacper Ruciński"
+      ],
+      "fans": 3,
+      "status": "accepted",
+      "support_evidence_ids": [
+        "ev_b01c_003",
+        "ev_b03_a_002",
+        "ev_cffb_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Abelard Giza",
+        "Mateusz Socha"
+      ],
+      "fans": 2,
+      "status": "accepted",
+      "support_evidence_ids": [
+        "ev_b01b_003",
+        "ev_s06_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Antoni Syrek-Dąbrowski",
+        "Cezary Jurkiewicz"
+      ],
+      "fans": 2,
+      "status": "accepted",
+      "support_evidence_ids": [
+        "ev_b05_c_002",
+        "ev_b05_c_003"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Antoni Syrek-Dąbrowski",
+        "Michał Leja"
+      ],
+      "fans": 2,
+      "status": "accepted",
+      "support_evidence_ids": [
+        "ev_b01b_001",
+        "ev_b02a_003"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Antoni Syrek-Dąbrowski",
+        "Piotrek Szumowski"
+      ],
+      "fans": 4,
+      "status": "accepted",
+      "support_evidence_ids": [
+        "ev_b01b_001",
+        "ev_b02a_003",
+        "ev_b05_c_002",
+        "ev_b05_c_003"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Cezary Jurkiewicz",
+        "Mateusz Socha"
+      ],
+      "fans": 2,
+      "status": "accepted",
+      "support_evidence_ids": [
+        "ev_b01b_004",
+        "ev_s06_001"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Cezary Jurkiewicz",
+        "Piotrek Szumowski"
+      ],
+      "fans": 2,
+      "status": "accepted",
+      "support_evidence_ids": [
+        "ev_b05_c_002",
+        "ev_b05_c_003"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Karol Modzelewski",
+        "Marcin Chmiel"
+      ],
+      "fans": 5,
+      "status": "accepted",
+      "support_evidence_ids": [
+        "ev_cov_kmodzelewski_001",
+        "ev_cov_kmodzelewski_002",
+        "ev_cov_kmodzelewski_004",
+        "ev_cov_kmodzelewski_006",
+        "ev_cov_kmodzelewski_009"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Maciej Brudzewski",
+        "Paweł Bakteria"
+      ],
+      "fans": 2,
+      "status": "accepted",
+      "support_evidence_ids": [
+        "ev_b06catch_b_001",
+        "ev_b06catch_b_002"
+      ],
+      "contested": false
+    },
+    {
+      "pair": [
+        "Michał Leja",
+        "Piotrek Szumowski"
+      ],
+      "fans": 2,
+      "status": "accepted",
+      "support_evidence_ids": [
+        "ev_b01b_001",
+        "ev_b02a_003"
+      ],
+      "contested": false
+    }
+  ],
+  "contested_relations": [
+    {
+      "pair": [
+        "Abelard Giza",
+        "Łukasz Lotek Lodkowski"
+      ],
+      "status": "uncertain",
+      "fans": 0,
+      "contradictory_evidence_ids": [
+        "ev_b03_a_001"
+      ]
+    },
+    {
+      "pair": [
+        "Abelard Giza",
+        "Rafał Pacześ"
+      ],
+      "status": "uncertain",
+      "fans": 2,
+      "contradictory_evidence_ids": [
+        "ev_b03_a_001"
+      ]
+    },
+    {
+      "pair": [
+        "Adam Gajda",
+        "Paweł Chałupka"
+      ],
+      "status": "uncertain",
+      "fans": 1,
+      "contradictory_evidence_ids": [
+        "ev_b09_a_003"
+      ]
+    },
+    {
+      "pair": [
+        "Antoni Syrek-Dąbrowski",
+        "Michał Kempa"
+      ],
+      "status": "uncertain",
+      "fans": 0,
+      "contradictory_evidence_ids": [
+        "ev_b05_c_003"
+      ]
+    },
+    {
+      "pair": [
+        "Antoni Syrek-Dąbrowski",
+        "Rafał Pacześ"
+      ],
+      "status": "uncertain",
+      "fans": 0,
+      "contradictory_evidence_ids": [
+        "ev_b01b_001"
+      ]
+    },
+    {
+      "pair": [
+        "Cezary Jurkiewicz",
+        "Michał Kempa"
+      ],
+      "status": "uncertain",
+      "fans": 0,
+      "contradictory_evidence_ids": [
+        "ev_b05_c_003"
+      ]
+    },
+    {
+      "pair": [
+        "Cezary Jurkiewicz",
+        "Rafał Pacześ"
+      ],
+      "status": "uncertain",
+      "fans": 1,
+      "contradictory_evidence_ids": [
+        "ev_b01b_004"
+      ]
+    },
+    {
+      "pair": [
+        "Daniel Midas",
+        "Rafał Pacześ"
+      ],
+      "status": "uncertain",
+      "fans": 0,
+      "contradictory_evidence_ids": [
+        "ev_b01b_004"
+      ]
+    },
+    {
+      "pair": [
+        "Darek Gadowski",
+        "Mateusz Socha"
+      ],
+      "status": "uncertain",
+      "fans": 0,
+      "contradictory_evidence_ids": [
+        "ev_b08_a_004"
+      ]
+    },
+    {
+      "pair": [
+        "Darek Gadowski",
+        "Piotr Zola Szulowski"
+      ],
+      "status": "uncertain",
+      "fans": 0,
+      "contradictory_evidence_ids": [
+        "ev_b08_a_004"
+      ]
+    },
+    {
+      "pair": [
+        "Jasiek Borkowski",
+        "Paweł Chałupka"
+      ],
+      "status": "uncertain",
+      "fans": 0,
+      "contradictory_evidence_ids": [
+        "ev_b09_a_003"
+      ]
+    },
+    {
+      "pair": [
+        "Kacper Ruciński",
+        "Łukasz Lotek Lodkowski"
+      ],
+      "status": "uncertain",
+      "fans": 0,
+      "contradictory_evidence_ids": [
+        "ev_b03_a_001"
+      ]
+    },
+    {
+      "pair": [
+        "Kacper Ruciński",
+        "Rafał Pacześ"
+      ],
+      "status": "uncertain",
+      "fans": 0,
+      "contradictory_evidence_ids": [
+        "ev_b03_a_001"
+      ]
+    },
+    {
+      "pair": [
+        "Karol Modzelewski",
+        "Rafał Banaś"
+      ],
+      "status": "uncertain",
+      "fans": 1,
+      "contradictory_evidence_ids": [
+        "ev_b08_a_007"
+      ]
+    },
+    {
+      "pair": [
+        "Łukasz Lotek Lodkowski",
+        "Rafał Pacześ"
+      ],
+      "status": "uncertain",
+      "fans": 2,
+      "contradictory_evidence_ids": [
+        "ev_b01b_004"
+      ]
+    },
+    {
+      "pair": [
+        "Mateusz Socha",
+        "Rafał Pacześ"
+      ],
+      "status": "uncertain",
+      "fans": 2,
+      "contradictory_evidence_ids": [
+        "ev_b01b_004"
+      ]
+    },
+    {
+      "pair": [
+        "Mateusz Socha",
+        "Wiolka Walaszczyk"
+      ],
+      "status": "uncertain",
+      "fans": 0,
+      "contradictory_evidence_ids": [
+        "ev_b01b_002"
+      ]
+    },
+    {
+      "pair": [
+        "Michał Kempa",
+        "Piotrek Szumowski"
+      ],
+      "status": "uncertain",
+      "fans": 0,
+      "contradictory_evidence_ids": [
+        "ev_b05_c_003"
+      ]
+    },
+    {
+      "pair": [
+        "Michał Leja",
+        "Rafał Pacześ"
+      ],
+      "status": "uncertain",
+      "fans": 0,
+      "contradictory_evidence_ids": [
+        "ev_b01b_001"
+      ]
+    },
+    {
+      "pair": [
+        "Piotrek Szumowski",
+        "Rafał Pacześ"
+      ],
+      "status": "uncertain",
+      "fans": 0,
+      "contradictory_evidence_ids": [
+        "ev_b01b_001"
+      ]
+    }
+  ],
+  "deferred_new_evidence": [
+    {
+      "id": "ev_cffb_001",
+      "performer_id": null,
+      "reason": "mention identity, preference or confidence unresolved"
+    },
+    {
+      "id": "ev_csf01f_003",
+      "performer_id": null,
+      "reason": "mention identity, preference or confidence unresolved"
+    }
+  ],
+  "limitations": [
+    "A003 and A005 are separate Reddit and Gazeta authors; B001 is one historical Filmweb author. Source-local hashes do not prove cross-platform identity.",
+    "B001 is 2012 evidence, not current fandom.",
+    "Unknown preferences remain unknown. One-fan links remain provisional; no gain is predicted or inferred beyond computed graph metrics."
+  ]
+}

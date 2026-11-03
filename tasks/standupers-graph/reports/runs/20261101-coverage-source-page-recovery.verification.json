@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101-coverage-source-page-recovery",
+  "stage": "verification",
+  "provider": "codex",
+  "model": "gpt-6-luna",
+  "prompt_version": "verify-evidence-v3",
+  "input_path": "evidence/coverage-source-page-recovery/evidence.unreviewed.jsonl",
+  "output_path": "evidence/coverage-source-page-recovery/evidence.jsonl",
+  "counts": {
+    "canonical_candidates": 4,
+    "reviewed_records": 4,
+    "accepted": 4,
+    "uncertain": 0,
+    "rejected": 0,
+    "skipped": 0
+  },
+  "surprises": [
+    "Paczus remains unresolved after contextual review: the anecdote and ranking/capacity remark do not establish a canonical identity or personal preference. Lotek’s clear first-person laughter and repeated viewing remain positive evidence.",
+    "Candidate 004 is supported by the verified full Reddit thread at locator j3bnf41 despite the direct permalink cache miss; the source retrieval timestamp is only a documented post-read upper bound."
+  ],
+  "records": [
+    {
+      "candidate_id": "src_cspr_001",
+      "evidence_id": "ev_cspr_001",
+      "status": "accepted",
+      "changes": [
+        "review status/reviewer set",
+        "notes confirm positive Pacześ and Giza appraisals plus explicit negative Ruciński; opposition retained"
+      ]
+    },
+    {
+      "candidate_id": "src_cspr_002",
+      "evidence_id": "ev_cspr_002",
+      "status": "accepted",
+      "changes": [
+        "review status/reviewer set",
+        "notes localize Fiedorczuk humor-adjustment condition; identify the shared positive appraisal of Kempa/Zalewski/Pacześ; exclude out-of-population Carlin/Seinfeld; scope to historical post"
+      ]
+    },
+    {
+      "candidate_id": "src_cspr_003",
+      "evidence_id": "ev_cspr_003",
+      "status": "accepted",
+      "identity_assessment": {
+        "Lotka": "lukasz-lotek-lodkowski",
+        "confidence": "low; context does not reliably establish a mapping, so null retained",
+        "Paczus": null
+      },
+      "changes": [
+        "review status/reviewer set",
+        "preserve Lotek preference despite caveat about some jokes",
+        "retain Paczus unresolved with unknown preference",
+        "do not treat ranking or venue capacity as personal preference"
+      ]
+    },
+    {
+      "candidate_id": "src_cspr_004",
+      "evidence_id": "ev_cspr_004",
+      "status": "accepted",
+      "changes": [
+        "review status/reviewer set",
+        "retain full verified thread URL and locator j3bnf41",
+        "keep published_at null; retrieved_at is documented upper bound",
+        "scope favorite statement to “ostatnio” in the post"
+      ]
+    }
+  ],
+  "validation_checks": {
+    "four_canonical_candidate_ids_exactly_once": true,
+    "source_context_language_equality": true,
+    "source_local_author_hashes_preserved": true,
+    "run_id_and_extraction_lineage_preserved": true,
+    "frozen_identity_mapping_reviewed": true,
+    "surface_forms_and_preference_quotes_literal": true,
+    "review_status_and_reviewer_set": true
+  },
+  "source_family_limitations": [
+    "001 and 002 are separate authors in one GRYOnline thread; 003 is another GRYOnline thread; 004 is one Reddit thread. These four records do not provide independent source-family coverage.",
+    "004 has no supported calendar publication date; its retrieval timestamp is an upper bound rather than exact call time.",
+    "001–003 are historical forum posts (2018/2023) and do not establish current/general fandom; 004 explicitly scopes favorites to “ostatnio”."
+  ],
+  "skips_audit": {
+    "skipped_count": 0,
+    "candidate_ids": [],
+    "reason": "All four canonical candidates yield usable evidence records. Unresolved Paczus is retained as a null-ID unknown-preference mention, not skipped."
+  },
+  "graph_claims_made": false
+}

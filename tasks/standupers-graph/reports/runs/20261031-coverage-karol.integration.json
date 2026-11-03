@@ -1,0 +1,72 @@
+{
+  "records": 80,
+  "canonical_candidates": 89,
+  "relations": 66,
+  "corroborated_relations": 11,
+  "eligible_provisional_relations": 35,
+  "contested_relations": 20,
+  "positive_linked_nodes": 37,
+  "corroborated_linked_nodes": 12,
+  "largest_component": 29,
+  "positive_component_sizes": [
+    29,
+    2,
+    2,
+    2,
+    2
+  ],
+  "new_positive_linked_performers": [
+    "marcin-chmiel"
+  ],
+  "new_relations": [
+    {
+      "schema_version": 1,
+      "id": "rel_karol-modzelewski__marcin-chmiel",
+      "pair": [
+        "karol-modzelewski",
+        "marcin-chmiel"
+      ],
+      "relation_type": "fan_overlap",
+      "status": "accepted",
+      "support_evidence_ids": [
+        "ev_cov_kmodzelewski_001",
+        "ev_cov_kmodzelewski_002",
+        "ev_cov_kmodzelewski_004",
+        "ev_cov_kmodzelewski_006",
+        "ev_cov_kmodzelewski_009"
+      ],
+      "contradictory_evidence_ids": [],
+      "independent_source_count": 4,
+      "independent_fan_count": 5,
+      "score": 0.416667,
+      "confidence": 0.912,
+      "scorer_version": "observed-coendorsement-v2",
+      "explanation": "5 source-scoped fans explicitly co-endorse this pair; 12 observed fans endorse either performer. 0 opposing preference records. Provisional observed overlap.",
+      "updated_at": "2026-10-31T19:16:15Z"
+    }
+  ],
+  "strict_source_loader": "pass",
+  "recomputed_relations_and_deferred": "exact",
+  "karol_candidate_accounting": "9=8accepted+1skip",
+  "manifest_review_gap": "Verifier incorrectly looked for manifest20261031-coverage-karol-modzelewski.json; actual reports/runs/20261031-coverage-karol-modzelewski.json existed. Parent strict loader independently validated manifest, source hashes, run IDs, counts and extractor provenance. Review original preserved.",
+  "baseline_positive_linked_nodes": 34,
+  "saved_evidence_repair_linked_gain": 2,
+  "new_source_positive_linked_gain": 1,
+  "graph_inputs": [
+    "tasks/standupers-graph/reports/runs/20261031-batch01-calibrated.identity-reviewed.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch01-corroboration.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch02.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch03.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch04.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch05.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch06.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch07.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch08.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch09.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch10.json",
+    "tasks/standupers-graph/reports/runs/20261031-batch06-catchup.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-magda-kubicka.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-olka-szczesniak.json",
+    "tasks/standupers-graph/reports/runs/20261031-coverage-karol-modzelewski.json"
+  ]
+}

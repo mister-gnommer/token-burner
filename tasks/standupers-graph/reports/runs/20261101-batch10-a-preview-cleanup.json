@@ -1,0 +1,95 @@
+{
+  "surprises": [
+    "preview_status reports owner=agent with ownedByCaller=false on these tabs, while t3_preview_list assigns all five to this exact child thread and the collection history records this agent creating them; cleanup will rely on the matching thread ID and creation history.",
+    "The close tool reported that these tabs belong to another agent session; the current session could not release any of them. The original tab-owning conversation is required."
+  ],
+  "thread_id": "thread:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch10-collection-a-20261031-r1",
+  "inspection": {
+    "preview_status": "available=true; all five tabs visible=false, loading=false, control owner=agent, ownedByCaller=false",
+    "t3_preview_list": "All five sessions have the exact thread_id above; runtime=server; navStatus=Success; reveal=true.",
+    "tab_creation_history": "The completed collection created these five tabs sequentially with preview_open(reuseExistingTab=false), IDs tab_j through tab_n."
+  },
+  "tabs": [
+    {
+      "tab_id": "tab_j_02a52303-1e3a-4993-a897-62daeceecefe",
+      "url": "https://www.kupbilecik.pl/pl/db/13793/stand-up-mateusz-ipkis-dudek?kb_ref=event&kb_ref_id=other_dates",
+      "ownership_evidence": "same child thread_id in t3_preview_list; exact ID and URL match prior preview_open result",
+      "status_before": "agent, idle, hidden"
+    },
+    {
+      "tab_id": "tab_k_02a52303-1e3a-4993-a897-62daeceecefe",
+      "url": "https://www.kupbilecik.pl/uk/event/208997/warszawa/mariusz-kalamaga?kb_ref=index&kb_ref_id=standup",
+      "ownership_evidence": "same child thread_id in t3_preview_list; exact ID and URL match prior preview_open result",
+      "status_before": "agent, idle, hidden"
+    },
+    {
+      "tab_id": "tab_l_02a52303-1e3a-4993-a897-62daeceecefe",
+      "url": "https://www.kupbilecik.pl/de/db/2177/mariusz-kalamaga-i-jacek-noch?kb_ref=event&kb_ref_id=state_past",
+      "ownership_evidence": "same child thread_id in t3_preview_list; exact ID and URL match prior preview_open result",
+      "status_before": "agent, idle, hidden"
+    },
+    {
+      "tab_id": "tab_m_02a52303-1e3a-4993-a897-62daeceecefe",
+      "url": "https://www.kupbilecik.pl/pl/event/17867/warszawa/stand-up-polska",
+      "ownership_evidence": "same child thread_id in t3_preview_list; exact ID and URL match prior preview_open result",
+      "status_before": "agent, idle, hidden"
+    },
+    {
+      "tab_id": "tab_n_02a52303-1e3a-4993-a897-62daeceecefe",
+      "url": "https://www.kupbilecik.pl/pl/comments/1642/stand-up-tomek-nowaczyk",
+      "ownership_evidence": "same child thread_id in t3_preview_list; exact ID and URL match prior preview_open result",
+      "status_before": "agent, idle, hidden"
+    }
+  ],
+  "closed": [],
+  "retained": [
+    {
+      "tab_id": "tab_j_02a52303-1e3a-4993-a897-62daeceecefe",
+      "reason": "Not closed: close control returned agentMismatch for tab_j, so other same-session-owned tabs were left untouched."
+    },
+    {
+      "tab_id": "tab_k_02a52303-1e3a-4993-a897-62daeceecefe",
+      "reason": "Not closed: close control returned agentMismatch for tab_j, so other same-session-owned tabs were left untouched."
+    },
+    {
+      "tab_id": "tab_l_02a52303-1e3a-4993-a897-62daeceecefe",
+      "reason": "Not closed: close control returned agentMismatch for tab_j, so other same-session-owned tabs were left untouched."
+    },
+    {
+      "tab_id": "tab_m_02a52303-1e3a-4993-a897-62daeceecefe",
+      "reason": "Not closed: close control returned agentMismatch for tab_j, so other same-session-owned tabs were left untouched."
+    },
+    {
+      "tab_id": "tab_n_02a52303-1e3a-4993-a897-62daeceecefe",
+      "reason": "Not closed: close control returned agentMismatch for tab_j, so other same-session-owned tabs were left untouched."
+    }
+  ],
+  "close_errors": [
+    {
+      "tab_id": "tab_j_02a52303-1e3a-4993-a897-62daeceecefe",
+      "raw_error": "{\"_tag\":\"PreviewAutomationControlInterruptedError\",\"operation\":\"close\",\"environmentId\":\"621f5a9b-c021-4d92-86e2-84742211d089\",\"threadId\":\"thread:delegated-task:command%3Amcp%3Ad7e8b13d-ffb2-45d7-a498-499bc2e93d09%3Adelegate-task%3Abatch10-collection-a-20261031-r1\",\"providerSessionId\":\"d6372d6e-ac78-4e5f-8f09-7c94988a33bf\",\"providerInstanceId\":\"codex\",\"clientId\":\"server-browser\",\"connectionId\":\"946abf73-8f2f-4bb3-b719-a0ec0595f8bb\",\"requestId\":\"preview-513\",\"tabId\":\"tab_j_02a52303-1e3a-4993-a897-62daeceecefe\",\"timeoutMs\":15000,\"remoteTag\":\"PreviewAutomationControlInterruptedError\",\"remoteMessageLength\":89,\"remoteDetailKind\":\"string\",\"cause\":{\"_tag\":\"PreviewAutomationControlInterruptedError\",\"message\":\"This tab belongs to another agent session. You can read it, but open your own tab to act.\",\"detail\":\"agentMismatch\"},\"reason\":\"agentMismatch\"}"
+    },
+    {
+      "tab_id": "tab_j_02a52303-1e3a-4993-a897-62daeceecefe",
+      "raw_error": "The preceding close-loop call's result was not captured because its report update failed: Script error: Error: Failed to save close result for tab_j_02a52303-1e3a-4993-a897-62daeceecefe. A direct retry then returned the agentMismatch error above."
+    }
+  ],
+  "post_cleanup_verification": {
+    "preview_status_tab_ids": [
+      "tab_j_02a52303-1e3a-4993-a897-62daeceecefe",
+      "tab_k_02a52303-1e3a-4993-a897-62daeceecefe",
+      "tab_l_02a52303-1e3a-4993-a897-62daeceecefe",
+      "tab_m_02a52303-1e3a-4993-a897-62daeceecefe",
+      "tab_n_02a52303-1e3a-4993-a897-62daeceecefe"
+    ],
+    "t3_preview_list_tab_ids": [
+      "tab_j_02a52303-1e3a-4993-a897-62daeceecefe",
+      "tab_k_02a52303-1e3a-4993-a897-62daeceecefe",
+      "tab_l_02a52303-1e3a-4993-a897-62daeceecefe",
+      "tab_m_02a52303-1e3a-4993-a897-62daeceecefe",
+      "tab_n_02a52303-1e3a-4993-a897-62daeceecefe"
+    ],
+    "all_five_remain": true
+  },
+  "tab_actually_released": false
+}

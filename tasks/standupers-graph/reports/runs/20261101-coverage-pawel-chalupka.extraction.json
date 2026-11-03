@@ -1,0 +1,54 @@
+{
+  "surprises": [
+    "Collector omitted a verified comparison; independent extraction finds a separate positive sustained-quality appraisal as well as relative ranking.",
+    "retrieved_at is a post-retrieval upper bound, not the precise browser request time."
+  ],
+  "run_id": "20261101-coverage-pawel-chalupka",
+  "status": "complete_unreviewed",
+  "input": "evidence/coverage-expansion/pawel-chalupka.source-candidates.canonical.jsonl",
+  "input_sha256": "d4da095be11c6ad3500de1e100913a88efad97e227861935c673dad9aadc7bde",
+  "output": "evidence/coverage-expansion/pawel-chalupka.evidence.unreviewed.jsonl",
+  "output_sha256": "ae03e1bae76596c840a03097eee9c27cf69f34a0d2ffb56caca613cb6b40a2c8",
+  "excerpt_sha256": "32bbeb3e24072d69998458eade9ad850ee679d45930f6092e12520d1eecf962f",
+  "accounting": {
+    "candidates": 1,
+    "records": 1,
+    "skips": 0,
+    "assessed_once": true
+  },
+  "collector_history": {
+    "src_cov_pchalupka_001": {
+      "provider": "codex",
+      "model": "gpt-6-luna",
+      "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+    }
+  },
+  "extractor": {
+    "provider": "codex",
+    "model": "gpt-6.1-terra",
+    "prompt_version": "extract-evidence-v3",
+    "run_id": "20261101-coverage-pawel-chalupka",
+    "confidence": 0.85
+  },
+  "decisions": [
+    {
+      "candidate_id": "src_cov_pchalupka_001",
+      "decision": "record",
+      "evidence_id": "ev_cov_pchalupka_001",
+      "evidence_class": "same_user_coendorsement",
+      "reason": "The quality appraisal “poziom jak zawsze trzymali” explicitly applies to multiple named performers, satisfying coendorsement; “najlepszy tego wieczoru” separately establishes a relative comparison.",
+      "mentions": {
+        "adam-van-bendler": "Positive: “poziom jak zawsze trzymali ... Adam van Bendler” appraises a maintained quality standard; ranking alone would not suffice.",
+        "olka-szczesniak": "Positive: same sustained-quality clause names “Olka Szczęściak”; exact event roster identifies Olka Szczęśniak contextually, without adding an alias.",
+        "pawel-chalupka": "Positive: same sustained-quality clause names “Paweł Chałupka”; evening ranking alone would not suffice.",
+        "bartosz-zalewski": "Positive: “a także prowadzący (Zalew znowu w lepszej formie!)” extends the sustained-quality appraisal to the hosts and explicitly identifies Zalew; the relative improvement alone would not suffice. Event roster resolves identity.",
+        "tomek-kolecki": "Negative sentiment, unknown preference: “Minus dla Kołeckiego” and “Tomek, bo jedzie na tym samym od jesieni” criticize repetition in this tour, not an absolute overall negative appraisal.",
+        "blazej-krajewski": "Negative sentiment, unknown preference: “Minus ... dla Krajewskiego” and “Błażej bo mówił o nowym materiale pod tę trasę” criticize repetition and expected new tour material, not an absolute overall negative appraisal."
+      },
+      "event_scope": "“bardzo udany wieczór... w większości” is an event-level assessment; no preference is transferred to roster-only Borkowski.",
+      "source_scope": "The saved DOM confirms publication 2019-04-15 and Łódź event 2019-04-14; English-locale context preserved verbatim.",
+      "retrieval_limit": "2026-11-01T16:25:22.251441Z is a post-retrieval upper bound from the original worker-written collection-file mtime, not an exact browser request time."
+    }
+  ],
+  "validation_command": "python3 scripts/evidence_pipeline.py validate --kind evidence evidence/coverage-expansion/pawel-chalupka.evidence.unreviewed.jsonl"
+}

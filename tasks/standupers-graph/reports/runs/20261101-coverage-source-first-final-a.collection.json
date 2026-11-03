@@ -1,0 +1,47 @@
+{
+  "run_id": "20261101-coverage-source-first-final-a",
+  "collector": "codex/gpt-6-luna",
+  "prompt_version": "collect-fan-evidence-v3+source-first-fan-discovery-v1",
+  "surprises": [
+    "Search heavily resurfaced canonical source threads already represented in the graph: Reddit 1tm7shp and GRYOnline zff63169. Both were excluded from candidate output under the canonical-path dedup rule."
+  ],
+  "reservation": {"queries": 0, "open_attempts": 0, "candidate_slots": 0},
+  "results": [],
+  "searches": [
+    "Polish stand-up fan favorites across Reddit, general forums, GRYOnline and Filmweb",
+    "Polish stand-up fan discussion and favorite comedian queries across Reddit, Wykop and Filmweb"
+  ],
+  "reads": [
+    {
+      "url": "https://www.gry-online.pl/forum/polski-stand-up-wasze-zdanie/zbde8721",
+      "status": "full readable page",
+      "disposition": "excluded: no candidate retained; route and thread-level material were not sufficiently novel under source-path dedup"
+    },
+    {
+      "url": "https://swiatpilki.com/viewtopic.php?t=20492",
+      "status": "full readable page",
+      "disposition": "excluded: familiar well-covered stand-up topic; no new eligible post retained"
+    },
+    {
+      "url": "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169",
+      "status": "full readable page",
+      "disposition": "excluded: canonical thread already represented in graph input manifest"
+    }
+  ],
+  "search_only_leads": [
+    {"url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/", "disposition": "known canonical route; excluded without reopening"},
+    {"url": "https://www.reddit.com/r/Polska/comments/105mykf/stand_up_rekomendacje/", "disposition": "known route; no corrected full URL surfaced in this run"},
+    {"url": "https://www.reddit.com/r/Polska/comments/1j7armi/", "disposition": "search-only; no clearly eligible new frozen-performer pair"},
+    {"url": "https://www.filmweb.pl/person/Abelard+Giza-286174/discussion/Giza+ju%C5%BC+si%C4%99+sko%C5%84czy%C5%82-2154860", "disposition": "search-only; individual criticism lead, not a new multi-performer positive discussion"}
+  ],
+  "dedup": {
+    "known_authors_not_resaved": ["madame_edith", "michuuu_2108", "Springerbaum", "youngagain", "cotca", "Username_Koru", "Nevsr1", "katarrynka", "princy-mincy"],
+    "canonical_routes_excluded": ["https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/", "https://www.reddit.com/r/Polska/comments/105mykf/", "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169"]
+  },
+  "usage": {
+    "continuation": {"queries": 7, "open_attempts": 3, "candidate_slots": 0},
+    "cumulative": {"queries": 24, "open_attempts": 9, "candidate_slots": 8},
+    "remaining": {"queries": 0, "open_attempts": 15, "candidate_slots": 8}
+  },
+  "stop_reason": "Original slice A query cap reached; no genuinely new, fully readable candidate survived dedup and evidence criteria."
+}

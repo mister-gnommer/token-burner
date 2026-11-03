@@ -14,7 +14,7 @@ import jsonschema
 
 from evidence_pipeline import SCHEMA_DIR, TASK_ROOT, author_key, load_records
 from avatars import prepare_avatar
-from render_interactive import write_page
+from render_interactive import supported_dispute, write_page
 
 SCORER_VERSION = "observed-coendorsement-v2"
 FAN_CLASSES = {"same_user_rating_overlap", "same_user_coendorsement", "fan_recommendation", "fan_comparison"}
@@ -171,8 +171,10 @@ def aggregate(performers, evidence, updated_at):
     return relations, deferred, {pid: len(likes[pid]) for pid in sorted(ids)}
 
 
-def displayable(relation):
-    return relation["status"] == "accepted" or (relation["status"] == "uncertain" and relation["independent_fan_count"] == 1 and not relation["contradictory_evidence_ids"])
+def displayable(relation, include_disputed=False):
+    strict = not relation["contradictory_evidence_ids"] and (relation["status"] == "accepted" or
+             (relation["status"] == "uncertain" and relation["independent_fan_count"] == 1))
+    return strict or (include_disputed and supported_dispute(relation))
 
 
 def d2_source(graph, max_degree=3):
@@ -180,9 +182,9 @@ def d2_source(graph, max_degree=3):
     nodes = {node["id"]: f"n{index}" for index, node in enumerate(graph["nodes"])}
     visible = set(graph.get("visible_node_ids", nodes))
     label = "SYNTHETIC FIXTURE — no real fan findings" if graph["synthetic"] else "Provisional fan-preference evidence"
-    legend = label + "\nSolid = 2+ fans; dashed = PROVISIONAL (1 fan).\nEdge width = observed overlap; labels show fan count / confidence.\nCounts include scoring-eligible statements only.\nConfidence is a model judgment, not a probability.\nLayout distance has no similarity meaning. Missing edges mean insufficient evidence."
+    legend = label + "\nSolid = 2+ fans, no opposition; amber dashed = PROVISIONAL (1 fan).\nOrange dotted = DISPUTED (2+ fans and opposing evidence).\nEdge width = observed overlap; labels show fan count / confidence.\nCounts include scoring-eligible statements only.\nConfidence is a model judgment, not a probability.\nLayout distance has no similarity meaning. Missing edges mean insufficient evidence."
     lines = [f"diagram: {quote(legend)} {{", "direction: down"]
-    if visible and not any(displayable(r) and set(r["pair"]) <= visible for r in graph["relations"]):
+    if visible and not any(displayable(r, include_disputed=True) and set(r["pair"]) <= visible for r in graph["relations"]):
         lines.append(f"grid-columns: {min(5, len(visible))}")
     for node in graph["nodes"]:
         if node["id"] not in visible:
@@ -194,7 +196,10 @@ def d2_source(graph, max_degree=3):
         lines.append('}')
     degrees = defaultdict(int)
     for relation in sorted(graph["relations"], key=lambda r: (r["status"] != "accepted", -r["score"], r["id"])):
-        if not displayable(relation) or not set(relation["pair"]) <= visible or any(degrees[pid] >= max_degree for pid in relation["pair"]):
+        if not displayable(relation, include_disputed=True) or not set(relation["pair"]) <= visible:
+            continue
+        # A saturated neighbor must not hide a qualifying disputed connection.
+        if not supported_dispute(relation) and any(degrees[pid] >= max_degree for pid in relation["pair"]):
             continue
         a, b = relation["pair"]
         for pid in (a, b):
@@ -202,8 +207,13 @@ def d2_source(graph, max_degree=3):
         fan_count = relation["independent_fan_count"]
         label = f'{fan_count} {"fan" if fan_count == 1 else "fans"} / {relation["confidence"]:.0%}'
         citation_text = relation["explanation"] + " Sources: " + " ".join(graph["evidence_sources"][rid] for rid in relation["support_evidence_ids"])
+        if supported_dispute(relation):
+            label += f' · DISPUTED ({len(relation["contradictory_evidence_ids"])} opposing)'
+            citation_text += " Opposing sources: " + " ".join(graph["evidence_sources"][rid] for rid in relation["contradictory_evidence_ids"])
         lines.extend([f'{nodes[a]} -- {nodes[b]}: {quote(label)} {{', f'  style.stroke-width: {1 + round(5 * relation["score"])}', '  style.font-size: 12', f'  tooltip: {quote(citation_text)}'])
-        if relation["status"] != "accepted":
+        if supported_dispute(relation):
+            lines.extend(["  style.stroke-dash: 2", '  style.stroke: "#c2410c"'])
+        elif relation["status"] != "accepted":
             lines.extend(["  style.stroke-dash: 5", '  style.stroke: "#946200"'])
         lines.append("}")
     lines.append("}")
@@ -228,10 +238,11 @@ def main():
         now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
         relations, deferred, coverage = aggregate(ranking["performers"], evidence, now)
         visible = {p["id"] for p in ranking["performers"] if args.batch_view is None or p.get("batch", 1) <= args.batch_view}
-        visible.update(pid for relation in relations if displayable(relation) for pid in relation["pair"])
+        visible.update(pid for relation in relations if displayable(relation, include_disputed=True) for pid in relation["pair"])
         graph = {"schema_version": 1, "synthetic": args.synthetic, "scorer_version": SCORER_VERSION, "updated_at": now,
                  "input_manifests": [str(path) for path in args.manifest],
-                 "renderer": {"name": "d2", "layout": "elk", "sketch": True, "max_degree": 3, "provisional_edges": "one fan, no opposing records"},
+                 "renderer": {"name": "d2", "layout": "elk", "sketch": True, "max_degree": 3, "provisional_edges": "one fan, no opposing records",
+                              "display_policy": "supported-disputes-v1", "disputed_edges": "2+ source-scoped fans; opposing evidence retained; layout degree cap does not hide these edges"},
                  "visible_node_ids": sorted(visible),
                  "nodes": [{"id": p["id"], "name": p["name"], "observed_fans": coverage[p["id"]],
                             "avatar": prepare_avatar(p, args.output, fetch=args.render and not args.synthetic and p["id"] in visible)} for p in sorted(ranking["performers"], key=lambda p: p["id"])],
@@ -243,7 +254,7 @@ def main():
         write_page(graph, ranking, evidence, args.output, args.output / "interactive.html")
         if args.render:
             subprocess.run(["d2", "--sketch", "--layout", "elk", str(args.output / "graph.d2"), str(args.output / "graph.svg")], check=True)
-            subprocess.run(["rsvg-convert", "-z", "2", str(args.output / "graph.svg"), "-o", str(args.output / "graph.png")], check=True)
+            subprocess.run(["rsvg-convert", "-w", "4000", str(args.output / "graph.svg"), "-o", str(args.output / "graph.png")], check=True)
         print(f"Saved {len(relations)} relations ({sum(r['status'] == 'accepted' for r in relations)} accepted, {sum(displayable(r) and r['status'] != 'accepted' for r in relations)} provisional candidates) to {args.output}")
         return 0
     except (OSError, ValueError, jsonschema.ValidationError, subprocess.CalledProcessError) as error:

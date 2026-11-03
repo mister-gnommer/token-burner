@@ -1,0 +1,94 @@
+{
+  "run_id": "20261101-coverage-pawel-chalupka",
+  "status": "complete",
+  "reviewer": "codex/gpt-6-luna/verify-evidence-v3",
+  "accounting": {
+    "candidates": 1,
+    "records": 1,
+    "skips": 0,
+    "assessed_once": true
+  },
+  "decision": "accepted",
+  "evidence_id": "ev_cov_pchalupka_001",
+  "candidate_id": "src_cov_pchalupka_001",
+  "evidence_class": "same_user_coendorsement",
+  "per_mention": [
+    {
+      "surface_form": "Adam van Bendler",
+      "performer_id": "adam-van-bendler",
+      "preference": "positive",
+      "sentiment": "positive",
+      "decision": "positive sustained-quality appraisal"
+    },
+    {
+      "surface_form": "Olka Szczęściak",
+      "performer_id": "olka-szczesniak",
+      "preference": "positive",
+      "sentiment": "positive",
+      "decision": "positive sustained-quality appraisal"
+    },
+    {
+      "surface_form": "Paweł Chałupka",
+      "performer_id": "pawel-chalupka",
+      "preference": "positive",
+      "sentiment": "positive",
+      "decision": "positive sustained-quality appraisal"
+    },
+    {
+      "surface_form": "Zalew",
+      "performer_id": "bartosz-zalewski",
+      "preference": "positive",
+      "sentiment": "positive",
+      "decision": "positive sustained-quality appraisal"
+    },
+    {
+      "surface_form": "Kołeckiego",
+      "performer_id": "tomek-kolecki",
+      "preference": "negative",
+      "sentiment": "negative",
+      "decision": "negative performance appraisal, scoped to this event"
+    },
+    {
+      "surface_form": "Krajewskiego",
+      "performer_id": "blazej-krajewski",
+      "preference": "negative",
+      "sentiment": "negative",
+      "decision": "negative performance appraisal, scoped to this event"
+    }
+  ],
+  "corrections": [
+    "Restored exact DOM “najlepszy” (unreviewed excerpt and recovery summary had “najlepsi”).",
+    "Accepted positive preferences for the three named acts and Bartosz Zalewski based on sustained-quality language, not evening ranking alone.",
+    "Marked Kołecki and Krajewski negative preference for this performance based on “Minus dla”; preserved material-repetition scope."
+  ],
+  "source_integrity": {
+    "raw_dom_substring": true,
+    "event_and_roster_verified": true,
+    "excerpt_sha256": "32bbeb3e24072d69998458eade9ad850ee679d45930f6092e12520d1eecf962f",
+    "raw_dom_sha256": "bb02d8291772381b684efaad17f89abbd84a3ed7b973fc6abb3ab659e03e4b94",
+    "event_dom_sha256": "2df8d8b41ff3be52db4d8b0c61612b917905bbcbac0b2eafe7b2e5e096364cee",
+    "retrieved_at_limit": "post-read upper bound from original worker-written collection-file mtime; exact browser request second unavailable",
+    "published_at": "2019-04-15",
+    "language": "pl",
+    "context_exact_from_candidate": true,
+    "canonical_source_fields_match": true,
+    "all_surfaces_and_preference_quotes_are_excerpt_substrings": true,
+    "original_canonical_excerpt_sha256": "32bbeb3e24072d69998458eade9ad850ee679d45930f6092e12520d1eecf962f",
+    "saved_dom_post_sha256_matches_canonicalization": true,
+    "saved_dom_event_sha256_matches_canonicalization": true
+  },
+  "lineage": {
+    "candidate_run_id": "20261101-coverage-pawel-chalupka",
+    "extraction_provider": "codex",
+    "extraction_model": "gpt-6.1-terra",
+    "extraction_prompt_version": "extract-evidence-v3",
+    "extraction_run_id": "20261101-coverage-pawel-chalupka",
+    "extractor_metadata_preserved": true
+  },
+  "author_key_matches_frozen_identity": true,
+  "surprises": [
+    "The recovered review supports positive sustained-quality appraisal in addition to relative ranking.",
+    "Explicit “Minus dla” language warrants negative performance preference even though its explanation is repeated material; this is scoped to this performance.",
+    "Saved retrieval timestamp is an upper bound, not a precise request timestamp."
+  ]
+}

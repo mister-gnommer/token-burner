@@ -1,0 +1,29 @@
+{
+  "original_verification": "reports/runs/20261031-batch09.verification.json",
+  "context_review": "reports/runs/20261031-coverage-kaminski-radek.context-review.json",
+  "source_context_report": "reports/runs/20261031-coverage-kaminski-radek.source-context.json",
+  "reviewed_record": "ev_b09_a_001",
+  "unchanged_other_records": 5,
+  "accepted": 6,
+  "parent_preservation_correction": {
+    "before": {
+      "performer_id": null,
+      "surface_form": "Pasierby",
+      "sentiment": "positive",
+      "confidence": 0.38,
+      "preference": "unknown",
+      "preference_quote": null
+    },
+    "after": {
+      "performer_id": null,
+      "surface_form": "Pasierby",
+      "sentiment": "positive",
+      "confidence": 0.38,
+      "preference": "positive",
+      "preference_quote": "Pasierby rządzą!"
+    },
+    "reason": "Reviewer claimed existing mention preserved but changed positive to unknown. Restore original literal unresolved-group appraisal per brief; null ID retained, so no pair scoring effect."
+  },
+  "original_source_text_and_extraction_unchanged": true,
+  "added_context_and_focal_appraisal_only": true
+}

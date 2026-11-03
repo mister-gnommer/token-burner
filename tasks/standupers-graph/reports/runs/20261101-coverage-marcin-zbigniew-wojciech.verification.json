@@ -1,0 +1,78 @@
+{
+  "Surprises": [
+    "The extractor left canonical_source_file_sha256 null, but the canonical file and excerpt hashes are directly computable integrity checks; recorded here as derived values without changing historical extraction metadata.",
+    "The saved recovery page contains a separately signed Bez Przesady note; it is excluded from the canonical Aneta passage and attribution."
+  ],
+  "run_id": "20261101-coverage-marcin-zbigniew-wojciech",
+  "reviewer": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "verify-evidence-v3"
+  },
+  "counts": {
+    "canonical_candidates": 1,
+    "records_written": 1,
+    "accepted": 1,
+    "uncertain": 0,
+    "rejected": 0,
+    "skips": 0,
+    "accounted_exactly_once": 1
+  },
+  "accounting": [
+    {
+      "candidate_id": "src_cov_mzwojciech_001",
+      "outcome": "accepted",
+      "evidence_id": "ev_cov_mzwojciech_001",
+      "reason": "Eligible whole-program recommendation; personal positive preference supported only for Marcin."
+    }
+  ],
+  "checks": {
+    "candidate_record_and_actual_run_lineage": "pass",
+    "source_metadata_and_full_excerpt_preserved_exactly": "pass",
+    "saved_recovery_passage_and_separate_note_boundary": "pass",
+    "language_and_context_preserved": "pass",
+    "author_key_recomputed_with_repository_algorithm": "pass",
+    "surface_forms_and_preference_quote_verbatim": "pass",
+    "frozen_ids_and_nulls": "pass",
+    "extraction_metadata_preserved": "pass",
+    "review_fields": "pass",
+    "program_recommendation_not_individual_or_pair_endorsement": "pass",
+    "skip_audit": "Bielskirynek is a collection-level skip, not a second canonical candidate; no new source read."
+  },
+  "hashes": {
+    "canonical_source_path": "evidence/coverage-expansion/marcin-zbigniew-wojciech.source-candidates.canonical.jsonl",
+    "canonical_source_file_sha256": "c48584d5760bafd0cb018faa523b0936eeca429b7fdf6d021c2670feeb1db51c",
+    "excerpt_sha256_utf8": "93596dd4020c9271afca4f8b664a297610228abec8d1010651ccb78e8df13d00",
+    "meaning": "Derived integrity checks; not source-provided facts and do not amend historical extraction metadata."
+  },
+  "decisions": [
+    {
+      "performer_id": "marcin-zbigniew-wojciech",
+      "sentiment": "positive",
+      "preference": "positive",
+      "scope": "Specific Gliwice wedding-paradox monologue; no current/global taste or performance-style claim."
+    },
+    {
+      "performer_id": "ewa-blachnio",
+      "sentiment": "neutral",
+      "preference": "unknown",
+      "reason": "Empathy/topic resonance and audience applause do not prove author preference."
+    },
+    {
+      "performer_id": null,
+      "surfaces": [
+        "Roberta Korólczyka",
+        "Tomasza Jachimka",
+        "Antoni"
+      ],
+      "reason": "Out-of-population names remain null; bare Antoni unresolved and not author endorsement."
+    }
+  ],
+  "coverage_gaps": [
+    "One eligible record only; no pair or graph claim.",
+    "No frozen peer receives a clear individual preference in this program recommendation."
+  ],
+  "limitations": [
+    "Review is limited to supplied saved source/candidate/recovery artifacts; no fresh source read or web query was made."
+  ]
+}

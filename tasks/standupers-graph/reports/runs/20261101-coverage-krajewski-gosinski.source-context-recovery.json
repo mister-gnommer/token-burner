@@ -1,0 +1,83 @@
+{
+  "Surprises": [
+    "Direct page text confirms Elwira review and exact excerpt, but attached event/date header is Dzierżoniów, 21 marca 2025, differing from collector report’s Legnica, 20 marca 2025."
+  ],
+  "status": "proposal_saved_pending_independent_adjudication",
+  "task": "Recover exact Elwira review context for src_b05b_003 / ev_b05_b_003; proposal only, not independent verification.",
+  "actual_worker": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "reasoning_effort": "medium",
+    "role": "research sub-agent"
+  },
+  "source_url": "https://www.kupbilecik.pl/pl/event/203718/swiecie/stand-up-blazej-krajewski",
+  "retrieval_time_utc": "2026-11-01 10:47:15 UTC",
+  "open_budget": {
+    "prior_collection_opens": 5,
+    "prior_allowance": 24,
+    "reserved_for_this_attempt": 2,
+    "successful_or_failed_opens_used": 2,
+    "cumulative_used": 7,
+    "remaining": 17
+  },
+  "reservation": "No more than two exact-URL page-open/navigation attempts; zero searches. Count failed opens. Do not use preview/browser if shared capacity is blocked.",
+  "proposal_outputs": [
+    "tasks/standupers-graph/evidence/coverage-expansion/src_b05b_003.context-proposal.jsonl",
+    "tasks/standupers-graph/evidence/coverage-expansion/ev_b05_b_003.review-proposal.unreviewed.jsonl"
+  ],
+  "note": "Existing blocked report is preserved unchanged. No proposal written pending direct page proof.",
+  "attempts": [
+    {
+      "number": 1,
+      "method": "T3 preview_open exact supplied URL",
+      "result": "failed: Too many server browser tabs are open; counted against allowance"
+    },
+    {
+      "number": 2,
+      "method": "web open exact supplied full URL; zero search queries",
+      "result": "successful; full page returned; direct text saved below"
+    }
+  ],
+  "source_proof": {
+    "url": "https://www.kupbilecik.pl/pl/event/203718/swiecie/stand-up-blazej-krajewski",
+    "retrieved_at_utc": "2026-11-01 10:47:15 UTC",
+    "tool": "web open, exact supplied URL; successful result turn0view0",
+    "locator": "page lines 198-204; Elwira at 198, exact post at 200, event name at 202, attached event/date at 204",
+    "verbatim_author": "Elwira",
+    "verbatim_excerpt": "Zarówno Błażej, jak i jego support Patryk Gośiński byli świetni. Obu znałam z YouTube, ale na żywo jeszcze lepiej się ich oglądało. Tak trzymać!!!",
+    "verbatim_attached_header": "Dzierżoniów, 21 marca 2025",
+    "verbatim_event_label": "Stand-up: Błażej Krajewski",
+    "review_context": "The page first lists Elwira as author, then her text, followed immediately by the event label and city/date; the header is attached to this review in the rendered page sequence.",
+    "collector_report_mismatch": "collector report asserted Legnica, 20 marca 2025; this differs from the direct page response."
+  },
+  "proposal_delta": {
+    "candidate_file": "tasks/standupers-graph/evidence/coverage-expansion/src_b05b_003.context-proposal.jsonl",
+    "evidence_file": "tasks/standupers-graph/evidence/coverage-expansion/ev_b05_b_003.review-proposal.unreviewed.jsonl",
+    "added_context": {
+      "role": "parent",
+      "url": "https://www.kupbilecik.pl/pl/event/203718/swiecie/stand-up-blazej-krajewski",
+      "author_hint": null,
+      "author_key": null,
+      "excerpt": "Dzierżoniów, 21 marca 2025"
+    },
+    "candidate_delta": "Appended one separately attributed event context. All original source fields, collector metadata, run/candidate IDs, and exact author excerpt retained; no publication or retrieval metadata changed.",
+    "evidence_delta": "Appended matching context; preserved original evidence ID, candidate ID, source, excerpt, language, mentions and preference quotes, extraction metadata and extraction run ID. Reset review to unreviewed/reviewer null for independent adjudication; notes document the source/collector header discrepancy.",
+    "no_graph_claim": "No acceptance, scoring, positive graph update, or new fan/candidate asserted."
+  },
+  "checks": {
+    "source_candidate_v2_schema": "passed (Draft 2020-12 with format checker)",
+    "evidence_v3_schema": "passed (Draft 2020-12 with format checker)",
+    "candidate_evidence_ids_run_lineage": "passed",
+    "exact_excerpt_and_spelling": "passed; both records retain “Patryk Gośiński” verbatim",
+    "candidate_evidence_context_match": "passed",
+    "original_mentions_and_preference_quotes": "preserved unchanged",
+    "frozen_performer_ids": "passed: blazej-krajewski and patryk-gosinski exist in data/standupers.json",
+    "review_state": "unreviewed with reviewer null",
+    "old_blocked_report": "preserved unchanged at reports/runs/20261101-coverage-krajewski-gosinski.source-context.json",
+    "original_batch05_files_manifest_state_graph_and_other_candidates": "not edited"
+  },
+  "limitations": [
+    "This proposal supports only source-local attribution of this event review and event-specific enjoyment; no broader fan preference or graph claim is made.",
+    "Independent reviewer should resolve why the collector reported Legnica 20 March 2025 while the rendered page attaches Dzierżoniów 21 March 2025. The direct visible page text takes precedence for this proposal; no inferred correction was made to published_at."
+  ]
+}

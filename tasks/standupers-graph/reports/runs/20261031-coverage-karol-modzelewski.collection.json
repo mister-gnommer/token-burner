@@ -1,0 +1,265 @@
+{
+  "run_id": "run20261031-coverage-karol-modzelewski",
+  "performer_id": "karol-modzelewski",
+  "collector": {
+    "provider": "codex",
+    "model": "gpt-6-luna",
+    "prompt_version": "collect-fan-evidence-v3+coverage-expansion-v1"
+  },
+  "budget": {
+    "query_limit": 24,
+    "open_limit": 24,
+    "candidate_limit": 16,
+    "queries_used": 7,
+    "opens_used": 9,
+    "candidates_used": 9,
+    "unused_queries": 17,
+    "unused_opens": 15,
+    "unused_verified_candidates": 7
+  },
+  "attempts": [
+    {
+      "kind": "query",
+      "query": "Karol Modzelewski recenzja stand-up blog",
+      "status": "completed"
+    },
+    {
+      "kind": "query",
+      "query": "Karol Modzelewski opinie bilety recenzje publiczność",
+      "status": "completed"
+    },
+    {
+      "kind": "query",
+      "query": "Karol Modzelewski występ recenzja Abelard Giza Lotek",
+      "status": "completed"
+    },
+    {
+      "kind": "query",
+      "query": "site:filmweb.pl Karol Modzelewski stand-up opinie",
+      "status": "completed"
+    },
+    {
+      "kind": "navigation",
+      "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski",
+      "status": "opened"
+    },
+    {
+      "kind": "navigation",
+      "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski?page=2",
+      "status": "opened"
+    },
+    {
+      "kind": "navigation",
+      "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski?page_comments=2#scrollComments",
+      "status": "opened"
+    },
+    {
+      "kind": "navigation",
+      "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+      "status": "opened"
+    },
+    {
+      "kind": "query",
+      "query": "site:kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski Karol",
+      "status": "completed"
+    },
+    {
+      "kind": "navigation",
+      "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski?page_comments=3",
+      "status": "opened"
+    },
+    {
+      "kind": "navigation",
+      "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski?page_comments=10",
+      "status": "opened"
+    },
+    {
+      "kind": "query",
+      "query": "Karol Modzelewski recenzja stand-up blog support",
+      "status": "completed"
+    },
+    {
+      "kind": "navigation",
+      "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski?page_comments=4",
+      "status": "opened"
+    },
+    {
+      "kind": "query",
+      "query": "Karol Modzelewski Marcin Chmiel opinie",
+      "status": "completed"
+    },
+    {
+      "kind": "query",
+      "query": "site:reddit.com/r/Polska Karol Modzelewski stand-up polecam",
+      "status": "completed"
+    },
+    {
+      "kind": "navigation",
+      "url": "https://www.reddit.com/r/Polska/comments/1suqi5d/szukam_nowych_komik%C3%B3w/",
+      "status": "opened"
+    },
+    {
+      "kind": "navigation",
+      "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski?page_comments=8",
+      "status": "opened"
+    }
+  ],
+  "source_families": [
+    {
+      "family": "performer-specific ticket-review archive (KupBilecik)",
+      "accessed_pages": [
+        {
+          "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski",
+          "substantive": true,
+          "observed": "page 1: current reviews; several mixed-lineup references but only generic support praise excluded"
+        },
+        {
+          "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski?page_comments=2#scrollComments",
+          "substantive": true,
+          "observed": "page 2: older 2026 reviews; Mariusz explicitly appreciates Karol and Marcin Chmiel"
+        },
+        {
+          "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski?page_comments=10",
+          "substantive": true,
+          "observed": "Full page read; 2024 autumn shows. Leszek praises Karol and explicitly criticizes unnamed support; saved complete text as Karol-only evidence. No frozen co-appreciation pair found in reviewed entries."
+        },
+        {
+          "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski?page_comments=4",
+          "substantive": true,
+          "observed": "Full page read; Dec 2025 Łódź reviews. Paweł and Przemysław independently praise Karol and Marcin Chmiel; both complete excerpts saved, preserving caveats (Przemysław says support is somewhat repetitive and notes wife’s initially lukewarm response). Several extra distinct solo reviews excluded."
+        },
+        {
+          "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski?page_comments=8",
+          "substantive": true,
+          "observed": "Full page read; spring 2025 events. Three new source-local accounts praise Karol and name/appreciate Marcin Chmiel or support including Chmiel; saved full passages. Igor's and Wojciech's first/surname-only peer reference is less certain than Anna's full name."
+        },
+        {
+          "url": "https://www.kupbilecik.pl/pl/comments/4756/stand-up-karol-modzelewski?page_comments=3",
+          "substantive": true,
+          "observed": "Full page read; 2026 winter/spring, with reviews extending to early 2022. Remigiusz full-source Karol–Marcin Chmiel praise saved. Other frozen-peer support identities were not inferred from generic lineup praise."
+        }
+      ],
+      "search_only_leads": []
+    },
+    {
+      "family": "Reddit fan discussion",
+      "accessed_pages": [
+        {
+          "url": "https://www.reddit.com/r/PolskaNaLuzie/comments/1tm7shp/polscy_grzeczni_standuperzy/",
+          "substantive": true,
+          "observed": "full thread read; Karol and multiple peers named in separate commenters, no same-author co-appreciation pair"
+        }
+      ],
+      "search_only_leads": [
+        "r/Polska, Szukam nowych komików; excerpt search result names Karol and Pawel Chalupka but not verified/opened"
+      ]
+    },
+    {
+      "family": "Reddit public fan/recommendation discussions",
+      "accessed_pages": [
+        {
+          "url": "https://www.reddit.com/r/Polska/comments/1suqi5d/szukam-nowych-komik%C3%B3w/",
+          "substantive": true,
+          "observed": "Full thread read. Karol is recommended by one commenter, while other frozen performers are named by different commenters. No same-author co-appreciation; no candidate."
+        }
+      ],
+      "search_only_leads": [
+        "Reddit thread about Polish media recommends Karol's Newsy bez wirusa; media-programme praise only, not stand-up evidence.",
+        "Reddit stand-up recommendations mention Karol and Kacper Ruciński in separate comments; no same-author pair."
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "src_cov_kmodzelewski_001",
+      "locator": "KupBilecik comment by Mariusz, 2026-07-17; page 2; event Łódź 2026-07-12",
+      "identity_proof": "source displays author label Mariusz; no cross-site identity claim",
+      "relevant_full_author_text": "Karol w znakomitej formie, chętnie przyjdę na kolejny występ. Wielkie brawa również dla Marcina Chmiela, który skradł moje serce żartami szachowymi;-).",
+      "dedup": "Exact phrase/author locator checked with rg across all prior batch source-candidates and coverage-pilot source-candidate files; no match.",
+      "peer": "Marcin Chmiel is a frozen performer; candidate cites him by full name",
+      "event_header_exact": "Stand-up: Karol Modzelewski\nŁódź, 12 lipca 2026 o godz. 19:00"
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_002",
+      "locator": "KupBilecik comment by Remigiusz, 2026-02-06; page_comments=3; event Jelenia Góra 2026-02-04",
+      "identity_proof": "Review itself names Karol Modzelewski and Marcin Chmiel as support; source event header is Stand-up: Karol Modzelewski, Jelenia Góra, 04 February 2026. Both are exact full frozen names. Full author text saved including health caveat and both support evaluations.",
+      "relevant_full_author_text": "Rewelacyjny stand-up. Karol Modzelewski mimo lekkiej niedyspozycji zdrowotnej nie zawiódł. Supprort super zarówno Marcin Chmiel jak i Kamil Kozieł. Polecam.",
+      "peer": "Marcin Chmiel; exact full name in author text; frozen ID marcin-chmiel",
+      "dedup": "Checked exact author/date/text via rg against pilot and prior sources; no duplicate found."
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_003",
+      "locator": "KupBilecik review by Leszek, 2024-10-17; page_comments=10; event Opole, 2024-10-15",
+      "identity_proof": "Author label Leszek; event header gives Stand-up: Karol Modzelewski, Opole 15 October 2024. Full post saved, including explicit criticism of unnamed support; Karol-only evidence.",
+      "relevant_full_author_text": "Wspaniały występ Karola. Byłem pierwszy raz na jego programie, ale uważam ten program za jeden z najlepszych w ostatnich kilku latach w polskim stand-upie. przede wszystkim Karol ma bardzo celne obserwacje i śmiesząc daje do myślenia widzowi. Zdecydowanie warto zobaczyć na żywo i samemu ocenić. Jedyny minus to support, który był jednym z najgorszych rozgrzewających jakich widziałem na żywo.",
+      "peer": null,
+      "dedup": "Checked exact locator/text against stored sources; no duplicate."
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_004",
+      "locator": "KupBilecik review by Paweł, 2025-12-22; page_comments=4; event Łódź, 2025-12-21",
+      "identity_proof": "Source author label and event header explicitly identify the Karol Modzelewski event. Full author text names frozen peer Marcin Chmiel.",
+      "relevant_full_author_text": "Karol przechodzi sam siebie. Tego wspaniałego doświadczenia nie da się zamknąć w 500 znakach i w pełni oddać zachwytu. Krótko mówiąc: to trzeba przeżyć. Szczególnie, że Karol przywozi ze sobą genialny support. W głos się śmiałem z historii zbudowanych przez Kamila Kozieła, a Marcin Chmiel... Rośnie prawdziwa perła polskiego stand-upu. Szach-mat!",
+      "peer": "Marcin Chmiel (frozen ID marcin-chmiel)",
+      "dedup": "Exact author/date/text checked against stored batch and pilot sources; no duplicate."
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_005",
+      "locator": "KupBilecik review by Przemysław, 2025-12-22; page_comments=4; event Łódź, 2025-12-21",
+      "identity_proof": "Source author label and event header identify the Karol Modzelewski event. Full text praises Karol and uses only surname-form Chmielu for support; no frozen peer mapping asserted.",
+      "relevant_full_author_text": "Super występ. Jak zawsze ubaw po sufit. Perfekcyjna ilość opowiadania przepleciona kontaktem z publicznością. Spontaniczny pocisk na Zgierz był wisienką na szczycie tego miodnego występu, nikt się chyba nie spodziewał. Żona mówi, że było fajnie ale jest oszczędna w emocjach więc zakładam, że też się jej mega podobało, tym bardziej, że na koniec zmieniła zdanie i jednak chciała piąteczkę z Karolem - przed występem była na nie. Support super, troszkę powtarzalny, Chmielu na duży plus! Chcę więcej!",
+      "peer": null,
+      "dedup": "Distinct source post; Chmielu is not resolved to a frozen performer here."
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_006",
+      "locator": "KupBilecik review by Leszek, 2025-12-10; page_comments=4; event Opole, 2025-12-09",
+      "identity_proof": "Source author label and event header identify the Karol Modzelewski event; review explicitly appreciates the program and named frozen peer Marcin Chmiel.",
+      "relevant_full_author_text": "Rewelacyjny program! Musisz go zobaczyć na żywo. Bardzo fajny tez support najlepszego komika wsród szachistów Marcina Chmiela.",
+      "peer": "Marcin Chmiel (frozen ID marcin-chmiel)",
+      "dedup": "Different date/post from stored Leszek 2024 review; exact post text checked. Same source-local author_hint Leszek appears in both, so do not count these as independent accounts."
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_007",
+      "locator": "KupBilecik review by Igor, 2025-04-08; page_comments=8; event Katowice, 2025-04-06",
+      "identity_proof": "Source author label Igor; event header identifies Karol Modzelewski event. Full text explicitly praises Karol's show and both support acts; Marcin is exact name surface for frozen Marcin Chmiel in this event cohort, as the surrounding archive reviews identify him by full name.",
+      "relevant_full_author_text": "Jeśli ktoś nie był jeszcze na występie Karola to powinien jak najszybciej nadrobić zaległości! &quot;Bańkę&quot; oglądałem drugi raz, po kilkunastu miesiącach i program się bardzo przyjemnie rozbudował. Ale nie sposób nie wspomnieć o supporcie - zarówno Kamil jak i Marcin robią super robotę. Tu nie ma słabych momentów, od początku do końca, przez blisko 2h nie ma chwili wytchnienia.",
+      "peer": "Marcin Chmiel; source says first name Marcin only. Event cohort names Marcin Chmiel in adjacent reviews; identity remains weaker than full-name mentions and should be independently checked.",
+      "dedup": "Distinct author/date/event from saved entries."
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_008",
+      "locator": "KupBilecik review by Wojciech, 2025-04-08; page_comments=8; event Katowice, 2025-04-06",
+      "identity_proof": "Source author label Wojciech; event header identifies Karol Modzelewski event. Author personally appreciates both the support (Kamila i Chmiela) and Karol. Surname Chmiel plus event-specific support context matches frozen Marcin Chmiel with moderate certainty.",
+      "relevant_full_author_text": "Świetna zabawa zapewniona zarówno przez support (Kamila i Chmiela) jak i przez Karola.",
+      "peer": "Marcin Chmiel; surface surname only, likely event roster identification; retain identity uncertainty.",
+      "dedup": "Distinct author/date/event from saved entries."
+    },
+    {
+      "candidate_id": "src_cov_kmodzelewski_009",
+      "locator": "KupBilecik review by Anna, 2025-03-10; page_comments=8; event Poznań, 2025-02-24",
+      "identity_proof": "Source author label Anna; event header identifies Karol Modzelewski event. Author praises the Bańka program and Marcin Chmiel's eloquence; exact full name appears.",
+      "relevant_full_author_text": "&quot;Bańka&quot; jest świetnym programem. Wszystko spójne, dopracowane. Aż chciałoby się posłuchać dłużej :D Idealnie dobrany support - specjalne pozdrowienia dla Marcina Chmiela, jego elokwencja i dobór słów zrobiły na mnie ogromne wrażenie :) Wspaniały wieczór, Karolu, dzięki!! :)",
+      "peer": "Marcin Chmiel (frozen ID marcin-chmiel)",
+      "dedup": "Distinct author/date/event from saved entries; preserve literal HTML entity text as returned by page DOM."
+    }
+  ],
+  "dedup_audit": {
+    "prior_batch_sources_checked": true,
+    "pilot_sources_checked": true,
+    "duplicates": []
+  },
+  "unused_allowance": {
+    "queries": 17,
+    "opens": 15,
+    "verified_candidates": 7
+  },
+  "stop_reason": "Partial collection checkpoint after six distinct substantive archive/time-slice pages (pages 1, 2, 3, 4, 8, 10) and two Reddit fan-discussion routes, including full thread navigation. Nine source candidates saved, including multiple distinct source-local Karol–Marcin Chmiel co-appreciation accounts. This is not no-evidence or quota exhaustion; 17 queries, 15 opens, and 7 candidate slots remain for continuation.",
+  "surprises": [
+    "KupBilecik exposes 943 comments over 38 pages and offers a distinct older time slice; page 2 yielded one explicit Karol–Marcin Chmiel positive co-appreciation. It is one source-local account and provisional only.",
+    "Reddit result thread contains Karol praise and frozen peers, but in different commenters; do not combine speakers.",
+    "The first-page ticket archive includes broad support criticism/praise. Those general remarks lack performer-specific frozen identities and were not treated as co-endorsement.",
+    "Browser access works in one owned reused tab. Prior run log had four actual navigation attempts despite opens_used=3; conservatively counted four, plus four page navigations this continuation, for eight total. Search indexing surfaced older page 4 comments missed in the initial partial run. Reddit personal recommendation/favorites discussions named Karol and frozen peers mostly in separate replies, so no Reddit co-preference was inferred.",
+    "Page 8 adds full-context pair evidence across 2025 spring. One comment says only Marcin, another only Chmiel, so these records retain weaker peer identity; Anna names Marcin Chmiel exactly. Candidate 006 repeats source-local author hint Leszek from candidate 003; treated as one possible author, not an independent fan."
+  ]
+}

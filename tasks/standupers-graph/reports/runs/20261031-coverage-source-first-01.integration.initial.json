@@ -1,0 +1,40 @@
+{
+  "Surprises": [
+    "Parent brief formatting error: the verification brief glued a label to the manifest filename, so the reviewer checked a nonexistent concatenated path. The actual manifest is reports/runs/20261031-coverage-source-first-01.json and exists; it validates independently here.",
+    "Automated v3 evidence schema validation fails for reviewed record ev_csf01a_001 because its unresolved Abelarda mention has sentiment=unknown, which the schema disallows. The reviewer did not run automated JSON Schema validation. I did not alter reviewed evidence or the original review report."
+  ],
+  "run_id": "20261031-coverage-source-first-01",
+  "status": "partial_validation_failed",
+  "validation": {
+    "commands": [
+      "python3 tasks/standupers-graph/scripts/evidence_pipeline.py validate --kind source-candidate tasks/standupers-graph/evidence/coverage-source-first-01/source-candidates.canonical.jsonl",
+      "python3 tasks/standupers-graph/scripts/evidence_pipeline.py validate --kind evidence tasks/standupers-graph/evidence/coverage-source-first-01/evidence.unreviewed.jsonl",
+      "python3 tasks/standupers-graph/scripts/evidence_pipeline.py validate --kind evidence tasks/standupers-graph/evidence/coverage-source-first-01/evidence.jsonl",
+      "python3 tasks/standupers-graph/scripts/evidence_pipeline.py validate --kind run-manifest tasks/standupers-graph/reports/runs/20261031-coverage-source-first-01.json"
+    ],
+    "schema_results": {
+      "canonical_source_candidates": "pass: 2 records",
+      "unreviewed_evidence": "pass: 2 records",
+      "reviewed_evidence": "fail: line 1, mentions/0/sentiment: 'unknown' is not one of ['positive', 'negative', 'mixed', 'neutral', 'unclear']",
+      "actual_manifest": "pass: 1 run-manifest record"
+    },
+    "checks": {
+      "two_candidate_ids_accounted_exactly_once_in_unreviewed_and_reviewed": "pass; src_csf01a_001 and src_csf01a_002, no skips",
+      "source_excerpt_language_context_and_source_fields_equal_canonical": "pass",
+      "literal_surface_forms_and_preference_quotes": "pass",
+      "source_author_hashes_rederived": "pass",
+      "actual_run_id_and_extractor_provider_model_prompt_match_manifest": "pass",
+      "reviewed_statuses_and_reviewer": "pass; accepted=2, uncertain=0, rejected=0; reviewer codex/gpt-6-luna",
+      "Abelarda_remains_unresolved": "pass; performer_id null, preference unknown, no quote"
+    },
+    "reviewer_automated_schema_validation": false,
+    "worker_validation_claimed": false
+  },
+  "manifest_finalization": "not performed; manifest remains verifying because reviewed-evidence schema validation failed",
+  "graph_integration": "not performed; graph loading, aggregation, rendering, and metrics are gated on valid reviewed evidence",
+  "preserved_scope_notes": [
+    "Slice B is empty: public Filmweb, Letterboxd, and IMDb rating probes yielded no verified history. This is an access/provenance limitation, not evidence of absence.",
+    "The disclosed posthoc reservations remain in the source-first manifest notes; no evidence was added from snippets, aggregate ratings, or parent-author preferences."
+  ],
+  "reviewed_evidence_or_original_review_report_edited": false
+}

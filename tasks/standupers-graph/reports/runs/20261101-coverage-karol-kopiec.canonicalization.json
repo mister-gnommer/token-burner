@@ -1,0 +1,31 @@
+{
+  "run_id": "20261101-coverage-karol-kopiec",
+  "raw": "evidence/coverage-expansion/karol-kopiec.source-candidates.jsonl",
+  "canonical": "evidence/coverage-expansion/karol-kopiec.source-candidates.canonical.jsonl",
+  "source_count": 1,
+  "duplicates": 0,
+  "changes": {
+    "speaker_key_derived": "fan_02d34dd798481c3d",
+    "context_author_keys_derived": true,
+    "original_targets": [
+      "karol-kopiec",
+      "michal-kempa"
+    ],
+    "expanded_targets": [
+      "abelard-giza",
+      "cezary-jurkiewicz",
+      "jacek-stramik",
+      "kacper-rucinski",
+      "karol-kopiec",
+      "katarzyna-piasecka",
+      "lukasz-lotek-lodkowski",
+      "michal-kempa",
+      "rafal-paczes",
+      "wiolka-walaszczyk"
+    ]
+  },
+  "source_text_unchanged": true,
+  "source_role_risk": "Professional interview; do not conflate explicit personal appreciation with editorial or professional style assessment. Eligibility unresolved until independent review.",
+  "alias_limits": "Kasia Piasecka and Lotek spellings are target tags only, not scoring identity-confidence decisions. Aleksandra Petrus is outside frozen100.",
+  "created_at": "2026-11-01T11:24:37Z"
+}

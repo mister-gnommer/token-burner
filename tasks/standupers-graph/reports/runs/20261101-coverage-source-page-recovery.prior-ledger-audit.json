@@ -1,0 +1,136 @@
+{
+  "run_id": "20261101-coverage-source-page-recovery",
+  "original_run": "20261101-coverage-source-first-final-a",
+  "timeline_query_strings": [
+    "site:reddit.com/r/Polska ulubiony standuper \"Abelard Giza\"",
+    "forum ulubiony standuper polski stand up \"najlepszy\"",
+    "site:gry-online.pl/forum stand up \"kto\" \"lubię\" komik",
+    "site:filmweb.pl/person/discussion \"stand-up\" ulubiony komik",
+    "site:reddit.com/r/Polska \"ulubiony\" \"stand-up\" \"Polski\"",
+    "site:wykop.pl \"polski stand-up\" \"ulubiony\" standuper",
+    "site:filmweb.pl/person/ \"stand up\" \"według mnie\" standuper polski"
+  ],
+  "query_proof": "child timeline activity positions 14 and 24; 4 plus 3 actual queries",
+  "original_opens": [
+    {
+      "reference": "turn859537search4",
+      "url": "https://www.gry-online.pl/forum/polski-stand-up-wasze-zdanie/zbde8721"
+    },
+    {
+      "reference": "turn859537search7",
+      "url": "https://swiatpilki.com/viewtopic.php?t=20492"
+    },
+    {
+      "reference": "turn859537search2",
+      "url": "https://www.gry-online.pl/forum/quotkabareciarzequot-please-stand-up/zff63169"
+    }
+  ],
+  "proof": "child timeline activity position 17, actual web open input and returned page text; position 22 reserves six opens but position 24 makes only searches, so no additional undeclared open proved. Earlier cumulative 17 queries/6 opens/8 slots accepted from supplied prior ledger, not independently reconstructed.",
+  "canonical_candidate_paths": [
+    "evidence/stage-06/source-candidates.jsonl",
+    "evidence/stage-06/corroboration.sources.jsonl",
+    "evidence/batch-02/source-candidates.jsonl",
+    "evidence/batch-03/source-candidates.jsonl",
+    "evidence/batch-04/source-candidates.jsonl",
+    "evidence/batch-05/source-candidates.jsonl",
+    "evidence/batch-06/source-candidates.jsonl",
+    "evidence/batch-07/source-candidates.jsonl",
+    "evidence/batch-08/source-candidates.jsonl",
+    "evidence/coverage-pilot/batch09.context-reviewed.source-candidates.jsonl",
+    "evidence/batch-10/source-candidates.jsonl",
+    "evidence/batch-06-catchup/source-candidates.jsonl",
+    "evidence/coverage-pilot/magda-kubicka.source-candidates.canonical.jsonl",
+    "evidence/coverage-pilot/olka-szczesniak.source-candidates.canonical.jsonl",
+    "evidence/coverage-pilot/karol-modzelewski.source-candidates.canonical.jsonl",
+    "evidence/coverage-pilot/wojtek-pieta.source-candidates.canonical.jsonl",
+    "evidence/coverage-pilot/wojciech-kaminski.source-candidates.canonical.jsonl",
+    "evidence/coverage-source-first-01/source-candidates.canonical.jsonl",
+    "evidence/coverage-source-first-01-followup/source-candidates.canonical.jsonl",
+    "evidence/coverage-fan-forums-b-followup/source-candidates.canonical.jsonl"
+  ],
+  "jsonl_paths_scanned": 144,
+  "duplicate_matches": [
+    {
+      "author": "masacra",
+      "locator": "swiatpilki thread post 2018-02-07 20:13",
+      "match": "evidence/batch-03/source-candidates.jsonl src_b03a_001, exact full body, permalink p=1192622"
+    },
+    {
+      "author": "Megera_",
+      "locator": "GRYOnline zff63169 comment 3.1 2023-01-14 22:11",
+      "match": "evidence/coverage-pilot/magda-kubicka.source-candidates.canonical.jsonl src_cov_mkubicka_001 exact full body"
+    },
+    {
+      "author": "Qverty",
+      "locator": "GRYOnline zff63169 comment 16 2023-01-15 06:38",
+      "match": "evidence/calibration-context/source-candidates.jsonl src_context_001 complete body; calibration source even if not graph input"
+    },
+    {
+      "author": "MurderousSofa",
+      "locator": "Reddit 105mykf comment",
+      "match": "evidence/batch-04/source-candidates.jsonl src_b04b_001 exact body; thread URL alias"
+    }
+  ],
+  "other_decisions": [
+    {
+      "author": "Otherwise-Ad-4939",
+      "result": "recommendation list in recommendation thread, no direct personal preference; excluded"
+    },
+    {
+      "author": "Hajpeush",
+      "result": "recommendation list in recommendation thread, no direct personal preference; excluded"
+    },
+    {
+      "author": "Busy_Animal_2510",
+      "result": "genre suitability/recommendation, not personal preference; excluded"
+    },
+    {
+      "author": "bisfhcrew",
+      "result": "possible praise with ambiguous Ola/Abelard; held for identity verification rather than forced mapping"
+    }
+  ],
+  "candidate_matches": [
+    {
+      "candidate_id": "src_cspr_001",
+      "author": "evolution123",
+      "locator": "thread opener #1, 2018-05-14 19:36",
+      "match": "No same-author or normalized body/substring match among scanned source and evidence JSONL records; page-level matches alone ignored",
+      "source_proof": "Prior child activity position 17, web open turn120093view0/view2",
+      "retrieval_time_precision": "Child tool item completion timestamp",
+      "identity_caveat": null
+    },
+    {
+      "candidate_id": "src_cspr_002",
+      "author": "mohenjodaro",
+      "locator": "comment #12, 2018-05-14 20:44; edit 20:48:18",
+      "match": "No same-author or normalized body/substring match among scanned source and evidence JSONL records; page-level matches alone ignored",
+      "source_proof": "Prior child activity position 17, web open turn120093view0/view2",
+      "retrieval_time_precision": "Child tool item completion timestamp",
+      "identity_caveat": null
+    },
+    {
+      "candidate_id": "src_cspr_003",
+      "author": "maciell",
+      "locator": "comment #4, 2023-01-14 22:01; Paczus unresolved",
+      "match": "No same-author or normalized body/substring match among scanned source and evidence JSONL records; page-level matches alone ignored",
+      "source_proof": "Prior child activity position 17, web open turn120093view0/view2",
+      "retrieval_time_precision": "Child tool item completion timestamp",
+      "identity_caveat": "Paczus remains unresolved; only Lotek mapped"
+    },
+    {
+      "candidate_id": "src_cspr_004",
+      "author": "steelyringing",
+      "locator": "comment j3bnf41, thread page lines 478–484; relative date only",
+      "match": "No same-author or normalized body/substring match among scanned source and evidence JSONL records; page-level matches alone ignored",
+      "source_proof": "Fresh full thread turn0view0/turn1view0 lines 478–484; displayed timestamp link yields comment j3bnf41; direct click cache miss",
+      "retrieval_time_precision": "Clock observation after page read; exact call timestamp not exposed, so this is an upper bound",
+      "identity_caveat": null
+    }
+  ],
+  "excluded_known_posts": "Username_Koru, Nevsr1, katarrynka, princy-mincy, madame_edith, michuuu_2108, Springerbaum, youngagain, cotca not resaved; no account-wide blacklist",
+  "limitations": [
+    "Reddit relative dates alone cannot establish a calendar date.",
+    "Displayed page identifiers and date/author supply locators for GRYOnline; no comment-specific URL was exposed by prior text.",
+    "No full semantic re-review of corpus; matching used author and normalized exact/substring excerpts across candidate/evidence JSONL."
+  ]
+}
