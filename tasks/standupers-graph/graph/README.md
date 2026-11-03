@@ -53,9 +53,10 @@ Stage 6 uses replacement pilot and separate corroboration manifests. Do not also
 
 ## Public page
 
-On every push to `main` that touches `graph/`, `.github/workflows/pages.yml` runs `scripts/build_site.sh`. It publishes the highest-numbered `batch-NN/` that has a `view.html` as `index.html`, with its `graph.svg` and `assets/`, at https://mister-gnommer.github.io/token-burner/standupers/. The site root redirects there. The URL never changes, so a new batch only needs its own `view.html`. That file must use relative links, and the build rejects `src`/`href` values that start with `/` or `file:`. On narrow screens the view opens zoomed to 500%.
+`.github/workflows/pages.yml` runs `scripts/build_site.sh` on every push to `main` that touches `graph/`. The script publishes the HTML page named in `graph/PUBLISHED` (a path relative to `graph/`) as `standupers/index.html` at https://mister-gnommer.github.io/token-burner/standupers/. The site root redirects there. To publish a different graph, change that one line; the URL stays the same. Interactive pages from `render_interactive.py` are self-contained, with D3 and avatars embedded. For other pages the script copies any relative `src`/`href` files they reference. It fails on missing files or on links that start with `/` or `file:`.
 
 Preview locally: `bash tasks/standupers-graph/scripts/build_site.sh /tmp/site && python3 -m http.server -d /tmp/site`, then open `http://localhost:8000/standupers/`.
+
 ## Interactive HTML view
 
 Every `graph_pipeline.py` build also writes `interactive.html` next to `graph.json`: one self-contained page (vendored D3 7.9.0, embedded avatars and cited evidence). It presents saved relations without rescoring.
