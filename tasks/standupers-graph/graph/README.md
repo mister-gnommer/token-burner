@@ -65,6 +65,8 @@ The default Explore view shows one selected comedian and up to five immediate co
 
 Full map retains the force layout as an optional overview. Names appear on hover or when zoomed in; clicking a comedian returns to focused exploration. Corroborated and provisional links attract as before. Supported disputes are visible by default but exert no pull; weaker contested pairs and unlinked performers have separate toggles. The collapsible coverage/legend section reports strict unopposed coverage separately. Desktop uses a persistent evidence sidebar; narrow screens put the map above the evidence list.
 
+The page is bilingual (Polish and English). A PL/EN switch sits in the toolbar. The starting language comes from `?lang=pl|en`, then the viewer's last choice (saved in `localStorage`), then the browser language. Switching updates the URL so it can be shared. All UI strings live in the `I18N` object in `scripts/interactive_template.html`, and a test checks that both languages define the same keys. Relation explanations are rebuilt from `explanation_counts`, which `render_interactive.py` parses from the scorer's fixed English sentence; if parsing fails, the original text is shown. Evidence-class labels are translated. Fan excerpts stay verbatim. Snapshots rendered before this change remain English-only until they are re-rendered.
+
 To re-render an existing snapshot without rebuilding it (run from the repository root):
 
 ```sh

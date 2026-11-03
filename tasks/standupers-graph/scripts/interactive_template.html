@@ -26,7 +26,7 @@ svg#graph:active{cursor:grabbing}
 #info{padding:8px 20px;border-bottom:1px solid var(--border)}
 #info summary{cursor:pointer}#info-body{display:flex;gap:12px 24px;align-items:center;flex-wrap:wrap;padding:10px 0}
 #info-body p{max-width:420px;margin:0}
-#view{display:flex;gap:6px}#view button{margin:0}#view button[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
+#view,#lang{display:flex;gap:6px}#view button,#lang button{margin:0}#view button[aria-pressed="true"],#lang button[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
 .overview .node text{opacity:0}.overview.labels .node text,.overview .node:hover text,.overview .node.match text{opacity:1}
 @media(max-width:760px){html,body{height:auto;min-height:100%}body{overflow:auto}#toolbar{padding:14px 16px;gap:12px}#search{margin:0;width:100%}#q{width:120px;flex:1}#person{width:190px;flex:2}#workspace{display:block}#diagram{height:430px}#info{padding:8px 16px}}
 .muted{color:var(--muted);font-size:12.5px}
@@ -70,26 +70,125 @@ a{color:var(--accepted)}
 </head>
 <body>
 <header id="toolbar">
-<div><h1>Explore shared fan preferences</h1><p class="muted">One comedian at a time. Evidence, including disagreement, stays visible.</p></div>
-<nav id="view" aria-label="View"><button id="v-focus" aria-pressed="true">Explore</button><button id="v-overview" aria-pressed="false">Full map</button></nav>
-<div id="search"><input type="search" id="q" placeholder="Find a comedian…" aria-label="Filter comedian names" autocomplete="off"><select id="person" aria-label="Choose a comedian"></select><span class="muted" id="search-count" role="status"></span></div>
+<div><h1 data-i18n="heading">Explore shared fan preferences</h1><p class="muted" data-i18n="subheading">One comedian at a time. Evidence, including disagreement, stays visible.</p></div>
+<nav id="view" aria-label="View" data-i18n-attr="aria-label:view_aria"><button id="v-focus" aria-pressed="true" data-i18n="explore">Explore</button><button id="v-overview" aria-pressed="false" data-i18n="full_map">Full map</button></nav>
+<nav id="lang" aria-label="Language" data-i18n-attr="aria-label:lang_aria"><button data-lang="pl" lang="pl" aria-pressed="false">PL</button><button data-lang="en" lang="en" aria-pressed="false">EN</button></nav>
+<div id="search"><input type="search" id="q" placeholder="Find a comedian…" aria-label="Filter comedian names" data-i18n-attr="placeholder:search_placeholder;aria-label:search_aria" autocomplete="off"><select id="person" aria-label="Choose a comedian" data-i18n-attr="aria-label:picker_aria"></select><span class="muted" id="search-count" role="status"></span></div>
 </header>
-<details id="info"><summary>Coverage, legend and filters</summary><div id="info-body">
+<details id="info"><summary data-i18n="info_summary">Coverage, legend and filters</summary><div id="info-body">
 <div class="muted" id="stats"></div>
 <div class="legend">
-<svg><line x1="2" y1="5" x2="32" y2="5" class="link accepted" stroke-width="4"/></svg><span>Corroborated: 2+ supporting fan labels</span>
-<svg><line x1="2" y1="5" x2="32" y2="5" class="link provisional" stroke-width="2.5"/></svg><span>Provisional: one supporting fan label</span>
-<svg><line x1="2" y1="5" x2="32" y2="5" class="link contested"/></svg><span>Disputed: 2+ supporters, with opposition</span>
+<svg><line x1="2" y1="5" x2="32" y2="5" class="link accepted" stroke-width="4"/></svg><span data-i18n="legend_accepted">Corroborated: 2+ supporting fan labels</span>
+<svg><line x1="2" y1="5" x2="32" y2="5" class="link provisional" stroke-width="2.5"/></svg><span data-i18n="legend_provisional">Provisional: one supporting fan label</span>
+<svg><line x1="2" y1="5" x2="32" y2="5" class="link contested"/></svg><span data-i18n="legend_disputed">Disputed: 2+ supporters, with opposition</span>
 </div>
-<div><label class="toggle"><input type="checkbox" id="t-provisional" checked> Provisional links</label><label class="toggle"><input type="checkbox" id="t-contested"> Other contested pairs</label><label class="toggle"><input type="checkbox" id="t-unlinked"> Show unlinked in full map</label></div>
-<button id="reset">Fit map</button><p class="muted">Public evidence is sparse. Counts describe source-local author labels, not audience percentages or verified distinct people. No link does not mean dissimilarity.</p>
+<div><label class="toggle"><input type="checkbox" id="t-provisional" checked> <span data-i18n="toggle_provisional">Provisional links</span></label><label class="toggle"><input type="checkbox" id="t-contested"> <span data-i18n="toggle_contested">Other contested pairs</span></label><label class="toggle"><input type="checkbox" id="t-unlinked"> <span data-i18n="toggle_unlinked">Show unlinked in full map</span></label></div>
+<button id="reset" data-i18n="fit_map">Fit map</button><p class="muted" data-i18n="disclaimer">Public evidence is sparse. Counts describe source-local author labels, not audience percentages or verified distinct people. No link does not mean dissimilarity.</p>
 </div></details>
-<main id="workspace"><section id="diagram" aria-label="Connection map"><div id="map-tools"><span id="map-count" class="muted"></span><div id="pages"><button id="previous" aria-label="Previous connections">←</button> <button id="next" aria-label="Next connections">→</button></div></div><svg id="graph" role="img" aria-label="Selected comedian and immediate connections"></svg><div id="map-note" class="muted">Positions are arranged for readability, not a similarity scale. Select a neighbor to explore.</div></section>
-<aside id="panel" aria-label="Connections and evidence"><div id="panel-body"></div></aside></main><div id="tip" class="card"></div>
+<main id="workspace"><section id="diagram" aria-label="Connection map" data-i18n-attr="aria-label:map_aria"><div id="map-tools"><span id="map-count" class="muted"></span><div id="pages"><button id="previous" aria-label="Previous connections" data-i18n-attr="aria-label:previous_aria">←</button> <button id="next" aria-label="Next connections" data-i18n-attr="aria-label:next_aria">→</button></div></div><svg id="graph" role="img" aria-label="Selected comedian and immediate connections" data-i18n-attr="aria-label:graph_aria"></svg><div id="map-note" class="muted">Positions are arranged for readability, not a similarity scale. Select a neighbor to explore.</div></section>
+<aside id="panel" aria-label="Connections and evidence" data-i18n-attr="aria-label:panel_aria"><div id="panel-body"></div></aside></main><div id="tip" class="card"></div>
 
 <script>/*__D3__*/</script>
 <script>
 const DATA = /*__DATA__*/null;
+// UI strings. Evidence excerpts are verbatim quotes and stay in their original language.
+const plural = (lang, n, forms) => forms[new Intl.PluralRules(lang).select(n)] ?? forms.other;
+const I18N = {
+  en: {
+    page_title: date => `Stand-up fan graph · ${date}`,
+    heading: "Explore shared fan preferences",
+    subheading: "One comedian at a time. Evidence, including disagreement, stays visible.",
+    view_aria: "View", lang_aria: "Language", explore: "Explore", full_map: "Full map",
+    search_placeholder: "Find a comedian…", search_aria: "Filter comedian names", picker_aria: "Choose a comedian",
+    found: n => `${n} found`,
+    info_summary: "Coverage, legend and filters",
+    legend_accepted: "Corroborated: 2+ supporting fan labels",
+    legend_provisional: "Provisional: one supporting fan label",
+    legend_disputed: "Disputed: 2+ supporters, with opposition",
+    toggle_provisional: "Provisional links", toggle_contested: "Other contested pairs", toggle_unlinked: "Show unlinked in full map",
+    fit_map: "Fit map",
+    disclaimer: "Public evidence is sparse. Counts describe source-local author labels, not audience percentages or verified distinct people. No link does not mean dissimilarity.",
+    map_aria: "Connection map", previous_aria: "Previous connections", next_aria: "Next connections",
+    graph_aria: "Selected comedian and immediate connections", panel_aria: "Connections and evidence",
+    map_range: (a, b, total) => `${a}–${b} of ${total} connections`,
+    map_none: "No connections under these filters",
+    map_overview: "Overview · hover for names, click to explore",
+    note_focus: "Positions are arranged for readability, not a similarity scale. Select a neighbor to explore.",
+    note_overview: "Approximate layout, not a similarity scale. Drag to pan; scroll to zoom. Disputed links exert no pull.",
+    node_tip: (rank, fans) => `#${rank} on standup.pl · ${fans} scored fan${fans === 1 ? "" : "s"}`,
+    explore_name: name => "Explore " + name,
+    kind: {accepted: "corroborated", provisional: "provisional", contested: "contested", disputed: "disputed"},
+    details_contested: (fans, opposing) => `${fans} supporting fan labels, ${opposing} opposing records`,
+    details: (fans, opposing) => `${fans} supporting fan label${fans === 1 ? "" : "s"} · ${opposing} opposing records`,
+    profile: "standup.pl profile",
+    opposing: "opposing",
+    evidence_class: {},
+    node_subtitle: (rank, fans, researched) => `#${rank} on standup.pl · ${fans} scored fan labels${researched ? "" : " · not researched yet"}`,
+    connections: n => `${n} connections under current filters`,
+    no_connections: "No connections under these filters. Other collected evidence appears below when available; missing links do not establish dissimilarity.",
+    other_evidence: n => `Other collected evidence (${n})`,
+    all_connections: "← All connections",
+    explanation: c => `${c.fans} source-scoped fans explicitly co-endorse this pair; ${c.observed} observed fans endorse either performer. ${c.opposing} opposing preference records. `
+      + (c.accepted ? "Provisional observed overlap." : "Insufficient independent support or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional."),
+    stats: s => `${s.linked} linked incl. disputed · ${s.strict} strictly unopposed · ${s.disputed} disputed links (2+ supporters) · ${s.accepted} corroborated, ${s.provisional} provisional, ${s.contested} contested pairs · ${s.researched}/${s.total} researched · data ${s.date}`,
+  },
+  pl: {
+    page_title: date => `Graf fanów stand-upu · ${date}`,
+    heading: "Odkrywaj wspólne upodobania fanów",
+    subheading: "Jeden komik naraz. Dowody, także sprzeczne, pozostają widoczne.",
+    view_aria: "Widok", lang_aria: "Język", explore: "Eksploruj", full_map: "Pełna mapa",
+    search_placeholder: "Znajdź komika…", search_aria: "Filtruj nazwiska komików", picker_aria: "Wybierz komika",
+    found: n => `znaleziono: ${n}`,
+    info_summary: "Zasięg, legenda i filtry",
+    legend_accepted: "Potwierdzone: co najmniej 2 wspierających fanów",
+    legend_provisional: "Wstępne: jeden wspierający fan",
+    legend_disputed: "Sporne: 2+ wspierających, ale są głosy przeciw",
+    toggle_provisional: "Powiązania wstępne", toggle_contested: "Inne pary kwestionowane", toggle_unlinked: "Pokaż niepowiązanych na pełnej mapie",
+    fit_map: "Dopasuj mapę",
+    disclaimer: "Publicznych dowodów jest niewiele. Liczby opisują etykiety autorów w obrębie danego źródła, a nie odsetek widowni ani zweryfikowane różne osoby. Brak powiązania nie oznacza braku podobieństwa.",
+    map_aria: "Mapa powiązań", previous_aria: "Poprzednie powiązania", next_aria: "Następne powiązania",
+    graph_aria: "Wybrany komik i jego bezpośrednie powiązania", panel_aria: "Powiązania i dowody",
+    map_range: (a, b, total) => `${a}–${b} z ${total} ${total === 1 ? "powiązania" : "powiązań"}`,
+    map_none: "Brak powiązań przy tych filtrach",
+    map_overview: "Przegląd · najedź, by zobaczyć nazwiska; kliknij, by eksplorować",
+    note_focus: "Rozmieszczenie służy czytelności, nie jest skalą podobieństwa. Wybierz sąsiada, aby go eksplorować.",
+    note_overview: "Układ przybliżony, nie skala podobieństwa. Przeciągnij, aby przesunąć; przewiń, aby powiększyć. Powiązania sporne nie przyciągają węzłów.",
+    node_tip: (rank, fans) => `#${rank} na standup.pl · fani w punktacji: ${fans}`,
+    explore_name: name => "Eksploruj: " + name,
+    kind: {accepted: "potwierdzone", provisional: "wstępne", contested: "kwestionowane", disputed: "sporne"},
+    details_contested: (fans, opposing) => `wspierający fani: ${fans}, dowody przeciw: ${opposing}`,
+    details: (fans, opposing) => `wspierający fani: ${fans} · dowody przeciw: ${opposing}`,
+    profile: "profil na standup.pl",
+    opposing: "przeciw",
+    evidence_class: {
+      same_user_coendorsement: "ten sam fan chwali obu",
+      same_user_rating_overlap: "zbieżne oceny tego samego fana",
+      fan_comparison: "porównanie przez fana",
+      fan_recommendation: "polecenie fana",
+      style_similarity: "podobieństwo stylu",
+    },
+    node_subtitle: (rank, fans, researched) => `#${rank} na standup.pl · fani w punktacji: ${fans}${researched ? "" : " · jeszcze nie zbadano"}`,
+    connections: n => `Powiązania przy obecnych filtrach: ${n}`,
+    no_connections: "Brak powiązań przy tych filtrach. Pozostałe zebrane dowody, jeśli są, widać niżej; brak powiązania nie dowodzi braku podobieństwa.",
+    other_evidence: n => `Pozostałe zebrane dowody (${n})`,
+    all_connections: "← Wszystkie powiązania",
+    explanation: c => `Fani (w obrębie źródła) wprost chwalący obu wykonawców: ${c.fans}; obserwowani fani chwalący któregokolwiek z nich: ${c.observed}. Dowody przeciw: ${c.opposing}. `
+      + (c.accepted ? "Wstępnie zaobserwowana zbieżność." : "Niewystarczające niezależne wsparcie lub głosy przeciw; kwalifikujące się niekwestionowane pary z jednym fanem mogą być pokazane jako wstępne."),
+    stats: s => `powiązani (ze spornymi): ${s.linked} · bez sprzeciwu: ${s.strict} · sporne powiązania (2+ wspierających): ${s.disputed} · pary: potwierdzone ${s.accepted}, wstępne ${s.provisional}, kwestionowane ${s.contested} · zbadano ${s.researched}/${s.total} · dane z ${s.date}`,
+  },
+};
+const LANGS = Object.keys(I18N), LANG_KEY = "standupers-lang";
+function initialLang() {
+  const asked = new URLSearchParams(location.search).get("lang");
+  if (LANGS.includes(asked)) return asked;
+  try { const saved = localStorage.getItem(LANG_KEY); if (LANGS.includes(saved)) return saved; } catch {}
+  return (navigator.languages || [navigator.language]).some(l => /^pl\b/i.test(l || "")) ? "pl" : "en";
+}
+let lang = initialLang();
+const t = (key, ...args) => { const v = I18N[lang][key] ?? I18N.en[key]; return typeof v === "function" ? v(...args) : v; };
+const kindLabel = r => t("kind")[r.kind === "contested" && r.supported_dispute ? "disputed" : r.kind];
+const classLabel = key => t("evidence_class")[key] ?? key.replace(/_/g, " ");
+const explanationText = r => r.explanation_counts ? t("explanation", r.explanation_counts) : r.explanation;
 const byId = new Map(DATA.nodes.map(n => [n.id, n]));
 let mode = "focus", page = 0;
 let selectedId = (byId.get("kacper-rucinski") || DATA.nodes[0])?.id;
@@ -148,8 +247,6 @@ function rebuild() {
   d3.select("#pages").style("display", mode === "focus" && total > pageSize ? null : "none");
   d3.select("#previous").property("disabled", page === 0);
   d3.select("#next").property("disabled", (page + 1) * pageSize >= total);
-  d3.select("#map-count").text(mode === "focus" ? total ? `${page * pageSize + 1}–${Math.min(total, (page + 1) * pageSize)} of ${total} connections` : "No connections under these filters" : "Overview · hover for names, click to explore");
-  d3.select("#map-note").text(mode === "focus" ? "Positions are arranged for readability, not a similarity scale. Select a neighbor to explore." : "Approximate layout, not a similarity scale. Drag to pan; scroll to zoom. Disputed links exert no pull.");
   const linked = new Set(links.filter(connected).flatMap(l => [l.source.id, l.target.id]));
   const attracted = new Set(links.filter(attracting).flatMap(l => [l.source.id, l.target.id]));
   nodes.forEach(n => { n.linked = linked.has(n.id); n.attracted = attracted.has(n.id); });
@@ -170,15 +267,16 @@ function rebuild() {
     g.append("image").attr("clip-path", "url(#circle)").attr("preserveAspectRatio", "xMidYMid slice").attr("href", n => n.avatar);
     g.append("text").attr("text-anchor", "middle").text(n => n.name);
     return g.call(drag)
-      .on("mouseenter", (e, n) => { focus(neighbours(n), l => l.source === n || l.target === n); tip(e, `<b>${esc(n.name)}</b><br>#${n.rank} on standup.pl · ${n.fans} scored fan${n.fans === 1 ? "" : "s"}`); })
+      .on("mouseenter", (e, n) => { focus(neighbours(n), l => l.source === n || l.target === n); tip(e, `<b>${esc(n.name)}</b><br>${esc(t("node_tip", n.rank, n.fans))}`); })
       .on("mousemove", e => moveTip(e))
       .on("mouseleave", () => { unfocus(); hideTip(); })
       .on("click", (e, n) => { e.stopPropagation(); explore(n); });
   });
   nodeSel.on(".drag", null);
   if (mode === "overview") nodeSel.call(drag);
-  nodeSel.attr("tabindex", 0).attr("role", "button").attr("aria-label", n => "Explore " + n.name)
+  nodeSel.attr("tabindex", 0).attr("role", "button")
     .on("keydown", (e, n) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); explore(n); } });
+  updateMapText();
   nodeSel.classed("unlinked", n => !n.linked);
   nodeSel.select(".ring").attr("r", n => radius(n) + 2).attr("stroke", ringColor);
   nodeSel.select("image").attr("x", n => -radius(n)).attr("y", n => -radius(n)).attr("width", n => 2 * radius(n)).attr("height", n => 2 * radius(n));
@@ -204,6 +302,13 @@ function rebuild() {
     .force("orbit", d3.forceRadial(Math.max(380, nodes.length * 9)).strength(n => n.attracted ? 0 : .3));
   sim.alpha(1).restart();
   unfocus();
+}
+
+function updateMapText() {
+  const total = focusedRelations().length;
+  d3.select("#map-count").text(mode === "focus" ? total ? t("map_range", page * pageSize + 1, Math.min(total, (page + 1) * pageSize), total) : t("map_none") : t("map_overview"));
+  d3.select("#map-note").text(mode === "focus" ? t("note_focus") : t("note_overview"));
+  nodeSel?.attr("aria-label", n => t("explore_name", n.name));
 }
 
 const keyOf = l => (l.source.id ?? l.source) + "|" + (l.target.id ?? l.target);
@@ -275,10 +380,8 @@ function tip(e, html) { tipEl.innerHTML = html; tipEl.style.display = "block"; m
 function moveTip(e) { tipEl.style.left = e.clientX + 14 + "px"; tipEl.style.top = e.clientY + 14 + "px"; }
 function hideTip() { tipEl.style.display = "none"; }
 
-function describe(l) {
-  if (l.kind === "contested") return `${l.supported_dispute ? "disputed" : "contested"} · ${l.fans} supporting fan labels, ${l.opposing.length} opposing records`;
-  return `${l.kind === "accepted" ? "corroborated" : "provisional"} · ${l.fans} supporting fan label${l.fans === 1 ? "" : "s"} · ${l.opposing.length} opposing records`;
-}
+const details = l => l.kind === "contested" ? t("details_contested", l.fans, l.opposing.length) : t("details", l.fans, l.opposing.length);
+const describe = l => `${kindLabel(l)} · ${details(l)}`;
 
 const panel = d3.select("#panel"), body = d3.select("#panel-body");
 
@@ -288,10 +391,10 @@ function closePanel() { showNode(byId.get(selectedId)); }
 function header(n, subtitle) {
   const head = body.append("div").attr("class", "head");
   head.append("img").attr("src", n.avatar).attr("alt", "");
-  const t = head.append("div");
-  t.append("h2").text(n.name);
-  t.append("div").attr("class", "muted").text(subtitle);
-  if (n.profile) t.append("a").attr("href", n.profile).attr("target", "_blank").attr("rel", "noopener").attr("class", "muted").text("standup.pl profile");
+  const info = head.append("div");
+  info.append("h2").text(n.name);
+  info.append("div").attr("class", "muted").text(subtitle);
+  if (n.profile) info.append("a").attr("href", n.profile).attr("target", "_blank").attr("rel", "noopener").attr("class", "muted").text(t("profile"));
 }
 
 function evidenceList(parent, l) {
@@ -299,19 +402,21 @@ function evidenceList(parent, l) {
     const q = parent.append("blockquote").attr("class", cls);
     q.append("span").text(ev.excerpt);
     const src = q.append("span").attr("class", "src");
-    src.append("span").text(`${cls ? "opposing · " : ""}${ev.class} · ${ev.published_at ? ev.published_at + " · " : ""}`);
+    src.append("span").text(`${cls ? t("opposing") + " · " : ""}${classLabel(ev.class)} · ${ev.published_at ? ev.published_at + " · " : ""}`);
     if (/^https?:\/\//.test(ev.url)) src.append("a").attr("href", ev.url).attr("target", "_blank").attr("rel", "noopener").text(ev.site);
     else src.append("span").text(ev.site);
   }
 }
 
+let redrawPanel = () => {};
 function showNode(n) {
+  redrawPanel = () => showNode(n);
   body.html("");
-  header(n, `#${n.rank} on standup.pl · ${n.fans} scored fan labels${n.researched ? "" : " · not researched yet"}`);
+  header(n, t("node_subtitle", n.rank, n.fans, n.researched));
   const rels = DATA.relations.filter(r => incident(r, n.id)).sort(orderRelations);
   const visible = rels.filter(eligible), hidden = rels.filter(r => !eligible(r));
-  body.append("h3").text(`${visible.length} connections under current filters`);
-  if (!visible.length) body.append("p").attr("class", "muted").text("No connections under these filters. Other collected evidence appears below when available; missing links do not establish dissimilarity.");
+  body.append("h3").text(t("connections", visible.length));
+  if (!visible.length) body.append("p").attr("class", "muted").text(t("no_connections"));
   function addRelation(parent, r) {
     const other = otherNode(r, n.id);
     const box = parent.append("details").attr("class", "rel").attr("data-peer", other.id);
@@ -322,42 +427,67 @@ function showNode(n) {
     });
     const head = box.append("summary").attr("class", "rel-head");
     head.append("img").attr("src", other.avatar).attr("alt", "");
-    const t = head.append("div");
-    t.append("div").text(other.name);
-    t.append("span").attr("class", "badge " + r.kind).text(r.supported_dispute ? "disputed" : r.kind === "accepted" ? "corroborated" : r.kind);
-    t.append("div").attr("class", "muted").text(describe(r).split(" · ").slice(1).join(" · "));
-    box.append("button").attr("class", "explore").text("Explore " + other.name).on("click", () => explore(other));
+    const info = head.append("div");
+    info.append("div").text(other.name);
+    info.append("span").attr("class", "badge " + r.kind).text(kindLabel(r));
+    info.append("div").attr("class", "muted").text(details(r));
+    box.append("button").attr("class", "explore").text(t("explore_name", other.name)).on("click", () => explore(other));
     evidenceList(box, r);
   }
   visible.forEach(r => addRelation(body, r));
   if (hidden.length) {
     const extra = body.append("details").attr("class", "other-evidence");
-    extra.append("summary").text(`Other collected evidence (${hidden.length})`);
+    extra.append("summary").text(t("other_evidence", hidden.length));
     hidden.forEach(r => addRelation(extra, r));
   }
   panel.node().scrollTop = 0;
 }
 
 function showPair(l) {
+  redrawPanel = () => showPair(l);
   body.html("");
-  body.append("button").attr("class", "pair-back").text("← All connections").on("click", closePanel);
+  body.append("button").attr("class", "pair-back").text(t("all_connections")).on("click", closePanel);
   header(byId.get(endpoint(l.source)), "");
   header(byId.get(endpoint(l.target)), "");
-  body.append("p").html(`<span class="badge ${l.kind}">${l.supported_dispute ? "disputed" : l.kind}</span> `).append("span").attr("class", "muted").text(describe(l).split(" · ").slice(1).join(" · "));
-  body.append("p").attr("class", "muted").text(l.explanation);
+  const status = body.append("p");
+  status.append("span").attr("class", "badge " + l.kind).text(kindLabel(l));
+  status.append("span").attr("class", "muted").text(" " + details(l));
+  body.append("p").attr("class", "muted").text(explanationText(l));
   evidenceList(body, l);
   panel.node().scrollTop = 0;
 }
 
 const count = k => DATA.relations.filter(r => r.kind === k).length;
-d3.select("#stats").text(`${DATA.coverage.linked_nodes_including_disputed} linked incl. disputed · ${DATA.coverage.strict_linked_nodes} strictly unopposed · ${DATA.coverage.disputed_links} disputed links (2+ supporters) · ${count("accepted")} corroborated, ${count("provisional")} provisional, ${count("contested")} contested pairs · ${DATA.nodes.filter(n => n.researched).length}/${DATA.nodes.length} researched · data ${DATA.updated_at.slice(0, 10)}`);
+const stats = {linked: DATA.coverage.linked_nodes_including_disputed, strict: DATA.coverage.strict_linked_nodes, disputed: DATA.coverage.disputed_links,
+  accepted: count("accepted"), provisional: count("provisional"), contested: count("contested"),
+  researched: DATA.nodes.filter(n => n.researched).length, total: DATA.nodes.length, date: DATA.updated_at.slice(0, 10)};
+
+function applyLanguage() {
+  document.documentElement.lang = lang;
+  document.title = t("page_title", stats.date);
+  document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = t(el.dataset.i18n); });
+  document.querySelectorAll("[data-i18n-attr]").forEach(el => el.dataset.i18nAttr.split(";").forEach(pair => {
+    const [attr, key] = pair.split(":"); el.setAttribute(attr, t(key));
+  }));
+  d3.selectAll("#lang button").attr("aria-pressed", function() { return this.dataset.lang === lang; });
+  d3.select("#stats").text(t("stats", stats));
+}
+function setLanguage(next) {
+  if (!LANGS.includes(next) || next === lang) return;
+  lang = next;
+  try { localStorage.setItem(LANG_KEY, lang); } catch {}
+  try { const url = new URL(location.href); url.searchParams.set("lang", lang); history.replaceState(null, "", url); } catch {}
+  applyLanguage(); updatePicker(); updateMapText(); hideTip(); redrawPanel();
+}
+d3.selectAll("#lang button").on("click", function() { setLanguage(this.dataset.lang); });
+applyLanguage();
 
 function updatePicker() {
   const q = normalize(d3.select("#q").property("value").trim());
   const matches = DATA.nodes.filter(n => n.search.includes(q)).sort((a, b) => a.name.localeCompare(b.name, "pl"));
   d3.select("#person").selectAll("option").data(matches, n => n.id).join("option").attr("value", n => n.id).text(n => n.name);
   d3.select("#person").property("disabled", !matches.length).property("value", matches.some(n => n.id === selectedId) ? selectedId : matches[0]?.id || "");
-  d3.select("#search-count").text(q ? `${matches.length} found` : "");
+  d3.select("#search-count").text(q ? t("found", matches.length) : "");
 }
 Object.values(toggles).forEach(t => t.on("change", () => { page = 0; updateView(); showNode(byId.get(selectedId)); }));
 d3.select("#v-focus").on("click", () => { mode = "focus"; updateView(); showNode(byId.get(selectedId)); });
