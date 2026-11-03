@@ -7,6 +7,7 @@ No active workers. Coverage expansion remains unfinished; minimum70%, desired85â
 ## Current graph
 
 Use `graph/coverage-disputed-reviewed/interactive.html` and its sibling graph.json, D2, SVG and PNG.
+- Published at https://mister-gnommer.github.io/token-burner/standupers/ via `graph/PUBLISHED`; update that pointer whenever this current graph changes.
 - 53/100 linked including supported disputes;52/100 strictly unopposed-linked.
 - Largest component37 including disputed,36 strict;17 corroborated-linked.
 - 112 reviewed records,135canonical candidates,114relations:15corroborated,66provisional,33contested.

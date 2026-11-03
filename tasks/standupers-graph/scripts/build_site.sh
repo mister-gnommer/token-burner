@@ -1,28 +1,38 @@
 #!/usr/bin/env bash
-# Build the static GitHub Pages site for the newest standupers graph.
+# Build the static GitHub Pages site for the standupers graph.
 # Usage: build_site.sh <output-dir>   (run from the repository root)
-# The newest graph is the highest-numbered graph/batch-NN/ that has a view.html.
-# It is published at <output-dir>/standupers/, so the public URL never changes.
+# The page to publish is named in graph/PUBLISHED (a path relative to graph/).
+# It is published at <output-dir>/standupers/index.html, so the public URL never changes.
 set -euo pipefail
 
 out=${1:?usage: build_site.sh <output-dir>}
 graph_root=tasks/standupers-graph/graph
+pointer=$graph_root/PUBLISHED
 
-latest=$(find "$graph_root" -mindepth 2 -maxdepth 2 -path "$graph_root/batch-[0-9]*/view.html" \
-  | grep -E '/batch-[0-9]+/view\.html$' | sort -V | tail -n 1 | xargs -r dirname)
-[[ -n "$latest" ]] || { echo "No $graph_root/batch-NN/view.html found" >&2; exit 1; }
+[[ -f "$pointer" ]] || { echo "Missing $pointer" >&2; exit 1; }
+page_rel=$(grep -vE '^\s*(#|$)' "$pointer" | head -n 1 | tr -d '[:space:]')
+page=$graph_root/$page_rel
+[[ -f "$page" && "$page" == *.html ]] || { echo "$pointer points to missing HTML page: $page" >&2; exit 1; }
+page_dir=$(dirname "$page")
 
-# A view with machine-local paths would publish broken images.
-if grep -nE '(src|href)="(/|file:)' "$latest/view.html"; then
-  echo "$latest/view.html uses absolute local paths; make them relative to its folder" >&2
+# A page with machine-local paths would publish broken images or scripts.
+if grep -nE '(src|href)="(/|file:)' "$page"; then
+  echo "$page uses absolute local paths; make them relative to its folder" >&2
   exit 1
 fi
 
 rm -rf "$out"
 mkdir -p "$out/standupers"
-cp "$latest/view.html" "$out/standupers/index.html"
-cp "$latest/graph.svg" "$out/standupers/"
-[[ -d "$latest/assets" ]] && cp -r "$latest/assets" "$out/standupers/"
+cp "$page" "$out/standupers/index.html"
+
+# Copy any relative files the page references (none for self-contained pages).
+refs=$( { grep -oE '(src|href)="[^"#?]+' "$page" || true; } | sed -E 's/^(src|href)="//' \
+  | { grep -vE '^([a-z]+:|//)' || true; } | sort -u)
+for ref in $refs; do
+    [[ -e "$page_dir/$ref" ]] || { echo "$page references missing file: $ref" >&2; exit 1; }
+    mkdir -p "$out/standupers/$(dirname "$ref")"
+    cp -r "$page_dir/$ref" "$out/standupers/$ref"
+  done
 
 cat > "$out/index.html" <<'HTML'
 <!doctype html><html lang="en"><head><meta charset="utf-8"><title>token-burner</title>
@@ -30,4 +40,4 @@ cat > "$out/index.html" <<'HTML'
 <body><a href="standupers/">Standupers graph</a></body></html>
 HTML
 
-echo "Published $latest -> $out/standupers/"
+echo "Published $page -> $out/standupers/index.html"
