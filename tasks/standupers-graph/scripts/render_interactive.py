@@ -9,6 +9,7 @@ import argparse
 import base64
 import html
 import json
+import re
 from io import BytesIO
 from pathlib import Path
 
@@ -51,11 +52,27 @@ def load_evidence(graph, repo_root, task_root):
     return records
 
 
+# Mirrors the sentence graph_pipeline.py writes, so the page can phrase it in each UI language.
+EXPLANATION = re.compile(
+    r"(?P<fans>\d+) source-scoped fans explicitly co-endorse this pair; (?P<observed>\d+) observed fans endorse either performer\. "
+    r"(?P<opposing>\d+) opposing preference records\. (?P<verdict>Provisional observed overlap\.|Insufficient independent support "
+    r"or opposing preferences; eligible uncontested one-fan pairs may be shown as provisional\.)")
+
+
+def explanation_counts(text):
+    """Return the numbers behind a scorer explanation, or None so the page shows the original text."""
+    match = EXPLANATION.fullmatch(text)
+    if not match:
+        return None
+    return {"fans": int(match["fans"]), "observed": int(match["observed"]), "opposing": int(match["opposing"]),
+            "accepted": match["verdict"].startswith("Provisional")}
+
+
 def evidence_view(record, pair):
     sentiments = {m["performer_id"]: m["sentiment"] for m in record["mentions"] if m.get("performer_id") in pair}
     return {
         "id": record["id"],
-        "class": record["evidence_class"].replace("_", " "),
+        "class": record["evidence_class"],
         "site": record["source"]["site"],
         "url": record["source"]["url"],
         "published_at": record["source"].get("published_at"),
@@ -79,6 +96,7 @@ def build_payload(graph, ranking, evidence_records):
             "confidence": relation["confidence"],
             "fans": relation["independent_fan_count"],
             "explanation": relation["explanation"],
+            "explanation_counts": explanation_counts(relation["explanation"]),
             "support": [evidence_view(evidence[i], pair) for i in relation["support_evidence_ids"] if i in evidence],
             "opposing": [evidence_view(evidence[i], pair) for i in relation["contradictory_evidence_ids"] if i in evidence],
         })

@@ -66,4 +66,5 @@ Older pause/state reports are historical; this checkpoint supersedes their metri
 
 ## Hosting integration
 
-Remote Pages workflow, build script, relative-path fixes and documentation retained during rebase onto origin/main. The current publisher selects the highest-numbered batch `view.html`, not the newer coverage `interactive.html`; focused exploration is saved in the repository but is not selected by that public-site publisher. No publishing-policy change was made in this checkpoint. Documentation/state conflicts were resolved without dropping remote hosting work.
+The public site https://mister-gnommer.github.io/token-burner/standupers/ publishes the page named in `graph/PUBLISHED` (currently `coverage-disputed-reviewed/interactive.html`). Update that pointer whenever the current graph changes.
+Interactive pages are bilingual (PL/EN) since 2026-11-03. Only the current snapshot was re-rendered; older `interactive.html` snapshots stay English-only. 26 Python tests pass.
