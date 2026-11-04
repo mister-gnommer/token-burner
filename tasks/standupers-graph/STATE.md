@@ -67,4 +67,4 @@ Older pause/state reports are historical; this checkpoint supersedes their metri
 ## Hosting integration
 
 The public site https://mister-gnommer.github.io/token-burner/standupers/ publishes the page named in `graph/PUBLISHED` (currently `coverage-disputed-reviewed/interactive.html`). Update that pointer whenever the current graph changes.
-Interactive pages are bilingual (PL/EN) since 2026-11-03. Only the current snapshot was re-rendered; older `interactive.html` snapshots stay English-only. 26 Python tests pass.
+Interactive pages are bilingual (PL/EN) since 2026-11-03. Polish strings were rewritten by a dedicated translator pass on 2026-11-04 (status terms: potwierdzone / wstępne / sporne / podważone; gender-neutral wording). Only the current snapshot was re-rendered; older `interactive.html` snapshots stay English-only. 26 Python tests pass.
