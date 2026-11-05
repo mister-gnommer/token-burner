@@ -1,7 +1,7 @@
 # Current state
 
-Last updated: 2026-11-03
-Stage: Focused exploration viewer implemented and checked; source acquisition checkpoint unchanged.
+Last updated: 2026-11-05
+Stage: Mobile search redesigned with tappable surname-sorted results; source acquisition checkpoint unchanged.
 No active workers. Coverage expansion remains unfinished; minimum70%, desired85–90%.
 
 ## Current graph
@@ -68,3 +68,8 @@ Older pause/state reports are historical; this checkpoint supersedes their metri
 
 The public site https://mister-gnommer.github.io/token-burner/standupers/ publishes the page named in `graph/PUBLISHED` (currently `coverage-disputed-reviewed/interactive.html`). Update that pointer whenever the current graph changes.
 Interactive pages are bilingual (PL/EN) since 2026-11-03. Polish strings were rewritten by a dedicated translator pass on 2026-11-04 (status terms: potwierdzone / wstępne / sporne / podważone; gender-neutral wording). Only the current snapshot was re-rendered; older `interactive.html` snapshots stay English-only. 26 Python tests pass.
+
+## Search usability — 2026-11-05
+
+Template and current published snapshot updated locally. Replaced the filter/select pair with photo/name buttons; tapping opens the chosen comedian in both graph and details and dismisses search/keyboard. Results remain after blur, with Cancel, empty state, current-view label, and PL/EN strings. Focusing empty search browses all100. Polish surname ordering uses the last name token, ignoring parentheses in stage names; first names break ties. Single-person exploration/paging/evidence retained.
+Validation:26Python tests,2Node regression tests (`node scripts/test_search.cjs`), headless Vivaldi DOM assertions (browse100, partial accent search, blur persistence, tap synchronizes graph/details, empty state, cancel, Enter, Polish status, no horizontal overflow), JavaScript syntax and diff whitespace checks passed. No physical-phone keyboard check. Latest Polish translation from origin/main retained. User authorized deployment on 2026-11-05; validated site build and publishing via the main-branch Pages workflow; source-recovery next step and saved budgets remain unchanged.

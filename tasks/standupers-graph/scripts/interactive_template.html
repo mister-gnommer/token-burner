@@ -12,9 +12,15 @@ html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font:14px/1.
 body{display:flex;flex-direction:column;overflow:hidden}
 #toolbar{padding:16px 20px;border-bottom:1px solid var(--border);display:flex;gap:18px;align-items:center;flex-wrap:wrap}
 #toolbar h1{font-size:20px;margin:0}#toolbar p{margin:2px 0}
-#search{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-left:auto}
-input,select{font:inherit;color:inherit;background:var(--bg);padding:8px 10px;border:1px solid var(--border);border-radius:8px;max-width:100%}
-#q{width:160px}#person{width:240px}#search-count{min-width:30px}
+#search{position:relative;width:360px;max-width:100%;margin-left:auto}
+#search-field{display:flex;gap:8px}#search-field button{margin:0;min-height:44px}
+#search-results{position:absolute;top:100%;left:0;right:0;z-index:4;max-height:240px;overflow:auto;overscroll-behavior:contain;background:var(--bg);box-shadow:0 8px 24px #0003}
+#search-results[hidden]{display:none}
+.search-result{display:flex;align-items:center;gap:10px;width:100%;min-height:52px;margin:0;padding:8px 12px;border:0;border-bottom:1px solid var(--border);border-radius:0;text-align:left}
+.search-result img{width:32px;height:32px;border-radius:50%;object-fit:cover}.search-result span{flex:1}.search-result:hover,.search-result:focus-visible{background:var(--card);outline:2px solid var(--match);outline-offset:-2px}
+#search-empty{padding:12px;margin:0}button:focus-visible{outline:2px solid var(--match);outline-offset:2px}
+input{font:inherit;color:inherit;background:var(--bg);padding:8px 10px;border:1px solid var(--border);border-radius:8px;max-width:100%}
+#q{width:100%;min-width:0;min-height:44px}#search-count{display:block;margin-top:4px}
 #workspace{display:grid;grid-template-columns:minmax(0,1fr) 400px;flex:1;min-height:0}
 #diagram{position:relative;min-width:0;overflow:hidden}
 svg#graph{width:100%;height:100%;display:block;cursor:grab}
@@ -28,7 +34,7 @@ svg#graph:active{cursor:grabbing}
 #info-body p{max-width:420px;margin:0}
 #view,#lang{display:flex;gap:6px}#view button,#lang button{margin:0}#view button[aria-pressed="true"],#lang button[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
 .overview .node text{opacity:0}.overview.labels .node text,.overview .node:hover text,.overview .node.match text{opacity:1}
-@media(max-width:760px){html,body{height:auto;min-height:100%}body{overflow:auto}#toolbar{padding:14px 16px;gap:12px}#search{margin:0;width:100%}#q{width:120px;flex:1}#person{width:190px;flex:2}#workspace{display:block}#diagram{height:430px}#info{padding:8px 16px}}
+@media(max-width:760px){html,body{height:auto;min-height:100%}body{overflow:auto}#toolbar{padding:14px 16px;gap:12px}#search{margin:0;width:100%}#workspace{display:block}#diagram{height:430px}#info{padding:8px 16px}}
 .muted{color:var(--muted);font-size:12.5px}
 .legend{display:grid;grid-template-columns:34px 1fr;gap:6px 10px;align-items:center;margin:12px 0}
 .legend svg{width:34px;height:10px}
@@ -73,7 +79,7 @@ a{color:var(--accepted)}
 <div><h1 data-i18n="heading">Explore shared fan preferences</h1><p class="muted" data-i18n="subheading">One comedian at a time. Evidence, including disagreement, stays visible.</p></div>
 <nav id="view" aria-label="View" data-i18n-attr="aria-label:view_aria"><button id="v-focus" aria-pressed="true" data-i18n="explore">Explore</button><button id="v-overview" aria-pressed="false" data-i18n="full_map">Full map</button></nav>
 <nav id="lang" aria-label="Language" data-i18n-attr="aria-label:lang_aria"><button data-lang="pl" lang="pl" aria-pressed="false">PL</button><button data-lang="en" lang="en" aria-pressed="false">EN</button></nav>
-<div id="search"><input type="search" id="q" placeholder="Find a comedian…" aria-label="Filter comedian names" data-i18n-attr="placeholder:search_placeholder;aria-label:search_aria" autocomplete="off"><select id="person" aria-label="Choose a comedian" data-i18n-attr="aria-label:picker_aria"></select><span class="muted" id="search-count" role="status"></span></div>
+<div id="search"><div id="search-field"><input type="search" id="q" placeholder="Find a comedian…" aria-label="Find a comedian" data-i18n-attr="placeholder:search_placeholder;aria-label:search_aria" aria-controls="search-results" aria-describedby="search-count" autocomplete="off" enterkeyhint="go"><button id="search-close" data-i18n="search_close" hidden>Cancel</button></div><span class="muted" id="search-count" role="status"></span><div id="search-results" class="card" role="group" data-i18n-attr="aria-label:picker_aria" hidden></div></div>
 </header>
 <details id="info"><summary data-i18n="info_summary">Coverage, legend and filters</summary><div id="info-body">
 <div class="muted" id="stats"></div>
@@ -99,8 +105,9 @@ const I18N = {
     heading: "Explore shared fan preferences",
     subheading: "One comedian at a time. Evidence, including disagreement, stays visible.",
     view_aria: "View", lang_aria: "Language", explore: "Explore", full_map: "Full map",
-    search_placeholder: "Find a comedian…", search_aria: "Filter comedian names", picker_aria: "Choose a comedian",
-    found: n => `${n} found`,
+    search_placeholder: "Find a comedian…", search_aria: "Find a comedian", picker_aria: "Choose a comedian",
+    found: n => `${n} found · tap a name to explore`,
+    search_close: "Cancel", search_empty: "No matches. Try another name.", viewing: name => `Viewing: ${name}`,
     info_summary: "Coverage, legend and filters",
     legend_accepted: "Corroborated: 2+ supporting fan labels",
     legend_provisional: "Provisional: one supporting fan label",
@@ -137,8 +144,9 @@ const I18N = {
     heading: "Kogo lubią ci sami fani?",
     subheading: "Wybierz komika lub komiczkę i sprawdź, z kim dzieli fanów. Pokazujemy wszystkie dowody, także głosy przeciw.",
     view_aria: "Widok", lang_aria: "Język", explore: "Z bliska", full_map: "Cała mapa",
-    search_placeholder: "Szukaj…", search_aria: "Filtruj listę po nazwisku", picker_aria: "Wybierz komika lub komiczkę",
-    found: n => `${n} ${plural("pl", n, {"one": "wynik", "few": "wyniki", "many": "wyników", "other": "wyniku"})}`,
+    search_placeholder: "Szukaj…", search_aria: "Szukaj po nazwisku", picker_aria: "Wybierz komika lub komiczkę",
+    found: n => `${n} ${plural("pl", n, {"one": "wynik", "few": "wyniki", "many": "wyników", "other": "wyniku"})} · dotknij nazwiska, aby przejść`,
+    search_close: "Anuluj", search_empty: "Brak wyników. Spróbuj innego nazwiska.", viewing: name => `Oglądasz: ${name}`,
     info_summary: "Zakres danych, legenda i filtry",
     legend_accepted: "Potwierdzone: popiera je co najmniej 2 fanów",
     legend_provisional: "Wstępne: popiera je tylko 1 fan",
@@ -346,7 +354,7 @@ function fit(duration = 600) {
 }
 function explore(n) {
   selectedId = n.id; page = 0; mode = "focus";
-  d3.select("#q").property("value", ""); updatePicker();
+  closeSearch();
   updateView(); showNode(n);
 }
 function updateView() {
@@ -482,12 +490,37 @@ function setLanguage(next) {
 d3.selectAll("#lang button").on("click", function() { setLanguage(this.dataset.lang); });
 applyLanguage();
 
-function updatePicker() {
+let searchOpen = false;
+const surname = name => name.replace(/[()]/g, "").trim().split(/\s+/).pop();
+function searchMatches() {
   const q = normalize(d3.select("#q").property("value").trim());
-  const matches = DATA.nodes.filter(n => n.search.includes(q)).sort((a, b) => a.name.localeCompare(b.name, "pl"));
-  d3.select("#person").selectAll("option").data(matches, n => n.id).join("option").attr("value", n => n.id).text(n => n.name);
-  d3.select("#person").property("disabled", !matches.length).property("value", matches.some(n => n.id === selectedId) ? selectedId : matches[0]?.id || "");
-  d3.select("#search-count").text(q ? t("found", matches.length) : "");
+  return DATA.nodes.filter(n => n.search.includes(q)).sort((a, b) => surname(a.name).localeCompare(surname(b.name), "pl") || a.name.localeCompare(b.name, "pl"));
+}
+function closeSearch() {
+  searchOpen = false;
+  d3.select("#q").property("value", "");
+  updatePicker();
+}
+function chooseSearchResult(n) {
+  d3.select("#q").node().blur();
+  explore(n);
+  d3.select("#v-focus").node().focus({preventScroll: true});
+}
+function updatePicker() {
+  const matches = searchMatches();
+  d3.select("#search-results").property("hidden", !searchOpen);
+  d3.select("#search-close").property("hidden", !searchOpen);
+  d3.select("#search-count").text(searchOpen ? t("found", matches.length) : t("viewing", byId.get(selectedId).name));
+  const results = d3.select("#search-results").selectAll("button").data(searchOpen ? matches : [], n => n.id).join(enter => {
+    const row = enter.append("button").attr("type", "button").attr("class", "search-result");
+    row.append("img").attr("alt", "");
+    row.append("span");
+    row.append("b").attr("aria-hidden", "true").text("→");
+    return row;
+  }).order().attr("aria-label", n => t("explore_name", n.name)).on("click", (e, n) => chooseSearchResult(n));
+  results.select("img").attr("src", n => n.avatar);
+  results.select("span").text(n => n.name);
+  d3.select("#search-results").selectAll("p").data(searchOpen && !matches.length ? [null] : []).join("p").attr("id", "search-empty").text(t("search_empty"));
 }
 Object.values(toggles).forEach(t => t.on("change", () => { page = 0; updateView(); showNode(byId.get(selectedId)); }));
 d3.select("#v-focus").on("click", () => { mode = "focus"; updateView(); showNode(byId.get(selectedId)); });
@@ -497,11 +530,12 @@ d3.select("#next").on("click", () => { page++; rebuild(); });
 d3.select("#reset").on("click", () => fit(0));
 addEventListener("resize", () => fit(0));
 d3.select("#info").on("toggle", () => fit(0));
-d3.select("#q").on("input", updatePicker).on("keydown", e => {
-  if (e.key === "Enter" && d3.select("#person").property("value")) explore(byId.get(d3.select("#person").property("value")));
-  if (e.key === "Escape") { e.target.value = ""; updatePicker(); }
+d3.select("#q").on("focus input", () => { searchOpen = true; updatePicker(); }).on("keydown", e => {
+  if (e.key === "Enter" && !e.isComposing && searchOpen && searchMatches().length) { e.preventDefault(); chooseSearchResult(searchMatches()[0]); }
+  if (e.key === "ArrowDown" && searchOpen) { e.preventDefault(); d3.select("#search-results button").node()?.focus(); }
+  if (e.key === "Escape") closeSearch();
 });
-d3.select("#person").on("change", e => explore(byId.get(e.target.value)));
+d3.select("#search-close").on("click", () => { d3.select("#q").node().blur(); closeSearch(); d3.select("#v-focus").node().focus({preventScroll: true}); });
 updatePicker(); updateView();
 if (selectedId) showNode(byId.get(selectedId));
 
